@@ -1,0 +1,25 @@
+# ============================================
+# GrapplingHook - Конфигурация
+# ============================================
+
+# ===== УНИКАЛЬНЫЙ ПРЕДМЕТ =====
+custom-item-name: "&6&lКРЮК-КОШКА"
+
+# ===== ОСНОВНЫЕ НАСТРОЙКИ =====
+pull-power: 1.5
+cooldown-seconds: 0
+max-distance: 30
+
+# ===== АНИМАЦИЯ =====
+enable-particles: true
+enable-sound: true
+particle-type: "CRIT"
+sound-type: "ENTITY_ENDERMAN_TELEPORT"
+
+# ===== СООБЩЕНИЯ =====
+enable-messages: false
+
+messages:
+  pull: "&a🎣 Вы притянулись к крюку!"
+  cooldown: "&cПодождите %seconds% секунд до следующего использования!"
+  too-far: "&cСлишком далеко! Максимальная дистанция: %distance% блоков"

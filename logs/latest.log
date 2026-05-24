@@ -1,85 +1,421 @@
-[23:06:01] [main/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
-[23:06:01] [main/INFO]: Reloading ResourceManager: Default, bukkit
-[23:06:03] [Worker-Main-1/INFO]: Loaded 7 recipes
-[23:06:04] [Server thread/INFO]: Starting minecraft server version 1.16.5
-[23:06:04] [Server thread/INFO]: Loading properties
-[23:06:05] [Server thread/INFO]: This server is running Purpur version git-Purpur-1171 (MC: 1.16.5) (Implementing API version 1.16.5-R0.1-SNAPSHOT)
-[23:06:05] [Server thread/INFO]: Debug logging is disabled
-[23:06:05] [Server thread/INFO]: Server Ping Player Sample Count: 12
-[23:06:05] [Server thread/INFO]: Using 4 threads for Netty based IO
-[23:06:05] [Server thread/INFO]: Default game type: SURVIVAL
-[23:06:05] [Server thread/INFO]: Generating keypair
-[23:06:05] [Server thread/INFO]: Starting Minecraft server on *:25565
-[23:06:05] [Server thread/INFO]: Using default channel type
-[23:06:05] [Server thread/INFO]: Tuinity: Using Java 11 compression from Velocity.
-[23:06:05] [Server thread/INFO]: Tuinity: Using Java cipher from Velocity.
-[23:06:06] [Server thread/INFO]: [AbstractMenus] Loading 1 libraries... please wait
-[23:06:06] [Server thread/INFO]: [AbstractMenus] Loaded library C:\Users\PC\Desktop\сервер\DesireCraft\libraries\org\openjdk\nashorn\nashorn-core\15.3\nashorn-core-15.3.jar
-[23:06:06] [Server thread/INFO]: [AbstractMenus] Loaded library C:\Users\PC\Desktop\сервер\DesireCraft\libraries\org\ow2\asm\asm\7.3.1\asm-7.3.1.jar
-[23:06:06] [Server thread/INFO]: [AbstractMenus] Loaded library C:\Users\PC\Desktop\сервер\DesireCraft\libraries\org\ow2\asm\asm-commons\7.3.1\asm-commons-7.3.1.jar
-[23:06:06] [Server thread/INFO]: [AbstractMenus] Loaded library C:\Users\PC\Desktop\сервер\DesireCraft\libraries\org\ow2\asm\asm-analysis\7.3.1\asm-analysis-7.3.1.jar
-[23:06:06] [Server thread/INFO]: [AbstractMenus] Loaded library C:\Users\PC\Desktop\сервер\DesireCraft\libraries\org\ow2\asm\asm-tree\7.3.1\asm-tree-7.3.1.jar
-[23:06:06] [Server thread/INFO]: [AbstractMenus] Loaded library C:\Users\PC\Desktop\сервер\DesireCraft\libraries\org\ow2\asm\asm-util\7.3.1\asm-util-7.3.1.jar
-[23:06:06] [Server thread/INFO]: [WorldEdit] Loading WorldEdit v7.2.10+1742f98
-[23:06:07] [Server thread/INFO]: Got request to register class com.sk89q.worldedit.bukkit.BukkitServerInterface with WorldEdit [com.sk89q.worldedit.extension.platform.PlatformManager@7eb8232b]
-[23:06:07] [Server thread/INFO]: [PlaceholderAPI] Loading PlaceholderAPI v2.11.2
-[23:06:07] [Server thread/INFO]: [BLib] Loading BLib v1.6
-[23:06:07] [Server thread/INFO]: [AbstractMenus] Loading AbstractMenus v1.15.2
-[23:06:07] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
-[23:06:07] [Server thread/INFO]: [WorldEdit] Enabling WorldEdit v7.2.10+1742f98
-[23:06:07] [Server thread/INFO]: Registering commands with com.sk89q.worldedit.bukkit.BukkitServerInterface
-[23:06:07] [Server thread/INFO]: WEPIF: Using the Bukkit Permissions API.
-[23:06:08] [Server thread/INFO]: Using com.sk89q.worldedit.bukkit.adapter.impl.Spigot_v1_16_R3 as the Bukkit adapter
-[23:06:09] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
-[23:06:09] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
-[23:06:09] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
-[23:06:09] [Server thread/WARN]: You will not be offered any support as long as the server allows offline-mode players to join.
-[23:06:09] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
-[23:06:09] [Server thread/INFO]: Preparing level "world"
-[23:06:10] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
-[23:06:10] [Server thread/INFO]: Time elapsed: 217 ms
-[23:06:10] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
-[23:06:10] [Server thread/INFO]: Time elapsed: 71 ms
-[23:06:10] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
-[23:06:10] [Server thread/INFO]: Time elapsed: 68 ms
-[23:06:10] [Server thread/INFO]: [PlaceholderAPI] Enabling PlaceholderAPI v2.11.2
-[23:06:10] [Server thread/INFO]: [PlaceholderAPI] Fetching available expansion information...
-[23:06:10] [Server thread/INFO]: [BLib] Enabling BLib v1.6
-[23:06:10] [Server thread/INFO]: [BLib] Обнаруженная версия сервера: 1.16.5
-[23:06:11] [Server thread/INFO]: [AbstractMenus] Enabling AbstractMenus v1.15.2
-[23:06:11] [Server thread/INFO]: [AbstractMenus] Loaded head animation "anim_eye"
-[23:06:11] [Server thread/WARN]: [AbstractMenus] Vault doesn't installed. Economy actions and rules won't work
-[23:06:11] [Server thread/INFO]: [AbstractMenus] Using bundled temporary permissions manager
-[23:06:11] [Server thread/WARN]: [AbstractMenus] LuckPerms doesn't installed. After reload all assigned permissions will be removed
-[23:06:11] [Server thread/INFO]: [AbstractMenus] Using PlaceholderAPI
-[23:06:11] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: var [1.0]
-[23:06:11] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: varp [1.0]
-[23:06:11] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: vart [1.0]
-[23:06:11] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: varpt [1.0]
-[23:06:11] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: hanim [1.0]
-[23:06:11] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: ctg [1.0]
-[23:06:11] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: activator [1.0]
-[23:06:11] [Server thread/INFO]: [AbstractMenus] Loaded 2 menus
-[23:06:11] [Server thread/INFO]: [PlaceholderAPI] Placeholder expansion registration initializing...
-[23:06:11] [Server thread/INFO]: Running delayed init tasks
-[23:06:11] [Server thread/INFO]: Done (6.830s)! For help, type "help"
-[23:06:11] [Server thread/INFO]: Timings Reset
-[23:06:11] [Server thread/INFO]: 0 placeholder hook(s) registered!
-[23:06:12] [User Authenticator #1/INFO]: UUID of player pol1ce is 67c27007-0e89-32b0-80b2-b0ba0b2e76f0
-[23:06:13] [User Authenticator #1/INFO]: UUID of player pol1ce is 67c27007-0e89-32b0-80b2-b0ba0b2e76f0
-[23:06:13] [Server thread/INFO]: [PlaceholderAPI] An update for PlaceholderAPI (v2.12.2) is available at:
-[23:06:13] [Server thread/INFO]: [PlaceholderAPI] https://www.spigotmc.org/resources/placeholderapi.6245/
-[23:06:13] [Server thread/INFO]: pol1ce lost connection: Disconnected
-[23:06:14] [Server thread/INFO]: pol1ce joined the game
-[23:06:14] [Server thread/INFO]: pol1ce[/127.0.0.1:52665] logged in with entity id 45 at ([world]-100.5, 64.0, 165.5)
-[23:06:16] [Server thread/INFO]: pol1ce issued server command: /pl
-[23:06:19] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 5043ms or 100 ticks behind
-[23:06:20] [Server thread/INFO]: pol1ce issued server command: /gamemode creative
-[23:06:20] [Server thread/INFO]: [pol1ce: Set own game mode to Creative Mode]
-[23:06:29] [Server thread/INFO]: pol1ce lost connection: Disconnected
-[23:06:29] [Server thread/INFO]: pol1ce left the game
-[23:06:38] [User Authenticator #1/INFO]: UUID of player pol1ce is 67c27007-0e89-32b0-80b2-b0ba0b2e76f0
-[23:06:38] [Server thread/INFO]: pol1ce joined the game
-[23:06:38] [Server thread/INFO]: pol1ce[/127.0.0.1:53106] logged in with entity id 447 at ([world]-71.9470881920168, 74.88156728907994, 161.98077791569844)
-[23:06:42] [Server thread/INFO]: pol1ce issued server command: /pl
-[23:06:46] [Server thread/INFO]: pol1ce issued server command: /menus
+[01:20:11] [main/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[01:20:11] [main/INFO]: Reloading ResourceManager: Default, bukkit
+[01:20:12] [Worker-Main-2/INFO]: Loaded 7 recipes
+[01:20:13] [Server thread/INFO]: Starting minecraft server version 1.16.5
+[01:20:13] [Server thread/INFO]: Loading properties
+[01:20:13] [Server thread/INFO]: This server is running Purpur version git-Purpur-1171 (MC: 1.16.5) (Implementing API version 1.16.5-R0.1-SNAPSHOT)
+[01:20:13] [Server thread/INFO]: Debug logging is disabled
+[01:20:13] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[01:20:13] [Server thread/INFO]: Using 4 threads for Netty based IO
+[01:20:13] [Server thread/INFO]: Default game type: SURVIVAL
+[01:20:13] [Server thread/INFO]: Generating keypair
+[01:20:13] [Server thread/INFO]: Starting Minecraft server on 26.121.176.132:25565
+[01:20:13] [Server thread/INFO]: Using default channel type
+[01:20:13] [Server thread/INFO]: Tuinity: Using Java 11 compression from Velocity.
+[01:20:13] [Server thread/INFO]: Tuinity: Using Java cipher from Velocity.
+[01:20:15] [Server thread/INFO]: [PlaceholderAPI] Loading PlaceholderAPI v2.12.2
+[01:20:15] [Server thread/INFO]: [ClearLag] Loading ClearLag v3.2.2
+[01:20:15] [Server thread/INFO]: [CMILib] Loading CMILib v1.5.9.5
+[01:20:15] [Server thread/INFO]: [GoldPlateMoney] Loading GoldPlateMoney v1.0.0
+[01:20:15] [Server thread/INFO]: [ViaVersion] Loading ViaVersion v5.9.1
+[01:20:15] [Server thread/INFO]: [ViaVersion] ViaVersion 5.9.1 is now loaded. Registering protocol transformers and injecting...
+[01:20:16] [Via-Mappingloader-1/INFO]: [ViaVersion] Loading block connection mappings ...
+[01:20:16] [Server thread/INFO]: [ViaBackwards] Loading translations...
+[01:20:16] [Server thread/INFO]: [ViaBackwards] Registering protocols...
+[01:20:16] [Server thread/INFO]: [ViaRewind] Registering protocols...
+[01:20:16] [Server thread/INFO]: [ViaBackwards] Loading ViaBackwards v5.9.1
+[01:20:16] [Server thread/INFO]: [CMI] Loading CMI v9.8.5.1
+[01:20:16] [Server thread/INFO]: [LaggRemover] Loading LaggRemover v2.0.6
+[01:20:16] [Server thread/INFO]: [ViaRewind] Loading ViaRewind v4.1.1
+[01:20:16] [Server thread/INFO]: [LuckPerms] Loading LuckPerms v5.5.42
+[01:20:17] [Server thread/INFO]: [LuckPerms] Loading configuration...
+[01:20:17] [Server thread/INFO]: [Vault] Loading Vault v1.7.3-b131
+[01:20:17] [Server thread/INFO]: [Multiverse-Core] Loading Multiverse-Core v4.3.16
+[01:20:17] [Server thread/INFO]: [WorldEdit] Loading WorldEdit v7.2.10+1742f98
+[01:20:17] [Server thread/INFO]: Got request to register class com.sk89q.worldedit.bukkit.BukkitServerInterface with WorldEdit [com.sk89q.worldedit.extension.platform.PlatformManager@d23baed]
+[01:20:18] [Server thread/INFO]: [Essentials] Loading Essentials v2.21.2
+[01:20:18] [Server thread/INFO]: [DeluxeMenus] Loading DeluxeMenus v1.14.1-Release
+[01:20:18] [Server thread/INFO]: [DeluxeMenus] NMS hook has been setup successfully!
+[01:20:18] [Server thread/INFO]: [EssentialsChat] Loading EssentialsChat v2.21.2
+[01:20:18] [Server thread/INFO]: [AuthMe] Loading AuthMe v5.6.0-bCUSTOM
+[01:20:18] [Server thread/INFO]: [TAB] Loading TAB v6.0.2
+[01:20:18] [Server thread/INFO]: [BLib] Loading BLib v1.6
+[01:20:18] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[01:20:18] [Server thread/INFO]: [ViaRewind] Enabling ViaRewind v4.1.1
+[01:20:18] [Server thread/INFO]: [LuckPerms] Enabling LuckPerms v5.5.42
+[01:20:18] [Server thread/INFO]:         __    
+[01:20:18] [Server thread/INFO]:   |    |__)   LuckPerms v5.5.42
+[01:20:18] [Server thread/INFO]:   |___ |      Running on Bukkit - Purpur
+[01:20:18] [Server thread/INFO]: 
+[01:20:18] [Server thread/INFO]: [LuckPerms] Loading storage provider... [H2]
+[01:20:19] [Server thread/INFO]: [LuckPerms] Loading internal permission managers...
+[01:20:19] [Server thread/INFO]: [LuckPerms] Performing initial data load...
+[01:20:19] [Server thread/INFO]: [LuckPerms] Successfully enabled. (took 1562ms)
+[01:20:19] [Server thread/INFO]: [Vault] Enabling Vault v1.7.3-b131
+[01:20:19] [Server thread/WARN]: [Vault] Loaded class com.earth2me.essentials.api.Economy from Essentials v2.21.2 which is not a depend, softdepend or loadbefore of this plugin.
+[01:20:19] [Server thread/INFO]: [Vault] [Economy] Essentials Economy found: Waiting
+[01:20:19] [Server thread/INFO]: [Vault] [Permission] SuperPermissions loaded as backup permission system.
+[01:20:19] [Server thread/INFO]: [Vault] Enabled Version 1.7.3-b131
+[01:20:19] [Server thread/INFO]: [LuckPerms] Registered Vault permission & chat hook.
+[01:20:19] [Server thread/INFO]: [WorldEdit] Enabling WorldEdit v7.2.10+1742f98
+[01:20:19] [Server thread/INFO]: Registering commands with com.sk89q.worldedit.bukkit.BukkitServerInterface
+[01:20:19] [Server thread/INFO]: WEPIF: Vault detected! Using Vault for permissions
+[01:20:20] [Server thread/INFO]: Using com.sk89q.worldedit.bukkit.adapter.impl.Spigot_v1_16_R3 as the Bukkit adapter
+[01:20:21] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[01:20:21] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
+[01:20:21] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[01:20:21] [Server thread/WARN]: You will not be offered any support as long as the server allows offline-mode players to join.
+[01:20:21] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[01:20:21] [Server thread/INFO]: Preparing level "?????°?????????? ?????°???? EL"
+[01:20:21] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[01:20:22] [Server thread/INFO]: Time elapsed: 211 ms
+[01:20:22] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
+[01:20:22] [Server thread/INFO]: Time elapsed: 89 ms
+[01:20:22] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
+[01:20:22] [Server thread/INFO]: Time elapsed: 95 ms
+[01:20:22] [Server thread/INFO]: [PlaceholderAPI] Enabling PlaceholderAPI v2.12.2
+[01:20:22] [Server thread/INFO]: [PlaceholderAPI] Fetching available expansion information...
+[01:20:22] [Server thread/INFO]: [ClearLag] Enabling ClearLag v3.2.2
+[01:20:22] [Server thread/INFO]: [ClearLag] Using version-adapter: LatestVersionAdapter
+[01:20:22] [Server thread/INFO]: [ClearLag] Loading modules...
+[01:20:22] [Server thread/INFO]: [ClearLag] Modules enabed, loading config values
+[01:20:22] [Server thread/INFO]: [ClearLag] Modules have been loaded!
+[01:20:22] [Server thread/INFO]: [ClearLag] Clearlag is now enabled!
+[01:20:22] [Server thread/INFO]: [CMILib] Enabling CMILib v1.5.9.5
+[01:20:22] [Thread-11/INFO]: [ClearLag] Checking for updates compatible with your bukkit version [1.16]...
+[01:20:22] [Server thread/INFO]: Server version detection by new method: v1_16_R3 Legacy: true Mojang Mappings: false
+[01:20:22] [Server thread/INFO]: Server version: v1_16_R3 - 1.16.5 - purpur  git-Purpur-1171 (MC: 1.16.5)
+[01:20:22] [Thread-11/INFO]: [ClearLag] No updates found!
+[01:20:23] [Server thread/INFO]: CMI hooked.
+[01:20:23] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: cmil [1.5.9.5]
+[01:20:23] [Server thread/INFO]: PlaceholderAPI hooked.
+[01:20:23] [Server thread/INFO]: Updated (EN) language file. Took 35ms
+[01:20:23] [Server thread/INFO]: [GoldPlateMoney] Enabling GoldPlateMoney v1.0.0
+[01:20:23] [Server thread/INFO]: [GoldPlateMoney] =========================================
+[01:20:23] [Server thread/INFO]: [GoldPlateMoney] GoldPlateMoney v1.0.0 включен!
+[01:20:23] [Server thread/INFO]: [GoldPlateMoney] Настройки: 2500 монет каждые 1 сек
+[01:20:23] [Server thread/INFO]: [GoldPlateMoney] Рабочая плита: -675 60 311 в spawn1
+[01:20:23] [Server thread/INFO]: [GoldPlateMoney] =========================================
+[01:20:23] [Server thread/INFO]: [ViaVersion] Enabling ViaVersion v5.9.1
+[01:20:23] [Server thread/INFO]: [ViaVersion] ViaVersion detected server version: 1.16.4-1.16.5 (754)
+[01:20:23] [Server thread/WARN]: [ViaVersion] Please update your Java runtime to at least Java 21 (your version is 17.0.12).
+[01:20:23] [Server thread/WARN]: [ViaVersion] At some point in the future, ViaVersion will no longer be compatible with this version of Java.
+[01:20:23] [Server thread/INFO]: [ViaBackwards] Enabling ViaBackwards v5.9.1
+[01:20:23] [Server thread/INFO]: [CMI] Enabling CMI v9.8.5.1
+[01:20:23] [Server thread/INFO]: _______________________________________________________
+[01:20:23] [Server thread/INFO]:  
+[01:20:23] [Server thread/INFO]:  ???????????   ???????
+[01:20:23] [Server thread/INFO]: ????????????? ????????
+[01:20:23] [Server thread/INFO]: ???     ??????????????
+[01:20:23] [Server thread/INFO]: ???     ??????????????
+[01:20:23] [Server thread/INFO]: ??????????? ??? ??????
+[01:20:23] [Server thread/INFO]:  ??????????     ??????
+[01:20:23] [Server thread/INFO]: _______________________________________________________
+[01:20:23] [Server thread/INFO]: Integrating PaperSpigot async methods
+[01:20:23] [Server thread/INFO]: Vault found. (Loaded: true)
+[01:20:23] [CMI-Thread-1/INFO]: Loaded (-) locale download into memory. Took 17ms
+[01:20:23] [Server thread/INFO]: Loaded (69) 69 Enabled and 0 Disabled modules into memory. Took 66ms
+[01:20:23] [Server thread/INFO]: Initialized Cipher256 AES
+[01:20:24] [Server thread/INFO]: Loaded (61) regular alias into memory. Took 63ms
+[01:20:24] [CMI-Thread-2/INFO]: Loaded (1) custom text's into memory. Took 15ms
+[01:20:24] [Server thread/INFO]: (RandomTeleportation) Can't find world with (world) name
+[01:20:24] [Server thread/INFO]: (RandomTeleportation) Can't find world with (world_nether) name
+[01:20:24] [Server thread/INFO]: (RandomTeleportation) Can't find world with (world_the_end) name
+[01:20:24] [Server thread/INFO]: (RandomTeleportation) Can't find world with ([B@3703f05d) name
+[01:20:24] [Server thread/INFO]: (RandomTeleportation) Can't find world with ([B@e596c25) name
+[01:20:24] [Server thread/INFO]: (RandomTeleportation) Can't find world with ([B@1137df4b) name
+[01:20:24] [Server thread/INFO]: (RandomTeleportation) Can't find world with ([B@16065dd9) name
+[01:20:24] [Server thread/INFO]: (RandomTeleportation) Can't find world with ([B@4e33a501) name
+[01:20:24] [Server thread/INFO]: (RandomTeleportation) Can't find world with ([B@7e661fbb) name
+[01:20:24] [Server thread/INFO]: (RandomTeleportation) Can't find world with ([B@129cb65f) name
+[01:20:24] [Server thread/INFO]: (RandomTeleportation) Can't find world with ([B@43485779) name
+[01:20:24] [Server thread/INFO]: (RandomTeleportation) Can't find world with ([B@3e6c9077) name
+[01:20:24] [Server thread/INFO]: (RandomTeleportation) Can't find world with ([B@7dc922e8) name
+[01:20:24] [Server thread/INFO]: (RandomTeleportation) Can't find world with ([B@6683aa7c) name
+[01:20:24] [Server thread/INFO]: (RandomTeleportation) Can't find world with ([B@151cc1e0) name
+[01:20:24] [Server thread/INFO]: (RandomTeleportation) Can't find world with ([B@556e0ca8) name
+[01:20:24] [Server thread/INFO]: (RandomTeleportation) Can't find world with ([B@60495cae) name
+[01:20:24] [Server thread/INFO]: (RandomTeleportation) Can't find world with ([B@5f47713f) name
+[01:20:24] [Server thread/INFO]: (RandomTeleportation) Can't find world with ([B@2dc6abe1) name
+[01:20:24] [Server thread/INFO]: (RandomTeleportation) Can't find world with ([B@26222531) name
+[01:20:24] [Server thread/INFO]: (RandomTeleportation) Can't find world with ([B@b5003b3) name
+[01:20:24] [Server thread/INFO]: (RandomTeleportation) Can't find world with ([B@4629c7b3) name
+[01:20:24] [Server thread/INFO]: (RandomTeleportation) Can't find world with ([B@594a2522) name
+[01:20:24] [Server thread/INFO]: (RandomTeleportation) Can't find world with ([B@52b0b0ef) name
+[01:20:24] [Server thread/INFO]: (RandomTeleportation) Can't find world with ([B@5e1abe14) name
+[01:20:24] [Server thread/INFO]: (RandomTeleportation) Can't find world with ([B@32951399) name
+[01:20:24] [Server thread/INFO]: (RandomTeleportation) Can't find world with ([B@4ef61f49) name
+[01:20:24] [Server thread/INFO]: (RandomTeleportation) Can't find world with ([B@b9096f9) name
+[01:20:24] [Server thread/INFO]: (RandomTeleportation) Can't find world with ([B@18925376) name
+[01:20:24] [Server thread/INFO]: (RandomTeleportation) Can't find world with ([B@5bc73eae) name
+[01:20:24] [Server thread/INFO]: (RandomTeleportation) Can't find world with ([B@6b2b0a99) name
+[01:20:24] [Server thread/INFO]: (RandomTeleportation) Can't find world with ([B@7a3326a0) name
+[01:20:24] [Server thread/INFO]: (RandomTeleportation) Can't find world with ([B@2b3c48cc) name
+[01:20:24] [Server thread/INFO]: (RandomTeleportation) Can't find world with ([B@e8ab1b8) name
+[01:20:24] [Server thread/INFO]: (RandomTeleportation) Can't find world with ([B@9adf24d) name
+[01:20:24] [Server thread/INFO]: (RandomTeleportation) Can't find world with ([B@3e1bf5c1) name
+[01:20:24] [Server thread/INFO]: (RandomTeleportation) Can't find world with ([B@6858f64e) name
+[01:20:24] [Server thread/INFO]: (RandomTeleportation) Can't find world with ([B@8269da6) name
+[01:20:24] [Server thread/INFO]: (RandomTeleportation) Can't find world with ([B@7127ff97) name
+[01:20:24] [Server thread/INFO]: (RandomTeleportation) Can't find world with ([B@3cfad739) name
+[01:20:24] [Server thread/INFO]: (RandomTeleportation) Can't find world with ([B@1af053e) name
+[01:20:24] [Server thread/INFO]: (RandomTeleportation) Can't find world with ([B@51d2ee1d) name
+[01:20:24] [Server thread/INFO]: (RandomTeleportation) Can't find world with ([B@7d1c6937) name
+[01:20:24] [Server thread/INFO]: (RandomTeleportation) Can't find world with ([B@75d63a49) name
+[01:20:24] [Server thread/INFO]: (RandomTeleportation) Can't find world with ([B@4af101a2) name
+[01:20:24] [Server thread/INFO]: (RandomTeleportation) Can't find world with ([B@61dd2a6e) name
+[01:20:24] [Server thread/INFO]: (RandomTeleportation) Can't find world with ([B@55deca0d) name
+[01:20:24] [Server thread/INFO]: (RandomTeleportation) Can't find world with ([B@2a766d60) name
+[01:20:24] [Server thread/INFO]: (RandomTeleportation) Can't find world with ([B@2732c566) name
+[01:20:24] [Server thread/INFO]: (RandomTeleportation) Can't find world with ([B@dad9171) name
+[01:20:24] [Server thread/INFO]: (RandomTeleportation) Can't find world with ([B@4064ee1) name
+[01:20:24] [Server thread/INFO]: (RandomTeleportation) Can't find world with ([B@240602e0) name
+[01:20:24] [Server thread/INFO]: (RandomTeleportation) Can't find world with ([B@4c0d7cd) name
+[01:20:24] [Server thread/INFO]: (RandomTeleportation) Can't find world with ([B@598b010d) name
+[01:20:24] [Server thread/INFO]: (RandomTeleportation) Can't find world with ([B@6629495e) name
+[01:20:24] [Server thread/INFO]: (RandomTeleportation) Can't find world with ([B@2c8eb098) name
+[01:20:24] [Server thread/INFO]: (RandomTeleportation) Can't find world with ([B@4d2cb744) name
+[01:20:24] [Server thread/INFO]: (RandomTeleportation) Can't find world with ([B@1c8d2e45) name
+[01:20:24] [Server thread/INFO]: (RandomTeleportation) Can't find world with ([B@6b19ab83) name
+[01:20:24] [Server thread/INFO]: (RandomTeleportation) Can't find world with ([B@117a8d5c) name
+[01:20:24] [Server thread/INFO]: (RandomTeleportation) Can't find world with ([B@6450eed2) name
+[01:20:24] [Server thread/INFO]: (RandomTeleportation) Can't find world with ([B@2e4312af) name
+[01:20:24] [Server thread/INFO]: (RandomTeleportation) Can't find world with ([B@28eb4f38) name
+[01:20:24] [Server thread/INFO]: (RandomTeleportation) Can't find world with ([B@6bb24525) name
+[01:20:24] [Server thread/INFO]: (RandomTeleportation) Can't find world with ([B@7b9b50c6) name
+[01:20:24] [Server thread/INFO]: (RandomTeleportation) Can't find world with ([B@742955c5) name
+[01:20:24] [Server thread/INFO]: (RandomTeleportation) Can't find world with ([B@42f4be85) name
+[01:20:24] [Server thread/INFO]: (RandomTeleportation) Can't find world with ([B@4abd2785) name
+[01:20:24] [Server thread/INFO]: (RandomTeleportation) Can't find world with ([B@5867d25c) name
+[01:20:24] [Server thread/INFO]: (RandomTeleportation) Can't find world with ([B@48094f76) name
+[01:20:24] [Server thread/INFO]: (RandomTeleportation) Can't find world with ([B@5dd2303a) name
+[01:20:24] [Server thread/INFO]: (RandomTeleportation) Can't find world with ([B@d412f96) name
+[01:20:24] [Server thread/INFO]: (RandomTeleportation) Can't find world with ([B@568ab0d7) name
+[01:20:24] [Server thread/INFO]: (RandomTeleportation) Can't find world with ([B@d52864c) name
+[01:20:24] [Server thread/INFO]: (RandomTeleportation) Can't find world with ([B@33687e3f) name
+[01:20:24] [Server thread/INFO]: (RandomTeleportation) Can't find world with ([B@5422c5db) name
+[01:20:24] [Server thread/INFO]: (RandomTeleportation) Can't find world with ([B@6a1e0d1f) name
+[01:20:24] [Server thread/INFO]: (RandomTeleportation) Can't find world with ([B@572ef500) name
+[01:20:24] [Server thread/INFO]: (RandomTeleportation) Can't find world with ([B@5f0969b3) name
+[01:20:24] [Server thread/INFO]: (RandomTeleportation) Can't find world with ([B@3f1cc607) name
+[01:20:24] [Server thread/INFO]: (RandomTeleportation) Can't find world with ([B@331a4b3e) name
+[01:20:24] [Server thread/INFO]: SQLite 3.34.0 data base type detected
+[01:20:24] [Server thread/INFO]: Loaded (-) SqLite into memory. Took 328ms
+[01:20:24] [Server thread/WARN]: [CMI] Loaded class net.milkbowl.vault.economy.Economy from Vault v1.7.3-b131 which is not a depend, softdepend or loadbefore of this plugin.
+[01:20:24] [Server thread/INFO]: Vault was found - Enabling capabilities. Economy: EssentialsX Economy
+[01:20:24] [Server thread/INFO]: Can't determine point command default particle, defaultin to DUST
+[01:20:24] [Server thread/INFO]: Loaded (5) warning categories into memory. Took 1ms
+[01:20:24] [Server thread/INFO]: Loaded (3) warning commands into memory. Took 0ms
+[01:20:24] [Server thread/INFO]: Loaded (0) cooldowns into memory. Took 0ms
+[01:20:24] [Server thread/INFO]: Loaded (135) custom mob heads into memory. Took 18ms
+[01:20:25] [Server thread/INFO]: Failed to read itemStack entry, trying alternative approach
+[01:20:25] [Server thread/INFO]: Failed to read itemStack entry, trying alternative approach
+[01:20:25] [Server thread/INFO]: Failed to read itemStack entry, trying alternative approach
+[01:20:25] [Server thread/INFO]: Failed to read itemStack entry, trying alternative approach
+[01:20:25] [Server thread/INFO]: Failed to read itemStack entry, trying alternative approach
+[01:20:25] [Server thread/INFO]: Failed to read itemStack entry, trying alternative approach
+[01:20:25] [Server thread/INFO]: Failed to read itemStack entry, trying alternative approach
+[01:20:25] [Server thread/INFO]: Failed to read itemStack entry, trying alternative approach
+[01:20:25] [Server thread/INFO]: Failed to read itemStack entry, trying alternative approach
+[01:20:25] [Server thread/INFO]: Failed to read itemStack entry, trying alternative approach
+[01:20:25] [Server thread/INFO]: Failed to read itemStack entry, trying alternative approach
+[01:20:25] [Server thread/INFO]: Failed to read itemStack entry, trying alternative approach
+[01:20:25] [Server thread/INFO]: Loaded (5) kits into memory. Took 10ms
+[01:20:25] [Server thread/INFO]: Loaded (7) ranks into memory. Took 13ms
+[01:20:25] [Server thread/INFO]: Loaded (8) playtime rewards into memory. Took 5ms
+[01:20:25] [Server thread/INFO]: Executed Player DB querry in 12ms
+[01:20:25] [Server thread/INFO]: Loaded (1) player data into memory. Took 20ms
+[01:20:25] [Server thread/INFO]: Loaded (0) playtime records into memory. Took 0ms
+[01:20:25] [Server thread/INFO]: Loaded (0) playtime reward records into memory. Took 1ms
+[01:20:25] [Server thread/INFO]: Loaded (0) custom alias into memory. Took 0ms
+[01:20:25] [Server thread/INFO]: Loaded (-) Registered events into memory. Took 135ms
+[01:20:25] [Server thread/INFO]: Loaded (0) event action commands into memory. Took 5ms
+[01:20:25] [Server thread/INFO]: Loaded (EN) language file into memory. Took 216ms
+[01:20:25] [Server thread/WARN]: [CMILib] Loaded class com.Zrips.CMI.Containers.Snd from CMI v9.8.5.1 which is not a depend, softdepend or loadbefore of this plugin.
+[01:20:25] [Server thread/INFO]: Loaded (245) worth values into memory. Took 26ms
+[01:20:25] [Server thread/INFO]: VaultPermissions found. (Loaded: true)
+[01:20:25] [Server thread/INFO]: PlaceholderAPI found. (Loaded: true)
+[01:20:25] [Server thread/INFO]: Loaded (4) schedules into memory. Took 7ms
+[01:20:25] [Server thread/INFO]: Loaded (0) skin cache entries into memory. Took 0ms
+[01:20:25] [Server thread/INFO]: [CMI] Preloading playtimetop statistics
+[01:20:25] [Server thread/INFO]: Loaded (0) ArmorStand templates into memory. Took 0ms
+[01:20:25] [Server thread/INFO]: Version 9.8.5.1 has been enabled
+[01:20:25] [Server thread/INFO]: _______________________________________________________
+[01:20:25] [Server thread/INFO]: [LaggRemover] Enabling LaggRemover v2.0.6
+[01:20:25] [Server thread/INFO]: 
+[01:20:25] [Server thread/INFO]:     __                      ____                                         _    _____
+[01:20:25] [Server thread/INFO]:    / /   ____ _____ _____ _/ __ \___  ____ ___  ____ _   _____  _____   | |  / /__ \
+[01:20:25] [Server thread/INFO]:   / /   / __ `/ __ `/ __ `/ /_/ / _ \/ __ `__ \/ __ \ | / / _ \/ ___/   | | / /__/ /
+[01:20:25] [Server thread/INFO]:  / /___/ /_/ / /_/ / /_/ / _, _/  __/ / / / / / /_/ / |/ /  __/ /       | |/ // __/
+[01:20:25] [Server thread/INFO]: /_____/\__,_/\__, /\__, /_/ |_|\___/_/ /_/ /_/\____/|___/\___/_/        |___//____/
+[01:20:25] [Server thread/INFO]:             /____//____/
+[01:20:25] [Server thread/INFO]: 
+[01:20:25] [Server thread/INFO]: [LaggRemover] Loaded 0 module(s)
+[01:20:25] [Server thread/INFO]: [LaggRemover] The LaggRemover AI is now active!
+[01:20:25] [Server thread/INFO]: [LaggRemover] LaggRemover has been enabled!
+[01:20:25] [Server thread/INFO]: [Multiverse-Core] Enabling Multiverse-Core v4.3.16
+[01:20:25] [Server thread/WARN]: [Multiverse-Core] "Multiverse-Core v4.3.16" has registered a listener for org.bukkit.event.entity.EntityCreatePortalEvent on method "public void com.onarandombox.MultiverseCore.listeners.MVPortalListener.entityPortalCreate(org.bukkit.event.entity.EntityCreatePortalEvent)", but the event is Deprecated. "Server performance will be affected"; please notify the authors [dumptruckman, Rigby, fernferret, lithium3141, main--].
+[01:20:25] [Server thread/INFO]: [Multiverse-Core] We are aware of the warning about the deprecated event. There is no alternative that allows us to do what we need to do and performance impact is negligible. It is safe to ignore.
+[01:20:26] [Server thread/WARN]: [Multiverse-Core] Invalid world name '?????°?????????? ?????°???? EL'
+[01:20:26] [Server thread/WARN]: [Multiverse-Core] World name should not contain spaces or special characters!
+[01:20:26] [Server thread/WARN]: [Multiverse-Core] Invalid world name '?????°?????????? ?????°???? EL_nether'
+[01:20:26] [Server thread/WARN]: [Multiverse-Core] World name should not contain spaces or special characters!
+[01:20:26] [Server thread/WARN]: [Multiverse-Core] Invalid world name '?????°?????????? ?????°???? EL_the_end'
+[01:20:26] [Server thread/WARN]: [Multiverse-Core] World name should not contain spaces or special characters!
+[01:20:26] [Server thread/INFO]: [Multiverse-Core] 1 - World(s) loaded.
+[01:20:26] [Server thread/WARN]: [Multiverse-Core] The world specified as the spawn world (null) did not exist!!
+[01:20:26] [Server thread/WARN]: [Multiverse-Core] Buscript failed to load! The script command will be disabled! If you would like not to see this message, use `/mv conf enablebuscript false` to disable Buscript from loading.
+[01:20:26] [Server thread/INFO]: [Multiverse-Core] Version 4.3.16 (API v24) Enabled - By dumptruckman, Rigby, fernferret, lithium3141 and main--
+[01:20:26] [Server thread/INFO]: [Essentials] Enabling Essentials v2.21.2
+[01:20:26] [Server thread/INFO]: [Essentials] Attempting to convert old kits in config.yml to new kits.yml
+[01:20:26] [Server thread/INFO]: [Essentials] No kits found to migrate.
+[01:20:26] [Server thread/INFO]: [Essentials] Selected 1.8.3+ Spawner Item Provider as the provider for SpawnerItemProvider
+[01:20:26] [Server thread/INFO]: [Essentials] Selected 1.12+ Spawner Block Provider as the provider for SpawnerBlockProvider
+[01:20:26] [Server thread/INFO]: [Essentials] Selected 1.14.4+ Persistent Data Container Provider as the provider for PersistentDataProvider
+[01:20:26] [Server thread/INFO]: [Essentials] Selected Reflection Formatted Command Alias Provider as the provider for FormattedCommandAliasProvider
+[01:20:26] [Server thread/INFO]: [Essentials] Selected Paper Serialization Provider as the provider for SerializationProvider
+[01:20:26] [Server thread/INFO]: [Essentials] Selected Paper Tick Count Provider as the provider for TickCountProvider
+[01:20:26] [Server thread/INFO]: [Essentials] Selected Legacy Damage Event Provider as the provider for DamageEventProvider
+[01:20:26] [Server thread/INFO]: [Essentials] Selected Reflection Online Mode Provider as the provider for OnlineModeProvider
+[01:20:26] [Server thread/INFO]: [Essentials] Selected 1.9-1.20.4 Potion Meta Provider as the provider for PotionMetaProvider
+[01:20:26] [Server thread/INFO]: [Essentials] Selected 1.12.2+ Player Locale Provider as the provider for PlayerLocaleProvider
+[01:20:26] [Server thread/INFO]: [Essentials] Selected 1.14+ Sign Data Provider as the provider for SignDataProvider
+[01:20:26] [Server thread/INFO]: [Essentials] Selected 1.11+ Item Unbreakable Provider as the provider for ItemUnbreakableProvider
+[01:20:26] [Server thread/INFO]: [Essentials] Selected Reflection Sync Commands Provider as the provider for SyncCommandsProvider
+[01:20:26] [Server thread/INFO]: [Essentials] Selected Legacy Biome Name Provider as the provider for BiomeNameProvider
+[01:20:26] [Server thread/INFO]: [Essentials] Selected Paper Known Commands Provider as the provider for KnownCommandsProvider
+[01:20:26] [Server thread/INFO]: [Essentials] Selected Paper Server State Provider as the provider for ServerStateProvider
+[01:20:26] [Server thread/INFO]: [Essentials] Selected 1.13+ Spawn Egg Provider as the provider for SpawnEggProvider
+[01:20:26] [Server thread/INFO]: [Essentials] Selected Fixed Height World Info Provider as the provider for WorldInfoProvider
+[01:20:26] [Server thread/INFO]: [Essentials] Selected Paper Container Provider as the provider for ContainerProvider
+[01:20:26] [Server thread/INFO]: [Essentials] Selected Paper Material Tag Provider as the provider for MaterialTagProvider
+[01:20:26] [Server thread/INFO]: [Essentials] No provider found for BiomeKeyProvider, but it is nullable
+[01:20:26] [Server thread/INFO]: [Essentials] Selected Legacy InventoryView Abstract Class ABI Provider as the provider for InventoryViewProvider
+[01:20:26] [Server thread/INFO]: [Essentials] Selected 1.20.5+ Banner Data Provider as the provider for BannerDataProvider
+[01:20:27] [Server thread/INFO]: [Essentials] Loaded 43880 items from items.json.
+[01:20:27] [Server thread/INFO]: [Essentials] Using locale ru_RU
+[01:20:27] [Server thread/INFO]: [Essentials] ServerListPingEvent: Spigot iterator API
+[01:20:27] [Server thread/INFO]: [Essentials] Starting Metrics. Opt-out using the global bStats config.
+[01:20:27] [Server thread/INFO]: [Vault] [Economy] Essentials Economy hooked.
+[01:20:27] [Server thread/INFO]: [Essentials] Using Vault based permissions (LuckPerms)
+[01:20:27] [Server thread/INFO]: [DeluxeMenus] Enabling DeluxeMenus v1.14.1-Release
+[01:20:27] [Server thread/INFO]: [DeluxeMenus] Successfully hooked into PlaceholderAPI!
+[01:20:27] [Server thread/INFO]: [DeluxeMenus] Successfully hooked into Vault!
+[01:20:27] [Server thread/INFO]: [DeluxeMenus] 2 GUI menus loaded!
+[01:20:27] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: deluxemenus [1.14.1-Release]
+[01:20:27] [Server thread/INFO]: [DeluxeMenus] You are running the latest version of DeluxeMenus!
+[01:20:27] [Server thread/INFO]: [EssentialsChat] Enabling EssentialsChat v2.21.2
+[01:20:27] [Server thread/INFO]: [EssentialsChat] Starting Metrics. Opt-out using the global bStats config.
+[01:20:27] [Server thread/INFO]: [AuthMe] Enabling AuthMe v5.6.0-bCUSTOM
+[01:20:27] [Server thread/INFO]: [AuthMe] SQLite Setup finished
+[01:20:27] [Server thread/INFO]: [AuthMe] Hooked into LuckPerms!
+[01:20:27] [Server thread/INFO]: [AuthMe] Hooked successfully into Essentials
+[01:20:27] [Server thread/INFO]: [AuthMe] Hooked successfully into CMI
+[01:20:27] [Server thread/INFO]: [AuthMe] Hooked successfully into Multiverse-Core
+[01:20:27] [Server thread/INFO]: [AuthMe] Essentials spawn file not found: 'C:\Users\PC\Desktop\сервер\DesireCraft\plugins\Essentials\spawn.yml'
+[01:20:27] [Server thread/WARN]: [AuthMe] WARNING! The protectInventory feature requires ProtocolLib! Disabling it...
+[01:20:28] [Server thread/INFO]: [AuthMe] AuthMe 5.6.0 build n.CUSTOM successfully enabled!
+[01:20:28] [Server thread/INFO]: [TAB] Enabling TAB v6.0.2
+[01:20:28] [Server thread/INFO]: [TAB] Found NMS implementation: me.neznamy.tab.platforms.bukkit.v1_16_R3.NMSImplementationProvider
+[01:20:28] [Server thread/INFO]: [TAB] [WARN] [config.yml] scoreboard: Scoreboard "scoreboard1" has no display condition set, however, there is another scoreboard in the chain (scoreboardorange). Scoreboards are checked from top to bottom until a scoreboard with meeting condition or no condition is found. Because of this, the scoreboard (scoreboardorange) after the no-condition scoreboard (scoreboard1) will never be displayed. Unless this is intentional to externally display the scoreboard (commands, API), this is a mistake.
+[01:20:28] [Server thread/INFO]: [TAB] [WARN] [config.yml] scoreboard: Scoreboard "scoreboard1" has no display condition set, however, there is another scoreboard in the chain (scoreboardyellow). Scoreboards are checked from top to bottom until a scoreboard with meeting condition or no condition is found. Because of this, the scoreboard (scoreboardyellow) after the no-condition scoreboard (scoreboard1) will never be displayed. Unless this is intentional to externally display the scoreboard (commands, API), this is a mistake.
+[01:20:28] [Server thread/INFO]: [TAB] [WARN] [config.yml] scoreboard: Scoreboard "scoreboard1" has no display condition set, however, there is another scoreboard in the chain (scoreboardgren). Scoreboards are checked from top to bottom until a scoreboard with meeting condition or no condition is found. Because of this, the scoreboard (scoreboardgren) after the no-condition scoreboard (scoreboard1) will never be displayed. Unless this is intentional to externally display the scoreboard (commands, API), this is a mistake.
+[01:20:28] [Server thread/INFO]: [TAB] [WARN] [config.yml] scoreboard: Scoreboard "scoreboard1" has no display condition set, however, there is another scoreboard in the chain (scoreboardblue). Scoreboards are checked from top to bottom until a scoreboard with meeting condition or no condition is found. Because of this, the scoreboard (scoreboardblue) after the no-condition scoreboard (scoreboard1) will never be displayed. Unless this is intentional to externally display the scoreboard (commands, API), this is a mistake.
+[01:20:28] [Server thread/INFO]: [TAB] [WARN] [config.yml] scoreboard: Scoreboard "scoreboard1" has no display condition set, however, there is another scoreboard in the chain (scoreboardpink). Scoreboards are checked from top to bottom until a scoreboard with meeting condition or no condition is found. Because of this, the scoreboard (scoreboardpink) after the no-condition scoreboard (scoreboard1) will never be displayed. Unless this is intentional to externally display the scoreboard (commands, API), this is a mistake.
+[01:20:28] [Server thread/INFO]: [TAB] [WARN] [config.yml] scoreboard: Scoreboard "scoreboard1" has no display condition set, however, there is another scoreboard in the chain (scoreboardrussia). Scoreboards are checked from top to bottom until a scoreboard with meeting condition or no condition is found. Because of this, the scoreboard (scoreboardrussia) after the no-condition scoreboard (scoreboard1) will never be displayed. Unless this is intentional to externally display the scoreboard (commands, API), this is a mistake.
+[01:20:28] [Server thread/INFO]: [TAB] [WARN] [config.yml] scoreboard: Scoreboard "scoreboard1" has no display condition set, however, there is another scoreboard in the chain (scoreboardkor). Scoreboards are checked from top to bottom until a scoreboard with meeting condition or no condition is found. Because of this, the scoreboard (scoreboardkor) after the no-condition scoreboard (scoreboard1) will never be displayed. Unless this is intentional to externally display the scoreboard (commands, API), this is a mistake.
+[01:20:28] [Server thread/INFO]: [TAB] [WARN] [config.yml] proxy-support: Missing configuration section "proxy-support.type" of type String, using default value PLUGIN.
+[01:20:28] [Server thread/INFO]: [TAB] [WARN] [config.yml] proxy-support.plugin: Missing configuration section "proxy-support.plugin.name" of type String, using default value RedisBungee.
+[01:20:28] [Server thread/INFO]: [TAB] [WARN] [config.yml] proxy-support.redis: Missing configuration section "proxy-support.redis.url" of type String, using default value redis://:password@localhost:6379/0.
+[01:20:28] [Server thread/INFO]: [TAB] [WARN] [config.yml] proxy-support.rabbitmq: Missing configuration section "proxy-support.rabbitmq.exchange" of type String, using default value plugin.
+[01:20:28] [Server thread/INFO]: [TAB] [WARN] [config.yml] proxy-support.rabbitmq: Missing configuration section "proxy-support.rabbitmq.url" of type String, using default value amqp://guest:guest@localhost:5672/%2F.
+[01:20:28] [Server thread/INFO]: [TAB] [WARN] [animations.yml] .barcolor: Configuration section ".barcolor.change-interval" is expected to be of type Integer, but was BigInteger
+[01:20:28] [Server thread/INFO]: [TAB] [WARN] [animations.yml] .barcolor: Animation "barcolor" does not define change-interval! Did you forget to configure it? Using 1000.
+[01:20:28] [Server thread/INFO]: [TAB] [WARN] [animations.yml] .bartext: Configuration section ".bartext.change-interval" is expected to be of type Integer, but was BigInteger
+[01:20:28] [Server thread/INFO]: [TAB] [WARN] [animations.yml] .bartext: Animation "bartext" does not define change-interval! Did you forget to configure it? Using 1000.
+[01:20:28] [Server thread/INFO]: [TAB] [WARN] [users.yml] Unknown property "abovename" defined for user "_NEZNAMY_". Valid properties: [tagprefix, tagsuffix, tabprefix, customtabname, tabsuffix]
+[01:20:28] [Server thread/INFO]: [TAB] [WARN] [users.yml] Unknown property "belowname" defined for user "_NEZNAMY_". Valid properties: [tagprefix, tagsuffix, tabprefix, customtabname, tabsuffix]
+[01:20:28] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: tab [6.0.2]
+[01:20:28] [Server thread/INFO]: [TAB] [WARN] Found a total of 18 issues.
+[01:20:28] [Server thread/INFO]: [TAB] Enabled in 235ms
+[01:20:28] [Server thread/INFO]: [BLib] Enabling BLib v1.6
+[01:20:28] [Server thread/INFO]: [BLib] Обнаруженная версия сервера: 1.16.5
+[01:20:28] [Server thread/INFO]: [PlaceholderAPI] Placeholder expansion registration initializing...
+[01:20:28] [Server thread/INFO]: 0 placeholder hook(s) registered!
+[01:20:28] [Server thread/INFO]: Running delayed init tasks
+[01:20:28] [Craft Scheduler Thread - 0 - ViaVersion/INFO]: [ViaVersion] Finished mapping loading, shutting down loader executor.
+[01:20:28] [Server thread/WARN]: [CMI] Loaded class net.luckperms.api.LuckPerms from LuckPerms v5.5.42 which is not a depend, softdepend or loadbefore of this plugin.
+[01:20:28] [Server thread/INFO]: [CMI] Permission plugin: LuckPerms5.5.42
+[01:20:28] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: cmi [9.8.5.1]
+[01:20:28] [Server thread/INFO]: [CMI] PlaceholderAPI hooked.
+[01:20:28] [Server thread/INFO]: [Essentials] Essentials found a compatible payment resolution method: Vault Compatibility Layer (v1.7.3-b131)!
+[01:20:28] [Craft Scheduler Thread - 8 - Essentials/INFO]: [Essentials] Получение информации о версии...
+[01:20:28] [Server thread/INFO]: Done (15.257s)! For help, type "help"
+[01:20:28] [Craft Scheduler Thread - 11 - AuthMe/INFO]: [AuthMe] Downloading GEO IP database, because the old database is older than 30 days or doesn't exist
+[01:20:28] [Server thread/INFO]: Timings Reset
+[01:20:28] [Craft Scheduler Thread - 17 - Vault/INFO]: [Vault] Checking for Updates ... 
+[01:20:28] [Craft Scheduler Thread - 2 - CMILib/INFO]: New version of CMILib was detected. Please update it (1.5.9.5 -> 1.5.9.6)
+[01:20:28] [Craft Scheduler Thread - 11 - AuthMe/WARN]: [AuthMe] No MaxMind credentials found in the configuration file! GeoIp protections will be disabled.
+[01:20:28] [Craft Scheduler Thread - 11 - AuthMe/INFO]: [AuthMe] There is no newer GEO IP database uploaded to MaxMind. Using the old one for now.
+[01:20:28] [Craft Scheduler Thread - 11 - AuthMe/WARN]: [AuthMe] Could not download GeoLiteAPI database [FileNotFoundException]: plugins\AuthMe\GeoLite2-Country.mmdb (Не удается найти указанный файл)
+[01:20:28] [Craft Scheduler Thread - 17 - Vault/WARN]: [Vault] No files found, or Feed URL is bad.
+[01:20:28] [Craft Scheduler Thread - 17 - Vault/INFO]: [Vault] No new version available
+[01:20:49] [User Authenticator #1/INFO]: UUID of player pol1ce is 67c27007-0e89-32b0-80b2-b0ba0b2e76f0
+[01:20:49] [Server thread/INFO]: [CMIL] Cant find attribute: SCALE
+[01:20:49] [Server thread/INFO]: pol1ce joined the game
+[01:20:50] [Server thread/INFO]: pol1ce[/26.121.176.132:54795] logged in with entity id 224 at ([spawn1]-674.3570404105502, 61.0, 311.82210107924436)
+[01:20:50] [Server thread/INFO]: [Essentials] CONSOLE issued server command: /eco give pol1ce 2500
+[01:20:50] [Server thread/INFO]: $2,500 зачислено на счёт pol1ce. Текущий баланс: $747,700
+[01:20:50] [Server thread/INFO]: [GoldPlateMoney] [GoldPlateMoney] +2500 монет для pol1ce
+[01:20:52] [Server thread/INFO]: [Essentials] CONSOLE issued server command: /eco give pol1ce 2500
+[01:20:52] [Server thread/INFO]: $2,500 зачислено на счёт pol1ce. Текущий баланс: $750,200
+[01:20:52] [Server thread/INFO]: [GoldPlateMoney] [GoldPlateMoney] +2500 монет для pol1ce
+[01:20:54] [Server thread/INFO]: [Essentials] CONSOLE issued server command: /eco give pol1ce 2500
+[01:20:54] [Server thread/INFO]: $2,500 зачислено на счёт pol1ce. Текущий баланс: $752,700
+[01:20:54] [Server thread/INFO]: [GoldPlateMoney] [GoldPlateMoney] +2500 монет для pol1ce
+[01:20:55] [Server thread/INFO]: [Essentials] CONSOLE issued server command: /eco give pol1ce 2500
+[01:20:55] [Server thread/INFO]: $2,500 зачислено на счёт pol1ce. Текущий баланс: $755,200
+[01:20:55] [Server thread/INFO]: [GoldPlateMoney] [GoldPlateMoney] +2500 монет для pol1ce
+[01:20:56] [Craft Scheduler Thread - 11 - AuthMe/INFO]: [AuthMe] pol1ce logged in 26.121.176.132
+[01:20:57] [Server thread/INFO]: [Essentials] CONSOLE issued server command: /eco give pol1ce 2500
+[01:20:57] [Server thread/INFO]: $2,500 зачислено на счёт pol1ce. Текущий баланс: $757,700
+[01:20:57] [Server thread/INFO]: [GoldPlateMoney] [GoldPlateMoney] +2500 монет для pol1ce
+[01:20:59] [Server thread/INFO]: [Essentials] CONSOLE issued server command: /eco give pol1ce 2500
+[01:20:59] [Server thread/INFO]: $2,500 зачислено на счёт pol1ce. Текущий баланс: $760,200
+[01:20:59] [Server thread/INFO]: [GoldPlateMoney] [GoldPlateMoney] +2500 монет для pol1ce
+[01:21:00] [Server thread/INFO]: [Essentials] CONSOLE issued server command: /eco give pol1ce 2500
+[01:21:00] [Server thread/INFO]: $2,500 зачислено на счёт pol1ce. Текущий баланс: $762,700
+[01:21:00] [Server thread/INFO]: [GoldPlateMoney] [GoldPlateMoney] +2500 монет для pol1ce
+[01:21:02] [Server thread/INFO]: pol1ce issued server command: /gm 1
+[01:21:13] [Server thread/INFO]: pol1ce issued server command: /gm 0
+[01:21:18] [Server thread/INFO]: pol1ce issued server command: /gm 1
+[01:21:34] [Server thread/INFO]: pol1ce issued server command: /plita debug
+[01:21:40] [Server thread/INFO]: pol1ce issued server command: /plita setplate
+[01:21:40] [Server thread/INFO]: [GoldPlateMoney] Плита установлена на -675.0 60.0 312.0
+[01:21:41] [Server thread/INFO]: pol1ce issued server command: /plita debug
+[01:21:43] [Server thread/INFO]: pol1ce issued server command: /gm 0
+[01:21:44] [Server thread/INFO]: [Essentials] CONSOLE issued server command: /eco give pol1ce 2500
+[01:21:44] [Server thread/INFO]: $2,500 зачислено на счёт pol1ce. Текущий баланс: $765,200
+[01:21:44] [Server thread/INFO]: [GoldPlateMoney] [GoldPlateMoney] +2500 монет для pol1ce
+[01:21:45] [Server thread/INFO]: [Essentials] CONSOLE issued server command: /eco give pol1ce 2500
+[01:21:45] [Server thread/INFO]: $2,500 зачислено на счёт pol1ce. Текущий баланс: $767,700
+[01:21:45] [Server thread/INFO]: [GoldPlateMoney] [GoldPlateMoney] +2500 монет для pol1ce
+[01:21:46] [Server thread/INFO]: [Essentials] CONSOLE issued server command: /eco give pol1ce 2500
+[01:21:46] [Server thread/INFO]: $2,500 зачислено на счёт pol1ce. Текущий баланс: $770,200
+[01:21:46] [Server thread/INFO]: [GoldPlateMoney] [GoldPlateMoney] +2500 монет для pol1ce
+[01:21:48] [Server thread/INFO]: [Essentials] CONSOLE issued server command: /eco give pol1ce 2500
+[01:21:48] [Server thread/INFO]: $2,500 зачислено на счёт pol1ce. Текущий баланс: $772,700
+[01:21:48] [Server thread/INFO]: [GoldPlateMoney] [GoldPlateMoney] +2500 монет для pol1ce
+[01:21:49] [Server thread/INFO]: [Essentials] CONSOLE issued server command: /eco give pol1ce 2500
+[01:21:49] [Server thread/INFO]: $2,500 зачислено на счёт pol1ce. Текущий баланс: $775,200
+[01:21:49] [Server thread/INFO]: [GoldPlateMoney] [GoldPlateMoney] +2500 монет для pol1ce
+[01:21:50] [Server thread/INFO]: [Essentials] CONSOLE issued server command: /eco give pol1ce 2500
+[01:21:50] [Server thread/INFO]: $2,500 зачислено на счёт pol1ce. Текущий баланс: $777,700
+[01:21:50] [Server thread/INFO]: [GoldPlateMoney] [GoldPlateMoney] +2500 монет для pol1ce
+[01:21:51] [Server thread/INFO]: [Essentials] CONSOLE issued server command: /eco give pol1ce 2500
+[01:21:51] [Server thread/INFO]: $2,500 зачислено на счёт pol1ce. Текущий баланс: $780,200
+[01:21:51] [Server thread/INFO]: [GoldPlateMoney] [GoldPlateMoney] +2500 монет для pol1ce
+[01:21:53] [Server thread/INFO]: [Essentials] CONSOLE issued server command: /eco give pol1ce 2500
+[01:21:53] [Server thread/INFO]: $2,500 зачислено на счёт pol1ce. Текущий баланс: $782,700
+[01:21:53] [Server thread/INFO]: [GoldPlateMoney] [GoldPlateMoney] +2500 монет для pol1ce
+[01:21:54] [Server thread/INFO]: pol1ce issued server command: /gm 1

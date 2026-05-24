@@ -1,0 +1,70 @@
+25.01.2024 - 15:06:09 - [TAB v3.1.2] An error was thrown when executing task
+25.01.2024 - 15:06:09 - java.lang.NullPointerException: Cannot invoke "me.neznamy.tab.api.placeholder.PlaceholderManager.detectPlaceholders(String)" because the return value of "me.neznamy.tab.api.TabAPI.getPlaceholderManager()" is null
+25.01.2024 - 15:06:09 - 	at tab-v3_1_2.jar//me.neznamy.tab.shared.placeholders.TabPlaceholder.getNestedPlaceholders(TabPlaceholder.java:95)
+25.01.2024 - 15:06:09 - 	at tab-v3_1_2.jar//me.neznamy.tab.shared.placeholders.TabPlaceholder.setPlaceholders(TabPlaceholder.java:129)
+25.01.2024 - 15:06:09 - 	at tab-v3_1_2.jar//me.neznamy.tab.shared.placeholders.PlayerPlaceholderImpl.update(PlayerPlaceholderImpl.java:55)
+25.01.2024 - 15:06:09 - 	at tab-v3_1_2.jar//me.neznamy.tab.shared.features.PlaceholderManagerImpl.updatePlayerPlaceholder(PlaceholderManagerImpl.java:121)
+25.01.2024 - 15:06:09 - 	at tab-v3_1_2.jar//me.neznamy.tab.shared.features.PlaceholderManagerImpl.refresh(PlaceholderManagerImpl.java:67)
+25.01.2024 - 15:06:09 - 	at tab-v3_1_2.jar//me.neznamy.tab.shared.CpuManager.lambda$runMeasuredTask$8(CpuManager.java:351)
+25.01.2024 - 15:06:09 - 	at tab-v3_1_2.jar//me.neznamy.tab.shared.CpuManager.lambda$submit$1(CpuManager.java:113)
+25.01.2024 - 15:06:09 - 	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+25.01.2024 - 15:06:09 - 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+25.01.2024 - 15:06:09 - 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+25.01.2024 - 15:06:09 - 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+25.01.2024 - 15:06:09 - 	at java.base/java.lang.Thread.run(Thread.java:842)
+25.01.2024 - 15:06:29 - [TAB v3.1.2] An error was thrown when executing task
+25.01.2024 - 15:06:29 - java.lang.NullPointerException: null
+25.01.2024 - 15:08:32 - [TAB v3.1.2] An error was thrown when executing task
+25.01.2024 - 15:08:32 - java.lang.NullPointerException: null
+25.01.2024 - 17:20:51 - [TAB v3.1.2] An error was thrown when executing task
+25.01.2024 - 17:20:51 - java.lang.NullPointerException: null
+25.01.2024 - 17:30:59 - [TAB v3.1.2] An error was thrown when executing task
+25.01.2024 - 17:30:59 - java.lang.NullPointerException: null
+25.01.2024 - 17:46:15 - [TAB v3.1.2] An error was thrown when executing task
+25.01.2024 - 17:46:15 - java.lang.NullPointerException: null
+25.01.2024 - 17:49:09 - [TAB v3.1.2] An error was thrown when executing task
+25.01.2024 - 17:49:09 - java.lang.NullPointerException: null
+25.01.2024 - 20:10:31 - [TAB v3.1.2] An error was thrown when executing task
+25.01.2024 - 20:10:31 - java.lang.NullPointerException: Cannot invoke "me.neznamy.tab.api.placeholder.PlaceholderManager.detectPlaceholders(String)" because the return value of "me.neznamy.tab.api.TabAPI.getPlaceholderManager()" is null
+25.01.2024 - 20:10:31 - 	at tab-v3_1_2.jar//me.neznamy.tab.shared.placeholders.TabPlaceholder.getNestedPlaceholders(TabPlaceholder.java:95)
+25.01.2024 - 20:10:31 - 	at tab-v3_1_2.jar//me.neznamy.tab.shared.placeholders.TabPlaceholder.setPlaceholders(TabPlaceholder.java:129)
+25.01.2024 - 20:10:31 - 	at tab-v3_1_2.jar//me.neznamy.tab.shared.placeholders.PlayerPlaceholderImpl.update(PlayerPlaceholderImpl.java:55)
+25.01.2024 - 20:10:31 - 	at tab-v3_1_2.jar//me.neznamy.tab.shared.features.PlaceholderManagerImpl.updatePlayerPlaceholder(PlaceholderManagerImpl.java:121)
+25.01.2024 - 20:10:31 - 	at tab-v3_1_2.jar//me.neznamy.tab.shared.features.PlaceholderManagerImpl.refresh(PlaceholderManagerImpl.java:67)
+25.01.2024 - 20:10:31 - 	at tab-v3_1_2.jar//me.neznamy.tab.shared.CpuManager.lambda$runMeasuredTask$8(CpuManager.java:351)
+25.01.2024 - 20:10:31 - 	at tab-v3_1_2.jar//me.neznamy.tab.shared.CpuManager.lambda$submit$1(CpuManager.java:113)
+25.01.2024 - 20:10:31 - 	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+25.01.2024 - 20:10:31 - 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+25.01.2024 - 20:10:31 - 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+25.01.2024 - 20:10:31 - 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+25.01.2024 - 20:10:31 - 	at java.base/java.lang.Thread.run(Thread.java:842)
+03.02.2024 - 20:11:53 - [TAB v3.1.2] An error was thrown when executing task
+03.02.2024 - 20:11:53 - java.lang.NullPointerException: Cannot invoke "me.neznamy.tab.api.placeholder.PlaceholderManager.detectPlaceholders(String)" because the return value of "me.neznamy.tab.api.TabAPI.getPlaceholderManager()" is null
+03.02.2024 - 20:11:53 - 	at tab-v3_1_2.jar//me.neznamy.tab.shared.placeholders.TabPlaceholder.getNestedPlaceholders(TabPlaceholder.java:95)
+03.02.2024 - 20:11:53 - 	at tab-v3_1_2.jar//me.neznamy.tab.shared.placeholders.TabPlaceholder.setPlaceholders(TabPlaceholder.java:129)
+03.02.2024 - 20:11:53 - 	at tab-v3_1_2.jar//me.neznamy.tab.shared.placeholders.PlayerPlaceholderImpl.update(PlayerPlaceholderImpl.java:55)
+03.02.2024 - 20:11:53 - 	at tab-v3_1_2.jar//me.neznamy.tab.shared.features.PlaceholderManagerImpl.updatePlayerPlaceholder(PlaceholderManagerImpl.java:121)
+03.02.2024 - 20:11:53 - 	at tab-v3_1_2.jar//me.neznamy.tab.shared.features.PlaceholderManagerImpl.refresh(PlaceholderManagerImpl.java:67)
+03.02.2024 - 20:11:53 - 	at tab-v3_1_2.jar//me.neznamy.tab.shared.CpuManager.lambda$runMeasuredTask$8(CpuManager.java:351)
+03.02.2024 - 20:11:53 - 	at tab-v3_1_2.jar//me.neznamy.tab.shared.CpuManager.lambda$submit$1(CpuManager.java:113)
+03.02.2024 - 20:11:53 - 	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+03.02.2024 - 20:11:53 - 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+03.02.2024 - 20:11:53 - 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+03.02.2024 - 20:11:53 - 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+03.02.2024 - 20:11:53 - 	at java.base/java.lang.Thread.run(Thread.java:842)
+28.11.2025 - 17:16:30 - [TAB v4.1.6] An error was thrown when executing task
+28.11.2025 - 17:16:30 - java.lang.IllegalStateException: This instance got discarded because plugin was reloaded. Obtain a new instance.
+28.11.2025 - 17:16:30 - 	at TAB.jar//me.neznamy.tab.shared.features.types.TabFeature.ensureActive(TabFeature.java:26)
+28.11.2025 - 17:16:30 - 	at TAB.jar//me.neznamy.tab.shared.features.PlaceholderManagerImpl.getPlaceholder(PlaceholderManagerImpl.java:385)
+28.11.2025 - 17:16:30 - 	at TAB.jar//me.neznamy.tab.shared.features.PlaceholderManagerImpl.getPlaceholderUsage(PlaceholderManagerImpl.java:314)
+28.11.2025 - 17:16:30 - 	at TAB.jar//me.neznamy.tab.shared.features.PlaceholderManagerImpl.updatePlayerPlaceholders(PlaceholderManagerImpl.java:154)
+28.11.2025 - 17:16:30 - 	at TAB.jar//me.neznamy.tab.shared.features.PlaceholderManagerImpl.processRefreshResults(PlaceholderManagerImpl.java:96)
+28.11.2025 - 17:16:30 - 	at TAB.jar//me.neznamy.tab.shared.features.PlaceholderManagerImpl.lambda$refresh$0(PlaceholderManagerImpl.java:88)
+28.11.2025 - 17:16:30 - 	at TAB.jar//me.neznamy.tab.shared.cpu.CpuManager.run(CpuManager.java:171)
+28.11.2025 - 17:16:30 - 	at TAB.jar//me.neznamy.tab.shared.cpu.CpuManager.lambda$submit$1(CpuManager.java:96)
+28.11.2025 - 17:16:30 - 	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+28.11.2025 - 17:16:30 - 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+28.11.2025 - 17:16:30 - 	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+28.11.2025 - 17:16:30 - 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+28.11.2025 - 17:16:30 - 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+28.11.2025 - 17:16:30 - 	at java.base/java.lang.Thread.run(Thread.java:840)

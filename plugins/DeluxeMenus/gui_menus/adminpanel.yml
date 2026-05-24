@@ -1,0 +1,212 @@
+menu_title: '        &#542AFF&l[ &#542AFF&lА&#542AFF&lД&#542AFF&lМ&#542AFF&lИ&#542AFF&lН&#542AFF&l &#542AFF&lП&#542AFF&lА&#542AFF&lН&#542AFF&lЕ&#542AFF&lЛ&#542AFF&lЬ &#542AFF&l]'
+open_command:
+  - panel
+size: 54
+items:
+  # ==================== ВЕРХНЯЯ ЛИНИЯ (слоты 0-8) ====================
+  'purple_top_line':
+    material: PURPLE_STAINED_GLASS_PANE
+    slots:
+      - 0
+      - 1
+      - 2
+      - 3
+      - 4
+      - 5
+      - 6
+      - 7
+      - 8
+    display_name: ' '
+
+  # ==================== НИЖНЯЯ ЛИНИЯ (слоты 45-53) ====================
+  'purple_bottom_line':
+    material: PURPLE_STAINED_GLASS_PANE
+    slots:
+      - 45
+      - 46
+      - 47
+      - 48
+      - 49
+      - 50
+      - 51
+      - 52
+      - 53
+    display_name: ' '
+
+  # ==================== ЛЕВАЯ ВЕРТИКАЛЬНАЯ ЛИНИЯ (слоты 9, 18, 27, 36) ====================
+  'purple_left_line':
+    material: PURPLE_STAINED_GLASS_PANE
+    slots:
+      - 9
+      - 18
+      - 27
+      - 36
+    display_name: ' '
+
+  # ==================== ПРАВАЯ ВЕРТИКАЛЬНАЯ ЛИНИЯ (слоты 17, 26, 35, 44) ====================
+  'purple_right_line':
+    material: PURPLE_STAINED_GLASS_PANE
+    slots:
+      - 17
+      - 26
+      - 35
+      - 44
+    display_name: ' '
+
+  # ==================== УГЛЫ (верхние и нижние) ====================
+  'purple_corners':
+    material: PURPLE_STAINED_GLASS_PANE
+    slots:
+      - 0
+      - 8
+      - 45
+      - 53
+    display_name: ' '
+
+  # ==================== ВНУТРЕННЯЯ ПЛОЩАДЬ (ЧЁРНЫЕ ПАНЕЛИ) ====================
+  'black_filler':
+    material: BLACK_STAINED_GLASS_PANE
+    slots:
+      - 10
+      - 11
+      - 12
+      - 13
+      - 14
+      - 15
+      - 16
+      - 19
+      - 22
+      - 25
+      - 28
+      - 31
+      - 34
+      - 37
+      - 38
+      - 39
+      - 40
+      - 41
+      - 42
+      - 43
+    display_name: ' '
+
+  # ==================== АРЕНА СМЕРТИ (слот 20) ====================
+  'arena_of_death':
+    material: WITHER_ROSE
+    slot: 20
+    display_name: '&c&lАРЕНА СМЕРТИ'
+    lore:
+      - '&7--------------------------------'
+      - '&e📝 Нажмите чтобы редактировать'
+      - '&7--------------------------------'
+    left_click_commands:
+      - "[player] warp arena"
+      - "[message] &c🏟️ Вы телепортированы на Арену Смерти!"
+    right_click_commands:
+      - "[player] spawn"
+      - "[message] &e👋 Вы покинули арену"
+
+  # ==================== ХАЛЯВНЫЙ ЛУТ (слот 21) ====================
+  'free_loot':
+    material: SHULKER_BOX
+    slot: 21
+    display_name: '&a&lХАЛЯВНЫЙ ЛУТ'
+    lore:
+      - '&7--------------------------------'
+      - '&e📝 Нажмите чтобы редактировать'
+      - '&7--------------------------------'
+    left_click_commands:
+      - "[player] loot"
+      - "[message] &a🎁 Вы открыли Халявный Лут!"
+    right_click_commands:
+      - "[player] loot reset"
+      - "[message] &c🔄 Лут сброшен"
+
+  # ==================== КП (слот 23) ====================
+  'kp_staff':
+    material: TURTLE_EGG
+    slot: 23
+    display_name: '&b&lКП'
+    lore:
+      - '&7--------------------------------'
+      - '&e👀 Нажмите чтобы посмотреть помощников сервера'
+      - '&7--------------------------------'
+    left_click_commands:
+      - "[player] staff list"
+      - "[message] &b📋 Список помощников сервера открыт"
+
+  # ==================== НЕВИДИМОСТЬ (слот 24) ====================
+  'invisibility':
+    material: GLASS
+    slot: 24
+    display_name: '&f&lНЕВИДИМОСТЬ'
+    lore:
+      - '&7--------------------------------'
+      - '&e👻 Нажмите чтобы скрыть себя'
+      - '&7--------------------------------'
+    left_click_commands:
+      - "[player] vanish"
+      - "[message] &f👻 Режим невидимости включен!"
+    right_click_commands:
+      - "[player] vanish"
+      - "[message] &e👻 Режим невидимости выключен"
+
+  # ==================== ИВЕНТ БОЧКА (слот 29) ====================
+  'event_barrel':
+    material: BARREL
+    slot: 29
+    display_name: '&6&lИВЕНТ БОЧКА'
+    lore:
+      - '&7--------------------------------'
+      - '&e📝 Нажмите чтобы редактировать'
+      - '&7--------------------------------'
+    left_click_commands:
+      - "[player] event"
+      - "[message] &6📦 Вы открыли редактирование ивент-бочки!"
+    right_click_commands:
+      - "[player] event reset"
+      - "[message] &c🔄 Ивент-бочка сброшена"
+
+  # ==================== ПВП ИВЕНТ (слот 30) ====================
+  'pvp_event':
+    material: DIAMOND_SWORD
+    slot: 30
+    display_name: '&c&lПВП ИВЕНТ'
+    lore:
+      - '&7--------------------------------'
+      - '&e📝 Нажмите чтобы редактировать'
+      - '&7--------------------------------'
+    left_click_commands:
+      - "[player] pvp event start"
+      - "[message] &c⚔️ ПВП Ивент запущен!"
+    right_click_commands:
+      - "[player] pvp event stop"
+      - "[message] &e🛑 ПВП Ивент остановлен"
+
+  # ==================== ЖАЛОБЫ НА СОТРУДНИКОВ (слот 32) ====================
+  'staff_complaints':
+    material: WRITABLE_BOOK
+    slot: 32
+    display_name: '&c&lЖАЛОБЫ НА СОТРУДНИКОВ'
+    lore:
+      - '&7--------------------------------'
+      - '&e📖 Нажмите чтобы посмотреть жалобы'
+      - '&7--------------------------------'
+    left_click_commands:
+      - "[player] complaints list"
+      - "[message] &c📋 Список жалоб на сотрудников открыт"
+
+  # ==================== ВЫДАЧИ БАНОВ (слот 33) ====================
+  'ban_issuance':
+    material: TNT
+    slot: 33
+    display_name: '&c&lВЫДАЧИ БАНОВ'
+    lore:
+      - '&7--------------------------------'
+      - '&e💣 Нажмите чтобы забанить КП'
+      - '&7--------------------------------'
+    left_click_commands:
+      - "[player] ban kp"
+      - "[message] &c💣 КП забанен!"
+    right_click_commands:
+      - "[player] unban kp"
+      - "[message] &a✅ Бан с КП снят"

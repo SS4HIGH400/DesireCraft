@@ -1,0 +1,14 @@
+# GoldPlateMoney - Конфигурация
+# 
+# Количество монет за одну выдачу
+reward-amount: 2500
+reward-interval: 1
+message-reward: '&a+%reward% монет! Ты стоишь на рабочей плите!'
+enable-particles: true
+enable-sounds: true
+particle-type: HAPPY_VILLAGER
+sound-type: ENTITY_EXPERIENCE_ORB_PICKUP
+plate-x: -173.0
+plate-y: 75.0
+plate-z: 239.0
+plate-world: world

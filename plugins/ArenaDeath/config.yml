@@ -1,0 +1,49 @@
+arena:
+  world: "world"
+  x1: -182
+  y1: 76
+  z1: 229
+  x2: -164
+  y2: 155
+  z2: 249
+
+box:
+  material: "BLACK_STAINED_GLASS"
+
+reward-interval: 5
+event-duration: 300
+auto-start-delay-minutes: 60
+
+messages:
+  start: "&c&l⚔ ИВЕНТ АРЕНА СМЕРТИ НАЧАЛСЯ! ⚔"
+  end: "&c&l⚔ ИВЕНТ АРЕНА СМЕРТИ ЗАВЕРШЁН! ⚔"
+  reward: "&a✨ +%reward% ✨"
+  wall-active: "&c⚠ ЧЁРНЫЕ СТЕКЛЯННЫЕ СТЕНЫ АКТИВИРОВАНЫ! Выхода нет! ⚠"
+  wall-removed: "&a✓ Стены сняты! Выход свободен!"
+
+rewards:
+  money_1:
+    type: "money"
+    value: "100"
+    amount: 100
+    chance: 100.0
+  money_2:
+    type: "money"
+    value: "500"
+    amount: 500
+    chance: 50.0
+  ruby_1:
+    type: "ruby"
+    value: "5"
+    amount: 5
+    chance: 50.0
+  case_common:
+    type: "case"
+    value: "COMMON"
+    amount: 1
+    chance: 60.0
+  diamond:
+    type: "item"
+    value: "DIAMOND"
+    amount: 2
+    chance: 40.0

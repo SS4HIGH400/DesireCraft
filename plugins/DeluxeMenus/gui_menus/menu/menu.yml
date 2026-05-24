@@ -1,0 +1,231 @@
+menu_title: '              &#542AFF&l[ &#542AFF&lМ&#542AFF&lЕ&#542AFF&lН&#542AFF&lЮ&#542AFF&l ]'
+open_command:
+  - menu
+  - м
+  - главная
+size: 54
+items:
+  # ==================== ВЕРХНЯЯ ЛИНИЯ (слоты 0-8) ====================
+  'purple_top_line':
+    material: PURPLE_STAINED_GLASS_PANE
+    slots:
+      - 0
+      - 1
+      - 2
+      - 6
+      - 7
+      - 8
+    display_name: ' '
+
+  # ==================== ОРАНЖЕВОЕ СТЕКЛО (слоты 3, 4, 5) ====================
+  'orange_glass_top':
+    material: ORANGE_STAINED_GLASS_PANE
+    slots:
+      - 3
+      - 4
+      - 5
+    display_name: ' '
+
+  # ==================== НИЖНЯЯ ЛИНИЯ (слоты 45-53) ====================
+  'purple_bottom_line':
+    material: PURPLE_STAINED_GLASS_PANE
+    slots:
+      - 45
+      - 46
+      - 47
+      - 51
+      - 52
+      - 53
+    display_name: ' '
+
+  # ==================== ЛЕВАЯ ВЕРТИКАЛЬНАЯ ЛИНИЯ (слоты 9, 18, 27, 36) ====================
+  'purple_left_line':
+    material: PURPLE_STAINED_GLASS_PANE
+    slots:
+      - 9
+      - 18
+      - 27
+      - 36
+    display_name: ' '
+
+  # ==================== ПРАВАЯ ВЕРТИКАЛЬНАЯ ЛИНИЯ (слоты 17, 26, 35, 44) ====================
+  'purple_right_line':
+    material: PURPLE_STAINED_GLASS_PANE
+    slots:
+      - 17
+      - 26
+      - 35
+      - 44
+    display_name: ' '
+
+  # ==================== УГЛЫ (верхние и нижние) ====================
+  'purple_corners':
+    material: PURPLE_STAINED_GLASS_PANE
+    slots:
+      - 0
+      - 8
+      - 45
+      - 53
+    display_name: ' '
+
+  # ==================== ОРАНЖЕВОЕ СТЕКЛО ВНУТРИ (слоты 10, 11, 12, 14, 15, 16) ====================
+  'orange_glass_inner':
+    material: ORANGE_STAINED_GLASS_PANE
+    slots:
+      - 10
+      - 11
+      - 12
+      - 14
+      - 15
+      - 16
+    display_name: ' '
+
+  # ==================== ОРАНЖЕВЫЕ ПАНЕЛИ (слоты 19, 25, 28, 34, 37-43) ====================
+  'orange_panels':
+    material: ORANGE_STAINED_GLASS_PANE
+    slots:
+      - 19
+      - 25
+      - 28
+      - 34
+      - 37
+      - 38
+      - 39
+      - 40
+      - 41
+      - 42
+      - 43
+    display_name: ' '
+
+  # ==================== АРЕНА СМЕРТИ (слот 13) ====================
+  'arena_of_death':
+    material: RESPAWN_ANCHOR
+    slot: 13
+    display_name: '&#ffd600&lА&#fdc100&lР&#faab00&lЕ&#f89600&lН&#f58000&lА &#f36b00&lС&#f05600&lМ&#ee4000&lЕ&#eb2b00&lР&#e91500&lТ&#e60000&lИ'
+    lore:
+      - '&7--------------------------------'
+      - '&6✨ Особый ивент'
+      - '&7--------------------------------'
+    left_click_commands:
+      - "[player] warp arena"
+      - "[message] &c🏟️ Вы телепортированы на Арену Смерти!"
+    right_click_commands:
+      - "[player] spawn"
+      - "[message] &e👋 Вы покинули арену"
+
+  # ==================== КЛАНЫ (слот 21) ====================
+  'clans':
+    material: SHIELD
+    slot: 21
+    display_name: '&#ffd600&lК&#f9a100&lЛ&#f36b00&lА&#ec3600&lН&#e60000&lЫ'
+    lore:
+      - '&7--------------------------------'
+      - '&e📋 Управление кланами'
+      - '&7--------------------------------'
+    left_click_commands:
+      - "[player] clans"
+      - "[message] &b⚔️ Меню кланов открыто!"
+
+  # ==================== ОСОБЫЕ КРАФТЫ (слот 22) ====================
+  'special_crafts':
+    material: CRAFTING_TABLE
+    slot: 22
+    display_name: '&#ffd600&lО&#fdc300&lС&#faaf00&lО&#f89c00&lБ&#f68800&lЫ&#f47500&lЕ &#f16100&lК&#ef4e00&lР&#ed3a00&lА&#eb2700&lФ&#e81300&lТ&#e60000&lЫ'
+    lore:
+      - '&7--------------------------------'
+      - '&e🔧 Особые рецепты крафта'
+      - '&7--------------------------------'
+    left_click_commands:
+      - "[player] specialcraft"
+      - "[message] &a🔨 Меню особых крафтов открыто!"
+
+  # ==================== ОСОБЫЕ ЧАРЫ (слот 23) ====================
+  'special_enchants':
+    material: BOOK
+    slot: 23
+    display_name: '&#ffd600&lО&#fcbe00&lС&#f9a600&lО&#f78f00&lБ&#f47700&lЫ&#f15f00&lЕ &#ee4700&lЧ&#ec3000&lА&#e91800&lР&#e60000&lЫ'
+    lore:
+      - '&7--------------------------------'
+      - '&e📖 Особые зачарования'
+      - '&7--------------------------------'
+    left_click_commands:
+      - "[player] specialenchants"
+      - "[message] &d✨ Меню особых чар открыто!"
+
+  # ==================== ВАРПЫ СЕРВЕРА (слот 30) ====================
+  'server_warps':
+    material: OAK_SIGN
+    slot: 30
+    display_name: '&#ffd600&lВ&#fdc300&lА&#faaf00&lР&#f89c00&lП&#f68800&lЫ &#f47500&lС&#f16100&lЕ&#ef4e00&lР&#ed3a00&lВ&#eb2700&lЕ&#e81300&lР&#e60000&lА'
+    lore:
+      - '&7--------------------------------'
+      - '&e🌍 Быстрая телепортация по миру'
+      - '&7--------------------------------'
+    left_click_commands:
+      - "[player] warps"
+      - "[message] &e🗺️ Меню варпов открыто!"
+
+  # ==================== АУКЦИОН (слот 31) ====================
+  'auction':
+    material: SOUL_CAMPFIRE
+    slot: 31
+    display_name: '&#ffd600&lВ&#fdc300&lА&#faaf00&lР&#f89c00&lП&#f68800&lЫ &#f47500&lС&#f16100&lЕ&#ef4e00&lР&#ed3a00&lВ&#eb2700&lЕ&#e81300&lР&#e60000&lА'
+    lore:
+      - '&7--------------------------------'
+      - '&e💰 Торгуйтесь с другими игроками'
+      - '&7--------------------------------'
+    left_click_commands:
+      - "[player] auction"
+      - "[message] &6📊 Меню аукциона открыто!"
+
+  # ==================== НАСТРОЙКИ (слот 32) ====================
+  'settings':
+    material: PAINTING
+    slot: 32
+    display_name: '&#ffd600&lН&#fcbe00&lА&#f9a600&lС&#f78f00&lА&#f47700&lТ&#f15f00&lР&#ee4700&lО&#ec3000&lЙ&#e91800&lК&#e60000&lИ'
+    lore:
+      - '&7--------------------------------'
+      - '&e⚙️ Настройки сервера'
+      - '&7--------------------------------'
+    left_click_commands:
+      - "[player] settings"
+      - "[message] &a⚙️ Меню настроек открыто!"
+
+  # ==================== ПОМОЩЬ (слот 48) ====================
+  'help':
+    material: REDSTONE
+    slot: 48
+    display_name: '&#ffd600&lП&#faab00&lО&#f58000&lМ&#f05600&lО&#eb2b00&lЩ&#e60000&lЬ'
+    lore:
+      - '&7--------------------------------'
+      - '&e❓ Помощь по серверу'
+      - '&7--------------------------------'
+    left_click_commands:
+      - "[player] help"
+      - "[message] &c📖 Меню помощи открыто!"
+
+  # ==================== ДОНАТ (слот 49) ====================
+  'donate':
+    material: ENCHANTED_GOLDEN_APPLE
+    slot: 49
+    display_name: '&#ffd600&lД&#f9a100&lО&#f36b00&lН&#ec3600&lА&#e60000&lТ'
+    lore:
+      - '&7--------------------------------'
+      - '&e💎 Поддержите сервер'
+      - '&7--------------------------------'
+    left_click_commands:
+      - "[player] donate"
+      - "[message] &6💎 Меню доната открыто!"
+
+  # ==================== КОМАНДЫ (слот 50) ====================
+  'commands':
+    material: WRITABLE_BOOK
+    slot: 50
+    display_name: '&#ffd600&lК&#fbb200&lО&#f78f00&lМ&#f36b00&lА&#ee4700&lН&#ea2400&lД&#e60000&lЫ'
+    lore:
+      - '&7--------------------------------'
+      - '&e📋 Список команд сервера'
+      - '&7--------------------------------'
+    left_click_commands:
+      - "[player] commands"
+      - "[message] &a📋 Список команд открыт!"

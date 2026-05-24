@@ -1,0 +1,344 @@
+header-footer:
+  enabled: true
+  designs:
+    default:
+      display-condition: '%world%!=disabledworld'
+      header:
+      - '&#4A2CFF╔&#4A2CFF═&#4A2CFF═&#4A2CFF═&#4A2CFF═&#4A2CFF═&#4A2CFF═&#4A2CFF═&#4A2CFF═&#4A2CFF═&#4A2CFF═&#4A2CFF═&#4A2CFF═&#4A2CFF═&#4A2CFF═&#4A2CFF═&#4A2CFF═&#4A2CFF═&#4A2CFF═&#4A2CFF═&#4A2CFF═&#4A2CFF═&#4A2CFF═&#4A2CFF═&#4A2CFF═&#4A2CFF╗'
+      - '&#4a2cff&lD&#5c28e6&lE&#6e23cc&lS&#801fb3&lI&#921a99&lR&#a51680&lE &#b71266&lC&#c90d4d&lR&#db0933&lA&#ed041a&lF&#ff0000&lT'
+      - '&fРежим: &#ff0606&lА&#ff0505&lН&#ff0404&lА&#ff0303&lР&#ff0202&lХ&#ff0101&lИ&#ff0000&lЯ'
+      footer:
+      - '%animation:Welcome%'
+      - '%animation:Welcome2%'
+      - '&#4A2CFF╚&#4A2CFF═&#4A2CFF═&#4A2CFF═&#4A2CFF═&#4A2CFF═&#4A2CFF═&#4A2CFF═&#4A2CFF═&#4A2CFF═&#4A2CFF═&#4A2CFF═&#4A2CFF═&#4A2CFF═&#4A2CFF═&#4A2CFF═&#4A2CFF═&#4A2CFF═&#4A2CFF═&#4A2CFF═&#4A2CFF═&#4A2CFF═&#4A2CFF═&#4A2CFF═&#4A2CFF═&#4A2CFF═&#4A2CFF╝'
+
+tablist-name-formatting:
+  enabled: false
+  disable-condition: '%world%=disabledworld'
+
+scoreboard-teams:
+  enabled: true
+  enable-collision: true
+  invisible-nametags: false
+  sorting-types:
+  - GROUPS:owner,admin,start,youtube,sekscar,karatel,gerakl,gercog,knyaz,princ,titan,elite,glava,squid,aspid,hero,strazh,baron,default
+  case-sensitive-sorting: true
+  disable-condition: '%world%=disabledworld'
+  can-see-friendly-invisibles: false
+
+belowname-objective:
+  enabled: false
+  disable-condition: '%world%=world|%world%=lobby'
+  fancy-value-default: NPC
+  fancy-value: '&c%health%'
+  value: ' '
+  title: ' '
+
+prevent-spectator-effect:
+  enabled: false
+
+bossbar:
+  enabled: true
+  toggle-command: /bossbar
+  remember-toggle-choice: false
+  hidden-by-default: true
+  bars:
+    ServerInfo:
+      style: PROGRESS
+      color: '%animation:barcolor%'
+      progress: '%animation:bartext%'
+      text: '%animation:bartext%'
+
+per-world-playerlist:
+  enabled: false
+  allow-bypass-permission: false
+  ignore-effect-in-worlds:
+  - ignoredworld
+  - build
+  shared-playerlist-world-groups:
+    lobby:
+    - spawn
+    - lobby2
+    minigames:
+    - spawn
+    - bedwars
+
+scoreboard:
+  enabled: true
+  toggle-command: /sbtoggle
+  remember-toggle-choice: false
+  hidden-by-default: false
+  delay-on-join-milliseconds: 0
+  scoreboards:
+    scoreboard1:
+      title: '&#ff0606&lА&#ff0505&lН&#ff0404&lА&#ff0303&lР&#ff0202&lХ&#ff0101&lИ&#ff0000&lЯ'
+      lines:
+      - '&#4A2CFF&l╔══════════'
+      - '&#4A2CFF&l╠&#4A2CFF╣ &#4A2CFF%player_name%'
+      - '&#4A2CFF&l╠ &r&#00DAFB⭐&r&f Ранг: &r%leldesign_prefixcolor%%leldesign_prefix%'
+      - '&#4A2CFF&l╠ &x&f&f&f&f&0&0$ &fМонет: &x&f&f&f&f&0&0%vault_eco_balance_commas%'
+      - '&#4A2CFF&l╠ &r&x&0&0&f&f&0&0⛁ &fТокенов: &x&0&0&f&f&0&0%playerpoints_points_formatted%'
+      - '&#4A2CFF&l╠ #ac6ffc☠ &fЧерепков: #ac6ffc%bruhskullevent_balance%'
+      - '&#4A2CFF&l╠'
+      - '&#4A2CFF&l╠&#4A2CFF╣ &#4A2CFF&lСТАТИСТИКА'
+      - '&#4A2CFF&l╠ &r&fУбийств: &x&f&f&f&f&0&0%statistic_player_kills% 🗡'
+      - '&#4A2CFF&l╠ &rСмертей: &x&f&f&0&0&0&0%statistic_deaths% 🏹'
+      - '&#4A2CFF&l╠ &r&fНаиграно: &#01A4FF%statistic_hours_played%ч'
+      - '&#4A2CFF&l╠'
+      - '&#4A2CFF&l╠&#4A2CFF╣ &r&fДонат &a/don'
+      - '&#4A2CFF&l╚══════════'
+
+    scoreboardorange:
+      title: '&#ff0606&lА&#ff0505&lН&#ff0404&lА&#ff0303&lР&#ff0202&lХ&#ff0101&lИ&#ff0000&lЯ'
+      lines:
+      - '&#4A2CFF╔══════════'
+      - '&#4A2CFF╠&#4A2CFF╣ &#4A2CFF%player_name%'
+      - '&#4A2CFF╠ &r&#00DAFB⭐&r&f Ранг: &r%leldesign_prefixcolor%%leldesign_prefix%'
+      - '&#4A2CFF╠ &x&f&f&f&f&0&0$ &fМонет: &x&f&f&f&f&0&0%vault_eco_balance_commas%'
+      - '&#4A2CFF╠ &r&x&0&0&f&f&0&0⛁ &fТокенов: &x&0&0&f&f&0&0%playerpoints_points_formatted%'
+      - '&#4A2CFF╠'
+      - '&#4A2CFF╠&#4A2CFF╣ &#4A2CFF&lСТАТИСТИКА'
+      - '&#4A2CFF╠ &r&fУбийств: &x&f&f&f&f&0&0%statistic_player_kills% 🗡'
+      - '&#4A2CFF╠ &rСмертей: &x&f&f&0&0&0&0%statistic_deaths% 🏹'
+      - '&#4A2CFF╠ &r&fНаиграно: &#01A4FF%statistic_hours_played%ч'
+      - '&#4A2CFF╠'
+      - '&#4A2CFF╠&#4A2CFF╣ &r&fДонат &a/don'
+      - '&#4A2CFF╚══════════'
+
+    scoreboardyellow:
+      title: '&#ff0606&lА&#ff0505&lН&#ff0404&lА&#ff0303&lР&#ff0202&lХ&#ff0101&lИ&#ff0000&lЯ'
+      lines:
+      - '&#4A2CFF╔══════════'
+      - '&#4A2CFF╠&#4A2CFF╣ &#4A2CFF%player_name%'
+      - '&#4A2CFF╠ &r&#00DAFB⭐&r&f Ранг: &r%leldesign_prefixcolor%%leldesign_prefix%'
+      - '&#4A2CFF╠ &x&f&f&f&f&0&0$ &fМонет: &x&f&f&f&f&0&0%vault_eco_balance_commas%'
+      - '&#4A2CFF╠ &r&x&0&0&f&f&0&0⛁ &fТокенов: &x&0&0&f&f&0&0%playerpoints_points_formatted%'
+      - '&#4A2CFF╠'
+      - '&#4A2CFF╠&#4A2CFF╣ &#4A2CFF&lСТАТИСТИКА'
+      - '&#4A2CFF╠ &r&fУбийств: &x&f&f&f&f&0&0%statistic_player_kills% 🗡'
+      - '&#4A2CFF╠ &rСмертей: &x&f&f&0&0&0&0%statistic_deaths% 🏹'
+      - '&#4A2CFF╠ &r&fНаиграно: &#01A4FF%statistic_hours_played%ч'
+      - '&#4A2CFF╠'
+      - '&#4A2CFF╠&#4A2CFF╣ &r&fДонат &a/don'
+      - '&#4A2CFF╚══════════'
+
+    scoreboardgren:
+      title: '&#ff0606&lА&#ff0505&lН&#ff0404&lА&#ff0303&lР&#ff0202&lХ&#ff0101&lИ&#ff0000&lЯ'
+      lines:
+      - '&#4A2CFF╔══════════'
+      - '&#4A2CFF╠&#4A2CFF╣ &#4A2CFF%player_name%'
+      - '&#4A2CFF╠ &r&#00DAFB⭐&r&f Ранг: &r%leldesign_prefixcolor%%leldesign_prefix%'
+      - '&#4A2CFF╠ &x&f&f&f&f&0&0$ &fМонет: &x&f&f&f&f&0&0%vault_eco_balance_commas%'
+      - '&#4A2CFF╠ &r&x&0&0&f&f&0&0⛁ &fТокенов: &x&0&0&f&f&0&0%playerpoints_points_formatted%'
+      - '&#4A2CFF╠'
+      - '&#4A2CFF╠&#4A2CFF╣ &#4A2CFF&lСТАТИСТИКА'
+      - '&#4A2CFF╠ &r&fУбийств: &x&f&f&f&f&0&0%statistic_player_kills% 🗡'
+      - '&#4A2CFF╠ &rСмертей: &x&f&f&0&0&0&0%statistic_deaths% 🏹'
+      - '&#4A2CFF╠ &r&fНаиграно: &#01A4FF%statistic_hours_played%ч'
+      - '&#4A2CFF╠'
+      - '&#4A2CFF╠&#4A2CFF╣ &r&fДонат &a/don'
+      - '&#4A2CFF╚══════════'
+
+    scoreboardblue:
+      title: '&#ff0606&lА&#ff0505&lН&#ff0404&lА&#ff0303&lР&#ff0202&lХ&#ff0101&lИ&#ff0000&lЯ'
+      lines:
+      - '&#4A2CFF╔══════════'
+      - '&#4A2CFF╠&#4A2CFF╣ &#4A2CFF%player_name%'
+      - '&#4A2CFF╠ &r&#00DAFB⭐&r&f Ранг: &r%leldesign_prefixcolor%%leldesign_prefix%'
+      - '&#4A2CFF╠ &x&f&f&f&f&0&0$ &fМонет: &x&f&f&f&f&0&0%vault_eco_balance_commas%'
+      - '&#4A2CFF╠ &r&x&0&0&f&f&0&0⛁ &fТокенов: &x&0&0&f&f&0&0%playerpoints_points_formatted%'
+      - '&#4A2CFF╠'
+      - '&#4A2CFF╠&#4A2CFF╣ &#4A2CFF&lСТАТИСТИКА'
+      - '&#4A2CFF╠ &r&fУбийств: &x&f&f&f&f&0&0%statistic_player_kills% 🗡'
+      - '&#4A2CFF╠ &rСмертей: &x&f&f&0&0&0&0%statistic_deaths% 🏹'
+      - '&#4A2CFF╠ &r&fНаиграно: &#01A4FF%statistic_hours_played%ч'
+      - '&#4A2CFF╠'
+      - '&#4A2CFF╠&#4A2CFF╣ &r&fДонат &a/don'
+      - '&#4A2CFF╚══════════'
+
+    scoreboardpink:
+      title: '&#4A2CFF&l⚡ !&#4a2cff&lD&#5c28e6&lE&#6e23cc&lS&#801fb3&lI&#921a99&lR&#a51680&lE &#b71266&lC&#c90d4d&lR&#db0933&lA&#ed041a&lF&#ff0000&lT'
+      lines:
+      - '&#4A2CFF╔══════════'
+      - '&#4A2CFF╠&#4A2CFF╣ &#4A2CFF%player_name%'
+      - '&#4A2CFF╠ &r&#00DAFB⭐&r&f Ранг: &r%leldesign_prefixcolor%%leldesign_prefix%'
+      - '&#4A2CFF╠ &x&f&f&f&f&0&0$ &fМонет: &x&f&f&f&f&0&0%vault_eco_balance_commas%'
+      - '&#4A2CFF╠ &r&x&0&0&f&f&0&0⛁ &fТокенов: &x&0&0&f&f&0&0%playerpoints_points_formatted%'
+      - '&#4A2CFF╠'
+      - '&#4A2CFF╠&#4A2CFF╣ &#4A2CFF&lСТАТИСТИКА'
+      - '&#4A2CFF╠ &r&fУбийств: &x&f&f&f&f&0&0%statistic_player_kills% 🗡'
+      - '&#4A2CFF╠ &rСмертей: &x&f&f&0&0&0&0%statistic_deaths% 🏹'
+      - '&#4A2CFF╠ &r&fНаиграно: &#01A4FF%statistic_hours_played%ч'
+      - '&#4A2CFF╠'
+      - '&#4A2CFF╠&#4A2CFF╣ &r&fДонат &a/don'
+      - '&#4A2CFF╚══════════'
+
+    scoreboardrussia:
+      title: '&#4A2CFF&l⚡ !&#4a2cff&lD&#5c28e6&lE&#6e23cc&lS&#801fb3&lI&#921a99&lR&#a51680&lE &#b71266&lC&#c90d4d&lR&#db0933&lA&#ed041a&lF&#ff0000&lT'
+      lines:
+      - '&#4A2CFF╔══════════'
+      - '&#4A2CFF╠&#4A2CFF &#4A2CFF%player_name%'
+      - '&#4A2CFF╠ &r&#00DAFB⭐&r&f Ранг: &r%leldesign_prefixcolor%%leldesign_prefix%'
+      - '&#4A2CFF╠ &x&f&f&f&f&0&0$ &fМонет: &x&f&f&f&f&0&0%vault_eco_balance_commas%'
+      - '&#4A2CFF╠ &r&x&0&0&f&f&0&0⛁ &fТокенов: &x&0&0&f&f&0&0%playerpoints_points_formatted%'
+      - '&#4A2CFF╠'
+      - '&#4A2CFF╠&#4A2CFF╣ &#4A2CFF&lСТАТИСТИКА'
+      - '&#4A2CFF╠ &r&fУбийств: &x&f&f&f&f&0&0%statistic_player_kills% 🗡'
+      - '&#4A2CFF╠ &rСмертей: &x&f&f&0&0&0&0%statistic_deaths% 🏹'
+      - '&#4A2CFF╠ &r&fНаиграно: &#01A4FF%statistic_hours_played%ч'
+      - '&#4A2CFF╠'
+      - '&#4A2CFF╠&#4A2CFF╣ &r&fДонат &a/don'
+      - '&#4A2CFF╚══════════'
+
+    scoreboardkor:
+      title: '&#4A2CFF&l⚡ !&#4a2cff&lD&#5c28e6&lE&#6e23cc&lS&#801fb3&lI&#921a99&lR&#a51680&lE &#b71266&lC&#c90d4d&lR&#db0933&lA&#ed041a&lF&#ff0000&lT'
+      lines:
+      - '&#4A2CFF╔══════════'
+      - '&#4A2CFF╠&#4A2CFF╣ &#4A2CFF%player_name%'
+      - '&#4A2CFF╠ &r&#00DAFB⭐&r&f Ранг: &r%leldesign_prefixcolor%%leldesign_prefix%'
+      - '&#4A2CFF╠ &x&f&f&f&f&0&0$ &fМонет: &x&f&f&f&f&0&0%vault_eco_balance_commas%'
+      - '&#4A2CFF╠ &r&x&0&0&f&f&0&0⛁ &fТокенов: &x&0&0&f&f&0&0%playerpoints_points_formatted%'
+      - '&#4A2CFF╠'
+      - '&#4A2CFF╠&#4A2CFF╣ &#4A2CFF&lСТАТИСТИКА'
+      - '&#4A2CFF╠ &r&fУбийств: &x&f&f&f&f&0&0%statistic_player_kills% 🗡'
+      - '&#4A2CFF╠ &rСмертей: &x&f&f&0&0&0&0%statistic_deaths% 🏹'
+      - '&#4A2CFF╠ &r&fНаиграно: &#01A4FF%statistic_hours_played%ч'
+      - '&#4A2CFF╠'
+      - '&#4A2CFF╠&#4A2CFF╣ &r&fДонат &a/don'
+      - '&#4A2CFF╚══════════'
+
+ping-spoof:
+  enabled: false
+  value: 0
+
+placeholders:
+  date-format: dd.MM.yyyy
+  time-format: '[HH:mm:ss / h:mm a]'
+  time-offset: 0
+  register-tab-expansion: true
+  locale: en-US
+
+placeholder-output-replacements:
+  '%essentials_vanish%':
+    'yes': '&7| Vanished'
+    'no': ''
+  '%afk%':
+    'true': ' '
+    'false': ''
+  '%essentials_nickname%':
+    '%essentials_nickname%': '%player%'
+
+conditions:
+  nick:
+    conditions:
+    - '%player%=%essentials_nickname%'
+    true: '%player%'
+    false: ~%essentials_nickname%
+
+assign-groups-by-permissions: false
+primary-group-finding-list:
+- gercog
+- aspid
+- hero
+- strazh
+- baron
+- default
+
+debug: false
+
+mysql:
+  enabled: false
+  host: 127.0.0.1
+  port: 3306
+  database: tab
+  username: user
+  password: password
+
+use-online-uuid-in-tablist: true
+permission-refresh-interval: 1000
+
+global-playerlist:
+  enabled: false
+  update-latency: false
+
+layout:
+  enabled: false
+  direction: COLUMNS
+  default-skin: mineskin:1753261242
+  enable-remaining-players-text: true
+  remaining-players-text: '... and %s more'
+  empty-slot-ping-value: 1000
+  layouts:
+    staff:
+      fixed-slots:
+      - '1|&3RAM&f:'
+      - 2|&b%memory-used%MB / %memory-max%MB
+      - '3|&8&m                       '
+      - '4|&3TPS&f:'
+      - 5|&b%tps%
+      groups:
+        staff:
+          slots:
+          - 24-40
+          display-condition: permission:tab.staff
+        players:
+          slots:
+          - 44-80
+      display-condition: permission:tab.staff
+    default:
+      fixed-slots:
+      - '1|&3Website&f:'
+      - 2|&bmyserver.net
+      - '3|&8&m                       '
+      - '4|&3Name&f:'
+      - 5|&b%player%
+      - '7|&3Rank&f:'
+      - '8|Rank: %group%'
+      - '10|&3World&f:'
+      - 11|&b%world%
+      - '13|&3Time&f:'
+      - 14|&b%time%
+      - '21|&3Teamspeak&f:'
+      - 22|&bts.myserver.net
+      - '23|&8&m                       '
+      - '41|&3Store&f:'
+      - 42|&bshop.myserver.net
+      - '43|&8&m                       '
+      groups:
+        staff:
+          slots:
+          - 24-40
+          display-condition: permission:tab.staff
+        players:
+          slots:
+          - 44-80
+
+playerlist-objective:
+  enabled: false
+  value: '%ping%'
+  disable-condition: '%world%=disabledworld'
+  fancy-value: '&7Ping: %ping%'
+  title: TAB
+  render-type: INTEGER
+
+compensate-for-packetevents-bug: false
+
+placeholder-refresh-intervals:
+  default-refresh-interval: 500
+  '%server_uptime%': 1000
+  '%server_tps_1_colored%': 1000
+  '%server_unique_joins%': 5000
+  '%player_health%': 200
+  '%player_ping%': 1000
+  '%vault_prefix%': 1000
+  '%rel_factionsuuid_relation_color%': 1000
+
+config-version: 6
+
+components:
+  minimessage-support: true
+  disable-shadow-for-heads: true
+
+proxy-support:
+  channel-name-suffix: TAB
+  enabled: true
