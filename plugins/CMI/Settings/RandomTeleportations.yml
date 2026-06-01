@@ -2046,7 +2046,7 @@ RandomTeleportation:
         Materials: []
         Biomes: []
       PreferredBiomes: []
-    !!binary "w5DCmsORwoDDkMKww5HCgcOQwrjDkMKyw5HCi8OQwrkgw5HCgcOQwr/DkMKww5DCssOQwr0gRUw=":
+    '[B@29419702':
       Enabled: true
       MaxTries: 0
       Cooldown: 0
@@ -2057,22 +2057,22 @@ RandomTeleportation:
         X: 0
         Z: 0
       Circle: false
-      Ignore:
-        Water: true
-        Lava: true
-        Leaves: true
-        PowderSnow: false
-        CrawlSpaces: false
-        Materials: []
-        Biomes: []
-      PreferredBiomes: []
       SurfaceOnly: false
       FromAnotherWorld: true
       RequireWorldPermission: false
       YLimits:
         Min: 0
         Max: 256
-    !!binary "w5DCmsORwoDDkMKww5HCgcOQwrjDkMKyw5HCi8OQwrkgw5HCgcOQwr/DkMKww5DCssOQwr0gRUxfbmV0aGVy":
+      Ignore:
+        Water: true
+        Lava: true
+        Leaves: true
+        PowderSnow: false
+        CrawlSpaces: false
+        Materials: []
+        Biomes: []
+      PreferredBiomes: []
+    '[B@6b01af9e':
       Enabled: true
       MaxTries: 0
       Cooldown: 0
@@ -2083,22 +2083,22 @@ RandomTeleportation:
         X: 0
         Z: 0
       Circle: false
-      Ignore:
-        Water: true
-        Lava: true
-        Leaves: true
-        PowderSnow: false
-        CrawlSpaces: false
-        Materials: []
-        Biomes: []
-      PreferredBiomes: []
       SurfaceOnly: false
       FromAnotherWorld: true
       RequireWorldPermission: false
       YLimits:
         Min: 0
         Max: 128
-    !!binary "w5DCmsORwoDDkMKww5HCgcOQwrjDkMKyw5HCi8OQwrkgw5HCgcOQwr/DkMKww5DCssOQwr0gRUxfdGhlX2VuZA==":
+      Ignore:
+        Water: true
+        Lava: true
+        Leaves: true
+        PowderSnow: false
+        CrawlSpaces: false
+        Materials: []
+        Biomes: []
+      PreferredBiomes: []
+    '[B@3c0a01f5':
       Enabled: true
       MaxTries: 0
       Cooldown: 0
@@ -2109,6 +2109,12 @@ RandomTeleportation:
         X: 0
         Z: 0
       Circle: false
+      SurfaceOnly: false
+      FromAnotherWorld: true
+      RequireWorldPermission: false
+      YLimits:
+        Min: 0
+        Max: 256
       Ignore:
         Water: true
         Lava: true
@@ -2118,9 +2124,471 @@ RandomTeleportation:
         Materials: []
         Biomes: []
       PreferredBiomes: []
+    '[B@7e6d9c4f':
+      Enabled: true
+      MaxTries: 0
+      Cooldown: 0
+      Range:
+        Max: 1000
+        Min: 500
+      Center:
+        X: 0
+        Z: 0
+      Circle: false
       SurfaceOnly: false
       FromAnotherWorld: true
       RequireWorldPermission: false
       YLimits:
         Min: 0
         Max: 256
+      Ignore:
+        Water: true
+        Lava: true
+        Leaves: true
+        PowderSnow: false
+        CrawlSpaces: false
+        Materials: []
+        Biomes: []
+      PreferredBiomes: []
+    '[B@743a18c2':
+      Enabled: true
+      MaxTries: 0
+      Cooldown: 0
+      Range:
+        Max: 1000
+        Min: 500
+      Center:
+        X: 0
+        Z: 0
+      Circle: false
+      SurfaceOnly: false
+      FromAnotherWorld: true
+      RequireWorldPermission: false
+      YLimits:
+        Min: 0
+        Max: 128
+      Ignore:
+        Water: true
+        Lava: true
+        Leaves: true
+        PowderSnow: false
+        CrawlSpaces: false
+        Materials: []
+        Biomes: []
+      PreferredBiomes: []
+    '[B@36b6eac1':
+      Enabled: true
+      MaxTries: 0
+      Cooldown: 0
+      Range:
+        Max: 1000
+        Min: 500
+      Center:
+        X: 0
+        Z: 0
+      Circle: false
+      SurfaceOnly: false
+      FromAnotherWorld: true
+      RequireWorldPermission: false
+      YLimits:
+        Min: 0
+        Max: 256
+      Ignore:
+        Water: true
+        Lava: true
+        Leaves: true
+        PowderSnow: false
+        CrawlSpaces: false
+        Materials: []
+        Biomes: []
+      PreferredBiomes: []
+    '[B@6fcfc74f':
+      Enabled: true
+      MaxTries: 0
+      Cooldown: 0
+      Range:
+        Max: 1000
+        Min: 500
+      Center:
+        X: 0
+        Z: 0
+      Circle: false
+      SurfaceOnly: false
+      FromAnotherWorld: true
+      RequireWorldPermission: false
+      YLimits:
+        Min: 0
+        Max: 256
+      Ignore:
+        Water: true
+        Lava: true
+        Leaves: true
+        PowderSnow: false
+        CrawlSpaces: false
+        Materials: []
+        Biomes: []
+      PreferredBiomes: []
+    '[B@3ba109d7':
+      Enabled: true
+      MaxTries: 0
+      Cooldown: 0
+      Range:
+        Max: 1000
+        Min: 500
+      Center:
+        X: 0
+        Z: 0
+      Circle: false
+      SurfaceOnly: false
+      FromAnotherWorld: true
+      RequireWorldPermission: false
+      YLimits:
+        Min: 0
+        Max: 128
+      Ignore:
+        Water: true
+        Lava: true
+        Leaves: true
+        PowderSnow: false
+        CrawlSpaces: false
+        Materials: []
+        Biomes: []
+      PreferredBiomes: []
+    '[B@17e836d9':
+      Enabled: true
+      MaxTries: 0
+      Cooldown: 0
+      Range:
+        Max: 1000
+        Min: 500
+      Center:
+        X: 0
+        Z: 0
+      Circle: false
+      SurfaceOnly: false
+      FromAnotherWorld: true
+      RequireWorldPermission: false
+      YLimits:
+        Min: 0
+        Max: 256
+      Ignore:
+        Water: true
+        Lava: true
+        Leaves: true
+        PowderSnow: false
+        CrawlSpaces: false
+        Materials: []
+        Biomes: []
+      PreferredBiomes: []
+    '[B@279a5f50':
+      Enabled: true
+      MaxTries: 0
+      Cooldown: 0
+      Range:
+        Max: 1000
+        Min: 500
+      Center:
+        X: 0
+        Z: 0
+      Circle: false
+      SurfaceOnly: false
+      FromAnotherWorld: true
+      RequireWorldPermission: false
+      YLimits:
+        Min: 0
+        Max: 256
+      Ignore:
+        Water: true
+        Lava: true
+        Leaves: true
+        PowderSnow: false
+        CrawlSpaces: false
+        Materials: []
+        Biomes: []
+      PreferredBiomes: []
+    '[B@30dbfe1a':
+      Enabled: true
+      MaxTries: 0
+      Cooldown: 0
+      Range:
+        Max: 1000
+        Min: 500
+      Center:
+        X: 0
+        Z: 0
+      Circle: false
+      SurfaceOnly: false
+      FromAnotherWorld: true
+      RequireWorldPermission: false
+      YLimits:
+        Min: 0
+        Max: 128
+      Ignore:
+        Water: true
+        Lava: true
+        Leaves: true
+        PowderSnow: false
+        CrawlSpaces: false
+        Materials: []
+        Biomes: []
+      PreferredBiomes: []
+    '[B@7b251301':
+      Enabled: true
+      MaxTries: 0
+      Cooldown: 0
+      Range:
+        Max: 1000
+        Min: 500
+      Center:
+        X: 0
+        Z: 0
+      Circle: false
+      SurfaceOnly: false
+      FromAnotherWorld: true
+      RequireWorldPermission: false
+      YLimits:
+        Min: 0
+        Max: 256
+      Ignore:
+        Water: true
+        Lava: true
+        Leaves: true
+        PowderSnow: false
+        CrawlSpaces: false
+        Materials: []
+        Biomes: []
+      PreferredBiomes: []
+    '[B@45aa2386':
+      Enabled: true
+      MaxTries: 0
+      Cooldown: 0
+      Range:
+        Max: 1000
+        Min: 500
+      Center:
+        X: 0
+        Z: 0
+      Circle: false
+      SurfaceOnly: false
+      FromAnotherWorld: true
+      RequireWorldPermission: false
+      YLimits:
+        Min: 0
+        Max: 256
+      Ignore:
+        Water: true
+        Lava: true
+        Leaves: true
+        PowderSnow: false
+        CrawlSpaces: false
+        Materials: []
+        Biomes: []
+      PreferredBiomes: []
+    '[B@7ceeff72':
+      Enabled: true
+      MaxTries: 0
+      Cooldown: 0
+      Range:
+        Max: 1000
+        Min: 500
+      Center:
+        X: 0
+        Z: 0
+      Circle: false
+      SurfaceOnly: false
+      FromAnotherWorld: true
+      RequireWorldPermission: false
+      YLimits:
+        Min: 0
+        Max: 128
+      Ignore:
+        Water: true
+        Lava: true
+        Leaves: true
+        PowderSnow: false
+        CrawlSpaces: false
+        Materials: []
+        Biomes: []
+      PreferredBiomes: []
+    '[B@36161dd1':
+      Enabled: true
+      MaxTries: 0
+      Cooldown: 0
+      Range:
+        Max: 1000
+        Min: 500
+      Center:
+        X: 0
+        Z: 0
+      Circle: false
+      SurfaceOnly: false
+      FromAnotherWorld: true
+      RequireWorldPermission: false
+      YLimits:
+        Min: 0
+        Max: 256
+      Ignore:
+        Water: true
+        Lava: true
+        Leaves: true
+        PowderSnow: false
+        CrawlSpaces: false
+        Materials: []
+        Biomes: []
+      PreferredBiomes: []
+    '[B@7a833c92':
+      Enabled: true
+      MaxTries: 0
+      Cooldown: 0
+      Range:
+        Max: 1000
+        Min: 500
+      Center:
+        X: 0
+        Z: 0
+      Circle: false
+      SurfaceOnly: false
+      FromAnotherWorld: true
+      RequireWorldPermission: false
+      YLimits:
+        Min: 0
+        Max: 256
+      Ignore:
+        Water: true
+        Lava: true
+        Leaves: true
+        PowderSnow: false
+        CrawlSpaces: false
+        Materials: []
+        Biomes: []
+      PreferredBiomes: []
+    '[B@c60a02':
+      Enabled: true
+      MaxTries: 0
+      Cooldown: 0
+      Range:
+        Max: 1000
+        Min: 500
+      Center:
+        X: 0
+        Z: 0
+      Circle: false
+      SurfaceOnly: false
+      FromAnotherWorld: true
+      RequireWorldPermission: false
+      YLimits:
+        Min: 0
+        Max: 128
+      Ignore:
+        Water: true
+        Lava: true
+        Leaves: true
+        PowderSnow: false
+        CrawlSpaces: false
+        Materials: []
+        Biomes: []
+      PreferredBiomes: []
+    '[B@b3dd2d3':
+      Enabled: true
+      MaxTries: 0
+      Cooldown: 0
+      Range:
+        Max: 1000
+        Min: 500
+      Center:
+        X: 0
+        Z: 0
+      Circle: false
+      SurfaceOnly: false
+      FromAnotherWorld: true
+      RequireWorldPermission: false
+      YLimits:
+        Min: 0
+        Max: 256
+      Ignore:
+        Water: true
+        Lava: true
+        Leaves: true
+        PowderSnow: false
+        CrawlSpaces: false
+        Materials: []
+        Biomes: []
+      PreferredBiomes: []
+    spawn:
+      Enabled: true
+      MaxTries: 0
+      Cooldown: 0
+      Range:
+        Max: 1000
+        Min: 500
+      Center:
+        X: 0
+        Z: 0
+      Circle: false
+      SurfaceOnly: false
+      FromAnotherWorld: true
+      RequireWorldPermission: false
+      YLimits:
+        Min: 0
+        Max: 256
+      Ignore:
+        Water: true
+        Lava: true
+        Leaves: true
+        PowderSnow: false
+        CrawlSpaces: false
+        Materials: []
+        Biomes: []
+      PreferredBiomes: []
+    spawn_nether:
+      Enabled: true
+      MaxTries: 0
+      Cooldown: 0
+      Range:
+        Max: 1000
+        Min: 500
+      Center:
+        X: 0
+        Z: 0
+      Circle: false
+      SurfaceOnly: false
+      FromAnotherWorld: true
+      RequireWorldPermission: false
+      YLimits:
+        Min: 0
+        Max: 128
+      Ignore:
+        Water: true
+        Lava: true
+        Leaves: true
+        PowderSnow: false
+        CrawlSpaces: false
+        Materials: []
+        Biomes: []
+      PreferredBiomes: []
+    spawn_the_end:
+      Enabled: true
+      MaxTries: 0
+      Cooldown: 0
+      Range:
+        Max: 1000
+        Min: 500
+      Center:
+        X: 0
+        Z: 0
+      Circle: false
+      SurfaceOnly: false
+      FromAnotherWorld: true
+      RequireWorldPermission: false
+      YLimits:
+        Min: 0
+        Max: 256
+      Ignore:
+        Water: true
+        Lava: true
+        Leaves: true
+        PowderSnow: false
+        CrawlSpaces: false
+        Materials: []
+        Biomes: []
+      PreferredBiomes: []

@@ -110,9 +110,7 @@ items:
       - "[player] warp arena"
       - "[message] &c🏟️ Вы телепортированы на Арену Смерти!"
     right_click_commands:
-      - "[player] spawn"
-      - "[message] &e👋 Вы покинули арену"
-
+      - "[player] warp arena"
   # ==================== КЛАНЫ (слот 21) ====================
   'clans':
     material: SHIELD
@@ -123,8 +121,7 @@ items:
       - '&e📋 Управление кланами'
       - '&7--------------------------------'
     left_click_commands:
-      - "[player] clans"
-      - "[message] &b⚔️ Меню кланов открыто!"
+      - "[player] clan"
 
   # ==================== ОСОБЫЕ КРАФТЫ (слот 22) ====================
   'special_crafts':

@@ -3,7 +3,7 @@ teleportauto: false
 godmode: false
 muted: false
 jailed: false
-ip-address: 127.0.0.1
+ip-address: 26.121.176.132
 afk: false
 socialspy: false
 npc: false
@@ -16,23 +16,23 @@ timestamps:
   mute: 0
   jail: 0
   onlinejail: 0
-  logout: 1779615002131
-  login: 1779628293503
-money: '186600'
+  logout: 1779733472106
+  login: 1779732813115
+money: '202600'
 last-account-name: pol1ce
 lastlocation:
-  world: 8ef04c77-d50a-43ee-8219-9206ea57eff7
-  world-name: world
-  x: -165.57877524339222
-  y: 76.0
-  z: 243.77327584773377
-  yaw: -31.115966796875
-  pitch: 28.57860565185547
+  world: d9c8af0e-06a5-4b42-84cb-c467457eafd8
+  world-name: spawn
+  x: -565.0611795343485
+  y: 81.48716722194622
+  z: 447.70158434310713
+  yaw: -345.41064453125
+  pitch: -0.9559372067451477
 logoutlocation:
-  world: 8ef04c77-d50a-43ee-8219-9206ea57eff7
-  world-name: world
-  x: -202.73995163893088
-  y: 65.0
-  z: 222.13162702819992
-  yaw: 99.61408996582031
-  pitch: 25.52096939086914
+  world: d9c8af0e-06a5-4b42-84cb-c467457eafd8
+  world-name: spawn
+  x: -526.5691029915849
+  y: 64.0
+  z: 371.9053913674248
+  yaw: -133.41380310058594
+  pitch: 8.801982879638672

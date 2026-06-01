@@ -1,13 +1,15 @@
 arena:
-  world: "world"
-  x1: -182
-  y1: 76
-  z1: 229
-  x2: -164
+  world: "spawn"
+  x1: -586
+  y1: 60
+  z1: 426
+  x2: -522
   y2: 155
-  z2: 249
+  z2: 480
 
+# ===== СТЕНЫ =====
 box:
+  wall-y: 157          # ← ДОБАВЬТЕ ЭТУ СТРОКУ! Высота стен (должна быть выше y2)
   material: "BLACK_STAINED_GLASS"
 
 reward-interval: 5
