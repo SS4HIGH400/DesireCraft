@@ -63,7 +63,7 @@ Chat:
     StaffMessages: true
   # Used for simple chat messages. Optional variables: {displayName} {world} {prefix} {suffix} {group} {shout} {shoutcolor} {message} {nicknameprefix}. Supporting PlaceHolderAPI variables like %player_server% %cmi_user_chatcolor%
   # ATTENTION! Don't use gradient colors for {message} variable, if you want to apply gradient for it, utilize GeneralMessageFormat section
-  GeneralFormat: '{prefix}&f{displayName}&7: &r{message}'
+  GeneralFormat: '{prefix}%desire_clan%&f{displayName}&7 | &r{message}'
   # Will define message format itself, this allows to have gradients in messages
   # It NEEDS to contain {message} otherwise we will ignore this setup
   # For 1.16+ servers you can use color gradients like '{#b3a28f>}{message}{#d7b8e6<}'
@@ -73,12 +73,12 @@ Chat:
   Ranged:
     # Defines range of regular messages to travel
     # Set to -1 to disable range restriction
-    General: -1
+    General: 120
     # Defines range of shout messages to travel
     # Shout messages should start with ! and player should have cmi.chat.shout permission
     # GeneralRange should be enabled
     # set to 0 to shout across all worlds, -1 to disable
-    Shout: 200
+    Shout: 0
     # Color code to be used as base for the shout chat message
     ShoutColor: ''
     # Defines cost for each shout message
@@ -126,9 +126,9 @@ Chat:
 
   # ATTENTION! Don't use gradient colors for {message} variable, if you want to apply gradient for it, utilize GroupMessageFormat section
   GroupFormat:
-    '1': '{prefix}&f{displayName}&f: &r{message}'
-    '2': '{prefix}&f{displayName}&7: &r{message}'
-    '3': '{prefix}&f{displayName}&8: &r{message}'
+    '1': '{prefix}%desire_clan%&f{displayName}&f: &r{message}'
+    '2': '{prefix}%desire_clan%&f{displayName}&7: &r{message}'
+    '3': '{prefix}%desire_clan%&f{displayName}&8: &r{message}'
   # Use numeric increments to separate groups from each other. If player has more than one, then line with higher number will be used
   # Add as many lines as you need too
   # cmi.chatmessagegroup.[id] permnission node to use

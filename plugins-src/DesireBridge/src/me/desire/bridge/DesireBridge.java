@@ -28,6 +28,7 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Locale;
 import java.util.UUID;
+import java.util.stream.Collectors;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -39,7 +40,6 @@ public final class DesireBridge extends JavaPlugin implements CommandExecutor, T
     public void onEnable() {
         loadRubies();
         Bukkit.getPluginManager().registerEvents(this, this);
-
         if (Bukkit.getPluginManager().isPluginEnabled("PlaceholderAPI")) {
             new DesireExpansion(this).register();
             getLogger().info("PlaceholderAPI placeholders registered.");
@@ -90,6 +90,59 @@ public final class DesireBridge extends JavaPlugin implements CommandExecutor, T
         setRubies(player, getRubies(player) + amount);
     }
 
+    @EventHandler(priority = EventPriority.HIGHEST, ignoreCancelled = true)
+    public void onChat(AsyncPlayerChatEvent event) {
+        Player player = event.getPlayer();
+        String rawMessage = event.getMessage();
+        boolean global = rawMessage.startsWith("!");
+        String message = global ? rawMessage.substring(1).stripLeading() : rawMessage;
+        if (message.isEmpty()) {
+            event.setCancelled(true);
+            return;
+        }
+
+        event.setCancelled(true);
+        Bukkit.getScheduler().runTask(this, () -> {
+            if (!player.isOnline()) {
+                return;
+            }
+
+            String prefix = trimFormatting(getLuckPermsPrefix(player));
+            String clan = trimFormatting(getClanDisplay(player));
+            String nick = color("&f" + player.getName());
+            String scope = global ? color(" &7(&6G&7)") : color(" &7(&#55dfffL&7)");
+            String formatted = joinParts(prefix, clan, nick) + scope + color(" &7| &f") + message;
+            List<Player> recipients = global
+                ? Bukkit.getOnlinePlayers().stream().collect(Collectors.toList())
+                : Bukkit.getOnlinePlayers().stream()
+                    .filter(target -> target.getWorld().equals(player.getWorld()))
+                    .filter(target -> target.getLocation().distanceSquared(player.getLocation()) <= 120.0 * 120.0)
+                    .collect(Collectors.toList());
+            for (Player recipient : recipients) {
+                recipient.sendMessage(formatted);
+            }
+            Bukkit.getConsoleSender().sendMessage(formatted);
+        });
+    }
+
+    private String joinParts(String... parts) {
+        StringBuilder builder = new StringBuilder();
+        for (String part : parts) {
+            if (part == null || part.isBlank()) {
+                continue;
+            }
+            if (builder.length() > 0) {
+                builder.append(' ');
+            }
+            builder.append(part.trim());
+        }
+        return builder.toString();
+    }
+
+    private String trimFormatting(String value) {
+        return value == null ? "" : value.trim();
+    }
+
     public String getClanName(Player player) {
         if (player == null) {
             return "";
@@ -135,25 +188,7 @@ public final class DesireBridge extends JavaPlugin implements CommandExecutor, T
             display = clanName;
         }
 
-        return "&8[&#95090c" + display + "&8]";
-    }
-
-    @EventHandler(priority = EventPriority.MONITOR, ignoreCancelled = true)
-    public void onPlayerChat(AsyncPlayerChatEvent event) {
-        Player player = event.getPlayer();
-        List<String> parts = new ArrayList<>();
-        addIfPresent(parts, getLuckPermsPrefix(player));
-        addIfPresent(parts, getClanDisplay(player));
-        parts.add("&#95090c" + player.getName());
-
-        String prefix = color(String.join(" ", parts) + " &8» &f");
-        event.setFormat(escapeFormat(prefix) + "%2$s");
-    }
-
-    private void addIfPresent(List<String> values, String value) {
-        if (value != null && !value.isBlank()) {
-            values.add(value);
-        }
+        return " &8[&#95090c" + display + "&8]";
     }
 
     private String getLuckPermsPrefix(Player player) {
@@ -179,10 +214,6 @@ public final class DesireBridge extends JavaPlugin implements CommandExecutor, T
         } catch (ReflectiveOperationException | LinkageError exception) {
             return "";
         }
-    }
-
-    private String escapeFormat(String value) {
-        return value.replace("%", "%%");
     }
 
     @Override
@@ -342,6 +373,12 @@ public final class DesireBridge extends JavaPlugin implements CommandExecutor, T
                     return player == null ? "0" : String.valueOf(player.getStatistic(Statistic.PLAYER_KILLS));
                 case "deaths":
                     return player == null ? "0" : String.valueOf(player.getStatistic(Statistic.DEATHS));
+                case "hours":
+                    if (player == null) {
+                        return "0";
+                    }
+                    double hours = player.getStatistic(Statistic.PLAY_ONE_MINUTE) / 72000.0;
+                    return String.format(Locale.ROOT, "%.1f", hours);
                 default:
                     return "";
             }

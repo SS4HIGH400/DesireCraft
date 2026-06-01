@@ -7,7 +7,12 @@ header-footer:
       - '&#95090c╔═════════════════════════╗'
       - '&#95090c&lD&#92080b&lE&#8f070a&lS&#8b0608&lI&#880507&lR&#850406&lE &#820405&lC&#7f0304&lR&#7b0202&lA&#780101&lF&#750000&lT'
       - '&fРежим: &#95090c&lА&#90080a&lН&#8a0608&lА&#850406&lР&#800304&lХ&#7a0202&lИ&#750000&lЯ'
+      - ''
       footer:
+      - ''
+      - '&fОнлайн: &#95090c%server_online% | &fПинг: &#750000%player_ping%мс'
+      - '&fTPS: %server_tps_1_colored%'
+      - ''
       - '%animation:Welcome%'
       - '%animation:Welcome2%'
       - '&#750000╚═════════════════════════╝'
@@ -82,9 +87,7 @@ scoreboard:
       - '&#95090c╠'
       - '&#95090c╠ &fУбийства: &#95090c%desire_kills%'
       - '&#95090c╠ &fСмерти: &#750000%desire_deaths%'
-      - '&#95090c╠'
-      - '&#95090c╠ &fОнлайн: &#95090c%server_online%'
-      - '&#95090c╠ &fПинг: &#750000%player_ping%мс'
+      - '&#95090c╠ &fЧасы: &#95090c%desire_hours%'
       - '&#750000╚════════════'
 ping-spoof:
   enabled: false
@@ -206,6 +209,7 @@ placeholder-refresh-intervals:
   default-refresh-interval: 500
   '%server_uptime%': 1000
   '%server_tps_1_colored%': 1000
+  '%server_online%': 1000
   '%server_unique_joins%': 5000
   '%player_health%': 200
   '%player_ping%': 1000
@@ -215,6 +219,7 @@ placeholder-refresh-intervals:
   '%desire_rubies%': 1000
   '%desire_kills%': 1000
   '%desire_deaths%': 1000
+  '%desire_hours%': 1000
   '%rel_factionsuuid_relation_color%': 1000
 
 config-version: 6

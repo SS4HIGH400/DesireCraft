@@ -983,8 +983,8 @@ Alias:
     Tab: true
   # /cmi scale $1-
   scale:
-    Enabled: true
-    Tab: true
+    Enabled: false
+    Tab: false
   # /cmi scan $1-
   scan:
     Enabled: true
