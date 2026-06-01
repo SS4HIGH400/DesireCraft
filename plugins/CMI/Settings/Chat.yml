@@ -9,7 +9,7 @@ Chat:
     Priority: NORMAL
     # When set to true, regular and private messages (excludes clean messages) will have additional information when hovering over it (PlaceHolderAPI supported) and can be clicked for quick reply option
     # To change default hover over messages seen on sent message, go to your locale file to Chat section
-    ClickHoverMessages: true
+    ClickHoverMessages: false
   DiscordSRV:
     # Enables support for DiscordSRV plugin
     Enabled: true

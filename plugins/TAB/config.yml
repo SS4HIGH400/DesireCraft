@@ -4,13 +4,13 @@ header-footer:
     default:
       display-condition: '%world%!=disabledworld'
       header:
-      - '&#4A2CFF╔&#4A2CFF═&#4A2CFF═&#4A2CFF═&#4A2CFF═&#4A2CFF═&#4A2CFF═&#4A2CFF═&#4A2CFF═&#4A2CFF═&#4A2CFF═&#4A2CFF═&#4A2CFF═&#4A2CFF═&#4A2CFF═&#4A2CFF═&#4A2CFF═&#4A2CFF═&#4A2CFF═&#4A2CFF═&#4A2CFF═&#4A2CFF═&#4A2CFF═&#4A2CFF═&#4A2CFF═&#4A2CFF╗'
-      - '&#4a2cff&lD&#5c28e6&lE&#6e23cc&lS&#801fb3&lI&#921a99&lR&#a51680&lE &#b71266&lC&#c90d4d&lR&#db0933&lA&#ed041a&lF&#ff0000&lT'
-      - '&fРежим: &#ff0606&lА&#ff0505&lН&#ff0404&lА&#ff0303&lР&#ff0202&lХ&#ff0101&lИ&#ff0000&lЯ'
+      - '&#95090c╔═════════════════════════╗'
+      - '&#95090c&lD&#92080b&lE&#8f070a&lS&#8b0608&lI&#880507&lR&#850406&lE &#820405&lC&#7f0304&lR&#7b0202&lA&#780101&lF&#750000&lT'
+      - '&fРежим: &#95090c&lА&#90080a&lН&#8a0608&lА&#850406&lР&#800304&lХ&#7a0202&lИ&#750000&lЯ'
       footer:
       - '%animation:Welcome%'
       - '%animation:Welcome2%'
-      - '&#4A2CFF╚&#4A2CFF═&#4A2CFF═&#4A2CFF═&#4A2CFF═&#4A2CFF═&#4A2CFF═&#4A2CFF═&#4A2CFF═&#4A2CFF═&#4A2CFF═&#4A2CFF═&#4A2CFF═&#4A2CFF═&#4A2CFF═&#4A2CFF═&#4A2CFF═&#4A2CFF═&#4A2CFF═&#4A2CFF═&#4A2CFF═&#4A2CFF═&#4A2CFF═&#4A2CFF═&#4A2CFF═&#4A2CFF═&#4A2CFF╝'
+      - '&#750000╚═════════════════════════╝'
 
 tablist-name-formatting:
   enabled: false
@@ -71,142 +71,21 @@ scoreboard:
   delay-on-join-milliseconds: 0
   scoreboards:
     scoreboard1:
-      title: '&#ff0606&lА&#ff0505&lН&#ff0404&lА&#ff0303&lР&#ff0202&lХ&#ff0101&lИ&#ff0000&lЯ'
+      title: '&#95090c&lD&#91080b&lE&#8d0709&lS&#890608&lI&#850406&lR&#810304&lE'
       lines:
-      - '&#4A2CFF&l╔══════════'
-      - '&#4A2CFF&l╠&#4A2CFF╣ &#4A2CFF%player_name%'
-      - '&#4A2CFF&l╠ &r&#00DAFB⭐&r&f Ранг: &r%leldesign_prefixcolor%%leldesign_prefix%'
-      - '&#4A2CFF&l╠ &x&f&f&f&f&0&0$ &fМонет: &x&f&f&f&f&0&0%vault_eco_balance_commas%'
-      - '&#4A2CFF&l╠ &r&x&0&0&f&f&0&0⛁ &fТокенов: &x&0&0&f&f&0&0%playerpoints_points_formatted%'
-      - '&#4A2CFF&l╠ #ac6ffc☠ &fЧерепков: #ac6ffc%bruhskullevent_balance%'
-      - '&#4A2CFF&l╠'
-      - '&#4A2CFF&l╠&#4A2CFF╣ &#4A2CFF&lСТАТИСТИКА'
-      - '&#4A2CFF&l╠ &r&fУбийств: &x&f&f&f&f&0&0%statistic_player_kills% 🗡'
-      - '&#4A2CFF&l╠ &rСмертей: &x&f&f&0&0&0&0%statistic_deaths% 🏹'
-      - '&#4A2CFF&l╠ &r&fНаиграно: &#01A4FF%statistic_hours_played%ч'
-      - '&#4A2CFF&l╠'
-      - '&#4A2CFF&l╠&#4A2CFF╣ &r&fДонат &a/don'
-      - '&#4A2CFF&l╚══════════'
-
-    scoreboardorange:
-      title: '&#ff0606&lА&#ff0505&lН&#ff0404&lА&#ff0303&lР&#ff0202&lХ&#ff0101&lИ&#ff0000&lЯ'
-      lines:
-      - '&#4A2CFF╔══════════'
-      - '&#4A2CFF╠&#4A2CFF╣ &#4A2CFF%player_name%'
-      - '&#4A2CFF╠ &r&#00DAFB⭐&r&f Ранг: &r%leldesign_prefixcolor%%leldesign_prefix%'
-      - '&#4A2CFF╠ &x&f&f&f&f&0&0$ &fМонет: &x&f&f&f&f&0&0%vault_eco_balance_commas%'
-      - '&#4A2CFF╠ &r&x&0&0&f&f&0&0⛁ &fТокенов: &x&0&0&f&f&0&0%playerpoints_points_formatted%'
-      - '&#4A2CFF╠'
-      - '&#4A2CFF╠&#4A2CFF╣ &#4A2CFF&lСТАТИСТИКА'
-      - '&#4A2CFF╠ &r&fУбийств: &x&f&f&f&f&0&0%statistic_player_kills% 🗡'
-      - '&#4A2CFF╠ &rСмертей: &x&f&f&0&0&0&0%statistic_deaths% 🏹'
-      - '&#4A2CFF╠ &r&fНаиграно: &#01A4FF%statistic_hours_played%ч'
-      - '&#4A2CFF╠'
-      - '&#4A2CFF╠&#4A2CFF╣ &r&fДонат &a/don'
-      - '&#4A2CFF╚══════════'
-
-    scoreboardyellow:
-      title: '&#ff0606&lА&#ff0505&lН&#ff0404&lА&#ff0303&lР&#ff0202&lХ&#ff0101&lИ&#ff0000&lЯ'
-      lines:
-      - '&#4A2CFF╔══════════'
-      - '&#4A2CFF╠&#4A2CFF╣ &#4A2CFF%player_name%'
-      - '&#4A2CFF╠ &r&#00DAFB⭐&r&f Ранг: &r%leldesign_prefixcolor%%leldesign_prefix%'
-      - '&#4A2CFF╠ &x&f&f&f&f&0&0$ &fМонет: &x&f&f&f&f&0&0%vault_eco_balance_commas%'
-      - '&#4A2CFF╠ &r&x&0&0&f&f&0&0⛁ &fТокенов: &x&0&0&f&f&0&0%playerpoints_points_formatted%'
-      - '&#4A2CFF╠'
-      - '&#4A2CFF╠&#4A2CFF╣ &#4A2CFF&lСТАТИСТИКА'
-      - '&#4A2CFF╠ &r&fУбийств: &x&f&f&f&f&0&0%statistic_player_kills% 🗡'
-      - '&#4A2CFF╠ &rСмертей: &x&f&f&0&0&0&0%statistic_deaths% 🏹'
-      - '&#4A2CFF╠ &r&fНаиграно: &#01A4FF%statistic_hours_played%ч'
-      - '&#4A2CFF╠'
-      - '&#4A2CFF╠&#4A2CFF╣ &r&fДонат &a/don'
-      - '&#4A2CFF╚══════════'
-
-    scoreboardgren:
-      title: '&#ff0606&lА&#ff0505&lН&#ff0404&lА&#ff0303&lР&#ff0202&lХ&#ff0101&lИ&#ff0000&lЯ'
-      lines:
-      - '&#4A2CFF╔══════════'
-      - '&#4A2CFF╠&#4A2CFF╣ &#4A2CFF%player_name%'
-      - '&#4A2CFF╠ &r&#00DAFB⭐&r&f Ранг: &r%leldesign_prefixcolor%%leldesign_prefix%'
-      - '&#4A2CFF╠ &x&f&f&f&f&0&0$ &fМонет: &x&f&f&f&f&0&0%vault_eco_balance_commas%'
-      - '&#4A2CFF╠ &r&x&0&0&f&f&0&0⛁ &fТокенов: &x&0&0&f&f&0&0%playerpoints_points_formatted%'
-      - '&#4A2CFF╠'
-      - '&#4A2CFF╠&#4A2CFF╣ &#4A2CFF&lСТАТИСТИКА'
-      - '&#4A2CFF╠ &r&fУбийств: &x&f&f&f&f&0&0%statistic_player_kills% 🗡'
-      - '&#4A2CFF╠ &rСмертей: &x&f&f&0&0&0&0%statistic_deaths% 🏹'
-      - '&#4A2CFF╠ &r&fНаиграно: &#01A4FF%statistic_hours_played%ч'
-      - '&#4A2CFF╠'
-      - '&#4A2CFF╠&#4A2CFF╣ &r&fДонат &a/don'
-      - '&#4A2CFF╚══════════'
-
-    scoreboardblue:
-      title: '&#ff0606&lА&#ff0505&lН&#ff0404&lА&#ff0303&lР&#ff0202&lХ&#ff0101&lИ&#ff0000&lЯ'
-      lines:
-      - '&#4A2CFF╔══════════'
-      - '&#4A2CFF╠&#4A2CFF╣ &#4A2CFF%player_name%'
-      - '&#4A2CFF╠ &r&#00DAFB⭐&r&f Ранг: &r%leldesign_prefixcolor%%leldesign_prefix%'
-      - '&#4A2CFF╠ &x&f&f&f&f&0&0$ &fМонет: &x&f&f&f&f&0&0%vault_eco_balance_commas%'
-      - '&#4A2CFF╠ &r&x&0&0&f&f&0&0⛁ &fТокенов: &x&0&0&f&f&0&0%playerpoints_points_formatted%'
-      - '&#4A2CFF╠'
-      - '&#4A2CFF╠&#4A2CFF╣ &#4A2CFF&lСТАТИСТИКА'
-      - '&#4A2CFF╠ &r&fУбийств: &x&f&f&f&f&0&0%statistic_player_kills% 🗡'
-      - '&#4A2CFF╠ &rСмертей: &x&f&f&0&0&0&0%statistic_deaths% 🏹'
-      - '&#4A2CFF╠ &r&fНаиграно: &#01A4FF%statistic_hours_played%ч'
-      - '&#4A2CFF╠'
-      - '&#4A2CFF╠&#4A2CFF╣ &r&fДонат &a/don'
-      - '&#4A2CFF╚══════════'
-
-    scoreboardpink:
-      title: '&#4A2CFF&l⚡ !&#4a2cff&lD&#5c28e6&lE&#6e23cc&lS&#801fb3&lI&#921a99&lR&#a51680&lE &#b71266&lC&#c90d4d&lR&#db0933&lA&#ed041a&lF&#ff0000&lT'
-      lines:
-      - '&#4A2CFF╔══════════'
-      - '&#4A2CFF╠&#4A2CFF╣ &#4A2CFF%player_name%'
-      - '&#4A2CFF╠ &r&#00DAFB⭐&r&f Ранг: &r%leldesign_prefixcolor%%leldesign_prefix%'
-      - '&#4A2CFF╠ &x&f&f&f&f&0&0$ &fМонет: &x&f&f&f&f&0&0%vault_eco_balance_commas%'
-      - '&#4A2CFF╠ &r&x&0&0&f&f&0&0⛁ &fТокенов: &x&0&0&f&f&0&0%playerpoints_points_formatted%'
-      - '&#4A2CFF╠'
-      - '&#4A2CFF╠&#4A2CFF╣ &#4A2CFF&lСТАТИСТИКА'
-      - '&#4A2CFF╠ &r&fУбийств: &x&f&f&f&f&0&0%statistic_player_kills% 🗡'
-      - '&#4A2CFF╠ &rСмертей: &x&f&f&0&0&0&0%statistic_deaths% 🏹'
-      - '&#4A2CFF╠ &r&fНаиграно: &#01A4FF%statistic_hours_played%ч'
-      - '&#4A2CFF╠'
-      - '&#4A2CFF╠&#4A2CFF╣ &r&fДонат &a/don'
-      - '&#4A2CFF╚══════════'
-
-    scoreboardrussia:
-      title: '&#4A2CFF&l⚡ !&#4a2cff&lD&#5c28e6&lE&#6e23cc&lS&#801fb3&lI&#921a99&lR&#a51680&lE &#b71266&lC&#c90d4d&lR&#db0933&lA&#ed041a&lF&#ff0000&lT'
-      lines:
-      - '&#4A2CFF╔══════════'
-      - '&#4A2CFF╠&#4A2CFF &#4A2CFF%player_name%'
-      - '&#4A2CFF╠ &r&#00DAFB⭐&r&f Ранг: &r%leldesign_prefixcolor%%leldesign_prefix%'
-      - '&#4A2CFF╠ &x&f&f&f&f&0&0$ &fМонет: &x&f&f&f&f&0&0%vault_eco_balance_commas%'
-      - '&#4A2CFF╠ &r&x&0&0&f&f&0&0⛁ &fТокенов: &x&0&0&f&f&0&0%playerpoints_points_formatted%'
-      - '&#4A2CFF╠'
-      - '&#4A2CFF╠&#4A2CFF╣ &#4A2CFF&lСТАТИСТИКА'
-      - '&#4A2CFF╠ &r&fУбийств: &x&f&f&f&f&0&0%statistic_player_kills% 🗡'
-      - '&#4A2CFF╠ &rСмертей: &x&f&f&0&0&0&0%statistic_deaths% 🏹'
-      - '&#4A2CFF╠ &r&fНаиграно: &#01A4FF%statistic_hours_played%ч'
-      - '&#4A2CFF╠'
-      - '&#4A2CFF╠&#4A2CFF╣ &r&fДонат &a/don'
-      - '&#4A2CFF╚══════════'
-
-    scoreboardkor:
-      title: '&#4A2CFF&l⚡ !&#4a2cff&lD&#5c28e6&lE&#6e23cc&lS&#801fb3&lI&#921a99&lR&#a51680&lE &#b71266&lC&#c90d4d&lR&#db0933&lA&#ed041a&lF&#ff0000&lT'
-      lines:
-      - '&#4A2CFF╔══════════'
-      - '&#4A2CFF╠&#4A2CFF╣ &#4A2CFF%player_name%'
-      - '&#4A2CFF╠ &r&#00DAFB⭐&r&f Ранг: &r%leldesign_prefixcolor%%leldesign_prefix%'
-      - '&#4A2CFF╠ &x&f&f&f&f&0&0$ &fМонет: &x&f&f&f&f&0&0%vault_eco_balance_commas%'
-      - '&#4A2CFF╠ &r&x&0&0&f&f&0&0⛁ &fТокенов: &x&0&0&f&f&0&0%playerpoints_points_formatted%'
-      - '&#4A2CFF╠'
-      - '&#4A2CFF╠&#4A2CFF╣ &#4A2CFF&lСТАТИСТИКА'
-      - '&#4A2CFF╠ &r&fУбийств: &x&f&f&f&f&0&0%statistic_player_kills% 🗡'
-      - '&#4A2CFF╠ &rСмертей: &x&f&f&0&0&0&0%statistic_deaths% 🏹'
-      - '&#4A2CFF╠ &r&fНаиграно: &#01A4FF%statistic_hours_played%ч'
-      - '&#4A2CFF╠'
-      - '&#4A2CFF╠&#4A2CFF╣ &r&fДонат &a/don'
-      - '&#4A2CFF╚══════════'
-
+      - '&#95090c╔════════════'
+      - '&#95090c╠ &fНик: &#95090c%player%'
+      - '&#95090c╠ &fРанг: &r%luckperms-prefix%'
+      - '&#95090c╠'
+      - '&#95090c╠ &fМонеты: &#95090c%cmi_user_balance_formatted%'
+      - '&#95090c╠ &fРубины: &#750000%desire_rubies%'
+      - '&#95090c╠'
+      - '&#95090c╠ &fУбийства: &#95090c%desire_kills%'
+      - '&#95090c╠ &fСмерти: &#750000%desire_deaths%'
+      - '&#95090c╠'
+      - '&#95090c╠ &fОнлайн: &#95090c%server_online%'
+      - '&#95090c╠ &fПинг: &#750000%player_ping%мс'
+      - '&#750000╚════════════'
 ping-spoof:
   enabled: false
   value: 0
@@ -287,22 +166,22 @@ layout:
       display-condition: permission:tab.staff
     default:
       fixed-slots:
-      - '1|&3Website&f:'
-      - 2|&bmyserver.net
+      - '1|&#95090cDesire&f:'
+      - 2|&#750000/donate
       - '3|&8&m                       '
-      - '4|&3Name&f:'
+      - '4|&#95090cНик&f:'
       - 5|&b%player%
-      - '7|&3Rank&f:'
-      - '8|Rank: %group%'
-      - '10|&3World&f:'
+      - '7|&#95090cРанг&f:'
+      - '8|%luckperms-prefix%'
+      - '10|&#95090cМир&f:'
       - 11|&b%world%
-      - '13|&3Time&f:'
+      - '13|&#95090cВремя&f:'
       - 14|&b%time%
-      - '21|&3Teamspeak&f:'
-      - 22|&bts.myserver.net
+      - '21|&#95090cКлан&f:'
+      - 22|%desire_clan%
       - '23|&8&m                       '
-      - '41|&3Store&f:'
-      - 42|&bshop.myserver.net
+      - '41|&#95090cРубины&f:'
+      - 42|&#750000%desire_rubies%
       - '43|&8&m                       '
       groups:
         staff:
@@ -331,6 +210,11 @@ placeholder-refresh-intervals:
   '%player_health%': 200
   '%player_ping%': 1000
   '%vault_prefix%': 1000
+  '%luckperms-prefix%': 1000
+  '%desire_clan%': 1000
+  '%desire_rubies%': 1000
+  '%desire_kills%': 1000
+  '%desire_deaths%': 1000
   '%rel_factionsuuid_relation_color%': 1000
 
 config-version: 6
@@ -340,5 +224,13 @@ components:
   disable-shadow-for-heads: true
 
 proxy-support:
+  enabled: false
+  type: PLUGIN
+  plugin:
+    name: RedisBungee
+  redis:
+    url: redis://:password@localhost:6379/0
+  rabbitmq:
+    exchange: plugin
+    url: amqp://guest:guest@localhost:5672/%2F
   channel-name-suffix: TAB
-  enabled: true

@@ -3,7 +3,7 @@
 # ********************************************
 
 # Language file you want to use
-Language: EN
+Language: RU
 # Defines if you want to auto download default locale files from github repository
 # You can disable this if you are using EN or you already have your locale set up and you don't need other languages to be downloaded.
 LanguageDownload: true
@@ -564,7 +564,7 @@ ExploitPatcher:
   NoCommandsInBed: false
   # Due to major exploit relating to oversized books this is recomended to be enabled
   # While this is set to true players will be limited in how many pages they can create
-  # Limitation is determined by cmi.book.pages.§x§a§a§a§a§a§a[20to100]§x§f§f§a§a§0§0 permission node and by default players can create 20 pages
+  # Limitation is determined by cmi.book.pages.§f[20to100]§6 permission node and by default players can create 20 pages
   LimitBooks: true
   # While enabled we will prevent items being teleported with end portal and end beacons
   BlockEndPortalItemTransfers: true
@@ -627,33 +627,36 @@ ReSpawn:
     # anchor is location defined by interacting with respawn anchor. This in general will only apply when you die in nether world, otherwise bed location is used
     # warp![warpName] can be any valid warp you set for players to be teleported, they will bypass any requirements for that warp
     PriorityOrder:
-    - anchor
-    - bedLocation
     - spawn
-    - homeLocation
     - worldSpawn
   # Defines respawn order for defined worlds
   # Set respawn priority to [] or to random respawn criteria if you want to leave respawn handling for server or 3rd party plugin
   Specific:
-    '[B@6071cee6':
+    spawn:
     - anchor
     - bedLocation
     - spawn
     - homeLocation
     - worldSpawn
-    '[B@398c2f25':
+    spawn_nether:
     - anchor
     - bedLocation
     - spawn
     - homeLocation
     - worldSpawn
-    '[B@4d299726':
+    spawn_the_end:
     - anchor
     - bedLocation
     - spawn
     - homeLocation
     - worldSpawn
-    pvp_arena:
+    WarZone:
+    - anchor
+    - bedLocation
+    - spawn
+    - homeLocation
+    - worldSpawn
+    world:
     - anchor
     - bedLocation
     - spawn
@@ -1255,7 +1258,7 @@ Warnings:
 Spawn:
   # Forces players to login in defined spawn point when logging into server
   # Can be bypasses with cmi.spawnonjoin.bypass permission node
-  SpawnOnJoin: false
+  SpawnOnJoin: true
   # List of worlds which should be ignored and players joining in those servers will not be teleported to appropriate spawn point but will login at their log out location
   IgnoredWorlds: []
   # Defines players spawn point after death if set to true, if not, then it will be used only for /cmi spawn command
@@ -1263,18 +1266,18 @@ Spawn:
   # TeleportFrom will indicate list of worlds from which player should be teleported to this spawn point
   Main:
     Location: spawn;-625.42;61;380.84;-357.49;-3.82
-    RespawnLocation: false
+    RespawnLocation: true
     Rng: 0
     TeleportFrom: []
   # Defines players first spawn point when he logs into server for the first time
   FirstSpawn:
     Use: true
-    World: None
-    X: 0.0
-    Y: 0.0
-    Z: 0.0
-    Pitch: 0.0
-    Yaw: 0.0
+    World: spawn
+    X: -625.42
+    Y: 61.0
+    Z: 380.84
+    Pitch: -3.82
+    Yaw: -357.49
 Newbie:
   # Kit name to give for new players joining server
   Kit: Newbie
@@ -1368,19 +1371,20 @@ WorldLimits:
     w5DCmsORwoDDkMKww5HCgcOQwrjDkMKyw5HCi8OQwrkgw5HCgcOQwr/DkMKww5DCssOQwr0gRUxfbmV0aGVyLTEyOA==
   - !!binary |-
     w5DCmsORwoDDkMKww5HCgcOQwrjDkMKyw5HCi8OQwrkgw5HCgcOQwr/DkMKww5DCssOQwr0gRUxfdGhlX2VuZC0yNTY=
-  - pvp_arena-256
   # If player will have cmi.worldlimit.god.bypass permission node, god mode wont be changed
   GodMode:
   - testWorld:False
   # Prevents particular entity spawn reasons in defined worlds. All possible reasons: NATURAL, JOCKEY, CHUNK_GEN, SPAWNER, EGG, SPAWNER_EGG, LIGHTNING, BUILD_SNOWMAN, BUILD_IRONGOLEM, BUILD_WITHER, VILLAGE_DEFENSE, VILLAGE_INVASION, BREEDING, SLIME_SPLIT, REINFORCEMENTS, NETHER_PORTAL, DISPENSE_EGG, INFECTION, CURED, OCELOT_BABY, SILVERFISH_BLOCK, MOUNT, TRAP, ENDER_PEARL, SHOULDER_ENTITY, DROWNED, SHEARED, EXPLOSION, RAID, PATROL, BEEHIVE, PIGLIN_ZOMBIFIED, COMMAND, CUSTOM, DEFAULT
   SpawnReasons:
-    '[B@78360863':
+    spawn:
     - None
-    '[B@2816ba41':
+    spawn_nether:
     - None
-    '[B@132021cf':
+    spawn_the_end:
     - None
-    pvp_arena:
+    WarZone:
+    - None
+    world:
     - None
 # Checks if players name changed from last known
 CheckForNameChange:
@@ -1749,11 +1753,16 @@ Time:
     - ''
   # Allows you to change vanilla time speed to your own liking and needs
   TimeSpeed:
-    '[B@3ce9ef32':
+    # Time is defined in seconds. Vanilla 24 hour ingame duration is 1200 seconds of real time
+    spawn:
       Enabled: false
+      # Default value: 600 Starts from tick: 0 Ends at tick: 12000
       day: 600
+      # Default value: 90 Starts from tick: 12000 Ends at tick: 13800
       sunset: 90
+      # Default value: 420 Starts from tick: 13800 Ends at tick: 22200
       night: 420
+      # Default value: 90 Starts from tick: 22200 Ends at tick: 24000
       sunrise: 90
 Enchanting:
   enchantLimits:

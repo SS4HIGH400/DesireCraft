@@ -1,0 +1,30 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 127.0.0.1
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 0
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1780331957804
+  login: 1780330094127
+money: '0'
+last-account-name: Efka
+logoutlocation:
+  world: d9c8af0e-06a5-4b42-84cb-c467457eafd8
+  world-name: spawn
+  x: -556.0831417963273
+  y: 109.22926676214064
+  z: 363.9903783278325
+  yaw: -84.04034423828125
+  pitch: 16.625598907470703

@@ -455,7 +455,7 @@ debug: false
 # For example, to set the language to English, set locale to 'en'. It will then use the file 'messages_en.properties'.
 # Don't forget to remove the # in front of the line.
 # For more information, visit https://essentialsx.net/wiki/Locale.html
-#locale: en
+locale: ru
 
 # Should Essentials use the player's language instead of the server's when sending messages?
 # This is useful if you want to use a different language for your server than for your players.
@@ -468,8 +468,8 @@ per-player-locale: false
 # Some messages may use custom colors, which must be edited in the appropriate message files.
 # For more information on customizing messages, see https://essentialsx.net/wiki/Locale.html
 message-colors:
-  primary: '#ffaa00'
-  secondary: '#ff5555'
+  primary: '#95090c'
+  secondary: '#750000'
 
 # Turn off god mode when the player leaves the server.
 remove-god-on-disconnect: false
@@ -951,7 +951,7 @@ chat:
   # Note: The {DISPLAYNAME} placeholder includes {PREFIX} and {SUFFIX} by default.
   # Using these together may result in double prefixes/suffixes in chat.
 
-  format: '<{DISPLAYNAME}> {MESSAGE}'
+  format: '{MESSAGE}'
   #format: '&7[{GROUP}]&r {DISPLAYNAME}&7:&r {MESSAGE}'
   #format: '&7{PREFIX}&r {NICKNAME}&r &7{SUFFIX}&r: {MESSAGE}'
 
@@ -1204,7 +1204,7 @@ newbies:
   # {DISPLAYNAME} will be replaced with the player name.
   # Set to '' to disable.
   #announce-format: ''
-  announce-format: '&dWelcome {DISPLAYNAME}&d to the server!'
+  announce-format: '&#95090c{DISPLAYNAME} &fвпервые зашел на &#750000Desire&f!'
 
   # When players spawn for the first time, which spawnpoint should be used?
   # Set to 'none' to use the spawnpoint of the world.

@@ -1,11 +1,11 @@
-menu_title: '        &#542AFF&l[ &#542AFF&lА&#542AFF&lД&#542AFF&lМ&#542AFF&lИ&#542AFF&lН&#542AFF&l &#542AFF&lП&#542AFF&lА&#542AFF&lН&#542AFF&lЕ&#542AFF&lЛ&#542AFF&lЬ &#542AFF&l]'
+menu_title: '        &#95090c&l[ &#750000&lА&#95090c&lД&#750000&lМ&#95090c&lИ&#750000&lН&#95090c&l &#750000&lП&#95090c&lА&#750000&lН&#95090c&lЕ&#750000&lЛ&#95090c&lЬ &#750000&l]'
 open_command:
   - panel
 size: 54
 items:
   # ==================== ВЕРХНЯЯ ЛИНИЯ (слоты 0-8) ====================
   'purple_top_line':
-    material: PURPLE_STAINED_GLASS_PANE
+    material: RED_STAINED_GLASS_PANE
     slots:
       - 0
       - 1
@@ -20,7 +20,7 @@ items:
 
   # ==================== НИЖНЯЯ ЛИНИЯ (слоты 45-53) ====================
   'purple_bottom_line':
-    material: PURPLE_STAINED_GLASS_PANE
+    material: RED_STAINED_GLASS_PANE
     slots:
       - 45
       - 46
@@ -35,7 +35,7 @@ items:
 
   # ==================== ЛЕВАЯ ВЕРТИКАЛЬНАЯ ЛИНИЯ (слоты 9, 18, 27, 36) ====================
   'purple_left_line':
-    material: PURPLE_STAINED_GLASS_PANE
+    material: RED_STAINED_GLASS_PANE
     slots:
       - 9
       - 18
@@ -45,7 +45,7 @@ items:
 
   # ==================== ПРАВАЯ ВЕРТИКАЛЬНАЯ ЛИНИЯ (слоты 17, 26, 35, 44) ====================
   'purple_right_line':
-    material: PURPLE_STAINED_GLASS_PANE
+    material: RED_STAINED_GLASS_PANE
     slots:
       - 17
       - 26
@@ -55,7 +55,7 @@ items:
 
   # ==================== УГЛЫ (верхние и нижние) ====================
   'purple_corners':
-    material: PURPLE_STAINED_GLASS_PANE
+    material: RED_STAINED_GLASS_PANE
     slots:
       - 0
       - 8

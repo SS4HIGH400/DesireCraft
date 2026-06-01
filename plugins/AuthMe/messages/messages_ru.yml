@@ -1,0 +1,139 @@
+# Основные сообщения AuthMe в стиле Desire.
+
+registration:
+  register_request: '&4&lDesire &8» &fЗарегистрируйся: &c/register <пароль> <повтор пароля>'
+  command_usage: '&4&lDesire &8» &fИспользование: &c/register <пароль> <повтор пароля>'
+  reg_only: '&4&lDesire &8» &fНа сервер могут заходить только зарегистрированные игроки.'
+  kicked_admin_registered: '&4&lDesire &8» &fАдминистратор зарегистрировал тебя. Зайди снова.'
+  success: '&4&lDesire &8» &fРегистрация прошла успешно.'
+  disabled: '&4&lDesire &8» &fРегистрация в игре отключена.'
+  name_taken: '&4&lDesire &8» &fЭтот ник уже зарегистрирован.'
+
+password:
+  match_error: '&4&lDesire &8» &fПароли не совпадают.'
+  name_in_password: '&4&lDesire &8» &fНельзя использовать ник в пароле.'
+  unsafe_password: '&4&lDesire &8» &fПароль слишком простой. Выбери другой.'
+  forbidden_characters: '&4&lDesire &8» &fВ пароле есть запрещенные символы. Разрешено: %valid_chars'
+  wrong_length: '&4&lDesire &8» &fПароль слишком короткий или слишком длинный.'
+
+login:
+  command_usage: '&4&lDesire &8» &fИспользование: &c/login <пароль>'
+  wrong_password: '&4&lDesire &8» &fНеверный пароль.'
+  success: '&4&lDesire &8» &fТы успешно вошел.'
+  login_request: '&4&lDesire &8» &fВойди на сервер: &c/login <пароль>'
+  timeout_error: '&4&lDesire &8» &fВремя входа истекло. Зайди снова.'
+
+error:
+  unregistered_user: '&4&lDesire &8» &fЭтот игрок не зарегистрирован.'
+  denied_command: '&4&lDesire &8» &fСначала нужно войти или зарегистрироваться.'
+  denied_chat: '&4&lDesire &8» &fЧтобы писать в чат, сначала войди или зарегистрируйся.'
+  not_logged_in: '&4&lDesire &8» &fТы еще не вошел.'
+  tempban_max_logins: '&4&lDesire &8» &fСлишком много неверных попыток входа.'
+  max_registration: '&4&lDesire &8» &fС этого IP уже создано слишком много аккаунтов.'
+  no_permission: '&4&lDesire &8» &fНедостаточно прав.'
+  unexpected_error: '&4&lDesire &8» &fПроизошла ошибка. Сообщи администрации.'
+  kick_for_vip: '&4&lDesire &8» &fНа сервер зашел игрок с приоритетным входом.'
+  logged_in: '&4&lDesire &8» &fТы уже вошел.'
+  kick_unresolved_hostname: '&4&lDesire &8» &fОшибка подключения.'
+
+antibot:
+  kick_antibot: '&4&lDesire &8» &fАнтибот включен. Подожди немного перед входом.'
+  auto_enabled: '&4&lDesire &8» &fАнтибот включен из-за большого количества подключений.'
+  auto_disabled: '&4&lDesire &8» &fАнтибот отключен.'
+
+unregister:
+  success: '&4&lDesire &8» &fАккаунт удален.'
+  command_usage: '&4&lDesire &8» &fИспользование: &c/unregister <пароль>'
+
+misc:
+  accounts_owned_self: '&4&lDesire &8» &fТвои аккаунты: %count'
+  accounts_owned_other: '&4&lDesire &8» &fУ игрока %name аккаунтов: %count'
+  account_not_activated: '&4&lDesire &8» &fАккаунт еще не активирован.'
+  password_changed: '&4&lDesire &8» &fПароль изменен.'
+  logout: '&4&lDesire &8» &fТы вышел из аккаунта.'
+  reload: '&4&lDesire &8» &fAuthMe перезагружен.'
+  usage_change_password: '&4&lDesire &8» &fИспользование: &c/changepassword <старый пароль> <новый пароль>'
+
+session:
+  invalid_session: '&4&lDesire &8» &fСессия истекла. Войди снова.'
+  valid_session: '&4&lDesire &8» &fСессия восстановлена.'
+
+on_join_validation:
+  name_length: '&4&lDesire &8» &fНик слишком короткий или слишком длинный.'
+  characters_in_name: '&4&lDesire &8» &fВ нике есть запрещенные символы. Разрешено: %valid_chars'
+  country_banned: '&4&lDesire &8» &fВход из твоей страны запрещен.'
+  not_owner_error: '&4&lDesire &8» &fТы не владелец этого аккаунта.'
+  kick_full_server: '&4&lDesire &8» &fСервер заполнен. Попробуй позже.'
+  same_nick_online: '&4&lDesire &8» &fИгрок с таким ником уже на сервере.'
+  invalid_name_case: '&4&lDesire &8» &fЗайди с ником %valid, а не %invalid.'
+  same_ip_online: '&4&lDesire &8» &fИгрок с таким IP уже на сервере.'
+  quick_command: '&4&lDesire &8» &fКоманда введена слишком быстро. Зайди снова.'
+
+email:
+  usage_email_add: '&4&lDesire &8» &fИспользование: &c/email add <email> <повтор email>'
+  usage_email_change: '&4&lDesire &8» &fИспользование: &c/email change <старый email> <новый email>'
+  new_email_invalid: '&4&lDesire &8» &fНеверный новый email.'
+  old_email_invalid: '&4&lDesire &8» &fНеверный старый email.'
+  invalid: '&4&lDesire &8» &fНеверный email.'
+  added: '&4&lDesire &8» &fEmail добавлен.'
+  request_confirmation: '&4&lDesire &8» &fПодтверди email.'
+  changed: '&4&lDesire &8» &fEmail изменен.'
+  email_show: '&4&lDesire &8» &fТвой email: &c%email'
+  incomplete_settings: '&4&lDesire &8» &fПочта не настроена. Обратись к администрации.'
+  already_used: '&4&lDesire &8» &fЭтот email уже используется.'
+  send_failure: '&4&lDesire &8» &fНе удалось отправить письмо.'
+  no_email_for_account: '&4&lDesire &8» &fК аккаунту не привязан email.'
+  add_email_request: '&4&lDesire &8» &fДобавь email: &c/email add <email> <повтор email>'
+  change_password_expired: '&4&lDesire &8» &fСрок смены пароля истек.'
+  email_cooldown_error: '&4&lDesire &8» &fПисьмо уже отправлялось недавно. Подожди %time.'
+  add_not_allowed: '&4&lDesire &8» &fДобавление email запрещено.'
+  change_not_allowed: '&4&lDesire &8» &fСмена email запрещена.'
+
+recovery:
+  forgot_password_hint: '&4&lDesire &8» &fЗабыл пароль? Используй &c/email recovery <email>'
+  command_usage: '&4&lDesire &8» &fИспользование: &c/email recovery <email>'
+  email_sent: '&4&lDesire &8» &fПисьмо для восстановления отправлено.'
+  code:
+    code_sent: '&4&lDesire &8» &fКод восстановления отправлен на email.'
+    incorrect: '&4&lDesire &8» &fНеверный код. Осталось попыток: %count'
+    tries_exceeded: '&4&lDesire &8» &fПопытки закончились. Запроси новый код.'
+    correct: '&4&lDesire &8» &fКод принят.'
+    change_password: '&4&lDesire &8» &fСмени пароль: &c/email setpassword <новый пароль>'
+
+captcha:
+  usage_captcha: '&4&lDesire &8» &fВведи капчу: &c/captcha %captcha_code'
+  wrong_captcha: '&4&lDesire &8» &fНеверная капча. Введи: &c/captcha %captcha_code'
+  valid_captcha: '&4&lDesire &8» &fКапча пройдена.'
+  captcha_for_registration: '&4&lDesire &8» &fДля регистрации сначала введи капчу: &c/captcha %captcha_code'
+  register_captcha_valid: '&4&lDesire &8» &fКапча пройдена. Теперь зарегистрируйся.'
+
+verification:
+  code_required: '&4&lDesire &8» &fДля этой команды нужен код из email.'
+  command_usage: '&4&lDesire &8» &fИспользование: &c/verification <код>'
+  incorrect_code: '&4&lDesire &8» &fНеверный код.'
+  success: '&4&lDesire &8» &fПроверка пройдена.'
+  already_verified: '&4&lDesire &8» &fПроверка уже пройдена.'
+  code_expired: '&4&lDesire &8» &fКод истек. Запроси новый.'
+  email_needed: '&4&lDesire &8» &fДля проверки нужен привязанный email.'
+
+two_factor:
+  code_created: '&4&lDesire &8» &fТвой 2FA-код: &c%code'
+  confirmation_required: '&4&lDesire &8» &fПодтверди 2FA: &c/2fa confirm <код>'
+  code_required: '&4&lDesire &8» &fВведи 2FA-код: &c/2fa code <код>'
+  already_enabled: '&4&lDesire &8» &f2FA уже включена.'
+  enable_error_no_code: '&4&lDesire &8» &fСначала создай 2FA: &c/2fa add'
+  enable_success: '&4&lDesire &8» &f2FA включена.'
+  enable_error_wrong_code: '&4&lDesire &8» &fНеверный или истекший код.'
+  not_enabled_error: '&4&lDesire &8» &f2FA не включена.'
+  removed_success: '&4&lDesire &8» &f2FA отключена.'
+  invalid_code: '&4&lDesire &8» &fНеверный код.'
+
+time:
+  second: 'секунда'
+  seconds: 'секунд'
+  minute: 'минута'
+  minutes: 'минут'
+  hour: 'час'
+  hours: 'часов'
+  day: 'день'
+  days: 'дней'

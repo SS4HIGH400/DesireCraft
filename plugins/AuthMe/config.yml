@@ -110,7 +110,7 @@ settings:
         timeout: 10
     # Message language, available languages:
     # https://github.com/AuthMe/AuthMeReloaded/blob/master/docs/translations.md
-    messagesLanguage: en
+    messagesLanguage: ru
     # Forces authme to hook into Vault instead of a specific permission handler system.
     forceVaultHook: false
     # Log level: INFO, FINE, DEBUG. Use INFO for general messages,
@@ -198,7 +198,7 @@ settings:
         # Set to 0 for unlimited radius
         allowedMovementRadius: 100
         # Should we protect the player inventory before logging in? Requires ProtocolLib.
-        ProtectInventoryBeforeLogIn: true
+        ProtectInventoryBeforeLogIn: false
         # Should we deny the tabcomplete feature before logging in? Requires ProtocolLib.
         DenyTabCompleteBeforeLogin: false
         # Should we display all other accounts from a player when he joins?
@@ -273,7 +273,7 @@ settings:
         - help
     registration:
         # Enable registration on the server?
-        enabled: true
+        enabled: false
         # Send every X seconds a message to a player to
         # remind him that he has to login/register
         messageInterval: 5
@@ -395,7 +395,7 @@ Protection:
     enableProtectionRegistered: true
     geoIpDatabase:
         # Enable GeoIp database
-        enabled: true
+        enabled: false
         # The MaxMind clientId used to download the GeoIp database,
         # get one at https://www.maxmind.com/en/accounts/current/license-key
         # The EssentialsX project has a very useful tutorial on how to generate

@@ -1,4 +1,2 @@
-&6Welcome, {PLAYER}&6!
-&6Type &c/help&6 for a list of commands.
-&6Type &c/list&6 to see who else is online.
-&6Players online:&c {ONLINE} &6- World time:&c {WORLDTIME12}
+&#95090cДобро пожаловать на &#750000Desire&#95090c, {PLAYER}!
+&fОнлайн: &#95090c{ONLINE} &8| &fПомощь: &#750000/help &8| &fМеню: &#750000/menu

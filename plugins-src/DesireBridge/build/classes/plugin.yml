@@ -1,0 +1,25 @@
+name: DesireBridge
+version: 1.0.0
+main: me.desire.bridge.DesireBridge
+api-version: 1.16
+author: Desire
+depend:
+  - PlaceholderAPI
+softdepend:
+  - ClanSystem
+commands:
+  points:
+    description: Рубины игрока
+    usage: /points give|take|set|balance <ник> [кол-во]
+    permission: desirebridge.points.use
+    aliases:
+      - рубины
+  rubies:
+    description: Рубины игрока
+    usage: /rubies give|take|set|balance <ник> [кол-во]
+    permission: desirebridge.points.use
+permissions:
+  desirebridge.points.use:
+    default: true
+  desirebridge.points.admin:
+    default: op

@@ -8089,3 +8089,4 @@
 19.05.2023 - 13:49:39 - [TAB v3.1.2] Something just tried to add player whyhoopsoez into team IPFJB_Z1 (expected team: 10A)
 19.05.2023 - 13:49:39 - [TAB v3.1.2] Something just tried to add player LightImDark into team IPFJB_Z44 (expected team: 12A)
 24.05.2026 - 22:20:49 - [TAB v6.0.2] Blocked attempt to add player pol1ce into team CMINP1 (expected team: BA). Source of the team: CMI. To fix this, set "DisableTeamManagement: true" in "plugins/CMI/config.yml".
+01.06.2026 - 19:01:57 - [TAB v6.0.2] Blocked attempt to add player Efka into team CMINP2 (expected team: BA). Source of the team: CMI. To fix this, set "DisableTeamManagement: true" in "plugins/CMI/config.yml".
