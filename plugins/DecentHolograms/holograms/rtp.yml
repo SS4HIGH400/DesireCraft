@@ -1,0 +1,28 @@
+location: spawn:49,500:110,700:0,500
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 90.0
+down-origin: true
+pages:
+- lines:
+  - content: '&7⊲ <#ANIM:wave:&d&l,&5&l&n>ВЫХОД В МИР</#ANIM> &7⊳'
+    height: 0.3
+  - content: '&8★ &7Начни свою игру! &8★'
+    height: 0.3
+  - content: ''
+    height: 0.3
+  - content: '&fПросто прыгни в &d&lпортал&f,'
+    height: 0.3
+  - content: '&fчтобы &aпереместиться&f в мир!'
+    height: 0.3
+  - content: ''
+    height: 0.3
+  - content: '&fУ нас есть &bдругие&f виды &5RTP'
+    height: 0.3
+  - content: '&fКоманда для открытия &7» &#F4C4F3&l/&#F6B1F4&lʀ&#F79FF6&lᴛ&#F98CF7&lᴘ'
+    height: 0.5
+  - content: '#HEAD: PLAYER_HEAD (eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTk3ZTRlMjdhMDRhZmE1ZjA2MTA4MjY1YTliZmI3OTc2MzAzOTFjN2YzZDg4MGQyNDRmNjEwYmIxZmYzOTNkOCJ9fX0=)'
+    height: 0.0
+  actions: {}

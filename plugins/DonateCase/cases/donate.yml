@@ -1,0 +1,211 @@
+case:
+  Animation: SHAPE #SHAPE, FIREWORK, RAINLY, WHEEL, FULLWHEEL see: https://wiki.jodexindustries.space/docs/DonateCase/animations
+  AnimationSound: ENTITY_EXPERIENCE_ORB_PICKUP # remove this line if you don't want to play sound
+  Sound:
+    Volume: 10
+    Pitch: 5
+  Hologram: # Thanks CrazyCrates for realisation
+    # Toggle on and off the holograms for the crates.
+    Toggle: true
+    # The height of the hologram above the crate.
+    Height: 3.0
+    # The distance the hologram can be seen. Only works with CMI and DecentHolograms
+    Range: 32
+    # The message that will be displayed.
+    Message:
+      - '&7⊲ &d&lКЕЙС С ДОНАТОМ &7⊳'
+      - '&8★ &7Удачных открытий! &8★'
+      - ''
+      - 'Покупка всех кейсов на'
+      - 'сайте &7» #C000FF&lᴛ#BC00FF&lʀ#B700FF&lᴜ#B300FF&ls#AE00FF&lᴛ#AA00FF&ls#A500FF&lᴘ#A100FF&lᴀ#9C00FF&lᴄ#9800FF&lᴇ#9300FF&l.#8F00FF&ls#8A00FF&lᴜ'
+      - ''
+      - '&aНажмите, чтобы открыть'
+
+  Title: "[ᴛs] ▸ Кейс с донатом" # Title in GUI
+  DisplayName: "Донат-Кейс" # Name for placeholders
+  Gui: # see more about items configuring -> https://wiki.jodexindustries.space/docs/DonateCase/items-settings
+    Size: 45
+    Items:
+      "1":
+        DisplayName: "&c"
+        Enchanted: false
+        Lore:
+          - ""
+        Slots: # or Slots: 0-10 (range)
+          - 0-6
+          - 9
+          - 18
+          - 26
+          - 35
+          - 38
+          - 42-44
+        Material: BLACK_STAINED_GLASS_PANE # see: https://wiki.jodexindustries.space/docs/DonateCase/item-id
+        Type: DEFAULT
+      "2":
+        DisplayName: "&c"
+        Enchanted: false
+        Lore:
+          - ""
+        Slots: # or Slots: 0-10 (range)
+          - 7
+          - 8
+          - 17
+          - 27
+          - 36
+          - 37
+        Material: MAGENTA_STAINED_GLASS_PANE # see: https://wiki.jodexindustries.space/docs/DonateCase/item-id
+        Type: DEFAULT
+      History0:
+        DisplayName: "&fОткрыл кейс: &d%player%"
+        Enchanted: false
+        Lore:
+          - ''
+          - '&8 ▪ &fОн выбил донат: &d%groupdisplayname%'
+          - '&8 ▪ &fВремя открытия: &d%time%'
+          - ''
+          - '&8 ▪ &fПокупка ключей от кейса'
+          - '&8 ▪ &fна сайте &7» #C000FF&lᴛ#BC00FF&lʀ#B700FF&lᴜ#B300FF&ls#AE00FF&lᴛ#AA00FF&ls#A500FF&lᴘ#A100FF&lᴀ#9C00FF&lᴄ#9800FF&lᴇ#9300FF&l.#8F00FF&ls#8A00FF&lᴜ'
+          - ''
+        Slots:
+          - 39
+        Material: "BASE64:dd27a921c67d8e22ddf19959ffd9b5555978a5c1ef6601e3a08105dd1a5c4dd8"
+        Type: HISTORY-0-donate
+      History1:
+        DisplayName: "&fОткрыл кейс: &d%player%"
+        Enchanted: false
+        Lore:
+          - ''
+          - '&8 ▪ &fОн выбил донат: &d%groupdisplayname%'
+          - '&8 ▪ &fВремя открытия: &d%time%'
+          - ''
+          - '&8 ▪ &fПокупка ключей от кейса'
+          - '&8 ▪ &fна сайте &7» #C000FF&lᴛ#BC00FF&lʀ#B700FF&lᴜ#B300FF&ls#AE00FF&lᴛ#AA00FF&ls#A500FF&lᴘ#A100FF&lᴀ#9C00FF&lᴄ#9800FF&lᴇ#9300FF&l.#8F00FF&ls#8A00FF&lᴜ'
+          - ''
+        Slots:
+          - 40
+        Material: "BASE64:dd27a921c67d8e22ddf19959ffd9b5555978a5c1ef6601e3a08105dd1a5c4dd8"
+        Type: HISTORY-1-donate
+      History2:
+        DisplayName: "&fОткрыл кейс: &d%player%"
+        Enchanted: false
+        Lore:
+          - ''
+          - '&8 ▪ &fОн выбил донат: &d%groupdisplayname%'
+          - '&8 ▪ &fВремя открытия: &d%time%'
+          - ''
+          - '&8 ▪ &fПокупка ключей от кейса'
+          - '&8 ▪ &fна сайте &7» #C000FF&lᴛ#BC00FF&lʀ#B700FF&lᴜ#B300FF&ls#AE00FF&lᴛ#AA00FF&ls#A500FF&lᴘ#A100FF&lᴀ#9C00FF&lᴄ#9800FF&lᴇ#9300FF&l.#8F00FF&ls#8A00FF&lᴜ'
+          - ''
+        Slots:
+          - 41
+        Material: "BASE64:dd27a921c67d8e22ddf19959ffd9b5555978a5c1ef6601e3a08105dd1a5c4dd8"
+        Type: HISTORY-2-donate
+      Open:
+        DisplayName: "#EF89FFОткрыть кейс"
+        Enchanted: true
+        Lore:
+        - ''
+        - '&8 ▪ &fТекущий кейс: &dКейс с донатом'
+        - '&8 ▪ &fВаши ключи от кейса: &d%keys% шт.'
+        - ''
+        - '&8 ▪ &fПокупка ключей от кейса'
+        - '&8 ▪ &fна сайте &7» #C000FF&lᴛ#BC00FF&lʀ#B700FF&lᴜ#B300FF&ls#AE00FF&lᴛ#AA00FF&ls#A500FF&lᴘ#A100FF&lᴀ#9C00FF&lᴄ#9800FF&lᴇ#9300FF&l.#8F00FF&ls#8A00FF&lᴜ'
+        - ''
+        - '&8 ▪ &fСодержимое кейса:'
+        - '&8 ▸ #08FB5D&lᴡ#0BFC4A&lᴀ#0EFD38&lɴ#12FD25&lᴅ#15FE13&lᴇ#18FF00&lʀ &7» &fШанс: #EF89FF40%'
+        - '&8 ▸ #FBEB08&lᴛ#FCD906&lʀ#FDC705&lᴀ#FDB503&lᴘ#FEA302&lᴇ#FF9100&lʀ &7» &fШанс: #EF89FF35%'
+        - '&8 ▸ #FB08A6&lɢ#F306B8&lᴏ#EB05CA&lᴛ#E203DB&lʜ#DA02ED&lɪ#D200FF&lᴄ &7» &fШанс: #EF89FF30%'
+        - '&8 ▸ #088FFB&lᴅ#06A5FC&lᴇ#05BCFD&lʟ#03D2FD&lᴜ#02E9FE&lx#00FFFF&lᴇ &7» &fШанс: #EF89FF25%'
+        - '&8 ▸ #FF2B33&lɢ#FF3432&lʀ#FF3D31&lɪ#FF4630&lᴇ#FF4E2F&lꜰ#FF572E&lᴇ#FF602D&lʀ &7» &fШанс: #EF89FF20%'
+        - ''
+        - '&a◈ Нажмите, чтобы открыть'
+        Slots: # or Slots: 0-10 (range)
+          - 22
+        Material: "BASE64:696b6c77f2c1133f6df736ef2d8c52d47f58487c23e8480ef79e0d60a289f58" # see: https://wiki.jodexindustries.space/docs/DonateCase/item-id
+        Type: OPEN # or you can use OPEN_<anotherCaseName> for opening another case 
+  Items:
+    wander:
+      Group: wander
+      Chance: 40
+      Item:
+        ID: STONE # see: https://wiki.jodexindustries.space/docs/DonateCase/item-id
+        DisplayName: '#08FB5D&lᴡ#0BFC4A&lᴀ#0EFD38&lɴ#12FD25&lᴅ#15FE13&lᴇ#18FF00&lʀ'
+        Enchanted: true
+      GiveType: ONE # or RANDOM
+      Actions: # GiveType: ONE
+        - '[command] lp user %player% parent add %group%'
+        - '[title] &aПоздравляем!;&fВы выйграли %groupdisplayname%'
+        - '[broadcast] &f'
+        - '[broadcast] &8 ▪ &fИгрок #EF89FF%player% &fвыбил привилегию %groupdisplayname%'
+        - '[broadcast] &8 ▪ &fПокупка кейсов на сайте &7» #C000FF&lᴛ#BC00FF&lʀ#B700FF&lᴜ#B300FF&ls#AE00FF&lᴛ#AA00FF&ls#A500FF&lᴘ#A100FF&lᴀ#9C00FF&lᴄ#9800FF&lᴇ#9300FF&l.#8F00FF&ls#8A00FF&lᴜ'
+        - '[broadcast] &f'
+      AlternativeActions: # GiveType: any, it doesn't matter; is performed if the group is lower in rank than the player's group in LevelGroups
+        - "[message] &cУ вас уже есть эта привилегия или даже выше."
+    traper:
+      Group: traper
+      Chance: 35
+      Item:
+        ID: STONE # see: https://wiki.jodexindustries.space/docs/DonateCase/item-id
+        DisplayName: '#FBEB08&lᴛ#FCD906&lʀ#FDC705&lᴀ#FDB503&lᴘ#FEA302&lᴇ#FF9100&lʀ'
+        Enchanted: true
+      GiveType: ONE # or RANDOM
+      Actions: # GiveType: ONE
+        - '[command] lp user %player% parent add %group%'
+        - '[title] &aПоздравляем!;&fВы выйграли %groupdisplayname%'
+        - '[broadcast] &f'
+        - '[broadcast] &8 ▪ &fИгрок #EF89FF%player% &fвыбил привилегию %groupdisplayname%'
+        - '[broadcast] &8 ▪ &fПокупка кейсов на сайте &7» #C000FF&lᴛ#BC00FF&lʀ#B700FF&lᴜ#B300FF&ls#AE00FF&lᴛ#AA00FF&ls#A500FF&lᴘ#A100FF&lᴀ#9C00FF&lᴄ#9800FF&lᴇ#9300FF&l.#8F00FF&ls#8A00FF&lᴜ'
+        - '[broadcast] &f'
+      AlternativeActions: # GiveType: any, it doesn't matter; is performed if the group is lower in rank than the player's group in LevelGroups
+        - "[message] &cУ вас уже есть эта привилегия или даже выше."
+    gothic:
+      Group: gothic
+      Chance: 30
+      Item:
+        ID: STONE # see: https://wiki.jodexindustries.space/docs/DonateCase/item-id
+        DisplayName: '#FB08A6&lɢ#F306B8&lᴏ#EB05CA&lᴛ#E203DB&lʜ#DA02ED&lɪ#D200FF&lᴄ'
+        Enchanted: true
+      GiveType: ONE # or RANDOM
+      Actions: # GiveType: ONE
+        - '[command] lp user %player% parent add %group%'
+        - '[title] &aПоздравляем!;&fВы выйграли %groupdisplayname%'
+        - '[broadcast] &f'
+        - '[broadcast] &8 ▪ &fИгрок #EF89FF%player% &fвыбил привилегию %groupdisplayname%'
+        - '[broadcast] &8 ▪ &fПокупка кейсов на сайте &7» #C000FF&lᴛ#BC00FF&lʀ#B700FF&lᴜ#B300FF&ls#AE00FF&lᴛ#AA00FF&ls#A500FF&lᴘ#A100FF&lᴀ#9C00FF&lᴄ#9800FF&lᴇ#9300FF&l.#8F00FF&ls#8A00FF&lᴜ'
+        - '[broadcast] &f'
+      AlternativeActions: # GiveType: any, it doesn't matter; is performed if the group is lower in rank than the player's group in LevelGroups
+        - "[message] &cУ вас уже есть эта привилегия или даже выше."
+    deluxe:
+      Group: deluxe
+      Chance: 25
+      Item:
+        ID: STONE # see: https://wiki.jodexindustries.space/docs/DonateCase/item-id
+        DisplayName: '#088FFB&lᴅ#06A5FC&lᴇ#05BCFD&lʟ#03D2FD&lᴜ#02E9FE&lx#00FFFF&lᴇ'
+        Enchanted: true
+      GiveType: ONE # or RANDOM
+      Actions: # GiveType: ONE
+        - '[command] lp user %player% parent add %group%'
+        - '[title] &aПоздравляем!;&fВы выйграли %groupdisplayname%'
+        - '[broadcast] &f'
+        - '[broadcast] &8 ▪ &fИгрок #EF89FF%player% &fвыбил привилегию %groupdisplayname%'
+        - '[broadcast] &8 ▪ &fПокупка кейсов на сайте &7» #C000FF&lᴛ#BC00FF&lʀ#B700FF&lᴜ#B300FF&ls#AE00FF&lᴛ#AA00FF&ls#A500FF&lᴘ#A100FF&lᴀ#9C00FF&lᴄ#9800FF&lᴇ#9300FF&l.#8F00FF&ls#8A00FF&lᴜ'
+        - '[broadcast] &f'
+      AlternativeActions: # GiveType: any, it doesn't matter; is performed if the group is lower in rank than the player's group in LevelGroups
+        - "[message] &cУ вас уже есть эта привилегия или даже выше."
+    griefer:
+      Group: griefer
+      Chance: 20
+      Item:
+        ID: STONE # see: https://wiki.jodexindustries.space/docs/DonateCase/item-id
+        DisplayName: '#FF2B33&lɢ#FF3432&lʀ#FF3D31&lɪ#FF4630&lᴇ#FF4E2F&lꜰ#FF572E&lᴇ#FF602D&lʀ'
+        Enchanted: true
+      GiveType: ONE # or RANDOM
+      Actions: # GiveType: ONE
+        - '[command] lp user %player% parent add %group%'
+        - '[title] &aПоздравляем!;&fВы выйграли %groupdisplayname%'
+        - '[broadcast] &f'
+        - '[broadcast] &8 ▪ &fИгрок #EF89FF%player% &fвыбил привилегию %groupdisplayname%'
+        - '[broadcast] &8 ▪ &fПокупка кейсов на сайте &7» #C000FF&lᴛ#BC00FF&lʀ#B700FF&lᴜ#B300FF&ls#AE00FF&lᴛ#AA00FF&ls#A500FF&lᴘ#A100FF&lᴀ#9C00FF&lᴄ#9800FF&lᴇ#9300FF&l.#8F00FF&ls#8A00FF&lᴜ'
+        - '[broadcast] &f'
+      AlternativeActions: # GiveType: any, it doesn't matter; is performed if the group is lower in rank than the player's group in LevelGroups
+        - "[message] &cУ вас уже есть эта привилегия или даже выше."

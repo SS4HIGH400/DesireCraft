@@ -1,0 +1,146 @@
+menu_title: '[ᴛs] ▸ Донатный магазин'
+open_command:
+- shop
+size: 53
+register_command: true
+update_interval: 1
+open_commands:
+- '[sound] BLOCK_CHEST_OPEN'
+items:
+##########################################################################
+  '1':
+    enchantments:
+    - DURABILITY;1 
+    hide_attributes: true
+    hide_enchantments: true
+    material: SHIELD
+    slot: 20
+    display_name: '&#EF89FFУникальные вещи'
+    hide_attributes: true
+    hide_enchantments: true
+    lore:
+    - ''
+    - '&8 ▪ &fВ этом разделе покупка'
+    - '&8 ▪ &fвещей только за &dрубины &5ᚹ'
+    - ''
+    - '&a◈ Нажмите, чтобы перейти'
+    left_click_commands:
+    - '[sound] BLOCK_NOTE_BLOCK_BASS'
+    - '[openguimenu] items'
+  '2':
+    enchantments:
+    - DURABILITY;1 
+    hide_attributes: true
+    hide_enchantments: true
+    HIDE_POTION_EFFECTS: true
+    HIDE_ENCHANTS: true
+    material: BOW
+    slot: 21
+    display_name: '&#EF89FFУникальные стрелы'
+    hide_attributes: true
+    hide_enchantments: true
+    lore:
+    - ''
+    - '&8 ▪ &fВ этом разделе покупка'
+    - '&8 ▪ &fвещей только за &dрубины &5ᚹ'
+    - ''
+    - '&a◈ Нажмите, чтобы перейти'
+    left_click_commands:
+    - '[sound] BLOCK_NOTE_BLOCK_BASS'
+    - '[openguimenu] arrows'
+  '3':
+    enchantments:
+    - DURABILITY;1 
+    hide_attributes: true
+    hide_enchantments: true
+    material: DRAGON_BREATH
+    slot: 22
+    display_name: '&#EF89FFУникальные зелья'
+    hide_attributes: true
+    hide_enchantments: true
+    lore:
+    - ''
+    - '&8 ▪ &fВ этом разделе покупка'
+    - '&8 ▪ &fвещей только за &dрубины &5ᚹ'
+    - ''
+    - '&a◈ Нажмите, чтобы перейти'
+    left_click_commands:
+    - '[sound] BLOCK_NOTE_BLOCK_BASS'
+    - '[openguimenu] potions'
+  '4':
+    enchantments:
+    - DURABILITY;1 
+    hide_attributes: true
+    hide_enchantments: true
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDU3MGMxYmJkOGM0ZDA1ZDdiZWE2ZDk2MGUwYTZlYWI2MDBjOGViMjY2MzQ3OTkxNzZiMzExZGJmZjViMWI5OCJ9fX0=
+    slot: 23
+    display_name: '&#EF89FFУникальные сферы'
+    hide_attributes: true
+    hide_enchantments: true
+    lore:
+    - ''
+    - '&8 ▪ &fВ этом разделе покупка'
+    - '&8 ▪ &fвещей только за &dрубины &5ᚹ'
+    - ''
+    - '&a◈ Нажмите, чтобы перейти'
+    left_click_commands:
+    - '[sound] BLOCK_NOTE_BLOCK_BASS'
+    - '[openguimenu] sphere'
+  '5':
+    hide_attributes: true
+    hide_enchantments: true
+    material: ENCHANTED_BOOK
+    slot: 24
+    display_name: '&#EF89FFУникальные книги'
+    hide_attributes: true
+    hide_enchantments: true
+    lore:
+    - ''
+    - '&8 ▪ &fВ этом разделе покупка'
+    - '&8 ▪ &fвещей только за &dрубины &5ᚹ'
+    - ''
+    - '&a◈ Нажмите, чтобы перейти'
+    left_click_commands:
+    - '[sound] BLOCK_NOTE_BLOCK_BASS'
+    - '[openguimenu] books'
+  '7':
+    enchantments:
+    - DURABILITY;1 
+    hide_attributes: true
+    hide_enchantments: true
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTViMzE3MjM2MDNjYjA3YzE1MGUzNGQ2NWJlODhlNWE2MWFhNDY0NGFhNjI2Y2RlNTI0ZjNiZDg2MTRmY2QyOSJ9fX0=
+    slot: 31
+    display_name: '&#EF89FFБлоки привата'
+    hide_attributes: true
+    hide_enchantments: true
+    lore:
+    - ''
+    - '&8 ▪ &fВ этом разделе покупка'
+    - '&8 ▪ &fвещей только за &dрубины &5ᚹ'
+    - ''
+    - '&a◈ Нажмите, чтобы перейти'
+    left_click_commands:
+    - '[sound] BLOCK_NOTE_BLOCK_BASS'
+    - '[player] privat'
+
+# Прочее
+  'back':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2VmMTE5ZjA4ODUxYTcyYTVmMTBmYmMzMjQ3ZDk1ZTFjMDA2MzYwZDJiNGY0MTJiMjNjZTA1NDA5Mjc1NmIwYyJ9fX0=
+    slot: 49
+    display_name: '&c&lНазад'
+    lore:
+    - ''
+    - '&8 ▪ &fНажав сюда, вы сможете'
+    - '&8 ▪ &fвернуться в прошлое меню.'
+    - ''
+    click_commands:
+    - '[openguimenu] menu'
+    - '[sound] BLOCK_NOTE_BLOCK_BASS'
+  'filler_glass':
+    material: BLACK_STAINED_GLASS_PANE
+    slots: [0-6,9,18,26-27,35,44,47-48,50-53]
+    display_name: '&l'
+  'filler_glass_2':
+    material: MAGENTA_STAINED_GLASS_PANE
+    slots: [7,8,17,36,45,46]
+    display_name: '&l'

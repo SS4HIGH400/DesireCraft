@@ -1,0 +1,12 @@
+config: 1.0
+DonatCase:
+  Cases:
+    donate:
+      location: spawn;30.0;111.0;-15.0;90.0;163.43195
+      type: donate
+    rubins:
+      location: spawn;26.0;111.0;-15.0;81.13772;163.2024
+      type: rubins
+    prefix:
+      location: spawn;34.0;111.0;-15.0;90.0;133.67493
+      type: prefix

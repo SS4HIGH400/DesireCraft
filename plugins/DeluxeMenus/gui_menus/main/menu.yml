@@ -1,0 +1,156 @@
+menu_title: '[ᴛs] ▸ Главное меню'
+open_command:
+- menu
+size: 53
+register_command: true
+update_interval: 1
+open_commands:
+- '[sound] BLOCK_CHEST_OPEN'
+items:
+##########################################################################
+  '1':
+    enchantments:
+    - DURABILITY;1 
+    hide_attributes: true
+    hide_enchantments: true
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzc3ZDRhMjA2ZDc3NTdmNDc5ZjMzMmVjMWEyYmJiZWU1N2NlZjk3NTY4ZGQ4OGRmODFmNDg2NGFlZTdkM2Q5OCJ9fX0=
+    slot: 20
+    display_name: '&#EF89FFТелепортации'
+    lore:
+    - ''
+    - '&8 ▪ &fЗдесь вы сможете найти, все'
+    - '&8 ▪ &fосновные точки этого режима'
+    - ''
+    - '&a◈ Нажмите, чтобы перейти'
+    left_click_commands:
+    - '[sound] BLOCK_NOTE_BLOCK_BASS'
+    - '[openguimenu] warps'
+  '2':
+    enchantments:
+    - DURABILITY;1 
+    hide_attributes: true
+    hide_enchantments: true
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvM2Y2NmY3ZjAzMTI1Y2Y1NDczMzY5NmYzNjMyZjBkOWU2NDcwYmFhYjg0OTg0N2VhNWVhMmQ3OTE1NmFkMGY0MCJ9fX0=
+    slot: 21
+    display_name: '&#EF89FFНаборы вещей'
+    lore:
+    - ''
+    - '&8 ▪ &fПолучи свой набор вещей, для'
+    - '&8 ▪ &fначала своей игры на режиме'
+    - ''
+    - '&a◈ Нажмите, чтобы перейти'
+    left_click_commands:
+    - '[sound] BLOCK_NOTE_BLOCK_BASS'
+    - '[openguimenu] kits'
+  '3':
+    enchantments:
+    - DURABILITY;1 
+    hide_attributes: true
+    hide_enchantments: true
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTYyODYxM2RkNWVmMWEyYTY2ODE5ODgwOTVkNWJlNzc1NjQwNGRlNGZmMmFhNjIyODEyN2I1MDYwNTMyOGNkNSJ9fX0=
+    slot: 22
+    display_name: '&#EF89FFПомощь по серверу'
+    lore:
+    - ''
+    - '&8 ▪ &fСложно начать играть?'
+    - '&8 ▪ &fТогда тебе точно сюда!'
+    - ''
+    - '&a◈ Нажмите, чтобы перейти'
+    left_click_commands:
+    - '[sound] BLOCK_NOTE_BLOCK_BASS'
+    - '[openguimenu] help'
+  '4':
+    enchantments:
+    - DURABILITY;1 
+    hide_attributes: true
+    hide_enchantments: true
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjQ4OTBmZDk1MDliZDBjNTFhYTQ5ODljMzc0NmFjY2QzZmIzNmZjMThkNWEwMWY2MzY0N2IwMGUyOTVjYTg1YSJ9fX0=
+    slot: 23
+    display_name: '&#EF89FFСлучайная телепортация'
+    lore:
+    - ''
+    - '&8 ▪ &fЗдесь ты найдёшь 3 типа'
+    - '&8 ▪ &fтелепортации по миру'
+    - ''
+    - '&a◈ Нажмите, чтобы перейти'
+    left_click_commands:
+    - '[sound] BLOCK_NOTE_BLOCK_BASS'
+    - '[openguimenu] rtp'
+  '5':
+    enchantments:
+    - DURABILITY;1 
+    hide_attributes: true
+    hide_enchantments: true
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzcwY2FjZDU5NzM5ODBjMWVjNGUyMTY0MTAyYjUwZDY0ZDcwYjNmZWRmYmM0YTBmNzMxMjdiODAwNmNiYmY5YiJ9fX0=
+    slot: 24
+    display_name: '&#EF89FFКвесты'
+    lore:
+    - ''
+    - '&8 ▪ &fПроходи разнообразные задания'
+    - '&8 ▪ &fи получай крутые награды'
+    - ''
+    - '&a◈ Нажмите, чтобы перейти'
+    left_click_commands:
+    - '[sound] BLOCK_NOTE_BLOCK_BASS'
+    - '[openguimenu] quests'
+  '6':
+    enchantments:
+    - DURABILITY;1 
+    hide_attributes: true
+    hide_enchantments: true
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjk4NmM2NDA3YmUyNzJlNGYwMzUyNTgwZThlMWNiNzBlNTllZWI0Zjc0ZjU2YjAwMmNkOTBjZGQ2MTk1OTViZSJ9fX0=
+    slot: 30
+    display_name: '&#EF89FFПривилегии'
+    lore:
+    - ''
+    - '&8 ▪ &fЧувствуешь себя мажором?'
+    - '&8 ▪ &fТогда просто купи донат!'
+    - ''
+    - '&a◈ Нажмите, чтобы перейти'
+    left_click_commands:
+    - '[sound] BLOCK_NOTE_BLOCK_BASS'
+    - '[openguimenu] donate'
+  '7':
+    enchantments:
+    - DURABILITY;1 
+    hide_attributes: true
+    hide_enchantments: true
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzlmOGQ5Y2U5NWY4ZjI0ZmIyOTllMzk0ODMyNTZlYmFmM2U3OGM3YmU1ZjYzYWY3YzllNjYzMmJlZWNjZTFlMiJ9fX0=
+    slot: 31
+    display_name: '&#EF89FFДонатерский магазин'
+    lore:
+    - ''
+    - '&8 ▪ &fПокажи всем, что ты самый'
+    - '&8 ▪ &fкрутой на этом сервере!'
+    - ''
+    - '&a◈ Нажмите, чтобы перейти'
+    left_click_commands:
+    - '[sound] BLOCK_NOTE_BLOCK_BASS'
+    - '[openguimenu] shop'
+  '8':
+    enchantments:
+    - DURABILITY;1 
+    hide_attributes: true
+    hide_enchantments: true
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTFlOGM5NTcwODg0MDJkMTk3NjU0NGQxODRkMTk3NzgwYjQ1MjViOTNlZWE2OWI2NTA4NTJkYWE3MjRjN2EifX19
+    slot: 32
+    display_name: '&#EF89FFКастомизация'
+    lore:
+    - ''
+    - '&8 ▪ &fДобавь немного красоты'
+    - '&8 ▪ &fсвоему игровому персонажу'
+    - ''
+    - '&a◈ Нажмите, чтобы перейти'
+    left_click_commands:
+    - '[sound] BLOCK_NOTE_BLOCK_BASS'
+    - '[openguimenu] tituls'
+
+# Хахахаха, продал почку за мандаринку. ~sputn1koff
+  'filler_glass':
+    material: BLACK_STAINED_GLASS_PANE
+    slots: [0-6,9,18,26-27,35,44,47-48,50-53,49]
+    display_name: '&l'
+  'filler_glass_2':
+    material: MAGENTA_STAINED_GLASS_PANE
+    slots: [7,8,17,36,45,46]
+    display_name: '&l'

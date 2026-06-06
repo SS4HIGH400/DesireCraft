@@ -1,0 +1,69 @@
+name: '&#4C3E30С&#5A4D3Fт&#685B4Dр&#756A5Cе&#83786Aл&#918779ы &#9F9687С&#ACA496т&#BAB3A4а&#C8C2B3р&#D6D0C1о&#E3DFD0с&#F1EDDEт&#FFFCEDы'
+lore:
+- '&cГолод V (0:02)'
+- '&cЛевитация II (0:02)'
+material: TIPPED_ARROW
+glow: false
+disableStack: false
+keepItemOnDeath: false
+canBeUsedOnlyByTheOwner: false
+cancelEventIfNotOwner: false
+onlyOwnerBlackListedActivators: []
+storeItemInfo: false
+unbreakable: false
+usage: -1
+usageLimit: -1
+cancelEventIfNoPerm: false
+disabledWorlds: []
+recognitions: []
+config_5: true
+config_update: false
+dropOptions:
+  glowDrop: false
+  glowDropColor: WHITE
+  displayNameDrop: false
+hiders:
+  hideEnchantments: true
+  hideUnbreakable: true
+  hideAttributes: false
+  hidePotionEffects: true
+  hideUsage: true
+  hideDestroys: false
+  hidePlacedOn: false
+enchantments:
+  enchantment0:
+    enchantment: Unbreaking
+    level: 1
+giveFirstJoin:
+  giveFirstJoin: false
+  giveFirstJoinAmount: 1
+  giveFirstJoinSlot: 0
+restrictions: {}
+variables: {}
+activators: {}
+displayConditions:
+  playerConditions: {}
+  worldConditions: {}
+  itemConditions: {}
+  placeholdersConditions: {}
+  enableFeature: false
+potionSettings:
+  potionType: WATER
+  potionExtended: false
+  potionUpgraded: false
+  potionEffects:
+    pEffect0:
+      isAmbient: false
+      duration: 40
+      potionEffectType: HUNGER
+      amplifier: 4
+      hasParticles: false
+      hasIcon: false
+    pEffect1:
+      isAmbient: false
+      duration: 40
+      potionEffectType: LEVITATION
+      amplifier: 1
+      hasParticles: false
+      hasIcon: false
+attributes: {}

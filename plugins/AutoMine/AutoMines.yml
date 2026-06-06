@@ -1,0 +1,62 @@
+AutoMines:
+  spawn:
+    firstPos:
+      x: 80.0
+      y: 100.0
+      z: -72.0
+    secondPos:
+      x: 59.0
+      y: 109.0
+      z: -51.0
+    world: spawn
+    spawnHologram: 'true'
+    hologramPos:
+      world: spawn
+      x: 70.0
+      y: 114.5
+      z: -48.5
+    lines:
+    - '&7⊲ &d&lАВТО-ШАХТА &7⊳'
+    - '&8★ &7Накопай себе руды! &8★'
+    - ''
+    - '&fТекущая шахта: %am_current_spawn%'
+    - '&fСледующая шахта: %am_next_spawn%'
+    - '&fДо обновления:&a %am_time_spawn%'
+    - ''
+    - '&fКупить себе кирку можно'
+    - '&fв дон. магазине &7» &d&l/shop'
+    timeUpdate: 1860
+    typeMine:
+      default:
+        name: '&7Обычная'
+        chance: 50
+        blockList:
+        - '50.0 : STONE'
+        - '40.0 : COBBLESTONE'
+        - '6.0 : COAL_ORE'
+        - '2.0 : IRON_ORE'
+        update_message:
+        - '&7[&d&lШахта&7] &8» &fШахта &aобновлена&f! &fРедкость: &7Обычная'
+      rare:
+        name: '&aРедкая'
+        chance: 10
+        blockList:
+        - '50.0 : STONE'
+        - '30.0 : COBBLESTONE'
+        - '10.0 : COAL_ORE'
+        - '4.0 : IRON_ORE'
+        - '2.0 : GOLD_ORE'
+        update_message:
+        - '&7[&d&lШахта&7] &8» &fШахта &aобновлена&f! &fРедкость: &aРедкая'
+      epic:
+        name: '&5Эпическая'
+        chance: 5
+        blockList:
+        - '50.0 : STONE'
+        - '10.0 : COBBLESTONE'
+        - '25.0 : COAL_ORE'
+        - '4.0 : IRON_ORE'
+        - '3.0 : GOLD_ORE'
+        - '1.0 : DIAMOND_ORE'
+        update_message:
+        - '&7[&d&lШахта&7] &8» &fШахта &aобновлена&f! &fРедкость: &5Эпическая'

@@ -1,25 +1,110 @@
+MyAnimation1:
+  change-interval: 100
+  texts:
+    - '&d-&3--------------'
+    - '&3-&d-&3-------------'
+    - '&3--&d-&3------------'
+    - '&3---&d-&3-----------'
+    - '&3----&d-&3----------'
+    - '&3-----&d-&3---------'
+    - '&3------&d-&3--------'
+    - '&3-------&d-&3-------'
+    - '&3--------&d-&3------'
+    - '&3---------&d-&3-----'
+    - '&3----------&d-&3----'
+    - '&3-----------&d-&3---'
+    - '&3------------&d-&3--'
+    - '&3-------------&d-&3-'
+    - '&3--------------&d-'
+    - '&3-------------&d-&3-'
+    - '&3------------&d-&3--'
+    - '&3-----------&d-&3---'
+    - '&3----------&d-&3----'
+    - '&3---------&d-&3-----'
+    - '&3--------&d-&3------'
+    - '&3-------&d-&3-------'
+    - '&3------&d-&3--------'
+    - '&3-----&d-&3---------'
+    - '&3----&d-&3----------'
+    - '&3---&d-&3-----------'
+    - '&3--&d-&3------------'
+    - '&3-&d-&3-------------'
+    - '&d-&3--------------'
+ServerName:
+  change-interval: 300
+  texts:
+  - '&c&lServerName'
+  - '&c&n&lServerName'
+  - '&b&lServerName'
+  - '&b&l&nServerName'
+  - '&e&lServerName'
+  - '&e&n&lServerName'
+web:
+  change-interval: 200
+  texts:
+  - '&ewww.domain.com'
+  - '&ewww.domain.com'
+  - '&ewww.domain.com'
+  - '&ewww.domain.com'
+  - '&ewww.domain.com'
+  - '&ewww.domain.com'
+  - '&6w&eww.domain.com'
+  - '&ew&6w&ew.domain.com'
+  - '&eww&6w&e.domain.com'
+  - '&ewww&6.&edomain.com'
+  - '&ewww.&6d&eomain.com'
+  - '&ewww.d&6o&emain.com'
+  - '&ewww.do&6m&eain.com'
+  - '&ewww.dom&6a&ein.com'
+  - '&ewww.doma&6i&en.com'
+  - '&ewww.domai&6n&e.com'
+  - '&ewww.domain&6.&ecom'
+  - '&ewww.domain.&6c&eom'
+  - '&ewww.domain.c&6o&em'
+  - '&ewww.domain.co&6m'
+  - '&ewww.domain.com'
+  - '&ewww.domain.com'
+  - '&ewww.domain.com'
+  - '&ewww.domain.com'
+  - '&ewww.domain.com'
+  - '&ewww.domain.com'
+vote:
+  change-interval: 1000
+  texts:
+  - '&avote.domain.com'
+  - '&a&nvote.domain.com'
+  - '&5vote.domain.com'
+  - '&5&nvote.domain.com'
 Welcome:
-  change-interval: 4000
+  change-interval: 400
   texts:
-  - '&#95090cИграйте честно на &#750000Desire'
-  - '&#95090cРубины - донат-валюта сервера'
-  - '&#95090cКланы, PvP и развитие каждый день'
-  - '&#95090cКоманды: &#750000/menu &#95090cи &#750000/donate'
-
-Welcome2:
-  change-interval: 4000
+  - '&7&lW_'
+  - '&7&lW_'
+  - '&7&lWe_'
+  - '&7&lWel_'
+  - '&7&lWelc_'
+  - '&7&lWelco_'
+  - '&7&lWelcom_'
+  - '&7&lWelcome_'
+  - '&7&lWelcome_'
+  - '&7&lWelcome_'
+  - '&7&lWelcome_'
+  - '&7&lWelcom_'
+  - '&7&lWelco_'
+  - '&7&lWelc_'
+  - '&7&lWel_'
+  - '&7&lWe_'
+  - '&7&lW_'
+  - '&7&lW_'
+time:
+  change-interval: 3000
   texts:
-  - '&#750000Версия сервера: &#95090c1.16.5'
-  - '&#750000Сайт и донат: &#95090c/donate'
-  - '&#750000Полезные ссылки: &#95090c/links'
-  - '&#750000Главное меню: &#95090c/menu'
-
-barcolor:
-  change-interval: 60000
+    - '&7Time &b%time%'
+    - '&7Date &b%date%'
+barcolors:
+  change-interval: 1000
   texts:
-  - RED
-
-bartext:
-  change-interval: 60000
-  texts:
-  - '&#95090c&lDESIRE &f- &#750000&lPVP &fактивен'
+    - RED
+    - BLUE
+    - GREEN
+    - YELLOW

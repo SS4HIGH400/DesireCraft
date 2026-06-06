@@ -1,0 +1,77 @@
+name: '&#775600С&#816211т&#8A6E22р&#947A33е&#9E8544л&#A89155ы &#B19D66Д&#BBA976р&#C5B587е&#CEC198в&#D8CDA9н&#E2D8BAо&#ECE4CBс&#F5F0DCт&#FFFCEDи'
+lore:
+- '&cСлепота (0:03)'
+- '&cГолод II (0:03)'
+- '&9Свечение (0:05)'
+material: TIPPED_ARROW
+glow: false
+disableStack: false
+keepItemOnDeath: false
+canBeUsedOnlyByTheOwner: false
+cancelEventIfNotOwner: false
+onlyOwnerBlackListedActivators: []
+storeItemInfo: false
+unbreakable: false
+usage: -1
+usageLimit: -1
+cancelEventIfNoPerm: false
+disabledWorlds: []
+recognitions: []
+config_5: true
+config_update: false
+dropOptions:
+  glowDrop: false
+  glowDropColor: WHITE
+  displayNameDrop: false
+hiders:
+  hideEnchantments: true
+  hideUnbreakable: true
+  hideAttributes: false
+  hidePotionEffects: true
+  hideUsage: true
+  hideDestroys: false
+  hidePlacedOn: false
+enchantments:
+  enchantment0:
+    enchantment: Unbreaking
+    level: 1
+giveFirstJoin:
+  giveFirstJoin: false
+  giveFirstJoinAmount: 1
+  giveFirstJoinSlot: 0
+restrictions: {}
+variables: {}
+activators: {}
+displayConditions:
+  playerConditions: {}
+  worldConditions: {}
+  itemConditions: {}
+  placeholdersConditions: {}
+  enableFeature: false
+attributes: {}
+potionSettings:
+  potionType: WATER
+  potionExtended: false
+  potionUpgraded: false
+  potionEffects:
+    pEffect0:
+      isAmbient: false
+      duration: 60
+      potionEffectType: BLINDNESS
+      amplifier: 0
+      hasParticles: false
+      hasIcon: false
+    pEffect1:
+      isAmbient: false
+      duration: 60
+      potionEffectType: HUNGER
+      amplifier: 1
+      hasParticles: false
+      hasIcon: false
+    pEffect2:
+      isAmbient: false
+      duration: 100
+      potionEffectType: GLOWING
+      amplifier: 0
+      hasParticles: false
+      hasIcon: false

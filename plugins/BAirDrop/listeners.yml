@@ -1,0 +1,439 @@
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~EVENT LIST~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ #
+# CLICK_CLOSE - click on a closed airdrop
+# CLICK_OPEN - click on an opened airdrop
+# TIMER - called every second
+# START_EVENT - when the airdrop spawns
+# END_EVENT - when the airdrop disappears
+# UNLOCK_EVENT - when the airdrop is unlocked
+# FIRST_OPEN - when someone opens the airdrop for the first time
+# SUMMONER - when someone summons the airdrop
+# ACTIVATE - when the airdrop is activated (triggered if start-countdown-after-click = true)
+# STOP_WHEN_EMPTY - called when the airdrop finishes due to depletion
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~CHECK LIST~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ #
+# NUMERICAL_CHECK - numerical check. For example, input '{time-to-open} == 60'
+# LOGICAL_CHECK - logical check. For example, input '{airdrop-is-open}'
+# STRING_CHECK - string comparison. For example, input '{airdrop-is-open} == true'
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~INTERNAL PLACEHOLDERS~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ #
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~NUMERICAL~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ #
+# {time-to-open} - time in seconds until opening
+# {time-to-start} - time in seconds until the airdrop appears
+# {time-to-end} - time in seconds until the airdrop finishes
+# == if the numbers are equal (10 == 10)
+# != if the numbers are not equal (10 != 9)
+# > if the first number is greater than the second (10 > 9)
+# < if the first number is less than the second (9 < 10)
+# >= if the first number is greater than or equal to the second (10 >= 10)
+# <= if the first number is less than or equal to the second (10 <= 10)
+# % remainder of division (10 % 10 == 0) 10 / 10 = 1.0, so the remainder is 0
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~LOGICAL~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ #
+# {it-was-open} - Whether the airdrop was opened
+# {airdrop-is-open} - true if the airdrop is open
+# {airdrop-is-start} - true if the airdrop has spawned
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~STRING COMPARISON~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# == - if the strings are equal
+# != - if the strings are not equal
+# contains - if the string contains
+# !contains - if the string does not contain
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~COMMANDS~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ #
+# [MESSAGE] - Send a message to the player
+# [MESSAGE_ALL] - Send a message to all players
+# [TITLE] - Send a title to the player (text in the middle of the screen)
+# [TITLE_ALL] - Send a title to all players (text in the middle of the screen)
+# [ACTIONBAR] - Send an actionbar message to the player (text above the hotbar)
+# [ACTIONBAR_ALL] - Send an actionbar message to all players (text above the hotbar)
+# [CONSOLE] - Execute a command as the console
+# [PLAYER] - Execute a command as the player
+# [SOUND] - Play a sound to the player
+# [SOUND_ALL] - Play a sound to all players
+# [EFFECT_START-<NAME>-<generate id>] - Spawn an effect at the airdrop's location
+# [EFFECT_STOP-<id>] - Stop the effect
+# [EFFECT_STOP_ALL] - Stop all effects spawned by the airdrop
+# [SET_MATERIAL_<MATERIAL>] - Set the material of the airdrop
+# [SCHEMATICS_PASTE-<name>] - Paste a schematic
+# [SCHEMATICS_REMOVE] - Remove the schematic
+# [SET_TIME_START-<time>] - Set the time until start in seconds
+# [SET_TIME_UNLOCK-<time>] - Set the time until unlock in seconds
+# [SET_TIME_END-<time>] - Set the time until end in seconds
+# [SET_REGION] - Set the region
+# [SET_HOLO_TIME_TO_START] - Spawn a hologram where the airdrop appears
+# [CALL-<listener>] - Call a listener
+# [NEAR-PLAYERS=<radius>] iterate over all players within a radius. Used like [NEAR-PLAYERS=10] {CALL-test}
+# [RUN_JS=<jsname.js>] run a script
+# [NEW_BOSSBAR] - Create a boss bar
+# [BOSSBAR] - Modify a boss bar
+# [REMOVE_BOSSBAR] - Remove a boss bar
+# [ERROR] - Output an error to the console
+# [LOGGER] - Output a log to the console
+# [PLAYER-SET-ITEM-<slot>=<material>] - Set an item to the player's slot
+# [SUB_TITLE] - Subtitle
+# [SCHEDULER] - the listener will execute in a separate thread.
+# [ASYNC] - the listener will execute in a separate asynchronous thread.
+# [LATER-<time>] - the listener will execute with a delay in ticks.
+###
+# [LATER-<time>] - works only in combination with [SCHEDULER] or [ASYNC].
+# [SCHEDULER], [ASYNC], [LATER-<time>] - are executed before checking conditions and it doesn't matter where these commands are placed, whether at the end or at the beginning of all commands.
+######################################################################################
+listeners:
+  #TIMER#
+
+  alert-open1:
+    description: ''
+    event: 'TIMER'
+    requirement:
+      check-1:
+        type: 'NUMERICAL_CHECK'
+        input: '{time-to-open} == 10'
+    commands:
+      - '[MESSAGE_ALL] &f'
+      - '[MESSAGE_ALL] &8 ▪ &fМистический данж &7» {air-name}'
+      - '[MESSAGE_ALL] &8 ▪ &fХранилище будет открыто через &#BE00FF10 &fсек.'
+      - '[MESSAGE_ALL] &8 ▪ &fКоординаты &7» &d{x} {y} {z}'
+      - '[MESSAGE_ALL] &f'
+
+  alert-open2:
+    description: ''
+    event: 'TIMER'
+    requirement:
+      check-1:
+        type: 'NUMERICAL_CHECK'
+        input: '{time-to-open} == 30'
+    commands:
+      - '[MESSAGE_ALL] &f'
+      - '[MESSAGE_ALL] &8 ▪ &fМистический данж &7» {air-name}'
+      - '[MESSAGE_ALL] &8 ▪ &fХранилище будет открыто через &#BE00FF30 &fсек.'
+      - '[MESSAGE_ALL] &8 ▪ &fКоординаты &7» &d{x} {y} {z}'
+      - '[MESSAGE_ALL] &f'
+
+  alert-open3:
+    description: ''
+    event: 'TIMER'
+    requirement:
+      check-1:
+        type: 'NUMERICAL_CHECK'
+        input: '{time-to-open} == 60'
+    commands:
+      - '[MESSAGE_ALL] &f'
+      - '[MESSAGE_ALL] &8 ▪ &fМистический данж &7» {air-name}'
+      - '[MESSAGE_ALL] &8 ▪ &fХранилище будет открыто через &#BE00FF1 &fминуту'
+      - '[MESSAGE_ALL] &8 ▪ &fКоординаты &7» &d{x} {y} {z}'
+      - '[MESSAGE_ALL] &f'
+
+  alert-open4:
+    description: ''
+    event: 'TIMER'
+    requirement:
+      check-1:
+        type: 'NUMERICAL_CHECK'
+        input: '{time-to-open} == 180'
+    commands:
+      - '[MESSAGE_ALL] &f'
+      - '[MESSAGE_ALL] &8 ▪ &fМистический данж &7» {air-name}'
+      - '[MESSAGE_ALL] &8 ▪ &fХранилище будет открыто через &#BE00FF3 &fминуты'
+      - '[MESSAGE_ALL] &8 ▪ &fКоординаты &7» &d{x} {y} {z}'
+      - '[MESSAGE_ALL] &f'
+      
+
+  alert-normal-start-1:
+    description: ''
+    event: 'START_EVENT'
+    commands:
+      - '[MESSAGE_ALL] &f'
+      - '[MESSAGE_ALL] &8 ▪ &fМистический данж &7» {air-name}'
+      - '[MESSAGE_ALL] &8 ▪ &fХранилище &aуспешно &fпоявилось в &aобычном мире&f!'
+      - '[MESSAGE_ALL] &8 ▪ &fКоординаты &7» &d{x} &7{y} &7{z}'
+      - '[MESSAGE_ALL] &f'
+      - '[EFFECT_STOP_ALL]'
+      - '[EFFECT_START-ef=1-ef]'
+      - '[SCHEMATICS_PASTE-crate1]'
+      - '[SET_MATERIAL_RED_SHULKER_BOX]'
+      - '[SOUND_ALL] UI_TOAST_CHALLENGE_COMPLETE'
+      - '[CALL-boss-1]'
+      - '[EasyBossBar=bosbar 1], [minRadius=20], [barColor=RED], [barStyle=SOLID], [title={air-name} &f| &7{x} {y} {z} &f| &cЗакрыто], [update]'
+      #- '[CONSOLE] bossbarmsg all -sec:{time-to-open} -c:RED -s:1 {air-name} &7| &#BE00FF{x}, {y}, {z} &7| &cЗакрыто'
+      
+  alert-normal-start-2:
+    description: ''
+    event: 'START_EVENT'
+    commands:
+      - '[MESSAGE_ALL] &f'
+      - '[MESSAGE_ALL] &8 ▪ &fМистический данж &7» {air-name}'
+      - '[MESSAGE_ALL] &8 ▪ &fХранилище &aуспешно &fпоявилось в &aобычном мире&f!'
+      - '[MESSAGE_ALL] &8 ▪ &fКоординаты &7» &d{x} &7{y} &7{z}'
+      - '[MESSAGE_ALL] &f'
+      - '[EFFECT_STOP_ALL]'
+      - '[EFFECT_START-ef=1-ef]'
+      - '[SCHEMATICS_PASTE-crate2]'
+      - '[SET_MATERIAL_RED_SHULKER_BOX]'
+      - '[SOUND_ALL] UI_TOAST_CHALLENGE_COMPLETE'
+      - '[CALL-boss-1]'
+      - '[EasyBossBar=bosbar 1], [minRadius=20], [barColor=RED], [barStyle=SOLID], [title={air-name} &f| &7{x} {y} {z} &f| &cЗакрыто], [update]'
+      #- '[CONSOLE] bossbarmsg all -sec:{time-to-open} -c:RED -s:1 {air-name} &7| &#BE00FF{x}, {y}, {z} &7| &cЗакрыто'
+
+  alert-normal-start-4:
+    description: ''
+    event: 'START_EVENT'
+    commands:
+      - '[MESSAGE_ALL] &f'
+      - '[MESSAGE_ALL] &8 ▪ &fМистический данж &7» {air-name}'
+      - '[MESSAGE_ALL] &8 ▪ &fХранилище &aуспешно &fпоявилось в &aобычном мире&f!'
+      - '[MESSAGE_ALL] &8 ▪ &fКоординаты &7» &d{x} &7{y} &7{z}'
+      - '[MESSAGE_ALL] &f'
+      - '[EFFECT_STOP_ALL]'
+      - '[EFFECT_START-ef=1-ef]'
+      - '[SCHEMATICS_PASTE-crate4]'
+      - '[SET_MATERIAL_RED_SHULKER_BOX]'
+      - '[SOUND_ALL] UI_TOAST_CHALLENGE_COMPLETE'
+      - '[CALL-boss-1]'
+      - '[EasyBossBar=bosbar 1], [minRadius=20], [barColor=RED], [barStyle=SOLID], [title={air-name} &f| &7{x} {y} {z} &f| &cЗакрыто], [update]'
+      #- '[CONSOLE] bossbarmsg all -sec:{time-to-open} -c:RED -s:1 {air-name} &7| &#BE00FF{x}, {y}, {z} &7| &cЗакрыто'
+  alert-normal-start-5:
+    description: ''
+    event: 'START_EVENT'
+    commands:
+      - '[MESSAGE_ALL] &f'
+      - '[MESSAGE_ALL] &8 ▪ &fМистический данж &7» {air-name}'
+      - '[MESSAGE_ALL] &8 ▪ &fХранилище &aуспешно &fпоявилось в &aобычном мире&f!'
+      - '[MESSAGE_ALL] &8 ▪ &fКоординаты &7» &d{x} &7{y} &7{z}'
+      - '[MESSAGE_ALL] &f'
+      - '[EFFECT_STOP_ALL]'
+      - '[EFFECT_START-ef=1-ef]'
+      - '[SCHEMATICS_PASTE-crate5]'
+      - '[SET_MATERIAL_RED_SHULKER_BOX]'
+      - '[SOUND_ALL] UI_TOAST_CHALLENGE_COMPLETE'
+      - '[CALL-boss-1]'
+      - '[EasyBossBar=bosbar 1], [minRadius=20], [barColor=RED], [barStyle=SOLID], [title={air-name} &f| &7{x} {y} {z} &f| &cЗакрыто], [update]'
+      #- '[CONSOLE] bossbarmsg all -sec:{time-to-open} -c:RED -s:1 {air-name} &7| &#BE00FF{x}, {y}, {z} &7| &cЗакрыто'
+  alert-start-pvp:
+    description: ''
+    event: 'START_EVENT'
+    commands:
+      - '[MESSAGE_ALL] &f'
+      - '[MESSAGE_ALL] &8 ▪ &fМистический данж &7» {air-name}'
+      - '[MESSAGE_ALL] &8 ▪ &fТайник появился на &cПвп арене'
+      - '[MESSAGE_ALL] &8 ▪ &fЕго редкость: {inv-name}'
+      - '[MESSAGE_ALL] &f'
+      - '[EFFECT_STOP_ALL]'
+      - '[EFFECT_START-ef=1-ef]'
+      - '[SET_MATERIAL_RED_SHULKER_BOX]'
+      - '[SOUND_ALL] UI_TOAST_CHALLENGE_COMPLETE'
+      #- '[EasyBossBar=bosbar 5], [minRadius=20], [barColor=RED], [barStyle=SOLID], [title={air-name} &f| &cПвп арена &f| &cЗакрыто], [update]'
+      #- '[CONSOLE] bossbarmsg all -sec:{time-to-open} -c:RED -s:1 {air-name} &7| &#BE00FFПвп арена &7| &cЗакрыто'
+      
+  alert-normal-start-3:
+    description: ''
+    event: 'START_EVENT'
+    commands:
+      - '[MESSAGE_ALL] &f'
+      - '[MESSAGE_ALL] &8 ▪ &fМистический данж &7» {air-name}'
+      - '[MESSAGE_ALL] &8 ▪ &fХранилище &aуспешно &fпоявилось в &aобычном мире&f!'
+      - '[MESSAGE_ALL] &8 ▪ &fКоординаты &7» &d{x} &7{y} &7{z}'
+      - '[MESSAGE_ALL] &f'
+      - '[EFFECT_STOP_ALL]'
+      - '[EFFECT_START-ef=1-ef]'
+      - '[SCHEMATICS_PASTE-crate3]'
+      - '[SET_MATERIAL_RED_SHULKER_BOX]'
+      - '[SOUND_ALL] UI_TOAST_CHALLENGE_COMPLETE'
+      - '[CALL-boss-1]'
+      - '[EasyBossBar=bosbar 1], [minRadius=20], [barColor=RED], [barStyle=SOLID], [title={air-name} &f| &7{x} {y} {z} &f| &cЗакрыто], [update]'
+      #- '[CONSOLE] bossbarmsg all -sec:{time-to-open} -c:RED -s:1 {air-name} &7| &#BE00FF{x}, {y}, {z} &7| &cЗакрыто'
+      
+  addon:
+    description: ''
+    event: 'TIMER'
+    requirement:
+      check-1:
+        type: 'STRING_CHECK'
+        input: '{airdrop-is-open} == false'
+      check-2:
+        type: 'STRING_CHECK'
+        input: '{airdrop-is-start} == true'
+      check-3:
+        type: 'NUMERICAL_CHECK'
+        input: '{time-to-open} <= 419 '
+    commands:
+      - '[NEAR-PLAYERS=5] {CALL-addon-2}'
+      
+  addon-2:
+    description: ''
+    event: 'NONE'    
+    commands:
+      - '[CONSOLE] eco give %player_name% 15 -s'
+      - '[CONSOLE] burn %player_name% 1 -s'
+      - '[SOUND] BLOCK_NOTE_BLOCK_BELL'
+      - '[ACTIONBAR] &fВы получили &d15 ⛂'
+      
+      
+  boss-1:
+    description: ''
+    event: 'TIMER'    
+    requirement:
+      check-1:
+        type: 'STRING_CHECK'
+        input: '{airdrop-is-start} == true'
+      check-2:
+        type: 'NUMERICAL_CHECK'
+        input: '{time-to-open} == 420 '
+      check-3:
+        type: 'STRING_CHECK'
+        input: '{airdrop-is-open} == false'
+    commands:
+      - '[EasyBossBar=bosbar 1], [update]'
+      
+  boss-2:
+    description: ''
+    event: 'TIMER'    
+    requirement:
+      check-1:
+        type: 'STRING_CHECK'
+        input: '{airdrop-is-start} == true'
+      check-2:
+        type: 'NUMERICAL_CHECK'
+        input: '{time-to-open} <= 419 '
+      check-3:
+        type: 'STRING_CHECK'
+        input: '{airdrop-is-open} == false'
+    commands:
+      - '[EasyBossBar=bosbar 2], [update]'
+    
+  boss-3:
+    description: ''
+    event: 'TIMER'    
+    requirement:
+      check-1:
+        type: 'STRING_CHECK'
+        input: '{airdrop-is-start} == true'
+      check-2:
+        type: 'NUMERICAL_CHECK'
+        input: '{time-to-open} < 1 '
+      check-3:
+        type: 'STRING_CHECK'
+        input: '{airdrop-is-open} == true'
+    commands:
+      - '[EasyBossBar=bosbar 3], [update]'
+      
+  #END_EVENT#
+  end:
+    description: ''
+    event: 'END_EVENT'
+    requirement:
+      check-1:
+        type: 'STRING_CHECK'
+        input: '{use-player-location} == true'
+    commands:
+      - '[EFFECT_STOP_ALL]'
+      - '[MESSAGE_ALL] &f'
+      - '[MESSAGE_ALL] &8 ▪ &fМистический данж &7» {air-name}'
+      - '[MESSAGE_ALL] &8 ▪ &fХранилище &cпропало&f! Приходи позже.'
+      - '[MESSAGE_ALL] &f'
+      - '[SCHEMATICS_REMOVE]'
+      #- '[CALL-remove_summoner_block]' 
+      - '[EasyBossBar=bosbar 3], [remove]'   
+      - '[EasyBossBar=bosbar 2], [remove]'   
+      - '[EasyBossBar=bosbar 1], [remove]'    
+    deny-commands:
+      - '[EFFECT_STOP_ALL]'
+      - '[MESSAGE_ALL] &f'
+      - '[MESSAGE_ALL] &8 ▪ &fМистический данж &7» {air-name}'
+      - '[MESSAGE_ALL] &8 ▪ &fХранилище &cпропало&f! Приходи позже.'
+      - '[MESSAGE_ALL] &f'
+      - '[SCHEMATICS_REMOVE]'
+      #- '[CALL-remove_summoner_block]' 
+      - '[EasyBossBar=bosbar 3], [remove]'   
+      - '[EasyBossBar=bosbar 2], [remove]'   
+      - '[EasyBossBar=bosbar 1], [remove]'   
+      
+  end-pvp:
+    description: ''
+    event: 'END_EVENT'
+    requirement:
+      check-1:
+        type: 'STRING_CHECK'
+        input: '{use-player-location} == true'
+    commands:
+      - '[EFFECT_STOP_ALL]'
+      - '[MESSAGE_ALL] &f'
+      - '[MESSAGE_ALL] &8 ▪ &fМистический данж &7» {air-name}'
+      - '[MESSAGE_ALL] &8 ▪ &fХранилище &cпропало&f! Приходи позже.'
+      - '[MESSAGE_ALL] &f'
+      #- '[CALL-remove_summoner_block]' 
+      - '[EasyBossBar=bosbar 5], [remove]'   
+      - '[EasyBossBar=bosbar 6], [remove]'      
+    deny-commands:
+      - '[EFFECT_STOP_ALL]'
+      - '[MESSAGE_ALL] &f'
+      - '[MESSAGE_ALL] &8 ▪ &fМистический данж &7» {air-name}'
+      - '[MESSAGE_ALL] &8 ▪ &fХранилище &cпропало&f! Приходи позже.'
+      - '[MESSAGE_ALL] &f'
+      #- '[CALL-remove_summoner_block]' 
+      - '[EasyBossBar=bosbar 5], [remove]'   
+      - '[EasyBossBar=bosbar 6], [remove]'   
+
+  #Others#
+  alert-open:
+    description: ''
+    event: 'UNLOCK_EVENT'
+    commands:
+      - '[MESSAGE_ALL] &f'
+      - '[MESSAGE_ALL] &8 ▪ &fМистический данж &7» {air-name}'
+      - '[MESSAGE_ALL] &8 ▪ &fХранилище было &aоткрыто&f!'
+      - '[MESSAGE_ALL] &8 ▪ &fКоординаты: &aОбычный мир &f - &7{x} {y} {z}'
+      - '[MESSAGE_ALL] &f'
+      - '[EFFECT_STOP_ALL]'
+      - '[EFFECT_START-ef=3-ef]'
+      - '[EasyBossBar=bosbar 2], [remove]'   
+      - '[EasyBossBar=bosbar 3], [minRadius=20], [barColor=GREEN], [barStyle=SOLID], [title={air-name} &f| &7{x} {y} {z} &f| &aОткрыто ], [update]'
+      #- '[CONSOLE] bossbarmsg all -sec:{time-to-open} -c:GREEN -s:1 {air-name} &7| &#BE00FF{x}, {y}, {z} &7| &aОткрыто'
+      - '[NEAR-PLAYERS=7] {CALL-addon-3}'
+      - '[CALL-boss-3]'
+      
+      
+  alert-open-pvp:
+    description: ''
+    event: 'UNLOCK_EVENT'
+    commands:
+      - '[MESSAGE_ALL] &f'
+      - '[MESSAGE_ALL] &8 ▪ &fМистический данж &7» {air-name}'
+      - '[MESSAGE_ALL] &8 ▪ &fТайник был &aоткрыт&f!'
+      - '[MESSAGE_ALL] &8 ▪ &fКоординаты: &cПвп арена'
+      - '[MESSAGE_ALL] &f'
+      - '[EFFECT_STOP_ALL]'
+      - '[EFFECT_START-ef=3-ef]'
+      - '[EasyBossBar=bosbar 5], [remove]'   
+      #- '[EasyBossBar=bosbar 6], [minRadius=20], [barColor=GREEN], [barStyle=SOLID], [title={air-name} &f| &cПвп арена &f| &aОткрыт ], [update]'
+      #- '[CONSOLE] bossbarmsg all -sec:{time-to-open} -c:GREEN -s:1 {air-name} &7| &#BE00FFПвп арена &7| &aОткрыто'
+
+  ACTIVATE:
+    description: ''
+    event: 'ACTIVATE'
+    commands:
+      - '[MESSAGE_ALL] &f'
+      - '[MESSAGE_ALL] &8 ▪ &fМистический данж &7» {air-name}'
+      - '[MESSAGE_ALL] &8 ▪ &fХранилище активированно игроком &7%player_name%&f!'
+      - '[MESSAGE_ALL] &8 ▪ &fКоординаты: &aОбычный мир &f - &7{x} {y} {z}'
+      - '[MESSAGE_ALL] &f'
+      - '[SET_MATERIAL_YELLOW_SHULKER_BOX]'
+      - '[EFFECT_STOP_ALL]'
+      - '[EFFECT_START-ef=2-ef]'
+      - '[SOUND_ALL] BLOCK_BEACON_POWER_SELECT'
+      - '[EasyBossBar=bosbar 2], [timer=\{time-to-open}], [minRadius=20], [barColor=YELLOW], [barStyle=SOLID], [title={air-name} &f| &7{x} {y} {z} &f| &eОткрывается ], [update]'
+      #- '[CONSOLE] bossbarmsg all -sec:{time-to-open} -c:YELLOW -s:1 {air-name} &7| &#BE00FF{x}, {y}, {z} &7| &eОткрывыется'
+      - '[EasyBossBar=bosbar 1], [remove]'   
+      - '[CALL-boss-2]'
+
+  chest-closed:
+    description: '&fSends a message to the player that the airdrop is closed'
+    event: 'CLICK_CLOSE'
+    commands:
+      - '[MESSAGE] &f'
+      - '[MESSAGE] &8 ▪ &fХранилище &cзакрыто&f!'
+      - '[MESSAGE] &f'
+      - '[SOUND] BLOCK_BARREL_CLOSE' #BLOCK_BARREL_CLOSE
+      
+  closed-pvp:
+    description: '&fSends a message to the player that the airdrop is closed'
+    event: 'CLICK_CLOSE'
+    commands:
+      - '[MESSAGE] &f'
+      - '[MESSAGE] &8 ▪ &fХранилище &cзакрыто&f!'
+      - '[MESSAGE] &f'
+      - '[SOUND] BLOCK_BARREL_CLOSE' #BLOCK_BARREL_CLOSE

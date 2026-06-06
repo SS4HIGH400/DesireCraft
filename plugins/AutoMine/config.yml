@@ -1,0 +1,23 @@
+# Version: 0.1.5
+# Discord: https://discord.gg/XCWzCRtxgq
+#
+# Разрешение: automine.admin
+#             automine.create - даёт доступ к команде /am create и /am reload
+#             automine.update - даёт доступ к команде /am update
+#             automine.set - даёт доступ к команде /am set
+#             name - название шахты
+#             automine.update.name - позволяет менять следующую шахту шахту
+#             automine.set.name - позволяет менять текущую шахту
+# Placeholder
+#
+#    %am_current_<name>% - показывает название текущей шахты
+#    %am_next_<name>% - показывает следующую шахту
+#    %am_time_<name>% - показывает время до следующей шахты
+#
+# Вся настойка авто-шахт происходит в папке AutoMines.yml
+# Для создания авто-шахты напишите /am create <название>
+#                                  /am update <название> <next/тип шахты> - вы можете поменять следующую шахту или поменять текущую на следующую
+#                                  /am set <название> <тип шахты> - вы можете поменять текущую шахту на любую
+
+# Выбрать в каком формате будет выводиться отчёт (integer (00:30:00) или string (30 минут))
+TypeFormat: "string"

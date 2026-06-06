@@ -1,0 +1,167 @@
+#
+#  AtomicChestDeath // 1.16.5 (ниже и выше версии не тестились)
+#
+#  Прочая информация:
+#  - Если Вы нашли баги/недоработки пожалуйста, сообщите
+#  - в Discord-сообществе (dsc.gg/atomicdev) или мне в телеграмм (t.me/bkkuc)
+#  
+#  Зависимости:
+#  - DecentHolograms
+#  - PlaceholderAPI
+#
+#  Команды:
+#  - /chestdeath help | Помощь.
+#  | atomicchestdeath.help
+#
+#  - /chestdeath force (spawn/open) | Принудительно заспавнить/открыть.
+#  | atomicchestdeath.spawn
+#  | atomicchestdeath.open
+#
+#  - /chestdeath additem (шанс) | Добавить предмет который в руке.
+#  | atomicchestdeath.additem
+#
+#  - /chestdeath clearitems | Очистить предметы которые в файле items.yml
+#  | atomicchestdeath.clearitems
+#
+#  - /chestdeath delay | Узнать через сколько заспавнится Сундук Смерти.
+#  | atomicchestdeath.delay
+#
+#  - /chestdeath.reload | Перезагрузить файлы.
+#  | atomicchestdeath.reload
+#
+
+# Локация спавна.
+location:
+  world: spawn
+  x: 31
+  y: 63
+  z: 35
+
+# Настройка инвентаря Сундука Смерти.
+inventory:
+  # Отображаемое имя инвентаря.
+  title: '[ᴛs] ▸ Сундук Смерти'
+  # Размер. (1 - 6)
+  rows: 6
+  # Задержка на предметы когда пытаются взять.
+  cooldown:
+    # Включить ли опцию?
+    enable: true
+    # На сколько тиков даётся?
+    time: 5
+
+# Голограмма Сундука Смерти.
+# Требуется плагин: DecentHolograms.
+hologram:
+  opening:
+    y: 1.7
+    text:
+      - '&7⊲ &d&lСУНДУК СМЕРТИ &7⊳'
+      - '&fСундук активируется.'
+      - '&fДо открытия &d%atomicchestdeath_open%'
+  opened:
+    y: 1.7
+    text:
+      - '&7⊲ &d&lСУНДУК СМЕРТИ &7⊳'
+      - '&fСундук был успешно открыт,'
+      - '&fЗабирайте все вещи из него!'
+      
+placeholder:
+  open: 'Открыт'
+  spawned: 'Заспавнен'
+
+broadcast:
+  avg:
+    - '&r'
+    - '&8 ▪ &fСундук &4&nсмерти&r&f появится на &c&lPvP-арене'
+    - '&8 ▪ &fЧерез &d$time &fсек. &fУспей &aзалутать&f первым!'
+    - '&r'
+  spawned:
+    - '&r'
+    - '&8 ▪ &fСундук &4&nсмерти&r&f появился на &c&lPvP-арене'
+    - '&8 ▪ &fБудь &aаккуратнее&f там, телепорт &7» &d&l/ᴡᴀʀᴘ ᴘᴠᴘ'
+    - '&r'
+
+# Партиклы при открытии СС.
+particle:
+  # Название партикла.
+  # Список партиклов: https://helpch.at/docs/1.16.5/org/bukkit/Particle.html
+  particle: SOUL
+  # Количество.
+  count: 100
+
+# Звуки.
+sound:
+  # Звук начиная от
+  pre-time: 5
+  # ЗВУК Скорость Громкость
+  pre-opening: BLOCK_NOTE_BLOCK_PLING 1.0 1.0
+  # Звук после открытии СС.
+  # ЗВУК Скорость Громкость
+  opened: ENTITY_GHAST_SHOOT 1.0 1.0
+
+time:
+  # Каждые скольки секунд появляется.
+  spawn: 3600
+  # Через сколько секунд откроется.
+  open: 160
+  # Через скольки секунд удалится.
+  remove: 60
+
+bossbar:
+  # В скольких блоков распростроняется боссбар.
+  radius: 500
+  opening: '&5Сундук смерти&f откроется через &d$time сек'
+  removing: '&5Сундук смерти&f был открыт. До &cудаления &7» &d$time сек'
+
+messages:
+  prefix: '&7[&d&lСундук&7] &8»'
+  noPermissions: '$prefix &fУ вас &7недостаточно &fправ.'
+  helpPage:
+    - ''
+    - '  &5- &dПомощь по командам &5-'
+    - ''
+    - '  &7Принудительно заспавнить&8:'
+    - '  &8- &d/chestdeath force spawn'
+    - ''
+    - '  &7Принудительно открыть&8:'
+    - '  &8- &d/chestdeath force open'
+    - ''
+    - '  &7Добавить предмет&8:'
+    - '  &8- &d/chestdeath additem (шанс)'
+    - ''
+    - '  &7Очистить предметы&8:'
+    - '  &8- &d/chestdeath clearitems'
+    - ''
+    - '  &7Сколько осталось до спавна&8:'
+    - '  &8- &d/chestdeath delay'
+    - ''
+    - '  &7Перезагрузить&8:'
+    - '  &8- &d/chestdeath reload'
+    - ''
+  invalidSubCommand: '$prefix &fНеизвестная подкоманда.'
+  commands:
+    force:
+      usage: '$prefix &fИспользование&8: &d/chestdeath force (spawn/open)'
+      invalidType: '$prefix &fПринудительное &7"$type" &fне найдено. &c(spawn/open)'
+      spawn:
+        already: '$prefix &fСундук Смерти уже &7заспавнен&f.'
+        successfully: '$prefix &fПринудительно &7заспавнен &5"Сундук Смерти"&f.'
+      open:
+        not-spawned: '$prefix &fСундук Смерти ещё не появился.'
+        already: '$prefix &fСундук Смерти уже &7открыт&f.'
+        successfully: '$prefix &fПринудительно &7открыт &5"Сундук Смерти"&f.'
+    additem:
+      usage: '$prefix &fИспользование&8: &6/chestdeath additem (шанс)'
+      invalidNumber: '$prefix &fПожалуйста, введите &7разумный &fшанс.'
+      hold-item: '$prefix &fПожалуйста, держите предмет в &7руке&f.'
+      successfully: '$prefix &fУспешно &aдобавлен &fпредмет с шансом &e$chance%&f.'
+    clearitems:
+      empty: '$prefix &fВ данный момент предметы &cпусты&f.'
+      successfully: '$prefix &fПредметы были &7очищены&f.'
+    delay:
+      already: '$prefix &fСундук Смерти уже &7заспавнен&f.'
+      successfully: '$prefix &fДо появлении &5"Сундук Смерти" &fосталось&8: &c&n$time&c сек'
+    reload:
+      failed: '$prefix &fОшибка при попытке &7перезагрузить &fфайлы.'
+      successfully: '$prefix &fФайлы были &7перезагружены&f.'

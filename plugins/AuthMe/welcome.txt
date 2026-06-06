@@ -1,3 +1,3 @@
-&4&lDesire &8» &fДобро пожаловать, &c{PLAYER}&f!
+Welcome {PLAYER} on {SERVER} server
 
-&4&lDesire &8» &fЕсли сервер попросит авторизацию, используй &c/login &fили &c/register&f.
+This server uses AuthMeReloaded protection!

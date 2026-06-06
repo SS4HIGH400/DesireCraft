@@ -1,0 +1,39 @@
+location: spawn:4,500:124,700:0,500
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: '&7⊲ <#ANIM:wave:&d&l,&5&l&n>ᴛʀᴜsᴛsᴘᴀᴄᴇ</#ANIM> &7▪ &#CB2D3E&l&nᴀ&#D1313D&l&nн&#D7363D&l&nᴀ&#DD3A3C&l&nр&#E33E3B&l&nх&#E9433B&l&nи&#EF473A&l&nя&r
+      &7⊳'
+    height: 0.3
+  - content: '&8★ &7Удачной игры, %player_name%! &8★'
+    height: 0.3
+  - content: ''
+    height: 0.3
+  - content: '&fНачните своё &#FFA5A5а&#FF9B9Bн&#FF9191а&#FF8686р&#FF7C7Cх&#FF7272и&#FF6868ч&#FF5E5Eе&#FF5454с&#FF4949к&#FF3F3Fо&#FF3535е&f
+      выживание'
+    height: 0.3
+  - content: '&fс этого момента! Не забудьте &#A5FFB2з&#9BFFA0а&#92FF8Eщ&#88FF7Cи&#7EFF6Bт&#74FF59и&#6BFF47т&#61FF35ь'
+    height: 0.3
+  - content: '&fсвою базу от других &#EFA5FFа&#E499FFн&#D98CFFа&#CD80FFр&#C273FFх&#B767FFи&#AC5AFFс&#A04EFFт&#9541FFо&#8A35FFв&f
+      сервера! '
+    height: 0.3
+  - content: ''
+    height: 0.3
+  - content: Главное меню сервера &7» &#FC00FF&l/&#E200FF&lᴍ&#C800FF&lᴇ&#AE00FF&lɴ&#9400FF&lᴜ
+    height: 0.3
+  - content: Помощь по этому режиму &7» &#FC00FF&l/&#E200FF&lʜ&#C800FF&lᴇ&#AE00FF&lʟ&#9400FF&lᴘ
+    height: 0.3
+  - content: ''
+    height: 0.3
+  - content: ВКонтакте &7» &#1488CC&lᴠ&#1583CA&lᴋ&#177DC9&l.&#1878C7&lᴄ&#1A73C6&lᴏ&#1B6DC4&lᴍ&#1D68C2&l/&#1E62C1&lᴛ&#205DBF&lʀ&#2158BD&lᴜ&#2252BC&ls&#244DBA&lᴛ&#2548B9&ls&#2742B7&lᴘ&#283DB5&lᴀ&#2A37B4&lᴄ&#2B32B2&lᴇ
+    height: 0.3
+  - content: Наш сайт &7» &#D200FF&lᴡ&#CE00FF&lᴡ&#C900FF&lᴡ&#C500FF&l.&#C000FF&lᴛ&#BC00FF&lʀ&#B700FF&lᴜ&#B300FF&ls&#AE00FF&lᴛ&#AA00FF&ls&#A500FF&lᴘ&#A100FF&lᴀ&#9C00FF&lᴄ&#9800FF&lᴇ&#9300FF&l.&#8F00FF&ls&#8A00FF&lᴜ
+    height: 0.5
+  - content: '#HEAD: PLAYER_HEAD (eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOGJkZmZmZGNhMDdkNTYyYmY5OTA1MGU5MGM0ZGI1ZmE1OGM1MDk4MmU1NWNmOTZhOGQxMDIyNTZhZmZhZjUifX19)'
+    height: 0.0
+  actions: {}

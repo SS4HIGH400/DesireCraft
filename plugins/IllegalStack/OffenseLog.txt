@@ -1,0 +1,50 @@
+04/21/24 12:28:30 - Removed invalid potion from sputn1koff had the following effects: HUNGER amplifier: 4 duration: 40,LEVITATION amplifier: 1 duration: 40,
+04/21/24 12:30:03 - Removed invalid potion from sputn1koff had the following effects: HUNGER amplifier: 4 duration: 40,LEVITATION amplifier: 1 duration: 40,
+04/21/24 12:30:03 - Removed invalid potion from sputn1koff had the following effects: HARM amplifier: 0 duration: 0,WITHER amplifier: 1 duration: 40,
+04/21/24 13:07:26 - Illegal stack of items removed: ENDER_PEARL (24) from player: mbly at item scan.
+04/21/24 17:08:58 - Illegal stack of items removed: ENDER_PEARL (48) from player: mbly at item scan.
+04/23/24 20:30:23 - Prevented a bed from being used as an explosive @Location{world=CraftWorld{name=world_the_end},x=-56.0,y=58.0,z=-27.0,pitch=0.0,yaw=0.0}
+04/23/24 20:32:17 - Prevented a bed from being used as an explosive @Location{world=CraftWorld{name=world_the_end},x=2.0,y=65.0,z=3.0,pitch=0.0,yaw=0.0}
+04/23/24 20:33:15 - Prevented a bed from being used as an explosive @Location{world=CraftWorld{name=world_the_end},x=-2.0,y=66.0,z=1.0,pitch=0.0,yaw=0.0}
+04/23/24 20:33:20 - Prevented a bed from being used as an explosive @Location{world=CraftWorld{name=world_the_end},x=-2.0,y=66.0,z=1.0,pitch=0.0,yaw=0.0}
+04/23/24 20:34:49 - Prevented a bed from being used as an explosive @Location{world=CraftWorld{name=world_the_end},x=1.0,y=67.0,z=0.0,pitch=0.0,yaw=0.0}
+04/23/24 20:50:41 - Illegal stack of items removed: ENDER_PEARL (32) from player: sputn1koff at item scan.
+04/24/24 08:32:58 - Player To4no_ne_228 attempted to place a tripwire hook on a trap door, it has been removed (PreventTripwireDupe = true)
+04/24/24 08:32:58 - Player To4no_ne_228 attempted to place a tripwire hook on a trap door, it has been removed (PreventTripwireDupe = true)
+04/24/24 10:40:40 - §aenot_fan is spam fishing! ~casts~ casts without a 2 second break! @ Location{world=CraftWorld{name=world},x=424.69999998807907,y=53.0,z=-38.69999998807907,pitch=-90.0,yaw=220.18013}
+04/24/24 17:49:30 - Illegal stack of items removed: ENDER_PEARL (32) from player: sputn1koff at item scan.
+04/24/24 18:10:45 - Illegal stack of items removed: ENDER_PEARL (32) from player: sputn1koff at item scan.
+04/24/24 19:12:21 - Illegal stack of items removed: POTION (2) from player: To4no_ne_228 at login.
+04/25/24 18:27:36 - §aFata1_C0de appears to be using an autofishing mod..  4 caught within 0.3 blocks of each other @ Location{world=CraftWorld{name=world},x=-529.6999999880791,y=66.0,z=736.6999999880791,pitch=30.02207,yaw=-163.70447}
+04/25/24 18:39:17 - §aFata1_C0de appears to be using an autofishing mod..  4 caught within 0.3 blocks of each other @ Location{world=CraftWorld{name=world},x=-641.4415056853038,y=63.0,z=702.5100810774655,pitch=21.400175,yaw=-268.64465}
+04/25/24 18:44:56 - §aFata1_C0de appears to be using an autofishing mod..  4 caught within 0.3 blocks of each other @ Location{world=CraftWorld{name=world},x=-641.6980989264915,y=63.0,z=702.3140453452494,pitch=39.01869,yaw=-275.76526}
+04/25/24 21:03:02 - Illegal stack of items removed: POTION (2) from player: zloytetya at login.
+04/28/24 16:09:58 - Illegal stack of items removed: POTION (2) from player: ForTuna0 at item scan.
+04/28/24 19:05:41 - Player To4no_ne_228 was using an elytra above the max build height, disabling glide. @ Location{world=CraftWorld{name=world},x=4904.811900501017,y=328.3862881025603,z=2221.350763779701,pitch=2.5500207,yaw=-70.9376}
+04/28/24 19:08:33 - Player To4no_ne_228 was using an elytra above the max build height, disabling glide. @ Location{world=CraftWorld{name=world},x=8923.880542298455,y=262.1336888707215,z=3615.773400897213,pitch=2.3999414,yaw=-71.53758}
+04/28/24 20:14:53 - §agreendemon2283 appears to be using an autofishing mod..  4 caught within 0.3 blocks of each other @ Location{world=CraftWorld{name=spawn},x=40.36501530470911,y=69.52442408821369,z=50.07629864681298,pitch=16.098042,yaw=-340.77136}
+04/29/24 09:45:57 - Player To4no_ne_228 was using an elytra above the max build height, disabling glide. @ Location{world=CraftWorld{name=world},x=901.0918052682669,y=328.29307838217625,z=-855.246307518554,pitch=-60.74984,yaw=219.30957}
+04/29/24 09:46:19 - Player To4no_ne_228 was using an elytra above the max build height, disabling glide. @ Location{world=CraftWorld{name=world},x=1127.9231409618612,y=263.25784183600564,z=-1155.7947062183093,pitch=2.5501893,yaw=216.75946}
+04/29/24 13:04:10 - Player To4no_ne_228 was using an elytra above the max build height, disabling glide. @ Location{world=CraftWorld{name=world},x=-13514.030021178281,y=462.87374912038644,z=-7955.861468837609,pitch=5.868057,yaw=0.4794306}
+04/29/24 13:04:14 - Prevented To4no_ne_228 from activating an elytra while above the max build height. @ Location{world=CraftWorld{name=world},x=-13514.19817108405,y=327.1391118489618,z=-7931.832173203606,pitch=5.868057,yaw=0.4794306}
+04/29/24 13:04:14 - Prevented To4no_ne_228 from activating an elytra while above the max build height. @ Location{world=CraftWorld{name=world},x=-13514.203031611863,y=317.24042805512437,z=-7929.751166739672,pitch=5.868057,yaw=0.4794306}
+04/29/24 13:04:15 - Prevented To4no_ne_228 from activating an elytra while above the max build height. @ Location{world=CraftWorld{name=world},x=-13514.374988124191,y=280.1404200282304,z=-7918.502136674442,pitch=-6.4319434,yaw=0.47943106}
+04/29/24 13:04:16 - Prevented To4no_ne_228 from activating an elytra while above the max build height. @ Location{world=CraftWorld{name=world},x=-13514.446720365771,y=265.5863991361404,z=-7909.184160371775,pitch=0.7680574,yaw=0.47943106}
+04/30/24 12:49:44 - Illegal stack of items removed: POTION (2) from player: Fata1_C0de at item scan.
+05/02/24 16:59:17 - Illegal stack of items removed: POTION (2) from player: vangok1297 at item scan.
+05/02/24 17:01:49 - Player vangok1297 was using an elytra above the max build height, disabling glide. @ Location{world=CraftWorld{name=world_the_end},x=321.221280221724,y=1267.5231352027115,z=-964.7331638347619,pitch=-32.769215,yaw=-230.66835}
+05/02/24 17:01:54 - Prevented vangok1297 from activating an elytra while above the max build height. @ Location{world=CraftWorld{name=world_the_end},x=316.98569671528963,y=1022.2508777457493,z=-968.057029324459,pitch=-90.0,yaw=-250.28639}
+05/02/24 17:01:54 - Prevented vangok1297 from activating an elytra while above the max build height. @ Location{world=CraftWorld{name=world_the_end},x=316.98569671528963,y=1011.8151825479065,z=-968.057029324459,pitch=-90.0,yaw=-250.28639}
+05/02/24 17:01:56 - Prevented vangok1297 from activating an elytra while above the max build height. @ Location{world=CraftWorld{name=world_the_end},x=314.0609532766289,y=874.2748018496331,z=-970.2353852575329,pitch=-90.0,yaw=-221.87396}
+05/02/24 17:01:56 - Prevented vangok1297 from activating an elytra while above the max build height. @ Location{world=CraftWorld{name=world_the_end},x=313.54146287090555,y=859.359652327674,z=-970.7420999616251,pitch=-90.0,yaw=-221.87396}
+05/02/24 17:01:56 - Prevented vangok1297 from activating an elytra while above the max build height. @ Location{world=CraftWorld{name=world_the_end},x=313.2988433150738,y=851.8777240034976,z=-970.98380525812,pitch=-90.0,yaw=-221.19748}
+05/02/24 17:01:59 - Prevented vangok1297 from activating an elytra while above the max build height. @ Location{world=CraftWorld{name=world_the_end},x=311.6889127408026,y=673.6695823087441,z=-972.6506866211798,pitch=-82.15276,yaw=-212.94437}
+05/02/24 17:01:59 - Prevented vangok1297 from activating an elytra while above the max build height. @ Location{world=CraftWorld{name=world_the_end},x=311.5045968612122,y=658.5976841701244,z=-972.9113623242092,pitch=-67.94655,yaw=-216.59744}
+05/02/24 17:01:59 - Prevented vangok1297 from activating an elytra while above the max build height. @ Location{world=CraftWorld{name=world_the_end},x=311.09338690552954,y=644.046685462585,z=-973.4734782542251,pitch=-67.94655,yaw=-216.59744}
+05/02/24 17:01:59 - Prevented vangok1297 from activating an elytra while above the max build height. @ Location{world=CraftWorld{name=world_the_end},x=310.47089702015916,y=630.2069054085961,z=-974.3171025210013,pitch=-67.94655,yaw=-216.59744}
+05/02/24 17:02:00 - Prevented vangok1297 from activating an elytra while above the max build height. @ Location{world=CraftWorld{name=world_the_end},x=307.64605050336024,y=580.3178997188725,z=-978.1147100154859,pitch=-90.0,yaw=-213.89145}
+05/02/24 17:02:00 - Prevented vangok1297 from activating an elytra while above the max build height. @ Location{world=CraftWorld{name=world_the_end},x=307.01534956171974,y=566.5788055202146,z=-978.9748415399177,pitch=-90.0,yaw=-212.94435}
+05/02/24 17:02:01 - Prevented vangok1297 from activating an elytra while above the max build height. @ Location{world=CraftWorld{name=world_the_end},x=304.85925897731914,y=517.39006979212,z=-982.0779163245178,pitch=-90.0,yaw=-213.21495}
+05/02/24 17:02:01 - Prevented vangok1297 from activating an elytra while above the max build height. @ Location{world=CraftWorld{name=world_the_end},x=304.5815456662452,y=510.2314908971946,z=-982.4908718287057,pitch=-90.0,yaw=-212.53845}
+05/03/24 01:30:15 - §aRuanible appears to be using an autofishing mod..  4 caught within 0.3 blocks of each other @ Location{world=CraftWorld{name=world},x=787.6999999880791,y=94.0,z=457.69999998807907,pitch=31.384998,yaw=-264.41922}
+05/03/24 17:21:41 - §aRuanible appears to be using an autofishing mod..  4 caught within 0.3 blocks of each other @ Location{world=CraftWorld{name=world},x=-2286.515853536323,y=6.0,z=44.98514443678083,pitch=19.691408,yaw=-231.75659}

@@ -1,48 +1,315 @@
-# EssentialsX kit configuration.
-# If no kits are defined in this file, the plugin will attempt to copy them from 'config.yml'.
-
-# All items MUST be followed by a quantity.
-# Kit names should be in lowercase and will be treated as such in permissions and costs.
-# Syntax: - item[:durability] amount [enchantment:level]... [itemmeta:value]...
-# For detailed information on item meta, visit https://wiki.ess3.net/wiki/Item_Meta
-#
-# To make a kit execute a command, add '/<command>' to the item list. Use {USERNAME} to reference the player receiving the kit.
-# Use {PLAYER} to display the player's display name instead of the username.
-# 'delay' refers to the cooldown between how often you can use each kit, measured in seconds. Set to -1 for a one-time kit.
-#
-# You can also organize kits into separate files within the 'kits' subdirectory.
-# Essentials will treat all '.yml' files in the subdirectory as valid kit files and add them along with those in here.
-# Each file in the 'kits' subdirectory must be formatted the same as this file.
-#
-# For more information, refer to https://wiki.ess3.net/wiki/Kits
-
 kits:
-  tools:
-    delay: 10
+  start:
+    delay: 43200
     items:
-      - stonesword 1
-      - stoneshovel 1
-      - stonepickaxe 1
-      - stoneaxe 1
-  dtools:
-    delay: 600
+    - chainmail_helmet 1 protection_environmental:1 durability:3
+    - chainmail_chestplate 1 protection_environmental:1 durability:3
+    - chainmail_leggings 1 protection_environmental:1 durability:3
+    - chainmail_boots 1 protection_environmental:1 durability:3
+    - iron_sword 1 damage_all:1 durability:3
+    - iron_pickaxe 1 dig_speed:1 durability:3
+    - iron_axe 1 dig_speed:1 durability:3
+    - bow 1 arrow_knockback:1 durability:3
+    - arrow 64
+    - golden_apple 3
+    - cooked_beef 16
+    - oak_log 16
+    - glass 8
+    - barrel 3
+    - furnace 3
+    - crafting_table 1
+  wander:
+    delay: 43200
     items:
-      - dpickaxe 1 efficiency:1 durability:1 fortune:1 name:&4Gigadrill lore:The_drill_that_&npierces|the_heavens
-      - dshovel 1 digspeed:3 name:Dwarf lore:Diggy|Diggy|Hole
-      - lhelm 1 color:255,255,255 name:Top_Hat lore:Good_day,_Good_day
-      - daxe:780 1
-      - /broadcast {USERNAME} just got some fancy tools!
-  notch:
-    delay: 6000
+    - iron_helmet 1 protection_environmental:2
+    - iron_chestplate 1 protection_environmental:2
+    - iron_leggings 1 protection_environmental:2
+    - iron_boots 1 protection_environmental:2
+    - iron_sword 1 damage_all:2 durability:1
+    - iron_pickaxe 1 dig_speed:2 durability:1
+    - bow 1 arrow_damage:1 durability:2
+    - iron_shovel 1 dig_speed:2 durability:1
+    - iron_hoe 1 dig_speed:2 durability:1
+    - iron_axe 1 dig_speed:2 durability:1
+    - ender_pearl 8
+    - bread 16
+    - iron_ingot 32
+    - cooked_mutton 16
+    - arrow 64
+    - wheat_seeds 32
+  traper:
+    delay: 50400
     items:
-      - playerhead 1 player:Notch
-  color:
-    delay: 6000
+    - diamond_helmet 1 protection_environmental:2
+    - iron_chestplate 1 protection_environmental:2
+    - iron_leggings 1 protection_environmental:2
+    - diamond_boots 1 protection_environmental:2
+    - diamond_sword 1 damage_all:1 durability:2
+    - diamond_pickaxe 1 dig_speed:2 durability:2
+    - bow 1 arrow_damage:2 durability:2
+    - diamond_shovel 1 dig_speed:2 durability:2
+    - diamond_hoe 1 dig_speed:2 durability:2
+    - shield 1 basecolor:16383998
+    - diamond_axe 1 dig_speed:2 durability:2
+    - ender_pearl 12
+    - bread 48
+    - diamond 16
+    - iron_ingot 48
+    - cooked_mutton 32
+    - arrow 64
+    - wheat_seeds 64
+    - fishing_rod 1 durability:1
+  gothic:
+    delay: 50700
     items:
-      - writtenbook 1 title:&4Book_&9o_&6Colors author:KHobbits lore:Ingame_color_codes book:Colors
-  firework:
-    delay: 6000
+    - diamond_helmet 1 mending:1 protection_environmental:2
+    - diamond_chestplate 1 mending:1 protection_environmental:2
+    - diamond_leggings 1 mending:1 protection_environmental:2
+    - diamond_boots 1 mending:1 protection_environmental:2
+    - diamond_sword 1 damage_all:2 durability:2
+    - diamond_pickaxe 1 dig_speed:2 mending:1 durability:2
+    - bow 1 arrow_damage:2 durability:2
+    - diamond_shovel 1 dig_speed:2 durability:2
+    - diamond_hoe 1 dig_speed:2 durability:2
+    - shield 1 durability:1 basecolor:16383998
+    - white_shulker_box 1
+    - experience_bottle 16
+    - diamond_axe 1 dig_speed:2 durability:2
+    - ender_pearl 16
+    - bread 64
+    - diamond 32
+    - cooked_mutton 64
+    - arrow 64
+    - arrow 64
+    - chorus_fruit 16
+    - fishing_rod 1 durability:2
+  deluxe:
+    delay: 64800
     items:
-      - fireworkrocket 1 name:Angry_Creeper color:red fade:green type:creeper power:1
-      - fireworkrocket 1 name:Starry_Night color:yellow,orange fade:blue type:star effect:trail,twinkle power:1
-      - fireworkrocket 2 name:Solar_Wind color:yellow,orange fade:red shape:large effect:twinkle color:yellow,orange fade:red shape:ball effect:trail color:red,purple fade:pink shape:star effect:trail power:1
+    - diamond_helmet 1 mending:1 protection_environmental:3
+    - diamond_chestplate 1 mending:1 protection_environmental:3
+    - diamond_leggings 1 mending:1 protection_environmental:3
+    - diamond_boots 1 mending:1 protection_environmental:3
+    - diamond_sword 1 damage_all:3 durability:2
+    - diamond_pickaxe 1 dig_speed:3 mending:1 durability:2
+    - bow 1 arrow_damage:3 durability:2
+    - diamond_shovel 1 dig_speed:3 durability:2
+    - diamond_hoe 1 dig_speed:3 durability:2
+    - fishing_rod 1 luck:1 durability:3
+    - shield 1 durability:2 basecolor:16383998
+    - white_shulker_box 1
+    - black_shulker_box 1
+    - experience_bottle 32
+    - diamond_axe 1 dig_speed:3 durability:2
+    - ender_pearl 16
+    - cooked_beef 32
+    - golden_apple 16
+    - diamond 48
+    - arrow 32
+    - arrow 64
+    - slowness_tipped_arrow 32
+    - chorus_fruit 48
+  griefer:
+    delay: 86400
+    items:
+    - netherite_helmet 1 protection_fire:1 mending:1 protection_environmental:3
+    - diamond_chestplate 1 protection_fire:1 mending:1 protection_environmental:4
+    - diamond_leggings 1 protection_fire:1 mending:1 protection_environmental:4
+    - netherite_boots 1 protection_fire:1 mending:1 protection_environmental:3
+    - diamond_sword 1 fire_aspect:1 damage_all:4 durability:2
+    - netherite_pickaxe 1 dig_speed:2 mending:1 durability:2
+    - bow 1 arrow_damage:3 durability:2
+    - netherite_shovel 1 dig_speed:2 durability:2
+    - netherite_hoe 1 dig_speed:2 durability:2
+    - elytra 1 mending:1 durability:1
+    - arrow 64
+    - long_slowness_tipped_arrow 64
+    - harming_tipped_arrow 32
+    - fishing_rod 1 luck:2 durability:3
+    - shield 1 durability:3 basecolor:16383998
+    - white_shulker_box 1
+    - black_shulker_box 1
+    - red_shulker_box 1
+    - experience_bottle 64
+    - netherite_axe 1 dig_speed:2 durability:2
+    - ender_pearl 16
+    - ender_pearl 16
+    - cooked_beef 64
+    - golden_apple 32
+    - diamond 64
+    - netherite_scrap 8
+    - chorus_fruit 64
+    - arrow 64
+  saphire:
+    delay: 108000
+    items:
+    - netherite_helmet 1 protection_fire:2 mending:1 protection_environmental:3
+    - netherite_leggings 1 protection_fire:2 mending:1 protection_environmental:3
+    - netherite_chestplate 1 protection_fire:2 mending:1 protection_environmental:3
+    - netherite_boots 1 protection_fire:2 mending:1 protection_environmental:3
+    - netherite_sword 1 fire_aspect:2 damage_all:3 durability:3
+    - netherite_pickaxe 1 dig_speed:3 mending:1 durability:3
+    - crossbow 1 mending:1 multishot:1 piercing:4 durability:3
+    - netherite_shovel 1 dig_speed:3 durability:3
+    - netherite_hoe 1 dig_speed:3 durability:3
+    - magenta_shulker_box 1
+    - experience_bottle 64
+    - experience_bottle 64
+    - elytra 1 mending:1 durability:2
+    - arrow 64
+    - arrow 64
+    - strong_slowness_tipped_arrow 32
+    - harming_tipped_arrow 64
+    - fishing_rod 1 luck:2 durability:3
+    - shield 1 durability:3 basecolor:16383998
+    - white_shulker_box 1
+    - red_shulker_box 1
+    - black_shulker_box 1
+    - netherite_axe 1 dig_speed:3 durability:3
+    - ender_pearl 16
+    - ender_pearl 16
+    - cooked_beef 64
+    - cooked_beef 64
+    - golden_apple 48
+    - diamond 64
+    - netherite_scrap 16
+    - chorus_fruit 64
+  space:
+    delay: 172800
+    items:
+    - netherite_helmet 1 protection_fire:3 mending:1 protection_environmental:4
+    - netherite_chestplate 1 protection_fire:3 mending:1 protection_environmental:4
+    - netherite_leggings 1 protection_fire:3 mending:1 protection_environmental:4
+    - netherite_boots 1 protection_fire:3 mending:1 protection_environmental:4
+    - netherite_sword 1 fire_aspect:2 damage_all:4 sweeping_edge:2 durability:3
+    - netherite_pickaxe 1 dig_speed:4 mending:1 durability:3
+    - crossbow 1 mending:1 multishot:1 piercing:4 durability:3
+    - netherite_shovel 1 dig_speed:4 durability:3
+    - netherite_hoe 1 dig_speed:4 durability:3
+    - white_shulker_box 1
+    - red_shulker_box 1
+    - black_shulker_box 1
+    - magenta_shulker_box 1
+    - blue_shulker_box 1
+    - experience_bottle 64
+    - experience_bottle 64
+    - experience_bottle 64
+    - elytra 1 mending:1 durability:3
+    - netherite_scrap 32
+    - chorus_fruit 32
+    - chorus_fruit 64
+    - arrow 64
+    - arrow 64
+    - strong_slowness_tipped_arrow 64
+    - strong_harming_tipped_arrow 64
+    - fishing_rod 1 luck:2 durability:3
+    - shield 1 durability:3 basecolor:16383998
+    - netherite_axe 1 dig_speed:4 durability:3
+    - ender_pearl 16
+    - ender_pearl 16
+    - ender_pearl 16
+    - cooked_beef 64
+    - cooked_beef 64
+    - golden_apple 64
+    - diamond 32
+    - diamond 64
+  plus:
+    delay: 604800
+    items:
+    - oak_log 64
+    - glass 64
+    - gold_block 16
+    - emerald_block 16
+    - iron_block 32
+    - smooth_quartz 64
+    - chest 16
+    - shulker_box 1
+    - white_shulker_box 1
+    - orange_shulker_box 1
+    - diamond_block 8
+    - shears 1
+    - golden_apple 16
+    - cooked_mutton 64
+    - cooked_beef 64
+    - cooked_salmon 64
+    - firework_rocket 64
+    - cake 1
+  potion1:
+    delay: 1010101010
+    items:
+    - water_potion 1 name:&#FF0015З&#FF1729е&#FF2E3Cл&#FF4550ь&#FF5C64е_&#FF7377К&#FF898Bр&#FFA09Eа&#FFB7B2т&#FFCEC6о&#FFE5D9с&#FFFCEDа
+      splash:false effect:slow power:4 duration:90 splash:false effect:increase_damage
+      power:3 duration:60
+  potion2:
+    delay: 1010101010
+    items:
+    - empty_potion 1 name:&#B300FFЗ&#B915FEе&#C02AFCл&#C63FFBь&#CC54F9е_&#D369F8А&#D97EF6с&#DF93F5с&#E6A8F3а&#ECBDF2с&#F2D2F0и&#F9E7EFн&#FFFCEDа
+      splash:false effect:speed power:1 duration:120 splash:false effect:increase_damage
+      power:2 duration:120
+  potion3:
+    delay: 1010101010
+    items:
+    - empty_potion 1 name:&#40EABAЗ&#53ECBFе&#66EEC4л&#79EFC9ь&#8CF1CEе_&#A0F3D4П&#B3F5D9о&#C6F7DEл&#D9F8E3е&#ECFAE8т&#FFFCEDа
+      splash:false effect:levitation power:0 duration:10
+  potion4:
+    delay: 1010101010
+    items:
+    - empty_potion 1 name:&#5F5F5FЗ&#6E6D6Cе&#7C7C79л&#8B8A86ь&#999893е_&#A8A6A0Ш&#B6B5ACа&#C5C3B9х&#D3D1C6т&#E2DFD3е&#F0EEE0р&#FFFCEDа
+      splash:false effect:fast_digging power:1 duration:120 splash:false effect:luck
+      power:2 duration:120
+  potion5:
+    delay: 1010101010
+    items:
+    - empty_potion 1 name:&#00FF1CЗ&#1CFF33е&#39FE4Aл&#55FE62ь&#71FE79е_&#8EFD90Х&#AAFDA7а&#C6FDBFл&#E3FCD6к&#FFFCEDа
+      splash:false effect:slow power:2 duration:90 splash:false effect:damage_resistance
+      power:2 duration:90
+  strela1:
+    delay: 10101010101
+    items:
+    - minecraft:tipped_arrow 8 0 {Potion:"minecraft:water",CustomPotionEffects:[{Id:7,Duration:0},{Id:20,Amplifier:1,Duration:320}],display:{Name:"&#EBFF28р&#EDFE3Bе&#EFFE4Fл&#F1FE63ы_&#F3FE77А&#F5FD8Aн&#F7FD9Eу&#F9FDB2б&#FBFDC6и&#FDFCD9с&#FFFCEDа"}}
+  strela2:
+    delay: 10101010101
+    items:
+    - tipped_arrow 8 name:&#4C3E30С&#5A4D3Fт&#685B4Dр&#756A5Cе&#83786Aл&#918779ы_&#9F9687С&#ACA496т&#BAB3A4а&#C8C2B3р&#D6D0C1о&#E3DFD0с&#F1EDDEт&#FFFCEDы
+      splash:false effect:hunger power:5 duration:2 splash:false effect:levitation
+      power:2 duration:2
+  strela3:
+    delay: 10101010101
+    items:
+    - tipped_arrow 8 name:&#FF0000С&#FF1211т&#FF2422р&#FF3633е&#FF4844л&#FF5A55ы_&#FF6C66П&#FF7E76р&#FF9087о&#FFA298к&#FFB4A9л&#FFC6BAя&#FFD8CBт&#FFEADCи&#FFFCEDя
+      splash:false effect:slow power:1 duration:2 splash:false effect:weakness power:0
+      duration:2 splash:false effect:poison power:2 duration:2
+  strela4:
+    delay: 10101010101
+    items:
+    - tipped_arrow 8 name:&#775600С&#816211т&#8A6E22р&#947A33е&#9E8544л&#A89155ы_&#B19D66Д&#BBA976р&#C5B587е&#CEC198в&#D8CDA9н&#E2D8BAо&#ECE4CBс&#F5F0DCт&#FFFCEDи
+      splash:false effect:blindness power:0 duration:3 splash:false effect:hunger
+      power:2 duration:2 splash:false effect:glowing power:0 duration:5
+  strela5:
+    delay: 10101010101
+    items:
+    - water_tipped_arrow 8 name:&#00FF4FС&#1AFF5Fт&#33FE6Fр&#4DFE7Eе&#66FE8Eл&#80FE9Eы_&#99FDAEК&#B3FDBEо&#CCFDCDб&#E6FCDDр&#FFFCEDы
+      splash:false effect:slow power:1 duration:3 splash:false effect:confusion power:0
+      duration:3
+  kp:
+    delay: 259200
+    items:
+    - diamond_helmet 1 protection_environmental:2
+    - iron_chestplate 1 protection_environmental:2
+    - iron_leggings 1 protection_environmental:2
+    - diamond_boots 1 protection_environmental:2
+    - diamond_sword 1 damage_all:1 durability:2
+    - diamond_pickaxe 1 dig_speed:2 durability:2
+    - bow 1 arrow_damage:2 durability:2
+    - diamond_shovel 1 dig_speed:2 durability:2
+    - diamond_hoe 1 dig_speed:2 durability:2
+    - fishing_rod 1 durability:1
+    - shield 1 basecolor:16383998
+    - diamond_axe 1 dig_speed:2 durability:2
+    - ender_pearl 12
+    - bread 48
+    - diamond 16
+    - iron_ingot 48
+    - cooked_mutton 32
+    - arrow 64
+    - wheat_seeds 64

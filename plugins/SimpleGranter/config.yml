@@ -1,0 +1,50 @@
+Settings:
+  PermissionDriver: vault # or vault
+  MySql:
+    Enabled: false
+    Host: 'localhost'
+    Port: 3306
+    DataBase: 'nameDataBase'
+    User: 'root'
+    Password: 'password'
+  Groups:
+    owner:
+      wander: 999
+      traper: 999
+      gothic: 999
+    sapphire:
+      wander: 2
+      traper: 1
+    space:
+      wander: 3
+      traper: 2
+      gothic: 1
+  Levels:
+    space: 7
+    sapphire: 6
+    griefer: 5
+    deluxe: 4
+    gothic: 3
+    traper: 2
+    wander: 1
+    default: 0
+  GiveCommand: lp user %target% parent add %group%
+  GiveBroadCast:
+    - "&r &r"
+    - "&8 ▪ &fДонатер &a%player% &fподарил &5%group%&r &fигроку &d%target%"
+    - "&8 ▪ &fХочешь тоже дарить всем своим друзьям донат?"
+    - "&8 ▪ &fТогда купи &a&lSAPPHIRE&f на сайте &7» &d&lᴛʀᴜsᴛsᴘᴀᴄᴇ.sᴜ"
+    - "&0 &0"
+
+Messages:
+  Help:
+    - '&7» &d/grant &7(&dНик&7) (&dДонат&7) &8- &fПодарить донат другу'
+  NoPermissions: "&7[&d&lПодарки&7] &8» &fУ вас слишком низкий донат."
+  ReloadConfig: "&7[&d&lПодарки&7] &8» &aУспешная перезагрузка!"
+  PlayerNotFound: "&7[&d&lПодарки&7] &8» &fИгрок не в сети."
+  GiveYourself: "&7[&d&lПодарки&7] &8» &fВы не можете выдать себе."
+  AlreadyIssued: "&7[&d&lПодарки&7] &8» &fВаш лимит на этот донат - исчерпан."
+  CannotGrant: "&7[&d&lПодарки&7] &8» &fВы не можете подарить этот донат."
+  CannotGrantAnyOthers: "&7[&d&lПодарки&7] &8» &cКакая-то ошибка."
+  GroupNotFound: "&7[&d&lПодарки&7] &8» &fДонат не найден."
+  TargetGroupLevelBigger: "&7[&d&lПодарки&7] &8» &cКакая-то ошибка #2."

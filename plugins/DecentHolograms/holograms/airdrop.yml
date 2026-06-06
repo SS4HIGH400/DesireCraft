@@ -1,0 +1,50 @@
+location: spawn:52.500:110.800:-25.500
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: -90.0
+down-origin: true
+pages:
+- lines:
+  - content: '&7⊲ <#ANIM:wave:&d&l,&5&l&n>МИСТИЧЕСКИЕ ДАНЖИ</#ANIM> &7⊳'
+    height: 0.3
+  - content: '&8★ &7Там может быть опасно! &8★'
+    height: 0.3
+  - content: ''
+    height: 0.3
+  - content: '&f&#A9F1FF&lВ&#9EECFF&lО&#94E7FF&lЗ&#89E2FF&lД&#7FDDFF&lУ&#74D8FF&lШ&#6AD3FF&lН&#5FCEFF&lЫ&#55CAFF&lЙ &#4AC5FF&lК&#3FC0FF&lО&#35BBFF&lР&#2AB6FF&lА&#20B1FF&lБ&#15ACFF&lЛ&#0BA7FF&lИ&#00A2FF&lК'
+    height: 0.3
+  - content: '&fПоявляется в &bпонедельник&f в &d13:00'
+    height: 0.3
+  - content: ''
+    height: 0.3
+  - content: '&#FFF800&lЗ&#FFEF00&lА&#FFE600&lТ&#FFDD00&lЕ&#FFD400&lР&#FFCB00&lЯ&#FFC200&lН&#FFB900&lН&#FFB100&lА&#FFA800&lЯ &#FF9F00&lХ&#FF9600&lИ&#FF8D00&lЖ&#FF8400&lИ&#FF7B00&lН&#FF7200&lА'
+    height: 0.3
+  - content: '&fПоявляется в &6среду &fв &d15:00'
+    height: 0.3
+  - content: ''
+    height: 0.3
+  - content: '&#686355&lЧ&#6C6859&lЁ&#716D5D&lР&#757161&lН&#797665&lА&#7D7B69&lЯ &#82806E&lК&#868472&lО&#8A8976&lР&#8E8E7A&lО&#93937E&lБ&#979782&lК&#9B9C86&lА'
+    height: 0.3
+  - content: '&fПоявляется в&7 пятницу &fв &d17:00'
+    height: 0.3
+  - content: ''
+    height: 0.3
+  - content: '&#FFA500&lБ&#FF9513&lА&#FF8425&lШ&#FF7438&lН&#FF634A&lЯ &#FF535D&lВ&#FF4270&lЕ&#FF3282&lД&#FF2195&lЬ&#FF11A7&lМ&#FF00BA&lЫ'
+    height: 0.3
+  - content: '&fПоявляется в &dвоскресенье &fв &d19:00'
+    height: 0.3
+  - content: ''
+    height: 0.3
+  - content: '&7При ожидании разблокировки сундука,'
+    height: 0.3
+  - content: '&7вы будете получать по &e&l15 монеток&7.'
+    height: 0.3
+  - content: ''
+    height: 0.3
+  - content: '&7&oВсё время в таблице по МСК.'
+    height: 0.3
+  - content: '#HEAD: PLAYER_HEAD (eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTgyNzBjOGFjMjVhMDdhZTJhNzFkYmQwNjFiNmRlZTEwNTZiZjYyNWY4Yjg4MWExZjJlZjQ2NGY3MDUzYWNhOCJ9fX0=)'
+    height: 0.0
+  actions: {}

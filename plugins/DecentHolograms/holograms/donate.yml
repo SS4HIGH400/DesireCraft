@@ -1,0 +1,51 @@
+location: spawn:21,500:115,500:0,500
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: '&7⊲ <#ANIM:wave:&d&l,&5&l&n>ПРИВИЛЕГИИ</#ANIM> &7⊳'
+    height: 0.3
+  - content: '&8★ &7Почувствуй себя крутым! &8★'
+    height: 0.3
+  - content: ''
+    height: 0.3
+  - content: '&d⇩ &fОбычные привилегии &d⇩'
+    height: 0.3
+  - content: '&#08FB5D&lᴡ&#0BFC4A&lᴀ&#0EFD38&lɴ&#12FD25&lᴅ&#15FE13&lᴇ&#18FF00&lʀ  &8»
+      &a39 руб.  &#A9A9A9&n(&#A1A1A1&nН&#999999&nа&#919191&nв&#898989&nс&#808080&nе&#787878&nг&#707070&nд&#686868&nа&#606060&n)&r'
+    height: 0.3
+  - content: '&#FBEB08&lᴛ&#FCD906&lʀ&#FDC705&lᴀ&#FDB503&lᴘ&#FEA302&lᴇ&#FF9100&lʀ  &8»
+      &e79 руб.  &#A9A9A9&n(&#A1A1A1&nН&#999999&nа&#919191&nв&#898989&nс&#808080&nе&#787878&nг&#707070&nд&#686868&nа&#606060&n)&r'
+    height: 0.3
+  - content: '&#FB08A6&lɢ&#F306B8&lᴏ&#EB05CA&lᴛ&#E203DB&lʜ&#DA02ED&lɪ&#D200FF&lᴄ  &8»
+      &d159 руб. &#A9A9A9&n(&#A1A1A1&nН&#999999&nа&#919191&nв&#898989&nс&#808080&nе&#787878&nг&#707070&nд&#686868&nа&#606060&n)&r'
+    height: 0.3
+  - content: '&#088FFB&lᴅ&#06A5FC&lᴇ&#05BCFD&lʟ&#03D2FD&lᴜ&#02E9FE&lx&#00FFFF&lᴇ  &8»
+      &b289 руб. &#A9A9A9&n(&#A1A1A1&nН&#999999&nа&#919191&nв&#898989&nс&#808080&nе&#787878&nг&#707070&nд&#686868&nа&#606060&n)&r'
+    height: 0.3
+  - content: '&#FF2B33&lɢ&#FF3432&lʀ&#FF3D31&lɪ&#FF4630&lᴇ&#FF4E2F&lꜰ&#FF572E&lᴇ&#FF602D&lʀ
+      &8» &c379 руб. &#A9A9A9&n(&#A1A1A1&nН&#999999&nа&#919191&nв&#898989&nс&#808080&nе&#787878&nг&#707070&nд&#686868&nа&#606060&n)&r'
+    height: 0.3
+  - content: ''
+    height: 0.3
+  - content: '&5⇩ &fУникальные привилегии &5⇩'
+    height: 0.3
+  - content: '&#00FF3B&ls&#12FF4C&lᴀ&#25FF5D&lᴘ&#37FF6E&lᴘ&#4AFF7F&lʜ&#5CFF90&lɪ&#6FFFA1&lʀ&#81FFB2&lᴇ
+      &8» &21799 руб. &#A9A9A9&n(&#A1A1A1&nН&#999999&nа&#919191&nв&#898989&nс&#808080&nе&#787878&nг&#707070&nд&#686868&nа&#606060&n)&r'
+    height: 0.3
+  - content: '&#BE00FF&ls&#BD20FF&lᴘ&#BD41FF&lᴀ&#BC61FF&lᴄ&#BB81FF&lᴇ    &8» &53499
+      руб. &#A9A9A9&n(&#A1A1A1&nН&#999999&nа&#919191&nв&#898989&nс&#808080&nе&#787878&nг&#707070&nд&#686868&nа&#606060&n)&r'
+    height: 0.3
+  - content: ''
+    height: 0.3
+  - content: Покупка &d&nпривилегий&r&f только
+    height: 0.3
+  - content: на сайте &7» &#D200FF&lᴡ&#CE00FF&lᴡ&#C900FF&lᴡ&#C500FF&l.&#C000FF&lᴛ&#BC00FF&lʀ&#B700FF&lᴜ&#B300FF&ls&#AE00FF&lᴛ&#AA00FF&ls&#A500FF&lᴘ&#A100FF&lᴀ&#9C00FF&lᴄ&#9800FF&lᴇ&#9300FF&l.&#8F00FF&ls&#8A00FF&lᴜ
+    height: 0.5
+  - content: '#HEAD: PLAYER_HEAD (eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjhiMWFhZWUzNDYwNmQ2ZDdmNmRhZmQwMmQwMzc5ZDcxNTkxMzE5NGYwMDI1ZTZmZWZlMDM0NDM5YzczNTFlNCJ9fX0=)'
+    height: 0.0
+  actions: {}

@@ -42,7 +42,8 @@ summary-on-start: true
 op-permissions: true
 build-permission-nodes:
     enable: false
-    deny-message: '&eSorry, but you are not permitted to do that here.'
+    deny-message: §6§l[Регион] &fИзвините, но вам &cне разрешено §fделать это в этом
+        месте.
 event-handling:
     block-entity-spawns-with-untraceable-cause: false
     interaction-whitelist: []
@@ -104,8 +105,8 @@ mobs:
     block-above-ground-slimes: false
     block-other-explosions: false
     block-zombie-door-destruction: false
-    block-vehicle-entry: false
     block-creature-spawn: []
+    block-vehicle-entry: false
 player-damage:
     disable-fall-damage: false
     disable-lava-damage: false
@@ -170,5 +171,3 @@ blacklist:
             path: worldguard/logs/%Y-%m-%d.log
             open-files: 10
 custom-metrics-charts: true
-extra-timings:
-    session-handlers: true

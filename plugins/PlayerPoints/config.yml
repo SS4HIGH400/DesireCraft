@@ -1,0 +1,59 @@
+# __________ __                           __________       __        __
+# \______   \  | _____  ___ __  __________\______   \____ |__| _____/  |_  ______
+#  |     ___/  | \__  \<   |  |/ __ \_  __ \     ___/  _ \|  |/    \   __\/  ___/
+#  |    |   |  |__/ __ \\___  \  ___/|  | \/    |  (  <_> )  |   |  \  |  \___ \
+#  |____|   |____(____  / ____|\___  >__|  |____|   \____/|__|___|  /__| /____  >
+#                     \/\/         \/                             \/          \/
+# 
+# The locale to use in the /locale folder
+# Default: en_US
+locale: en_US
+vault: false
+vault-priority: Low
+treasury: false
+treasury-priority: LOW
+leaderboard-per-page: 10
+cache-duration: 30
+bungeecord-send-updates: true
+leaderboard-placeholder-entries: 10
+leaderboard-placeholder-refresh-interval: 15
+starting-balance: 0
+vote:
+  enabled: false
+  amount: 100
+  online: false
+base-command-redirect: ''
+legacy-database-mode:
+  enabled: false
+  table-name: playerpoints
+mysql-settings:
+  enabled: false
+  hostname: ''
+  port: 3306
+  database-name: ''
+  user-name: ''
+  user-password: ''
+  use-ssl: false
+  connection-pool-size: 3
+storage: YAML
+mysql:
+  host: localhost
+  port: 3306
+  database: minecraft
+  user: username
+  password: pass
+  table: playerpoints
+  import:
+    use: false
+    source: YAML
+  export:
+    use: false
+    source: SQLITE
+  retry: 10
+restrictions:
+  autocompleteOnline: false
+  hasPlayedBefore: false
+debug:
+  database: false
+  uuid: false
+version: 2.1.4

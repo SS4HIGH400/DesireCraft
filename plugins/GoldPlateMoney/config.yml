@@ -8,7 +8,7 @@ enable-particles: true
 enable-sounds: true
 particle-type: HAPPY_VILLAGER
 sound-type: ENTITY_EXPERIENCE_ORB_PICKUP
-plate-x: -546.0
-plate-y: 67.0
-plate-z: 454.0
+plate-x: 38.0
+plate-y: 61.0
+plate-z: 29.0
 plate-world: spawn

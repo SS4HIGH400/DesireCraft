@@ -1,0 +1,44 @@
+ELYTRA:
+  ==: org.bukkit.inventory.ItemStack
+  v: 2586
+  type: ELYTRA
+COBWEB:
+  ==: org.bukkit.inventory.ItemStack
+  v: 2586
+  type: COBWEB
+NETHER_STAR:
+  ==: org.bukkit.inventory.ItemStack
+  v: 2586
+  type: NETHER_STAR
+PAPER:
+  ==: org.bukkit.inventory.ItemStack
+  v: 2586
+  type: PAPER
+DIAMOND:
+  ==: org.bukkit.inventory.ItemStack
+  v: 2586
+  type: DIAMOND
+FEATHER:
+  ==: org.bukkit.inventory.ItemStack
+  v: 2586
+  type: FEATHER
+ENCHANTED_GOLDEN_APPLE:
+  ==: org.bukkit.inventory.ItemStack
+  v: 2586
+  type: ENCHANTED_GOLDEN_APPLE
+GOLD_BLOCK:
+  ==: org.bukkit.inventory.ItemStack
+  v: 2586
+  type: GOLD_BLOCK
+APPLE:
+  ==: org.bukkit.inventory.ItemStack
+  v: 2586
+  type: APPLE
+TOTEM_OF_UNDYING:
+  ==: org.bukkit.inventory.ItemStack
+  v: 2586
+  type: TOTEM_OF_UNDYING
+PUFFERFISH:
+  ==: org.bukkit.inventory.ItemStack
+  v: 2586
+  type: PUFFERFISH

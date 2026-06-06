@@ -1,0 +1,6 @@
+cooldown: 10 #Не менять!
+
+cmds:
+  - 'dc reload'
+  - 'plugman reload AtomicChestDeath'
+  - 'gamerule announceAdvancements false'

@@ -1,0 +1,330 @@
+#=========================================================
+menu_title: '[ᴛs] ▸ Мясник'
+open_command: myaso4
+size: 54
+items:
+  'exit':
+    material: arrow
+    slot: 0
+    display_name: '&c« Выйти'
+    left_click_commands:
+      - '[player] seller'
+    right_click_commands:
+      - '[player] seller'
+  '1':
+    material: porkchop
+    slot: 19
+    amount: 1
+    display_name: '&#9400FFС&#A600FEв&#B800FDи&#CA00FCн&#DB00FAи&#ED00F9н&#FF00F8а&7 (64шт)'
+    lore:
+    - ''
+    - '&8 ▪ &dЛКМ &8» &fПродать &d64шт&f за &d3200$'
+    - ''
+    - '&8 ▪ &5ПКМ &8» &fИзменить кол-во'
+    - '&7 ▸ &fПродать по &71 шт.'
+    - '&7 ▸ &fПродать по &716 шт.'
+    - '&7 ▸ &fПродать по &732 шт.'
+    - '&7 ▸ &fПродать по &a64 шт.'
+    - '&7 ▸ &fПродать &7ВСЁ'
+    - ''
+    - '&8 ▪ &fВаши Монеты: &d%vault_eco_balance_fixed%$'
+    - ''
+    right_click_commands:
+    - '[player] myaso5'
+    left_click_requirement:
+      requirements:
+        item_check:
+          type: has item
+          material: porkchop
+          amount: 64
+          deny_commands:
+          - '[message]&7[&#F4C4F3&lС&#F5B5F4&lк&#F7A5F5&lу&#F896F7&lп&#F986F8&lщ&#FB77F9&lи&#FC67FA&lк&7] &8» &fНет необходимого предмета, либо кол-ва предметов для продажи!'
+    left_click_commands:
+      - '[givemoney] 3200'
+      - '[refresh]'
+      - '[message]&7[&#F4C4F3&lС&#F5B5F4&lк&#F7A5F5&lу&#F896F7&lп&#F986F8&lщ&#FB77F9&lи&#FC67FA&lк&7] &8» &fВы успешно продали &dСвинину'
+      - '[console] minecraft:clear %player_name% porkchop 64'
+  '2':
+    material: beef
+    slot: 20
+    amount: 1
+    display_name: '&#9400FFГ&#A300FEо&#B300FDв&#C200FCя&#D100FBд&#E000FAи&#F000F9н&#FF00F8а&7 (64шт)'
+    lore:
+    - ''
+    - '&8 ▪ &dЛКМ &8» &fПродать &d64шт&f за &d4160$'
+    - ''
+    - '&8 ▪ &5ПКМ &8» &fИзменить кол-во'
+    - '&7 ▸ &fПродать по &71 шт.'
+    - '&7 ▸ &fПродать по &716 шт.'
+    - '&7 ▸ &fПродать по &732 шт.'
+    - '&7 ▸ &fПродать по &a64 шт.'
+    - '&7 ▸ &fПродать &7ВСЁ'
+    - ''
+    - '&8 ▪ &fВаши Монеты: &d%vault_eco_balance_fixed%$'
+    - ''
+    right_click_commands:
+    - '[player] myaso5'
+    left_click_requirement:
+      requirements:
+        item_check:
+          type: has item
+          material: beef
+          amount: 64
+          deny_commands:
+          - '[message]&7[&#F4C4F3&lС&#F5B5F4&lк&#F7A5F5&lу&#F896F7&lп&#F986F8&lщ&#FB77F9&lи&#FC67FA&lк&7] &8» &fНет необходимого предмета, либо кол-ва предметов для продажи!'
+    left_click_commands:
+      - '[givemoney] 4160'
+      - '[refresh]'
+      - '[message]&7[&#F4C4F3&lС&#F5B5F4&lк&#F7A5F5&lу&#F896F7&lп&#F986F8&lщ&#FB77F9&lи&#FC67FA&lк&7] &8» &fВы успешно продали &dГовядину'
+      - '[console] minecraft:clear %player_name% beef 64'
+  '3':
+    material: chicken
+    slot: 21
+    amount: 1
+    display_name: '&#9400FFК&#A900FEу&#BF00FCр&#D400FBи&#EA00F9ц&#FF00F8а&7 (64шт)'
+    lore:
+    - ''
+    - '&8 ▪ &dЛКМ &8» &fПродать &d64шт&f за &d4160$'
+    - ''
+    - '&8 ▪ &5ПКМ &8» &fИзменить кол-во'
+    - '&7 ▸ &fПродать по &71 шт.'
+    - '&7 ▸ &fПродать по &716 шт.'
+    - '&7 ▸ &fПродать по &732 шт.'
+    - '&7 ▸ &fПродать по &a64 шт.'
+    - '&7 ▸ &fПродать &7ВСЁ'
+    - ''
+    - '&8 ▪ &fВаши Монеты: &d%vault_eco_balance_fixed%$'
+    - ''
+    right_click_commands:
+    - '[player] myaso5'
+    left_click_requirement:
+      requirements:
+        item_check:
+          type: has item
+          material: chicken
+          amount: 64
+          deny_commands:
+          - '[message]&7[&#F4C4F3&lС&#F5B5F4&lк&#F7A5F5&lу&#F896F7&lп&#F986F8&lщ&#FB77F9&lи&#FC67FA&lк&7] &8» &fНет необходимого предмета, либо кол-ва предметов для продажи!'
+    left_click_commands:
+      - '[givemoney] 4160'
+      - '[refresh]'
+      - '[message]&7[&#F4C4F3&lС&#F5B5F4&lк&#F7A5F5&lу&#F896F7&lп&#F986F8&lщ&#FB77F9&lи&#FC67FA&lк&7] &8» &fВы успешно продали &dЛосось'
+      - '[console] minecraft:clear %player_name% chicken 64'
+  '4':
+    material: rabbit
+    slot: 22
+    amount: 1
+    display_name: '&#9400FFК&#A900FEр&#BF00FCо&#D400FBл&#EA00F9и&#FF00F8к&7 (64шт)'
+    lore:
+    - ''
+    - '&8 ▪ &dЛКМ &8» &fПродать &d64шт&f за &d5120$'
+    - ''
+    - '&8 ▪ &5ПКМ &8» &fИзменить кол-во'
+    - '&7 ▸ &fПродать по &71 шт.'
+    - '&7 ▸ &fПродать по &716 шт.'
+    - '&7 ▸ &fПродать по &732 шт.'
+    - '&7 ▸ &fПродать по &a64 шт.'
+    - '&7 ▸ &fПродать &7ВСЁ'
+    - ''
+    - '&8 ▪ &fВаши Монеты: &d%vault_eco_balance_fixed%$'
+    - ''
+    right_click_commands:
+    - '[player] myaso5'
+    left_click_requirement:
+      requirements:
+        item_check:
+          type: has item
+          material: rabbit
+          amount: 64
+          deny_commands:
+          - '[message]&7[&#F4C4F3&lС&#F5B5F4&lк&#F7A5F5&lу&#F896F7&lп&#F986F8&lщ&#FB77F9&lи&#FC67FA&lк&7] &8» &fНет необходимого предмета, либо кол-ва предметов для продажи!'
+    left_click_commands:
+      - '[givemoney] 5120'
+      - '[refresh]'
+      - '[message]&7[&#F4C4F3&lС&#F5B5F4&lк&#F7A5F5&lу&#F896F7&lп&#F986F8&lщ&#FB77F9&lи&#FC67FA&lк&7] &8» &fВы успешно продали &dКролика'
+      - '[console] minecraft:clear %player_name% rabbit 64'
+  '5':
+    material: mutton
+    slot: 23
+    amount: 1
+    display_name: '&#9400FFБ&#A300FEа&#B300FDр&#C200FCа&#D100FBн&#E000FAи&#F000F9н&#FF00F8а&7 (64шт)'
+    lore:
+    - ''
+    - '&8 ▪ &dЛКМ &8» &fПродать &d64шт&f за &d5120$'
+    - ''
+    - '&8 ▪ &5ПКМ &8» &fИзменить кол-во'
+    - '&7 ▸ &fПродать по &71 шт.'
+    - '&7 ▸ &fПродать по &716 шт.'
+    - '&7 ▸ &fПродать по &732 шт.'
+    - '&7 ▸ &fПродать по &a64 шт.'
+    - '&7 ▸ &fПродать &7ВСЁ'
+    - ''
+    - '&8 ▪ &fВаши Монеты: &d%vault_eco_balance_fixed%$'
+    - ''
+    right_click_commands:
+    - '[player] myaso5'
+    left_click_requirement:
+      requirements:
+        item_check:
+          type: has item
+          material: mutton
+          amount: 64
+          deny_commands:
+          - '[message]&7[&#F4C4F3&lС&#F5B5F4&lк&#F7A5F5&lу&#F896F7&lп&#F986F8&lщ&#FB77F9&lи&#FC67FA&lк&7] &8» &fНет необходимого предмета, либо кол-ва предметов для продажи!'
+    left_click_commands:
+      - '[givemoney] 5120'
+      - '[refresh]'
+      - '[message]&7[&#F4C4F3&lС&#F5B5F4&lк&#F7A5F5&lу&#F896F7&lп&#F986F8&lщ&#FB77F9&lи&#FC67FA&lк&7] &8» &fВы успешно продали &dБаранину'
+      - '[console] minecraft:clear %player_name% mutton 64'
+  '6':
+    material: cod
+    slot: 24
+    amount: 1
+    display_name: '&#9400FFТ&#A900FEр&#BF00FCе&#D400FBс&#EA00F9к&#FF00F8а&7 (64шт)'
+    lore:
+    - ''
+    - '&8 ▪ &dЛКМ &8» &fПродать &d64шт&f за &d5760$'
+    - ''
+    - '&8 ▪ &5ПКМ &8» &fИзменить кол-во'
+    - '&7 ▸ &fПродать по &71 шт.'
+    - '&7 ▸ &fПродать по &716 шт.'
+    - '&7 ▸ &fПродать по &732 шт.'
+    - '&7 ▸ &fПродать по &a64 шт.'
+    - '&7 ▸ &fПродать &7ВСЁ'
+    - ''
+    - '&8 ▪ &fВаши Монеты: &d%vault_eco_balance_fixed%$'
+    - ''
+    right_click_commands:
+    - '[player] myaso5'
+    left_click_requirement:
+      requirements:
+        item_check:
+          type: has item
+          material: cod
+          amount: 64
+          deny_commands:
+          - '[message]&7[&#F4C4F3&lС&#F5B5F4&lк&#F7A5F5&lу&#F896F7&lп&#F986F8&lщ&#FB77F9&lи&#FC67FA&lк&7] &8» &fНет необходимого предмета, либо кол-ва предметов для продажи!'
+    left_click_commands:
+      - '[givemoney] 5760'
+      - '[refresh]'
+      - '[message]&7[&#F4C4F3&lС&#F5B5F4&lк&#F7A5F5&lу&#F896F7&lп&#F986F8&lщ&#FB77F9&lи&#FC67FA&lк&7] &8» &fВы успешно продали &dТреску'
+      - '[console] minecraft:clear %player_name% cod 64'
+  '7':
+    material: salmon
+    slot: 25
+    amount: 1
+    display_name: '&#9400FFЛ&#A900FEо&#BF00FCс&#D400FBо&#EA00F9с&#FF00F8ь&7 (64шт)'
+    lore:
+    - ''
+    - '&8 ▪ &dЛКМ &8» &fПродать &d64шт&f за &d6400$'
+    - ''
+    - '&8 ▪ &5ПКМ &8» &fИзменить кол-во'
+    - '&7 ▸ &fПродать по &71 шт.'
+    - '&7 ▸ &fПродать по &716 шт.'
+    - '&7 ▸ &fПродать по &732 шт.'
+    - '&7 ▸ &fПродать по &a64 шт.'
+    - '&7 ▸ &fПродать &7ВСЁ'
+    - ''
+    - '&8 ▪ &fВаши Монеты: &d%vault_eco_balance_fixed%$'
+    - ''
+    right_click_commands:
+    - '[player] myaso5'
+    left_click_requirement:
+      requirements:
+        item_check:
+          type: has item
+          material: salmon
+          amount: 64
+          deny_commands:
+          - '[message]&7[&#F4C4F3&lС&#F5B5F4&lк&#F7A5F5&lу&#F896F7&lп&#F986F8&lщ&#FB77F9&lи&#FC67FA&lк&7] &8» &fНет необходимого предмета, либо кол-ва предметов для продажи!'
+    left_click_commands:
+      - '[givemoney] 6400'
+      - '[refresh]'
+      - '[message]&7[&#F4C4F3&lС&#F5B5F4&lк&#F7A5F5&lу&#F896F7&lп&#F986F8&lщ&#FB77F9&lи&#FC67FA&lк&7] &8» &fВы успешно продали &dЛосось'
+      - '[console] minecraft:clear %player_name% salmon 64'
+  '8':
+    material: tropical_fish
+    slot: 30
+    amount: 1
+    display_name: '&#9400FFТ&#9C00FFр&#A300FEо&#AB00FEп&#B300FDи&#BA00FDч&#C200FCе&#CA00FCс&#D100FBк&#D900FBа&#E000FAя &#E800FAр&#F000F9ы&#F700F9б&#FF00F8а&7 (64шт)'
+    lore:
+    - ''
+    - '&8 ▪ &dЛКМ &8» &fПродать &d64шт&f за &d7040$'
+    - ''
+    - '&8 ▪ &5ПКМ &8» &fИзменить кол-во'
+    - '&7 ▸ &fПродать по &71 шт.'
+    - '&7 ▸ &fПродать по &716 шт.'
+    - '&7 ▸ &fПродать по &732 шт.'
+    - '&7 ▸ &fПродать по &a64 шт.'
+    - '&7 ▸ &fПродать &7ВСЁ'
+    - ''
+    - '&8 ▪ &fВаши Монеты: &d%vault_eco_balance_fixed%$'
+    - ''
+    right_click_commands:
+    - '[player] myaso5'
+    left_click_requirement:
+      requirements:
+        item_check:
+          type: has item
+          material: tropical_fish
+          amount: 64
+          deny_commands:
+          - '[message]&7[&#F4C4F3&lС&#F5B5F4&lк&#F7A5F5&lу&#F896F7&lп&#F986F8&lщ&#FB77F9&lи&#FC67FA&lк&7] &8» &fНет необходимого предмета, либо кол-ва предметов для продажи!'
+    left_click_commands:
+      - '[givemoney] 7040'
+      - '[refresh]'
+      - '[message]&7[&#F4C4F3&lС&#F5B5F4&lк&#F7A5F5&lу&#F896F7&lп&#F986F8&lщ&#FB77F9&lи&#FC67FA&lк&7] &8» &fВы успешно продали &dТропическую рыбу'
+      - '[console] minecraft:clear %player_name% tropical_fish 64'
+  '9':
+    material: pufferfish
+    slot: 32
+    amount: 1
+    display_name: '&#9400FFФ&#B800FDу&#DB00FAг&#FF00F8у&7 (64шт)'
+    lore:
+    - ''
+    - '&8 ▪ &dЛКМ &8» &fПродать &d64шт&f за &d4480$'
+    - ''
+    - '&8 ▪ &5ПКМ &8» &fИзменить кол-во'
+    - '&7 ▸ &fПродать по &71 шт.'
+    - '&7 ▸ &fПродать по &716 шт.'
+    - '&7 ▸ &fПродать по &732 шт.'
+    - '&7 ▸ &fПродать по &a64 шт.'
+    - '&7 ▸ &fПродать &7ВСЁ'
+    - ''
+    - '&8 ▪ &fВаши Монеты: &d%vault_eco_balance_fixed%$'
+    - ''
+    right_click_commands:
+    - '[player] myaso5'
+    left_click_requirement:
+      requirements:
+        item_check:
+          type: has item
+          material: pufferfish
+          amount: 64
+          deny_commands:
+          - '[message]&7[&#F4C4F3&lС&#F5B5F4&lк&#F7A5F5&lу&#F896F7&lп&#F986F8&lщ&#FB77F9&lи&#FC67FA&lк&7] &8» &fНет необходимого предмета, либо кол-ва предметов для продажи!'
+    left_click_commands:
+      - '[givemoney] 4480'
+      - '[refresh]'
+      - '[message]&7[&#F4C4F3&lС&#F5B5F4&lк&#F7A5F5&lу&#F896F7&lп&#F986F8&lщ&#FB77F9&lи&#FC67FA&lк&7] &8» &fВы успешно продали &dФугу'
+      - '[console] minecraft:clear %player_name% pufferfish 64'
+  'back':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2VmMTE5ZjA4ODUxYTcyYTVmMTBmYmMzMjQ3ZDk1ZTFjMDA2MzYwZDJiNGY0MTJiMjNjZTA1NDA5Mjc1NmIwYyJ9fX0=
+    slot: 49
+    display_name: '&c&lНазад'
+    lore:
+    - ''
+    - '&8 ▪ &fНажав сюда, вы сможете'
+    - '&8 ▪ &fвернуться в прошлое меню.'
+    - ''
+    click_commands:
+    - '[openguimenu] seller'
+    - '[sound] BLOCK_NOTE_BLOCK_BASS'
+  'filler_glass':
+    material: BLACK_STAINED_GLASS_PANE
+    slots: [0-6,9,18,26-27,35,44,47-48,50-53]
+    display_name: '&l'
+  'filler_glass_2':
+    material: MAGENTA_STAINED_GLASS_PANE
+    slots: [7,8,17,36,45,46]
+    display_name: '&l'

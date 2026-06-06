@@ -1,0 +1,20 @@
+location: spawn:86,500:112,700:38,500
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 90.0
+down-origin: false
+pages:
+- lines:
+  - content: '&7⊲ <#ANIM:wave:&d&l,&5&l&n>АЛХИМИК</#ANIM> &7⊳'
+    height: 0.3
+  - content: '&8★ &7Создай свои зелья! &8★'
+    height: 0.1
+  - content: '#ENTITY: VILLAGER'
+    height: 0.0
+  actions:
+    LEFT:
+    - COMMAND:/alchemist
+    RIGHT:
+    - COMMAND:/alchemist

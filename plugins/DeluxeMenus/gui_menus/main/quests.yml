@@ -1,0 +1,3192 @@
+open_command: 
+  - quests
+  - quest
+register_command: true
+size: 53
+menu_title: '[ᴛs] ▸ Квесты'
+items:
+  '1-vipolneno':
+    display_name: '&fЗадание &#00FF001'
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOGY5MjMzYzEyNDdlMDNlOWZkMjc3NDI3MzdlNzllNGNjZWJkMjI1YTliMDU5ZDU5NmQ1Y2QzNGUyNmYyMTY1In19fQ==
+    slot: 10
+    lore:
+      - ''
+      - ' &8▪ &#42ed73Задание выполнено'
+      - ''
+    priority: 1
+    hide_enchantments: true
+    view_requirement:
+      requirements:
+        see_perm:
+          type: has permission
+          permission: quests.a1.done
+    click_commands:
+        - '[message] &cВы уже завершили этот квест!'
+        - '[sound] ENTITY_ITEM_BREAK'
+  '1-dostupno':
+    display_name: '&fЗадание &#00FF001'
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTZjYzQ4NmMyYmUxY2I5ZGZjYjJlNTNkZDlhM2U5YTg4M2JmYWRiMjdjYjk1NmYxODk2ZDYwMmI0MDY3In19fQ==
+    enchantments:
+      - DURABILITY;1
+    slot: 10
+    lore:
+      - ''
+      - '&8 ▪ &fУбей&5 30 зомби'
+      - '&8 ▪ &fУбито &d%statistic_kill_entity:zombie%/30'
+      - ''
+      - '&8 » &fОбычная награда:'
+      - '&8 ▪ &d2000$'
+      - '&8 » &fНаграда с подпиской:'
+      - '&8 ▪ &d4000$'
+    priority: 3
+    hide_enchantments: true
+    view_requirement:
+      requirements:
+        see_perm:
+          type: has permission
+          permission: quests.a1.start
+    click_requirement:
+      requirements:
+        anythinghere:
+          type: '>='
+          input: '%statistic_kill_entity:zombie%'
+          output: 30
+      deny_commands:
+        - '[close]'
+        - '[message] &#eda942 Требования к заданию не выполнены'
+        - '[sound] ENTITY_VILLAGER_NO'
+    click_commands:
+      - '[console] lp user %player_name% permission set quests.a1.done'
+      - '[console] eco give %player_name% 2000'
+      - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"
+      - '[message] &fЗадание &#00FF00выполнено!'
+      - '[refresh]'
+  '1-dostupno-king':
+    display_name: '&f&oЗадание &#00FF001'
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTZjYzQ4NmMyYmUxY2I5ZGZjYjJlNTNkZDlhM2U5YTg4M2JmYWRiMjdjYjk1NmYxODk2ZDYwMmI0MDY3In19fQ==
+    enchantments:
+      - DURABILITY;1
+    slot: 10
+    lore:
+      - ''
+      - '&8 ▪ &fУбей&5 30 зомби'
+      - '&8 ▪ &fУбито &d%statistic_kill_entity:zombie%/30'
+      - ''
+      - '&8 » &fОбычная награда:'
+      - '&8 ▪ &d2000$'
+      - '&8 » &fНаграда с подпиской:'
+      - '&8 ▪ &d4000$'
+    priority: 2
+    hide_enchantments: true
+    view_requirement:
+      minimum_requirements: 2
+      requirements:
+        see_perm:
+          type: has permission
+          permission: quests.a1.start
+        see_perm_king:
+          type: has permission
+          permission: trust.plus
+    click_requirement:
+      requirements:
+        anythinghere:
+          type: '>='
+          input: '%statistic_kill_entity:zombie%'
+          output: 30
+      deny_commands:
+        - '[close]'
+        - '[message] &#eda942 Требования к заданию не выполнены'
+        - '[sound] ENTITY_VILLAGER_NO'
+    click_commands:
+      - '[console] lp user %player_name% permission set quests.a1.done'
+      - '[console] eco give %player_name% 4000'
+      - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"
+      - '[message] &fЗадание &#00FF00выполнено!'
+      - '[refresh]'
+  '1-nedostupno':
+    display_name: '&fЗадание &#00FF001'
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTZjYzQ4NmMyYmUxY2I5ZGZjYjJlNTNkZDlhM2U5YTg4M2JmYWRiMjdjYjk1NmYxODk2ZDYwMmI0MDY3In19fQ==
+    slot: 10
+    lore:
+      - ''
+      - ' &8▪&#ed5342 Не доступно для выполнения'
+      - ''
+    priority: 4
+    click_commands:
+        - '[message] &cВам необходимо выполнить предыдущий квест!'
+        - '[sound] ENTITY_VILLAGER_NO'
+    
+  '2-vipolneno':
+    display_name: '&fЗадание &#00FF002'
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOGY5MjMzYzEyNDdlMDNlOWZkMjc3NDI3MzdlNzllNGNjZWJkMjI1YTliMDU5ZDU5NmQ1Y2QzNGUyNmYyMTY1In19fQ==
+    slot: 11
+    lore:
+      - ''
+      - ' &8▪ &#42ed73Задание выполнено'
+      - ''
+    priority: 1
+    hide_enchantments: true
+    view_requirement:
+      requirements:
+        see_perm:
+          type: has permission
+          permission: quests.a2.done
+    click_commands:
+        - '[message] &cВы уже завершили этот квест!'
+        - '[sound] ENTITY_ITEM_BREAK'
+  '2-dostupno':
+    display_name: '&fЗадание &#00FF002'
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTZjYzQ4NmMyYmUxY2I5ZGZjYjJlNTNkZDlhM2U5YTg4M2JmYWRiMjdjYjk1NmYxODk2ZDYwMmI0MDY3In19fQ==
+    enchantments:
+      - DURABILITY;1
+    slot: 11
+    lore:
+      - ''
+      - '&8 ▪ &fУбей&5 20 криперов'
+      - '&8 ▪ &fУбито &d%statistic_kill_entity:creeper%/20'
+      - ''
+      - '&8 » &fОбычная награда:'
+      - '&8 ▪ &d2500$'
+      - '&8 » &fНаграда с подпиской:'
+      - '&8 ▪ &d5000$'
+    priority: 3
+    hide_enchantments: true
+    view_requirement:
+      requirements:
+        see_perm:
+          type: has permission
+          permission: quests.a1.done
+    click_requirement:
+      requirements:
+        anythinghere:
+          type: '>='
+          input: '%statistic_kill_entity:creeper%'
+          output: 20
+      deny_commands:
+        - '[close]'
+        - '[message] &#eda942 Требования к заданию не выполнены'
+        - '[sound] ENTITY_VILLAGER_NO'
+    click_commands:
+      - '[console] lp user %player_name% permission set quests.a2.done'
+      - '[console] eco give %player_name% 2500'
+      - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"
+      - '[message] &fЗадание &#00FF00выполнено!'
+      - '[refresh]'
+  '2-dostupno-king':
+    display_name: '&f&oЗадание &#00FF002'
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTZjYzQ4NmMyYmUxY2I5ZGZjYjJlNTNkZDlhM2U5YTg4M2JmYWRiMjdjYjk1NmYxODk2ZDYwMmI0MDY3In19fQ==
+    enchantments:
+      - DURABILITY;1
+    slot: 11
+    lore:
+      - ''
+      - '&8 ▪ &fУбей&5 20 криперов'
+      - '&8 ▪ &fУбито &d%statistic_kill_entity:creeper%/20'
+      - ''
+      - '&8 » &fОбычная награда:'
+      - '&8 ▪ &d2500$'
+      - '&8 » &fНаграда с подпиской:'
+      - '&8 ▪ &d5000$'
+    priority: 2
+    hide_enchantments: true
+    view_requirement:
+      minimum_requirements: 2
+      requirements:
+        see_perm:
+          type: has permission
+          permission: quests.a1.done
+        see_perm_king:
+          type: has permission
+          permission: trust.plus
+    click_requirement:
+      requirements:
+        anythinghere:
+          type: '>='
+          input: '%statistic_kill_entity:creeper%'
+          output: 20
+      deny_commands:
+        - '[close]'
+        - '[message] &#eda942 Требования к заданию не выполнены'
+        - '[sound] ENTITY_VILLAGER_NO'
+    click_commands:
+      - '[console] lp user %player_name% permission set quests.a2.done'
+      - '[console] eco give %player_name% 5000'
+      - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"
+      - '[message] &fЗадание &#00FF00выполнено!'
+      - '[refresh]'
+  '2-nedostupno':
+    display_name: '&fЗадание &#00FF002'
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTZjYzQ4NmMyYmUxY2I5ZGZjYjJlNTNkZDlhM2U5YTg4M2JmYWRiMjdjYjk1NmYxODk2ZDYwMmI0MDY3In19fQ==
+    slot: 11
+    lore:
+      - ''
+      - ' &8▪&#ed5342 Не доступно для выполнения'
+      - ''
+    priority: 4
+    click_commands:
+        - '[message] &cВам необходимо выполнить предыдущий квест!'
+        - '[sound] ENTITY_VILLAGER_NO'
+  
+  '3-vipolneno':
+    display_name: '&fЗадание &#00FF003'
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOGY5MjMzYzEyNDdlMDNlOWZkMjc3NDI3MzdlNzllNGNjZWJkMjI1YTliMDU5ZDU5NmQ1Y2QzNGUyNmYyMTY1In19fQ==
+    slot: 12
+    lore:
+      - ''
+      - ' &8▪ &#42ed73Задание выполнено'
+      - ''
+    priority: 1
+    hide_enchantments: true
+    view_requirement:
+      requirements:
+        see_perm:
+          type: has permission
+          permission: quests.a3.done
+    click_commands:
+        - '[message] &cВы уже завершили этот квест!'
+        - '[sound] ENTITY_ITEM_BREAK'
+  '3-dostupno':
+    display_name: '&fЗадание &#00FF003'
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTZjYzQ4NmMyYmUxY2I5ZGZjYjJlNTNkZDlhM2U5YTg4M2JmYWRiMjdjYjk1NmYxODk2ZDYwMmI0MDY3In19fQ==
+    enchantments:
+      - DURABILITY;1
+    slot: 12
+    lore:
+      - ''
+      - '&fПоймай 40 рыб'
+      - '&fПоймано %statistic_fish_caught%/40'
+      - ''
+      - '&8 » &fОбычная награда:'
+      - '&8 ▪ &d3000$'
+      - '&8 » &fНаграда с подпиской:'
+      - '&8 ▪ &d6000$'
+    priority: 3
+    hide_enchantments: true
+    view_requirement:
+      requirements:
+        see_perm:
+          type: has permission
+          permission: quests.a2.done
+    click_requirement:
+      requirements:
+        anythinghere:
+          type: '>='
+          input: '%statistic_fish_caught%'
+          output: 40
+      deny_commands:
+        - '[close]'
+        - '[message] &#eda942 Требования к заданию не выполнены'
+        - '[sound] ENTITY_VILLAGER_NO'
+    click_commands:
+      - '[console] lp user %player_name% permission set quests.a3.done'
+      - '[console] eco give %player_name% 3000'
+      - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"
+      - '[message] &fЗадание &#00FF00выполнено!'
+      - '[refresh]'
+  '3-dostupno-king':
+    display_name: '&f&oЗадание &#00FF003'
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTZjYzQ4NmMyYmUxY2I5ZGZjYjJlNTNkZDlhM2U5YTg4M2JmYWRiMjdjYjk1NmYxODk2ZDYwMmI0MDY3In19fQ==
+    enchantments:
+      - DURABILITY;1
+    slot: 12
+    lore:
+      - ''
+      - '&fПоймай 40 рыб'
+      - '&fПоймано %statistic_fish_caught%/40'
+      - ''
+      - '&8 » &fОбычная награда:'
+      - '&8 ▪ &d3000$'
+      - '&8 » &fНаграда с подпиской:'
+      - '&8 ▪ &d6000$'
+    priority: 2
+    hide_enchantments: true
+    view_requirement:
+      minimum_requirements: 2
+      requirements:
+        see_perm:
+          type: has permission
+          permission: quests.a2.done
+        see_perm_king:
+          type: has permission
+          permission: trust.plus
+    click_requirement:
+      requirements:
+        anythinghere:
+          type: '>='
+          input: '%statistic_fish_caught%'
+          output: 40
+      deny_commands:
+        - '[close]'
+        - '[message] &#eda942 Требования к заданию не выполнены'
+        - '[sound] ENTITY_VILLAGER_NO'
+    click_commands:
+      - '[console] lp user %player_name% permission set quests.a3.done'
+      - '[console] eco give %player_name% 6000'
+      - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"
+      - '[message] &fЗадание &#00FF00выполнено!'
+      - '[refresh]'
+  '3-nedostupno':
+    display_name: '&fЗадание &#00FF003'
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTZjYzQ4NmMyYmUxY2I5ZGZjYjJlNTNkZDlhM2U5YTg4M2JmYWRiMjdjYjk1NmYxODk2ZDYwMmI0MDY3In19fQ==
+    slot: 12
+    lore:
+      - ''
+      - ' &8▪&#ed5342 Не доступно для выполнения'
+      - ''
+    priority: 4
+    click_commands:
+        - '[message] &cВам необходимо выполнить предыдущий квест!'
+        - '[sound] ENTITY_VILLAGER_NO'
+    
+  '4-vipolneno':
+    display_name: '&fЗадание &#00FF004'
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOGY5MjMzYzEyNDdlMDNlOWZkMjc3NDI3MzdlNzllNGNjZWJkMjI1YTliMDU5ZDU5NmQ1Y2QzNGUyNmYyMTY1In19fQ==
+    slot: 13
+    lore:
+      - ''
+      - ' &8▪ &#42ed73Задание выполнено'
+      - ''
+    priority: 1
+    hide_enchantments: true
+    view_requirement:
+      requirements:
+        see_perm:
+          type: has permission
+          permission: quests.a4.done
+    click_commands:
+        - '[message] &cВы уже завершили этот квест!'
+        - '[sound] ENTITY_ITEM_BREAK'
+  '4-dostupno':
+    display_name: '&fЗадание &#00FF004'
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTZjYzQ4NmMyYmUxY2I5ZGZjYjJlNTNkZDlhM2U5YTg4M2JmYWRiMjdjYjk1NmYxODk2ZDYwMmI0MDY3In19fQ==
+    enchantments:
+      - DURABILITY;1
+    slot: 13
+    lore:
+      - ''
+      - '&8 ▪ &fУбей&5 30 пауков'
+      - '&8 ▪ &fУбито &d%statistic_kill_entity:spider%/30'
+      - ''
+      - '&8 » &fОбычная награда:'
+      - '&8 ▪ &d3500$'
+      - '&8 » &fНаграда с подпиской:'
+      - '&8 ▪ &d7000$'
+    priority: 3
+    hide_enchantments: true
+    view_requirement:
+      requirements:
+        see_perm:
+          type: has permission
+          permission: quests.a3.done
+    click_requirement:
+      requirements:
+        anythinghere:
+          type: '>='
+          input: '%statistic_kill_entity:spider%'
+          output: 30
+      deny_commands:
+        - '[close]'
+        - '[message] &#eda942 Требования к заданию не выполнены'
+        - '[sound] ENTITY_VILLAGER_NO'
+    click_commands:
+      - '[console] lp user %player_name% permission set quests.a4.done'
+      - '[console] eco give %player_name% 3500'
+      - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"
+      - '[message] &fЗадание &#00FF00выполнено!'
+      - '[refresh]'
+  '4-dostupno-king':
+    display_name: '&f&oЗадание &#00FF004'
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTZjYzQ4NmMyYmUxY2I5ZGZjYjJlNTNkZDlhM2U5YTg4M2JmYWRiMjdjYjk1NmYxODk2ZDYwMmI0MDY3In19fQ==
+    enchantments:
+      - DURABILITY;1
+    slot: 13
+    lore:
+      - ''
+      - '&8 ▪ &fУбей&5 30 пауков'
+      - '&8 ▪ &fУбито &d%statistic_kill_entity:spider%/30'
+      - ''
+      - '&8 » &fОбычная награда:'
+      - '&8 ▪ &d3500$'
+      - '&8 » &fНаграда с подпиской:'
+      - '&8 ▪ &d7000$'
+    priority: 2
+    hide_enchantments: true
+    view_requirement:
+      minimum_requirements: 2
+      requirements:
+        see_perm:
+          type: has permission
+          permission: quests.a3.done
+        see_perm_king:
+          type: has permission
+          permission: trust.plus
+    click_requirement:
+      requirements:
+        anythinghere:
+          type: '>='
+          input: '%statistic_kill_entity:spider%'
+          output: 30
+      deny_commands:
+        - '[close]'
+        - '[message] &#eda942 Требования к заданию не выполнены'
+        - '[sound] ENTITY_VILLAGER_NO'
+    click_commands:
+      - '[console] lp user %player_name% permission set quests.a4.done'
+      - '[console] eco give %player_name% 7000'
+      - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"
+      - '[message] &fЗадание &#00FF00выполнено!'
+      - '[refresh]'
+  '4-nedostupno':
+    display_name: '&fЗадание &#00FF004'
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTZjYzQ4NmMyYmUxY2I5ZGZjYjJlNTNkZDlhM2U5YTg4M2JmYWRiMjdjYjk1NmYxODk2ZDYwMmI0MDY3In19fQ==
+    slot: 13
+    lore:
+      - ''
+      - ' &8▪&#ed5342 Не доступно для выполнения'
+      - ''
+    priority: 4
+    click_commands:
+        - '[message] &cВам необходимо выполнить предыдущий квест!'
+        - '[sound] ENTITY_VILLAGER_NO'
+    
+  '5-vipolneno':
+    display_name: '&fЗадание &#00FF005'
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOGY5MjMzYzEyNDdlMDNlOWZkMjc3NDI3MzdlNzllNGNjZWJkMjI1YTliMDU5ZDU5NmQ1Y2QzNGUyNmYyMTY1In19fQ==
+    slot: 14
+    lore:
+      - ''
+      - ' &8▪ &#42ed73Задание выполнено'
+      - ''
+    priority: 1
+    hide_enchantments: true
+    view_requirement:
+      requirements:
+        see_perm:
+          type: has permission
+          permission: quests.a5.done
+    click_commands:
+        - '[message] &cВы уже завершили этот квест!'
+        - '[sound] ENTITY_ITEM_BREAK'
+  '5-dostupno':
+    display_name: '&fЗадание &#00FF005'
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTZjYzQ4NmMyYmUxY2I5ZGZjYjJlNTNkZDlhM2U5YTg4M2JmYWRiMjdjYjk1NmYxODk2ZDYwMmI0MDY3In19fQ==
+    enchantments:
+      - DURABILITY;1
+    slot: 14
+    lore:
+      - ''
+      - '&8 ▪ &fПринеси&5 32 мака'
+      - '&8 ▪ &fВ наличии&d %checkitem_amount_mat:poppy%/30'
+      - ''
+      - '&8 » &fОбычная награда:'
+      - '&8 ▪ &d3500$'
+      - '&8 » &fНаграда с подпиской:'
+      - '&8 ▪ &d7000$'
+    priority: 3
+    hide_enchantments: true
+    view_requirement:
+      requirements:
+        see_perm:
+          type: has permission
+          permission: quests.a4.done
+    click_requirement:
+      requirements:
+        anythinghere:
+          type: 'has item'
+          material: POPPY
+          amount: 32
+      deny_commands:
+        - '[close]'
+        - '[message] &#eda942 Требования к заданию не выполнены'
+        - '[sound] ENTITY_VILLAGER_NO'
+    click_commands:
+      - '[console] minecraft:clear %player_name% minecraft:poppy 32'
+      - '[console] lp user %player_name% permission set quests.a5.done'
+      - '[console] eco give %player_name% 3500'
+      - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"
+      - '[message] &fЗадание &#00FF00выполнено!'
+      - '[refresh]'
+  '5-dostupno-king':
+    display_name: '&f&oЗадание &#00FF005'
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTZjYzQ4NmMyYmUxY2I5ZGZjYjJlNTNkZDlhM2U5YTg4M2JmYWRiMjdjYjk1NmYxODk2ZDYwMmI0MDY3In19fQ==
+    enchantments:
+      - DURABILITY;1
+    slot: 14
+    lore:
+      - ''
+      - '&8 ▪ &fПринеси&5 32 мака'
+      - '&8 ▪ &fВ наличии&d %checkitem_amount_mat:poppy%/30'
+      - ''
+      - '&8 » &fОбычная награда:'
+      - '&8 ▪ &d3500$'
+      - '&8 » &fНаграда с подпиской:'
+      - '&8 ▪ &d7000$'
+    priority: 2
+    hide_enchantments: true
+    view_requirement:
+      minimum_requirements: 2
+      requirements:
+        see_perm:
+          type: has permission
+          permission: quests.a4.done
+        see_perm_king:
+          type: has permission
+          permission: trust.plus
+    click_requirement:
+      requirements:
+        anythinghere:
+          type: 'has item'
+          material: POPPY
+          amount: 32
+      deny_commands:
+        - '[close]'
+        - '[message] &#eda942 Требования к заданию не выполнены'
+        - '[sound] ENTITY_VILLAGER_NO'
+    click_commands:
+      - '[console] minecraft:clear %player_name% minecraft:poppy 32'
+      - '[console] lp user %player_name% permission set quests.a5.done'
+      - '[console] eco give %player_name% 7000'
+      - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"
+      - '[message] &fЗадание &#00FF00выполнено!'
+      - '[refresh]'
+  '5-nedostupno':
+    display_name: '&fЗадание &#00FF005'
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTZjYzQ4NmMyYmUxY2I5ZGZjYjJlNTNkZDlhM2U5YTg4M2JmYWRiMjdjYjk1NmYxODk2ZDYwMmI0MDY3In19fQ==
+    slot: 14
+    lore:
+      - ''
+      - ' &8▪&#ed5342 Не доступно для выполнения'
+      - ''
+    priority: 4
+    click_commands:
+        - '[message] &cВам необходимо выполнить предыдущий квест!'
+        - '[sound] ENTITY_VILLAGER_NO'
+    
+  '6-vipolneno':
+    display_name: '&fЗадание &#00FF006'
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOGY5MjMzYzEyNDdlMDNlOWZkMjc3NDI3MzdlNzllNGNjZWJkMjI1YTliMDU5ZDU5NmQ1Y2QzNGUyNmYyMTY1In19fQ==
+    slot: 15
+    lore:
+      - ''
+      - ' &8▪ &#42ed73Задание выполнено'
+      - ''
+    priority: 1
+    hide_enchantments: true
+    view_requirement:
+      requirements:
+        see_perm:
+          type: has permission
+          permission: quests.a6.done
+    click_commands:
+        - '[message] &cВы уже завершили этот квест!'
+        - '[sound] ENTITY_ITEM_BREAK'
+  '6-dostupno':
+    display_name: '&fЗадание &#00FF006'
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTZjYzQ4NmMyYmUxY2I5ZGZjYjJlNTNkZDlhM2U5YTg4M2JmYWRiMjdjYjk1NmYxODk2ZDYwMmI0MDY3In19fQ==
+    enchantments:
+      - DURABILITY;1
+    slot: 15
+    lore:
+      - ''
+      - '&8 ▪ &fПринеси&5 960 камня'
+      - '&8 ▪ &fВ наличии&d %checkitem_amount_mat:stone%/960'
+      - ''
+      - '&8 » &fОбычная награда:'
+      - '&8 ▪ &d3500$'
+      - '&8 » &fНаграда с подпиской:'
+      - '&8 ▪ &d7000$'
+    priority: 3
+    hide_enchantments: true
+    view_requirement:
+      requirements:
+        see_perm:
+          type: has permission
+          permission: quests.a5.done
+    click_requirement:
+      requirements:
+        anythinghere:
+          type: 'has item'
+          material: STONE
+          amount: 960
+      deny_commands:
+        - '[close]'
+        - '[message] &#eda942 Требования к заданию не выполнены'
+        - '[sound] ENTITY_VILLAGER_NO'
+    click_commands:
+      - '[console] minecraft:clear %player_name% minecraft:stone 960'
+      - '[console] lp user %player_name% permission set quests.a6.done'
+      - '[console] eco give %player_name% 3500'
+      - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"
+      - '[message] &fЗадание &#00FF00выполнено!'
+      - '[refresh]'
+  '6-dostupno-king':
+    display_name: '&f&oЗадание &#00FF006'
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTZjYzQ4NmMyYmUxY2I5ZGZjYjJlNTNkZDlhM2U5YTg4M2JmYWRiMjdjYjk1NmYxODk2ZDYwMmI0MDY3In19fQ==
+    enchantments:
+      - DURABILITY;1
+    slot: 15
+    lore:
+      - ''
+      - '&8 ▪ &fПринеси&5 960 камня'
+      - '&8 ▪ &fВ наличии&d %checkitem_amount_mat:stone%/960'
+      - ''
+      - '&8 » &fОбычная награда:'
+      - '&8 ▪ &d3500$'
+      - '&8 » &fНаграда с подпиской:'
+      - '&8 ▪ &d7000$'
+    priority: 2
+    hide_enchantments: true
+    view_requirement:
+      minimum_requirements: 2
+      requirements:
+        see_perm:
+          type: has permission
+          permission: quests.a5.done
+        see_perm_king:
+          type: has permission
+          permission: trust.plus
+    click_requirement:
+      requirements:
+        anythinghere:
+          type: 'has item'
+          material: STONE
+          amount: 960
+      deny_commands:
+        - '[close]'
+        - '[message] &#eda942 Требования к заданию не выполнены'
+        - '[sound] ENTITY_VILLAGER_NO'
+    click_commands:
+      - '[console] minecraft:clear %player_name% minecraft:stone 960'
+      - '[console] lp user %player_name% permission set quests.a6.done'
+      - '[console] eco give %player_name% 7000'
+      - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"
+      - '[message] &fЗадание &#00FF00выполнено!'
+      - '[refresh]'
+  '6-nedostupno':
+    display_name: '&fЗадание &#00FF006'
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTZjYzQ4NmMyYmUxY2I5ZGZjYjJlNTNkZDlhM2U5YTg4M2JmYWRiMjdjYjk1NmYxODk2ZDYwMmI0MDY3In19fQ==
+    slot: 15
+    lore:
+      - ''
+      - ' &8▪&#ed5342 Не доступно для выполнения'
+      - ''
+    priority: 4
+    click_commands:
+        - '[message] &cВам необходимо выполнить предыдущий квест!'
+        - '[sound] ENTITY_VILLAGER_NO'
+  
+  '7-vipolneno':
+    display_name: '&fЗадание &#00FF007'
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOGY5MjMzYzEyNDdlMDNlOWZkMjc3NDI3MzdlNzllNGNjZWJkMjI1YTliMDU5ZDU5NmQ1Y2QzNGUyNmYyMTY1In19fQ==
+    slot: 16
+    lore:
+      - ''
+      - ' &8▪ &#42ed73Задание выполнено'
+      - ''
+    priority: 1
+    hide_enchantments: true
+    view_requirement:
+      requirements:
+        see_perm:
+          type: has permission
+          permission: quests.a7.done
+    click_commands:
+        - '[message] &cВы уже завершили этот квест!'
+        - '[sound] ENTITY_ITEM_BREAK'
+  '7-dostupno':
+    display_name: '&fЗадание &#00FF007'
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTZjYzQ4NmMyYmUxY2I5ZGZjYjJlNTNkZDlhM2U5YTg4M2JmYWRiMjdjYjk1NmYxODk2ZDYwMmI0MDY3In19fQ==
+    enchantments:
+      - DURABILITY;1
+    slot: 16
+    lore:
+      - ''
+      - '&8 ▪ &fПринеси&5 2112 песка'
+      - '&8 ▪ &fВ наличии&d %checkitem_amount_mat:sand%/2112'
+      - ''
+      - '&8 » &fОбычная награда:'
+      - '&8 ▪ &d4000$'
+      - '&8 » &fНаграда с подпиской:'
+      - '&8 ▪ &d8000$'
+    priority: 3
+    hide_enchantments: true
+    view_requirement:
+      requirements:
+        see_perm:
+          type: has permission
+          permission: quests.a6.done
+    click_requirement:
+      requirements:
+        anythinghere:
+          type: 'has item'
+          material: SAND
+          amount: 2112
+      deny_commands:
+        - '[close]'
+        - '[message] &#eda942 Требования к заданию не выполнены'
+        - '[sound] ENTITY_VILLAGER_NO'
+    click_commands:
+      - '[console] minecraft:clear %player_name% minecraft:sand 2112'
+      - '[console] lp user %player_name% permission set quests.a7.done'
+      - '[console] eco give %player_name% 4000'
+      - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"
+      - '[message] &fЗадание &#00FF00выполнено!'
+      - '[refresh]'
+  '7-dostupno-king':
+    display_name: '&f&oЗадание &#00FF007'
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTZjYzQ4NmMyYmUxY2I5ZGZjYjJlNTNkZDlhM2U5YTg4M2JmYWRiMjdjYjk1NmYxODk2ZDYwMmI0MDY3In19fQ==
+    enchantments:
+      - DURABILITY;1
+    slot: 16
+    lore:
+      - ''
+      - '&8 ▪ &fПринеси&5 2112 песка'
+      - '&8 ▪ &fВ наличии&d %checkitem_amount_mat:sand%/2112'
+      - ''
+      - '&8 » &fОбычная награда:'
+      - '&8 ▪ &d4000$'
+      - '&8 » &fНаграда с подпиской:'
+      - '&8 ▪ &d8000$'
+    priority: 2
+    hide_enchantments: true
+    view_requirement:
+      minimum_requirements: 2
+      requirements:
+        see_perm:
+          type: has permission
+          permission: quests.a6.done
+        see_perm_king:
+          type: has permission
+          permission: trust.plus
+    click_requirement:
+      requirements:
+        anythinghere:
+          type: 'has item'
+          material: SAND
+          amount: 2112
+      deny_commands:
+        - '[close]'
+        - '[message] &#eda942 Требования к заданию не выполнены'
+        - '[sound] ENTITY_VILLAGER_NO'
+    click_commands:
+      - '[console] minecraft:clear %player_name% minecraft:sand 2112'
+      - '[console] lp user %player_name% permission set quests.a7.done'
+      - '[console] eco give %player_name% 8000'
+      - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"
+      - '[message] &fЗадание &#00FF00выполнено!'
+      - '[refresh]'
+  '7-nedostupno':
+    display_name: '&fЗадание &#00FF007'
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTZjYzQ4NmMyYmUxY2I5ZGZjYjJlNTNkZDlhM2U5YTg4M2JmYWRiMjdjYjk1NmYxODk2ZDYwMmI0MDY3In19fQ==
+    slot: 16
+    lore:
+      - ''
+      - ' &8▪&#ed5342 Не доступно для выполнения'
+      - ''
+    priority: 4
+    click_commands:
+        - '[message] &cВам необходимо выполнить предыдущий квест!'
+        - '[sound] ENTITY_VILLAGER_NO'
+    
+  '8-vipolneno':
+    display_name: '&fЗадание &#00FF008'
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOGY5MjMzYzEyNDdlMDNlOWZkMjc3NDI3MzdlNzllNGNjZWJkMjI1YTliMDU5ZDU5NmQ1Y2QzNGUyNmYyMTY1In19fQ==
+    slot: 19
+    lore:
+      - ''
+      - ' &8▪ &#42ed73Задание выполнено'
+      - ''
+    priority: 1
+    hide_enchantments: true
+    view_requirement:
+      requirements:
+        see_perm:
+          type: has permission
+          permission: quests.a8.done
+    click_commands:
+        - '[message] &cВы уже завершили этот квест!'
+        - '[sound] ENTITY_ITEM_BREAK'
+  '8-dostupno':
+    display_name: '&fЗадание &#00FF008'
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTExM2VlNjEwODQxZGVkMjE1YWNkMmI0Y2FhZWVmODdkZmQ2ZTNkNDc2OGU3YWI0ZTE5ZWI3NmIzZDgxMjFjZiJ9fX0=
+    enchantments:
+      - DURABILITY;1
+    slot: 19
+    lore:
+      - ''
+      - '&8 ▪ &fПринеси&5 320 гнилой плоти'
+      - '&8 ▪ &fВ наличии&d %checkitem_amount_mat:rotten_flesh%/320'
+      - ''
+      - '&8 » &fОбычная награда:'
+      - '&8 ▪ &d4000$'
+      - '&8 » &fНаграда с подпиской:'
+      - '&8 ▪ &d8000$'
+    priority: 3
+    hide_enchantments: true
+    view_requirement:
+      requirements:
+        see_perm:
+          type: has permission
+          permission: quests.a7.done
+    click_requirement:
+      requirements:
+        anythinghere:
+          type: 'has item'
+          material: ROTTEN_FLESH
+          amount: 320
+      deny_commands:
+        - '[close]'
+        - '[message] &#eda942 Требования к заданию не выполнены'
+        - '[sound] ENTITY_VILLAGER_NO'
+    click_commands:
+      - '[console] minecraft:clear %player_name% minecraft:rotten_flesh 320'
+      - '[console] lp user %player_name% permission set quests.a8.done'
+      - '[console] eco give %player_name% 4000'
+      - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"
+      - '[message] &fЗадание &#00FF00выполнено!'
+      - '[refresh]'
+  '8-dostupno-king':
+    display_name: '&f&oЗадание &#00FF008'
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTExM2VlNjEwODQxZGVkMjE1YWNkMmI0Y2FhZWVmODdkZmQ2ZTNkNDc2OGU3YWI0ZTE5ZWI3NmIzZDgxMjFjZiJ9fX0=
+    enchantments:
+      - DURABILITY;1
+    slot: 19
+    lore:
+      - ''
+      - '&8 ▪ &fПринеси&5 320 гнилой плоти'
+      - '&8 ▪ &fВ наличии&d %checkitem_amount_mat:rotten_flesh%/320'
+      - ''
+      - '&8 » &fОбычная награда:'
+      - '&8 ▪ &d4000$'
+      - '&8 » &fНаграда с подпиской:'
+      - '&8 ▪ &d8000$'
+    priority: 2
+    hide_enchantments: true
+    view_requirement:
+      minimum_requirements: 2
+      requirements:
+        see_perm:
+          type: has permission
+          permission: quests.a7.done
+        see_perm_king:
+          type: has permission
+          permission: trust.plus
+    click_requirement:
+      requirements:
+        anythinghere:
+          type: 'has item'
+          material: ROTTEN_FLESH
+          amount: 320
+      deny_commands:
+        - '[close]'
+        - '[message] &#eda942 Требования к заданию не выполнены'
+        - '[sound] ENTITY_VILLAGER_NO'
+    click_commands:
+      - '[console] minecraft:clear %player_name% minecraft:rotten_flesh 320'
+      - '[console] lp user %player_name% permission set quests.a8.done'
+      - '[console] eco give %player_name% 8000'
+      - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"
+      - '[message] &fЗадание &#00FF00выполнено!'
+      - '[refresh]'
+  '8-nedostupno':
+    display_name: '&fЗадание &#00FF008'
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTExM2VlNjEwODQxZGVkMjE1YWNkMmI0Y2FhZWVmODdkZmQ2ZTNkNDc2OGU3YWI0ZTE5ZWI3NmIzZDgxMjFjZiJ9fX0=
+    slot: 19
+    lore:
+      - ''
+      - ' &8▪&#ed5342 Не доступно для выполнения'
+      - ''
+    priority: 4
+    click_commands:
+        - '[message] &cВам необходимо выполнить предыдущий квест!'
+        - '[sound] ENTITY_VILLAGER_NO'
+    
+  '9-vipolneno':
+    display_name: '&fЗадание &#00FF009'
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOGY5MjMzYzEyNDdlMDNlOWZkMjc3NDI3MzdlNzllNGNjZWJkMjI1YTliMDU5ZDU5NmQ1Y2QzNGUyNmYyMTY1In19fQ==
+    slot: 20
+    lore:
+      - ''
+      - ' &8▪ &#42ed73Задание выполнено'
+      - ''
+    priority: 1
+    hide_enchantments: true
+    view_requirement:
+      requirements:
+        see_perm:
+          type: has permission
+          permission: quests.a9.done
+    click_commands:
+        - '[message] &cВы уже завершили этот квест!'
+        - '[sound] ENTITY_ITEM_BREAK'
+  '9-dostupno':
+    display_name: '&fЗадание &#00FF009'
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTExM2VlNjEwODQxZGVkMjE1YWNkMmI0Y2FhZWVmODdkZmQ2ZTNkNDc2OGU3YWI0ZTE5ZWI3NmIzZDgxMjFjZiJ9fX0=
+    enchantments:
+      - DURABILITY;1
+    slot: 20
+    lore:
+      - ''
+      - '&8 ▪ &fПринеси&5 640 угля'
+      - '&8 ▪ &fВ наличии&d %checkitem_amount_mat:coal%/640'
+      - ''
+      - '&8 » &fОбычная награда:'
+      - '&8 ▪ &d4000$'
+      - '&8 » &fНаграда с подпиской:'
+      - '&8 ▪ &d8000$'
+    priority: 3
+    hide_enchantments: true
+    view_requirement:
+      requirements:
+        see_perm:
+          type: has permission
+          permission: quests.a8.done
+    click_requirement:
+      requirements:
+        anythinghere:
+          type: 'has item'
+          material: COAL
+          amount: 640
+      deny_commands:
+        - '[close]'
+        - '[message] &#eda942 Требования к заданию не выполнены'
+        - '[sound] ENTITY_VILLAGER_NO'
+    click_commands:
+      - '[console] minecraft:clear %player_name% minecraft:coal 640'
+      - '[console] lp user %player_name% permission set quests.a9.done'
+      - '[console] eco give %player_name% 4000'
+      - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"
+      - '[message] &fЗадание &#00FF00выполнено!'
+      - '[refresh]'
+  '9-dostupno-king':
+    display_name: '&f&oЗадание &#00FF009'
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTExM2VlNjEwODQxZGVkMjE1YWNkMmI0Y2FhZWVmODdkZmQ2ZTNkNDc2OGU3YWI0ZTE5ZWI3NmIzZDgxMjFjZiJ9fX0=
+    enchantments:
+      - DURABILITY;1
+    slot: 20
+    lore:
+      - ''
+      - '&8 ▪ &fПринеси&5 640 угля'
+      - '&8 ▪ &fВ наличии&d %checkitem_amount_mat:coal%/640'
+      - ''
+      - '&8 » &fОбычная награда:'
+      - '&8 ▪ &d4000$'
+      - '&8 » &fНаграда с подпиской:'
+      - '&8 ▪ &d8000$'
+    priority: 2
+    hide_enchantments: true
+    view_requirement:
+      minimum_requirements: 2
+      requirements:
+        see_perm:
+          type: has permission
+          permission: quests.a8.done
+        see_perm_king:
+          type: has permission
+          permission: trust.plus
+    click_requirement:
+      requirements:
+        anythinghere:
+          type: 'has item'
+          material: COAL
+          amount: 640
+      deny_commands:
+        - '[close]'
+        - '[message] &#eda942 Требования к заданию не выполнены'
+        - '[sound] ENTITY_VILLAGER_NO'
+    click_commands:
+      - '[console] minecraft:clear %player_name% minecraft:coal 640'
+      - '[console] lp user %player_name% permission set quests.a9.done'
+      - '[console] eco give %player_name% 8000'
+      - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"
+      - '[message] &fЗадание &#00FF00выполнено!'
+      - '[refresh]'
+  '9-nedostupno':
+    display_name: '&fЗадание &#00FF009'
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTExM2VlNjEwODQxZGVkMjE1YWNkMmI0Y2FhZWVmODdkZmQ2ZTNkNDc2OGU3YWI0ZTE5ZWI3NmIzZDgxMjFjZiJ9fX0=
+    slot: 20
+    lore:
+      - ''
+      - ' &8▪&#ed5342 Не доступно для выполнения'
+      - ''
+    priority: 4
+    click_commands:
+        - '[message] &cВам необходимо выполнить предыдущий квест!'
+        - '[sound] ENTITY_VILLAGER_NO'
+    
+  '10-vipolneno':
+    display_name: '&fЗадание &#00FF0010'
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOGY5MjMzYzEyNDdlMDNlOWZkMjc3NDI3MzdlNzllNGNjZWJkMjI1YTliMDU5ZDU5NmQ1Y2QzNGUyNmYyMTY1In19fQ==
+    slot: 21
+    lore:
+      - ''
+      - ' &8▪ &#42ed73Задание выполнено'
+      - ''
+    priority: 1
+    hide_enchantments: true
+    view_requirement:
+      requirements:
+        see_perm:
+          type: has permission
+          permission: quests.a10.done
+    click_commands:
+        - '[message] &cВы уже завершили этот квест!'
+        - '[sound] ENTITY_ITEM_BREAK'
+  '10-dostupno':
+    display_name: '&fЗадание &#00FF0010'
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTExM2VlNjEwODQxZGVkMjE1YWNkMmI0Y2FhZWVmODdkZmQ2ZTNkNDc2OGU3YWI0ZTE5ZWI3NmIzZDgxMjFjZiJ9fX0=
+    enchantments:
+      - DURABILITY;1
+    slot: 21
+    lore:
+      - ''
+      - '&8 ▪ &fПринеси&5 320 ниток'
+      - '&8 ▪ &fВ наличии&d %checkitem_amount_mat:string%/320'
+      - ''
+      - '&8 » &fОбычная награда:'
+      - '&8 ▪ &d4500$'
+      - '&8 » &fНаграда с подпиской:'
+      - '&8 ▪ &d9000$'
+    priority: 3
+    hide_enchantments: true
+    view_requirement:
+      requirements:
+        see_perm:
+          type: has permission
+          permission: quests.a9.done
+    click_requirement:
+      requirements:
+        anythinghere:
+          type: 'has item'
+          material: STRING
+          amount: 320
+      deny_commands:
+        - '[close]'
+        - '[message] &#eda942 Требования к заданию не выполнены'
+        - '[sound] ENTITY_VILLAGER_NO'
+    click_commands:
+      - '[console] minecraft:clear %player_name% minecraft:string 320'
+      - '[console] lp user %player_name% permission set quests.a10.done'
+      - '[console] eco give %player_name% 4500'
+      - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"
+      - '[message] &fЗадание &#00FF00выполнено!'
+      - '[refresh]'
+  '10-dostupno-king':
+    display_name: '&f&oЗадание &#00FF0010'
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTExM2VlNjEwODQxZGVkMjE1YWNkMmI0Y2FhZWVmODdkZmQ2ZTNkNDc2OGU3YWI0ZTE5ZWI3NmIzZDgxMjFjZiJ9fX0=
+    enchantments:
+      - DURABILITY;1
+    slot: 21
+    lore:
+      - ''
+      - '&8 ▪ &fПринеси&5 320 ниток'
+      - '&8 ▪ &fВ наличии&d %checkitem_amount_mat:string%/320'
+      - ''
+      - '&8 » &fОбычная награда:'
+      - '&8 ▪ &d4500$'
+      - '&8 » &fНаграда с подпиской:'
+      - '&8 ▪ &d9000$'
+    priority: 2
+    hide_enchantments: true
+    view_requirement:
+      minimum_requirements: 2
+      requirements:
+        see_perm:
+          type: has permission
+          permission: quests.a9.done
+        see_perm_king:
+          type: has permission
+          permission: trust.plus
+    click_requirement:
+      requirements:
+        anythinghere:
+          type: 'has item'
+          material: STRING
+          amount: 320
+      deny_commands:
+        - '[close]'
+        - '[message] &#eda942 Требования к заданию не выполнены'
+        - '[sound] ENTITY_VILLAGER_NO'
+    click_commands:
+      - '[console] minecraft:clear %player_name% minecraft:string 320'
+      - '[console] lp user %player_name% permission set quests.a10.done'
+      - '[console] eco give %player_name% 9000'
+      - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"
+      - '[message] &fЗадание &#00FF00выполнено!'
+      - '[refresh]'
+  '10-nedostupno':
+    display_name: '&fЗадание &#00FF0010'
+    slot: 21
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTExM2VlNjEwODQxZGVkMjE1YWNkMmI0Y2FhZWVmODdkZmQ2ZTNkNDc2OGU3YWI0ZTE5ZWI3NmIzZDgxMjFjZiJ9fX0=
+    lore:
+      - ''
+      - ' &8▪&#ed5342 Не доступно для выполнения'
+      - ''
+    priority: 4
+    click_commands:
+        - '[message] &cВам необходимо выполнить предыдущий квест!'
+        - '[sound] ENTITY_VILLAGER_NO'
+   
+  '11-vipolneno':
+    display_name: '&fЗадание &#00FF0011'
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOGY5MjMzYzEyNDdlMDNlOWZkMjc3NDI3MzdlNzllNGNjZWJkMjI1YTliMDU5ZDU5NmQ1Y2QzNGUyNmYyMTY1In19fQ==
+    slot: 22
+    lore:
+      - ''
+      - ' &8▪ &#42ed73Задание выполнено'
+      - ''
+    priority: 1
+    hide_enchantments: true
+    view_requirement:
+      requirements:
+        see_perm:
+          type: has permission
+          permission: quests.a11.done
+    click_commands:
+        - '[message] &cВы уже завершили этот квест!'
+        - '[sound] ENTITY_ITEM_BREAK'
+  '11-dostupno':
+    display_name: '&fЗадание &#00FF0011'
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTExM2VlNjEwODQxZGVkMjE1YWNkMmI0Y2FhZWVmODdkZmQ2ZTNkNDc2OGU3YWI0ZTE5ZWI3NmIzZDgxMjFjZiJ9fX0=
+    enchantments:
+      - DURABILITY;1
+    slot: 22
+    lore:
+      - ''
+      - '&8 ▪ &fУбей&5 200 скелетов'
+      - '&8 ▪ &fУбито &d%statistic_kill_entity:skeleton%/200'
+      - ''
+      - '&8 » &fОбычная награда:'
+      - '&8 ▪ &d5000$'
+      - '&8 » &fНаграда с подпиской:'
+      - '&8 ▪ &d10000$'
+    priority: 3
+    hide_enchantments: true
+    view_requirement:
+      requirements:
+        see_perm:
+          type: has permission
+          permission: quests.a10.done
+    click_requirement:
+      requirements:
+        anythinghere:
+          type: '>='
+          input: '%statistic_kill_entity:skeleton%'
+          output: 200
+      deny_commands:
+        - '[close]'
+        - '[message] &#eda942 Требования к заданию не выполнены'
+        - '[sound] ENTITY_VILLAGER_NO'
+    click_commands:
+      - '[console] lp user %player_name% permission set quests.a11.done'
+      - '[console] eco give %player_name% 5000'
+      - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"
+      - '[message] &fЗадание &#00FF00выполнено!'
+      - '[refresh]'
+  '11-dostupno-king':
+    display_name: '&f&oЗадание &#00FF0011'
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTExM2VlNjEwODQxZGVkMjE1YWNkMmI0Y2FhZWVmODdkZmQ2ZTNkNDc2OGU3YWI0ZTE5ZWI3NmIzZDgxMjFjZiJ9fX0=
+    enchantments:
+      - DURABILITY;1
+    slot: 22
+    lore:
+      - ''
+      - '&8 ▪ &fУбей&5 200 скелетов'
+      - '&8 ▪ &fУбито &d%statistic_kill_entity:skeleton%/200'
+      - ''
+      - '&8 » &fОбычная награда:'
+      - '&8 ▪ &d5000$'
+      - '&8 » &fНаграда с подпиской:'
+      - '&8 ▪ &d10000$'
+    priority: 2
+    hide_enchantments: true
+    view_requirement:
+      minimum_requirements: 2
+      requirements:
+        see_perm:
+          type: has permission
+          permission: quests.a10.done
+        see_perm_king:
+          type: has permission
+          permission: trust.plus
+    click_requirement:
+      requirements:
+        anythinghere:
+          type: '>='
+          input: '%statistic_kill_entity:skeleton%'
+          output: 200
+      deny_commands:
+        - '[close]'
+        - '[message] &#eda942 Требования к заданию не выполнены'
+        - '[sound] ENTITY_VILLAGER_NO'
+    click_commands:
+      - '[console] lp user %player_name% permission set quests.a11.done'
+      - '[console] eco give %player_name% 10000'
+      - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"
+      - '[message] &fЗадание &#00FF00выполнено!'
+      - '[refresh]'
+  '11-nedostupno':
+    display_name: '&fЗадание &#00FF0011'
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTExM2VlNjEwODQxZGVkMjE1YWNkMmI0Y2FhZWVmODdkZmQ2ZTNkNDc2OGU3YWI0ZTE5ZWI3NmIzZDgxMjFjZiJ9fX0=
+    slot: 22
+    lore:
+      - ''
+      - ' &8▪&#ed5342 Не доступно для выполнения'
+      - ''
+    priority: 4
+    click_commands:
+        - '[message] &cВам необходимо выполнить предыдущий квест!'
+        - '[sound] ENTITY_VILLAGER_NO'
+  
+  '12-vipolneno':
+    display_name: '&fЗадание &#00FF0012'
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOGY5MjMzYzEyNDdlMDNlOWZkMjc3NDI3MzdlNzllNGNjZWJkMjI1YTliMDU5ZDU5NmQ1Y2QzNGUyNmYyMTY1In19fQ==
+    slot: 23
+    lore:
+      - ''
+      - ' &8▪ &#42ed73Задание выполнено'
+      - ''
+    priority: 1
+    hide_enchantments: true
+    view_requirement:
+      requirements:
+        see_perm:
+          type: has permission
+          permission: quests.a12.done
+    click_commands:
+        - '[message] &cВы уже завершили этот квест!'
+        - '[sound] ENTITY_ITEM_BREAK'
+  '12-dostupno':
+    display_name: '&fЗадание &#00FF0012'
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTExM2VlNjEwODQxZGVkMjE1YWNkMmI0Y2FhZWVmODdkZmQ2ZTNkNDc2OGU3YWI0ZTE5ZWI3NmIzZDgxMjFjZiJ9fX0=
+    enchantments:
+      - DURABILITY;1
+    slot: 23
+    lore:
+      - ''
+      - '&8 ▪ &fПринеси&5 640 железа'
+      - '&8 ▪ &fВ наличии&d %checkitem_amount_mat:iron_ingot%/640'
+      - ''
+      - '&8 » &fОбычная награда:'
+      - '&8 ▪ &d5000$'
+      - '&8 » &fНаграда с подпиской:'
+      - '&8 ▪ &d10000$'
+    priority: 3
+    hide_enchantments: true
+    view_requirement:
+      requirements:
+        see_perm:
+          type: has permission
+          permission: quests.a11.done
+    click_requirement:
+      requirements:
+        anythinghere:
+          type: 'has item'
+          material: IRON_INGOT
+          amount: 640
+      deny_commands:
+        - '[close]'
+        - '[message] &#eda942 Требования к заданию не выполнены'
+        - '[sound] ENTITY_VILLAGER_NO'
+    click_commands:
+      - '[console] minecraft:clear %player_name% minecraft:iron_ingot 640'
+      - '[console] lp user %player_name% permission set quests.a12.done'
+      - '[console] eco give %player_name% 5000'
+      - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"
+      - '[message] &fЗадание &#00FF00выполнено!'
+      - '[refresh]'
+  '12-dostupno-king':
+    display_name: '&f&oЗадание &#00FF0012'
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTExM2VlNjEwODQxZGVkMjE1YWNkMmI0Y2FhZWVmODdkZmQ2ZTNkNDc2OGU3YWI0ZTE5ZWI3NmIzZDgxMjFjZiJ9fX0=
+    enchantments:
+      - DURABILITY;1
+    slot: 23
+    lore:
+      - ''
+      - '&8 ▪ &fПринеси&5 640 железа'
+      - '&8 ▪ &fВ наличии&d %checkitem_amount_mat:iron_ingot%/640'
+      - ''
+      - '&8 » &fОбычная награда:'
+      - '&8 ▪ &d5000$'
+      - '&8 » &fНаграда с подпиской:'
+      - '&8 ▪ &d10000$'
+    priority: 2
+    hide_enchantments: true
+    view_requirement:
+      minimum_requirements: 2
+      requirements:
+        see_perm:
+          type: has permission
+          permission: quests.a11.done
+        see_perm_king:
+          type: has permission
+          permission: trust.plus
+    click_requirement:
+      requirements:
+        anythinghere:
+          type: 'has item'
+          material: IRON_INGOT
+          amount: 640
+      deny_commands:
+        - '[close]'
+        - '[message] &#eda942 Требования к заданию не выполнены'
+        - '[sound] ENTITY_VILLAGER_NO'
+    click_commands:
+      - '[console] minecraft:clear %player_name% minecraft:iron_ingot 640'
+      - '[console] lp user %player_name% permission set quests.a12.done'
+      - '[console] eco give %player_name% 10000'
+      - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"
+      - '[message] &fЗадание &#00FF00выполнено!'
+      - '[refresh]'
+  '12-nedostupno':
+    display_name: '&fЗадание &#00FF0012'
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTExM2VlNjEwODQxZGVkMjE1YWNkMmI0Y2FhZWVmODdkZmQ2ZTNkNDc2OGU3YWI0ZTE5ZWI3NmIzZDgxMjFjZiJ9fX0=
+    slot: 23
+    lore:
+      - ''
+      - ' &8▪&#ed5342 Не доступно для выполнения'
+      - ''
+    priority: 4
+    click_commands:
+        - '[message] &cВам необходимо выполнить предыдущий квест!'
+        - '[sound] ENTITY_VILLAGER_NO'
+  
+  '13-vipolneno':
+    display_name: '&fЗадание &#00FF0013'
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOGY5MjMzYzEyNDdlMDNlOWZkMjc3NDI3MzdlNzllNGNjZWJkMjI1YTliMDU5ZDU5NmQ1Y2QzNGUyNmYyMTY1In19fQ==
+    slot: 24
+    lore:
+      - ''
+      - ' &8▪ &#42ed73Задание выполнено'
+      - ''
+    priority: 1
+    hide_enchantments: true
+    view_requirement:
+      requirements:
+        see_perm:
+          type: has permission
+          permission: quests.a13.done
+    click_commands:
+        - '[message] &cВы уже завершили этот квест!'
+        - '[sound] ENTITY_ITEM_BREAK'
+  '13-dostupno':
+    display_name: '&fЗадание &#00FF0013'
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTExM2VlNjEwODQxZGVkMjE1YWNkMmI0Y2FhZWVmODdkZmQ2ZTNkNDc2OGU3YWI0ZTE5ZWI3NmIzZDgxMjFjZiJ9fX0=
+    enchantments:
+      - DURABILITY;1
+    slot: 24
+    lore:
+      - ''
+      - '&8 ▪ &fПринеси&5 64 яблока'
+      - '&8 ▪ &fВ наличии&d %checkitem_amount_mat:apple%/64'
+      - ''
+      - '&8 » &fОбычная награда:'
+      - '&8 ▪ &d2500$'
+      - '&8 » &fНаграда с подпиской:'
+      - '&8 ▪ &d5000$'
+    priority: 3
+    hide_enchantments: true
+    view_requirement:
+      requirements:
+        see_perm:
+          type: has permission
+          permission: quests.a12.done
+    click_requirement:
+      requirements:
+        anythinghere:
+          type: 'has item'
+          material: APPLE
+          amount: 64
+      deny_commands:
+        - '[close]'
+        - '[message] &#eda942 Требования к заданию не выполнены'
+        - '[sound] ENTITY_VILLAGER_NO'
+    click_commands:
+      - '[console] minecraft:clear %player_name% minecraft:apple 64'
+      - '[console] lp user %player_name% permission set quests.a13.done'
+      - '[console] eco give %player_name% 2500'
+      - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"
+      - '[message] &fЗадание &#00FF00выполнено!'
+      - '[refresh]'
+  '13-dostupno-king':
+    display_name: '&f&oЗадание &#00FF0013'
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTExM2VlNjEwODQxZGVkMjE1YWNkMmI0Y2FhZWVmODdkZmQ2ZTNkNDc2OGU3YWI0ZTE5ZWI3NmIzZDgxMjFjZiJ9fX0=
+    enchantments:
+      - DURABILITY;1
+    slot: 24
+    lore:
+      - ''
+      - '&8 ▪ &fПринеси&5 64 яблока'
+      - '&8 ▪ &fВ наличии&d %checkitem_amount_mat:apple%/64'
+      - ''
+      - '&8 » &fОбычная награда:'
+      - '&8 ▪ &d2500$'
+      - '&8 » &fНаграда с подпиской:'
+      - '&8 ▪ &d5000$'
+    priority: 2
+    hide_enchantments: true
+    view_requirement:
+      minimum_requirements: 2
+      requirements:
+        see_perm:
+          type: has permission
+          permission: quests.a12.done
+        see_perm_king:
+          type: has permission
+          permission: trust.plus
+    click_requirement:
+      requirements:
+        anythinghere:
+          type: 'has item'
+          material: APPLE
+          amount: 64
+      deny_commands:
+        - '[close]'
+        - '[message] &#eda942 Требования к заданию не выполнены'
+        - '[sound] ENTITY_VILLAGER_NO'
+    click_commands:
+      - '[console] minecraft:clear %player_name% minecraft:apple 64'
+      - '[console] lp user %player_name% permission set quests.a13.done'
+      - '[console] eco give %player_name% 5000'
+      - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"
+      - '[message] &fЗадание &#00FF00выполнено!'
+      - '[refresh]'
+  '13-nedostupno':
+    display_name: '&fЗадание &#00FF0013'
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTExM2VlNjEwODQxZGVkMjE1YWNkMmI0Y2FhZWVmODdkZmQ2ZTNkNDc2OGU3YWI0ZTE5ZWI3NmIzZDgxMjFjZiJ9fX0=
+    slot: 24
+    lore:
+      - ''
+      - ' &8▪&#ed5342 Не доступно для выполнения'
+      - ''
+    priority: 4
+    click_commands:
+        - '[message] &cВам необходимо выполнить предыдущий квест!'
+        - '[sound] ENTITY_VILLAGER_NO'
+  
+  '14-vipolneno':
+    display_name: '&fЗадание &#00FF0014'
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOGY5MjMzYzEyNDdlMDNlOWZkMjc3NDI3MzdlNzllNGNjZWJkMjI1YTliMDU5ZDU5NmQ1Y2QzNGUyNmYyMTY1In19fQ==
+    slot: 25
+    lore:
+      - ''
+      - ' &8▪ &#42ed73Задание выполнено'
+      - ''
+    priority: 1
+    hide_enchantments: true
+    view_requirement:
+      requirements:
+        see_perm:
+          type: has permission
+          permission: quests.a14.done
+    click_commands:
+        - '[message] &cВы уже завершили этот квест!'
+        - '[sound] ENTITY_ITEM_BREAK'          
+  '14-dostupno':
+    display_name: '&fЗадание &#00FF0014'
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTExM2VlNjEwODQxZGVkMjE1YWNkMmI0Y2FhZWVmODdkZmQ2ZTNkNDc2OGU3YWI0ZTE5ZWI3NmIzZDgxMjFjZiJ9fX0=
+    enchantments:
+      - DURABILITY;1
+    slot: 25
+    lore:
+      - ''
+      - '&8 ▪ &fПринеси&5 768 кости'
+      - '&8 ▪ &fВ наличии&d %checkitem_amount_mat:bone%/768'
+      - ''
+      - '&8 » &fОбычная награда:'
+      - '&8 ▪ &d4500$'
+      - '&8 » &fНаграда с подпиской:'
+      - '&8 ▪ &d9000$'
+    priority: 3
+    hide_enchantments: true
+    view_requirement:
+      requirements:
+        see_perm:
+          type: has permission
+          permission: quests.a13.done
+    click_requirement:
+      requirements:
+        anythinghere:
+          type: 'has item'
+          material: BONE
+          amount: 768
+      deny_commands:
+        - '[close]'
+        - '[message] &#eda942 Требования к заданию не выполнены'
+        - '[sound] ENTITY_VILLAGER_NO'
+    click_commands:
+      - '[console] minecraft:clear %player_name% minecraft:bone 768'
+      - '[console] lp user %player_name% permission set quests.a14.done'
+      - '[console] eco give %player_name% 4500'
+      - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"
+      - '[message] &fЗадание &#00FF00выполнено!'
+      - '[refresh]'
+  '14-dostupno-king':
+    display_name: '&f&oЗадание &#00FF0014'
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTExM2VlNjEwODQxZGVkMjE1YWNkMmI0Y2FhZWVmODdkZmQ2ZTNkNDc2OGU3YWI0ZTE5ZWI3NmIzZDgxMjFjZiJ9fX0=
+    enchantments:
+      - DURABILITY;1
+    slot: 25
+    lore:
+      - ''
+      - '&8 ▪ &fПринеси&5 768 кости'
+      - '&8 ▪ &fВ наличии&d %checkitem_amount_mat:bone%/768'
+      - ''
+      - '&8 » &fОбычная награда:'
+      - '&8 ▪ &d4500$'
+      - '&8 » &fНаграда с подпиской:'
+      - '&8 ▪ &d9000$'
+    priority: 2
+    hide_enchantments: true
+    view_requirement:
+      minimum_requirements: 2
+      requirements:
+        see_perm:
+          type: has permission
+          permission: quests.a13.done
+        see_perm_king:
+          type: has permission
+          permission: trust.plus
+    click_requirement:
+      requirements:
+        anythinghere:
+          type: 'has item'
+          material: BONE
+          amount: 768
+      deny_commands:
+        - '[close]'
+        - '[message] &#eda942 Требования к заданию не выполнены'
+        - '[sound] ENTITY_VILLAGER_NO'
+    click_commands:
+      - '[console] minecraft:clear %player_name% minecraft:bone 768'
+      - '[console] lp user %player_name% permission set quests.a14.done'
+      - '[console] eco give %player_name% 9000'
+      - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"
+      - '[message] &fЗадание &#00FF00выполнено!'
+      - '[refresh]'
+  '14-nedostupno':
+    display_name: '&fЗадание &#00FF0014'
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTExM2VlNjEwODQxZGVkMjE1YWNkMmI0Y2FhZWVmODdkZmQ2ZTNkNDc2OGU3YWI0ZTE5ZWI3NmIzZDgxMjFjZiJ9fX0=
+    slot: 25
+    lore:
+      - ''
+      - ' &8▪&#ed5342 Не доступно для выполнения'
+      - ''
+    priority: 4
+    click_commands:
+        - '[message] &cВам необходимо выполнить предыдущий квест!'
+        - '[sound] ENTITY_VILLAGER_NO'
+    
+  '15-vipolneno':
+    display_name: '&fЗадание &#00FF0015'
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOGY5MjMzYzEyNDdlMDNlOWZkMjc3NDI3MzdlNzllNGNjZWJkMjI1YTliMDU5ZDU5NmQ1Y2QzNGUyNmYyMTY1In19fQ==
+    slot: 28
+    lore:
+      - ''
+      - ' &8▪ &#42ed73Задание выполнено'
+      - ''
+    priority: 1
+    hide_enchantments: true
+    view_requirement:
+      requirements:
+        see_perm:
+          type: has permission
+          permission: quests.a15.done
+    click_commands:
+        - '[message] &cВы уже завершили этот квест!'
+        - '[sound] ENTITY_ITEM_BREAK'          
+  '15-dostupno':
+    display_name: '&fЗадание &#00FF0015'
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWFmMzI4Yzg3YjA2ODUwOWFjYTk4MzRlZmFjZTE5NzcwNWZlNWQ0ZjA4NzE3MzFiN2IyMWNkOTliOWZkZGMifX19
+    enchantments:
+      - DURABILITY;1
+    slot: 28
+    lore:
+      - ''
+      - '&8 ▪ &fПринеси&5 576 магмы'
+      - '&8 ▪ &fВ наличии&d %checkitem_amount_mat:MAGMA_BLOCK%/576'
+      - ''
+      - '&8 » &fОбычная награда:'
+      - '&8 ▪ &d6000$'
+      - '&8 » &fНаграда с подпиской:'
+      - '&8 ▪ &d12000$'
+    priority: 3
+    hide_enchantments: true
+    view_requirement:
+      requirements:
+        see_perm:
+          type: has permission
+          permission: quests.a14.done
+    click_requirement:
+      requirements:
+        anythinghere:
+          type: 'has item'
+          material: MAGMA_BLOCK
+          amount: 576
+      deny_commands:
+        - '[close]'
+        - '[message] &#eda942 Требования к заданию не выполнены'
+        - '[sound] ENTITY_VILLAGER_NO'
+    click_commands:
+      - '[console] minecraft:clear %player_name% minecraft:magma_block 576'
+      - '[console] lp user %player_name% permission set quests.a15.done'
+      - '[console] eco give %player_name% 6000'
+      - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"
+      - '[message] &fЗадание &#00FF00выполнено!'
+      - '[refresh]'
+  '15-dostupno-king':
+    display_name: '&f&oЗадание &#00FF0015'
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWFmMzI4Yzg3YjA2ODUwOWFjYTk4MzRlZmFjZTE5NzcwNWZlNWQ0ZjA4NzE3MzFiN2IyMWNkOTliOWZkZGMifX19
+    enchantments:
+      - DURABILITY;1
+    slot: 28
+    lore:
+      - ''
+      - '&8 ▪ &fПринеси&5 576 магмы'
+      - '&8 ▪ &fВ наличии&d %checkitem_amount_mat:MAGMA_BLOCK%/576'
+      - ''
+      - '&8 » &fОбычная награда:'
+      - '&8 ▪ &d6000$'
+      - '&8 » &fНаграда с подпиской:'
+      - '&8 ▪ &d12000$'
+    priority: 2
+    hide_enchantments: true
+    view_requirement:
+      minimum_requirements: 2
+      requirements:
+        see_perm:
+          type: has permission
+          permission: quests.a14.done
+        see_perm_king:
+          type: has permission
+          permission: trust.plus
+    click_requirement:
+      requirements:
+        anythinghere:
+          type: 'has item'
+          material: MAGMA_BLOCK
+          amount: 576
+      deny_commands:
+        - '[close]'
+        - '[message] &#eda942 Требования к заданию не выполнены'
+        - '[sound] ENTITY_VILLAGER_NO'
+    click_commands:
+      - '[console] minecraft:clear %player_name% minecraft:magma_block 576'
+      - '[console] lp user %player_name% permission set quests.a15.done'
+      - '[console] eco give %player_name% 12000'
+      - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"
+      - '[message] &fЗадание &#00FF00выполнено!'
+      - '[refresh]'
+  '15-nedostupno':
+    display_name: '&fЗадание &#00FF0015'
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWFmMzI4Yzg3YjA2ODUwOWFjYTk4MzRlZmFjZTE5NzcwNWZlNWQ0ZjA4NzE3MzFiN2IyMWNkOTliOWZkZGMifX19
+    slot: 28
+    lore:
+      - ''
+      - ' &8▪&#ed5342 Не доступно для выполнения'
+      - ''
+    priority: 4
+    click_commands:
+        - '[message] &cВам необходимо выполнить предыдущий квест!'
+        - '[sound] ENTITY_VILLAGER_NO'
+    
+  '16-vipolneno':
+    display_name: '&fЗадание &#00FF0016'
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOGY5MjMzYzEyNDdlMDNlOWZkMjc3NDI3MzdlNzllNGNjZWJkMjI1YTliMDU5ZDU5NmQ1Y2QzNGUyNmYyMTY1In19fQ==
+    slot: 29
+    lore:
+      - ''
+      - ' &8▪ &#42ed73Задание выполнено'
+      - ''
+    priority: 1
+    hide_enchantments: true
+    view_requirement:
+      requirements:
+        see_perm:
+          type: has permission
+          permission: quests.a16.done
+    click_commands:
+        - '[message] &cВы уже завершили этот квест!'
+        - '[sound] ENTITY_ITEM_BREAK'
+  '16-dostupno':
+    display_name: '&fЗадание &#00FF0016'
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWFmMzI4Yzg3YjA2ODUwOWFjYTk4MzRlZmFjZTE5NzcwNWZlNWQ0ZjA4NzE3MzFiN2IyMWNkOTliOWZkZGMifX19
+    enchantments:
+      - DURABILITY;1
+    slot: 29
+    lore:
+      - ''
+      - '&8 ▪ &fУбей&5 50 эндерменов'
+      - '&8 ▪ &fУбито &d%statistic_kill_entity:enderman%/50'
+      - ''
+      - '&8 » &fОбычная награда:'
+      - '&8 ▪ &d5000$'
+      - '&8 » &fНаграда с подпиской:'
+      - '&8 ▪ &d10000$'
+    priority: 3
+    hide_enchantments: true
+    view_requirement:
+      requirements:
+        see_perm:
+          type: has permission
+          permission: quests.a15.done
+    click_requirement:
+      requirements:
+        anythinghere:
+          type: '>='
+          input: '%statistic_kill_entity:enderman%'
+          output: 50
+      deny_commands:
+        - '[close]'
+        - '[message] &#eda942 Требования к заданию не выполнены'
+        - '[sound] ENTITY_VILLAGER_NO'
+    click_commands:
+      - '[console] lp user %player_name% permission set quests.a16.done'
+      - '[console] eco give %player_name% 5000'
+      - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"
+      - '[message] &fЗадание &#00FF00выполнено!'
+      - '[refresh]'
+  '16-dostupno-king':
+    display_name: '&f&oЗадание &#00FF0016'
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWFmMzI4Yzg3YjA2ODUwOWFjYTk4MzRlZmFjZTE5NzcwNWZlNWQ0ZjA4NzE3MzFiN2IyMWNkOTliOWZkZGMifX19
+    enchantments:
+      - DURABILITY;1
+    slot: 29
+    lore:
+      - ''
+      - '&8 ▪ &fУбей&5 50 эндерменов'
+      - '&8 ▪ &fУбито &d%statistic_kill_entity:enderman%/50'
+      - ''
+      - '&8 » &fОбычная награда:'
+      - '&8 ▪ &d5000$'
+      - '&8 » &fНаграда с подпиской:'
+      - '&8 ▪ &d10000$'
+    priority: 2
+    hide_enchantments: true
+    view_requirement:
+      minimum_requirements: 2
+      requirements:
+        see_perm:
+          type: has permission
+          permission: quests.a15.done
+        see_perm_king:
+          type: has permission
+          permission: trust.plus
+    click_requirement:
+      requirements:
+        anythinghere:
+          type: '>='
+          input: '%statistic_kill_entity:enderman%'
+          output: 50
+      deny_commands:
+        - '[close]'
+        - '[message] &#eda942 Требования к заданию не выполнены'
+        - '[sound] ENTITY_VILLAGER_NO'
+    click_commands:
+      - '[console] lp user %player_name% permission set quests.a16.done'
+      - '[console] eco give %player_name% 10000'
+      - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"
+      - '[message] &fЗадание &#00FF00выполнено!'
+      - '[refresh]'
+  '16-nedostupno':
+    display_name: '&fЗадание &#00FF0016'
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWFmMzI4Yzg3YjA2ODUwOWFjYTk4MzRlZmFjZTE5NzcwNWZlNWQ0ZjA4NzE3MzFiN2IyMWNkOTliOWZkZGMifX19
+    slot: 29
+    lore:
+      - ''
+      - ' &8▪&#ed5342 Не доступно для выполнения'
+      - ''
+    priority: 4
+    click_commands:
+        - '[message] &cВам необходимо выполнить предыдущий квест!'
+        - '[sound] ENTITY_VILLAGER_NO'
+    
+  '17-vipolneno':
+    display_name: '&fЗадание &#00FF0017'
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOGY5MjMzYzEyNDdlMDNlOWZkMjc3NDI3MzdlNzllNGNjZWJkMjI1YTliMDU5ZDU5NmQ1Y2QzNGUyNmYyMTY1In19fQ==
+    slot: 30
+    lore:
+      - ''
+      - ' &8▪ &#42ed73Задание выполнено'
+      - ''
+    priority: 1
+    hide_enchantments: true
+    view_requirement:
+      requirements:
+        see_perm:
+          type: has permission
+          permission: quests.a17.done  
+    click_commands:
+        - '[message] &cВы уже завершили этот квест!'
+        - '[sound] ENTITY_ITEM_BREAK'
+  '17-dostupno':
+    display_name: '&fЗадание &#00FF0017'
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWFmMzI4Yzg3YjA2ODUwOWFjYTk4MzRlZmFjZTE5NzcwNWZlNWQ0ZjA4NzE3MzFiN2IyMWNkOTliOWZkZGMifX19
+    enchantments:
+      - DURABILITY;1
+    slot: 30
+    lore:
+      - ''
+      - '&8 ▪ &fПринеси&5 640 дуба'
+      - '&8 ▪ &fВ наличии&d %checkitem_amount_mat:OAK_LOG%/640'
+      - ''
+      - '&8 » &fОбычная награда:'
+      - '&8 ▪ &d2500$'
+      - '&8 » &fНаграда с подпиской:'
+      - '&8 ▪ &d5000$'
+    priority: 3
+    hide_enchantments: true
+    view_requirement:
+      requirements:
+        see_perm:
+          type: has permission
+          permission: quests.a16.done
+    click_requirement:
+      requirements:
+        anythinghere:
+          type: 'has item'
+          material: OAK_LOG
+          amount: 640
+      deny_commands:
+        - '[close]'
+        - '[message] &#eda942 Требования к заданию не выполнены'
+        - '[sound] ENTITY_VILLAGER_NO'
+    click_commands:
+      - '[console] minecraft:clear %player_name% minecraft:oak_log 640'
+      - '[console] lp user %player_name% permission set quests.a17.done'
+      - '[console] eco give %player_name% 2500'
+      - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"
+      - '[message] &fЗадание &#00FF00выполнено!'
+      - '[refresh]'
+  '17-dostupno-king':
+    display_name: '&f&oЗадание &#00FF0017'
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWFmMzI4Yzg3YjA2ODUwOWFjYTk4MzRlZmFjZTE5NzcwNWZlNWQ0ZjA4NzE3MzFiN2IyMWNkOTliOWZkZGMifX19
+    enchantments:
+      - DURABILITY;1
+    slot: 30
+    lore:
+      - ''
+      - '&8 ▪ &fПринеси&5 640 дуба'
+      - '&8 ▪ &fВ наличии&d %checkitem_amount_mat:OAK_LOG%/640'
+      - ''
+      - '&8 » &fОбычная награда:'
+      - '&8 ▪ &d2500$'
+      - '&8 » &fНаграда с подпиской:'
+      - '&8 ▪ &d5000$'
+    priority: 2
+    hide_enchantments: true
+    view_requirement:
+      minimum_requirements: 2
+      requirements:
+        see_perm:
+          type: has permission
+          permission: quests.a16.done
+        see_perm_king:
+          type: has permission
+          permission: trust.plus
+    click_requirement:
+      requirements:
+        anythinghere:
+          type: 'has item'
+          material: OAK_LOG
+          amount: 640
+      deny_commands:
+        - '[close]'
+        - '[message] &#eda942 Требования к заданию не выполнены'
+        - '[sound] ENTITY_VILLAGER_NO'
+    click_commands:
+      - '[console] minecraft:clear %player_name% minecraft:oak_log 640'
+      - '[console] lp user %player_name% permission set quests.a17.done'
+      - '[console] eco give %player_name% 5000'
+      - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"
+      - '[message] &fЗадание &#00FF00выполнено!'
+      - '[refresh]'
+  '17-nedostupno':
+    display_name: '&fЗадание &#00FF0017'
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWFmMzI4Yzg3YjA2ODUwOWFjYTk4MzRlZmFjZTE5NzcwNWZlNWQ0ZjA4NzE3MzFiN2IyMWNkOTliOWZkZGMifX19
+    slot: 30
+    lore:
+      - ''
+      - ' &8▪&#ed5342 Не доступно для выполнения'
+      - ''
+    priority: 4
+    click_commands:
+        - '[message] &cВам необходимо выполнить предыдущий квест!'
+        - '[sound] ENTITY_VILLAGER_NO'
+    
+  '18-vipolneno':
+    display_name: '&fЗадание &#00FF0018'
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOGY5MjMzYzEyNDdlMDNlOWZkMjc3NDI3MzdlNzllNGNjZWJkMjI1YTliMDU5ZDU5NmQ1Y2QzNGUyNmYyMTY1In19fQ==
+    slot: 31
+    lore:
+      - ''
+      - ' &8▪ &#42ed73Задание выполнено'
+      - ''
+    priority: 1
+    hide_enchantments: true
+    view_requirement:
+      requirements:
+        see_perm:
+          type: has permission
+          permission: quests.a18.done   
+    click_commands:
+        - '[message] &cВы уже завершили этот квест!'
+        - '[sound] ENTITY_ITEM_BREAK'
+  '18-dostupno':
+    display_name: '&fЗадание &#00FF0018'
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWFmMzI4Yzg3YjA2ODUwOWFjYTk4MzRlZmFjZTE5NzcwNWZlNWQ0ZjA4NzE3MzFiN2IyMWNkOTliOWZkZGMifX19
+    enchantments:
+      - DURABILITY;1
+    slot: 31
+    lore:
+      - ''
+      - '&8 ▪ &fПринеси&5 1280 морковки'
+      - '&8 ▪ &fВ наличии&d %checkitem_amount_mat:CARROT%/1280'
+      - ''
+      - '&8 » &fОбычная награда:'
+      - '&8 ▪ &d6000$'
+      - '&8 » &fНаграда с подпиской:'
+      - '&8 ▪ &d12000$'
+    priority: 3
+    hide_enchantments: true
+    view_requirement:
+      requirements:
+        see_perm:
+          type: has permission
+          permission: quests.a17.done
+    click_requirement:
+      requirements:
+        anythinghere:
+          type: 'has item'
+          material: CARROT
+          amount: 1280
+      deny_commands:
+        - '[close]'
+        - '[message] &#eda942 Требования к заданию не выполнены'
+        - '[sound] ENTITY_VILLAGER_NO'
+    click_commands:
+      - '[console] minecraft:clear %player_name% minecraft:carrot 1280'
+      - '[console] lp user %player_name% permission set quests.a18.done'
+      - '[console] eco give %player_name% 6000'
+      - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"
+      - '[message] &fЗадание &#00FF00выполнено!'
+      - '[refresh]'
+  '18-dostupno-king':
+    display_name: '&f&oЗадание &#00FF0018'
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWFmMzI4Yzg3YjA2ODUwOWFjYTk4MzRlZmFjZTE5NzcwNWZlNWQ0ZjA4NzE3MzFiN2IyMWNkOTliOWZkZGMifX19
+    enchantments:
+      - DURABILITY;1
+    slot: 31
+    lore:
+      - ''
+      - '&8 ▪ &fПринеси&5 1280 морковки'
+      - '&8 ▪ &fВ наличии&d %checkitem_amount_mat:CARROT%/1280'
+      - ''
+      - '&8 » &fОбычная награда:'
+      - '&8 ▪ &d6000$'
+      - '&8 » &fНаграда с подпиской:'
+      - '&8 ▪ &d12000$'
+    priority: 2
+    hide_enchantments: true
+    view_requirement:
+      minimum_requirements: 2
+      requirements:
+        see_perm:
+          type: has permission
+          permission: quests.a17.done
+        see_perm_king:
+          type: has permission
+          permission: trust.plus
+    click_requirement:
+      requirements:
+        anythinghere:
+          type: 'has item'
+          material: CARROT
+          amount: 1280
+      deny_commands:
+        - '[close]'
+        - '[message] &#eda942 Требования к заданию не выполнены'
+        - '[sound] ENTITY_VILLAGER_NO'
+    click_commands:
+      - '[console] minecraft:clear %player_name% minecraft:carrot 1280'
+      - '[console] lp user %player_name% permission set quests.a18.done'
+      - '[console] eco give %player_name% 12000'
+      - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"
+      - '[message] &fЗадание &#00FF00выполнено!'
+      - '[refresh]'
+  '18-nedostupno':
+    display_name: '&fЗадание &#00FF0018'
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWFmMzI4Yzg3YjA2ODUwOWFjYTk4MzRlZmFjZTE5NzcwNWZlNWQ0ZjA4NzE3MzFiN2IyMWNkOTliOWZkZGMifX19
+    slot: 31
+    lore:
+      - ''
+      - ' &8▪&#ed5342 Не доступно для выполнения'
+      - ''
+    priority: 4
+    click_commands:
+        - '[message] &cВам необходимо выполнить предыдущий квест!'
+        - '[sound] ENTITY_VILLAGER_NO'
+    
+  '19-vipolneno':
+    display_name: '&fЗадание &#00FF0019'
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOGY5MjMzYzEyNDdlMDNlOWZkMjc3NDI3MzdlNzllNGNjZWJkMjI1YTliMDU5ZDU5NmQ1Y2QzNGUyNmYyMTY1In19fQ==
+    slot: 32
+    lore:
+      - ''
+      - ' &8▪ &#42ed73Задание выполнено'
+      - ''
+    priority: 1
+    hide_enchantments: true
+    view_requirement:
+      requirements:
+        see_perm:
+          type: has permission
+          permission: quests.a19.done 
+    click_commands:
+        - '[message] &cВы уже завершили этот квест!'
+        - '[sound] ENTITY_ITEM_BREAK'          
+  '19-dostupno':
+    display_name: '&fЗадание &#00FF0019'
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWFmMzI4Yzg3YjA2ODUwOWFjYTk4MzRlZmFjZTE5NzcwNWZlNWQ0ZjA4NzE3MzFiN2IyMWNkOTliOWZkZGMifX19
+    enchantments:
+      - DURABILITY;1
+    slot: 32
+    lore:
+      - ''
+      - '&8 ▪ &fПринеси&5 1024 картошки'
+      - '&8 ▪ &fВ наличии&d %checkitem_amount_mat:POTATO%/1024'
+      - ''
+      - '&8 » &fОбычная награда:'
+      - '&8 ▪ &d4000$'
+      - '&8 » &fНаграда с подпиской:'
+      - '&8 ▪ &d8000$'
+    priority: 3
+    hide_enchantments: true
+    view_requirement:
+      requirements:
+        see_perm:
+          type: has permission
+          permission: quests.a18.done
+    click_requirement:
+      requirements:
+        anythinghere:
+          type: 'has item'
+          material: POTATO
+          amount: 1024
+      deny_commands:
+        - '[close]'
+        - '[message] &#eda942 Требования к заданию не выполнены'
+        - '[sound] ENTITY_VILLAGER_NO'
+    click_commands:
+      - '[console] minecraft:clear %player_name% minecraft:potato 1024'
+      - '[console] lp user %player_name% permission set quests.a19.done'
+      - '[console] eco give %player_name% 4000'
+      - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"
+      - '[message] &fЗадание &#00FF00выполнено!'
+      - '[refresh]'
+  '19-dostupno-king':
+    display_name: '&f&oЗадание &#00FF0019'
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWFmMzI4Yzg3YjA2ODUwOWFjYTk4MzRlZmFjZTE5NzcwNWZlNWQ0ZjA4NzE3MzFiN2IyMWNkOTliOWZkZGMifX19
+    enchantments:
+      - DURABILITY;1
+    slot: 32
+    lore:
+      - ''
+      - '&8 ▪ &fПринеси&5 1024 картошки'
+      - '&8 ▪ &fВ наличии&d %checkitem_amount_mat:POTATO%/1024'
+      - ''
+      - '&8 » &fОбычная награда:'
+      - '&8 ▪ &d4000$'
+      - '&8 » &fНаграда с подпиской:'
+      - '&8 ▪ &d8000$'
+    priority: 2
+    hide_enchantments: true
+    view_requirement:
+      minimum_requirements: 2
+      requirements:
+        see_perm:
+          type: has permission
+          permission: quests.a18.done
+        see_perm_king:
+          type: has permission
+          permission: trust.plus
+    click_requirement:
+      requirements:
+        anythinghere:
+          type: 'has item'
+          material: POTATO
+          amount: 1024
+      deny_commands:
+        - '[close]'
+        - '[message] &#eda942 Требования к заданию не выполнены'
+        - '[sound] ENTITY_VILLAGER_NO'
+    click_commands:
+      - '[console] minecraft:clear %player_name% minecraft:potato 1024'
+      - '[console] lp user %player_name% permission set quests.a19.done'
+      - '[console] eco give %player_name% 8000'
+      - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"
+      - '[message] &fЗадание &#00FF00выполнено!'
+      - '[refresh]'
+  '19-nedostupno':
+    display_name: '&fЗадание &#00FF0019'
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWFmMzI4Yzg3YjA2ODUwOWFjYTk4MzRlZmFjZTE5NzcwNWZlNWQ0ZjA4NzE3MzFiN2IyMWNkOTliOWZkZGMifX19
+    slot: 32
+    lore:
+      - ''
+      - ' &8▪&#ed5342 Не доступно для выполнения'
+      - ''
+    priority: 4
+    click_commands:
+        - '[message] &cВам необходимо выполнить предыдущий квест!'
+        - '[sound] ENTITY_VILLAGER_NO'
+    
+  '20-vipolneno':
+    display_name: '&fЗадание &#00FF0020'
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOGY5MjMzYzEyNDdlMDNlOWZkMjc3NDI3MzdlNzllNGNjZWJkMjI1YTliMDU5ZDU5NmQ1Y2QzNGUyNmYyMTY1In19fQ==
+    slot: 33
+    lore:
+      - ''
+      - ' &8▪ &#42ed73Задание выполнено'
+      - ''
+    priority: 1
+    hide_enchantments: true
+    view_requirement:
+      requirements:
+        see_perm:
+          type: has permission
+          permission: quests.a20.done
+    click_commands:
+        - '[message] &cВы уже завершили этот квест!'
+        - '[sound] ENTITY_ITEM_BREAK'
+  '20-dostupno':
+    display_name: '&fЗадание &#00FF0020'
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWFmMzI4Yzg3YjA2ODUwOWFjYTk4MzRlZmFjZTE5NzcwNWZlNWQ0ZjA4NzE3MzFiN2IyMWNkOTliOWZkZGMifX19
+    enchantments:
+      - DURABILITY;1
+    slot: 33
+    lore:
+      - ''
+      - '&8 ▪ &fПринеси&5 64 одуванчика'
+      - '&8 ▪ &fВ наличии&d %checkitem_amount_mat:DANDELION%/64'
+      - ''
+      - '&8 » &fОбычная награда:'
+      - '&8 ▪ &d2500$'
+      - '&8 » &fНаграда с подпиской:'
+      - '&8 ▪ &d5000$'
+    priority: 3
+    hide_enchantments: true
+    view_requirement:
+      requirements:
+        see_perm:
+          type: has permission
+          permission: quests.a19.done
+    click_requirement:
+      requirements:
+        anythinghere:
+          type: 'has item'
+          material: DANDELION
+          amount: 64
+      deny_commands:
+        - '[close]'
+        - '[message] &#eda942 Требования к заданию не выполнены'
+        - '[sound] ENTITY_VILLAGER_NO'
+    click_commands:
+      - '[console] minecraft:clear %player_name% minecraft:dandelion 64'
+      - '[console] lp user %player_name% permission set quests.a20.done'
+      - '[console] eco give %player_name% 2500'
+      - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"
+      - '[message] &fЗадание &#00FF00выполнено!'
+      - '[refresh]'
+  '20-dostupno-king':
+    display_name: '&f&oЗадание &#00FF0020'
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWFmMzI4Yzg3YjA2ODUwOWFjYTk4MzRlZmFjZTE5NzcwNWZlNWQ0ZjA4NzE3MzFiN2IyMWNkOTliOWZkZGMifX19
+    enchantments:
+      - DURABILITY;1
+    slot: 33
+    lore:
+      - ''
+      - '&8 ▪ &fПринеси&5 64 одуванчика'
+      - '&8 ▪ &fВ наличии&d %checkitem_amount_mat:DANDELION%/64'
+      - ''
+      - '&8 » &fОбычная награда:'
+      - '&8 ▪ &d2500$'
+      - '&8 » &fНаграда с подпиской:'
+      - '&8 ▪ &d5000$'
+    priority: 2
+    hide_enchantments: true
+    view_requirement:
+      minimum_requirements: 2
+      requirements:
+        see_perm:
+          type: has permission
+          permission: quests.a19.done
+        see_perm_king:
+          type: has permission
+          permission: trust.plus
+    click_requirement:
+      requirements:
+        anythinghere:
+          type: 'has item'
+          material: DANDELION
+          amount: 64
+      deny_commands:
+        - '[close]'
+        - '[message] &#eda942 Требования к заданию не выполнены'
+        - '[sound] ENTITY_VILLAGER_NO'
+    click_commands:
+      - '[console] minecraft:clear %player_name% minecraft:dandelion 64'
+      - '[console] lp user %player_name% permission set quests.a20.done'
+      - '[console] eco give %player_name% 5000'
+      - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"
+      - '[message] &fЗадание &#00FF00выполнено!'
+      - '[refresh]'
+  '20-nedostupno':
+    display_name: '&fЗадание &#00FF0020'
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWFmMzI4Yzg3YjA2ODUwOWFjYTk4MzRlZmFjZTE5NzcwNWZlNWQ0ZjA4NzE3MzFiN2IyMWNkOTliOWZkZGMifX19
+    slot: 33
+    lore:
+      - ''
+      - ' &8▪&#ed5342 Не доступно для выполнения'
+      - ''
+    priority: 4
+    click_commands:
+        - '[message] &cВам необходимо выполнить предыдущий квест!'
+        - '[sound] ENTITY_VILLAGER_NO'
+    
+  '21-vipolneno':
+    display_name: '&fЗадание &#00FF0021'
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOGY5MjMzYzEyNDdlMDNlOWZkMjc3NDI3MzdlNzllNGNjZWJkMjI1YTliMDU5ZDU5NmQ1Y2QzNGUyNmYyMTY1In19fQ==
+    slot: 34
+    lore:
+      - ''
+      - ' &8▪ &#42ed73Задание выполнено'
+      - ''
+    priority: 1
+    hide_enchantments: true
+    view_requirement:
+      requirements:
+        see_perm:
+          type: has permission
+          permission: quests.a21.done
+    click_commands:
+        - '[message] &cВы уже завершили этот квест!'
+        - '[sound] ENTITY_ITEM_BREAK'
+  '21-dostupno':
+    display_name: '&fЗадание &#00FF0021'
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWFmMzI4Yzg3YjA2ODUwOWFjYTk4MzRlZmFjZTE5NzcwNWZlNWQ0ZjA4NzE3MzFiN2IyMWNkOTliOWZkZGMifX19
+    enchantments:
+      - DURABILITY;1
+    slot: 34
+    lore:
+      - ''
+      - '&8 ▪ &fУбей&5 300 коров'
+      - '&8 ▪ &fУбито &d%statistic_kill_entity:cow%/300'
+      - ''
+      - '&8 » &fОбычная награда:'
+      - '&8 ▪ &d7500$'
+      - '&8 » &fНаграда с подпиской:'
+      - '&8 ▪ &d15000$'
+    priority: 3
+    hide_enchantments: true
+    view_requirement:
+      requirements:
+        see_perm:
+          type: has permission
+          permission: quests.a20.done
+    click_requirement:
+      requirements:
+        anythinghere:
+          type: '>='
+          input: '%statistic_kill_entity:cow%'
+          output: 300
+      deny_commands:
+        - '[close]'
+        - '[message] &#eda942 Требования к заданию не выполнены'
+        - '[sound] ENTITY_VILLAGER_NO'
+    click_commands:
+      - '[console] lp user %player_name% permission set quests.a21.done'
+      - '[console] eco give %player_name% 7500'
+      - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"
+      - '[message] &fЗадание &#00FF00выполнено!'
+      - '[refresh]'
+  '21-dostupno-king':
+    display_name: '&f&oЗадание &#00FF0021'
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWFmMzI4Yzg3YjA2ODUwOWFjYTk4MzRlZmFjZTE5NzcwNWZlNWQ0ZjA4NzE3MzFiN2IyMWNkOTliOWZkZGMifX19
+    enchantments:
+      - DURABILITY;1
+    slot: 34
+    lore:
+      - ''
+      - '&8 ▪ &fУбей&5 300 коров'
+      - '&8 ▪ &fУбито &d%statistic_kill_entity:cow%/300'
+      - ''
+      - '&8 » &fОбычная награда:'
+      - '&8 ▪ &d7500$'
+      - '&8 » &fНаграда с подпиской:'
+      - '&8 ▪ &d15000$'
+    priority: 2
+    hide_enchantments: true
+    view_requirement:
+      minimum_requirements: 2
+      requirements:
+        see_perm:
+          type: has permission
+          permission: quests.a20.done
+        see_perm_king:
+          type: has permission
+          permission: trust.plus
+    click_requirement:
+      requirements:
+        anythinghere:
+          type: '>='
+          input: '%statistic_kill_entity:cow%'
+          output: 300
+      deny_commands:
+        - '[close]'
+        - '[message] &#eda942 Требования к заданию не выполнены'
+        - '[sound] ENTITY_VILLAGER_NO'
+    click_commands:
+      - '[console] lp user %player_name% permission set quests.a21.done'
+      - '[console] eco give %player_name% 15000'
+      - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"
+      - '[message] &fЗадание &#00FF00выполнено!'
+      - '[refresh]'
+  '21-nedostupno':
+    display_name: '&fЗадание &#00FF0021'
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWFmMzI4Yzg3YjA2ODUwOWFjYTk4MzRlZmFjZTE5NzcwNWZlNWQ0ZjA4NzE3MzFiN2IyMWNkOTliOWZkZGMifX19
+    slot: 34
+    lore:
+      - ''
+      - ' &8▪&#ed5342 Не доступно для выполнения'
+      - ''
+    priority: 4
+    click_commands:
+        - '[message] &cВам необходимо выполнить предыдущий квест!'
+        - '[sound] ENTITY_VILLAGER_NO'
+    
+  '22-vipolneno':
+    display_name: '&fЗадание &#00FF0022'
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOGY5MjMzYzEyNDdlMDNlOWZkMjc3NDI3MzdlNzllNGNjZWJkMjI1YTliMDU5ZDU5NmQ1Y2QzNGUyNmYyMTY1In19fQ==
+    slot: 37
+    lore:
+      - ''
+      - ' &8▪ &#42ed73Задание выполнено'
+      - ''
+    priority: 1
+    hide_enchantments: true
+    view_requirement:
+      requirements:
+        see_perm:
+          type: has permission
+          permission: quests.a22.done
+    click_commands:
+        - '[message] &cВы уже завершили этот квест!'
+        - '[sound] ENTITY_ITEM_BREAK'          
+  '22-dostupno':
+    display_name: '&fЗадание &#00FF0022'
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWYyMmI2YTNhMGYyNGJkZWVhYjJhNmFjZDliMWY1MmJiOTU5NGQ1ZjZiMWUyYzA1ZGRkYjIxOTQxMGM4In19fQ==
+    enchantments:
+      - DURABILITY;1
+    slot: 37
+    lore:
+      - ''
+      - '&8 ▪ &fПринеси&5 1280 земли'
+      - '&8 ▪ &fВ наличии&d %checkitem_amount_mat:dirt%/1280'
+      - ''
+      - '&8 » &fОбычная награда:'
+      - '&8 ▪ &d6000$'
+      - '&8 » &fНаграда с подпиской:'
+      - '&8 ▪ &d12000$'
+    priority: 3
+    hide_enchantments: true
+    view_requirement:
+      requirements:
+        see_perm:
+          type: has permission
+          permission: quests.a21.done
+    click_requirement:
+      requirements:
+        anythinghere:
+          type: 'has item'
+          material: DIRT
+          amount: 1280
+      deny_commands:
+        - '[close]'
+        - '[message] &#eda942 Требования к заданию не выполнены'
+        - '[sound] ENTITY_VILLAGER_NO'
+    click_commands:
+      - '[console] minecraft:clear %player_name% minecraft:dirt 1280'
+      - '[console] lp user %player_name% permission set quests.a22.done'
+      - '[console] eco give %player_name% 6000'
+      - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"
+      - '[message] &fЗадание &#00FF00выполнено!'
+      - '[refresh]'
+  '22-dostupno-king':
+    display_name: '&f&oЗадание &#00FF0022'
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWYyMmI2YTNhMGYyNGJkZWVhYjJhNmFjZDliMWY1MmJiOTU5NGQ1ZjZiMWUyYzA1ZGRkYjIxOTQxMGM4In19fQ==
+    enchantments:
+      - DURABILITY;1
+    slot: 37
+    lore:
+      - ''
+      - '&8 ▪ &fПринеси&5 1280 земли'
+      - '&8 ▪ &fВ наличии&d %checkitem_amount_mat:dirt%/1280'
+      - ''
+      - '&8 » &fОбычная награда:'
+      - '&8 ▪ &d6000$'
+      - '&8 » &fНаграда с подпиской:'
+      - '&8 ▪ &d12000$'
+    priority: 2
+    hide_enchantments: true
+    view_requirement:
+      minimum_requirements: 2
+      requirements:
+        see_perm:
+          type: has permission
+          permission: quests.a21.done
+        see_perm_king:
+          type: has permission
+          permission: trust.plus
+    click_requirement:
+      requirements:
+        anythinghere:
+          type: 'has item'
+          material: DIRT
+          amount: 1280
+      deny_commands:
+        - '[close]'
+        - '[message] &#eda942 Требования к заданию не выполнены'
+        - '[sound] ENTITY_VILLAGER_NO'
+    click_commands:
+      - '[console] minecraft:clear %player_name% minecraft:dirt 1280'
+      - '[console] lp user %player_name% permission set quests.a22.done'
+      - '[console] eco give %player_name% 12000'
+      - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"
+      - '[message] &fЗадание &#00FF00выполнено!'
+      - '[refresh]'
+  '22-nedostupno':
+    display_name: '&fЗадание &#00FF0022'
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWYyMmI2YTNhMGYyNGJkZWVhYjJhNmFjZDliMWY1MmJiOTU5NGQ1ZjZiMWUyYzA1ZGRkYjIxOTQxMGM4In19fQ==
+    slot: 37
+    lore:
+      - ''
+      - ' &8▪&#ed5342 Не доступно для выполнения'
+      - ''
+    priority: 4
+    click_commands:
+        - '[message] &cВам необходимо выполнить предыдущий квест!'
+        - '[sound] ENTITY_VILLAGER_NO'
+    
+  '23-vipolneno':
+    display_name: '&fЗадание &#00FF0023'
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOGY5MjMzYzEyNDdlMDNlOWZkMjc3NDI3MzdlNzllNGNjZWJkMjI1YTliMDU5ZDU5NmQ1Y2QzNGUyNmYyMTY1In19fQ==
+    slot: 38
+    lore:
+      - ''
+      - ' &8▪ &#42ed73Задание выполнено'
+      - ''
+    priority: 1
+    hide_enchantments: true
+    view_requirement:
+      requirements:
+        see_perm:
+          type: has permission
+          permission: quests.a23.done
+    click_commands:
+        - '[message] &cВы уже завершили этот квест!'
+        - '[sound] ENTITY_ITEM_BREAK'
+  '23-dostupno':
+    display_name: '&fЗадание &#00FF0023'
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWYyMmI2YTNhMGYyNGJkZWVhYjJhNmFjZDliMWY1MmJiOTU5NGQ1ZjZiMWUyYzA1ZGRkYjIxOTQxMGM4In19fQ==
+    enchantments:
+      - DURABILITY;1
+    slot: 38
+    lore:
+      - ''
+      - '&8 ▪ &fПринеси&5 640 эндерняка'
+      - '&8 ▪ &fВ наличии&d %checkitem_amount_mat:end_stone%/640'
+      - ''
+      - '&8 » &fОбычная награда:'
+      - '&8 ▪ &d7500$'
+      - '&8 » &fНаграда с подпиской:'
+      - '&8 ▪ &d15000$'
+    priority: 3
+    hide_enchantments: true
+    view_requirement:
+      requirements:
+        see_perm:
+          type: has permission
+          permission: quests.a22.done
+    click_requirement:
+      requirements:
+        anythinghere:
+          type: 'has item'
+          material: END_STONE
+          amount: 640
+      deny_commands:
+        - '[close]'
+        - '[message] &#eda942 Требования к заданию не выполнены'
+        - '[sound] ENTITY_VILLAGER_NO'
+    click_commands:
+      - '[console] minecraft:clear %player_name% minecraft:end_stone 640'
+      - '[console] lp user %player_name% permission set quests.a23.done'
+      - '[console] eco give %player_name% 7500'
+      - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"
+      - '[message] &fЗадание &#00FF00выполнено!'
+      - '[refresh]'
+  '23-dostupno-king':
+    display_name: '&fЗадание &#00FF0023'
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWYyMmI2YTNhMGYyNGJkZWVhYjJhNmFjZDliMWY1MmJiOTU5NGQ1ZjZiMWUyYzA1ZGRkYjIxOTQxMGM4In19fQ==
+    enchantments:
+      - DURABILITY;1
+    slot: 38
+    lore:
+      - ''
+      - '&8 ▪ &fПринеси&5 640 эндерняка'
+      - '&8 ▪ &fВ наличии&d %checkitem_amount_mat:end_stone%/640'
+      - ''
+      - '&8 » &fОбычная награда:'
+      - '&8 ▪ &d7500$'
+      - '&8 » &fНаграда с подпиской:'
+      - '&8 ▪ &d15000$'
+    priority: 2
+    hide_enchantments: true
+    view_requirement:
+      minimum_requirements: 2
+      requirements:
+        see_perm:
+          type: has permission
+          permission: quests.a22.done
+        see_perm_king:
+          type: has permission
+          permission: trust.plus
+    click_requirement:
+      requirements:
+        anythinghere:
+          type: 'has item'
+          material: END_STONE
+          amount: 640
+      deny_commands:
+        - '[close]'
+        - '[message] &#eda942 Требования к заданию не выполнены'
+        - '[sound] ENTITY_VILLAGER_NO'
+    click_commands:
+      - '[console] minecraft:clear %player_name% minecraft:end_stone 640'
+      - '[console] lp user %player_name% permission set quests.a23.done'
+      - '[console] eco give %player_name% 15000'
+      - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"
+      - '[message] &fЗадание &#00FF00выполнено!'
+      - '[refresh]'
+  '23-nedostupno-king':
+    display_name: '&fЗадание &#00FF0023'
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWYyMmI2YTNhMGYyNGJkZWVhYjJhNmFjZDliMWY1MmJiOTU5NGQ1ZjZiMWUyYzA1ZGRkYjIxOTQxMGM4In19fQ==
+    slot: 38
+    lore:
+      - ''
+      - ' &8▪&#ed5342 Не доступно для выполнения'
+      - ''
+    priority: 4
+    click_commands:
+        - '[message] &cВам необходимо выполнить предыдущий квест!'
+        - '[sound] ENTITY_VILLAGER_NO'
+  
+  '24-vipolneno':
+    display_name: '&fЗадание &#00FF0024'
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOGY5MjMzYzEyNDdlMDNlOWZkMjc3NDI3MzdlNzllNGNjZWJkMjI1YTliMDU5ZDU5NmQ1Y2QzNGUyNmYyMTY1In19fQ==
+    slot: 39
+    lore:
+      - ''
+      - ' &8▪ &#42ed73Задание выполнено'
+      - ''
+    priority: 1
+    hide_enchantments: true
+    view_requirement:
+      requirements:
+        see_perm:
+          type: has permission
+          permission: quests.a24.done
+    click_commands:
+        - '[message] &cВы уже завершили этот квест!'
+        - '[sound] ENTITY_ITEM_BREAK'
+  '24-dostupno':
+    display_name: '&fЗадание &#00FF0024'
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWYyMmI2YTNhMGYyNGJkZWVhYjJhNmFjZDliMWY1MmJiOTU5NGQ1ZjZiMWUyYzA1ZGRkYjIxOTQxMGM4In19fQ==
+    enchantments:
+      - DURABILITY;1
+    slot: 39
+    lore:
+      - ''
+      - '&8 ▪ &fУбей&5 200 свиней'
+      - '&8 ▪ &fУбито &d%statistic_kill_entity:pig%/200'
+      - ''
+      - '&8 » &fОбычная награда:'
+      - '&8 ▪ &d5000$'
+      - '&8 » &fНаграда с подпиской:'
+      - '&8 ▪ &d10000$'
+    priority: 3
+    hide_enchantments: true
+    view_requirement:
+      requirements:
+        see_perm:
+          type: has permission
+          permission: quests.a23.done
+    click_requirement:
+      requirements:
+        anythinghere:
+          type: '>='
+          input: '%statistic_kill_entity:pig%'
+          output: 200
+      deny_commands:
+        - '[close]'
+        - '[message] &#eda942 Требования к заданию не выполнены'
+        - '[sound] ENTITY_VILLAGER_NO'
+    click_commands:
+      - '[console] lp user %player_name% permission set quests.a24.done'
+      - '[console] eco give %player_name% 5000'
+      - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"
+      - '[message] &fЗадание &#00FF00выполнено!'
+      - '[refresh]'
+  '24-dostupno-king':
+    display_name: '&f&oЗадание &#00FF0024'
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWYyMmI2YTNhMGYyNGJkZWVhYjJhNmFjZDliMWY1MmJiOTU5NGQ1ZjZiMWUyYzA1ZGRkYjIxOTQxMGM4In19fQ==
+    enchantments:
+      - DURABILITY;1
+    slot: 39
+    lore:
+      - ''
+      - '&8 ▪ &fУбей&5 200 свиней'
+      - '&8 ▪ &fУбито &d%statistic_kill_entity:pig%/200'
+      - ''
+      - '&8 » &fОбычная награда:'
+      - '&8 ▪ &d5000$'
+      - '&8 » &fНаграда с подпиской:'
+      - '&8 ▪ &d10000$'
+    priority: 2
+    hide_enchantments: true
+    view_requirement:
+      minimum_requirements: 2
+      requirements:
+        see_perm:
+          type: has permission
+          permission: quests.a23.done
+        see_perm_king:
+          type: has permission
+          permission: trust.plus
+    click_requirement:
+      requirements:
+        anythinghere:
+          type: '>='
+          input: '%statistic_kill_entity:pig%'
+          output: 200
+      deny_commands:
+        - '[close]'
+        - '[message] &#eda942 Требования к заданию не выполнены'
+        - '[sound] ENTITY_VILLAGER_NO'
+    click_commands:
+      - '[console] lp user %player_name% permission set quests.a24.done'
+      - '[console] eco give %player_name% 10000'
+      - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"
+      - '[message] &fЗадание &#00FF00выполнено!'
+      - '[refresh]'
+  '24-nedostupno':
+    display_name: '&fЗадание &#00FF0024'
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWYyMmI2YTNhMGYyNGJkZWVhYjJhNmFjZDliMWY1MmJiOTU5NGQ1ZjZiMWUyYzA1ZGRkYjIxOTQxMGM4In19fQ==
+    slot: 39
+    lore:
+      - ''
+      - ' &8▪&#ed5342 Не доступно для выполнения'
+      - ''
+    priority: 4
+    click_commands:
+        - '[message] &cВам необходимо выполнить предыдущий квест!'
+        - '[sound] ENTITY_VILLAGER_NO'
+    click_commands:
+        - '[message] &cСначала выполните предыдущий квест!'
+        - '[sound] ENTITY_VILLAGER_NO'
+    
+  '25-vipolneno':
+    display_name: '&fЗадание &#00FF0025'
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOGY5MjMzYzEyNDdlMDNlOWZkMjc3NDI3MzdlNzllNGNjZWJkMjI1YTliMDU5ZDU5NmQ1Y2QzNGUyNmYyMTY1In19fQ==
+    slot: 40
+    lore:
+      - ''
+      - ' &8▪ &#42ed73Задание выполнено'
+      - ''
+    priority: 1
+    hide_enchantments: true
+    view_requirement:
+      requirements:
+        see_perm:
+          type: has permission
+          permission: quests.a25.done
+    click_commands:
+        - '[message] &cВы уже завершили этот квест!'
+        - '[sound] ENTITY_ITEM_BREAK'          
+  '25-dostupno':
+    display_name: '&fЗадание &#00FF0025'
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWYyMmI2YTNhMGYyNGJkZWVhYjJhNmFjZDliMWY1MmJiOTU5NGQ1ZjZiMWUyYzA1ZGRkYjIxOTQxMGM4In19fQ==
+    enchantments:
+      - DURABILITY;1
+    slot: 40
+    lore:
+      - ''
+      - '&8 ▪ &fПринеси&5 640 березы'
+      - '&8 ▪ &fВ наличии&d %checkitem_amount_mat:BIRCH_LOG%/640'
+      - ''
+      - '&8 » &fОбычная награда:'
+      - '&8 ▪ &d5000$'
+      - '&8 » &fНаграда с подпиской:'
+      - '&8 ▪ &d10000$'
+    priority: 3
+    hide_enchantments: true
+    view_requirement:
+      requirements:
+        see_perm:
+          type: has permission
+          permission: quests.a24.done
+    click_requirement:
+      requirements:
+        anythinghere:
+          type: 'has item'
+          material: BIRCH_LOG
+          amount: 640
+      deny_commands:
+        - '[close]'
+        - '[message] &#eda942 Требования к заданию не выполнены'
+        - '[sound] ENTITY_VILLAGER_NO'
+    click_commands:
+      - '[console] minecraft:clear %player_name% minecraft:birch_log 640'
+      - '[console] lp user %player_name% permission set quests.a25.done'
+      - '[console] eco give %player_name% 5000'
+      - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"
+      - '[message] &fЗадание &#00FF00выполнено!'
+      - '[refresh]'
+  '25-dostupno-king':
+    display_name: '&f&oЗадание &#00FF0025'
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWYyMmI2YTNhMGYyNGJkZWVhYjJhNmFjZDliMWY1MmJiOTU5NGQ1ZjZiMWUyYzA1ZGRkYjIxOTQxMGM4In19fQ==
+    enchantments:
+      - DURABILITY;1
+    slot: 40
+    lore:
+      - ''
+      - '&8 ▪ &fПринеси&5 640 березы'
+      - '&8 ▪ &fВ наличии&d %checkitem_amount_mat:BIRCH_LOG%/640'
+      - ''
+      - '&8 » &fОбычная награда:'
+      - '&8 ▪ &d5000$'
+      - '&8 » &fНаграда с подпиской:'
+      - '&8 ▪ &d10000$'
+    priority: 2
+    hide_enchantments: true
+    view_requirement:
+      minimum_requirements: 2
+      requirements:
+        see_perm:
+          type: has permission
+          permission: quests.a24.done
+        see_perm_king:
+          type: has permission
+          permission: trust.plus
+    click_requirement:
+      requirements:
+        anythinghere:
+          type: 'has item'
+          material: BIRCH_LOG
+          amount: 640
+      deny_commands:
+        - '[close]'
+        - '[message] &#eda942 Требования к заданию не выполнены'
+        - '[sound] ENTITY_VILLAGER_NO'
+    click_commands:
+      - '[console] minecraft:clear %player_name% minecraft:birch_log 640'
+      - '[console] lp user %player_name% permission set quests.a25.done'
+      - '[console] eco give %player_name% 10000'
+      - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"
+      - '[message] &fЗадание &#00FF00выполнено!'
+      - '[refresh]'
+  '25-nedostupno':
+    display_name: '&fЗадание &#00FF0025'
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWYyMmI2YTNhMGYyNGJkZWVhYjJhNmFjZDliMWY1MmJiOTU5NGQ1ZjZiMWUyYzA1ZGRkYjIxOTQxMGM4In19fQ==
+    slot: 40
+    lore:
+      - ''
+      - ' &8▪&#ed5342 Не доступно для выполнения'
+      - ''
+    priority: 4
+    click_commands:
+        - '[message] &cВам необходимо выполнить предыдущий квест!'
+        - '[sound] ENTITY_VILLAGER_NO'
+    
+  '26-vipolneno':
+    display_name: '&fЗадание &#00FF0026'
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOGY5MjMzYzEyNDdlMDNlOWZkMjc3NDI3MzdlNzllNGNjZWJkMjI1YTliMDU5ZDU5NmQ1Y2QzNGUyNmYyMTY1In19fQ==
+    slot: 41
+    lore:
+      - ''
+      - ' &8▪ &#42ed73Задание выполнено'
+      - ''
+    priority: 1
+    hide_enchantments: true
+    view_requirement:
+      requirements:
+        see_perm:
+          type: has permission
+          permission: quests.a26.done  
+    click_commands:
+        - '[message] &cВы уже завершили этот квест!'
+        - '[sound] ENTITY_ITEM_BREAK'          
+  '26-dostupno':
+    display_name: '&fЗадание &#00FF0026'
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWYyMmI2YTNhMGYyNGJkZWVhYjJhNmFjZDliMWY1MmJiOTU5NGQ1ZjZiMWUyYzA1ZGRkYjIxOTQxMGM4In19fQ==
+    enchantments:
+      - DURABILITY;1
+    slot: 41
+    lore:
+      - ''
+      - '&8 ▪ &fПринеси&5 64 алмаза'
+      - '&8 ▪ &fВ наличии&d %checkitem_amount_mat:DIAMOND%/64'
+      - ''
+      - '&8 » &fОбычная награда:'
+      - '&8 ▪ &d35000$'
+      - '&8 » &fНаграда с подпиской:'
+      - '&8 ▪ &d70000$'
+    priority: 3
+    hide_enchantments: true
+    view_requirement:
+      requirements:
+        see_perm:
+          type: has permission
+          permission: quests.a25.done
+    click_requirement:
+      requirements:
+        anythinghere:
+          type: 'has item'
+          material: DIAMOND
+          amount: 64
+      deny_commands:
+        - '[close]'
+        - '[message] &#eda942 Требования к заданию не выполнены'
+        - '[sound] ENTITY_VILLAGER_NO'
+    click_commands:
+      - '[console] minecraft:clear %player_name% minecraft:diamond 64'
+      - '[console] lp user %player_name% permission set quests.a26.done'
+      - '[console] eco give %player_name% 35000'
+      - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"
+      - '[message] &fЗадание &#00FF00выполнено!'
+      - '[refresh]'
+  '26-dostupno-king':
+    display_name: '&f&oЗадание &#00FF0026'
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWYyMmI2YTNhMGYyNGJkZWVhYjJhNmFjZDliMWY1MmJiOTU5NGQ1ZjZiMWUyYzA1ZGRkYjIxOTQxMGM4In19fQ==
+    enchantments:
+      - DURABILITY;1
+    slot: 41
+    lore:
+      - ''
+      - '&8 ▪ &fПринеси&5 64 алмаза'
+      - '&8 ▪ &fВ наличии&d %checkitem_amount_mat:DIAMOND%/64'
+      - ''
+      - '&8 » &fОбычная награда:'
+      - '&8 ▪ &d35000$'
+      - '&8 » &fНаграда с подпиской:'
+      - '&8 ▪ &d70000$'
+    priority: 2
+    hide_enchantments: true
+    view_requirement:
+      minimum_requirements: 2
+      requirements:
+        see_perm:
+          type: has permission
+          permission: quests.a25.done
+        see_perm_king:
+          type: has permission
+          permission: trust.plus
+    click_requirement:
+      requirements:
+        anythinghere:
+          type: 'has item'
+          material: DIAMOND
+          amount: 64
+      deny_commands:
+        - '[close]'
+        - '[message] &#eda942 Требования к заданию не выполнены'
+        - '[sound] ENTITY_VILLAGER_NO'
+    click_commands:
+      - '[console] minecraft:clear %player_name% minecraft:diamond 64'
+      - '[console] lp user %player_name% permission set quests.a26.done'
+      - '[console] eco give %player_name% 70000'
+      - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"
+      - '[message] &fЗадание &#00FF00выполнено!'
+      - '[refresh]'
+  '26-nedostupno':
+    display_name: '&fЗадание &#00FF0026'
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWYyMmI2YTNhMGYyNGJkZWVhYjJhNmFjZDliMWY1MmJiOTU5NGQ1ZjZiMWUyYzA1ZGRkYjIxOTQxMGM4In19fQ==
+    slot: 41
+    lore:
+      - ''
+      - ' &8▪&#ed5342 Не доступно для выполнения'
+      - ''
+    priority: 4
+    click_commands:
+        - '[message] &cВам необходимо выполнить предыдущий квест!'
+        - '[sound] ENTITY_VILLAGER_NO'
+    
+  '27-vipolneno':
+    display_name: '&fЗадание &#00FF0027'
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOGY5MjMzYzEyNDdlMDNlOWZkMjc3NDI3MzdlNzllNGNjZWJkMjI1YTliMDU5ZDU5NmQ1Y2QzNGUyNmYyMTY1In19fQ==
+    slot: 42
+    lore:
+      - ''
+      - ' &8▪ &#42ed73Задание выполнено'
+      - ''
+    priority: 1
+    hide_enchantments: true
+    view_requirement:
+      requirements:
+        see_perm:
+          type: has permission
+          permission: quests.a27.done
+    click_commands:
+        - '[message] &cВы уже завершили этот квест!'
+        - '[sound] ENTITY_ITEM_BREAK'
+  '27-dostupno':
+    display_name: '&fЗадание &#00FF0027'
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWYyMmI2YTNhMGYyNGJkZWVhYjJhNmFjZDliMWY1MmJiOTU5NGQ1ZjZiMWUyYzA1ZGRkYjIxOTQxMGM4In19fQ==
+    enchantments:
+      - DURABILITY;1
+    slot: 42
+    lore:
+      - ''
+      - '&8 ▪ &fПринеси&5 128 золотых яблока'
+      - '&8 ▪ &fВ наличии&d %checkitem_amount_mat:GOLDEN_APPLE%/128'
+      - ''
+      - '&8 » &fОбычная награда:'
+      - '&8 ▪ &d25000$'
+      - '&8 » &fНаграда с подпиской:'
+      - '&8 ▪ &d50000$'
+    priority: 3
+    hide_enchantments: true
+    view_requirement:
+      requirements:
+        see_perm:
+          type: has permission
+          permission: quests.a26.done
+    click_requirement:
+      requirements:
+        anythinghere:
+          type: 'has item'
+          material: GOLDEN_APPLE
+          amount: 128
+      deny_commands:
+        - '[close]'
+        - '[message] &#eda942 Требования к заданию не выполнены'
+        - '[sound] ENTITY_VILLAGER_NO'
+    click_commands:
+      - '[console] minecraft:clear %player_name% minecraft:golden_apple 128'
+      - '[console] lp user %player_name% permission set quests.a27.done'
+      - '[console] eco give %player_name% 25000'
+      - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"
+      - '[message] &fЗадание &#00FF00выполнено!'
+      - '[refresh]'
+  '27-dostupno-king':
+    display_name: '&f&oЗадание &#00FF0027'
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWYyMmI2YTNhMGYyNGJkZWVhYjJhNmFjZDliMWY1MmJiOTU5NGQ1ZjZiMWUyYzA1ZGRkYjIxOTQxMGM4In19fQ==
+    enchantments:
+      - DURABILITY;1
+    slot: 42
+    lore:
+      - ''
+      - '&8 ▪ &fПринеси&5 128 золотых яблока'
+      - '&8 ▪ &fВ наличии&d %checkitem_amount_mat:GOLDEN_APPLE%/128'
+      - ''
+      - '&8 » &fОбычная награда:'
+      - '&8 ▪ &d25000$'
+      - '&8 » &fНаграда с подпиской:'
+      - '&8 ▪ &d50000$'
+    priority: 2
+    hide_enchantments: true
+    view_requirement:
+      minimum_requirements: 2
+      requirements:
+        see_perm:
+          type: has permission
+          permission: quests.a26.done
+        see_perm_king:
+          type: has permission
+          permission: trust.plus
+    click_requirement:
+      requirements:
+        anythinghere:
+          type: 'has item'
+          material: GOLDEN_APPLE
+          amount: 128
+      deny_commands:
+        - '[close]'
+        - '[message] &#eda942 Требования к заданию не выполнены'
+        - '[sound] ENTITY_VILLAGER_NO'
+    click_commands:
+      - '[console] minecraft:clear %player_name% minecraft:golden_apple 128'
+      - '[console] lp user %player_name% permission set quests.a27.done'
+      - '[console] eco give %player_name% 50000'
+      - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"
+      - '[message] &fЗадание &#00FF00выполнено!'
+      - '[refresh]'
+  '27-nedostupno':
+    display_name: '&fЗадание &#00FF0027'
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWYyMmI2YTNhMGYyNGJkZWVhYjJhNmFjZDliMWY1MmJiOTU5NGQ1ZjZiMWUyYzA1ZGRkYjIxOTQxMGM4In19fQ==
+    slot: 42
+    lore:
+      - ''
+      - ' &8▪&#ed5342 Не доступно для выполнения'
+      - ''
+    priority: 4
+    click_commands:
+        - '[message] &cВам необходимо выполнить предыдущий квест!'
+        - '[sound] ENTITY_VILLAGER_NO'
+    
+  '28-vipolneno':
+    display_name: '&fЗадание &#00FF0028'
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOGY5MjMzYzEyNDdlMDNlOWZkMjc3NDI3MzdlNzllNGNjZWJkMjI1YTliMDU5ZDU5NmQ1Y2QzNGUyNmYyMTY1In19fQ==
+    slot: 43
+    lore:
+      - ''
+      - ' &8▪ &#42ed73Задание выполнено'
+      - ''
+    priority: 1
+    hide_enchantments: true
+    view_requirement:
+      requirements:
+        see_perm:
+          type: has permission
+          permission: quests.a28.done
+    click_commands:
+        - '[message] &cВы уже завершили этот квест!'
+        - '[sound] ENTITY_ITEM_BREAK'          
+  '28-dostupno':
+    display_name: '&fЗадание &#00FF0028'
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWYyMmI2YTNhMGYyNGJkZWVhYjJhNmFjZDliMWY1MmJiOTU5NGQ1ZjZiMWUyYzA1ZGRkYjIxOTQxMGM4In19fQ==
+    enchantments:
+      - DURABILITY;1
+    slot: 43
+    lore:
+      - ''
+      - '&8 ▪ &fПринеси&5 640 обсидиана'
+      - '&8 ▪ &fВ наличии&d %checkitem_amount_mat:OBSIDIAN%/640'
+      - ''
+      - '&8 » &fОбычная награда:'
+      - '&8 ▪ &d25000$'
+      - '&8 » &fНаграда с подпиской:'
+      - '&8 ▪ &d50000$'
+    priority: 3
+    hide_enchantments: true
+    view_requirement:
+      requirements:
+        see_perm:
+          type: has permission
+          permission: quests.a27.done
+    click_requirement:
+      requirements:
+        anythinghere:
+          type: 'has item'
+          material: OBSIDIAN
+          amount: 640
+      deny_commands:
+        - '[close]'
+        - '[message] &#eda942 Требования к заданию не выполнены'
+        - '[sound] ENTITY_VILLAGER_NO'
+    click_commands:
+      - '[console] minecraft:clear %player_name% minecraft:obsidian 640'
+      - '[console] lp user %player_name% permission set quests.a28.done'
+      - '[console] eco give %player_name% 25000'
+      - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"
+      - '[message] &fЗадание &#00FF00выполнено!'
+      - '[refresh]'
+  '28-dostupno-king':
+    display_name: '&f&oЗадание &#00FF0028'
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWYyMmI2YTNhMGYyNGJkZWVhYjJhNmFjZDliMWY1MmJiOTU5NGQ1ZjZiMWUyYzA1ZGRkYjIxOTQxMGM4In19fQ==
+    enchantments:
+      - DURABILITY;1
+    slot: 43
+    lore:
+      - ''
+      - '&8 ▪ &fПринеси&5 640 обсидиана'
+      - '&8 ▪ &fВ наличии&d %checkitem_amount_mat:OBSIDIAN%/640'
+      - ''
+      - '&8 » &fОбычная награда:'
+      - '&8 ▪ &d25000$'
+      - '&8 » &fНаграда с подпиской:'
+      - '&8 ▪ &d50000$'
+    priority: 2
+    hide_enchantments: true
+    view_requirement:
+      minimum_requirements: 2
+      requirements:
+        see_perm:
+          type: has permission
+          permission: quests.a27.done
+        see_perm_king:
+          type: has permission
+          permission: trust.plus
+    click_requirement:
+      requirements:
+        anythinghere:
+          type: 'has item'
+          material: OBSIDIAN
+          amount: 640
+      deny_commands:
+        - '[close]'
+        - '[message] &#eda942 Требования к заданию не выполнены'
+        - '[sound] ENTITY_VILLAGER_NO'
+    click_commands:
+      - '[console] minecraft:clear %player_name% minecraft:obsidian 640'
+      - '[console] lp user %player_name% permission set quests.a28.done'
+      - '[console] eco give %player_name% 50000'
+      - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"
+      - '[message] &fЗадание &#00FF00выполнено!'
+      - '[refresh]'
+  '28-nedostupno':
+    display_name: '&fЗадание &#00FF0028'
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWYyMmI2YTNhMGYyNGJkZWVhYjJhNmFjZDliMWY1MmJiOTU5NGQ1ZjZiMWUyYzA1ZGRkYjIxOTQxMGM4In19fQ==
+    slot: 43
+    lore:
+      - ''
+      - ' &8▪&#ed5342 Не доступно для выполнения'
+      - ''
+    priority: 4
+    click_commands:
+        - '[message] &cВам необходимо выполнить предыдущий квест!'
+        - '[sound] ENTITY_VILLAGER_NO'
+# Прочее
+  'back':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2VmMTE5ZjA4ODUxYTcyYTVmMTBmYmMzMjQ3ZDk1ZTFjMDA2MzYwZDJiNGY0MTJiMjNjZTA1NDA5Mjc1NmIwYyJ9fX0=
+    slot: 49
+    display_name: '&c&lНазад'
+    lore:
+    - ''
+    - '&8 ▪ &fНажав сюда, вы сможете'
+    - '&8 ▪ &fвернуться в прошлое меню.'
+    - ''
+    click_commands:
+    - '[openguimenu] menu'
+    - '[sound] BLOCK_NOTE_BLOCK_BASS'
+  'filler_glass':
+    material: BLACK_STAINED_GLASS_PANE
+    slots: [0,1,2,3,5,6,9,18,26-27,35,44,47-48,50-53]
+    display_name: '&l'
+  'filler_glass_2':
+    material: MAGENTA_STAINED_GLASS_PANE
+    slots: [7,8,17,36,45,46]
+    display_name: '&l'
+
+  'c':
+    display_name: '&#61edaeИнформация'
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvM2EzNmIzZmIyMzhlOWYyY2Y4MmU5YmExYzMwMzRiOTY5ZmY5NWQzOGQ4ZDE1MTY4ZDQzZDQ2NjQ1MzE2NCJ9fX0=
+    slot: 4
+    lore:
+      - ''
+      - ' &8▪ &fПроходи уникальные задания и'
+      - ' &8▪ &fполучай самые крутые награды'
+      - ''
+      - ' &8▪ &#3494E6&lМ&#4690E0&lа&#598CDB&lл&#6B89D5&lо &#7E85CF&lн&#9081CA&lа&#A27DC4&lг&#B579BE&lр&#C776B8&lа&#DA72B3&lд&#EC6EAD&l?&f Тогда приобрети'
+      - ' &8▪ &fподписку &#F4C4F3&lᴛ&#F6B1F4&lʀ&#F79FF6&lᴜ&#F98CF7&ls&#FA7AF9&lᴛ&#FC67FA&l+&f и получай больше'
+      - ''
+sweet: true

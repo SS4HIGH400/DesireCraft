@@ -1,0 +1,219 @@
+#
+# Docs: https://re4erka.gitbook.io/re4tnt-2.0/
+#
+
+Types:
+  SuperTNT:
+    display:
+      name: '#00FF00Супер ТНТ'
+      lore:
+      - ''
+      - '&fИнтервал: &a5 сек.'
+      - '&fРадиуc: &a5'
+      - ''
+      glow: false
+      customModelData:
+        enable: true
+        value: 1
+    options:
+      range: 5
+      interval: 100
+      autoIgnite: false
+      customName: true
+      gravity: true
+      fire: false
+      glow: false
+    obsidianBreak:
+      enable: false
+    liquidBreak:
+      enable: false
+    customCraft:
+      enable: true
+      recipe:
+      - GSG
+      - SDS
+      - GSG
+      items:
+        S: SAND
+        G: GUNPOWDER
+        D: DIAMOND
+    updateBlock: false
+  MegaTNT:
+    display:
+      name: '#FFFF00Мега ТНТ'
+      lore:
+      - ''
+      - '&fИнтервал: &e10 сек.'
+      - '&fРадиуc: &e10'
+      - ''
+      glow: false
+      customModelData:
+        enable: true
+        value: 1
+    options:
+      range: 10
+      interval: 200
+      autoIgnite: false
+      customName: true
+      gravity: true
+      fire: false
+      glow: false
+    obsidianBreak:
+      enable: false
+    liquidBreak:
+      enable: false
+    customCraft:
+      enable: true
+      recipe:
+      - GSG
+      - SNS
+      - GSG
+      items:
+        S: SAND
+        G: GUNPOWDER
+        N: NETHERITE_SCRAP
+    updateBlock: false
+  UltraTNT:
+    display:
+      name: '#FF0000Ультра ТНТ'
+      lore:
+      - ''
+      - '&fИнтервал: &c15 сек.'
+      - '&fРадиуc: &c15'
+      - ''
+      glow: false
+      customModelData:
+        enable: true
+        value: 2
+    options:
+      range: 15
+      interval: 300
+      autoIgnite: false
+      customName: true
+      gravity: true
+      fire: false
+      glow: false
+    obsidianBreak:
+      enable: false
+    liquidBreak:
+      enable: false
+    customCraft:
+      enable: true
+      recipe:
+      - GSG
+      - SNS
+      - GSG
+      items:
+        S: SOUL_SAND
+        G: GUNPOWDER
+        N: NETHER_STAR
+    updateBlock: false
+  ObsidianTNT:
+    display:
+      name: '#000000Обсидиановое ТНТ'
+      lore:
+      - '&fВзрывает обсидиан'
+      - ''
+      - '&fИнтервал: &020 сек.'
+      - '&fРадиуc: &03'
+      - ''
+      glow: false
+      customModelData:
+        enable: true
+        value: 3
+    options:
+      range: 3
+      interval: 400
+      autoIgnite: false
+      customName: true
+      gravity: true
+      fire: false
+      glow: false
+    obsidianBreak:
+      enable: true
+      power: 1
+    liquidBreak:
+      enable: false
+    customCraft:
+      enable: true
+      recipe:
+      - GOG
+      - ODO
+      - GOG
+      items:
+        O: OBSIDIAN
+        G: GUNPOWDER
+        D: DIAMOND
+    updateBlock: false
+  AirTNT:
+    display:
+      name: '#FFFFFFВоздушное ТНТ'
+      lore:
+      - '&fУлетает вверх'
+      - ''
+      - '&fИнтервал: 3 сек.'
+      - '&fРадиуc: 3'
+      - ''
+      glow: false
+      customModelData:
+        enable: true
+        value: 4
+    options:
+      range: 3
+      interval: 60
+      autoIgnite: false
+      customName: true
+      gravity: false
+      fire: false
+      glow: false
+    obsidianBreak:
+      enable: false
+    liquidBreak:
+      enable: false
+    customCraft:
+      enable: true
+      recipe:
+      - GFG
+      - FRF
+      - GFG
+      items:
+        F: FEATHER
+        G: GUNPOWDER
+        R: FIREWORK_ROCKET
+    updateBlock: false
+  IgniteTNT:
+    display:
+      name: '#FFA500Подожженное ТНТ'
+      lore:
+      - '&fСразу поджигается'
+      - ''
+      - '&fИнтервал: &63 сек.'
+      - '&fРадиуc: &63'
+      - ''
+      glow: false
+      customModelData:
+        enable: true
+        value: 4
+    options:
+      range: 3
+      interval: 60
+      autoIgnite: true
+      customName: true
+      gravity: true
+      fire: false
+      glow: false
+    obsidianBreak:
+      enable: false
+    liquidBreak:
+      enable: false
+    customCraft:
+      enable: true
+      recipe:
+      - GSG
+      - SBS
+      - GSG
+      items:
+        S: SAND
+        G: GUNPOWDER
+        B: BLAZE_ROD
+    updateBlock: false

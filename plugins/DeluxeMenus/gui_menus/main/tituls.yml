@@ -1,0 +1,392 @@
+menu_title: '[ᴛs] ▸ Титулы'
+open_command: 
+- tituls
+- title
+- prefix
+- titles
+- custom
+- customize
+size: 54
+items: 
+  'tester':
+    material: DIAMOND
+    slot: 10
+    priority: 1
+    view_requirement:
+      requirements:
+        complete:
+         type: has permission
+         permission: 'prefix.tester'
+    display_name: '&8 ▸ &7Титул: &#FFAF00&lʙ&#FF9900&lᴇ&#FF8300&lᴛ&#FF6D00&lᴀ&#FF5800&l-&#FF4200&lᴛ&#FF2C00&lᴇ&#FF1600&ls&#FF0000&lᴛ'
+    hide_enchantments: true
+    lore:
+    - ''
+    - '&fСтатус: &7Доступен &a&l✓'
+    left_click_commands:
+    - '[console] lp user %player_name% meta setsuffix " &#FFAF00&lʙ&#FF9900&lᴇ&#FF8300&lᴛ&#FF6D00&lᴀ&#FF5800&l-&#FF4200&lᴛ&#FF2C00&lᴇ&#FF1600&ls&#FF0000&lᴛ"'
+    - '[message] &7[&#F4C4F3&lТ&#F5B5F4&lи&#F7A5F5&lт&#F896F7&lу&#F986F8&lл&#FB77F9&lы&7] &8» &fВы &aуспешно &fприменили титул!'
+    - '[close]'
+    right_click_commands:
+    - '[console] lp user %player_name% meta setsuffix  " &#FFAF00&lʙ&#FF9900&lᴇ&#FF8300&lᴛ&#FF6D00&lᴀ&#FF5800&l-&#FF4200&lᴛ&#FF2C00&lᴇ&#FF1600&ls&#FF0000&lᴛ"'
+    - '[message] &7[&#F4C4F3&lТ&#F5B5F4&lи&#F7A5F5&lт&#F896F7&lу&#F986F8&lл&#FB77F9&lы&7] &8» &fВы &aуспешно &fприменили титул!'
+    - '[close]'
+  'defect':
+    material: DIAMOND
+    slot: 11
+    priority: 1
+    view_requirement:
+      requirements:
+        complete:
+         type: has permission
+         permission: 'prefix.defect'
+    display_name: '&8 ▸ &7Титул: &#a90a57&lд&#af165b&lе&#b5225f&lф&#bb2d63&lе&#c13967&lк&#c7456c&lт &#cd5170&lм&#d35d74&lо&#d96878&lз&#df747c&lг&#e58080&lа'
+    hide_enchantments: true
+    lore:
+    - ''
+    - '&fСтатус: &7Доступен &a&l✓'
+    left_click_commands:
+    - '[console] lp user %player_name% meta setsuffix " &#a90a57&lд&#af165b&lе&#b5225f&lф&#bb2d63&lе&#c13967&lк&#c7456c&lт &#cd5170&lм&#d35d74&lо&#d96878&lз&#df747c&lг&#e58080&lа"'
+    - '[message] &7[&#F4C4F3&lТ&#F5B5F4&lи&#F7A5F5&lт&#F896F7&lу&#F986F8&lл&#FB77F9&lы&7] &8» &fВы &aуспешно &fприменили титул!'
+    - '[close]'
+    right_click_commands:
+    - '[console] lp user %player_name% meta setsuffix  " &#a90a57&lд&#af165b&lе&#b5225f&lф&#bb2d63&lе&#c13967&lк&#c7456c&lт &#cd5170&lм&#d35d74&lо&#d96878&lз&#df747c&lг&#e58080&lа"'
+    - '[message] &7[&#F4C4F3&lТ&#F5B5F4&lи&#F7A5F5&lт&#F896F7&lу&#F986F8&lл&#FB77F9&lы&7] &8» &fВы &aуспешно &fприменили титул!'
+    - '[close]'
+  'title1':
+    material: BOOKSHELF
+    slot: 20
+    priority: 1
+    view_requirement:
+      requirements:
+        complete:
+         type: has permission
+         permission: 'prefix.1'
+    display_name: '&8 ▸ &7Титул: &#08ACFBс&#31BEFCи&#5BD0FCг&#84E1FDм&#ADF3FDа'
+    hide_enchantments: true
+    lore:
+    - ''
+    - '&fСтатус: &7Доступен &a&l✓'
+    left_click_commands:
+    - '[console] lp user %player_name% meta setsuffix " &#08ACFBс&#31BEFCи&#5BD0FCг&#84E1FDм&#ADF3FDа"'
+    - '[message] &7[&#F4C4F3&lТ&#F5B5F4&lи&#F7A5F5&lт&#F896F7&lу&#F986F8&lл&#FB77F9&lы&7] &8» &fВы &aуспешно &fприменили титул!'
+    - '[close]'
+    right_click_commands:
+    - '[console] lp user %player_name% meta setsuffix  " &#08ACFBс&#31BEFCи&#5BD0FCг&#84E1FDм&#ADF3FDа"'
+    - '[message] &7[&#F4C4F3&lТ&#F5B5F4&lи&#F7A5F5&lт&#F896F7&lу&#F986F8&lл&#FB77F9&lы&7] &8» &fВы &aуспешно &fприменили титул!'
+    - '[close]'
+  'title_all_no1':
+    material: barrier
+    display_name: '&8 ▸ &7Титул: &#08ACFBс&#31BEFCи&#5BD0FCг&#84E1FDм&#ADF3FDа'
+    lore:
+    - ''
+    - '&fСтатус: &7Недоступен &c✘'
+    priority: 2
+    slot: 20
+  'title2':
+    material: BOOKSHELF
+    slot: 21
+    priority: 1
+    view_requirement:
+      requirements:
+        complete:
+         type: has permission
+         permission: 'prefix.2'
+    display_name: '&8 ▸ &7Титул: &#C608FBᴛ&#B612FCʀ&#A71DFDᴜ&#9727FEs&#8731FFᴛ'
+    hide_enchantments: true
+    lore:
+    - ''
+    - '&fСтатус: &7Доступен &a&l✓'
+    left_click_commands:
+    - '[console] lp user %player_name% meta setsuffix " &#C608FBᴛ&#B612FCʀ&#A71DFDᴜ&#9727FEs&#8731FFᴛ"'
+    - '[console] titlemsg %player_name% &6Успешно!&f%subtitle%&fВы установили себе титул'
+    - '[close]'
+    right_click_commands:
+    - '[console] lp user %player_name% meta setsuffix  " &#C608FBᴛ&#B612FCʀ&#A71DFDᴜ&#9727FEs&#8731FFᴛ"'
+    - '[message] &7[&#F4C4F3&lТ&#F5B5F4&lи&#F7A5F5&lт&#F896F7&lу&#F986F8&lл&#FB77F9&lы&7] &8» &fВы &aуспешно &fприменили титул!'
+    - '[close]'
+  'title_all_no2':
+    material: BARRIER
+    display_name: '&8 ▸ &7Титул: &#C608FBᴛ&#B612FCʀ&#A71DFDᴜ&#9727FEs&#8731FFᴛ'
+    lore:
+    - ''
+    - '&fСтатус: &7Недоступен &c✘'
+    priority: 2
+    slot: 21
+  'title3':
+    material: BOOKSHELF
+    slot: 22
+    priority: 1
+    view_requirement:
+      requirements:
+        complete:
+         type: has permission
+         permission: 'prefix.3'
+    display_name: '&8 ▸ &7Титул: &#FF3B3Bт&#FF484Cо&#FF555Eп&#FF616Fе&#FF6E80р'
+    hide_enchantments: true
+    lore:
+    - ''
+    - '&fСтатус: &7Доступен &a&l✓'
+    left_click_commands:
+    - '[console] lp user %player_name% meta setsuffix " &#FF3B3Bт&#FF484Cо&#FF555Eп&#FF616Fе&#FF6E80р"'
+    - '[message] &7[&#F4C4F3&lТ&#F5B5F4&lи&#F7A5F5&lт&#F896F7&lу&#F986F8&lл&#FB77F9&lы&7] &8» &fВы &aуспешно &fприменили титул!'
+    - '[close]'
+    right_click_commands:
+    - '[console] lp user %player_name% meta setsuffix  " &#FF3B3Bт&#FF484Cо&#FF555Eп&#FF616Fе&#FF6E80р"'
+    - '[message] &7[&#F4C4F3&lТ&#F5B5F4&lи&#F7A5F5&lт&#F896F7&lу&#F986F8&lл&#FB77F9&lы&7] &8» &fВы &aуспешно &fприменили титул!'
+    - '[close]'
+  'title_all_no3':
+    material: barrier
+    display_name: '&8 ▸ &7Титул: &#FF3B3Bт&#FF484Cо&#FF555Eп&#FF616Fе&#FF6E80р'
+    lore:
+    - ''
+    - '&fСтатус: &7Недоступен &c✘'
+    priority: 2
+    slot: 22
+  'title4':
+    material: BOOKSHELF
+    slot: 23
+    priority: 1
+    view_requirement:
+      requirements:
+        complete:
+         type: has permission
+         permission: 'prefix.4'
+    display_name: '&8 ▸ &7Титул: &#7C7C7Cч&#6D6D6Dи&#5E5E5Eт&#4F4F4Fе&#404040р'
+    hide_enchantments: true
+    lore:
+    - ''
+    - '&fСтатус: &7Доступен &a&l✓'
+    left_click_commands:
+    - '[console] lp user %player_name% meta setsuffix " &#7C7C7Cч&#6D6D6Dи&#5E5E5Eт&#4F4F4Fе&#404040р"'
+    - '[message] &7[&#F4C4F3&lТ&#F5B5F4&lи&#F7A5F5&lт&#F896F7&lу&#F986F8&lл&#FB77F9&lы&7] &8» &fВы &aуспешно &fприменили титул!'
+    - '[close]'
+    right_click_commands:
+    - '[console] lp user %player_name% meta setsuffix  " &#7C7C7Cч&#6D6D6Dи&#5E5E5Eт&#4F4F4Fе&#404040р"'
+    - '[message] &7[&#F4C4F3&lТ&#F5B5F4&lи&#F7A5F5&lт&#F896F7&lу&#F986F8&lл&#FB77F9&lы&7] &8» &fВы &aуспешно &fприменили титул!'
+    - '[close]'
+  'title_all_no4':
+    material: barrier
+    display_name: '&8 ▸ &7Титул: &#7C7C7Cч&#6D6D6Dи&#5E5E5Eт&#4F4F4Fе&#404040р'
+    lore:
+    - ''
+    - '&fСтатус: &7Недоступен &c✘'
+    priority: 2
+    slot: 23
+  'title5':
+    material: BOOKSHELF
+    slot: 29
+    priority: 1
+    view_requirement:
+      requirements:
+        complete:
+         type: has permission
+         permission: 'prefix.5'
+    display_name: '&8 ▸ &7Титул: &#FFBD7E#&#FDC673п&#FCD069о&#FAD95Eд&#F9E353п&#F7EC48и&#F6F63Eв&#F4FF33о'
+    hide_enchantments: true
+    lore:
+    - ''
+    - '&fСтатус: &7Доступен &a&l✓'
+    left_click_commands:
+    - '[console] lp user %player_name% meta setsuffix " &#FFBD7E#&#FDC673п&#FCD069о&#FAD95Eд&#F9E353п&#F7EC48и&#F6F63Eв&#F4FF33о"'
+    - '[message] &7[&#F4C4F3&lТ&#F5B5F4&lи&#F7A5F5&lт&#F896F7&lу&#F986F8&lл&#FB77F9&lы&7] &8» &fВы &aуспешно &fприменили титул!'
+    - '[close]'
+    right_click_commands:
+    - '[console] lp user %player_name% meta setsuffix  " &#FFBD7E#&#FDC673п&#FCD069о&#FAD95Eд&#F9E353п&#F7EC48и&#F6F63Eв&#F4FF33о"'
+    - '[message] &7[&#F4C4F3&lТ&#F5B5F4&lи&#F7A5F5&lт&#F896F7&lу&#F986F8&lл&#FB77F9&lы&7] &8» &fВы &aуспешно &fприменили титул!'
+    - '[close]'
+  'title_all_no5':
+    material: barrier
+    display_name: '&8 ▸ &7Титул: &#FFBD7E#&#FDC673п&#FCD069о&#FAD95Eд&#F9E353п&#F7EC48и&#F6F63Eв&#F4FF33о'
+    lore:
+    - ''
+    - '&fСтатус: &7Недоступен &c✘'
+    priority: 2
+    slot: 29
+  'title6':
+    material: BOOKSHELF
+    slot: 30
+    priority: 1
+    view_requirement:
+      requirements:
+        complete:
+         type: has permission
+         permission: 'prefix.6'
+    display_name: '&8 ▸ &7Титул: &#7918FFс&#8323FFп&#8C2DFFу&#9638FFт&#9F43FFн&#A94DFFи&#B258FFк'
+    hide_enchantments: true
+    lore:
+    - ''
+    - '&fСтатус: &7Доступен &a&l✓'
+    left_click_commands:
+    - '[console] lp user %player_name% meta setsuffix " &#7918FFс&#8323FFп&#8C2DFFу&#9638FFт&#9F43FFн&#A94DFFи&#B258FFк"'
+    - '[message] &7[&#F4C4F3&lТ&#F5B5F4&lи&#F7A5F5&lт&#F896F7&lу&#F986F8&lл&#FB77F9&lы&7] &8» &fВы &aуспешно &fприменили титул!'
+    - '[close]'
+    right_click_commands:
+    - '[console] lp user %player_name% meta setsuffix  " &#7918FFс&#8323FFп&#8C2DFFу&#9638FFт&#9F43FFн&#A94DFFи&#B258FFк"'
+    - '[message] &7[&#F4C4F3&lТ&#F5B5F4&lи&#F7A5F5&lт&#F896F7&lу&#F986F8&lл&#FB77F9&lы&7] &8» &fВы &aуспешно &fприменили титул!'
+    - '[close]'
+  'title_all_no6':
+    material: barrier
+    display_name: '&#7918FFс&#8323FFп&#8C2DFFу&#9638FFт&#9F43FFн&#A94DFFи&#B258FFк'
+    lore:
+    - ''
+    - '&fСтатус: &7Недоступен &c✘'
+    priority: 2
+    slot: 30
+  'title7':
+    material: BOOKSHELF
+    slot: 31
+    priority: 1
+    view_requirement:
+      requirements:
+        complete:
+         type: has permission
+         permission: 'prefix.7'
+    display_name: '&8 ▸ &7Титул: &#C79FFFк&#BD91FFр&#B282FFи&#A874FFс&#9D65FFт&#9357FFа&#8848FFл&#7E3AFFл&#732BFFы'
+    hide_enchantments: true
+    lore:
+    - ''
+    - '&fСтатус: &7Доступен &a&l✓'
+    left_click_commands:
+    - '[console] lp user %player_name% meta setsuffix " &#C79FFFк&#BD91FFр&#B282FFи&#A874FFс&#9D65FFт&#9357FFа&#8848FFл&#7E3AFFл&#732BFFы"'
+    - '[message] &7[&#F4C4F3&lТ&#F5B5F4&lи&#F7A5F5&lт&#F896F7&lу&#F986F8&lл&#FB77F9&lы&7] &8» &fВы &aуспешно &fприменили титул!'
+    - '[close]'
+    right_click_commands:
+    - '[console] lp user %player_name% meta setsuffix  " &#C79FFFк&#BD91FFр&#B282FFи&#A874FFс&#9D65FFт&#9357FFа&#8848FFл&#7E3AFFл&#732BFFы"'
+    - '[message] &7[&#F4C4F3&lТ&#F5B5F4&lи&#F7A5F5&lт&#F896F7&lу&#F986F8&lл&#FB77F9&lы&7] &8» &fВы &aуспешно &fприменили титул!'
+    - '[close]'
+  'title_all_no7':
+    material: barrier
+    display_name: '&#C79FFFк&#BD91FFр&#B282FFи&#A874FFс&#9D65FFт&#9357FFа&#8848FFл&#7E3AFFл&#732BFFы'
+    lore:
+    - ''
+    - '&fСтатус: &7Недоступен &c✘'
+    priority: 2
+    slot: 31
+  'title8':
+    material: BOOKSHELF
+    slot: 32
+    priority: 1
+    view_requirement:
+      requirements:
+        complete:
+         type: has permission
+         permission: 'prefix.8'
+    display_name: '&8 ▸ &7Титул: &#9FFFD0#&#8CFFADр&#79FF8Bе&#66FF68й&#53FF45д&#40FF23и&#2DFF00м'
+    hide_enchantments: true
+    lore:
+    - ''
+    - '&fСтатус: &7Доступен &a&l✓'
+    left_click_commands:
+    - '[console] lp user %player_name% meta setsuffix " &#9FFFD0#&#8CFFADр&#79FF8Bе&#66FF68й&#53FF45д&#40FF23и&#2DFF00м"'
+    - '[message] &7[&#F4C4F3&lТ&#F5B5F4&lи&#F7A5F5&lт&#F896F7&lу&#F986F8&lл&#FB77F9&lы&7] &8» &fВы &aуспешно &fприменили титул!'
+    - '[close]'
+    right_click_commands:
+    - '[console] lp user %player_name% meta setsuffix  " &#9FFFD0#&#8CFFADр&#79FF8Bе&#66FF68й&#53FF45д&#40FF23и&#2DFF00м"'
+    - '[message] &7[&#F4C4F3&lТ&#F5B5F4&lи&#F7A5F5&lт&#F896F7&lу&#F986F8&lл&#FB77F9&lы&7] &8» &fВы &aуспешно &fприменили титул!'
+    - '[close]'
+  'title_all_no8':
+    material: barrier
+    display_name: '&#9FFFD0#&#8CFFADр&#79FF8Bе&#66FF68й&#53FF45д&#40FF23и&#2DFF00м'
+    lore:
+    - ''
+    - '&fСтатус: &7Недоступен &c✘'
+    priority: 2
+    slot: 32
+  'title9':
+    material: BOOKSHELF
+    slot: 33
+    priority: 1
+    view_requirement:
+      requirements:
+        complete:
+         type: has permission
+         permission: 'prefix.9'
+    display_name: '&8 ▸ &7Титул: &#9FD4FFб&#8EC5FFе&#7EB7FFз &#6DA8FFр&#5D99FFе&#4C8AFFс&#3C7CFFо&#2B6DFFв'
+    hide_enchantments: true
+    lore:
+    - ''
+    - '&fСтатус: &7Доступен &a&l✓'
+    left_click_commands:
+    - '[console] lp user %player_name% meta setsuffix " &#9FD4FFб&#8EC5FFе&#7EB7FFз &#6DA8FFр&#5D99FFе&#4C8AFFс&#3C7CFFо&#2B6DFFв"'
+    - '[message] &7[&#F4C4F3&lТ&#F5B5F4&lи&#F7A5F5&lт&#F896F7&lу&#F986F8&lл&#FB77F9&lы&7] &8» &fВы &aуспешно &fприменили титул!'
+    - '[close]'
+    right_click_commands:
+    - '[console] lp user %player_name% meta setsuffix  " &#9FD4FFб&#8EC5FFе&#7EB7FFз &#6DA8FFр&#5D99FFе&#4C8AFFс&#3C7CFFо&#2B6DFFв"'
+    - '[message] &7[&#F4C4F3&lТ&#F5B5F4&lи&#F7A5F5&lт&#F896F7&lу&#F986F8&lл&#FB77F9&lы&7] &8» &fВы &aуспешно &fприменили титул!'
+    - '[close]'
+  'title_all_no9':
+    material: barrier
+    display_name: '&#9FD4FFб&#8EC5FFе&#7EB7FFз &#6DA8FFр&#5D99FFе&#4C8AFFс&#3C7CFFо&#2B6DFFв'
+    lore:
+    - ''
+    - '&fСтатус: &7Недоступен &c✘'
+    priority: 2
+    slot: 33
+  'title10':
+    material: BOOKSHELF
+    slot: 24
+    priority: 1
+    view_requirement:
+      requirements:
+        complete:
+         type: has permission
+         permission: 'prefix.10'
+    display_name: '&8 ▸ &7Титул: &#E1FF23д&#E6F724о&#EBEF26н&#F0E727а&#F5DE28т&#FAD62Aе&#FFCE2Bр'
+    hide_enchantments: true
+    lore:
+    - ''
+    - '&fСтатус: &7Доступен &a&l✓'
+    left_click_commands:
+    - '[console] lp user %player_name% meta setsuffix " &#E1FF23д&#E6F724о&#EBEF26н&#F0E727а&#F5DE28т&#FAD62Aе&#FFCE2Bр"'
+    - '[message] &7[&#F4C4F3&lТ&#F5B5F4&lи&#F7A5F5&lт&#F896F7&lу&#F986F8&lл&#FB77F9&lы&7] &8» &fВы &aуспешно &fприменили титул!'
+    - '[close]'
+    right_click_commands:
+    - '[console] lp user %player_name% meta setsuffix  " &#E1FF23д&#E6F724о&#EBEF26н&#F0E727а&#F5DE28т&#FAD62Aе&#FFCE2Bр"'
+    - '[message] &7[&#F4C4F3&lТ&#F5B5F4&lи&#F7A5F5&lт&#F896F7&lу&#F986F8&lл&#FB77F9&lы&7] &8» &fВы &aуспешно &fприменили титул!'
+    - '[close]'
+  'title_all_no10':
+    material: barrier
+    display_name: '&#E1FF23д&#E6F724о&#EBEF26н&#F0E727а&#F5DE28т&#FAD62Aе&#FFCE2Bр'
+    lore:
+    - ''
+    - '&fСтатус: &7Недоступен &c✘'
+    priority: 2
+    slot: 24
+  'clear':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDQxZjRlZGJjNjhjOTA2MTM1NTI0MmJkNzNlZmZjOTI5OWEzMjUyYjlmMTFlODJiNWYxZWM3YjNiNmFjMCJ9fX0=
+    slot: 53
+    display_name: '&c&lОчистить титул'
+    lore:
+    - ''
+    - '&8 ▪ &fНажав сюда, вы очистите титул'
+    - ''
+    left_click_commands:
+    - '[console] lp user %player_name% meta setsuffix "&7"'
+    - '[message] &7[&#F4C4F3&lТ&#F5B5F4&lи&#F7A5F5&lт&#F896F7&lу&#F986F8&lл&#FB77F9&lы&7] &8» &fВы &aуспешно &fочистили титул!'
+    - '[close]'
+    right_click_commands:
+    - '[console] lp user %player_name% meta setsuffix "&7"'
+    - '[message] &7[&#F4C4F3&lТ&#F5B5F4&lи&#F7A5F5&lт&#F896F7&lу&#F986F8&lл&#FB77F9&lы&7] &8» &fВы &aуспешно &fочистили титул!'
+    - '[close]'
+  'back':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2VmMTE5ZjA4ODUxYTcyYTVmMTBmYmMzMjQ3ZDk1ZTFjMDA2MzYwZDJiNGY0MTJiMjNjZTA1NDA5Mjc1NmIwYyJ9fX0=
+    slot: 49
+    display_name: '&c&lНазад'
+    hide_attributes: true
+    hide_enchantments: true
+    lore:
+    - ''
+    - '&8 ▪ &fНажав сюда, вы сможете'
+    - '&8 ▪ &fвернуться в прошлое меню.'
+    - ''
+    click_commands:
+    - '[openguimenu] menu'
+    - '[sound] BLOCK_NOTE_BLOCK_BASS'
+  'filler_glass':
+    material: BLACK_STAINED_GLASS_PANE
+    slots: [0-6,9,18,26-27,35,44,47-48,50-52]
+    display_name: '&l'
+  'filler_glass_2':
+    material: MAGENTA_STAINED_GLASS_PANE
+    slots: [7,8,17,36,45,46]
+    display_name: '&l'

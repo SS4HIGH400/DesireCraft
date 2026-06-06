@@ -1,0 +1,163 @@
+menu_title: '[ᴛs] ▸ Динамиты'
+open_command:
+- tnt0
+size: 53
+register_command: true
+update_interval: 1
+open_commands:
+- '[sound] BLOCK_CHEST_OPEN'
+items:
+  '1':
+    enchantments:
+    - DURABILITY;1 
+    hide_attributes: true
+    hide_enchantments: true
+    material: TNT
+    amount: 1
+    slot: 21
+    display_name: '&#00FF00Супер ТНТ'
+    hide_attributes: true
+    hide_enchantments: true
+    lore:
+    - ''
+    - '&8 ▪ &fИнтервал: &a5 сек.'
+    - '&8 ▪ &fРадиус: &a5'
+    - ''
+    - '&a◈ Нажмите, чтобы посмотреть крафт'  
+    left_click_commands:
+    - '[player] tnt1'
+    right_click_commands:
+    - '[player] tnt1'
+  '2':
+    enchantments:
+    - DURABILITY;1 
+    hide_attributes: true
+    hide_enchantments: true
+    material: TNT
+    amount: 1
+    slot: 30
+    display_name: '&#FFFF00Мега ТНТ'
+    hide_attributes: true
+    hide_enchantments: true
+    lore:
+    - ''
+    - '&8 ▪ &fИнтервал: &e10 сек.'
+    - '&8 ▪ &fРадиус: &e10'
+    - ''
+    - '&a◈ Нажмите, чтобы посмотреть крафт'  
+    left_click_commands:
+    - '[player] tnt2'
+    right_click_commands:
+    - '[player] tnt2'
+  '3':
+    enchantments:
+    - DURABILITY;1 
+    hide_attributes: true
+    hide_enchantments: true
+    material: TNT
+    amount: 1
+    slot: 31
+    display_name: '&#FF0000Ультра ТНТ'
+    hide_attributes: true
+    hide_enchantments: true
+    lore:
+    - ''
+    - '&8 ▪ &fИнтервал: &c15 сек.'
+    - '&8 ▪ &fРадиус: &c15'
+    - ''
+    - '&a◈ Нажмите, чтобы посмотреть крафт'  
+    left_click_commands:
+    - '[player] tnt3'
+    right_click_commands:
+    - '[player] tnt3'
+  '4':
+    enchantments:
+    - DURABILITY;1 
+    hide_attributes: true
+    hide_enchantments: true
+    material: TNT
+    amount: 1
+    slot: 32
+    display_name: '&bВоздушное ТНТ'
+    hide_attributes: true
+    hide_enchantments: true
+    lore:
+    - ''
+    - '&8 ▸ &7Улетает вверх'
+    - ''
+    - '&8 ▪ &fИнтервал: &b3 сек.'
+    - '&8 ▪ &fРадиус: &b3'
+    - ''
+    - '&a◈ Нажмите, чтобы посмотреть крафт'  
+    left_click_commands:
+    - '[player] tnt4'
+    right_click_commands:
+    - '[player] tnt4'
+  '5':
+    enchantments:
+    - DURABILITY;1 
+    hide_attributes: true
+    hide_enchantments: true
+    material: TNT
+    amount: 1
+    slot: 23
+    display_name: '&#FFA500Подожженное ТНТ'
+    hide_attributes: true
+    hide_enchantments: true
+    lore:
+    - ''
+    - '&8 ▸ &7Сразу поджигается'
+    - ''
+    - '&8 ▪ &fИнтервал: &63 сек.'
+    - '&8 ▪ &fРадиус: &63'
+    - ''
+    - '&a◈ Нажмите, чтобы посмотреть крафт'  
+    left_click_commands:
+    - '[player] tnt5'
+    right_click_commands:
+    - '[player] tnt5'
+  '6':
+    enchantments:
+    - DURABILITY;1 
+    hide_attributes: true
+    hide_enchantments: true
+    material: TNT
+    amount: 1
+    slot: 22
+    display_name: '&8Обсидиановое ТНТ'
+    hide_attributes: true
+    hide_enchantments: true
+    lore:
+    - ''
+    - '&8 ▸ &7Взрывает обсидиан'
+    - ''
+    - '&8 ▪ &fИнтервал: &820 сек.'
+    - '&8 ▪ &fРадиус: &83'
+    - ''
+    - '&a◈ Нажмите, чтобы посмотреть крафт'  
+    left_click_commands:
+    - '[player] tnt6'
+    right_click_commands:
+    - '[player] tnt6'
+  'back':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2VmMTE5ZjA4ODUxYTcyYTVmMTBmYmMzMjQ3ZDk1ZTFjMDA2MzYwZDJiNGY0MTJiMjNjZTA1NDA5Mjc1NmIwYyJ9fX0=
+    slot: 49
+    display_name: '&c&lНазад'
+    hide_attributes: true
+    hide_enchantments: true
+    lore:
+    - ''
+    - '&8 ▪ &fНажав сюда, вы сможете'
+    - '&8 ▪ &fвернуться в прошлое меню.'
+    - ''
+    click_commands:
+    - '[openguimenu] crafts'
+    - '[sound] BLOCK_NOTE_BLOCK_BASS'
+  'filler_glass':
+    material: BLACK_STAINED_GLASS_PANE
+    slots: [0-6,9,18,26-27,35,44,47-48,50-53]
+    display_name: '&l'
+  'filler_glass_2':
+    material: MAGENTA_STAINED_GLASS_PANE
+    slots: [7,8,17,36,45,46]
+    display_name: '&l'

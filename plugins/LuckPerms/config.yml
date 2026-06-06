@@ -276,7 +276,6 @@ nats:
   address: localhost
   username: ''
   password: ''
-  token: ''
 
 # Settings for RabbitMQ.
 # Port 5672 is used by default; set address to "host:port" if differs
@@ -542,14 +541,14 @@ apply-shorthand: true
 #
 # - Plugin authors can define custom permissions structures for their plugin, which will be resolved
 #   and used by LuckPerms if this setting is enabled.
-apply-bukkit-child-permissions: true
+apply-bukkit-child-permissions: false
 
 # If the plugin should apply Bukkit default permissions.
 #
 # - Plugin authors can define permissions which should be given to all users by default, or setup
 #   permissions which should/shouldn't be given to opped players.
 # - If this option is set to false, LuckPerms will ignore these defaults.
-apply-bukkit-default-permissions: true
+apply-bukkit-default-permissions: false
 
 # If the plugin should apply attachment permissions.
 #
@@ -558,7 +557,7 @@ apply-bukkit-default-permissions: true
 #   session, or until they're removed.
 # - If this option is set to false, LuckPerms will not include these attachment permissions when
 #   considering if a player should have access to a certain permission.
-apply-bukkit-attachment-permissions: true
+apply-bukkit-attachment-permissions: false
 
 # +----------------------------------------------------------------------------------------------+ #
 # | Extra settings                                                                               | #
@@ -608,7 +607,7 @@ group-weight:
 # - When set to 'false', all players will be de-opped, and the /op and /deop commands will be
 #   disabled. Note that vanilla features like the spawn-protection require an operator on the
 #   server to work.
-enable-ops: true
+enable-ops: false
 
 # Enables or disables a special permission based system in LuckPerms for controlling OP status.
 #
@@ -624,7 +623,7 @@ auto-op: false
 # Defines if "opped" players should be able to use all LuckPerms commands by default.
 #
 # - Set to false to only allow users who have the permissions access to the commands
-commands-allow-op: true
+commands-allow-op: false
 
 # +----------------------------------------------------------------------------------------------+ #
 # | Vault integration settings                                                                   | #
@@ -720,33 +719,3 @@ register-command-list-data: true
 # If LuckPerms should attempt to resolve Vanilla command target selectors for LP commands.
 # See here for more info: https://minecraft.wiki/w/Target_selectors
 resolve-command-selectors: false
-
-# If the plugin should run in "read-only" mode for commands.
-#
-# In this mode, players or the console will only be able to execute commands that read or view
-# data, and will not be able to execute any LP commands that modify data.
-#
-# If enabling read-only mode for just players, be aware that some other plugins may allow players
-# to execute commands as the console, allowing them to run LP commands indirectly.
-#
-# Note: This does not affect interactions with LuckPerms via the API.
-commands-read-only-mode:
-  players: false
-  console: false
-
-# If LuckPerms commands should be disabled. When true, this will prevent all LP commands from being
-# executed. In a sense this is a more extreme version of read-only mode (see above).
-#
-# LuckPerms will still act as the permission manager, but server administrators will be unable to
-# make changes via commands.
-#
-# If disabling commands just for players, be aware that some other plugins may allow players to
-# execute commands as the console, allowing them to run commands indirectly.
-#
-# If commands are disabled for both players and the console, LuckPerms will not attempt to register
-# a command with the server at all & in a sense will be invisible to both players and admins.
-#
-# Note: This does not affect interactions with LuckPerms via the API.
-disable-luckperms-commands:
-  players: false
-  console: false

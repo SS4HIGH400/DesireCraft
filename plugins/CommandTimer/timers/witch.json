@@ -1,0 +1,58 @@
+{
+  "name": "witch",
+  "commands": [
+    {
+      "command": "bairdrop start witch",
+      "gender": "CONSOLE",
+      "interval": {
+        "days": 0,
+        "hours": 0,
+        "minutes": 0,
+        "seconds": 0
+      },
+      "delay": {
+        "days": 0,
+        "hours": 0,
+        "minutes": 0,
+        "seconds": 0
+      }
+    }
+  ],
+  "interval": {
+    "days": 0,
+    "hours": 0,
+    "minutes": 0,
+    "seconds": 0
+  },
+  "times": [
+    {
+      "time1": "19:00:00",
+      "isMinecraftTime": false
+    }
+  ],
+  "random": 1.0,
+  "days": [
+    "SUNDAY"
+  ],
+  "executionLimit": -1,
+  "timesExecuted": 28,
+  "lastExecutedCommandIndex": 0,
+  "lastExecuted": "May 5, 2024, 19:00:00 PM",
+  "commandExecutionMode": "ALL",
+  "commandExecutionInterval": {
+    "days": 0,
+    "hours": 0,
+    "minutes": 0,
+    "seconds": 1
+  },
+  "active": true,
+  "resetExecutionsAfterRestart": false,
+  "condition": {
+    "conditionType": "SIMPLE",
+    "conditions": [],
+    "simpleCondition": {
+      "conditionParamFields": []
+    }
+  },
+  "events": []
+}

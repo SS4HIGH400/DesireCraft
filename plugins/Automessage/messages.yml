@@ -1,0 +1,65 @@
+# Add a permission to the messages so that they are only sent to players with this permission
+# PermissionType:
+# hasPermission - send the message to players who have the permission
+# hasNotPermission - send the message to players who do not have the permission
+#
+# world:
+# add worlds in which the message should be sent
+
+1:
+  messages:
+    - ''
+    - '&8 ▪ &fНа сервере есть &a&lивенты&f, сундук &cсмерти'
+    - '&8 ▪ &fи &dмистические&f данжи &7&n(4 вида)&r&f. По этому'
+    - '&8 ▪ &fне упускай &bвозможность&f залутать себе &aлут&f!'
+    - ''
+2:
+  messages:
+    - ''
+    - '&8 ▪ &fНаш официальный &aIP-адрес'
+    - '&8 ▪ &fдля игры&7: &d&nmc.TrustSpace.su&r'
+    - ''
+3:
+  messages:
+    - ''
+    - '&8 ▪ &fПодпишись на &9группу &lVK&f, чтобы'
+    - '&8 ▪ &fвсегда быть вкурсе &aновостей&f!'
+    - '&8 ▪ &fСсылка&7: &9&nvk.com/TrustSpace'
+    - ''
+4:
+  messages:
+    - ''
+    - '&8 ▪ &fЗаходи к нам в &3Discord&f сервер'
+    - '&8 ▪ &fи находи себе новых &aтимейтов&f!'
+    - '&8 ▪ &fСсылка&7: &3&ndiscord.gg/Kras7AP79D'
+    - ''
+5:
+  messages:
+    - ''
+    - '&8 ▪ &fТебе &cсложно&f начать играть? Тогда'
+    - '&8 ▪ &fпросто открой меню &aпомощи&7: &d&n/help'
+    - ''
+6:
+  messages:
+    - ''
+    - '&8 ▪ &fНашёл &4читера&f на сервере? Тогда'
+    - '&8 ▪ &fотправь на него жалобу&7: &d&n/report'
+    - ''
+7:
+  messages:
+    - ''
+    - '&8 ▪ &fСкопилось много &bлишних&f вещей?'
+    - '&8 ▪ &fТогда просто продай их&7: &d&n/seller'
+    - ''
+8:
+  messages:
+    - ''
+    - '&8 ▪ &fНужны &dресурсы&f? Тогда просто купи'
+    - '&8 ▪ &fих на общем &aаукционе&f сервера&7: &d&n/ah'
+    - ''
+9:
+  messages:
+    - ''
+    - '&8 ▪ &fВсегда мечтал о &e&lдонате&f, но не знал'
+    - '&8 ▪ &fгде его купить? Наш сайт&7: &d&nTrustSpace.su'
+    - ''

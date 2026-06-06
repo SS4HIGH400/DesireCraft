@@ -1,0 +1,275 @@
+menu_title: '[ᴛs] ▸ Донат услуги'
+open_command:
+- donate
+- don
+- d
+size: 53
+register_command: true
+update_interval: 1
+open_commands:
+- '[sound] BLOCK_CHEST_OPEN'
+items:
+##########################################################################
+  'wander':
+    enchantments:
+    - DURABILITY;1 
+    hide_attributes: true
+    hide_enchantments: true
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2YxODNlYzJmZTU4ZmFhNDNlNTY4NDE5YjdhMGRjNDQ2ZWNlNGVhMGJlNTJlYzc4NGM5NGUxZDc0Yjc1OTM5ZCJ9fX0=
+    slot: 20
+    display_name: '&#08FB5D&lᴡ&#0BFC4A&lᴀ&#0EFD38&lɴ&#12FD25&lᴅ&#15FE13&lᴇ&#18FF00&lʀ &7%player_name% &8» &#08FB5D39 рублей'
+    lore:
+    - ''
+    - '&#08FB5D Команды:'
+    - '&8 ▪ &fЭндер-сундук &7⊳ &#08FB5D/enderchest'
+    - '&8 ▪ &fПереносной верстак &7⊳ &#08FB5D/craft'
+    - '&8 ▪ &fЛичный набор вещей &7⊳ &#08FB5D/kit'
+    - ''
+    - '&#08FB5D Доп. возможности:'
+    - '&8 ▪ &fСлоты на аукционе &7⊳&#08FB5D 4 штук'
+    - '&8 ▪ &fДоступно регионов &7⊳&#08FB5D 6 штук'
+    - '&8 ▪ &fТочки дома &7⊳&#08FB5D 6 штук'
+    - ''
+    - '&#08FB5D Стоимость:'
+    - '&8 ▪ &fЦена привилегии &7⊳ &#08FB5D39 рублей'
+    - '&8 ▪ &fСрок действия &7⊳ &#08FB5DНАВСЕГДА'
+    - ''
+    - '&a◈ Нажмите, чтобы получить ссылку'
+    left_click_commands:
+    - '[sound] BLOCK_NOTE_BLOCK_BASS'
+    - '[message] &7[&#F4C4F3&lС&#F7A5F5&lа&#F986F8&lй&#FC67FA&lт&7] &8» &fПокупка донат-услуг тут: &d&lwww.TrustSpace.su'
+  'traper':
+    enchantments:
+    - DURABILITY;1 
+    hide_attributes: true
+    hide_enchantments: true
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWM4NDBiNjZjNjQ0MjA1OWJhMzFmYzM0OTk4ZTE1YzQ0NDdhNDI5ZDNmNzg5YTdlOWY2MmU2YTU3ZGRhMGFiMiJ9fX0=
+    slot: 21
+    display_name: '&#FBEB08&lᴛ&#FCD906&lʀ&#FDC705&lᴀ&#FDB503&lᴘ&#FEA302&lᴇ&#FF9100&lʀ &7%player_name% &8» &#FBEB0879 рублей'
+    lore:
+    - ''
+    - '&#FBEB08 Команды:'
+    - '&8 ▪ &fПотушить себя &7⊳ &#FBEB08/eext'
+    - '&8 ▪ &fУбить себя &7⊳ &#FBEB08/suicide'
+    - '&8 ▪ &fЛичный набор вещей &7⊳ &#FBEB08/kit'
+    - ''
+    - '&#FBEB08 Доп. возможности:'
+    - '&8 ▪ &fСлоты на аукционе &7⊳&#FBEB08 6 штук'
+    - '&8 ▪ &fДоступно регионов &7⊳&#FBEB08 8 штук'
+    - '&8 ▪ &fТочки дома &7⊳&#FBEB08 8 штук'
+    - ''
+    - '&#FBEB08 Стоимость:'
+    - '&8 ▪ &fЦена привилегии &7⊳ &#FBEB0879 рублей'
+    - '&8 ▪ &fСрок действия &7⊳ &#FBEB08НАВСЕГДА'
+    - ''
+    - '&a◈ Нажмите, чтобы получить ссылку'
+    left_click_commands:
+    - '[sound] BLOCK_NOTE_BLOCK_BASS'
+    - '[message] &7[&#F4C4F3&lС&#F7A5F5&lа&#F986F8&lй&#FC67FA&lт&7] &8» &fПокупка донат-услуг тут: &d&lwww.TrustSpace.su'
+  'gothic':
+    enchantments:
+    - DURABILITY;1 
+    hide_attributes: true
+    hide_enchantments: true
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDQ4MjlkMzlhNTRlZDA2YmI1ZDA0YTJhMjFkMjYzNmM1ZGRmMjdiNTNkYzg0NDgyNjJmZGFiYzc3NWVjNjQwYSJ9fX0=
+    slot: 22
+    display_name: '&#FB08A6&lɢ&#F306B8&lᴏ&#EB05CA&lᴛ&#E203DB&lʜ&#DA02ED&lɪ&#D200FF&lᴄ &7%player_name% &8» &#FB08A6159 рублей'
+    lore:
+    - ''
+    - '&#FB08A6 Команды:'
+    - '&8 ▪ &fНакормить себя &7⊳ &#FB08A6/feed'
+    - '&8 ▪ &fИгроки поблизости &7⊳ &#FB08A6/near'
+    - '&8 ▪ &fЛичный набор вещей &7⊳ &#FB08A6/kit'
+    - ''
+    - '&#FB08A6 Доп. возможности:'
+    - '&8 ▪ &fСлоты на аукционе &7⊳&#FB08A6 8 штук'
+    - '&8 ▪ &fДоступно регионов &7⊳&#FB08A6 10 штук'
+    - '&8 ▪ &fТочки дома &7⊳&#FB08A6 10 штук'
+    - ''
+    - '&#FB08A6 Стоимость:'
+    - '&8 ▪ &fЦена привилегии &7⊳ &#FB08A6159 рублей'
+    - '&8 ▪ &fСрок действия &7⊳ &#FB08A6НАВСЕГДА'
+    - ''
+    - '&a◈ Нажмите, чтобы получить ссылку'
+    left_click_commands:
+    - '[sound] BLOCK_NOTE_BLOCK_BASS'
+    - '[message] &7[&#F4C4F3&lС&#F7A5F5&lа&#F986F8&lй&#FC67FA&lт&7] &8» &fПокупка донат-услуг тут: &d&lwww.TrustSpace.su'
+  'deluxe':
+    enchantments:
+    - DURABILITY;1 
+    hide_attributes: true
+    hide_enchantments: true
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzIyMjIwZGUxYTg2M2JjNWQ5YjllN2E2YTNiMDMyMTRjOWYzZDY5OGVkM2ZlMGQyODIyMGYzYjkzYjc2ODVjNSJ9fX0=
+    slot: 23
+    display_name: '&#088FFB&lᴅ&#06A5FC&lᴇ&#05BCFD&lʟ&#03D2FD&lᴜ&#02E9FE&lx&#00FFFF&lᴇ &7%player_name% &8» &#088FFB289 рублей'
+    lore:
+    - ''
+    - '&#088FFB Команды:'
+    - '&8 ▪ &fИнвентарь игрока &7⊳ &#088FFB/invsee'
+    - '&8 ▪ &fОбъявление для всех &7⊳ &#088FFB/broadcast'
+    - '&8 ▪ &fТелепорт на дал. коорд. &7⊳ &#088FFB/rtp far'
+    - '&8 ▪ &fЛичный набор вещей &7⊳ &#088FFB/kit'
+    - ''
+    - '&#088FFB Доп. возможности:'
+    - '&8 ▪ &fСлоты на аукционе &7⊳&#088FFB 10 штук'
+    - '&8 ▪ &fДоступно регионов &7⊳&#088FFB 12 штук'
+    - '&8 ▪ &fТочки дома &7⊳&#088FFB 12 штук'
+    - ''
+    - '&#088FFB Стоимость:'
+    - '&8 ▪ &fЦена привилегии &7⊳ &#088FFB289 рублей'
+    - '&8 ▪ &fСрок действия &7⊳ &#088FFBНАВСЕГДА'
+    - ''
+    - '&a◈ Нажмите, чтобы получить ссылку'
+    left_click_commands:
+    - '[sound] BLOCK_NOTE_BLOCK_BASS'
+    - '[message] &7[&#F4C4F3&lС&#F7A5F5&lа&#F986F8&lй&#FC67FA&lт&7] &8» &fПокупка донат-услуг тут: &d&lwww.TrustSpace.su'
+  'griefer':
+    enchantments:
+    - DURABILITY;1 
+    hide_attributes: true
+    hide_enchantments: true
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTU4MmVlNWQxYzVjMDhkMzdkZjI2ZDY5MjJiZTA4MDhiZTljMGI2YjM0N2Q4OWMwZGEyNjM1NjJmYWZjZDUwNSJ9fX0=
+    slot: 24
+    display_name: '&#FF2B33&lɢ&#FF3432&lʀ&#FF3D31&lɪ&#FF4630&lᴇ&#FF4E2F&lꜰ&#FF572E&lᴇ&#FF602D&lʀ &7%player_name% &8» &#FF2B33379 рублей'
+    lore:
+    - ''
+    - '&#FF2B33 Команды:'
+    - '&8 ▪ &fВылечить себя &7⊳ &#FF2B33/heal'
+    - '&8 ▪ &fЛичное время в мире &7⊳ &#FF2B33/ptime'
+    - '&8 ▪ &fТелепорт около игроков &7⊳ &#FF2B33/rtp near'
+    - '&8 ▪ &fПочинит все вещи &7⊳ &#FF2B33/repair all'
+    - '&8 ▪ &fЛичный набор вещей &7⊳ &#FF2B33/kit'
+    - ''
+    - '&#FF2B33 Доп. возможности:'
+    - '&8 ▪ &fСлоты на аукционе &7⊳&#FF2B33 12 штук'
+    - '&8 ▪ &fДоступно регионов &7⊳&#FF2B33 14 штук'
+    - '&8 ▪ &fТочки дома &7⊳&#FF2B33 14 штук'
+    - ''
+    - '&#FF2B33 Стоимость:'
+    - '&8 ▪ &fЦена привилегии &7⊳ &#FF2B33379 рублей'
+    - '&8 ▪ &fСрок действия &7⊳ &#FF2B33НАВСЕГДА'
+    - ''
+    - '&a◈ Нажмите, чтобы получить ссылку'
+    left_click_commands:
+    - '[sound] BLOCK_NOTE_BLOCK_BASS'
+    - '[message] &7[&#F4C4F3&lС&#F7A5F5&lа&#F986F8&lй&#FC67FA&lт&7] &8» &fПокупка донат-услуг тут: &d&lwww.TrustSpace.su'
+##############################################################################
+  'sapphire':
+    enchantments:
+    - DURABILITY;1 
+    hide_attributes: true
+    hide_enchantments: true
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMmMxNGQ2NjkxMTU1NGJkMDg4MjMzOTA3NGJmNmI4MTEwYzJkMzUwOWI2OWU3YTYxNDRlNGQ1YTcxNjRiYWNjOCJ9fX0=
+    slot: 30
+    display_name: '&#00FF3B&ls&#12FF4C&lᴀ&#25FF5D&lᴘ&#37FF6E&lᴘ&#4AFF7F&lʜ&#5CFF90&lɪ&#6FFFA1&lʀ&#81FFB2&lᴇ &7%player_name% &8» &#00FF3B1799 рублей'
+    lore:
+    - ''
+    - '&#00FF3B Команды:'
+    - '&8 ▪ &fВключить режим полёта &7⊳ &#00FF3B/fly'
+    - '&8 ▪ &fПодарить донат другу &7⊳ &#00FF3B/grant (Ник)'
+    - '&8 ▪ &fЧужой эндер-сундук &7⊳ &#00FF3B/endersee (Ник)'
+    - '&8 ▪ &fВылечить друга &7⊳ &#00FF3B/heal (Ник)'
+    - '&8 ▪ &fНакормить друга &7⊳ &#00FF3B/feed (Ник)'
+    - '&8 ▪ &fУзнать состояние сервера &7⊳ &#00FF3B/gc'
+    - '&8 ▪ &fЛичный набор вещей &7⊳ &#00FF3B/kit'
+    - ''
+    - '&#00FF3B Доп. возможности:'
+    - '&8 ▪ &fСлоты на аукционе &7⊳&#00FF3B 18 штук'
+    - '&8 ▪ &fДоступно регионов &7⊳&#00FF3B ∞ штук'
+    - '&8 ▪ &fТочки дома &7⊳&#00FF3B ∞ штук'
+    - ''
+    - '&#00FF3B Стоимость:'
+    - '&8 ▪ &fЦена привилегии &7⊳ &#00FF3B1779 рублей'
+    - '&8 ▪ &fСрок действия &7⊳ &#00FF3BНАВСЕГДА'
+    - ''
+    - '&a◈ Нажмите, чтобы получить ссылку'
+    left_click_commands:
+    - '[sound] BLOCK_NOTE_BLOCK_BASS'
+    - '[message] &7[&#F4C4F3&lС&#F7A5F5&lа&#F986F8&lй&#FC67FA&lт&7] &8» &fПокупка донат-услуг тут: &d&lwww.TrustSpace.su'
+  'space':
+    enchantments:
+    - DURABILITY;1 
+    hide_attributes: true
+    hide_enchantments: true
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDkxOGJlMTQyYTIwYjJiMzliYzU4MmY0MjFmNmFlODdiMzE4NGI1Yzk1MjNkMTZmYmU2ZDY5NTMwMTA3ODg2YSJ9fX0=
+    slot: 32
+    display_name: '&#BE00FF&ls&#BD20FF&lᴘ&#BD41FF&lᴀ&#BC61FF&lᴄ&#BB81FF&lᴇ &7%player_name% &8» &#BE00FF3499 рублей'
+    lore:
+    - ''
+    - '&#BE00FF Команды:'
+    - '&8 ▪ &fУстановить свой варп &7⊳ &#BE00FF/setwarp'
+    - '&8 ▪ &fПодарить донат другу &7⊳ &#BE00FF/grant (Ник)'
+    - '&8 ▪ &fПроверить наличие мута &7⊳ &#BE00FF/checkmute (Ник)'
+    - '&8 ▪ &fПроверить наличие бана &7⊳ &#BE00FF/checkban (Ник)'
+    - '&8 ▪ &fУстановить день в мире &7⊳ &#BE00FF/day'
+    - '&8 ▪ &fУстановить ночь в мире &7⊳ &#BE00FF/night'
+    - '&8 ▪ &fВключить дождь в мире &7⊳ &#BE00FF/rain'
+    - '&8 ▪ &fВключить солнце в мире &7⊳ &#BE00FF/sun'
+    - '&8 ▪ &fЛичный набор вещей &7⊳ &#BE00FF/kit'
+    - ''
+    - '&#BE00FF Доп. возможности:'
+    - '&8 ▪ &fСлоты на аукционе &7⊳&#BE00FF 20 штук'
+    - '&8 ▪ &fДоступно регионов &7⊳&#BE00FF ∞ штук'
+    - '&8 ▪ &fТочки дома &7⊳&#BE00FF ∞ штук'
+    - ''
+    - '&#BE00FF Стоимость:'
+    - '&8 ▪ &fЦена привилегии &7⊳ &#BE00FF3499 рублей'
+    - '&8 ▪ &fСрок действия &7⊳ &#BE00FFНАВСЕГДА'
+    - ''
+    - '&a◈ Нажмите, чтобы получить ссылку'
+    left_click_commands:
+    - '[sound] BLOCK_NOTE_BLOCK_BASS'
+    - '[message] &7[&#F4C4F3&lС&#F7A5F5&lа&#F986F8&lй&#FC67FA&lт&7] &8» &fПокупка донат-услуг тут: &d&lwww.TrustSpace.su'
+# Подписки, кейсы
+  'sub':
+    enchantments:
+    - DURABILITY;1 
+    hide_attributes: true
+    hide_enchantments: true
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTBhNTE2ODcxZjQ2NjRkZWE0MWUzOWY3M2ZkZDI1NDVmZmQ2ODM1ZTNlYTE2NTU3NDM1YmZiY2I5NmRjZDUyYiJ9fX0=
+    slot: 4
+    display_name: '&#F4FF89&lᴘ&#F7FF5B&lʟ&#F9FF2E&lᴜ&#FCFF00&ls &7%player_name% &8» &#F4FF89399 рублей'
+    lore:
+    - ''
+    - '&#F4FF89 Команды:'
+    - '&8 ▪ &fУникальный набор &7⊳ &#F4FF89/kit plus'
+    - '&8 ▪ &fТелепортировать к себе &7⊳ &#F4FF89/tpahere'
+    - '&8 ▪ &fСамая высокая точка &7⊳ &#F4FF89/top'
+    - '&8 ▪ &fВся информация о сервере &7⊳ &#F4FF89/gc'
+    - '&8 ▪ &fРандом-телепорт в энде &7⊳ &#F4FF89/trustrtp end'
+    - '&8 ▪ &fМеню подписчика сервера &7⊳ &#F4FF89&l&n/subgui&r &c&l(NEW!)'
+    - ''
+    - '&#F4FF89 Информация:'
+    - '&8 ▪ &fУ вас добавляется &d&l+ &fоколо доната'
+    - '&8 ▪ &fВы становитесь реально &aкрутым'
+    - ''
+    - '&#F4FF89 Стоимость:'
+    - '&8 ▪ &fЦена привилегии &7⊳ &#F4FF89399 рублей'
+    - '&8 ▪ &fСрок действия &7⊳ &#F4FF8930 ДНЕЙ'
+    - ''
+    - '&a◈ Нажмите, чтобы получить ссылку'
+    left_click_commands:
+    - '[sound] BLOCK_NOTE_BLOCK_BASS'
+    - '[message] &7[&#F4C4F3&lС&#F7A5F5&lа&#F986F8&lй&#FC67FA&lт&7] &8» &fПокупка донат-услуг тут: &d&lwww.TrustSpace.su'
+
+# Прочее
+  'back':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2VmMTE5ZjA4ODUxYTcyYTVmMTBmYmMzMjQ3ZDk1ZTFjMDA2MzYwZDJiNGY0MTJiMjNjZTA1NDA5Mjc1NmIwYyJ9fX0=
+    slot: 49
+    display_name: '&c&lНазад'
+    lore:
+    - ''
+    - '&8 ▪ &fНажав сюда, вы сможете'
+    - '&8 ▪ &fвернуться в прошлое меню.'
+    - ''
+    click_commands:
+    - '[openguimenu] menu'
+    - '[sound] BLOCK_NOTE_BLOCK_BASS'
+  'filler_glass':
+    material: BLACK_STAINED_GLASS_PANE
+    slots: [0-3,5-6,9,18,26-27,35,44,47-48,50-53]
+    display_name: '&l'
+  'filler_glass_2':
+    material: MAGENTA_STAINED_GLASS_PANE
+    slots: [7,8,17,36,45,46]
+    display_name: '&l'

@@ -1,0 +1,1418 @@
+air-name: '&#A9F1FF&lВ&#9EECFF&lО&#94E7FF&lЗ&#89E2FF&lД&#7FDDFF&lУ&#74D8FF&lШ&#6AD3FF&lН&#5FCEFF&lЫ&#55CAFF&lЙ
+  &#4AC5FF&lК&#3FC0FF&lО&#35BBFF&lР&#2AB6FF&lА&#20B1FF&lБ&#15ACFF&lЛ&#0BA7FF&lИ&#00A2FF&lК'
+inv-name: '&#A9F1FF&lВ&#9EECFF&lО&#94E7FF&lЗ&#89E2FF&lД&#7FDDFF&lУ&#74D8FF&lШ&#6AD3FF&lН&#5FCEFF&lЫ&#55CAFF&lЙ
+  &#4AC5FF&lК&#3FC0FF&lО&#35BBFF&lР&#2AB6FF&lА&#20B1FF&lБ&#15ACFF&lЛ&#0BA7FF&lИ&#00A2FF&lК'
+chest-inventory-size: 54
+air-id: airship
+air-spawn-world: world
+air-spawn-radius-min: -15000
+air-spawn-radius-max: 15000
+air-radius-protect: 25
+spawn-chance: 25
+timeToStart: 1800
+use-pre-generated-locations: false
+search-before-start: 1
+stop-when-empty: false
+use-only-static-loc: false
+flatness-check: false
+use-static-loc: false
+static-location:
+  world: world
+  x: 0.0
+  y: 0.0
+  z: 0.0
+generator-settings: gen1
+air-holo-to-start:
+- '{inv-name}'
+- '&aTime until start: &f{time-to-start} sec'
+air-holo:
+- '{inv-name}'
+- '&fХранилище &#fb7474закрыто'
+- '&fОткроется через &#A9F1FF{time-to-open} &fсек.'
+- ''
+air-holo-open:
+- ''
+- '{inv-name}'
+- '&fХранилище &#c9fb90открыто'
+- ''
+air-holo-click-wait:
+- ''
+- '{inv-name}'
+- '&fХранилище &#fb7474закрыто'
+- ''
+holo-offsets:
+  x: 0.5
+  y: 2.3
+  z: 0.5
+openingTime: 7
+start-countdown-after-click: true
+time-stop-event-must-go: false
+time-stop-event: 35
+chest-material-locked: RED_SHULKER_BOX
+chest-material-unlocked: LIME_SHULKER_BOX
+min-online-players: 0
+random-slot: true
+signed-events:
+- alert-normal-start-1
+- addon
+- alert-open1
+- alert-open2
+- alert-open3
+- alert-open4
+- alert-open5
+- alert-open
+- chest-closed
+- end
+- activate
+state:
+  timeStop: 1800
+  airDropStarted: false
+  effects: {}
+  wasOpened: false
+  timeToOpen: 300
+  version: 1
+  timeToStart: 19800
+  airDropLocked: true
+  activated: false
+inv:
+  inv80988:
+    '0':
+      '100':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: WHITE_SHULKER_BOX
+    '1':
+      '100':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: WHEAT_SEEDS
+        amount: 16
+    '2':
+      '100':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: DIAMOND_SWORD
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          enchants:
+            DAMAGE_ALL: 2
+            DURABILITY: 2
+    '3':
+      '100':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: RED_SHULKER_BOX
+    '4':
+      '100':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: DIAMOND_BOOTS
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          enchants:
+            MENDING: 1
+            PROTECTION_ENVIRONMENTAL: 2
+    '5':
+      '100':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: SHIELD
+        meta:
+          ==: ItemMeta
+          meta-type: TILE_ENTITY
+          enchants:
+            DURABILITY: 1
+          blockMaterial: SHIELD
+    '6':
+      '100':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: ARROW
+        amount: 64
+    '7':
+      '100':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: COBWEB
+        amount: 8
+    '8':
+      '100':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: STRING
+        amount: 5
+    '9':
+      '100':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: ENDER_PEARL
+        amount: 8
+    '10':
+      '100':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: BREAD
+        amount: 9
+    '11':
+      '100':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: DIAMOND_HOE
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          enchants:
+            DIG_SPEED: 2
+            DURABILITY: 2
+    '12':
+      '100':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: IRON_AXE
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          enchants:
+            DIG_SPEED: 2
+            DURABILITY: 1
+    '13':
+      '100':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: IRON_INGOT
+        amount: 32
+    '14':
+      '100':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: IRON_SWORD
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          enchants:
+            DAMAGE_ALL: 2
+            DURABILITY: 1
+    '15':
+      '100':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: DIAMOND_CHESTPLATE
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          enchants:
+            MENDING: 1
+            PROTECTION_ENVIRONMENTAL: 2
+    '16':
+      '100':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: OAK_SIGN
+    '17':
+      '100':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: TIPPED_ARROW
+        amount: 12
+    '18':
+      '100':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: FIREWORK_ROCKET
+        amount: 12
+    '19':
+      '100':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: EXPERIENCE_BOTTLE
+        amount: 16
+    '20':
+      '100':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: BLACK_SHULKER_BOX
+    '21':
+      '100':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: CHORUS_FRUIT
+        amount: 10
+    '22':
+      '100':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: NETHERITE_SCRAP
+        amount: 5
+    '23':
+      '100':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: DIAMOND_CHESTPLATE
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          enchants:
+            MENDING: 1
+            PROTECTION_ENVIRONMENTAL: 4
+    '24':
+      '100':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: NETHERITE_BOOTS
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          enchants:
+            MENDING: 1
+            PROTECTION_ENVIRONMENTAL: 3
+    '25':
+      '100':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: TIPPED_ARROW
+        amount: 12
+    '26':
+      '100':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: TIPPED_ARROW
+        amount: 12
+    '34':
+      '100':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: TIPPED_ARROW
+        amount: 6
+    '35':
+      '100':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: TIPPED_ARROW
+        amount: 6
+  inv57140:
+    '0':
+      '100':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: NETHERITE_HOE
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          enchants:
+            DIG_SPEED: 4
+            DURABILITY: 3
+    '1':
+      '100':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: GOLDEN_APPLE
+        amount: 7
+    '2':
+      '49':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: BEE_SPAWN_EGG
+    '3':
+      '100':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: NETHERITE_SWORD
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          enchants:
+            FIRE_ASPECT: 2
+            DAMAGE_ALL: 4
+            SWEEPING_EDGE: 2
+            DURABILITY: 3
+    '4':
+      '100':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: DIAMOND_SWORD
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          enchants:
+            DAMAGE_ALL: 3
+            DURABILITY: 2
+    '5':
+      '100':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: CAKE
+    '6':
+      '100':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: OAK_SIGN
+    '7':
+      '100':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: COOKED_BEEF
+        amount: 16
+    '8':
+      '100':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: CHORUS_FRUIT
+        amount: 18
+    '9':
+      '100':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: FIREWORK_ROCKET
+        amount: 16
+    '10':
+      '100':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: FISHING_ROD
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          enchants:
+            LUCK: 1
+            DURABILITY: 3
+    '11':
+      '100':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: SHEARS
+    '12':
+      '100':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: ORANGE_SHULKER_BOX
+    '13':
+      '100':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: NETHERITE_CHESTPLATE
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          enchants:
+            MENDING: 1
+            PROTECTION_ENVIRONMENTAL: 4
+    '14':
+      '100':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: BLACK_SHULKER_BOX
+    '15':
+      '100':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: TIPPED_ARROW
+        amount: 16
+    '16':
+      '100':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: EXPERIENCE_BOTTLE
+        amount: 32
+    '17':
+      '100':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: WHITE_SHULKER_BOX
+    '18':
+      '100':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: ARROW
+        amount: 8
+    '19':
+      '100':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: DIAMOND_BOOTS
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          enchants:
+            MENDING: 1
+            PROTECTION_ENVIRONMENTAL: 3
+    '20':
+      '100':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: ENDER_PEARL
+        amount: 16
+    '21':
+      '100':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: DIAMOND
+        amount: 14
+    '22':
+      '100':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: DIAMOND_CHESTPLATE
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          enchants:
+            MENDING: 1
+            PROTECTION_ENVIRONMENTAL: 3
+    '23':
+      '100':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: NETHERITE_HELMET
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          enchants:
+            MENDING: 1
+            PROTECTION_ENVIRONMENTAL: 4
+    '24':
+      '100':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: GOLDEN_APPLE
+    '25':
+      '100':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: GOLDEN_APPLE
+    '26':
+      '100':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: GOLDEN_APPLE
+        amount: 2
+    '27':
+      '100':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: GOLDEN_APPLE
+        amount: 3
+    '28':
+      '100':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: ARROW
+        amount: 16
+    '29':
+      '100':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: ARROW
+        amount: 8
+    '30':
+      '100':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: TIPPED_ARROW
+        amount: 8
+    '31':
+      '100':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: TIPPED_ARROW
+        amount: 4
+    '32':
+      '100':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: TIPPED_ARROW
+        amount: 2
+    '33':
+      '100':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: TIPPED_ARROW
+    '34':
+      '100':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: TIPPED_ARROW
+    '35':
+      '100':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: COOKED_BEEF
+        amount: 8
+    '41':
+      '100':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: GOLDEN_APPLE
+        amount: 2
+    '42':
+      '100':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: COOKED_BEEF
+    '43':
+      '100':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: COOKED_BEEF
+    '44':
+      '100':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: COOKED_BEEF
+        amount: 6
+  inv33056:
+    '0':
+      '100':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: NETHERITE_BOOTS
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          enchants:
+            MENDING: 1
+            PROTECTION_ENVIRONMENTAL: 4
+    '1':
+      '100':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: GOLDEN_APPLE
+        amount: 5
+    '2':
+      '100':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: ARROW
+        amount: 64
+    '3':
+      '100':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: BLACK_SHULKER_BOX
+    '4':
+      '100':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: CROSSBOW
+        meta:
+          ==: ItemMeta
+          meta-type: CROSSBOW
+          enchants:
+            MENDING: 1
+            PIERCING: 4
+            DURABILITY: 3
+          charged: false
+    '5':
+      '100':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: NETHERITE_AXE
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          enchants:
+            DIG_SPEED: 4
+            DURABILITY: 3
+    '6':
+      '100':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: POTION
+    '7':
+      '100':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: NETHERITE_LEGGINGS
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          enchants:
+            MENDING: 1
+            PROTECTION_ENVIRONMENTAL: 4
+    '8':
+      '100':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: OAK_SIGN
+    '9':
+      '100':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: TIPPED_ARROW
+        amount: 16
+    '10':
+      '100':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: DIAMOND
+        amount: 4
+    '11':
+      '100':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: ENDER_PEARL
+        amount: 6
+    '12':
+      '100':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: POTION
+    '13':
+      '100':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: FISHING_ROD
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          enchants:
+            LUCK: 2
+            DURABILITY: 3
+    '14':
+      '100':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: SHIELD
+        meta:
+          ==: ItemMeta
+          meta-type: TILE_ENTITY
+          enchants:
+            DURABILITY: 3
+          blockMaterial: SHIELD
+    '15':
+      '100':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: EXPERIENCE_BOTTLE
+        amount: 32
+    '16':
+      '100':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: ARROW
+        amount: 16
+    '17':
+      '100':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: BLUE_SHULKER_BOX
+    '18':
+      '100':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: GOLDEN_APPLE
+        amount: 6
+    '19':
+      '100':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: GOLDEN_APPLE
+        amount: 3
+    '20':
+      '100':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: GOLDEN_APPLE
+    '21':
+      '100':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: GOLDEN_APPLE
+        amount: 2
+    '22':
+      '100':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: GOLDEN_APPLE
+        amount: 3
+    '23':
+      '100':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: GOLDEN_APPLE
+    '24':
+      '100':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: GOLDEN_APPLE
+        amount: 2
+    '25':
+      '100':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: ARROW
+        amount: 8
+    '26':
+      '100':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: ARROW
+        amount: 4
+    '27':
+      '100':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: DIAMOND
+        amount: 2
+    '28':
+      '100':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: DIAMOND
+        amount: 3
+    '29':
+      '100':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: TIPPED_ARROW
+        amount: 8
+    '30':
+      '100':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: TIPPED_ARROW
+        amount: 4
+    '31':
+      '100':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: TIPPED_ARROW
+        amount: 2
+    '32':
+      '100':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: TIPPED_ARROW
+        amount: 2
+    '33':
+      '100':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: EXPERIENCE_BOTTLE
+        amount: 16
+    '34':
+      '100':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: EXPERIENCE_BOTTLE
+        amount: 8
+    '35':
+      '100':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: ARROW
+        amount: 4
+    '42':
+      '100':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: EXPERIENCE_BOTTLE
+        amount: 2
+    '43':
+      '100':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: EXPERIENCE_BOTTLE
+        amount: 2
+    '44':
+      '100':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: EXPERIENCE_BOTTLE
+        amount: 4
+  inv27318:
+    '0':
+      '100':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: NETHERITE_CHESTPLATE
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          enchants:
+            MENDING: 1
+            PROTECTION_ENVIRONMENTAL: 3
+    '1':
+      '100':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: DIAMOND_LEGGINGS
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          enchants:
+            MENDING: 1
+            PROTECTION_ENVIRONMENTAL: 3
+    '2':
+      '100':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: NETHERITE_HOE
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          enchants:
+            DIG_SPEED: 3
+            DURABILITY: 3
+    '3':
+      '100':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: COOKED_BEEF
+        amount: 5
+    '4':
+      '100':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: FISHING_ROD
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          enchants:
+            LUCK: 2
+            DURABILITY: 3
+    '5':
+      '100':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: NETHERITE_LEGGINGS
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          enchants:
+            MENDING: 1
+            PROTECTION_ENVIRONMENTAL: 3
+    '6':
+      '100':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: NETHERITE_AXE
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          enchants:
+            DIG_SPEED: 3
+            DURABILITY: 3
+    '7':
+      '100':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: NETHERITE_SCRAP
+        amount: 2
+    '8':
+      '100':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: DIAMOND_BOOTS
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          enchants:
+            MENDING: 1
+            PROTECTION_ENVIRONMENTAL: 3
+    '9':
+      '100':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: TIPPED_ARROW
+        amount: 4
+    '10':
+      '100':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: GOLDEN_APPLE
+        amount: 9
+    '11':
+      '100':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: DIAMOND_HELMET
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          enchants:
+            MENDING: 1
+            PROTECTION_ENVIRONMENTAL: 3
+    '12':
+      '100':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: FISHING_ROD
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          enchants:
+            LUCK: 1
+            DURABILITY: 3
+    '13':
+      '100':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: DIAMOND
+        amount: 7
+    '14':
+      '100':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: DIAMOND_SWORD
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          enchants:
+            DAMAGE_ALL: 3
+            DURABILITY: 2
+    '15':
+      '100':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: DIAMOND_HOE
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          enchants:
+            DIG_SPEED: 3
+            DURABILITY: 2
+    '16':
+      '100':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: ENDER_PEARL
+    '17':
+      '100':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: EXPERIENCE_BOTTLE
+        amount: 7
+    '18':
+      '100':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: CHORUS_FRUIT
+        amount: 11
+    '19':
+      '100':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: CHORUS_FRUIT
+        amount: 5
+    '20':
+      '100':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: CHORUS_FRUIT
+        amount: 3
+    '21':
+      '100':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: CHORUS_FRUIT
+        amount: 3
+    '22':
+      '100':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: ENDER_PEARL
+        amount: 4
+    '23':
+      '100':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: ENDER_PEARL
+        amount: 2
+    '24':
+      '100':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: EXPERIENCE_BOTTLE
+        amount: 3
+    '25':
+      '100':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: EXPERIENCE_BOTTLE
+        amount: 2
+    '26':
+      '100':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: EXPERIENCE_BOTTLE
+        amount: 2
+    '27':
+      '100':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: NETHERITE_SCRAP
+        amount: 2
+    '28':
+      '100':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: COOKED_BEEF
+        amount: 3
+    '29':
+      '100':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: COOKED_BEEF
+        amount: 3
+    '30':
+      '100':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: TIPPED_ARROW
+        amount: 2
+    '31':
+      '100':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: TIPPED_ARROW
+    '32':
+      '100':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: TIPPED_ARROW
+  inv82713:
+    '0':
+      '62':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: NETHERITE_SCRAP
+        amount: 3
+    '1':
+      '78':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: SLIME_BALL
+        amount: 8
+    '2':
+      '25':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: END_CRYSTAL
+        amount: 40
+    '3':
+      '52':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: GUNPOWDER
+        amount: 16
+    '4':
+      '71':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: IRON_INGOT
+        amount: 36
+    '5':
+      '70':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: COOKED_BEEF
+        amount: 12
+    '6':
+      '52':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: GUNPOWDER
+        amount: 16
+    '7':
+      '71':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: EMERALD
+        amount: 10
+    '8':
+      '71':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: COOKED_BEEF
+        amount: 12
+    '9':
+      '60':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: EMERALD
+        amount: 10
+    '10':
+      '40':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: MAGENTA_SHULKER_BOX
+    '11':
+      '61':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: OBSIDIAN
+        amount: 8
+    '12':
+      '60':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: DIAMOND_PICKAXE
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          enchants:
+            DIG_SPEED: 3
+            DURABILITY: 2
+    '13':
+      '61':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: ENCHANTED_BOOK
+        meta:
+          ==: ItemMeta
+          meta-type: ENCHANTED
+          stored-enchants:
+            DIG_SPEED: 5
+    '14':
+      '60':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: DIAMOND_AXE
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          enchants:
+            DIG_SPEED: 3
+            DURABILITY: 2
+    '15':
+      '60':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: ENCHANTED_BOOK
+        meta:
+          ==: ItemMeta
+          meta-type: ENCHANTED
+          stored-enchants:
+            MENDING: 1
+    '16':
+      '60':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: DIAMOND_SHOVEL
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          enchants:
+            DIG_SPEED: 3
+            DURABILITY: 2
+    '17':
+      '70':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: EXPERIENCE_BOTTLE
+        amount: 14
+    '18':
+      '21':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: MOOSHROOM_SPAWN_EGG
+    '19':
+      '41':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: BAMBOO
+        amount: 16
+    '20':
+      '52':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: ENCHANTED_BOOK
+        meta:
+          ==: ItemMeta
+          meta-type: ENCHANTED
+          stored-enchants:
+            SILK_TOUCH: 1
+    '21':
+      '53':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: EXPERIENCE_BOTTLE
+        amount: 13
+    '22':
+      '32':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: TIPPED_ARROW
+        amount: 32
+        meta:
+          ==: ItemMeta
+          meta-type: POTION
+          potion-type: minecraft:strong_harming
+    '23':
+      '51':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: OBSIDIAN
+        amount: 24
+    '24':
+      '32':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: GUNPOWDER
+        amount: 16
+    '25':
+      '41':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: SLIME_BALL
+        amount: 8
+    '26':
+      '41':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: GOLD_INGOT
+        amount: 11
+    '27':
+      '71':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: COOKED_BEEF
+        amount: 18
+    '28':
+      '14':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: ENCHANTED_GOLDEN_APPLE
+    '29':
+      '12':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: CYAN_SHULKER_BOX
+    '30':
+      '31':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: NETHERITE_INGOT
+    '31':
+      '52':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: OBSIDIAN
+        amount: 48
+    '32':
+      '50':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: COOKED_BEEF
+        amount: 6
+    '34':
+      '32':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: ENCHANTED_BOOK
+        meta:
+          ==: ItemMeta
+          meta-type: ENCHANTED
+          stored-enchants:
+            DURABILITY: 3
+    '36':
+      '51':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: ENCHANTED_BOOK
+        meta:
+          ==: ItemMeta
+          meta-type: ENCHANTED
+          stored-enchants:
+            SILK_TOUCH: 1
+    '37':
+      '50':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: EMERALD
+        amount: 10
+    '38':
+      '52':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: GOLD_INGOT
+        amount: 12
+    '39':
+      '62':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: APPLE
+        amount: 48
+    '40':
+      '52':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: GUNPOWDER
+        amount: 16
+    '41':
+      '64':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: ENDER_PEARL
+        amount: 16
+    '42':
+      '62':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: NAME_TAG
+        amount: 5
+    '43':
+      '82':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: OBSIDIAN
+        amount: 32
+    '44':
+      '45':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: ENCHANTED_BOOK
+        meta:
+          ==: ItemMeta
+          meta-type: ENCHANTED
+          stored-enchants:
+            DIG_SPEED: 5
+    '45':
+      '41':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: SUGAR_CANE
+        amount: 32
+    '46':
+      '61':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: EMERALD
+        amount: 10
+    '47':
+      '61':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: HONEY_BOTTLE
+        amount: 8
+    '48':
+      '60':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: NETHER_WART
+        amount: 10
+    '49':
+      '61':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: OBSIDIAN
+        amount: 16
+    '50':
+      '71':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: ARROW
+        amount: 32
+    '51':
+      '61':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: BEE_SPAWN_EGG
+    '52':
+      '60':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: EXPERIENCE_BOTTLE
+        amount: 27

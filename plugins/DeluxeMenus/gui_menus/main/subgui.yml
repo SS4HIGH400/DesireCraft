@@ -1,0 +1,38 @@
+menu_title: '[ᴛs] ▸ Управление PLUS'
+open_command: subgui
+size: 44
+update_interval: 1
+open_commands:
+- '[sound] BLOCK_CHEST_OPEN'
+open_requirement:
+  requirements:
+    permission:
+      type: has permission
+      permission: sub.gui
+      deny_commands: 
+      - '[message] &cУ вас нет подписки, её можно купить на сайте TrustSpace.su'
+      - '[sound] BLOCK_NOTE_BLOCK_BASS'
+items:
+##########################################################################
+  '2':
+    enchantments:
+    - DURABILITY;1 
+    hide_attributes: true
+    hide_enchantments: true
+    material: STONE
+    slot: 22
+    display_name: '&#F4FF89&lБля, нужно сделать'
+    lore:
+    - ''
+    left_click_commands:
+    - '[sound] BLOCK_NOTE_BLOCK_BASS'
+
+# Прочее
+  'filler_glass':
+    material: BLACK_STAINED_GLASS_PANE
+    slots: [0-6,9,18,26,35,38-44]
+    display_name: '&l'
+  'filler_glass_2':
+    material: MAGENTA_STAINED_GLASS_PANE
+    slots: [7,8,17,27,36,37]
+    display_name: '&l'

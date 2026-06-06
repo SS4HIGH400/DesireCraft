@@ -1,0 +1,33 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 127.0.0.1
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 0
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1779017498801
+  login: 1779017418742
+  command-cooldowns:
+  - pattern: time( .*)?
+    value: 1779017563680
+money: '100'
+last-account-name: d3xcore
+logoutlocation:
+  world: 940aa387-5bce-4903-9f52-fd1bc503e609
+  world-name: spawn
+  x: 71.15751162865695
+  y: 112.11643439863165
+  z: -45.76048042771543
+  yaw: 161.84979248046875
+  pitch: 16.368892669677734

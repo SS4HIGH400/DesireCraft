@@ -1,0 +1,134 @@
+[14:28:16.596] Logging setup finished. Console: INFO | File: FINE | Player: FINE
+[14:28:16.603] Server version 1.16.5 detected.
+[14:28:16.606] Bungeecord not detected
+[14:28:16.606] Starting metrics. This plugin uses bStats metrics: https://bstats.org/plugin/bukkit/AntiCheatAddition/14608
+[14:28:16.611] ViaVersion hooked
+[14:28:16.612] floodgate not found
+[14:28:16.666] BrandHider has been disabled in the config.
+[14:28:16.670] DamageIndicator has been disabled in the config.
+[14:28:16.673] EnchantmentHider has been enabled.
+[14:28:16.673] Esp has been disabled in the config.
+[14:28:16.674] LogBot has been disabled in the config.
+[14:28:16.674] AutoEat has been enabled.
+[14:28:16.675] AutoFish has been disabled in the config.
+[14:28:16.675] AutoPotion has been enabled.
+[14:28:16.676] Duping has been enabled.
+[14:28:16.678] Duping.parts.DoubleDropped has been enabled.
+[14:28:16.678] Duping.parts.SecretCache has been enabled.
+[14:28:16.679] Fastswitch has been disabled in the config.
+[14:28:16.679] ImpossibleChat has been disabled in the config.
+[14:28:16.679] Inventory has been enabled.
+[14:28:16.680] Inventory.parts.Sprinting has been enabled.
+[14:28:16.680] Inventory.parts.Move has been enabled.
+[14:28:16.681] Inventory.parts.Hit has been enabled.
+[14:28:16.681] Inventory.parts.Rotation has been enabled.
+[14:28:16.690] Inventory.parts.AverageHeuristic has been enabled.
+[14:28:16.691] Inventory.parts.MultiInteraction has been enabled.
+[14:28:16.692] Inventory.parts.Statistical has been enabled.
+[14:28:16.693] Inventory.parts.PerfectExit has been enabled.
+[14:28:16.693] PacketAnalysis has been enabled.
+[14:28:16.694] PacketAnalysis.parts.EqualRotation has been enabled.
+[14:28:16.695] PacketAnalysis.parts.Animation has been enabled.
+[14:28:16.695] PacketAnalysis.parts.IllegalPitch has been enabled.
+[14:28:16.697] Scaffold has been enabled.
+[14:28:16.697] Scaffold.parts.Rotation.SecondDerivative has been enabled.
+[14:28:16.697] Scaffold.parts.Position has been enabled.
+[14:28:16.698] Scaffold.parts.Jumping has been enabled.
+[14:28:16.698] Scaffold.parts.Angle has been enabled.
+[14:28:16.698] Scaffold.parts.Sprinting has been enabled.
+[14:28:16.698] Scaffold.parts.Safewalk.Position has been enabled.
+[14:28:16.698] Scaffold.parts.Rotation.FastChange has been enabled.
+[14:28:16.698] Scaffold.parts.Rotation.Derivative has been enabled.
+[14:28:16.698] Scaffold.parts.Safewalk.Timing has been enabled.
+[14:28:16.698] Shield has been enabled.
+[14:28:16.699] Shield.parts.Hit has been enabled.
+[14:28:16.699] Skinblinker has been enabled.
+[14:28:16.699] Skinblinker.parts.UnusedBit has been enabled.
+[14:28:16.700] Skinblinker.parts.Sprinting has been enabled.
+[14:28:16.700] Teaming has been disabled in the config.
+[14:28:16.702] Tower has been enabled.
+[14:28:16.705] Sentinel.Exploits.BookPage has been enabled.
+[14:28:16.705] Sentinel.Exploits.CommandBlock has been enabled.
+[14:28:16.707] Sentinel.Exploits.CreativeKillPotion has been enabled.
+[14:28:16.708] Sentinel.Exploits.SelfDamage has been enabled.
+[14:28:16.708] Sentinel.Exploits.TrollPotion has been enabled.
+[14:28:16.709] Sentinel.BetterSprinting has been enabled.
+[14:28:16.709] Sentinel.5Zig has been disabled in the config.
+[14:28:16.709] Sentinel.LabyMod has been disabled in the config.
+[14:28:16.710] Sentinel.Schematica has been enabled.
+[14:28:16.710] Sentinel.Vape is not compatible with your server version.
+[14:28:16.710] Sentinel.WorldDownloader has been enabled.
+[14:28:16.711] Sentinel.Custom.Forge has been disabled in the config.
+[14:28:16.711] Sentinel.Custom.LiteLoader has been disabled in the config.
+[14:28:16.711] Sentinel.Custom.PixelClient has been disabled in the config.
+[14:28:16.711] Sentinel.Custom.PXMod has been disabled in the config.
+[14:28:16.711] Sentinel.Custom.Rift has been disabled in the config.
+[14:28:16.711] Sentinel.Custom.Winterware has been enabled.
+[14:28:16.725] AntiCheatAddition Version 8.7.2 enabled
+[14:29:59.583] Logging setup finished. Console: INFO | File: FINE | Player: FINE
+[14:29:59.589] Server version 1.16.5 detected.
+[14:29:59.593] Bungeecord not detected
+[14:29:59.593] Starting metrics. This plugin uses bStats metrics: https://bstats.org/plugin/bukkit/AntiCheatAddition/14608
+[14:29:59.599] ViaVersion hooked
+[14:29:59.600] floodgate not found
+[14:29:59.648] BrandHider has been disabled in the config.
+[14:29:59.653] DamageIndicator has been disabled in the config.
+[14:29:59.655] EnchantmentHider has been enabled.
+[14:29:59.655] Esp has been disabled in the config.
+[14:29:59.655] LogBot has been disabled in the config.
+[14:29:59.656] AutoEat has been enabled.
+[14:29:59.656] AutoFish has been disabled in the config.
+[14:29:59.657] AutoPotion has been enabled.
+[14:29:59.657] Duping has been enabled.
+[14:29:59.658] Duping.parts.DoubleDropped has been enabled.
+[14:29:59.659] Duping.parts.SecretCache has been enabled.
+[14:29:59.659] Fastswitch has been disabled in the config.
+[14:29:59.659] ImpossibleChat has been disabled in the config.
+[14:29:59.660] Inventory has been enabled.
+[14:29:59.667] Inventory.parts.Statistical has been enabled.
+[14:29:59.668] Inventory.parts.PerfectExit has been enabled.
+[14:29:59.668] Inventory.parts.Sprinting has been enabled.
+[14:29:59.669] Inventory.parts.Move has been enabled.
+[14:29:59.669] Inventory.parts.Hit has been enabled.
+[14:29:59.670] Inventory.parts.Rotation has been enabled.
+[14:29:59.671] Inventory.parts.AverageHeuristic has been enabled.
+[14:29:59.672] Inventory.parts.MultiInteraction has been enabled.
+[14:29:59.673] PacketAnalysis has been enabled.
+[14:29:59.674] PacketAnalysis.parts.IllegalPitch has been enabled.
+[14:29:59.675] PacketAnalysis.parts.EqualRotation has been enabled.
+[14:29:59.676] PacketAnalysis.parts.Animation has been enabled.
+[14:29:59.678] Scaffold has been enabled.
+[14:29:59.678] Scaffold.parts.Rotation.FastChange has been enabled.
+[14:29:59.678] Scaffold.parts.Rotation.Derivative has been enabled.
+[14:29:59.679] Scaffold.parts.Safewalk.Timing has been enabled.
+[14:29:59.679] Scaffold.parts.Rotation.SecondDerivative has been enabled.
+[14:29:59.679] Scaffold.parts.Position has been enabled.
+[14:29:59.679] Scaffold.parts.Jumping has been enabled.
+[14:29:59.679] Scaffold.parts.Angle has been enabled.
+[14:29:59.679] Scaffold.parts.Sprinting has been enabled.
+[14:29:59.679] Scaffold.parts.Safewalk.Position has been enabled.
+[14:29:59.679] Shield has been enabled.
+[14:29:59.680] Shield.parts.Hit has been enabled.
+[14:29:59.680] Skinblinker has been enabled.
+[14:29:59.681] Skinblinker.parts.UnusedBit has been enabled.
+[14:29:59.681] Skinblinker.parts.Sprinting has been enabled.
+[14:29:59.682] Teaming has been disabled in the config.
+[14:29:59.685] Tower has been enabled.
+[14:29:59.689] Sentinel.Exploits.BookPage has been enabled.
+[14:29:59.689] Sentinel.Exploits.CommandBlock has been enabled.
+[14:29:59.692] Sentinel.Exploits.CreativeKillPotion has been enabled.
+[14:29:59.693] Sentinel.Exploits.SelfDamage has been enabled.
+[14:29:59.693] Sentinel.Exploits.TrollPotion has been enabled.
+[14:29:59.694] Sentinel.BetterSprinting has been enabled.
+[14:29:59.695] Sentinel.5Zig has been disabled in the config.
+[14:29:59.695] Sentinel.LabyMod has been disabled in the config.
+[14:29:59.696] Sentinel.Schematica has been enabled.
+[14:29:59.696] Sentinel.Vape is not compatible with your server version.
+[14:29:59.696] Sentinel.WorldDownloader has been enabled.
+[14:29:59.697] Sentinel.Custom.Forge has been disabled in the config.
+[14:29:59.697] Sentinel.Custom.LiteLoader has been disabled in the config.
+[14:29:59.697] Sentinel.Custom.PixelClient has been disabled in the config.
+[14:29:59.697] Sentinel.Custom.PXMod has been disabled in the config.
+[14:29:59.697] Sentinel.Custom.Rift has been disabled in the config.
+[14:29:59.697] Sentinel.Custom.Winterware has been enabled.
+[14:29:59.711] AntiCheatAddition Version 8.7.2 enabled

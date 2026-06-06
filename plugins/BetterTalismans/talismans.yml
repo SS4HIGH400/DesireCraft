@@ -1,0 +1,209 @@
+Talismans:
+  Xeops:
+    Item:
+      Material: CUSTOM_HEAD
+      Texture: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZGM2OTk5YzFmNTk2NDZmZTAxMjFhOTlkOWIwZmVmMzk5NmVkNzhjNmRjNTU1MzFkYWJjY2E3MDhjMWRjZjkxNiJ9fX0=
+      Glow: true
+      Hide-attributes: true
+      CustomModelData: 0
+      Displayname: '&d&l[♥] &#FFD900С&#FFDD18ф&#FFE02Fе&#FFE447р&#FFE75Fа &#FFEB77Х&#FFEE8Eе&#FFF2A6о&#FFF5BEп&#FFF9D5с&#FFFCEDа'
+      Lore:
+      - '&7Эффекты:'
+      - '&#FFD900- &#FFDE22Б&#FFE344р&#FFE866о&#FFED87н&#FFF2A9я &#FFF7CBI&#FFFCEDI'
+      - '&#FFD900- &#FFDC11М&#FFDE22а&#FFE133к&#FFE344с&#FFE655. &#FFE866З&#FFEB76д&#FFED87о&#FFF098р&#FFF2A9о&#FFF5BAв&#FFF7CBь&#FFFADCе
+        &#FFFCEDI'
+      Item-flags:
+      - ALL
+      Enchantments:
+      - ADD_ENCHANTMENTS_HERE,LEVEL
+      - ANOTHER_ENCHANTMENT_HERE,LEVEL
+      Head-uuid: 4d56a1cf-872b-4105-a331-11545b1c20c5
+    Modifiers:
+    - ARMOR|4|OFF_HAND
+    - HEALTH_BOOST|2|OFF_HAND
+    Recipe:
+      Enabled: false
+      Title: '&8Netherite Armored Elytra recipe'
+      Recipe-permission: bettertalismans.recipe.netheritearmoredelytra
+      Shape:
+      - EMERALD,NETHERITE_CHESTPLATE,EMERALD
+      - DIAMOND,DIAMOND_BLOCK,DIAMOND
+      - EMERALD,ELYTRA,EMERALD
+  Gerakl:
+    Item:
+      Material: CUSTOM_HEAD
+      Texture: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzYxOWJmNjI4NjNlYzExNTc3ZDZlZjY1ZWZkYzNmOWRlNGRmNDE0MjAyZWQxZmYxZGU5ZWM3NmI2MWEzZjY2NyJ9fX0=
+      Glow: true
+      Hide-attributes: true
+      CustomModelData: 0
+      Displayname: '&d&l[♥] &#F80000С&#F91716ф&#F92E2Bе&#FA4541р&#FB5C56а &#FB736CГ&#FC8981е&#FCA097р&#FDB7ACа&#FECEC2к&#FEE5D7л&#FFFCEDа'
+      Lore:
+      - '&7Эффекты:'
+      - '&#F80000- &#F9322FУ&#FB655Fр&#FC978Eо&#FECABEн &#FFFCEDI'
+      - '&#F80000- &#F91211М&#F92422а&#FA3633к&#FA4844с&#FB5A55. &#FB6C66З&#FC7E76д&#FC9087о&#FDA298р&#FDB4A9о&#FEC6BAв&#FED8CBь&#FFEADCе
+        &#FFFCEDI'
+      Item-flags:
+      - ALL
+      Enchantments:
+      - ADD_ENCHANTMENTS_HERE,LEVEL
+      - ANOTHER_ENCHANTMENT_HERE,LEVEL
+      Head-uuid: 9a085b4f-746b-4df7-b1c6-2d5ea1c31990
+    Modifiers:
+    - HEALTH_BOOST|2|OFF_HAND
+    - ATTACK_DAMAGE|1|OFF_HAND
+    Recipe:
+      Enabled: false
+      Title: '&8Netherite Armored Elytra recipe'
+      Recipe-permission: bettertalismans.recipe.netheritearmoredelytra
+      Shape:
+      - EMERALD,NETHERITE_CHESTPLATE,EMERALD
+      - DIAMOND,DIAMOND_BLOCK,DIAMOND
+      - EMERALD,ELYTRA,EMERALD
+  Dionis:
+    Item:
+      Material: CUSTOM_HEAD
+      Texture: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvM2FhNGE3YmIyY2I4OGM3ZDExZWUxYWRmYTQwZDlhY2Q3NWQ4ZmIwNmIxMWE0OTY5Y2UwNzE1Y2Y5OGUwYzVjYSJ9fX0=
+      Glow: true
+      Hide-attributes: true
+      CustomModelData: 0
+      Displayname: '&d&l[♥] &#8600F8С&#9117F7ф&#9C2EF6е&#A745F5р&#B25CF4а &#BD73F3Д&#C889F2и&#D3A0F1о&#DEB7F0н&#E9CEEFи&#F4E5EEс&#FFFCEDа'
+      Lore:
+      - '&7Эффекты:'
+      - '&#8600F8- &#8D0FF7С&#941EF7к&#9B2CF6о&#A23BF5р&#AA4AF5о&#B159F4с&#B868F3т&#BF77F3ь
+        &#C685F2а&#CD94F2т&#D4A3F1а&#DBB2F0к&#E3C1F0и &#EAD0EF+&#F1DEEE2&#F8EDEE0&#FFFCED%'
+      - '&#8600F8- &#8F12F7М&#9724F6а&#A036F6к&#A948F5с&#B15AF4. &#BA6CF3З&#C37EF3д&#CB90F2о&#D4A2F1р&#DCB4F0о&#E5C6EFв&#EED8EFь&#F6EAEEе
+        &#FFFCEDI'
+      Item-flags:
+      - ALL
+      Enchantments:
+      - ADD_ENCHANTMENTS_HERE,LEVEL
+      - ANOTHER_ENCHANTMENT_HERE,LEVEL
+      Head-uuid: 578f3d5a-15fc-4df7-86c8-39f38af07d26
+    Modifiers:
+    - ATTACK_SPEED|0.020|OFF_HAND
+    - HEALTH_BOOST|2|OFF_HAND
+    Recipe:
+      Enabled: false
+      Title: '&8Netherite Armored Elytra recipe'
+      Recipe-permission: bettertalismans.recipe.netheritearmoredelytra
+      Shape:
+      - EMERALD,NETHERITE_CHESTPLATE,EMERALD
+      - DIAMOND,DIAMOND_BLOCK,DIAMOND
+      - EMERALD,ELYTRA,EMERALD
+  Epiona:
+    Item:
+      Material: CUSTOM_HEAD
+      Texture: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzQ4N2ZmYWIxNWQ2MjhjYjBlZDQ5MzkxOWUxNTRkYTBiOTdiMDYxM2JiNDBmOGIzODc1N2RlNTA3YmJkNjA5NCJ9fX0=
+      Glow: true
+      Hide-attributes: true
+      CustomModelData: 0
+      Displayname: '&d&l[♥] &#00F8EEС&#1AF8EEф&#33F9EEе&#4DF9EEр&#66FAEEа &#80FAEEЭ&#99FAEDп&#B3FBEDи&#CCFBEDо&#E6FCEDн&#FFFCEDы'
+      Lore:
+      - '&7Эффекты:'
+      - '&#00F8EE- &#10F8EEМ&#20F9EEа&#30F9EEк&#40F9EEс&#50F9EE. &#60FAEEЗ&#70FAEEд&#80FAEEо&#8FFAEDр&#9FFBEDо&#AFFBEDв&#BFFBEDь&#CFFBEDе
+        &#DFFCEDI&#EFFCEDI&#FFFCEDI'
+      Item-flags:
+      - ALL
+      Enchantments:
+      - ADD_ENCHANTMENTS_HERE,LEVEL
+      - ANOTHER_ENCHANTMENT_HERE,LEVEL
+      Head-uuid: e400177f-2d3d-4428-8c56-a24845e5882d
+    Modifiers:
+    - HEALTH_BOOST|6|OFF_HAND
+    Recipe:
+      Enabled: false
+      Title: '&8Netherite Armored Elytra recipe'
+      Recipe-permission: bettertalismans.recipe.netheritearmoredelytra
+      Shape:
+      - EMERALD,NETHERITE_CHESTPLATE,EMERALD
+      - DIAMOND,DIAMOND_BLOCK,DIAMOND
+      - EMERALD,ELYTRA,EMERALD
+  Femida:
+    Item:
+      Material: CUSTOM_HEAD
+      Texture: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmQ3NDk5NWQ2Y2RhMmI4YTI0NzcyYWY5NjllZjA3N2FlM2E4NWUyMzU3YzZmNjExOWI4YTI1MDYwNDFhNDQ4YiJ9fX0=
+      Glow: true
+      Hide-attributes: true
+      CustomModelData: 0
+      Displayname: '&d&l[♥] &#393939С&#4D4D4Bф&#61605Dе&#74746Fр&#888781а &#9C9B93Ф&#B0AEA5е&#C4C2B7м&#D7D5C9и&#EBE9DBд&#FFFCEDы'
+      Lore:
+      - '&7Эффекты'
+      - '&#393939- &#555553Б&#72716Cр&#8E8D86о&#AAA8A0н&#C6C4BAя &#E3E0D3I&#FFFCEDI'
+      - '&#393939- &#61605DУ&#888781р&#B0AEA5о&#D7D5C9н &#FFFCEDI'
+      Item-flags:
+      - ALL
+      Enchantments:
+      - ADD_ENCHANTMENTS_HERE,LEVEL
+      - ANOTHER_ENCHANTMENT_HERE,LEVEL
+      Head-uuid: 459dd54a-2962-4b0b-a3de-ef8aac2d13a6
+    Modifiers:
+    - ARMOR|4|OFF_HAND
+    - ATTACK_DAMAGE|1|OFF_HAND
+    Recipe:
+      Enabled: false
+      Title: '&8Netherite Armored Elytra recipe'
+      Recipe-permission: bettertalismans.recipe.netheritearmoredelytra
+      Shape:
+      - EMERALD,NETHERITE_CHESTPLATE,EMERALD
+      - DIAMOND,DIAMOND_BLOCK,DIAMOND
+      - EMERALD,ELYTRA,EMERALD
+  Prometey:
+    Item:
+      Material: CUSTOM_HEAD
+      Texture: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjhmOTIzNTNmZDUyZDBlZWQ2NTdkOTk3ZWE4MTQ5YzgyNWQzNjZiMDI4YzE1MTRiZDllY2FhZjI0M2ZiN2JjNiJ9fX0=
+      Glow: true
+      Hide-attributes: true
+      CustomModelData: 0
+      Displayname: '&d&l[♥] &#2D0AD0С&#3F1ED2ф&#5032D5е&#6247D7р&#735BDAа &#856FDCП&#9683DFр&#A897E1о&#B9ABE3м&#CBC0E6е&#DCD4E8т&#EEE8EBе&#FFFCEDя'
+      Lore:
+      - '&7Эффекты:'
+      - '&#2D0AD0- &#3918D2С&#4626D3к&#5235D5о&#5E43D7р&#6B51D9о&#775FDAс&#836EDCт&#907CDEь &#9C8ADFа&#A998E1т&#B5A7E3а&#C1B5E4к&#CEC3E6и &#DAD1E8+&#E6E0EA2&#F3EEEB0&#FFFCED%'
+      - '&#2D0AD0- &#573AD6У&#816BDCр&#AB9BE1о&#D5CCE7н &#FFFCEDI'
+      Item-flags:
+      - ALL
+      Enchantments:
+      - ADD_ENCHANTMENTS_HERE,LEVEL
+      - ANOTHER_ENCHANTMENT_HERE,LEVEL
+      Head-uuid: e2051bca-8594-4267-a936-894ddd4429d9
+    Modifiers:
+    - ATTACK_SPEED|0.020|OFF_HAND
+    - ATTACK_DAMAGE|1|OFF_HAND
+    Recipe:
+      Enabled: false
+      Title: '&8Netherite Armored Elytra recipe'
+      Recipe-permission: bettertalismans.recipe.netheritearmoredelytra
+      Shape:
+      - EMERALD,NETHERITE_CHESTPLATE,EMERALD
+      - DIAMOND,DIAMOND_BLOCK,DIAMOND
+      - EMERALD,ELYTRA,EMERALD
+  Apisa:
+    Item:
+      Material: CUSTOM_HEAD
+      Texture: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGM4MjNjOGU1M2QzYWU3NTNjMTkxYzUxZmU2Njc5MTE1MjczMzA2NDFhMDE2YTEzMzI1MDIzYTM5OWYwMTcyYSJ9fX0=
+      Glow: true
+      Hide-attributes: true
+      CustomModelData: 0
+      Displayname: '&d&l[♥] &#D05A0AС&#D56C23ф&#DA7E3Cе&#E09056р&#E5A26Fа &#EAB488А&#EFC6A1п&#F5D8BBи&#FAEAD4с&#FFFCEDа'
+      Lore:
+      - '&7Эффекты:'
+      - '&#D05A0A- &#D87530Б&#E09056р&#E8AB7Cо&#EFC6A1н&#F7E1C7я &#FFFCEDI'
+      - '&#D05A0A- &#D36519М&#D67028а&#D97A37к&#DD8547с&#E09056. &#E39B65З&#E6A674д&#E9B083о&#ECBB92р&#EFC6A1о&#F2D1B0в&#F6DCC0ь&#F9E6CFе &#FCF1DEI&#FFFCEDI'
+      - '&#D05A0A- &#D36417С&#D66D25к&#D87732о&#DB803Fр&#DE8A4Dо&#E1935Aс&#E39D67т&#E6A675ь &#E9B082а&#ECB990т&#EEC39Dа&#F1CCAAк&#F4D6B8и &#F7DFC5+&#F9E9D22&#FCF2E00&#FFFCED%'
+      Item-flags:
+      - ALL
+      Enchantments:
+      - ADD_ENCHANTMENTS_HERE,LEVEL
+      - ANOTHER_ENCHANTMENT_HERE,LEVEL
+      Head-uuid: d279ef74-8ee7-44d7-88fa-da5ccfc156fe
+    Modifiers:
+    - ARMOR|2|OFF_HAND
+    - HEALTH_BOOST|4|OFF_HAND
+    - ATTACK_SPEED|0.020|OFF_HAND
+    Recipe:
+      Enabled: false
+      Title: '&8Netherite Armored Elytra recipe'
+      Recipe-permission: bettertalismans.recipe.netheritearmoredelytra
+      Shape:
+      - EMERALD,NETHERITE_CHESTPLATE,EMERALD
+      - DIAMOND,DIAMOND_BLOCK,DIAMOND
+      - EMERALD,ELYTRA,EMERALD

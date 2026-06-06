@@ -1,0 +1,66 @@
+recipe1:
+  ==: com.dutchjelly.craftenhance.crafthandling.recipes.WBRecipe
+  result: ELYTRA
+  oncraftcommand: null
+  hidden: false
+  matchtype: MATCH_META
+  recipe:
+  - COBWEB
+  - NETHER_STAR
+  - COBWEB
+  - PAPER
+  - null
+  - PAPER
+  - FEATHER
+  - null
+  - FEATHER
+  permission: null
+  page: -1
+  slot: -1
+  result_slot: 9
+  category: default
+  shapeless: false
+recipe2:
+  ==: com.dutchjelly.craftenhance.crafthandling.recipes.WBRecipe
+  result: ENCHANTED_GOLDEN_APPLE
+  oncraftcommand: null
+  hidden: false
+  matchtype: MATCH_META
+  recipe:
+  - GOLD_BLOCK
+  - GOLD_BLOCK
+  - GOLD_BLOCK
+  - GOLD_BLOCK
+  - APPLE
+  - GOLD_BLOCK
+  - GOLD_BLOCK
+  - GOLD_BLOCK
+  - GOLD_BLOCK
+  permission: null
+  page: -1
+  slot: -1
+  result_slot: 9
+  category: default
+  shapeless: false
+recipe3:
+  ==: com.dutchjelly.craftenhance.crafthandling.recipes.WBRecipe
+  result: TOTEM_OF_UNDYING
+  oncraftcommand: null
+  hidden: false
+  matchtype: MATCH_META
+  recipe:
+  - GOLD_BLOCK
+  - GOLD_BLOCK
+  - GOLD_BLOCK
+  - GOLD_BLOCK
+  - PUFFERFISH
+  - GOLD_BLOCK
+  - GOLD_BLOCK
+  - GOLD_BLOCK
+  - GOLD_BLOCK
+  permission: null
+  page: -1
+  slot: -1
+  result_slot: 9
+  category: default
+  shapeless: false

@@ -1,0 +1,82 @@
+# 
+# ©LIGHTLEAK
+#                           «LIGHTLEAK»
+#                          © 2022-2023
+#                       Только безопасные сливы 
+geyser: false
+max-experience-pre-generated-location: 50
+use-metrics: false
+debug: false
+log-level: LOW
+state-serializable: false
+anti-steal:
+  enable: true
+  max-interval: 5
+  max-warnings: 5
+  min-interval-to-ignore: 150
+  сooldown: 300
+settings:
+  world-guard-flags:
+    allow-flags:
+    - use
+    - pvp
+    - chest-access
+    - potion-splash
+    deny-flags:
+    - creeper-explosion
+    - tnt
+    - mob-spawning
+    - fire-spread
+    - lava-fire
+    - other-explosion
+summoner:
+  item-1:
+    material: SOUL_CAMPFIRE
+    name: '&7Маяк призыва'
+    lore:
+    - '&7'
+    - '&fПоставь маяк, чтобы'
+    - '&cпоявился &fданж!'
+    - ''
+    airdrop: RANDOM
+    clone: true
+    use-player-location: true
+    check-up-blocks: false
+    flatness-check: false
+    call: []
+  item-2:
+    material: SOUL_CAMPFIRE
+    name: '&aAirdrop beacon'
+    lore:
+    - '&7line 1'
+    - '&7line 2'
+    airdrop: RANDOM
+    clone: true
+    flatness-check: false
+    use-player-location: false
+    call: []
+compass:
+  material: COMPASS
+  item-name: '&aCompass'
+  item-lore: '&7Points the way to the nearest airdrop.'
+  line-max-distance: 10
+  particle-step: 0.2
+  particle-color: '255:0:0'
+  particle-size: 3
+  message-not-found: '&cThere are currently no active airdrops! &7The next one will
+    be available in %bairdrop_time_start_format%.'
+custom-crafts:
+  enable: false
+  crafts:
+    craft-1:
+      summoner: item-1
+      ingredients:
+        A: DIAMOND
+        B: BEDROCK
+      slots:
+        top: AAA
+        middle: ABA
+        bottom: AAA
+global-time:
+  enable: true
+  time: 10800

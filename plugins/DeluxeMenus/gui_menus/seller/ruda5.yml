@@ -1,0 +1,492 @@
+#=========================================================
+menu_title: '[ᴛs] ▸ Шахтер'
+open_command: ruda5
+size: 54
+items:
+  'exit':
+    material: arrow
+    slot: 0
+    display_name: '&c« Выйти'
+    left_click_commands:
+      - '[player] seller'
+    right_click_commands:
+      - '[player] seller'
+  '1':
+    material: COAL
+    slot: 19
+    amount: 1
+    display_name: '&#9400FFУ&#AF00FDг&#CA00FCо&#E400FAл&#FF00F8ь&7 (ВСЁ)'
+    lore:
+    - ''
+    - '&8 ▪ &dЛКМ &8» &fПродать &dВСЁ&f за &d%math_{checkitem_amount_mat:coal}*70%$'
+    - ''
+    - '&8 ▪ &5ПКМ &8» &fИзменить кол-во'
+    - '&7 ▸ &fПродать по &71 шт.'
+    - '&7 ▸ &fПродать по &716 шт.'
+    - '&7 ▸ &fПродать по &732 шт.'
+    - '&7 ▸ &fПродать по &764 шт.'
+    - '&7 ▸ &fПродать &aВСЁ'
+    - ''
+    - '&8 ▪ &fВаши Монеты: &d%vault_eco_balance_fixed%$'
+    - ''
+    right_click_commands:
+    - '[player] ruda'
+    left_click_requirement:
+      requirements:
+        has_money:
+          type: string equals
+          input: '%checkitem_math:coal%'
+          output: 'yes'
+        item_check:
+          type: has item
+          material: coal
+      deny_commands:
+          - '[message]&7[&#F4C4F3&lС&#F5B5F4&lк&#F7A5F5&lу&#F896F7&lп&#F986F8&lщ&#FB77F9&lи&#FC67FA&lк&7] &8» &fНет необходимого предмета, либо кол-ва предметов для продажи!'
+    right_click_commands:
+    - '[player] ruda'
+    left_click_requirement:
+      requirements:
+        has_money:
+          type: string equals
+          input: '%checkitem_math:coal%'
+          output: 'yes'
+        item_check:
+          type: has item
+          material: coal
+      deny_commands:
+          - '[message]&7[&#F4C4F3&lС&#F5B5F4&lк&#F7A5F5&lу&#F896F7&lп&#F986F8&lщ&#FB77F9&lи&#FC67FA&lк&7] &8» &fНет необходимого предмета, либо кол-ва предметов для продажи!'
+    left_click_commands:
+    - '[givemoney] %math_{checkitem_amount_mat:coal}*70%'
+    - '[console] minecraft:clear %player_name% coal'
+    - '[message]'
+    - '[message]&7[&#F4C4F3&lС&#F5B5F4&lк&#F7A5F5&lу&#F896F7&lп&#F986F8&lщ&#FB77F9&lи&#FC67FA&lк&7] &8» &fВы успешно продали &dУголь'
+    - '[message]'
+    - '[refresh]'
+  '2':
+    material: LAPIS_LAZULI 
+    slot: 20
+    amount: 1
+    display_name: '&#9400FFЛ&#A600FEа&#B800FDз&#CA00FCу&#DB00FAр&#ED00F9и&#FF00F8т&7 (ВСЁ)'
+    lore:
+    - ''
+    - '&8 ▪ &dЛКМ &8» &fПродать &dВСЁ&f за &d%math_{checkitem_amount_mat:lapis_lazuli}*65%$' 
+    - ''
+    - '&8 ▪ &5ПКМ &8» &fИзменить кол-во'
+    - '&7 ▸ &fПродать по &71 шт.'
+    - '&7 ▸ &fПродать по &716 шт.'
+    - '&7 ▸ &fПродать по &732 шт.'
+    - '&7 ▸ &fПродать по &764 шт.'
+    - '&7 ▸ &fПродать &aВСЁ'
+    - ''
+    - '&8 ▪ &fВаши Монеты: &d%vault_eco_balance_fixed%$'
+    - ''
+    right_click_commands:
+    - '[player] ruda'
+    left_click_requirement:
+      requirements:
+        has_money:
+          type: string equals
+          input: '%checkitem_math:lapis_lazuli%'
+          output: 'yes'
+        item_check:
+          type: has item
+          material: LAPIS_LAZULI
+      deny_commands:
+          - '[message]&7[&#F4C4F3&lС&#F5B5F4&lк&#F7A5F5&lу&#F896F7&lп&#F986F8&lщ&#FB77F9&lи&#FC67FA&lк&7] &8» &fНет необходимого предмета, либо кол-ва предметов для продажи!'
+    right_click_commands:
+    - '[player] ruda'
+    left_click_requirement:
+      requirements:
+        has_money:
+          type: string equals
+          input: '%checkitem_math:lapis_lazuli%'
+          output: 'yes'
+        item_check:
+          type: has item
+          material: LAPIS_LAZULI
+      deny_commands:
+          - '[message]&7[&#F4C4F3&lС&#F5B5F4&lк&#F7A5F5&lу&#F896F7&lп&#F986F8&lщ&#FB77F9&lи&#FC67FA&lк&7] &8» &fНет необходимого предмета, либо кол-ва предметов для продажи!'
+    left_click_commands:
+    - '[givemoney] %math_{checkitem_amount_mat:lapis_lazuli}*65%'
+    - '[console] minecraft:clear %player_name% lapis_lazuli'
+    - '[message]'
+    - '[message]&7[&#F4C4F3&lС&#F5B5F4&lк&#F7A5F5&lу&#F896F7&lп&#F986F8&lщ&#FB77F9&lи&#FC67FA&lк&7] &8» &fВы успешно продали &dЛазурит'
+    - '[message]'
+    - '[refresh]'
+  '3':
+    material: REDSTONE
+    slot: 21
+    amount: 1
+    display_name: '&#9400FFР&#9B00FFе&#A200FEд&#A900FEс&#B100FDт&#B800FDо&#BF00FCу&#C600FCн&#CD00FBо&#D400FBв&#DB00FAа&#E200FAя &#EA00F9п&#F100F9ы&#F800F8л&#FF00F8ь&7 (ВСЁ)'
+    lore:
+    - ''
+    - '&8 ▪ &dЛКМ &8» &fПродать &dВСЁ&f за &d%math_{checkitem_amount_mat:redstone}*65%$' 
+    - ''
+    - '&8 ▪ &5ПКМ &8» &fИзменить кол-во'
+    - '&7 ▸ &fПродать по &71 шт.'
+    - '&7 ▸ &fПродать по &716 шт.'
+    - '&7 ▸ &fПродать по &732 шт.'
+    - '&7 ▸ &fПродать по &764 шт.'
+    - '&7 ▸ &fПродать &aВСЁ'
+    - ''
+    - '&8 ▪ &fВаши Монеты: &d%vault_eco_balance_fixed%$'
+    - ''
+    right_click_commands:
+    - '[player] ruda'
+    left_click_requirement:
+      requirements:
+        has_money:
+          type: string equals
+          input: '%checkitem_math:redstone%'
+          output: 'yes'
+        item_check:
+          type: has item
+          material: REDSTONE
+      deny_commands:
+          - '[message]&7[&#F4C4F3&lС&#F5B5F4&lк&#F7A5F5&lу&#F896F7&lп&#F986F8&lщ&#FB77F9&lи&#FC67FA&lк&7] &8» &fНет необходимого предмета, либо кол-ва предметов для продажи!'
+    right_click_commands:
+    - '[player] ruda'
+    left_click_requirement:
+      requirements:
+        has_money:
+          type: string equals
+          input: '%checkitem_math:redstone%'
+          output: 'yes'
+        item_check:
+          type: has item
+          material: REDSTONE
+      deny_commands:
+          - '[message]&7[&#F4C4F3&lС&#F5B5F4&lк&#F7A5F5&lу&#F896F7&lп&#F986F8&lщ&#FB77F9&lи&#FC67FA&lк&7] &8» &fНет необходимого предмета, либо кол-ва предметов для продажи!'
+    left_click_commands:
+    - '[givemoney] %math_{checkitem_amount_mat:redstone}*65%'
+    - '[console] minecraft:clear %player_name% redstone'
+    - '[message]'
+    - '[message]&7[&#F4C4F3&lС&#F5B5F4&lк&#F7A5F5&lу&#F896F7&lп&#F986F8&lщ&#FB77F9&lи&#FC67FA&lк&7] &8» &fВы успешно продали &dРедстоун'
+    - '[message]'
+    - '[refresh]'
+  '4':
+    material: QUARTZ
+    slot: 22
+    amount: 1
+    display_name: '&#9400FFН&#9E00FEе&#A700FEз&#B100FDе&#BB00FCр&#C500FC-&#CE00FBк&#D800FBв&#E200FAа&#EC00F9р&#F500F9т&#FF00F8ц&7 (ВСЁ)'
+    lore:
+    - ''
+    - '&8 ▪ &dЛКМ &8» &fПродать &dВСЁ&f за &d%math_{checkitem_amount_mat:quartz}*80%$' 
+    - ''
+    - '&8 ▪ &5ПКМ &8» &fИзменить кол-во'
+    - '&7 ▸ &fПродать по &71 шт.'
+    - '&7 ▸ &fПродать по &716 шт.'
+    - '&7 ▸ &fПродать по &732 шт.'
+    - '&7 ▸ &fПродать по &764 шт.'
+    - '&7 ▸ &fПродать &aВСЁ'
+    - ''
+    - '&8 ▪ &fВаши Монеты: &d%vault_eco_balance_fixed%$'
+    - ''
+    right_click_commands:
+    - '[player] ruda'
+    left_click_requirement:
+      requirements:
+        has_money:
+          type: string equals
+          input: '%checkitem_math:quartz%'
+          output: 'yes'
+        item_check:
+          type: has item
+          material: QUARTZ
+      deny_commands:
+          - '[message]&7[&#F4C4F3&lС&#F5B5F4&lк&#F7A5F5&lу&#F896F7&lп&#F986F8&lщ&#FB77F9&lи&#FC67FA&lк&7] &8» &fНет необходимого предмета, либо кол-ва предметов для продажи!'
+    right_click_commands:
+    - '[player] ruda'
+    left_click_requirement:
+      requirements:
+        has_money:
+          type: string equals
+          input: '%checkitem_math:quartz%'
+          output: 'yes'
+        item_check:
+          type: has item
+          material: QUARTZ
+      deny_commands:
+          - '[message]&7[&#F4C4F3&lС&#F5B5F4&lк&#F7A5F5&lу&#F896F7&lп&#F986F8&lщ&#FB77F9&lи&#FC67FA&lк&7] &8» &fНет необходимого предмета, либо кол-ва предметов для продажи!'
+    left_click_commands:
+    - '[givemoney] %math_{checkitem_amount_mat:quartz}*80%'
+    - '[console] minecraft:clear %player_name% quartz'
+    - '[message]'
+    - '[message]&#9400FFМ&#A600FEа&#B1100Fг&#CA00FCа&#DB00FAз&#ED00F9и&#FF00F8н &1» &fВы успешно продали &6Квартц'
+    - '[message]'
+    - '[refresh]'
+  '5':
+    material: IRON_INGOT
+    slot: 23
+    amount: 1
+    display_name: '&#9400FFЖ&#A900FEе&#BF00FCл&#D400FBе&#EA00F9з&#FF00F8о&7 (ВСЁ)'
+    lore:
+    - ''
+    - '&8 ▪ &dЛКМ &8» &fПродать &dВСЁ&f за &d%math_{checkitem_amount_mat:iron_ingot}*110%$' 
+    - ''
+    - '&8 ▪ &5ПКМ &8» &fИзменить кол-во'
+    - '&7 ▸ &fПродать по &71 шт.'
+    - '&7 ▸ &fПродать по &716 шт.'
+    - '&7 ▸ &fПродать по &732 шт.'
+    - '&7 ▸ &fПродать по &764 шт.'
+    - '&7 ▸ &fПродать &aВСЁ'
+    - ''
+    - '&8 ▪ &fВаши Монеты: &d%vault_eco_balance_fixed%$'
+    - ''
+    right_click_commands:
+    - '[player] ruda'
+    left_click_requirement:
+      requirements:
+        has_money:
+          type: string equals
+          input: '%checkitem_math:iron_ingot%'
+          output: 'yes'
+        item_check:
+          type: has item
+          material: IRON_INGOT
+      deny_commands:
+          - '[message]&7[&#F4C4F3&lС&#F5B5F4&lк&#F7A5F5&lу&#F896F7&lп&#F986F8&lщ&#FB77F9&lи&#FC67FA&lк&7] &8» &fНет необходимого предмета, либо кол-ва предметов для продажи!'
+    right_click_commands:
+    - '[player] ruda'
+    left_click_requirement:
+      requirements:
+        has_money:
+          type: string equals
+          input: '%checkitem_math:iron_ingot%'
+          output: 'yes'
+        item_check:
+          type: has item
+          material: IRON_INGOT
+      deny_commands:
+          - '[message]&7[&#F4C4F3&lС&#F5B5F4&lк&#F7A5F5&lу&#F896F7&lп&#F986F8&lщ&#FB77F9&lи&#FC67FA&lк&7] &8» &fНет необходимого предмета, либо кол-ва предметов для продажи!'
+    left_click_commands:
+    - '[givemoney] %math_{checkitem_amount_mat:iron_ingot}*110%'
+    - '[console] minecraft:clear %player_name% iron_ingot'
+    - '[message]'
+    - '[message]&#9400FFМ&#A600FEа&#B1100Fг&#CA00FCа&#DB00FAз&#ED00F9и&#FF00F8н &1» &fВы успешно продали &6Железо'
+    - '[message]'
+    - '[refresh]'
+  '6':
+    material: GOLD_INGOT
+    slot: 24
+    amount: 1
+    display_name: '&#9400FFЗ&#A900FEо&#BF00FCл&#D400FBо&#EA00F9т&#FF00F8о&7 (ВСЁ)'
+    lore:
+    - ''
+    - '&8 ▪ &dЛКМ &8» &fПродать &dВСЁ&f за &d%math_{checkitem_amount_mat:gold_ingot}*170%$' 
+    - ''
+    - '&8 ▪ &5ПКМ &8» &fИзменить кол-во'
+    - '&7 ▸ &fПродать по &71 шт.'
+    - '&7 ▸ &fПродать по &716 шт.'
+    - '&7 ▸ &fПродать по &732 шт.'
+    - '&7 ▸ &fПродать по &764 шт.'
+    - '&7 ▸ &fПродать &aВСЁ'
+    - ''
+    - '&8 ▪ &fВаши Монеты: &d%vault_eco_balance_fixed%$'
+    - ''
+    right_click_commands:
+    - '[player] ruda'
+    left_click_requirement:
+      requirements:
+        has_money:
+          type: string equals
+          input: '%checkitem_math:gold_ingot%'
+          output: 'yes'
+        item_check:
+          type: has item
+          material: GOLD_INGOT
+      deny_commands:
+          - '[message]&7[&#F4C4F3&lС&#F5B5F4&lк&#F7A5F5&lу&#F896F7&lп&#F986F8&lщ&#FB77F9&lи&#FC67FA&lк&7] &8» &fНет необходимого предмета, либо кол-ва предметов для продажи!'
+    right_click_commands:
+    - '[player] ruda'
+    left_click_requirement:
+      requirements:
+        has_money:
+          type: string equals
+          input: '%checkitem_math:gold_ingot%'
+          output: 'yes'
+        item_check:
+          type: has item
+          material: GOLD_INGOT
+      deny_commands:
+          - '[message]&7[&#F4C4F3&lС&#F5B5F4&lк&#F7A5F5&lу&#F896F7&lп&#F986F8&lщ&#FB77F9&lи&#FC67FA&lк&7] &8» &fНет необходимого предмета, либо кол-ва предметов для продажи!'
+    left_click_commands:
+    - '[givemoney] %math_{checkitem_amount_mat:gold_ingot}*170%'
+    - '[console] minecraft:clear %player_name% gold_ingot'
+    - '[message]'
+    - '[message]&#9400FFМ&#A600FEа&#B1700Fг&#CA00FCа&#DB00FAз&#ED00F9и&#FF00F8н &1» &fВы успешно продали &6Золото'
+    - '[message]'
+    - '[refresh]'
+  '7':
+    material: DIAMOND
+    slot: 25
+    amount: 1
+    display_name: '&#9400FFА&#AF00FDл&#CA00FCм&#E400FAа&#FF00F8з&7 (ВСЁ)'
+    lore:
+    - ''
+    - '&8 ▪ &dЛКМ &8» &fПродать &dВСЁ&f за &d%math_{checkitem_amount_mat:iron_ingot}*475%$' 
+    - ''
+    - '&8 ▪ &5ПКМ &8» &fИзменить кол-во'
+    - '&7 ▸ &fПродать по &71 шт.'
+    - '&7 ▸ &fПродать по &716 шт.'
+    - '&7 ▸ &fПродать по &732 шт.'
+    - '&7 ▸ &fПродать по &764 шт.'
+    - '&7 ▸ &fПродать &aВСЁ'
+    - ''
+    - '&8 ▪ &fВаши Монеты: &d%vault_eco_balance_fixed%$'
+    - ''
+    right_click_commands:
+    - '[player] ruda'
+    left_click_requirement:
+      requirements:
+        has_money:
+          type: string equals
+          input: '%checkitem_math:diamond%'
+          output: 'yes'
+        item_check:
+          type: has item
+          material: DIAMOND
+      deny_commands:
+          - '[message]&7[&#F4C4F3&lС&#F5B5F4&lк&#F7A5F5&lу&#F896F7&lп&#F986F8&lщ&#FB77F9&lи&#FC67FA&lк&7] &8» &fНет необходимого предмета, либо кол-ва предметов для продажи!'
+    right_click_commands:
+    - '[player] ruda'
+    left_click_requirement:
+      requirements:
+        has_money:
+          type: string equals
+          input: '%checkitem_math:diamond%'
+          output: 'yes'
+        item_check:
+          type: has item
+          material: DIAMOND
+      deny_commands:
+          - '[message]&7[&#F4C4F3&lС&#F5B5F4&lк&#F7A5F5&lу&#F896F7&lп&#F986F8&lщ&#FB77F9&lи&#FC67FA&lк&7] &8» &fНет необходимого предмета, либо кол-ва предметов для продажи!'
+    left_click_commands:
+    - '[givemoney] %math_{checkitem_amount_mat:diamond}*475%'
+    - '[console] minecraft:clear %player_name% diamond'
+    - '[message]'
+    - '[message]&#9400FFМ&#A600FEа&#B4750Fг&#CA00FCа&#DB00FAз&#ED00F9и&#FF00F8н &1» &fВы успешно продали &6Алмазы'
+    - '[message]'
+    - '[refresh]'
+  '8':
+    material: EMERALD
+    slot: 30
+    amount: 1
+    display_name: '&#9400FFИ&#A600FEз&#B800FDу&#CA00FCм&#DB00FAр&#ED00F9у&#FF00F8д&7 (ВСЁ)'
+    lore:
+    - ''
+    - '&8 ▪ &dЛКМ &8» &fПродать &dВСЁ&f за &d%math_{checkitem_amount_mat:iron_ingot}*620%$' 
+    - ''
+    - '&8 ▪ &5ПКМ &8» &fИзменить кол-во'
+    - '&7 ▸ &fПродать по &71 шт.'
+    - '&7 ▸ &fПродать по &716 шт.'
+    - '&7 ▸ &fПродать по &732 шт.'
+    - '&7 ▸ &fПродать по &764 шт.'
+    - '&7 ▸ &fПродать &aВСЁ'
+    - ''
+    - '&8 ▪ &fВаши Монеты: &d%vault_eco_balance_fixed%$'
+    - ''
+    right_click_commands:
+    - '[player] ruda'
+    left_click_requirement:
+      requirements:
+        has_money:
+          type: string equals
+          input: '%checkitem_math:emerald%'
+          output: 'yes'
+        item_check:
+          type: has item
+          material: EMERALD
+      deny_commands:
+          - '[message]&7[&#F4C4F3&lС&#F5B5F4&lк&#F7A5F5&lу&#F896F7&lп&#F986F8&lщ&#FB77F9&lи&#FC67FA&lк&7] &8» &fНет необходимого предмета, либо кол-ва предметов для продажи!'
+    right_click_commands:
+    - '[player] ruda'
+    left_click_requirement:
+      requirements:
+        has_money:
+          type: string equals
+          input: '%checkitem_math:emerald%'
+          output: 'yes'
+        item_check:
+          type: has item
+          material: EMERALD
+      deny_commands:
+          - '[message]&7[&#F4C4F3&lС&#F5B5F4&lк&#F7A5F5&lу&#F896F7&lп&#F986F8&lщ&#FB77F9&lи&#FC67FA&lк&7] &8» &fНет необходимого предмета, либо кол-ва предметов для продажи!'
+    left_click_commands:
+    - '[givemoney] %math_{checkitem_amount_mat:emerald}*620%'
+    - '[console] minecraft:clear %player_name% emerald'
+    - '[message]'
+    - '[message]&#9400FFМ&#A600FEа&#B6200Fг&#CA00FCа&#DB00FAз&#ED00F9и&#FF00F8н &1» &fВы успешно продали &6Изумруды'
+    - '[message]'
+    - '[refresh]'
+  '9':
+    material: NETHERITE_INGOT
+    slot: 32
+    amount: 1
+    display_name: '&#9400FFН&#A600FEе&#B800FDз&#CA00FCе&#DB00FAр&#ED00F9и&#FF00F8т&7 (ВСЁ)'
+    lore:
+    - ''
+    - '&8 ▪ &dЛКМ &8» &fПродать &dВСЁ&f за &d%math_{checkitem_amount_mat:iron_ingot}*960%$' 
+    - ''
+    - '&8 ▪ &5ПКМ &8» &fИзменить кол-во'
+    - '&7 ▸ &fПродать по &71 шт.'
+    - '&7 ▸ &fПродать по &716 шт.'
+    - '&7 ▸ &fПродать по &732 шт.'
+    - '&7 ▸ &fПродать по &764 шт.'
+    - '&7 ▸ &fПродать &aВСЁ'
+    - ''
+    - '&8 ▪ &fВаши Монеты: &d%vault_eco_balance_fixed%$'
+    - ''
+    right_click_commands:
+    - '[player] ruda'
+    left_click_requirement:
+      requirements:
+        has_money:
+          type: string equals
+          input: '%checkitem_math:netherite_ingot%'
+          output: 'yes'
+        item_check:
+          type: has item
+          material: NETHERITE_INGOT
+      deny_commands:
+          - '[message]&7[&#F4C4F3&lС&#F5B5F4&lк&#F7A5F5&lу&#F896F7&lп&#F986F8&lщ&#FB77F9&lи&#FC67FA&lк&7] &8» &fНет необходимого предмета, либо кол-ва предметов для продажи!'
+    right_click_commands:
+    - '[player] ruda'
+    left_click_requirement:
+      requirements:
+        has_money:
+          type: string equals
+          input: '%checkitem_math:netherite_ingot%'
+          output: 'yes'
+        item_check:
+          type: has item
+          material: NETHERITE_INGOT
+      deny_commands:
+          - '[message]&7[&#F4C4F3&lС&#F5B5F4&lк&#F7A5F5&lу&#F896F7&lп&#F986F8&lщ&#FB77F9&lи&#FC67FA&lк&7] &8» &fНет необходимого предмета, либо кол-ва предметов для продажи!'
+    left_click_commands:
+    - '[givemoney] %math_{checkitem_amount_mat:netherite_ingot}*960%'
+    - '[console] minecraft:clear %player_name% netherite_ingot'
+    - '[message]'
+    - '[message]&7[&#F4C4F3&lС&#F5B5F4&lк&#F7A5F5&lу&#F896F7&lп&#F986F8&lщ&#FB77F9&lи&#FC67FA&lк&7] &8» &fВы успешно продали &dНезерит'
+    - '[message]'
+    - '[refresh]'
+  'back':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2VmMTE5ZjA4ODUxYTcyYTVmMTBmYmMzMjQ3ZDk1ZTFjMDA2MzYwZDJiNGY0MTJiMjNjZTA1NDA5Mjc1NmIwYyJ9fX0=
+    slot: 49
+    display_name: '&c&lНазад'
+    lore:
+    - ''
+    - '&8 ▪ &fНажав сюда, вы сможете'
+    - '&8 ▪ &fвернуться в прошлое меню.'
+    - ''
+    click_commands:
+    - '[openguimenu] seller'
+    - '[sound] BLOCK_NOTE_BLOCK_BASS'
+  'filler_glass':
+    material: BLACK_STAINED_GLASS_PANE
+    slots: [0-6,9,18,26-27,35,44,47-48,50-53]
+    display_name: '&l'
+  'filler_glass_2':
+    material: MAGENTA_STAINED_GLASS_PANE
+    slots: [7,8,17,36,45,46]
+    display_name: '&l'

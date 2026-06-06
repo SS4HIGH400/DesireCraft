@@ -1,0 +1,31 @@
+Commands:
+  Reload:
+    Description: Reloads the plugin and its configuration.
+  Clear:
+    Description: Clears the chat.
+    Console: CONSOLE
+    Unknown: UNKNOWN
+Messages:
+  Commands:
+    Reload:
+      Success: '&aConfig was reloaded.'
+    Clear:
+      Success: '&d&l[!] &fЧат был &aуспешно&f очищен игроком &5'
+  Chat:
+    AdDetected: '&cНельзя такое писать.'
+    BlockedWord: '&cНельзя такое писать.'
+    AdNotify: "&c%player tried to write an ad in chat. He wrote: \n&a %message"
+    NoOneListens: '&cВы одни.'
+  CommandResult:
+    NoPermission: '&4[ERROR] &7You don''t have permission for this! &c(%perm)'
+    WrongUsage: '&c[ERROR] &7Wrong usage! Please type &6%cmd help&7!'
+  AntiSpam:
+    Denied: '&7[&#FF00EE&lA&#F400F0&ln&#EA00F2&lt&#DF00F4&li&#D400F7&l-&#C900F9&lS&#BF00FB&lp&#B400FD&la&#A900FF&lm&7]
+      &8» &fПожалуйста, не спамьте в чат.'
+  Player:
+    Join: '%prefix%displayname%suffix &ejoined the game!'
+    Kick: '%prefix%displayname%suffix &ewas kicked from the game!'
+    Quit: '%prefix%displayname%suffix &eleft the game!'
+    JoinFirstTime: '%prefix%displayname%suffix &ejoined the server for the first time!'
+  UpdateFound: '&a[ChatEx]&7 A new update has been found on SpigotMC. Current version:
+    %oldversion New version: %newversion'

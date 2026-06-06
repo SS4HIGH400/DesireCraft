@@ -1,0 +1,27 @@
+
+EventType: "Paper"
+#Если вы используйте ядро PaperSpigot, то оставьте "Paper"
+#Если вы используйте ядро Spigot, то установите "Spigot"
+
+SendMessageToTarget: true #Писать ли сообщение игроку, при выдаче кастомного ТНТ
+DamageFromCustomTNT: #Уменьшение урона от Кастомных ТНТ
+  enable: true
+  chance: 50
+
+BlockData:
+  events: true
+
+Messages:
+  senderGive: 'Вы выдали: %type% x%amount% игроку %sender%'
+  targetGive: 'Вам выдано: %type% x%amount% игроком %target%'
+  configReloaded: '&aКонфигурация "types" перезагружена!'
+  playerNotFound: '&cИгрок не найден!'
+  requiredValue: '&cТребуется число!'
+  unknowTntType: '&cНеизвестный тип тнт!'
+  noPermission: '&cНедостаточно прав!'
+  onlyPlayer: 'Только игрок может выполнить эту команду!'
+
+License: "}%jzZ~9t91cw#dUF10D0A~x~|YUe~ijfemsW#4X~P~|%WggqqKMz?2JCBxGLXRS~" #Ключ лицензии, не изменять!
+
+#VK: vk.com/re4erka
+#DS: RE4ERKA#9798

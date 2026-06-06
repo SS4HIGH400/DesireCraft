@@ -1,0 +1,12 @@
+message:
+  success: "#0EC8E2[✔] &fВы #0EC8E2успешно &fвыдали предмет игроку &e{player}"
+  not_found: "#0EC8E2[✘] &fИгрока с таким никнеймом не найден"
+  usage: "&fИспользуйте: &e/IBItems give <предмет> <игрок> <количество>"
+  no_permission: "#0EC8E2[✘] &fУ вас нету #0EC8E2прав"
+  reload: "#0EC8E2[✔] &fПлагин #0EC8E2успешно &fперезагружен!"
+  player-receiver-trap: "#0EC8E2[✔] &fВы получили #0EC8E2Трапку!"
+  player-receiver-plast: "#0EC8E2[✔] &fВы получили #8130D5Пласт!"
+  player-receiver-dust: "#0EC8E2[✔] &fы получили #0EC8E2Явная пыль!"
+  player-receiver-disorientation: "#0EC8E2[✔] &fВы получили #0EC8E2Дезориентация"
+  player-receiver-snowball: "#0EC8E2[✔] &fВы получили #0EC8E2Снежок Заморозку!"
+  items-guard: "#0EC8E2[✘] &fВ этом регионе #0EC8E2запрещены &fуникальные предметы!"

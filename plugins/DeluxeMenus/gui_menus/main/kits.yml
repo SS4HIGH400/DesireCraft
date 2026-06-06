@@ -1,0 +1,751 @@
+menu_title: '[ᴛs] ▸ Наборы вещей'
+open_command:
+- kit
+- kits
+size: 53
+update_interval: 1
+open_commands:
+- '[sound] BLOCK_CHEST_OPEN'
+items:
+##########################################################################
+  'start':
+    material: CHEST
+    slot: 20
+    priority: 1
+    view_requirement:
+      requirements:
+        permission:
+          type: has permission
+          permission: essentials.kits.start
+        available:
+          type: string equals ignorecase
+          input: '%essentials_kit_is_available_start%'
+          output: 'yes'
+    display_name: '&fНабор &7▸ &#B3B3B3&lᴘ&#ABABAB&lʟ&#A4A4A4&lᴀ&#9C9C9C&lʏ&#959595&lᴇ&#8D8D8D&lʀ&f'
+    lore:
+    - ''
+    - ' &8▪ &fДанный набор &aдоступен&f для вас!'
+    - ''
+    - ' &8▪ &fНажмите по этому предмету,'
+    - ' &8▪ &fчтобы &dполучить&f свой набор.'
+    - ''
+    click_commands:
+    - '[close]'
+    - '[player] ekit start'
+    - '[console] minecraft:title %player_name% times 20 60 20'
+    - '[console] minecraft:title %player_name% subtitle {"text":"\u0412\u044b \u043f\u043e\u043b\u0443\u0447\u0438\u043b\u0438 \u0432\u0435\u0449\u0438."}'
+    - '[console] minecraft:title %player_name% title {"text":"\u0423\u0441\u043f\u0435\u0448\u043d\u043e!","bold":true,"color":"green"}'
+    - '[sound] ENTITY_ITEM_PICKUP'
+    - '[close]'
+    - '[refresh]'
+
+  'start_kd':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWQ0NTJiZmNkYzNlYTE0ZjllNjEyYjFjOTZhYmVmOTdjMTBlOTZjNzExNmVhMmE0YjFhNWRmOGQ0YWExNzJmOSJ9fX0=
+    slot: 20
+    priority: 2
+    update: true
+    view_requirement:
+      requirements:
+        permission:
+          type: has permission
+          permission: essentials.kits.start
+        available:
+          type: string equals ignorecase
+          input: '%essentials_kit_is_available_start%'
+          output: 'no'
+    display_name: '&fНабор &7▸ &#B3B3B3&lᴘ&#ABABAB&lʟ&#A4A4A4&lᴀ&#9C9C9C&lʏ&#959595&lᴇ&#8D8D8D&lʀ&f'
+    lore:
+    - ''
+    - ' &8▪ &fВы &cне можете&f взять этот набор.'
+    - ''
+    - ' &8▪ &fПолучить его снова, вы можете'
+    - ' &8▪ &fчерез &e%essentials_kit_time_until_available_start%'
+    - ''
+    click_commands:
+    - '[refresh]'
+
+  'start_no':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvM2VkMWFiYTczZjYzOWY0YmM0MmJkNDgxOTZjNzE1MTk3YmUyNzEyYzNiOTYyYzk3ZWJmOWU5ZWQ4ZWZhMDI1In19fQ==
+    slot: 20
+    priority: 3
+    display_name: '&fНабор &7▸ &#B3B3B3&lᴘ&#ABABAB&lʟ&#A4A4A4&lᴀ&#9C9C9C&lʏ&#959595&lᴇ&#8D8D8D&lʀ&f'
+    lore:
+    - ''
+    - ' &8▪ &fВы &cне можете&f взять этот набор.'
+    - ''
+    - ' &8▪ &fДля получения набора, купите'
+    - ' &8▪ &fэтот донат на сайте &#EF89FF&lᴛ&#E67EFF&lʀ&#DD72FF&lᴜ&#D367FF&ls&#CA5BFF&lᴛ&#C150FF&ls&#B845FF&lᴘ&#AE39FF&lᴀ&#A52EFF&lᴄ&#9C22FF&lᴇ&#9317FF&l.&#890BFF&ls&#8000FF&lᴜ'
+    - ''
+    click_commands:
+    - '[close]'
+    - '[sound] BLOCK_NOTE_BLOCK_BASS'
+##########################################################################
+  'wander':
+    material: CHEST
+    slot: 21
+    priority: 1
+    view_requirement:
+      requirements:
+        permission:
+          type: has permission
+          permission: essentials.kits.wander
+        available:
+          type: string equals ignorecase
+          input: '%essentials_kit_is_available_wander%'
+          output: 'yes'
+    display_name: '&fНабор &7▸ &#08FB5D&lᴡ&#0BFC4A&lᴀ&#0EFD38&lɴ&#12FD25&lᴅ&#15FE13&lᴇ&#18FF00&lʀ'
+    lore:
+    - ''
+    - ' &8▪ &fДанный набор &aдоступен&f для вас!'
+    - ''
+    - ' &8▪ &fНажмите по этому предмету,'
+    - ' &8▪ &fчтобы &dполучить&f свой набор.'
+    - ''
+    click_commands:
+    - '[close]'
+    - '[player] ekit wander'
+    - '[console] minecraft:title %player_name% times 20 60 20'
+    - '[console] minecraft:title %player_name% subtitle {"text":"\u0412\u044b \u043f\u043e\u043b\u0443\u0447\u0438\u043b\u0438 \u0432\u0435\u0449\u0438."}'
+    - '[console] minecraft:title %player_name% title {"text":"\u0423\u0441\u043f\u0435\u0448\u043d\u043e!","bold":true,"color":"green"}'
+    - '[sound] ENTITY_ITEM_PICKUP'
+    - '[close]'
+    - '[refresh]'
+
+  'wander_kd':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWQ0NTJiZmNkYzNlYTE0ZjllNjEyYjFjOTZhYmVmOTdjMTBlOTZjNzExNmVhMmE0YjFhNWRmOGQ0YWExNzJmOSJ9fX0=
+    slot: 21
+    priority: 2
+    update: true
+    view_requirement:
+      requirements:
+        permission:
+          type: has permission
+          permission: essentials.kits.wander
+        available:
+          type: string equals ignorecase
+          input: '%essentials_kit_is_available_wander%'
+          output: 'no'
+    display_name: '&fНабор &7▸ &#08FB5D&lᴡ&#0BFC4A&lᴀ&#0EFD38&lɴ&#12FD25&lᴅ&#15FE13&lᴇ&#18FF00&lʀ'
+    lore:
+    - ''
+    - ' &8▪ &fВы &cне можете&f взять этот набор.'
+    - ''
+    - ' &8▪ &fПолучить его снова, вы можете'
+    - ' &8▪ &fчерез &e%essentials_kit_time_until_available_wander%'
+    - ''
+    click_commands:
+    - '[refresh]'
+
+  'wander_no':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvM2VkMWFiYTczZjYzOWY0YmM0MmJkNDgxOTZjNzE1MTk3YmUyNzEyYzNiOTYyYzk3ZWJmOWU5ZWQ4ZWZhMDI1In19fQ==
+    slot: 21
+    priority: 3
+    display_name: '&fНабор &7▸ &#08FB5D&lᴡ&#0BFC4A&lᴀ&#0EFD38&lɴ&#12FD25&lᴅ&#15FE13&lᴇ&#18FF00&lʀ'
+    lore:
+    - ''
+    - ' &8▪ &fВы &cне можете&f взять этот набор.'
+    - ''
+    - ' &8▪ &fДля получения набора, купите'
+    - ' &8▪ &fэтот донат на сайте &#EF89FF&lᴛ&#E67EFF&lʀ&#DD72FF&lᴜ&#D367FF&ls&#CA5BFF&lᴛ&#C150FF&ls&#B845FF&lᴘ&#AE39FF&lᴀ&#A52EFF&lᴄ&#9C22FF&lᴇ&#9317FF&l.&#890BFF&ls&#8000FF&lᴜ'
+    - ''
+    click_commands:
+    - '[close]'
+    - '[sound] BLOCK_NOTE_BLOCK_BASS'
+##########################################################################
+  'traper':
+    material: CHEST
+    slot: 22
+    priority: 1
+    view_requirement:
+      requirements:
+        permission:
+          type: has permission
+          permission: essentials.kits.traper
+        available:
+          type: string equals ignorecase
+          input: '%essentials_kit_is_available_traper%'
+          output: 'yes'
+    display_name: '&fНабор &7▸ &#FBEB08&lᴛ&#FCD906&lʀ&#FDC705&lᴀ&#FDB503&lᴘ&#FEA302&lᴇ&#FF9100&lʀ'
+    lore:
+    - ''
+    - ' &8▪ &fДанный набор &aдоступен&f для вас!'
+    - ''
+    - ' &8▪ &fНажмите по этому предмету,'
+    - ' &8▪ &fчтобы &dполучить&f свой набор.'
+    - ''
+    click_commands:
+    - '[close]'
+    - '[player] ekit traper'
+    - '[console] minecraft:title %player_name% times 20 60 20'
+    - '[console] minecraft:title %player_name% subtitle {"text":"\u0412\u044b \u043f\u043e\u043b\u0443\u0447\u0438\u043b\u0438 \u0432\u0435\u0449\u0438."}'
+    - '[console] minecraft:title %player_name% title {"text":"\u0423\u0441\u043f\u0435\u0448\u043d\u043e!","bold":true,"color":"green"}'
+    - '[sound] ENTITY_ITEM_PICKUP'
+    - '[close]'
+    - '[refresh]'
+
+  'traper_kd':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWQ0NTJiZmNkYzNlYTE0ZjllNjEyYjFjOTZhYmVmOTdjMTBlOTZjNzExNmVhMmE0YjFhNWRmOGQ0YWExNzJmOSJ9fX0=
+    slot: 22
+    priority: 2
+    update: true
+    view_requirement:
+      requirements:
+        permission:
+          type: has permission
+          permission: essentials.kits.traper
+        available:
+          type: string equals ignorecase
+          input: '%essentials_kit_is_available_traper%'
+          output: 'no'
+    display_name: '&fНабор &7▸ &#FBEB08&lᴛ&#FCD906&lʀ&#FDC705&lᴀ&#FDB503&lᴘ&#FEA302&lᴇ&#FF9100&lʀ'
+    lore:
+    - ''
+    - ' &8▪ &fВы &cне можете&f взять этот набор.'
+    - ''
+    - ' &8▪ &fПолучить его снова, вы можете'
+    - ' &8▪ &fчерез &e%essentials_kit_time_until_available_traper%'
+    - ''
+    click_commands:
+    - '[refresh]'
+
+  'traper_no':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvM2VkMWFiYTczZjYzOWY0YmM0MmJkNDgxOTZjNzE1MTk3YmUyNzEyYzNiOTYyYzk3ZWJmOWU5ZWQ4ZWZhMDI1In19fQ==
+    slot: 22
+    priority: 3
+    display_name: '&fНабор &7▸ &#FBEB08&lᴛ&#FCD906&lʀ&#FDC705&lᴀ&#FDB503&lᴘ&#FEA302&lᴇ&#FF9100&lʀ'
+    lore:
+    - ''
+    - ' &8▪ &fВы &cне можете&f взять этот набор.'
+    - ''
+    - ' &8▪ &fДля получения набора, купите'
+    - ' &8▪ &fэтот донат на сайте &#EF89FF&lᴛ&#E67EFF&lʀ&#DD72FF&lᴜ&#D367FF&ls&#CA5BFF&lᴛ&#C150FF&ls&#B845FF&lᴘ&#AE39FF&lᴀ&#A52EFF&lᴄ&#9C22FF&lᴇ&#9317FF&l.&#890BFF&ls&#8000FF&lᴜ'
+    - ''
+    click_commands:
+    - '[close]'
+    - '[sound] BLOCK_NOTE_BLOCK_BASS'
+##########################################################################
+  'gothic':
+    material: CHEST
+    slot: 23
+    priority: 1
+    view_requirement:
+      requirements:
+        permission:
+          type: has permission
+          permission: essentials.kits.gothic
+        available:
+          type: string equals ignorecase
+          input: '%essentials_kit_is_available_gothic%'
+          output: 'yes'
+    display_name: '&fНабор &7▸ &#FB08A6&lɢ&#F306B8&lᴏ&#EB05CA&lᴛ&#E203DB&lʜ&#DA02ED&lɪ&#D200FF&lᴄ'
+    lore:
+    - ''
+    - ' &8▪ &fДанный набор &aдоступен&f для вас!'
+    - ''
+    - ' &8▪ &fНажмите по этому предмету,'
+    - ' &8▪ &fчтобы &dполучить&f свой набор.'
+    - ''
+    click_commands:
+    - '[close]'
+    - '[player] ekit gothic'
+    - '[console] minecraft:title %player_name% times 20 60 20'
+    - '[console] minecraft:title %player_name% subtitle {"text":"\u0412\u044b \u043f\u043e\u043b\u0443\u0447\u0438\u043b\u0438 \u0432\u0435\u0449\u0438."}'
+    - '[console] minecraft:title %player_name% title {"text":"\u0423\u0441\u043f\u0435\u0448\u043d\u043e!","bold":true,"color":"green"}'
+    - '[sound] ENTITY_ITEM_PICKUP'
+    - '[close]'
+    - '[refresh]'
+
+  'gothic_kd':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWQ0NTJiZmNkYzNlYTE0ZjllNjEyYjFjOTZhYmVmOTdjMTBlOTZjNzExNmVhMmE0YjFhNWRmOGQ0YWExNzJmOSJ9fX0=
+    slot: 23
+    priority: 2
+    update: true
+    view_requirement:
+      requirements:
+        permission:
+          type: has permission
+          permission: essentials.kits.gothic
+        available:
+          type: string equals ignorecase
+          input: '%essentials_kit_is_available_gothic%'
+          output: 'no'
+    display_name: '&fНабор &7▸ &#FB08A6&lɢ&#F306B8&lᴏ&#EB05CA&lᴛ&#E203DB&lʜ&#DA02ED&lɪ&#D200FF&lᴄ'
+    lore:
+    - ''
+    - ' &8▪ &fВы &cне можете&f взять этот набор.'
+    - ''
+    - ' &8▪ &fПолучить его снова, вы можете'
+    - ' &8▪ &fчерез &e%essentials_kit_time_until_available_gothic%'
+    - ''
+    click_commands:
+    - '[refresh]'
+
+  'gothic_no':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvM2VkMWFiYTczZjYzOWY0YmM0MmJkNDgxOTZjNzE1MTk3YmUyNzEyYzNiOTYyYzk3ZWJmOWU5ZWQ4ZWZhMDI1In19fQ==
+    slot: 23
+    priority: 3
+    display_name: '&fНабор &7▸ &#FB08A6&lɢ&#F306B8&lᴏ&#EB05CA&lᴛ&#E203DB&lʜ&#DA02ED&lɪ&#D200FF&lᴄ'
+    lore:
+    - ''
+    - ' &8▪ &fВы &cне можете&f взять этот набор.'
+    - ''
+    - ' &8▪ &fДля получения набора, купите'
+    - ' &8▪ &fэтот донат на сайте &#EF89FF&lᴛ&#E67EFF&lʀ&#DD72FF&lᴜ&#D367FF&ls&#CA5BFF&lᴛ&#C150FF&ls&#B845FF&lᴘ&#AE39FF&lᴀ&#A52EFF&lᴄ&#9C22FF&lᴇ&#9317FF&l.&#890BFF&ls&#8000FF&lᴜ'
+    - ''
+    click_commands:
+    - '[close]'
+    - '[sound] BLOCK_NOTE_BLOCK_BASS'
+##########################################################################
+  'deluxe':
+    material: CHEST
+    slot: 24
+    priority: 1
+    view_requirement:
+      requirements:
+        permission:
+          type: has permission
+          permission: essentials.kits.deluxe
+        available:
+          type: string equals ignorecase
+          input: '%essentials_kit_is_available_deluxe%'
+          output: 'yes'
+    display_name: '&fНабор &7▸ &#088FFB&lᴅ&#06A5FC&lᴇ&#05BCFD&lʟ&#03D2FD&lᴜ&#02E9FE&lx&#00FFFF&lᴇ'
+    lore:
+    - ''
+    - ' &8▪ &fДанный набор &aдоступен&f для вас!'
+    - ''
+    - ' &8▪ &fНажмите по этому предмету,'
+    - ' &8▪ &fчтобы &dполучить&f свой набор.'
+    - ''
+    click_commands:
+    - '[close]'
+    - '[player] ekit deluxe'
+    - '[console] minecraft:title %player_name% times 20 60 20'
+    - '[console] minecraft:title %player_name% subtitle {"text":"\u0412\u044b \u043f\u043e\u043b\u0443\u0447\u0438\u043b\u0438 \u0432\u0435\u0449\u0438."}'
+    - '[console] minecraft:title %player_name% title {"text":"\u0423\u0441\u043f\u0435\u0448\u043d\u043e!","bold":true,"color":"green"}'
+    - '[sound] ENTITY_ITEM_PICKUP'
+    - '[close]'
+    - '[refresh]'
+
+  'deluxe_kd':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWQ0NTJiZmNkYzNlYTE0ZjllNjEyYjFjOTZhYmVmOTdjMTBlOTZjNzExNmVhMmE0YjFhNWRmOGQ0YWExNzJmOSJ9fX0=
+    slot: 24
+    priority: 2
+    update: true
+    view_requirement:
+      requirements:
+        permission:
+          type: has permission
+          permission: essentials.kits.deluxe
+        available:
+          type: string equals ignorecase
+          input: '%essentials_kit_is_available_deluxe%'
+          output: 'no'
+    display_name: '&fНабор &7▸ &#088FFB&lᴅ&#06A5FC&lᴇ&#05BCFD&lʟ&#03D2FD&lᴜ&#02E9FE&lx&#00FFFF&lᴇ'
+    lore:
+    - ''
+    - ' &8▪ &fВы &cне можете&f взять этот набор.'
+    - ''
+    - ' &8▪ &fПолучить его снова, вы можете'
+    - ' &8▪ &fчерез &e%essentials_kit_time_until_available_deluxe%'
+    - ''
+    click_commands:
+    - '[refresh]'
+
+  'deluxe_no':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvM2VkMWFiYTczZjYzOWY0YmM0MmJkNDgxOTZjNzE1MTk3YmUyNzEyYzNiOTYyYzk3ZWJmOWU5ZWQ4ZWZhMDI1In19fQ==
+    slot: 24
+    priority: 3
+    display_name: '&fНабор &7▸ &#088FFB&lᴅ&#06A5FC&lᴇ&#05BCFD&lʟ&#03D2FD&lᴜ&#02E9FE&lx&#00FFFF&lᴇ'
+    lore:
+    - ''
+    - ' &8▪ &fВы &cне можете&f взять этот набор.'
+    - ''
+    - ' &8▪ &fДля получения набора, купите'
+    - ' &8▪ &fэтот донат на сайте &#EF89FF&lᴛ&#E67EFF&lʀ&#DD72FF&lᴜ&#D367FF&ls&#CA5BFF&lᴛ&#C150FF&ls&#B845FF&lᴘ&#AE39FF&lᴀ&#A52EFF&lᴄ&#9C22FF&lᴇ&#9317FF&l.&#890BFF&ls&#8000FF&lᴜ'
+    - ''
+    click_commands:
+    - '[close]'
+    - '[sound] BLOCK_NOTE_BLOCK_BASS'
+##########################################################################
+  'griefer':
+    material: CHEST
+    slot: 29
+    priority: 1
+    view_requirement:
+      requirements:
+        permission:
+          type: has permission
+          permission: essentials.kits.griefer
+        available:
+          type: string equals ignorecase
+          input: '%essentials_kit_is_available_griefer%'
+          output: 'yes'
+    display_name: '&fНабор &7▸ &#FF2B33&lɢ&#FF3432&lʀ&#FF3D31&lɪ&#FF4630&lᴇ&#FF4E2F&lꜰ&#FF572E&lᴇ&#FF602D&lʀ'
+    lore:
+    - ''
+    - ' &8▪ &fДанный набор &aдоступен&f для вас!'
+    - ''
+    - ' &8▪ &fНажмите по этому предмету,'
+    - ' &8▪ &fчтобы &dполучить&f свой набор.'
+    - ''
+    click_commands:
+    - '[close]'
+    - '[player] ekit griefer'
+    - '[console] minecraft:title %player_name% times 20 60 20'
+    - '[console] minecraft:title %player_name% subtitle {"text":"\u0412\u044b \u043f\u043e\u043b\u0443\u0447\u0438\u043b\u0438 \u0432\u0435\u0449\u0438."}'
+    - '[console] minecraft:title %player_name% title {"text":"\u0423\u0441\u043f\u0435\u0448\u043d\u043e!","bold":true,"color":"green"}'
+    - '[sound] ENTITY_ITEM_PICKUP'
+    - '[close]'
+    - '[refresh]'
+
+  'griefer_kd':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWQ0NTJiZmNkYzNlYTE0ZjllNjEyYjFjOTZhYmVmOTdjMTBlOTZjNzExNmVhMmE0YjFhNWRmOGQ0YWExNzJmOSJ9fX0=
+    slot: 29
+    priority: 2
+    update: true
+    view_requirement:
+      requirements:
+        permission:
+          type: has permission
+          permission: essentials.kits.griefer
+        available:
+          type: string equals ignorecase
+          input: '%essentials_kit_is_available_griefer%'
+          output: 'no'
+    display_name: '&fНабор &7▸ &#FF2B33&lɢ&#FF3432&lʀ&#FF3D31&lɪ&#FF4630&lᴇ&#FF4E2F&lꜰ&#FF572E&lᴇ&#FF602D&lʀ'
+    lore:
+    - ''
+    - ' &8▪ &fВы &cне можете&f взять этот набор.'
+    - ''
+    - ' &8▪ &fПолучить его снова, вы можете'
+    - ' &8▪ &fчерез &e%essentials_kit_time_until_available_griefer%'
+    - ''
+    click_commands:
+    - '[refresh]'
+
+  'griefer_no':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvM2VkMWFiYTczZjYzOWY0YmM0MmJkNDgxOTZjNzE1MTk3YmUyNzEyYzNiOTYyYzk3ZWJmOWU5ZWQ4ZWZhMDI1In19fQ==
+    slot: 29
+    priority: 3
+    display_name: '&fНабор &7▸ &#FF2B33&lɢ&#FF3432&lʀ&#FF3D31&lɪ&#FF4630&lᴇ&#FF4E2F&lꜰ&#FF572E&lᴇ&#FF602D&lʀ'
+    lore:
+    - ''
+    - ' &8▪ &fВы &cне можете&f взять этот набор.'
+    - ''
+    - ' &8▪ &fДля получения набора, купите'
+    - ' &8▪ &fэтот донат на сайте &#EF89FF&lᴛ&#E67EFF&lʀ&#DD72FF&lᴜ&#D367FF&ls&#CA5BFF&lᴛ&#C150FF&ls&#B845FF&lᴘ&#AE39FF&lᴀ&#A52EFF&lᴄ&#9C22FF&lᴇ&#9317FF&l.&#890BFF&ls&#8000FF&lᴜ'
+    - ''
+    click_commands:
+    - '[close]'
+    - '[sound] BLOCK_NOTE_BLOCK_BASS'
+##########################################################################
+  'saphire':
+    material: CHEST
+    slot: 30
+    priority: 1
+    view_requirement:
+      requirements:
+        permission:
+          type: has permission
+          permission: essentials.kits.saphire
+        available:
+          type: string equals ignorecase
+          input: '%essentials_kit_is_available_saphire%'
+          output: 'yes'
+    display_name: '&fНабор &7▸ &#00FF3B&ls&#12FF4C&lᴀ&#25FF5D&lᴘ&#37FF6E&lᴘ&#4AFF7F&lʜ&#5CFF90&lɪ&#6FFFA1&lʀ&#81FFB2&lᴇ'
+    lore:
+    - ''
+    - ' &8▪ &fДанный набор &aдоступен&f для вас!'
+    - ''
+    - ' &8▪ &fНажмите по этому предмету,'
+    - ' &8▪ &fчтобы &dполучить&f свой набор.'
+    - ''
+    click_commands:
+    - '[close]'
+    - '[player] ekit saphire'
+    - '[console] minecraft:title %player_name% times 20 60 20'
+    - '[console] minecraft:title %player_name% subtitle {"text":"\u0412\u044b \u043f\u043e\u043b\u0443\u0447\u0438\u043b\u0438 \u0432\u0435\u0449\u0438."}'
+    - '[console] minecraft:title %player_name% title {"text":"\u0423\u0441\u043f\u0435\u0448\u043d\u043e!","bold":true,"color":"green"}'
+    - '[sound] ENTITY_ITEM_PICKUP'
+    - '[close]'
+    - '[refresh]'
+
+  'saphire_kd':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWQ0NTJiZmNkYzNlYTE0ZjllNjEyYjFjOTZhYmVmOTdjMTBlOTZjNzExNmVhMmE0YjFhNWRmOGQ0YWExNzJmOSJ9fX0=
+    slot: 30
+    priority: 2
+    update: true
+    view_requirement:
+      requirements:
+        permission:
+          type: has permission
+          permission: essentials.kits.saphire
+        available:
+          type: string equals ignorecase
+          input: '%essentials_kit_is_available_saphire%'
+          output: 'no'
+    display_name: '&fНабор &7▸ &#00FF3B&ls&#12FF4C&lᴀ&#25FF5D&lᴘ&#37FF6E&lᴘ&#4AFF7F&lʜ&#5CFF90&lɪ&#6FFFA1&lʀ&#81FFB2&lᴇ'
+    lore:
+    - ''
+    - ' &8▪ &fВы &cне можете&f взять этот набор.'
+    - ''
+    - ' &8▪ &fПолучить его снова, вы можете'
+    - ' &8▪ &fчерез &e%essentials_kit_time_until_available_saphire%'
+    - ''
+    click_commands:
+    - '[refresh]'
+
+  'saphire_no':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvM2VkMWFiYTczZjYzOWY0YmM0MmJkNDgxOTZjNzE1MTk3YmUyNzEyYzNiOTYyYzk3ZWJmOWU5ZWQ4ZWZhMDI1In19fQ==
+    slot: 30
+    priority: 3
+    display_name: '&fНабор &7▸ &#00FF3B&ls&#12FF4C&lᴀ&#25FF5D&lᴘ&#37FF6E&lᴘ&#4AFF7F&lʜ&#5CFF90&lɪ&#6FFFA1&lʀ&#81FFB2&lᴇ'
+    lore:
+    - ''
+    - ' &8▪ &fВы &cне можете&f взять этот набор.'
+    - ''
+    - ' &8▪ &fДля получения набора, купите'
+    - ' &8▪ &fэтот донат на сайте &#EF89FF&lᴛ&#E67EFF&lʀ&#DD72FF&lᴜ&#D367FF&ls&#CA5BFF&lᴛ&#C150FF&ls&#B845FF&lᴘ&#AE39FF&lᴀ&#A52EFF&lᴄ&#9C22FF&lᴇ&#9317FF&l.&#890BFF&ls&#8000FF&lᴜ'
+    - ''
+    click_commands:
+    - '[close]'
+    - '[sound] BLOCK_NOTE_BLOCK_BASS'
+##########################################################################
+  'space':
+    material: CHEST
+    slot: 31
+    priority: 1
+    view_requirement:
+      requirements:
+        permission:
+          type: has permission
+          permission: essentials.kits.space
+        available:
+          type: string equals ignorecase
+          input: '%essentials_kit_is_available_space%'
+          output: 'yes'
+    display_name: '&fНабор &7▸ &#BE00FF&ls&#BD20FF&lᴘ&#BD41FF&lᴀ&#BC61FF&lᴄ&#BB81FF&lᴇ'
+    lore:
+    - ''
+    - ' &8▪ &fДанный набор &aдоступен&f для вас!'
+    - ''
+    - ' &8▪ &fНажмите по этому предмету,'
+    - ' &8▪ &fчтобы &dполучить&f свой набор.'
+    - ''
+    click_commands:
+    - '[close]'
+    - '[player] ekit space'
+    - '[console] minecraft:title %player_name% times 20 60 20'
+    - '[console] minecraft:title %player_name% subtitle {"text":"\u0412\u044b \u043f\u043e\u043b\u0443\u0447\u0438\u043b\u0438 \u0432\u0435\u0449\u0438."}'
+    - '[console] minecraft:title %player_name% title {"text":"\u0423\u0441\u043f\u0435\u0448\u043d\u043e!","bold":true,"color":"green"}'
+    - '[sound] ENTITY_ITEM_PICKUP'
+    - '[close]'
+    - '[refresh]'
+
+  'space_kd':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWQ0NTJiZmNkYzNlYTE0ZjllNjEyYjFjOTZhYmVmOTdjMTBlOTZjNzExNmVhMmE0YjFhNWRmOGQ0YWExNzJmOSJ9fX0=
+    slot: 31
+    priority: 2
+    update: true
+    view_requirement:
+      requirements:
+        permission:
+          type: has permission
+          permission: essentials.kits.space
+        available:
+          type: string equals ignorecase
+          input: '%essentials_kit_is_available_space%'
+          output: 'no'
+    display_name: '&fНабор &7▸ &#BE00FF&ls&#BD20FF&lᴘ&#BD41FF&lᴀ&#BC61FF&lᴄ&#BB81FF&lᴇ'
+    lore:
+    - ''
+    - ' &8▪ &fВы &cне можете&f взять этот набор.'
+    - ''
+    - ' &8▪ &fПолучить его снова, вы можете'
+    - ' &8▪ &fчерез &e%essentials_kit_time_until_available_space%'
+    - ''
+    click_commands:
+    - '[refresh]'
+
+  'space_no':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvM2VkMWFiYTczZjYzOWY0YmM0MmJkNDgxOTZjNzE1MTk3YmUyNzEyYzNiOTYyYzk3ZWJmOWU5ZWQ4ZWZhMDI1In19fQ==
+    slot: 31
+    priority: 3
+    display_name: '&fНабор &7▸ &#BE00FF&ls&#BD20FF&lᴘ&#BD41FF&lᴀ&#BC61FF&lᴄ&#BB81FF&lᴇ'
+    lore:
+    - ''
+    - ' &8▪ &fВы &cне можете&f взять этот набор.'
+    - ''
+    - ' &8▪ &fДля получения набора, купите'
+    - ' &8▪ &fэтот донат на сайте &#EF89FF&lᴛ&#E67EFF&lʀ&#DD72FF&lᴜ&#D367FF&ls&#CA5BFF&lᴛ&#C150FF&ls&#B845FF&lᴘ&#AE39FF&lᴀ&#A52EFF&lᴄ&#9C22FF&lᴇ&#9317FF&l.&#890BFF&ls&#8000FF&lᴜ'
+    - ''
+    click_commands:
+    - '[close]'
+    - '[sound] BLOCK_NOTE_BLOCK_BASS'
+##########################################################################
+  'kp':
+    material: CHEST
+    slot: 32
+    priority: 1
+    view_requirement:
+      requirements:
+        permission:
+          type: has permission
+          permission: essentials.kits.kp
+        available:
+          type: string equals ignorecase
+          input: '%essentials_kit_is_available_kp%'
+          output: 'yes'
+    display_name: '&fНабор &7▸ &#FFCC89&lᴋ&#FFC37E&lо&#FFBB74&lʍ&#FFB269&lᴀ&#FFAA5F&lн&#FFA154&lд&#FF994A&lᴀ &#FF903F&lп&#FF8835&lр&#FF7F2A&lо&#FF7720&lᴇ&#FF6E15&lᴋ&#FF660B&lᴛ&#FF5D00&lᴀ'
+    lore:
+    - ''
+    - ' &8▪ &fДанный набор &aдоступен&f для вас!'
+    - ''
+    - ' &8▪ &fНажмите по этому предмету,'
+    - ' &8▪ &fчтобы &dполучить&f свой набор.'
+    - ''
+    click_commands:
+    - '[close]'
+    - '[player] ekit kp'
+    - '[console] minecraft:title %player_name% times 20 60 20'
+    - '[console] minecraft:title %player_name% subtitle {"text":"\u0412\u044b \u043f\u043e\u043b\u0443\u0447\u0438\u043b\u0438 \u0432\u0435\u0449\u0438."}'
+    - '[console] minecraft:title %player_name% title {"text":"\u0423\u0441\u043f\u0435\u0448\u043d\u043e!","bold":true,"color":"green"}'
+    - '[sound] ENTITY_ITEM_PICKUP'
+    - '[close]'
+    - '[refresh]'
+
+  'kp_kd':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWQ0NTJiZmNkYzNlYTE0ZjllNjEyYjFjOTZhYmVmOTdjMTBlOTZjNzExNmVhMmE0YjFhNWRmOGQ0YWExNzJmOSJ9fX0=
+    slot: 32
+    priority: 2
+    update: true
+    view_requirement:
+      requirements:
+        permission:
+          type: has permission
+          permission: essentials.kits.kp
+        available:
+          type: string equals ignorecase
+          input: '%essentials_kit_is_available_kp%'
+          output: 'no'
+    display_name: '&fНабор &7▸ &#FFCC89&lᴋ&#FFC37E&lо&#FFBB74&lʍ&#FFB269&lᴀ&#FFAA5F&lн&#FFA154&lд&#FF994A&lᴀ &#FF903F&lп&#FF8835&lр&#FF7F2A&lо&#FF7720&lᴇ&#FF6E15&lᴋ&#FF660B&lᴛ&#FF5D00&lᴀ'
+    lore:
+    - ''
+    - ' &8▪ &fВы &cне можете&f взять этот набор.'
+    - ''
+    - ' &8▪ &fПолучить его снова, вы можете'
+    - ' &8▪ &fчерез &e%essentials_kit_time_until_available_kp%'
+    - ''
+    click_commands:
+    - '[refresh]'
+
+  'kp_no':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvM2VkMWFiYTczZjYzOWY0YmM0MmJkNDgxOTZjNzE1MTk3YmUyNzEyYzNiOTYyYzk3ZWJmOWU5ZWQ4ZWZhMDI1In19fQ==
+    slot: 32
+    priority: 3
+    display_name: '&fНабор &7▸ &#FFCC89&lᴋ&#FFC37E&lо&#FFBB74&lʍ&#FFB269&lᴀ&#FFAA5F&lн&#FFA154&lд&#FF994A&lᴀ &#FF903F&lп&#FF8835&lр&#FF7F2A&lо&#FF7720&lᴇ&#FF6E15&lᴋ&#FF660B&lᴛ&#FF5D00&lᴀ'
+    lore:
+    - ''
+    - ' &8▪ &fВы &cне можете&f взять этот набор.'
+    - ''
+    - ' &8▪ &fДанный набор разработан только'
+    - ' &8▪ &fдля &cютуберов&f, &aхелперов&f и &dмодеров&f.'
+    - ''
+    click_commands:
+    - '[close]'
+    - '[sound] BLOCK_NOTE_BLOCK_BASS'
+##########################################################################
+  'plus':
+    material: CHEST
+    slot: 33
+    priority: 1
+    view_requirement:
+      requirements:
+        permission:
+          type: has permission
+          permission: essentials.kits.plus
+        available:
+          type: string equals ignorecase
+          input: '%essentials_kit_is_available_plus%'
+          output: 'yes'
+    display_name: '&fНабор &7▸ &#F4FF89&lᴘ&#F7FF5B&lʟ&#F9FF2E&lᴜ&#FCFF00&ls'
+    lore:
+    - ''
+    - ' &8▪ &fДанный набор &aдоступен&f для вас!'
+    - ''
+    - ' &8▪ &fНажмите по этому предмету,'
+    - ' &8▪ &fчтобы &dполучить&f свой набор.'
+    - ''
+    click_commands:
+    - '[close]'
+    - '[player] ekit plus'
+    - '[console] minecraft:title %player_name% times 20 60 20'
+    - '[console] minecraft:title %player_name% subtitle {"text":"\u0412\u044b \u043f\u043e\u043b\u0443\u0447\u0438\u043b\u0438 \u0432\u0435\u0449\u0438."}'
+    - '[console] minecraft:title %player_name% title {"text":"\u0423\u0441\u043f\u0435\u0448\u043d\u043e!","bold":true,"color":"green"}'
+    - '[sound] ENTITY_ITEM_PICKUP'
+    - '[close]'
+    - '[refresh]'
+
+  'plus_kd':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWQ0NTJiZmNkYzNlYTE0ZjllNjEyYjFjOTZhYmVmOTdjMTBlOTZjNzExNmVhMmE0YjFhNWRmOGQ0YWExNzJmOSJ9fX0=
+    slot: 33
+    priority: 2
+    update: true
+    view_requirement:
+      requirements:
+        permission:
+          type: has permission
+          permission: essentials.kits.plus
+        available:
+          type: string equals ignorecase
+          input: '%essentials_kit_is_available_plus%'
+          output: 'no'
+    display_name: '&fНабор &7▸ &#F4FF89&lᴘ&#F7FF5B&lʟ&#F9FF2E&lᴜ&#FCFF00&ls'
+    lore:
+    - ''
+    - ' &8▪ &fВы &cне можете&f взять этот набор.'
+    - ''
+    - ' &8▪ &fПолучить его снова, вы можете'
+    - ' &8▪ &fчерез &e%essentials_kit_time_until_available_plus%'
+    - ''
+    click_commands:
+    - '[refresh]'
+
+  'plus_no':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvM2VkMWFiYTczZjYzOWY0YmM0MmJkNDgxOTZjNzE1MTk3YmUyNzEyYzNiOTYyYzk3ZWJmOWU5ZWQ4ZWZhMDI1In19fQ==
+    slot: 33
+    priority: 3
+    display_name: '&fНабор &7▸ &#F4FF89&lᴘ&#F7FF5B&lʟ&#F9FF2E&lᴜ&#FCFF00&ls'
+    lore:
+    - ''
+    - ' &8▪ &fВы &cне можете&f взять этот набор.'
+    - ''
+    - ' &8▪ &fДля получения набора, купите'
+    - ' &8▪ &fэтот &a&nподписку&r&f на сайте &#EF89FF&lᴛ&#E67EFF&lʀ&#DD72FF&lᴜ&#D367FF&ls&#CA5BFF&lᴛ&#C150FF&ls&#B845FF&lᴘ&#AE39FF&lᴀ&#A52EFF&lᴄ&#9C22FF&lᴇ&#9317FF&l.&#890BFF&ls&#8000FF&lᴜ'
+    - ''
+    click_commands:
+    - '[close]'
+    - '[sound] BLOCK_NOTE_BLOCK_BASS'
+
+# Прочее
+  'back':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2VmMTE5ZjA4ODUxYTcyYTVmMTBmYmMzMjQ3ZDk1ZTFjMDA2MzYwZDJiNGY0MTJiMjNjZTA1NDA5Mjc1NmIwYyJ9fX0=
+    slot: 49
+    display_name: '&c&lНазад'
+    lore:
+    - ''
+    - '&8 ▪ &fНажав сюда, вы сможете'
+    - '&8 ▪ &fвернуться в прошлое меню.'
+    - ''
+    click_commands:
+    - '[openguimenu] menu'
+    - '[sound] BLOCK_NOTE_BLOCK_BASS'
+  'filler_glass':
+    material: BLACK_STAINED_GLASS_PANE
+    slots: [0-6,9,18,26-27,35,44,47-48,50-53]
+    display_name: '&l'
+  'filler_glass_2':
+    material: MAGENTA_STAINED_GLASS_PANE
+    slots: [7,8,17,36,45,46]
+    display_name: '&l'

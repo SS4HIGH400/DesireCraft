@@ -1,0 +1,101 @@
+#=========================================================
+menu_title: '[ᴛs] ▸ Скупщик'
+open_command: seller
+size: 54
+items:
+  'exit':
+    material: arrow
+    slot: 0
+    display_name: '&c« Выйти'
+    left_click_commands:
+      - '[close]'
+    right_click_commands:
+      - '[close]'
+  '1':
+    enchantments:
+    - DURABILITY;1 
+    hide_attributes: true
+    hide_enchantments: true
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjM2M2E3OTg3ZTg5YjRkZTliOTBhMThmODgxY2UzN2ZhMThmZjUyYzMxNWZkNWI5YTM5OTg3M2VmIn19fQ==
+    slot: 19
+    display_name: '&#9400FFШ&#A900FEа&#BF00FCх&#D400FBт&#EA00F9е&#FF00F8р'
+    lore:
+    - ''
+    - '&8 ▪ &fШахтер обожает различные драгоценности!'
+    - '&8 ▪ &fПоэтому он всегда готов купить любую руду!'
+    - ''
+    - '&a◈ Нажмите, чтобы перейти'
+    left_click_commands:
+    - '[sound] BLOCK_NOTE_BLOCK_BASS'
+    - '[player] ruda'
+  '2':
+    enchantments:
+    - DURABILITY;1 
+    hide_attributes: true
+    hide_enchantments: true
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjgwOWU4ZDM4OWQ3NDJmNTZlMmEzNTRhYzkzZmI0MGM2Y2U1MThkMTY5ZmQxYjIzMmE0YTIyZTY2OGUwMzg1NCJ9fX0=
+    slot: 21
+    display_name: '&#9400FFМ&#A900FEя&#BF00FCс&#D400FBн&#EA00F9и&#FF00F8к'
+    lore:
+    - ''
+    - '&8 ▪ &fМясник очень любит мясо..'
+    - '&8 ▪ &fМожет вы сможете что-то ему продать?'
+    - ''
+    - '&a◈ Нажмите, чтобы перейти'
+    left_click_commands:
+    - '[sound] BLOCK_NOTE_BLOCK_BASS'
+    - '[player] myaso'
+  '3':
+    enchantments:
+    - DURABILITY;1 
+    hide_attributes: true
+    hide_enchantments: true
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDkxOThlYjVlNjUwMDdkZWNlZWMxZWY1NzI3MGQyY2E1ZWJhMTUxZmU1MmZkOWE0YWE3ODQxMGQxYjNiNTNmYSJ9fX0=
+    slot: 23
+    display_name: '&#9400FFО&#A600FEх&#B800FDо&#CA00FCт&#DB00FAн&#ED00F9и&#FF00F8к'
+    lore:
+    - ''
+    - '&8 ▪ &fОхотник собирает предметы с мобов,'
+    - '&8 ▪ &fможет у вас что-то есть для него?'
+    - ''
+    - '&a◈ Нажмите, чтобы перейти'
+    left_click_commands:
+    - '[sound] BLOCK_NOTE_BLOCK_BASS'
+    - '[player] ohota'
+  '4':
+    enchantments:
+    - DURABILITY;1 
+    hide_attributes: true
+    hide_enchantments: true
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjhjOTg2Nzk5YmFmZTcxODRhOGFlMjMzZGI2ZDlhYjhlOWI4NDRmYTlkNGRhNjhmYTNkYzk0YWM4ZmU4MjAifX19
+    slot: 25
+    display_name: '&#9400FFФ&#A900FEе&#BF00FCр&#D400FBм&#EA00F9е&#FF00F8р'
+    lore:
+    - ''
+    - '&8 ▪ &fФермер ценит свои грядки, поэтому'
+    - '&8 ▪ &fон готов купить у вас различные растения!'
+    - ''
+    - '&a◈ Нажмите, чтобы перейти'
+    left_click_commands:
+    - '[sound] BLOCK_NOTE_BLOCK_BASS'
+    - '[player] fermer'
+  'back':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2VmMTE5ZjA4ODUxYTcyYTVmMTBmYmMzMjQ3ZDk1ZTFjMDA2MzYwZDJiNGY0MTJiMjNjZTA1NDA5Mjc1NmIwYyJ9fX0=
+    slot: 49
+    display_name: '&c&lНазад'
+    lore:
+    - ''
+    - '&8 ▪ &fНажав сюда, вы сможете'
+    - '&8 ▪ &fвернуться в прошлое меню.'
+    - ''
+    click_commands:
+    - '[openguimenu] menu'
+    - '[sound] BLOCK_NOTE_BLOCK_BASS'
+  'filler_glass':
+    material: BLACK_STAINED_GLASS_PANE
+    slots: [0-6,9,18,26-27,35,44,47-48,50-53]
+    display_name: '&l'
+  'filler_glass_2':
+    material: MAGENTA_STAINED_GLASS_PANE
+    slots: [7,8,17,36,45,46]
+    display_name: '&l'

@@ -1,0 +1,104 @@
+
+# Команда, используемая для рандомной телепортации
+rtpCommand: "trustrtp"
+
+# Минимальный онлайн, который должен быть на сервере, чтобы работала телепортация с типом NEARBY_PLAYERS (рядом с игроками)
+nearbyPlayersMinOnline: 3
+
+# Проверять наличие обновлений?
+checkForUpdates: false
+
+# Обновлять плагин автоматически?
+autoUpdate: false
+
+# Включить сбор анонимной статистики?
+enableMetrics: false
+
+# Шаблоны действий. Здесь вы можете предварительно указать действия, которые вы будете использовать
+# Один или несколько раз в каком-либо из каналов. Также эта функция необходима при выполнении команды
+# С определённой задержкой.
+actionTemplates:
+  water_breathing_effect: "effect, water_breathing 200 1"
+
+# Здесь можно настроить несколько каналов телепортации
+channels:
+  # Название канала. Используется в разрешении на его использование. rtp.channel.normal
+  safe:
+    argument: "safe"
+    type: DEFAULT
+    world: world
+    worldType: WORLD
+    default: true
+    cooldown: 30
+    range:
+      x: -1000 ! 1000
+      z: -1000 ! 1000
+    teleportType: SKY
+    blacklistedBlocks:
+      - "lava"
+      - "stationary_lava"
+      - "water"
+    disableRegions: true
+    teleportOnFirstJoin: false
+    teleportOnRespawn: false
+    actions:
+      - "title, &dРандомная телепортация && &fНовые координаты: &a{x} {y} {z}"
+      - "effect, regeneration 200 100"
+
+  far:
+    argument: "far"
+    cooldown: 60
+    type: DEFAULT
+    range:
+      x: -3000 ! 2000
+      z: -5000 ! 4000
+    teleportType: NORMAL
+    blacklistedBlocks:
+      - "lava"
+      - "stationary_lava"
+      - "water"
+    hunger: 8
+    exp: 8
+    actions:
+       - "title, &dДалёкая телепортация && &fНовые координаты: &a{x} {y} {z}"
+  near:
+    argument: "near"
+    cooldown: 120
+    type: NEARBY_PLAYERS
+    teleportType: NORMAL
+    nearbyRange: 10 ! 50
+    blacklistedBlocks:
+      - "lava"
+      - "stationary_lava"
+      - "water"
+
+    # Необязательная секция. Указывается только при типе NEARBY_PLAYERS. Позволяет указать плагину границы мира
+    worldBorder:
+      radius: 15000
+      centerX: 0
+      centerZ: 0
+
+    cooldown: 40
+    hunger: 8
+    actions:
+      - "title, &dТелепортация рядом с игроками && &fРядом с вами игрок: &a{player}"
+
+  end:
+    argument: "end"
+    type: DEFAULT
+    world: world_the_end
+    cooldown: 360
+    range:
+      x: -5000 ! 5000
+      z: -5000 ! 5000
+    teleportType: NORMAL
+    blacklistedBlocks:
+      - "lava"
+      - "stationary_lava"
+      - "water"
+      - "air"
+    disableRegions: true
+    teleportOnFirstJoin: false
+    teleportOnRespawn: false
+    actions:
+      - "title, &dРандомная телепортация && &fНовые координаты: &a{x} {y} {z}"

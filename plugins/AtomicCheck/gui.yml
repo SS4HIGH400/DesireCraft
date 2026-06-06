@@ -1,0 +1,257 @@
+player:
+  main:
+    title: '&0В данный момент Вы в проверке'
+    schem:
+      - F F F F F F F F F
+      - F A A A A A A A F
+      - F A B A A A M A F
+      - F A A A A A A A F
+      - F F F F F F F F F
+    items:
+      F:
+        material: MAGENTA_STAINED_GLASS_PANE
+        data: 10
+        name: '&r'
+      B:
+        type: CONFESSION
+        material: TNT
+        name: '&cПризнаться'
+        lore:
+          - ''
+          - ' &fЕсли Вы признаетесь то срок наказании'
+          - ' &fбудет укорочен, и не потеряете времени.'
+          - ''
+          - ' &d⋅ &7Нажмите, чтобы признаться в'
+          - ' &d⋅ &7использовании &cзапрещенных ПО&7.'
+          - ''
+      M:
+        type: PLAYER_MESSAGE
+        material: PAPER
+        name: '&dОтправить сообщение'
+        lore:
+          - ''
+          - ' &d&l&n▌&r &fВы можете попросить вашего'
+          - ' &d&l&n▌&r &fпроверяющего удалить ваш таймер.'
+          - ''
+  confirm:
+    title: '&0Подтверждение'
+    schem:
+      - F F F F F F F F F
+      - F A A A A A A A F
+      - F A A Y A N A A F
+      - F A A A A A A A F
+      - F F F F F F F F F
+    items:
+      F:
+        material: MAGENTA_STAINED_GLASS_PANE
+        data: 10
+        name: '&r'
+      Y:
+        type: CONFIRM
+        material: STAINED_GLASS_PANE
+        data: 6
+        name: '&aПризнаться'
+        lore:
+          - '&7Нажмите, чтобы признаться.'
+      N:
+        type: PMAIN
+        material: STAINED_GLASS_PANE
+        data: 14
+        name: '&cВернуться'
+        lore:
+          - '&7Нажмите, чтобы вернуться назад.'
+
+moderator:
+  start:
+    title: '&0Куда перемещаем игрока?'
+    schem:
+      - F A M A I A S A F
+    items:
+      F:
+        material: MAGENTA_STAINED_GLASS_PANE
+        data: 10
+        name: '&r'
+      I:
+        material: BOOK
+        name: '&dИнформация'
+        lore:
+          - ''
+          - ' &d&l&n▌&r &fВыберите куда переместить игрока'
+          - ' &d&l&n▌&r &fк вам или в безопасную локацию.'
+          - ''
+      M:
+        type: HERE
+        material: OBSERVER
+        data: 3
+        name: '&dКо мне'
+      S:
+        type: SPAWN
+        material: GRASS
+        name: '&aВ спавн'
+
+  main:
+    title: '&0Центр Управление'
+    schem:
+      - F F F F F F F F F
+      - F A A A A A A A F
+      - F A X A S A L A F
+      - F A A A A A A A F
+      - F F F F F F F F F
+    items:
+      F:
+        material: MAGENTA_STAINED_GLASS_PANE
+        data: 10
+        name: '&r'
+      X:
+        type: ACTIONS
+        material: REDSTONE
+        name: '&cДействие'
+        lore:
+          - ''
+          - ' &d⋅ &7Нажмите сюда, чтобы открыть'
+          - ' &d⋅ &7центр действии над проверяемым.'
+          - ''
+          - ' &d&l&n▌&r &fПроверяемый&d: &7%atomiccheck_current_player%'
+          - ''
+      S:
+        material: ARMOR_STAND
+        name: '&dМоя статистика'
+        lore:
+          - ''
+          - ' &d&l&n▌&r &fПроверил за всё время&d: &b%atomiccheck_moderator_allchecks%'
+          - ''
+          - ' &fПоследний раз проверил игрока&d:'
+          - ' &5✐ &d%atomiccheck_moderator_player% %atomiccheck_moderator_date%'
+          - ''
+          - ' &d⚠ &fНаказание для него&d: &c%atomiccheck_moderator_punish%'
+          - ''
+      L:
+        type: LIST
+        material: OBSERVER
+        data: 3
+        name: '&dСписок проверок'
+        lore:
+          - ''
+          - ' &d⋅ &7Нажмите, чтобы открыть.'
+          - ''
+          - ' &d&l&n▌&r &fВ данный на проверке находится'
+          - ' &d&l&n▌&r &fсуммарно &7%atomiccheck_checkcount% &fигроков.'
+          - ''
+  list:
+    title: '&0Список проверяемых игроков'
+    schem:
+      - F F F F F F F F F
+      - F A A A A A A A F
+      - F A A A E A A A F
+      - F A A A A A A A F
+      - F F F F B F F F F
+    E:
+      material: BARRIER
+      name: '&cПусто...'
+      lore:
+        - ''
+        - ' &fВ текущее время не идёт'
+        - ' &fпроверок на запрещенное ПО.'
+        - ''
+    item:
+      material: BOOK
+      name: '&d&m             &r'
+      lore:
+        - '                                '
+        - ' &d&l&n▌&r &fПроверяемый&d: &b$player'
+        - ' &d&l&n▌&r &fПроверяющий&d: &d$moder'
+        - '                                '
+    items:
+      F:
+        material: MAGENTA_STAINED_GLASS_PANE
+        data: 10
+        name: '&r'
+      B:
+        type: BACK
+        material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODY1MmUyYjkzNmNhODAyNmJkMjg2NTFkN2M5ZjI4MTlkMmU5MjM2OTc3MzRkMThkZmRiMTM1NTBmOGZkYWQ1ZiJ9fX0=
+        name: '&cВернуться'
+        lore:
+          - ''
+          - ' &d⋅ &7Нажмите сюда, чтобы'
+          - ' &d⋅ &7открыть главную страницу.'
+          - ''
+  action:
+    title: '&0Действие'
+    schem:
+      - F F F F P F F F F
+      - F A A A A A A A F
+      - F A M D A B Z A F
+      - F A A A A A A A F
+      - F F F F N F F F F
+    items:
+      N:
+        type: BACK
+        material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODY1MmUyYjkzNmNhODAyNmJkMjg2NTFkN2M5ZjI4MTlkMmU5MjM2OTc3MzRkMThkZmRiMTM1NTBmOGZkYWQ1ZiJ9fX0=
+        name: '&cВернуться'
+        lore:
+          - ''
+          - ' &d⋅ &7Нажмите сюда, чтобы'
+          - ' &d⋅ &7открыть главную страницу.'
+          - ''
+      F:
+        material: MAGENTA_STAINED_GLASS_PANE
+        data: 10
+        name: '&r'
+      B:
+        type: BAN
+        material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNWRjZjJjMTk4ZjYxZGY1YTZkMGJhOTdkYmY5MGMzMzc5OTU0MDVjMTczOTZjMDE2Yzg1ZjZmM2ZlYTUyYzkwNiJ9fX0=
+        name: '&cНайдены запрещенные ПО'
+        lore:
+          - ''
+          - ' &d⋅ &7Нажмите сюда, если у игрока'
+          - ' &d⋅ &7были найдены запрещенные ПО.'
+          - ''
+          - ' &d&l&n▌&r &fПомните, Вы должны иметь доказательство'
+          - ' &d&l&n▌&r &fв ином случае игрок может обжаловать блокировку.'
+          - ''
+      Z:
+        type: APPROVE
+        material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjVhM2I0OWJlZWMzYWIyM2FlMGI2MGRhYjU2ZTljYzhmYTE2NzY5YTI1ODMwYjVkOGQ2YzQ2Mzc4ZjU0NDMwIn19fQ==
+        name: '&aЗапрещенные ПО не выявлены'
+        lore:
+          - ''
+          - ' &d⋅ &7Нажмите сюда, если игрок'
+          - ' &d⋅ &7оказался чистым при проверке.'
+          - ''
+      D:
+        type: TDELETE
+        material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWQ0NTJiZmNkYzNlYTE0ZjllNjEyYjFjOTZhYmVmOTdjMTBlOTZjNzExNmVhMmE0YjFhNWRmOGQ0YWExNzJmOSJ9fX0=
+        name: '&4⌛ &cУдалить таймер'
+        lore:
+          - ''
+          - ' &d⋅ &7Нажмите сюда, чтобы удалить'
+          - ' &d⋅ &7увеличить время игроку.'
+          - ''
+          - ' &d&l&n▌&r &fЕсли игрок Вас просит немного'
+          - ' &d&l&n▌&r &fподождать, Вы можете удалить таймер.'
+          - ''
+      M:
+        type: MODER_MESSAGE
+        material: PAPER
+        name: '&dОтправить сообщение'
+        lore:
+          - ''
+          - ' &d⋅ &7Нажмите сюда, если хотите'
+          - ' &d⋅ &7отправить сообщение проверяему.'
+          - ''
+      P:
+        material: OBSERVER
+        data: 3
+        name: '&d- &dПроверяемый &d-'
+        lore:
+          - ''
+          - ' &fИгрок&d: &7%atomiccheck_current_player%'
+          - ' &fТаймер&d: &d%atomiccheck_current_time% &7сек'
+          - ''
+          - '          &7- &dСтатистика &7-'
+          - ''
+          - ' &fПроверен за всё время &d- &bx%atomiccheck_current_checkcountplayer%'
+          - ''
+          - ' &2✔ &fУспешных проверок&d: &a%atomiccheck_current_psuccess%'
+          - ' &4✘ &fПроваленных проверок&d: &c%atomiccheck_current_pfail%'
+          - ''

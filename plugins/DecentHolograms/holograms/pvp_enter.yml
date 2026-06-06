@@ -1,0 +1,34 @@
+location: spawn:59,500:92,200:51,500
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: -45.0
+down-origin: false
+pages:
+- lines:
+  - content: '&7⊲ <#ANIM:wave:&d&l,&5&l&n>PVP АРЕНА</#ANIM> &7⊳'
+    height: 0.3
+  - content: '&8★ &7Снизу работает PvP! &8★'
+    height: 0.3
+  - content: ''
+    height: 0.3
+  - content: '&fДальше бога нет, есть'
+    height: 0.3
+  - content: '&fтолько ты и твой скилл.'
+    height: 0.3
+  - content: ''
+    height: 0.3
+  - content: '&fНа &5арене&f есть сундук &cсмерти&f,'
+    height: 0.3
+  - content: '&fкоторый &dспавнится&f раз в &a&n&lчас&r&f.'
+    height: 0.3
+  - content: '&d&l⌚ &fДо спавна&7: &#FB08EB%atomicchestdeath_spawn%'
+    height: 0.3
+  - content: ''
+    height: 0.3
+  - content: '&aУдачных сражений!'
+    height: 0.3
+  - content: '#HEAD: PLAYER_HEAD (eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjAyYTE5MjBjMGIwNDg4ZGQxOTZlYzA1ZDRiMWE2MjBhYWI5YzExY2E3MzBmMjE5MThiNjAyMTJmNTU0MjEyMyJ9fX0=)'
+    height: 0.0
+  actions: {}

@@ -1,0 +1,28 @@
+moderators:
+  sputn1koff:
+    checks: 5
+    last:
+      player: Fata1_C0de
+      date: 26/04/2024 21:01:01
+      punish: APPROVE
+  mbly:
+    checks: 4
+    last:
+      player: X_XiPsTeR_X
+      date: 25/04/2024 00:31:44
+      punish: LEFT
+players:
+  mbly:
+    countCheck: 4
+    failed: 1
+    success: 3
+  M0ps1k_UwU:
+    countCheck: 3
+    failed: 2
+    success: 1
+  X_XiPsTeR_X:
+    countCheck: 1
+    failed: 1
+  Fata1_C0de:
+    countCheck: 1
+    success: 1

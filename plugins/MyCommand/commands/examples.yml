@@ -1,0 +1,154 @@
+sub30:
+  command: /sub30
+  type: RUN_CONSOLE
+  runcmd:
+  - '$Script$%if%%luckperms_has_permission_grant.sosihui%==yes'
+  - '$text$ &c✕ Вы уже использовали эту возможность!'
+  # give sub
+  - '$Script$%if%$arg1==give'
+  - 'lp user $arg2 meta settemp plusik " &7[&d&l＋&7]" 30d'
+  # команды
+  - 'lp user $arg2 permission settemp essentials.kits.plus true 30d'
+  - 'lp user $arg2 permission settemp essentials.tpahere true 30d'
+  - 'lp user $arg2 permission settemp essentials.top true 30d'
+  - 'lp user $arg2 permission settemp essentials.gc true 30d'
+  - 'lp user $arg2 permission settemp rtp.channel.end true 30d'
+  - 'lp user $arg2 permission settemp rtp.channel.nether true 30d'
+  - 'lp user $arg2 permission settemp sub.gui true 30d'
+  #########
+  - '$text$ &fВы выдали &7[&d&l＋&7] &fигроку &5$arg2'
+  # remove sub
+  - $Script$%if%$arg1==remove
+  - '%PlayerOptions%playSound: BLOCK_LEVER_CLICK'
+  - 'lp user $arg2 meta unsettemp plusik'
+  - 'lp user $arg2 permission unsettemp essentials.tpahere '
+  - 'lp user $arg2 permission unsettemp essentials.top '
+  - 'lp user $arg2 permission unsettemp essentials.gc '
+  - 'lp user $arg2 permission unsettemp rtp.channel.end '
+  - 'lp user $arg2 permission unsettemp rtp.channel.nether '
+  - 'lp user $arg2 permission unsettemp sub.gui '
+  - '$text$ &fВы забрали &7[&d&l＋&7] &fу игрока &5$arg2'
+  - '$Script$%else%'
+  permission-required: true
+  permission-node: sub30.cmd_use
+  required_args: 2
+  register: true
+  error-message: '&cИспользование: &7/sub30 give <ник> &fили &7/sub remove <ник>'
+##################################
+helper:
+  command: /helper
+  type: RUN_CONSOLE
+  runcmd:
+  - '$Script$%if%%luckperms_has_permission_helper.use%==yes'
+  - '$text$ &c✕ Вы уже использовали эту возможность!'
+  - '$Script$%if%$arg1==give'
+  - 'lp user $arg2 parent add helper'
+  #########
+  - '$text$ &fВы выдали &7[&d&lHELPER&7] &fигроку &5$arg2'
+  - '$Script$%if%$arg1==remove'
+  - '%PlayerOptions%playSound: BLOCK_LEVER_CLICK'
+  - 'lp user $arg2 parent remove helper'
+  - '$Script$%else%'
+  permission-required: true
+  permission-node: helper.use
+  required_args: 2
+  register: true
+  error-message: '&cИспользование: &7/helper give <ник> &fили &7/helper remove <ник>'
+###################################
+sthelper:
+  command: /sthelper
+  type: RUN_CONSOLE
+  runcmd:
+  - '$Script$%if%%luckperms_has_permission_sthelper.use%==yes'
+  - '$text$ &c✕ Вы уже использовали эту возможность!'
+  - '$Script$%if%$arg1==give'
+  - 'lp user $arg2 parent add sthelper'
+  #########
+  - '$text$ &fВы выдали &7[&d&lsthelper&7] &fигроку &5$arg2'
+  - '$Script$%if%$arg1==remove'
+  - '%PlayerOptions%playSound: BLOCK_LEVER_CLICK'
+  - 'lp user $arg2 parent remove sthelper'
+  - '$Script$%else%'
+  permission-required: true
+  permission-node: sthelper.use
+  required_args: 2
+  register: true
+  error-message: '&cИспользование: &7/sthelper give <ник> &fили &7/sthelper remove <ник>'
+moder:
+  command: /moder
+  type: RUN_CONSOLE
+  runcmd:
+  - '$Script$%if%%luckperms_has_permission_moder.use%==yes'
+  - '$text$ &c✕ Вы уже использовали эту возможность!'
+  - '$Script$%if%$arg1==give'
+  - 'lp user $arg2 parent add moder'
+  #########
+  - '$text$ &fВы выдали &7[&d&lmoder&7] &fигроку &5$arg2'
+  - '$Script$%if%$arg1==remove'
+  - '%PlayerOptions%playSound: BLOCK_LEVER_CLICK'
+  - 'lp user $arg2 parent remove moder'
+  - '$Script$%else%'
+  permission-required: true
+  permission-node: moder.use
+  required_args: 2
+  register: true
+  error-message: '&cИспользование: &7/moder give <ник> &fили &7/moder remove <ник>'
+stmoder:
+  command: /stmoder
+  type: RUN_CONSOLE
+  runcmd:
+  - '$Script$%if%%luckperms_has_permission_stmoder.use%==yes'
+  - '$text$ &c✕ Вы уже использовали эту возможность!'
+  - '$Script$%if%$arg1==give'
+  - 'lp user $arg2 parent add stmoder'
+  #########
+  - '$text$ &fВы выдали &7[&d&lstmoder&7] &fигроку &5$arg2'
+  - '$Script$%if%$arg1==remove'
+  - '%PlayerOptions%playSound: BLOCK_LEVER_CLICK'
+  - 'lp user $arg2 parent remove stmoder'
+  - '$Script$%else%'
+  permission-required: true
+  permission-node: stmoder.use
+  required_args: 2
+  register: true
+  error-message: '&cИспользование: &7/stmoder give <ник> &fили &7/stmoder remove <ник>'
+######################################
+youtube:
+  command: /youtube
+  type: RUN_CONSOLE
+  runcmd:
+  - '$Script$%if%%luckperms_has_permission_youtube.use%==yes'
+  - '$text$ &c✕ Вы уже использовали эту возможность!'
+  - '$Script$%if%$arg1==give'
+  - 'lp user $arg2 parent add youtube'
+  #########
+  - '$text$ &fВы выдали &7[&d&lyoutube&7] &fигроку &5$arg2'
+  - '$Script$%if%$arg1==remove'
+  - '%PlayerOptions%playSound: BLOCK_LEVER_CLICK'
+  - 'lp user $arg2 parent remove youtube'
+  - '$Script$%else%'
+  permission-required: true
+  permission-node: youtube.use
+  required_args: 2
+  register: true
+  error-message: '&cИспользование: &7/youtube give <ник> &fили &7/youtube remove <ник>'
+######################################
+styoutube:
+  command: /styoutube
+  type: RUN_CONSOLE
+  runcmd:
+  - '$Script$%if%%luckperms_has_permission_styoutube.use%==yes'
+  - '$text$ &c✕ Вы уже использовали эту возможность!'
+  - '$Script$%if%$arg1==give'
+  - 'lp user $arg2 parent add styoutube'
+  #########
+  - '$text$ &fВы выдали &7[&d&lstyoutube&7] &fигроку &5$arg2'
+  - '$Script$%if%$arg1==remove'
+  - '%PlayerOptions%playSound: BLOCK_LEVER_CLICK'
+  - 'lp user $arg2 parent remove styoutube'
+  - '$Script$%else%'
+  permission-required: true
+  permission-node: styoutube.use
+  required_args: 2
+  register: true
+  error-message: '&cИспользование: &7/styoutube give <ник> &fили &7/styoutube remove <ник>'

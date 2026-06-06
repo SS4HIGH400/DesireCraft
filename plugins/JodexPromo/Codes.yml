@@ -1,0 +1,21 @@
+# 
+# Local Placeholders
+# %player - PlayerName
+# 
+# Global Placeholders
+# %jodexpromo_check_<code>% - Check code usage
+
+Codes:
+  free:
+    title: false
+    titlemessage: ''
+    subtitle: true
+    subtitlemessage: '&dПромокод активирован!'
+    commands:
+    - lp user %player parent add wander
+    - dc givekey %player prefix 1
+    messages:
+    - '&7[&d&lT&5&lS&7] &8»&f Вы успешно активировали промокод.'
+    - '&a&l+ &fПривилегия &2WANDER'
+    - '&a&l+ &fКейс с &dтитулами'
+    usage: 0

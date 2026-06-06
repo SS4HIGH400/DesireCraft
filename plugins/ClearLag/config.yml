@@ -133,14 +133,14 @@ item-spawn-age-setter:
 # -- 'max-mobs' means how many bably/adult animals are allowed within the 'check-radius'
 # -- 'check-radius' is the radius of what clearlag will check for 'max-mobs'
 mob-breeding-limiter:
-  enabled: false
+  enabled: true
   max-mobs: 6
   check-radius: 15
 
 #Should clearlag purge logs under /logs when the server starts?
 # -- 'days-old' means how many days old can the log be to be deleted
 log-purger:
-  enabled: false
+  enabled: true
   days-old: 3
 
 #What type of entities SHOULD NOT be removed while doing /lagg area?
@@ -162,7 +162,7 @@ config-updater:
 # -- 'check-radius' is the radius clearlag will check for nearby entities
 # -- 'max-mobs' is how many entities may be in the radius before the spawning is blocked
 mobegg-limiter:
-  enabled: false
+  enabled: true
   check-radius: 8
   max-mobs: 5
 
@@ -179,7 +179,7 @@ chunk-limiter:
 # -- Lower it is, the better your entity tick will be and the more CPU cycles you'll save
 # -- If it's too high, expect bugs / lots of lag
 mob-range:
-  enabled: false
+  enabled: true
   zombie: 30
   skeleton: 30
   creeper: 20
@@ -199,35 +199,35 @@ live-time:
 #This option disallows the placement of too many tnt-minecarts
 # -- 'radius' is the radius clearlag will check for TNT-Minecarts
 tnt-minecart:
-  enabled: false
+  enabled: true
   max: 2
   radius: 6
 
 #This option reduces global dispenser fire rate
 # -- 'time' is in milliseconds
 dispenser-reducer:
-  enabled: false
+  enabled: true
   time: 100
 
 #This option reduces the explosions of mass amounts of tnt, and reduces tnt lag
 # -- 'check-radius' is the radius clearlag will check for primed TNT
 # -- 'max-primed' is the max primed TNT within the radius allowed before clearlag begins to remove
 tnt-reducer:
-  enabled: false
+  enabled: true
   check-radius: 5
   max-primed: 3
 
 #This option reduces fire spread rate
 # -- 'time' is in milliseconds
 firespread-reducer:
-  enabled: false
+  enabled: true
   time: 2000
 
 #How many entities should one chunk be allowed to hold?
 # -- 'entities' lists all the entities that will be counted
 #     and possibly removed.
 chunk-entity-limiter:
-  enabled: false
+  enabled: true
   limit: 10
   entities:
     - Squid
@@ -250,7 +250,7 @@ chunk-entity-limiter:
 # -- 'check-interval' How often (in ticks, 50MS) should chunks be checked
 # -- 'chunk-batch-size' How many chunks at once should be checked
 per-entity-chunk-entity-limiter:
-  enabled: false
+  enabled: true
   entity-limits:
     - Squid limit:1
     - Zombie limit:2
@@ -294,7 +294,7 @@ spawn-limiter:
 # -- 'recover-broadcast-message' specifies which message should be broadcasted when TPS recovers
 # -- 'broadcast-enabled' defines whether or not tps-meter should broadcast
 tps-meter:
-  enabled: false
+  enabled: true
   trigger-broadcast-message: '&6[ClearLag] &cThe server is overloaded, executing lag-perventing measures'
   recover-broadcast-message: '&6[ClearLag] &aThe server is no longer overloaded!'
   broadcast-enabled: false
@@ -331,7 +331,7 @@ kill-mobs:
 # -- 'remove-mobs-on-chunk-unload' is whether or not Clearlag should remove
 # --  the mobs spawned by the mobspawner upon chunk unload (Highly Recommended)
 mobspawner:
-  enabled: false
+  enabled: true
   max-spawn: 4
   remove-mobs-on-chunk-unload: true
 
@@ -355,9 +355,9 @@ item-merger:
 # -- 'remove-entities' What entities SHOULD be removed during removal
 auto-removal:
   enabled: true
-  broadcast-message: '&6[ClearLag] &aRemoved +RemoveAmount Entities!'
+  broadcast-message: '&7[&d&lОчистка&7] &8» &fУдалено &d+RemoveAmount &fпредметов!'
   broadcast-removal: true
-  autoremoval-interval: 460
+  autoremoval-interval: 1800
   world-filter:
   # - this_world <-This world will be ignored during removal!
   boat: false
@@ -386,8 +386,8 @@ auto-removal:
   # - Minecart !isMounted <- This entity will be REMOVED if it's NOT mounted
   # - Wolf !hasName <- This entity will be REMOVED if it doesn't have a name
   warnings:
-        - 'time:400 msg:&4[ClearLag] &cWarning Ground items will be removed in &7+remaining &cseconds!'
-        - 'time:440 msg:&4[ClearLag] &cWarning Ground items will be removed in &7+remaining &cseconds!'
+        - 'time:1770 msg:&7[&d&lОчистка&7] &8» &fЛежащие предметы будут удалены через &d+remaining &fсек.'
+        - 'time:1795 msg:&7[&d&lОчистка&7] &8» &fЛежащие предметы будут удалены через &d+remaining &fсек.'
 
 #What should be removed during /lagg clear, nearly the same thing as auto-removal
 command-remove:
@@ -416,13 +416,13 @@ command-remove:
 #Very very old, but still works. Just specifies a global entity limit. I'd recommend 'custom-trigger-removal' instead
 # -- 'max' max entities allowed before the entity removal is activated
 limit:
-  enabled: false
+  enabled: true
   max: 1000
   check-interval: 60
   broadcast-message: '&6[ClearLag] &aLimit reached, removed +RemoveAmount Entities!'
   world-filter:
   # - this_world <-This world will be ignored during removal!
-  broadcast-removal: true
+  broadcast-removal: false
   boat: true
   falling-block: true
   experience-orb: true
@@ -462,9 +462,9 @@ custom-trigger-removal:
         entity-clearer:
           execute-job-time: 120
           warnings:
-            - 'time:60 msg:&4[ClearLag] &cEntities/drops will be purged in &7+remaining &cseconds!'
-            - 'time:100 msg:&4[ClearLag] &cEntities/drops will be purged in &720 &cseconds!'
-            - 'time:110 msg:&4[ClearLag] &cEntities/drops will be purged in &710 &cseconds!'
+            - 'time:60 msg:&7[&d&lОчистка&7] &8» &fEntities/drops will be purged in &7+remaining &cseconds!'
+            - 'time:100 msg:&7[&d&lОчистка&7] &8» &fEntities/drops will be purged in &720 &cseconds!'
+            - 'time:110 msg:&7[&d&lОчистка&7] &8» &fEntities/drops will be purged in &710 &cseconds!'
           world-filter:
           # - world <-This world will be ignored during removal
           removeEntities:

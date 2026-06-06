@@ -1,0 +1,55 @@
+menu_title: '[ᴛs] ▸ Выход в лобби'
+open_command:
+- lobby
+- hub
+- server
+- servers
+- velocity
+- vel
+size: 44
+register_command: true
+update_interval: 1
+open_commands:
+- '[sound] BLOCK_CHEST_OPEN'
+items:
+##########################################################################
+  '1':
+    enchantments:
+    - DURABILITY;1 
+    hide_attributes: true
+    hide_enchantments: true
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjVmNTM3NmQ4NjllZWUzZDBjNjJiNjdmNTY3MTRkYjkzZDFiYmY0ODMxNTU2YTdlN2QyZjdjMzRiNDllNGYifX19
+    slot: 21
+    display_name: '&#EF89FFПодтвердить перемещение?'
+    lore:
+    - ''
+    - '&8 ▪ &fНажмите для перехода в Лобби'
+    - ''
+    left_click_commands:
+    - '[sound] BLOCK_NOTE_BLOCK_BASS'
+    - '[connect] lobby'
+  '2':
+    enchantments:
+    - DURABILITY;1 
+    hide_attributes: true
+    hide_enchantments: true
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDA1MWI1OTA4NWQyYzQyNDk1Nzc4MjNmNjNlMWUyZWI5ZjdjZjY0YjdjNzg3ODVhMjE4MDVmYWQzZWYxNCJ9fX0=
+    slot: 23
+    display_name: '&#ff3c3cОтменить перемещение?'
+    lore:
+    - ''
+    - '&8 ▪ &fНажмите для отмены перехода'
+    - ''
+    left_click_commands:
+    - '[sound] BLOCK_NOTE_BLOCK_BASS'
+    - '[close]'
+
+# Прочее
+  'filler_glass':
+    material: BLACK_STAINED_GLASS_PANE
+    slots: [0-6,9,18,26,35,38-44]
+    display_name: '&l'
+  'filler_glass_2':
+    material: MAGENTA_STAINED_GLASS_PANE
+    slots: [7,8,17,27,36,37]
+    display_name: '&l'

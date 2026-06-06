@@ -1,0 +1,67 @@
+menu_title: '[ᴛs] ▸ Обсидиановое ТНТ'
+open_command:
+- tnt6
+size: 44
+register_command: true
+update_interval: 1
+open_commands:
+- '[sound] BLOCK_CHEST_OPEN'
+items:
+  '1':
+    material: OBSIDIAN
+    amount: 1
+    slot: 13
+  '2':
+    material: OBSIDIAN
+    amount: 1
+    slot: 23
+  '3':
+    material: OBSIDIAN
+    amount: 1
+    slot: 21
+  '4':
+    material: OBSIDIAN
+    amount: 1
+    slot: 31
+  '5':
+    material: GUNPOWDER
+    amount: 1
+    slot: 12
+  '6':
+    material: GUNPOWDER
+    amount: 1
+    slot: 14
+  '7':
+    material: GUNPOWDER
+    amount: 1
+    slot: 30
+  '8':
+    material: GUNPOWDER
+    amount: 1
+    slot: 32
+  '9':
+    material: DIAMOND
+    amount: 1
+    slot: 22
+  'back':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2VmMTE5ZjA4ODUxYTcyYTVmMTBmYmMzMjQ3ZDk1ZTFjMDA2MzYwZDJiNGY0MTJiMjNjZTA1NDA5Mjc1NmIwYyJ9fX0=
+    slot: 40
+    display_name: '&c&lНазад'
+    hide_attributes: true
+    hide_enchantments: true
+    lore:
+    - ''
+    - '&8 ▪ &fНажав сюда, вы сможете'
+    - '&8 ▪ &fвернуться в прошлое меню.'
+    - ''
+    click_commands:
+    - '[openguimenu] tnt0'
+    - '[sound] BLOCK_NOTE_BLOCK_BASS'
+  'filler_glass':
+    material: BLACK_STAINED_GLASS_PANE
+    slots: [0,1,2,3,4,5,6,9,18,38,39,41,42,43,44,26,35]
+    display_name: '&l'
+  'filler_glass_2':
+    material: MAGENTA_STAINED_GLASS_PANE
+    slots: [7,8,17,27,36,37]
+    display_name: '&l'

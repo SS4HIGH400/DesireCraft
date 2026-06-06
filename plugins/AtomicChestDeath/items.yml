@@ -1,0 +1,430 @@
+items:
+  '0':
+    chance: 30
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      v: 2586
+      type: GOLDEN_APPLE
+      amount: 3
+  '1':
+    chance: 30
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      v: 2586
+      type: EXPERIENCE_BOTTLE
+      amount: 4
+  '2':
+    chance: 30
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      v: 2586
+      type: COOKED_BEEF
+      amount: 8
+  '3':
+    chance: 30
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      v: 2586
+      type: ARROW
+      amount: 14
+  '4':
+    chance: 30
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      v: 2586
+      type: ARROW
+      amount: 14
+  '5':
+    chance: 30
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      v: 2586
+      type: COOKED_BEEF
+      amount: 8
+  '6':
+    chance: 30
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      v: 2586
+      type: EXPERIENCE_BOTTLE
+      amount: 3
+  '7':
+    chance: 30
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      v: 2586
+      type: GOLDEN_APPLE
+      amount: 2
+  '8':
+    chance: 30
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      v: 2586
+      type: TOTEM_OF_UNDYING
+  '9':
+    chance: 30
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      v: 2586
+      type: DIAMOND
+      amount: 8
+  '10':
+    chance: 30
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      v: 2586
+      type: ENDER_PEARL
+      amount: 4
+  '11':
+    chance: 30
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      v: 2586
+      type: GOLDEN_APPLE
+      amount: 3
+  '12':
+    chance: 30
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      v: 2586
+      type: DIAMOND_AXE
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        enchants:
+          DIG_SPEED: 2
+          DURABILITY: 2
+  '13':
+    chance: 30
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      v: 2586
+      type: DIAMOND_SWORD
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        enchants:
+          DAMAGE_ALL: 1
+          DURABILITY: 2
+  '14':
+    chance: 30
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      v: 2586
+      type: FISHING_ROD
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        enchants:
+          DURABILITY: 1
+  '15':
+    chance: 30
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      v: 2586
+      type: WHEAT_SEEDS
+      amount: 18
+  '16':
+    chance: 30
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      v: 2586
+      type: WHEAT_SEEDS
+      amount: 9
+  '17':
+    chance: 30
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      v: 2586
+      type: NETHERITE_BOOTS
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        enchants:
+          PROTECTION_FIRE: 2
+          MENDING: 1
+          PROTECTION_ENVIRONMENTAL: 3
+  '18':
+    chance: 30
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      v: 2586
+      type: ENDER_PEARL
+      amount: 2
+  '19':
+    chance: 30
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      v: 2586
+      type: TIPPED_ARROW
+      amount: 8
+      meta:
+        ==: ItemMeta
+        meta-type: POTION
+        potion-type: minecraft:harming
+  '20':
+    chance: 30
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      v: 2586
+      type: COOKED_MUTTON
+      amount: 8
+  '21':
+    chance: 30
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      v: 2586
+      type: COOKED_MUTTON
+      amount: 8
+  '22':
+    chance: 30
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      v: 2586
+      type: WHEAT_SEEDS
+      amount: 5
+  '23':
+    chance: 30
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      v: 2586
+      type: MAGENTA_SHULKER_BOX
+  '24':
+    chance: 30
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      v: 2586
+      type: CHORUS_FRUIT
+      amount: 12
+  '25':
+    chance: 30
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      v: 2586
+      type: EXPERIENCE_BOTTLE
+      amount: 16
+  '26':
+    chance: 30
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      v: 2586
+      type: EXPERIENCE_BOTTLE
+      amount: 9
+  '27':
+    chance: 30
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      v: 2586
+      type: TIPPED_ARROW
+      amount: 4
+      meta:
+        ==: ItemMeta
+        meta-type: POTION
+        potion-type: minecraft:strong_slowness
+  '28':
+    chance: 30
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      v: 2586
+      type: TIPPED_ARROW
+      amount: 2
+      meta:
+        ==: ItemMeta
+        meta-type: POTION
+        potion-type: minecraft:strong_slowness
+  '29':
+    chance: 30
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      v: 2586
+      type: CHORUS_FRUIT
+      amount: 11
+  '30':
+    chance: 30
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      v: 2586
+      type: NETHERITE_SWORD
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        enchants:
+          FIRE_ASPECT: 2
+          DAMAGE_ALL: 3
+          DURABILITY: 3
+  '31':
+    chance: 30
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      v: 2586
+      type: NETHERITE_AXE
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        enchants:
+          DIG_SPEED: 3
+          DURABILITY: 3
+  '32':
+    chance: 30
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      v: 2586
+      type: NETHERITE_SCRAP
+  '33':
+    chance: 30
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      v: 2586
+      type: TIPPED_ARROW
+      amount: 4
+      meta:
+        ==: ItemMeta
+        meta-type: POTION
+        potion-type: minecraft:harming
+  '34':
+    chance: 30
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      v: 2586
+      type: FIREWORK_ROCKET
+      amount: 9
+  '35':
+    chance: 30
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      v: 2586
+      type: NETHERITE_SCRAP
+      amount: 2
+  '36':
+    chance: 30
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      v: 2586
+      type: TIPPED_ARROW
+      amount: 4
+      meta:
+        ==: ItemMeta
+        meta-type: POTION
+        potion-type: minecraft:harming
+  '37':
+    chance: 10
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      v: 2586
+      type: PLAYER_HEAD
+      meta:
+        ==: ItemMeta
+        meta-type: SKULL
+        display-name: '{"extra":[{"bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"light_purple","text":"[♥]
+          "},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#FFD900","text":"С"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#FFDD18","text":"ф"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#FFE02F","text":"е"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#FFE447","text":"р"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#FFE75F","text":"а
+          "},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#FFEB77","text":"Х"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#FFEE8E","text":"е"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#FFF2A6","text":"о"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#FFF5BE","text":"п"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#FFF9D5","text":"с"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#FFFCED","text":"а"}],"text":""}'
+        lore:
+        - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"Эффекты:"}],"text":""}'
+        - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#FFD900","text":"-
+          "},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#FFDE22","text":"Б"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#FFE344","text":"р"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#FFE866","text":"о"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#FFED87","text":"н"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#FFF2A9","text":"я
+          "},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#FFF7CB","text":"I"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#FFFCED","text":"I"}],"text":""}'
+        - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#FFD900","text":"-
+          "},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#FFDC11","text":"М"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#FFDE22","text":"а"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#FFE133","text":"к"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#FFE344","text":"с"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#FFE655","text":".
+          "},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#FFE866","text":"З"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#FFEB76","text":"д"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#FFED87","text":"о"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#FFF098","text":"р"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#FFF2A9","text":"о"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#FFF5BA","text":"в"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#FFF7CB","text":"ь"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#FFFADC","text":"е
+          "},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#FFFCED","text":"I"}],"text":""}'
+        enchants:
+          LURE: 1
+        attribute-modifiers:
+          GENERIC_ARMOR:
+          - ==: org.bukkit.attribute.AttributeModifier
+            amount: 4.0
+            name: generic.armor
+            slot: OFF_HAND
+            uuid: 54fa9660-1581-4fdd-b9b2-f68a0d0294ce
+            operation: 0
+          GENERIC_MAX_HEALTH:
+          - ==: org.bukkit.attribute.AttributeModifier
+            amount: 2.0
+            name: generic.max_health
+            slot: OFF_HAND
+            uuid: af5ae1eb-1424-4f92-9f54-b4d100515146
+            operation: 0
+        ItemFlags:
+        - HIDE_ENCHANTS
+        - HIDE_ATTRIBUTES
+        - HIDE_UNBREAKABLE
+        - HIDE_DESTROYS
+        - HIDE_PLACED_ON
+        - HIDE_POTION_EFFECTS
+        - HIDE_DYE
+        internal: H4sIAAAAAAAA/3WQzU6DUBCFR9MmWE2MOxeauHBnSPgpVBYuqrUWUkAphYIrfm4D3HvbpoACL+BzGF/BV3DtK0lMmrhxN2fOdyaZ0wNg4DRERYG2RUDSnAarnN1N0K3QepP34GiGS0Iet+tlShADHSOgCI5vf2P2LtaDXkts2kMpyg+AKVBVlFvU7gH2GOg6ASkRfKJa4/xFwsULjUS1KrfannHEVLPNQF05dXinyipt/clQntbKH1YqAlcinqgl/uqpDKnDTUWLoInFR3T+4j/ogmljyWvG1LCxYIx86tvDSs/GiWkTbLrqq08dqjdYMqiDjSbJDGplhj3n9WaMPVfLPOFe1EdJprtW5me4MlJNWS64G4BD2Ffj9pGO7rx/v10Nux/8if18dvHV9nf+X39sWaYxXAqKEF+HYp8NhYHM9jleYZXBdcTyYRxFIbcUZVGEH87ndHWKAQAA
+        skull-owner: BetterTalismans
+  '38':
+    chance: 10
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      v: 2586
+      type: PLAYER_HEAD
+      meta:
+        ==: ItemMeta
+        meta-type: SKULL
+        display-name: '{"extra":[{"bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"light_purple","text":"[♥]
+          "},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#F80000","text":"С"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#F91716","text":"ф"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#F92E2B","text":"е"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#FA4541","text":"р"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#FB5C56","text":"а
+          "},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#FB736C","text":"Г"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#FC8981","text":"е"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#FCA097","text":"р"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#FDB7AC","text":"а"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#FECEC2","text":"к"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#FEE5D7","text":"л"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#FFFCED","text":"а"}],"text":""}'
+        lore:
+        - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"Эффекты:"}],"text":""}'
+        - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#F80000","text":"-
+          "},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#F9322F","text":"У"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#FB655F","text":"р"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#FC978E","text":"о"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#FECABE","text":"н
+          "},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#FFFCED","text":"I"}],"text":""}'
+        - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#F80000","text":"-
+          "},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#F91211","text":"М"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#F92422","text":"а"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#FA3633","text":"к"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#FA4844","text":"с"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#FB5A55","text":".
+          "},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#FB6C66","text":"З"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#FC7E76","text":"д"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#FC9087","text":"о"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#FDA298","text":"р"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#FDB4A9","text":"о"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#FEC6BA","text":"в"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#FED8CB","text":"ь"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#FFEADC","text":"е
+          "},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#FFFCED","text":"I"}],"text":""}'
+        enchants:
+          LURE: 1
+        attribute-modifiers:
+          GENERIC_MAX_HEALTH:
+          - ==: org.bukkit.attribute.AttributeModifier
+            amount: 2.0
+            name: generic.max_health
+            slot: OFF_HAND
+            uuid: 08adbaf8-c9cd-405b-b200-0c26fa5042cb
+            operation: 0
+          GENERIC_ATTACK_DAMAGE:
+          - ==: org.bukkit.attribute.AttributeModifier
+            amount: 1.0
+            name: generic.attack_damage
+            slot: OFF_HAND
+            uuid: f1677cc1-ef34-4d1a-bcbe-1e6c3708fecf
+            operation: 0
+        ItemFlags:
+        - HIDE_ENCHANTS
+        - HIDE_ATTRIBUTES
+        - HIDE_UNBREAKABLE
+        - HIDE_DESTROYS
+        - HIDE_PLACED_ON
+        - HIDE_POTION_EFFECTS
+        - HIDE_DYE
+        internal: H4sIAAAAAAAA/3WQy06DQBiFf001iCZudeHOLQkUimXhotqmhZTB0gtlTEy4DBaYqQ0FAzyFa3c+golvYOIruZWYNHHj7r+c7yTn8AAcnPkkz0mWezTeMm+9FXYTHD6SzEspDyfTtKD0LnuKYko4aCGPETi9+eVmO44HvlFsGqeYbI+Ay0mZFxlp7gB7HBwsPFoQ+CCVIeLlSgyXBg0qXW322VSklp5srvT1ovJvdVVnzX/UU8eV9kfbyT2nQ13ZWOH1pPDZQhzLNiUjWwrY/BnVbmk5BkOJrqAEUbcelGgWyLiPKU5cCTs4dWvELMemaGgz1B+IZtKrsDMpMXNLPJx3sGPKiOlt0xnUDdNGlaFFS/Ea4Bj29bAJ0nrl7q08Nb/fv4SHt8/zl6bAi/8KFIoiDuFSUVTFC7tEkLskEBRVbgu+7ylCFGhhFISSFCga/ACJcntjiwEAAA==
+        skull-owner: BetterTalismans
+  '39':
+    chance: 30
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      v: 2586
+      type: NETHERITE_HOE
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        enchants:
+          DIG_SPEED: 3
+          DURABILITY: 3
+  '40':
+    chance: 30
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      v: 2586
+      type: FIREWORK_ROCKET
+      amount: 18
+  '41':
+    chance: 30
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      v: 2586
+      type: ARROW
+      amount: 10

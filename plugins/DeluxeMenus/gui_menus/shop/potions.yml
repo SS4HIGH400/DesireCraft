@@ -1,0 +1,175 @@
+menu_title: '[ᴛs] ▸ Зелья'
+open_command:
+- potions
+size: 53
+register_command: true
+update_interval: 1
+open_commands:
+- '[sound] BLOCK_CHEST_OPEN'
+items:
+##########################################################################
+  '1':
+    hide_attributes: true
+    hide_enchantments: true
+    material: POTION
+    slot: 30
+    display_name: '&#FF0015З&#FF1729е&#FF2E3Cл&#FF4550ь&#FF5C64е &#FF7377К&#FF898Bр&#FFA09Eа&#FFB7B2т&#FFCEC6о&#FFE5D9с&#FFFCEDа'
+    lore:
+    - '&cЗамедление V (1:30)'
+    - '&9Сила III (1:00)'
+    - ''
+    - '&8 ▪ &fСтоимость: &a249ᚹ'
+    - '&8 ▪ &fВаш баланс: &#971AED%playerpoints_points%ᚹ'
+    - ''
+    - '&a◈ Нажмите, чтобы купить'
+    left_click_requirement:
+      requirements:
+        anything_here:
+          type: '>='
+          input: '%playerpoints_points%'
+          output: '249'
+          deny_commands:
+          - '[message] &7[&#F4C4F3&lМ&#F5B5F4&lа&#F7A5F5&lг&#F896F7&lа&#F986F8&lз&#FB77F9&lи&#FC67FA&lн&7] &8» &fУ вас &cнедостаточно &fрубинов!'
+    left_click_commands:
+    - '[sound] BLOCK_NOTE_BLOCK_BASS'
+    - '[console] points take %player_name% 249'
+    - '[console] kitreset potion1 %player_name%'
+    - '[console] kits potion1 %player_name%'
+    - '[message] &7[&#F4C4F3&lМ&#F5B5F4&lа&#F7A5F5&lг&#F896F7&lа&#F986F8&lз&#FB77F9&lи&#FC67FA&lн&7] &8» &fСпасибо за покупку в нашем магазине!'
+    
+  '2':
+    hide_attributes: true
+    hide_enchantments: true
+    material: POTION
+    slot: 22
+    display_name: '&#B300FFЗ&#B915FEе&#C02AFCл&#C63FFBь&#CC54F9е &#D369F8А&#D97EF6с&#DF93F5с&#E6A8F3а&#ECBDF2с&#F2D2F0и&#F9E7EFн&#FFFCEDа'
+    lore:
+    - '&9Скорость (2:00)'
+    - '&9Сила II (2:00)'
+    - ''
+    - '&8 ▪ &fСтоимость: &a199ᚹ'
+    - '&8 ▪ &fВаш баланс: &#971AED%playerpoints_points%ᚹ'
+    - ''
+    - '&a◈ Нажмите, чтобы купить'
+    left_click_requirement:
+      requirements:
+        anything_here:
+          type: '>='
+          input: '%playerpoints_points%'
+          output: '199'
+          deny_commands:
+          - '[message] &7[&#F4C4F3&lМ&#F5B5F4&lа&#F7A5F5&lг&#F896F7&lа&#F986F8&lз&#FB77F9&lи&#FC67FA&lн&7] &8» &fУ вас &cнедостаточно &fрубинов!'
+    left_click_commands:
+    - '[sound] BLOCK_NOTE_BLOCK_BASS'
+    - '[console] points take %player_name% 199'
+    - '[console] kitreset potion2 %player_name%'
+    - '[console] kits potion2 %player_name%'
+    - '[message] &7[&#F4C4F3&lМ&#F5B5F4&lа&#F7A5F5&lг&#F896F7&lа&#F986F8&lз&#FB77F9&lи&#FC67FA&lн&7] &8» &fСпасибо за покупку в нашем магазине!'
+    
+  '3':
+    hide_attributes: true
+    hide_enchantments: true
+    material: POTION
+    slot: 32    
+    display_name: '&#40EABAЗ&#53ECBFе&#66EEC4л&#79EFC9ь&#8CF1CEе &#A0F3D4П&#B3F5D9о&#C6F7DEл&#D9F8E3е&#ECFAE8т&#FFFCEDа'
+    lore:
+    - '&cЛевитация (0:10)'
+    - ''
+    - '&8 ▪ &fСтоимость: &a99ᚹ'
+    - '&8 ▪ &fВаш баланс: &#971AED%playerpoints_points%ᚹ'
+    - ''
+    - '&a◈ Нажмите, чтобы купить'
+    left_click_requirement:
+      requirements:
+        anything_here:
+          type: '>='
+          input: '%playerpoints_points%'
+          output: '99'
+          deny_commands:
+          - '[message] &7[&#F4C4F3&lМ&#F5B5F4&lа&#F7A5F5&lг&#F896F7&lа&#F986F8&lз&#FB77F9&lи&#FC67FA&lн&7] &8» &fУ вас &cнедостаточно &fрубинов!'
+    left_click_commands:
+    - '[sound] BLOCK_NOTE_BLOCK_BASS'
+    - '[console] points take %player_name% 99'
+    - '[console] kitreset potion3 %player_name%'
+    - '[console] kits potion3 %player_name%'
+    - '[message] &7[&#F4C4F3&lМ&#F5B5F4&lа&#F7A5F5&lг&#F896F7&lа&#F986F8&lз&#FB77F9&lи&#FC67FA&lн&7] &8» &fСпасибо за покупку в нашем магазине!'
+    
+  '4':
+    hide_attributes: true
+    hide_enchantments: true
+    material: POTION
+    slot: 24
+    display_name: '&#5F5F5FЗ&#6E6D6Cе&#7C7C79л&#8B8A86ь&#999893е &#A8A6A0Ш&#B6B5ACа&#C5C3B9х&#D3D1C6т&#E2DFD3е&#F0EEE0р&#FFFCEDа'
+    lore:
+    - '&9Спешка (2:00)'
+    - '&9Везение II (2:00)'
+    - ''
+    - '&8 ▪ &fСтоимость: &a149ᚹ'
+    - '&8 ▪ &fВаш баланс: &#971AED%playerpoints_points%ᚹ'
+    - ''
+    - '&a◈ Нажмите, чтобы купить'
+    left_click_requirement:
+      requirements:
+        anything_here:
+          type: '>='
+          input: '%playerpoints_points%'
+          output: '149'
+          deny_commands:
+          - '[message] &7[&#F4C4F3&lМ&#F5B5F4&lа&#F7A5F5&lг&#F896F7&lа&#F986F8&lз&#FB77F9&lи&#FC67FA&lн&7] &8» &fУ вас &cнедостаточно &fрубинов!'
+    left_click_commands:
+    - '[sound] BLOCK_NOTE_BLOCK_BASS'
+    - '[console] points take %player_name% 149'
+    - '[console] kitreset potion4 %player_name%'
+    - '[console] kits potion4 %player_name%'
+    - '[message] &7[&#F4C4F3&lМ&#F5B5F4&lа&#F7A5F5&lг&#F896F7&lа&#F986F8&lз&#FB77F9&lи&#FC67FA&lн&7] &8» &fСпасибо за покупку в нашем магазине!'
+    
+  '5':
+    hide_attributes: true
+    hide_enchantments: true
+    material: POTION
+    slot: 20
+    display_name: '&#00FF1CЗ&#1CFF33е&#39FE4Aл&#55FE62ь&#71FE79е &#8EFD90Х&#AAFDA7а&#C6FDBFл&#E3FCD6к&#FFFCEDа'
+    lore:
+    - '&cЗамедление II (1:30)'
+    - '&9Сопротивление II (1:30)'
+    - ''
+    - '&8 ▪ &fСтоимость: &a199ᚹ'
+    - '&8 ▪ &fВаш баланс: &#971AED%playerpoints_points%ᚹ'
+    - ''
+    - '&a◈ Нажмите, чтобы купить'
+    left_click_requirement:
+      requirements:
+        anything_here:
+          type: '>='
+          input: '%playerpoints_points%'
+          output: '199'
+          deny_commands:
+          - '[message] &7[&#F4C4F3&lМ&#F5B5F4&lа&#F7A5F5&lг&#F896F7&lа&#F986F8&lз&#FB77F9&lи&#FC67FA&lн&7] &8» &fУ вас &cнедостаточно &fрубинов!'
+    left_click_commands:
+    - '[sound] BLOCK_NOTE_BLOCK_BASS'
+    - '[console] points take %player_name% 199'
+    - '[console] kitreset potion5 %player_name%'
+    - '[console] kits potion5 %player_name%'
+    - '[message] &7[&#F4C4F3&lМ&#F5B5F4&lа&#F7A5F5&lг&#F896F7&lа&#F986F8&lз&#FB77F9&lи&#FC67FA&lн&7] &8» &fСпасибо за покупку в нашем магазине!'
+
+# Прочее
+  'back':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2VmMTE5ZjA4ODUxYTcyYTVmMTBmYmMzMjQ3ZDk1ZTFjMDA2MzYwZDJiNGY0MTJiMjNjZTA1NDA5Mjc1NmIwYyJ9fX0=
+    slot: 49
+    display_name: '&c&lНазад'
+    lore:
+    - ''
+    - '&8 ▪ &fНажав сюда, вы сможете'
+    - '&8 ▪ &fвернуться в прошлое меню.'
+    - ''
+    click_commands:
+    - '[openguimenu] shop'
+    - '[sound] BLOCK_NOTE_BLOCK_BASS'
+  'filler_glass':
+    material: BLACK_STAINED_GLASS_PANE
+    slots: [0-6,9,18,26-27,35,44,47-48,50-53]
+    display_name: '&l'
+  'filler_glass_2':
+    material: MAGENTA_STAINED_GLASS_PANE
+    slots: [7,8,17,36,45,46]
+    display_name: '&l'

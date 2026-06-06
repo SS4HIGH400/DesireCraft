@@ -3,36 +3,47 @@ teleportauto: false
 godmode: false
 muted: false
 jailed: false
-ip-address: 26.121.176.132
+ip-address: 127.0.0.1
 afk: false
 socialspy: false
 npc: false
 powertoolsenabled: true
 accepting-pay: true
-baltop-exempt: false
+baltop-exempt: true
 timestamps:
-  lastteleport: 0
+  lastteleport: 1780611739420
   lastheal: 0
   mute: 0
   jail: 0
   onlinejail: 0
-  logout: 1779733472106
-  login: 1779732813115
-money: '202600'
+  logout: 1780612061716
+  login: 1780610711448
+  kits:
+    plus: 1780610912719
+money: '209220'
 last-account-name: pol1ce
 lastlocation:
-  world: d9c8af0e-06a5-4b42-84cb-c467457eafd8
-  world-name: spawn
-  x: -565.0611795343485
-  y: 81.48716722194622
-  z: 447.70158434310713
-  yaw: -345.41064453125
-  pitch: -0.9559372067451477
+  world: c4ba1337-af4c-47d6-9e0f-abe3ba9652b2
+  world-name: world
+  x: -596.184544063772
+  y: 121.61077837919439
+  z: -285.9990983376455
+  yaw: -71.9775619506836
+  pitch: 68.09999084472656
 logoutlocation:
-  world: d9c8af0e-06a5-4b42-84cb-c467457eafd8
+  world: 940aa387-5bce-4903-9f52-fd1bc503e609
   world-name: spawn
-  x: -526.5691029915849
-  y: 64.0
-  z: 371.9053913674248
-  yaw: -133.41380310058594
-  pitch: 8.801982879638672
+  x: 75.38697961620734
+  y: 121.87477298171248
+  z: -0.7907804100625072
+  yaw: -88.62738037109375
+  pitch: 38.4000244140625
+homes:
+  air:
+    world: c4ba1337-af4c-47d6-9e0f-abe3ba9652b2
+    world-name: world
+    x: 12157.128714283543
+    y: 133.0
+    z: 3654.700208807338
+    yaw: -4.499881267547607
+    pitch: -5.099950790405273

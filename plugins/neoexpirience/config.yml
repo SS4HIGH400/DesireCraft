@@ -1,0 +1,23 @@
+cooldown: 3 # ru В cooldown | 1 - 20 секунд, по умолчанию 60 секунд, тоесть 3
+            # en In cooldown | 1 - 20 seconds, by default 60 seconds, that is 3
+titlebar: true # ru В titlebar если значение - true то сообщения выводятся в titlebar и больше нигде, если в titlebar - false то сообщения выводятся в чате и больше нигде
+               # en In titlebar, if the value is true, then messages are displayed in titlebar and nowhere else, if in titlebar - false, then messages are displayed in chat and nowhere else
+# Russian | Если вы хотите использовать русский то оставьте всё по умолчанию как оно есть
+messages: # Для использования цветовых кодов используйте данный символ - &
+  time: "&fКоманда &d/exp &fнаходится в &fкулдауне. &fОсталось &d%time% секунд."
+  haveexp: "&aОпыт успешно конвертирован"
+  noexp: "&cУ вас недостаточно опыта"
+  noargs: "&cНедостаточно аргументов."
+  nopermission: "&cНет прав для использования этой команды."
+  reload: "&aПлагин успешно перезагружен."
+  author: "&d/eexp reload &f- перезагрузить плагин."
+
+# English | The messages are in English below. To use it, delete the messages that are above and remove the # symbol from the messages below before the message itself
+#messages: # To use color codes, use this symbol - &
+  #time: "&fCommand &d/exp &f is in &fcooldown. \n&f Left &d%time% seconds."
+  #haveexp: "&aThe expirience has been converted"
+  #noexp: "&cYou don't have enough experience"
+  #noargs: "&cnot enough arguments."
+  #nopermission: "&cthere are no rights to use this command."
+  #reload: "&athe plugin has been successfully reloaded."
+  #author: "&dNeoExpirience\n&F Author:&d NeoDev\n&f Plugin commands\n&d/exp &f- convert experience\n&d/eexp help &f- open the help for the plugin\n&d/eexp reload &f- reload the plugin."

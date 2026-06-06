@@ -1,0 +1,31 @@
+schematics:
+  crate1: #Name
+    file: 'airship.schem' #file
+    ignore-air-blocks: true
+    offsets-x: 16
+    offsets-y: 1
+    offsets-z: 0
+  crate2: #Name
+    file: 'house.schem' #file
+    ignore-air-blocks: true
+    offsets-x: 3
+    offsets-y: 0
+    offsets-z: 10
+  crate3: #Name
+    file: 'beacon.schem' #file
+    ignore-air-blocks: true
+    offsets-x: 0
+    offsets-y: -46
+    offsets-z: 8
+  crate4: #Name
+    file: 'witch.schem' #file #lovish
+    ignore-air-blocks: true
+    offsets-x: 0
+    offsets-y: -50
+    offsets-z: -8
+  crate5: #Name
+    file: 'lovish.schem' #file #lovish
+    ignore-air-blocks: false
+    offsets-x: 0
+    offsets-y: 0
+    offsets-z: 0

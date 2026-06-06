@@ -10,12 +10,42 @@
 # REMEMBER TO KEEP PERIODICAL BACKUPS.
 #
 regions:
-    arenadeath:
-        min: {x: -375, y: 85, z: 1146}
-        max: {x: -365, y: 255, z: 1156}
+    mine:
+        min: {x: 59, y: 100, z: -72}
+        max: {x: 80, y: 109, z: -51}
+        members: {}
+        flags: {time-lock: day, chorus-fruit-teleport: deny, ibitems-trap: deny, use: deny,
+            ibitems-plast: deny, snow-fall: deny, leaf-decay: deny, pvp: deny, firework-damage: deny,
+            mob-spawning: deny, weather-lock: clear, enderpearl: deny, creeper-explosion: deny,
+            fall-damage: deny, block-break: allow, snow-melt: deny, tnt: deny}
+        owners: {}
+        type: cuboid
+        priority: 0
+    spawn:
+        min: {x: -99999, y: -99999, z: -99999}
+        max: {x: 99999, y: 99999, z: 99999}
+        members: {}
+        flags: {time-lock: day, chorus-fruit-teleport: deny, ibitems-trap: deny, use: deny,
+            ibitems-plast: deny, snow-fall: deny, leaf-decay: deny, pvp: deny, firework-damage: deny,
+            mob-spawning: deny, weather-lock: clear, enderpearl: deny, creeper-explosion: deny,
+            fall-damage: deny, snow-melt: deny, tnt: deny}
+        owners: {}
+        type: cuboid
+        priority: 0
+    pvp:
+        min: {x: -4, y: 0, z: -1}
+        max: {x: 76, y: 86, z: 94}
+        members: {}
+        flags: {time-lock: day, chorus-fruit-teleport: deny, ibitems-trap: allow,
+            use: deny, ibitems-plast: allow, snow-fall: deny, leaf-decay: deny, pvp: allow,
+            firework-damage: deny, mob-spawning: deny, weather-lock: clear, enderpearl: deny,
+            creeper-explosion: deny, fall-damage: deny, snow-melt: deny, tnt: deny}
+        owners: {}
+        type: cuboid
+        priority: 5
+    __global__:
         members: {}
         flags: {}
-        owners:
-            unique-ids: [67c27007-0e89-32b0-80b2-b0ba0b2e76f0]
-        type: cuboid
+        owners: {}
+        type: global
         priority: 0

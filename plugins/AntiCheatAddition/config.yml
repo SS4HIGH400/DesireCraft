@@ -1,0 +1,823 @@
+# Download it here: https://black-minecraft.com/resources/223/
+
+# ------------------------------------------------------------------------------------------------------------------- #
+#                              _   _  _____ _                _               _     _ _ _   _                          #
+#                  /\         | | (_)/ ____| |              | |     /\      | |   | (_) | (_)                         #
+#                 /  \   _ __ | |_ _| |    | |__   ___  __ _| |_   /  \   __| | __| |_| |_ _  ___  _ __               #
+#                / /\ \ | '_ \| __| | |    | '_ \ / _ \/ _` | __| / /\ \ / _` |/ _` | | __| |/ _ \| '_ \              #
+#               / ____ \| | | | |_| | |____| | | |  __/ (_| | |_ / ____ \ (_| | (_| | | |_| | (_) | | | |             #
+#              /_/    \_\_| |_|\__|_|\_____|_| |_|\___|\__,_|\__/_/    \_\__,_|\__,_|_|\__|_|\___/|_| |_|             #
+#                                                                                                                     #
+#                                                                                                                     #
+#                           __  __         _       _           ___ _        _                                         #
+#                          |  \/  |__ _ __| |___  | |__ _  _  | _ \ |_  ___| |_ ___ _ _                               #
+#                          | |\/| / _` / _` / -_) | '_ \ || | |  _/ ' \/ _ \  _/ _ \ ' \                              #
+#                          |_|  |_\__,_\__,_\___| |_.__/\_, | |_| |_||_\___/\__\___/_||_|                             #
+#                                                       |__/                                                          #
+# ------------------------------------------------------------------------------------------------------------------- #
+
+# ------------------------------------------------------------------------------------------------------------------- #
+#                                           _      _    _ _ _   _                                                     #
+#                                          /_\  __| |__| (_) |_(_)___ _ _  ___                                        #
+#                                         / _ \/ _` / _` | |  _| / _ \ ' \(_-<                                        #
+#                                        /_/ \_\__,_\__,_|_|\__|_\___/_||_/__/                                        #
+#                                                                                                                     #
+# ------------------------------------------------------------------------------------------------------------------- #
+
+# BrandHider allows you to modify the brand that is shown on Minecraft’s debug screen.
+# This can be useful for hiding your server software or creating a custom message.
+BrandHider:
+  enabled: false
+  # This is the replacement text for the brand.
+  # You can use the character ‘&’ for color codes and all placeholders that are available in normal checks.
+  brand: "Some Spigot"
+  # Updates the brand at regular intervals for changing attributes, such as TPS, Ping, Time or Date.
+  # Set this to 0 to turn off refreshing if you only use static text or placeholders (in ticks).
+  refresh_rate: 0
+
+# This module spoofs the health of all players on your server, thus rendering DamageIndicators, HealthTags, and other
+# mods that try to display other players' health ineffective.
+# Other plugins can still get the accurate player health.
+DamageIndicator:
+  enabled: false
+  # Spoof the health of the following entity categories.
+  spoof:
+    animals: false
+    monsters: true
+    players: true
+
+# Various resource packs and cheats display the type and level of enchantments, providing information a normal player cannot obtain.
+# EnchantmentHider obfuscates enchantments by replacing them on the packet level with the infinity enchantment.
+# Therefore, legit players can still see the enchantment's glow, but those using ESP or texture packs cannot gain any extra information.
+EnchantmentHider:
+  enabled: true
+  # Spoof the health of the following entity categories.
+  # Please note that spoofing all enchantments might cause performance issues if you use a custom mob equipment system.
+  spoof:
+    players: true
+    others: true
+
+# If two players cannot see each other, ESP conceals their information on the packet-level.
+# ESP does not scan the entire distance between two players to increase performance.
+# As a result, ESP can sometimes show otherwise invisible players.
+#
+# MAIN FUNCTIONS:
+# - Sneaking-Hider:  Sneaking players will be hidden from other players if not seen directly.
+#                    This renders ESP, tracers, radar and related cheats ineffective in spotting sneaking players without line of sight.
+#
+# - Equipment-Hider: If a player is not visible to another player, ESP will hide any equipment they are wearing or have in their hands.
+#                    Therefore, cheaters can no longer gauge a player's combat strength.
+#                    This part automatically disables itself on servers with Minecraft versions below 1.11.
+#
+# IF THERE ARE MANY PLAYERS CONCENTRATED IN ONE WORLD, THE ESP CHECK MAY CAUSE A HIGH CPU LOAD.
+# Please RESTART your server after CREATING NEW WORLDS to activate ESP in them.
+Esp:
+  enabled: false
+  # How many ticks shall separate two ESP cycles?
+  # Low values can cause performance issues, high values may cause players to be hidden for too long and pop up.
+  interval_ticks: 2
+  # By default, only sneaking players are fully hidden from other players because nametags are visible through walls.
+  # If you disable nametags or choose to ignore this vanilla behaviour, you can set this option to true which
+  # causes all players to be fully hidden, even when not sneaking.
+  only_full_hide: false
+  # Should Esp consider Minecraft’s 3rd person perspectives?
+  # Set this to false for a two-thirds reduction in block queries.
+  # This option is especially useful if you have games in which players are not supposed to use the third person mode.
+  calculate_third_person_modes: false
+
+# LogBot clears old log files from both AntiCheatAddition and the server.
+# Upon restarting, it activates automatically, and then follows a 12-hour pattern.
+LogBot:
+  enabled: false
+  # After how many days should AntiCheatAddition logs be deleted?
+  # Set to -1 to disable
+  AntiCheatAddition: 10
+  # After how many days should server logs be deleted?
+  # Set to -1 to disable
+  Server: 10
+
+
+# ------------------------------------------------------------------------------------------------------------------- #
+#                                               ___ _           _                                                     #
+#                                              / __| |_  ___ __| |__ ___                                              #
+#                                             | (__| ' \/ -_) _| / /(_-<                                              #
+#                                              \___|_||_\___\__|_\_\/__/                                              #
+#                                                                                                                     #
+# ------------------------------------------------------------------------------------------------------------------- #
+
+# This module detects AutoEat bots that automatically consume food.
+# AutoEat VL decreases only every 5 minutes to identify cheats, no matter how spaced out eating sessions are.
+# Adds 20 VL.
+AutoEat:
+  enabled: true
+  # The violation level at which AntiCheatAddition starts to cancel consume events.
+  # Set this to 0 to never cancel events.
+  cancel_vl: 80
+  # A detection exceeding cancel_vl stops all eating for this time (in milliseconds).
+  timeout: 5000
+  # Map of violation levels to commands.
+  thresholds:
+    60: "<YOUR_STAFFCHAT_COMMAND> {player} in {world} is suspected for AutoEat"
+    120: "<YOUR_STAFFCHAT_COMMAND> {player} in {world} is highly suspected for AutoEat"
+    200: "kick {player} 3.1 (Анти-Чит) -s" # AutoEat"
+
+# AutoFish detects automatic fishing bots which can yield a lot of treasure and food for those who use them.
+# If you have modified fishing time and/or behaviour, please test if this check is compatible with your setup.
+# This check automatically disables itself on Minecraft versions below 1.11 because of changes to the Spigot API.
+AutoFish:
+  enabled: false
+  # The violation level at which AntiCheatAddition starts to cancel fishing.
+  # Set this to 0 to never cancel fishing.
+  cancel_vl: 100
+  # Control the different parts of AutoFish.
+  parts:
+    # This part recognizes instantaneous reaction speeds to detect AutoFishing mods.
+    # False positives might occur among experienced fishers.
+    # Adds 1 to 60 VL.
+    inhuman_reaction:
+      enabled: true
+    # The consistency part detects the constant reaction times of simple fishing bots.
+    # Adds 1 to 130 VL.
+    consistency:
+      enabled: true
+      # Do you allow afk fishing farms on your server?
+      allow_afk_fishing_farms: true
+  # Map of violation levels to commands.
+  thresholds:
+    90: "<YOUR_STAFFCHAT_COMMAND> {player} in {world} is suspected for AutoFish"
+    140: "<YOUR_STAFFCHAT_COMMAND> {player} in {world} is highly suspected for AutoFish"
+    200: "kick {player} 3.1 (Анти-Чит) -s" # AutoFish"
+
+# AutoPotion recognizes bots that throw potions at the player, such as when the player's health is running low.
+# This check automatically disables itself on Minecraft versions below 1.11 because of changes to the Spigot API.
+# Adds 50 VL.
+AutoPotion:
+  enabled: true
+  # The violation level at which AntiCheatAddition starts to cancel potion throws.
+  # Set this to 0 to never cancel throwing potions.
+  cancel_vl: 100
+  # A detection exceeding cancel_vl stops all potion throws for this time (in milliseconds).
+  timeout: 1000
+  # Map of violation levels to commands.
+  thresholds:
+    50: "<YOUR_STAFFCHAT_COMMAND> {player} in {world} is suspected for AutoPotion"
+    100: "<YOUR_STAFFCHAT_COMMAND> {player} in {world} is highly suspected for AutoPotion"
+    200: "kick {player} 3.1 (Анти-Чит) -s" # AutoPotion"
+
+# Duping can pick out familiar behaviour patterns when duplicating items.
+# Since this only recognizes patterns, it is not entirely precise and may overlook cases of duping.
+# To help with investigations, AntiCheatAddition records the location of any suspicious behavior in its log file.
+Duping:
+  enabled: true
+  # Control the different parts of Duping
+  parts:
+    # The DoubleDropped part detects picking up exactly twice the item count one dropped.
+    DoubleDropped:
+      enabled: true
+    # Secret cache tries to spot the creation of secret caches which are engulfed by other blocks.
+    # Duping players often create multiple secret caches at once to allow alt accounts to gather the items later on.
+    SecretCache:
+      enabled: true
+      # How much time should pass after a chest or shulker box is closed before AntiCheatAddition looks to see
+      # if it is a secret cache (in minutes)?
+      check_delay: 10
+  # Map of violation levels to commands.
+  thresholds:
+    50: "<YOUR_STAFFCHAT_COMMAND> {player} in {world} might be duping items."
+    100: "<YOUR_STAFFCHAT_COMMAND> {player} in {world} is suspected for duping items."
+    200: "<YOUR_STAFFCHAT_COMMAND> {player} in {world} is highly suspected for duping items."
+
+# Fastswitch detects players switching their hotbar-selection too quickly.
+# This is a typical behaviour when cheaters simultaneously use Killaura and Scaffold.
+# The check will auto-disable when the server has low TPS.
+# Adds 25 VL.
+Fastswitch:
+  enabled: false
+  # The violation level at which AntiCheatAddition starts to hotbar selections.
+  # Set this to 0 to never cancel hotbar selections.
+  cancel_vl: 50
+  # If a player's ping surpasses this value, they will be exempted from the check.
+  # Set this to -1 to disable
+  max_ping: 400
+  # Map of violation levels to commands.
+  thresholds:
+    30: "<YOUR_STAFFCHAT_COMMAND> {player} in {world} is suspected for Fastswitch"
+    100: "<YOUR_STAFFCHAT_COMMAND> {player} in {world} is highly suspected for Fastswitch"
+    200: "kick {player} 3.1 (Анти-Чит) -s" # Fastswitch"
+
+# ImpossibleChat detects sending chat messages while being in an inventory, blocking, sprinting and
+# other related situations.
+# Adds 25 VL.
+ImpossibleChat:
+  # Disabled by default, as some servers allow auto-chat mods.
+  # If you do not allow them, enable this.
+  enabled: false
+  # The violation level at which AntiCheatAddition starts to cancel the messages.
+  # Set this to 0 to never cancel messages.
+  cancel_vl: 75
+  # Map of violation levels to commands.
+  thresholds:
+    50: "<YOUR_STAFFCHAT_COMMAND> {player} in {world} is suspected for ImpossibleChat"
+    100: "<YOUR_STAFFCHAT_COMMAND> {player} in {world} is highly suspected for ImpossibleChat"
+    200: "kick {player} 3.1 (Анти-Чит) -s" # ImpossibleChat"
+
+# This check monitors inventory interactions of players.
+# The check will auto-disable when the server has low TPS.
+Inventory:
+  enabled: true
+  # If a player's ping surpasses this value, they will be exempted from some parts of the check.
+  # Note: Most parts do not depend on ping and will ignore this value.
+  # Set this to -1 to disable
+  max_ping: 400
+  # Control the different parts of Inventory
+  parts:
+    # This part finds simple chest stealer bots by detecting regular intervals between inventory clicks.
+    # This part is slow and activates only every 16 clicks.
+    #
+    # NOTE: Disable this part if you allow any inventory sorting mods.
+    # Adds 20 to 70 VL
+    AverageHeuristic:
+      enabled: true
+    # This part detects hitting while the inventory is open.
+    # Adds 20 VL.
+    Hit:
+      enabled: true
+      # The violation level at which AntiCheatAddition starts to cancel the hits.
+      # Set this to 0 to never cancel hits.
+      cancel_vl: 60
+    # The move part detects when a player moves while they are in their inventory.
+    # Adds 5 (moving) to 20 (jumping) VL
+    Move:
+      enabled: true
+      # The violation level at which AntiCheatAddition starts to cancel the movement.
+      # Set this to 0 to never cancel movement.
+      cancel_vl: 60
+      # This provides more leeway on servers with players who have a high ping by extending the no-penalty time after
+      # an inventory is opened. The default value already covers normal connections. (in milliseconds)
+      lenience_millis: 0
+    # The MultiInteraction part prevents players from moving items too fast.
+    # Adds 1 to 8 VL.
+    MultiInteraction:
+      enabled: true
+      # The violation level at which AntiCheatAddition starts to cancel the inventory interactions.
+      # Set this to 0 to never cancel interacts.
+      cancel_vl: 25
+    # This part detects chest stealers that close empty inventories with perfect timing.
+    # Adds 20 to 40 VL.
+    PerfectExit:
+      enabled: true
+    # The rotation part detects head movement while having an open inventory.
+    # Adds 1 VL.
+    Rotation:
+      enabled: true
+    # This part detects inventory interactions while a player is sprinting or sneaking.
+    # Adds 30 VL.
+    Sprinting:
+      enabled: true
+      # The violation level at which AntiCheatAddition starts to cancel the inventory interactions.
+      # Set this to 0 to never cancel inventory interactions.
+      cancel_vl: 110
+    # The Statistical part uses statistical tests to detect bot-like clicking behaviour even when the click delays
+    # are randomized.
+    # Adds 1 to 60 VL.
+    Statistical:
+      enabled: true
+  # Map of violation levels to commands.
+  thresholds:
+    110: "<YOUR_STAFFCHAT_COMMAND> {player} in {world} is suspected for inventory cheats."
+    160: "<YOUR_STAFFCHAT_COMMAND> {player} in {world} is highly suspected for inventory cheats."
+    200: "kick {player} 3.1 (Анти-Чит) -s" # Inventory cheats."
+
+# PacketAnalysis is a general purpose check searching for modifications that directly interfere with the protocol,
+# such as Derp, Freecam, Killaura, Aimbot and other rotation-based cheats.
+PacketAnalysis:
+  enabled: true
+  # Control the different parts of PacketAnalysis
+  parts:
+    # This part checks that the client sends an arm animation packet following an attack.
+    # This only detects the worst Killauras.
+    # Adds 30 VL.
+    Animation:
+      enabled: true
+    # EqualRotation scans for invalid rotation packets, identical to the last rotation.
+    # This catches some Scaffold, Tower, Killaura and Aimbot cheats.
+    # Adds 5 VL.
+    EqualRotation:
+      enabled: true
+    # IllegalPitch detects illegal pitches that a vanilla client cannot send.
+    # Adds 150 VL.
+    IllegalPitch:
+      enabled: true
+  # Map of violation levels to commands.
+  thresholds:
+    110: "<YOUR_STAFFCHAT_COMMAND> {player} in {world} is suspected by PacketAnalysis"
+    160: "<YOUR_STAFFCHAT_COMMAND> {player} in {world} is highly suspected by PacketAnalysis"
+    200: "kick {player} 3.1 (Анти-Чит) -s" # Suspicious packets"
+
+# Scaffold detects cheats that place blocks below the player to rapidly construct bridges.
+Scaffold:
+  enabled: true
+  # The violation level at which AntiCheatAddition starts to cancel the block placements.
+  # Set this to 0 to never cancel block placement.
+  cancel_vl: 110
+  # A detection exceeding cancel_vl stops all block placements for this time (in milliseconds).
+  timeout: 1000
+  # Control the different parts of Scaffold
+  parts:
+    # This part detects suspicious angles when the player places blocks.
+    # Adds 15 VL.
+    Angle:
+      enabled: true
+    # The core part of Scaffold preventing too fast Scaffolding.
+    # This part is always enabled, as it provides the basic framework.
+    # Adds 20 to 130 VLs.
+    Average:
+      # The minimum delays between block placements that are enforced by AntiCheatAddition (in milliseconds)
+      delays:
+        # This delay covers all straight building techniques.
+        normal: 238
+        # Delays used for building techniques which include sneaking
+        sneaking_addition: 90
+        sneaking_slow_addition: 110
+        # This delay applies to diagonal building
+        diagonal: 138
+    # This stops you from jumping while scaffolding, which, although it is possible, is very tricky to
+    # achieve without the help of a scaffold cheat.
+    # Adds 20 VL.
+    Jumping:
+      enabled: true
+    # This part detects suspicious placement positions.
+    # Adds 30 VL.
+    Position:
+      enabled: true
+    # This part analyzes the rotations of a player while scaffolding.
+    Rotation:
+      # This part checks the player's rotation's derivative.
+      # Adds 10 VL.
+      Derivative:
+        enabled: true
+      # FastChange tracks sudden changes in a player's looking direction.
+      # This provides a swift detection of Killaura and Scaffold combinations.
+      # Adds 15 VL.
+      FastChange:
+        enabled: true
+      # This part checks the player's rotation's second derivative.
+      # Adds 5 VL.
+      SecondDerivative:
+        enabled: true
+    # This checks for behaviour associated with safe-walk
+    Safewalk:
+      # Adds 15 VL.
+      Position:
+        enabled: true
+      # Adds 20 VL.
+      Timing:
+        enabled: true
+    # This part detects sprinting between block placements.
+    # Adds 45 VL.
+    Sprinting:
+      enabled: true
+  # Map of violation levels to commands.
+  thresholds:
+    90: "<YOUR_STAFFCHAT_COMMAND> {player} in {world} is suspected for Scaffold"
+    130: "<YOUR_STAFFCHAT_COMMAND> {player} in {world} is highly suspected for Scaffold"
+    200: "kick {player} 3.1 (Анти-Чит) -s" # Scaffold"
+
+# Shield detects cheats that influence the interaction with a shield.
+# This check is only available in minecraft 1.15+
+Shield:
+  enabled: true
+  # Control the different parts of Shield
+  parts:
+    # This part detects when a player is attacking and blocking with a shield simultaneously.
+    Hit:
+      enabled: true
+      # The violation level at which AntiCheatAddition starts to cancel the hits.
+      # Set this to 0 to never cancel hits.
+      cancel_vl: 60
+  thresholds:
+    110: "<YOUR_STAFFCHAT_COMMAND> {player} in {world} is suspected for Shield"
+    160: "<YOUR_STAFFCHAT_COMMAND> {player} in {world} is highly suspected for Shield"
+    200: "kick {player} 3.1 (Анти-Чит) -s" # Shield"
+
+# Skinblinker detects cheats that alter skin parts while a player is sprinting or sneaking.
+Skinblinker:
+  enabled: true
+  # Control the different parts of Skinblinker
+  parts:
+    # This part detects settings packets that are sent while sprinting or sneaking.
+    # Adds 50 VL.
+    Sprinting:
+      enabled: true
+    # The current protocol has an unutilized bit in the skin packet that Skinblinker cheats often toggle.
+    # Please note that false positives may occur with custom clients that use this bit for cosmetics.
+    UnusedBit:
+      enabled: true
+  # Map of violation levels to commands.
+  thresholds:
+    100: "<YOUR_STAFFCHAT_COMMAND> {player} in {world} is suspected for Skinblinker"
+    200: "kick {player} 3.1 (Анти-Чит) -s" # Skinblinker"
+
+# This check tries to alert you of teamers.
+# This is safe to enable, just make sure that you configure this check for your own needs.
+Teaming:
+  enabled: false
+  # What is the maximum distance between players for them to be considered teaming? (in blocks)
+  proximity_range: 4.5
+  # If you wish to limit teams to a certain amount of players, adjust this value accordingly.
+  # Setting this to 1 flags all teams.
+  allowed_size: 1
+  # How much time must pass before not attacking a close player is regarded as teaming? (in milliseconds)
+  no_pvp_time: 6000
+  # All the worlds in which the check is enabled are listed here.
+  enabled_worlds:
+    - "world"
+  # Here you can define zones in which the check is not run.
+  # Entries are structured in the following way:
+  # - "<affected_world> <x1> <z1> <x2> <z2>"
+  safe_zones:
+    - "world -15 -15 15 15"
+  # These VLs are cumulative for a team.
+  # That means that every team member gets (actual team size) - (allowed team size) VL per interval.
+  # Map of violation levels to commands.
+  thresholds:
+    4: "<YOUR_STAFFCHAT_COMMAND> {player} in {world} may be Teaming"
+    10: "<YOUR_STAFFCHAT_COMMAND> {player} in {world} are suspected for Teaming"
+    15: "<YOUR_STAFFCHAT_COMMAND> {player} in {world} are highly suspected for Teaming"
+
+# Tower check detects cheats that allow for quick vertical construction.
+# Adds 1 to 1000 VL (the latter being reserved for instant towers).
+Tower:
+  enabled: true
+  # The violation level at which AntiCheatAddition starts to cancel the block placements.
+  # Set this to 0 to never cancel block placement.
+  cancel_vl: 60
+  # A detection exceeding cancel_vl stops all block placements for this time (in milliseconds).
+  timeout: 6000
+  # Map of violation levels to commands.
+  thresholds:
+    60: "<YOUR_STAFFCHAT_COMMAND> {player} in {world} is suspected for Tower"
+    100: "<YOUR_STAFFCHAT_COMMAND> {player} in {world} is highly suspected for Tower"
+    200: "kick {player} 3.1 (Анти-Чит) -s" # Tower"
+
+
+# ------------------------------------------------------------------------------------------------------------------- #
+#                                            ___          _   _          _                                            #
+#                                           / __| ___ _ _| |_(_)_ _  ___| |                                           #
+#                                           \__ \/ -_) ' \  _| | ' \/ -_) |                                           #
+#                                           |___/\___|_||_\__|_|_||_\___|_|                                           #
+#                                                                                                                     #
+# ------------------------------------------------------------------------------------------------------------------- #
+
+# Sentinel watches over your server detecting mods and sometimes certain cheat clients on join without false detections.
+# Also, it tries to identify various exploits and illegal items that are safe to ban.
+# It does so by listening for certain messages that clients and mods can send over channels invisible to the user.
+# You can define your own checks in the listening section.
+Sentinel:
+  # Sentinel guards your server against exploits.
+  # It's usually safe to ban these automatically.
+  Exploits:
+    # Books can be dangerous in Minecraft. Not only can overly long books lag your server, but they allow unprecedented
+    # actions when created in creative mode: Opening files, executing commands and more.
+    # This sentinel eliminates any books on your server that correspond to the categories listed below.
+    BookPage:
+      enabled: true
+      # What is the page limit for books on your server?
+      # Vanilla clients have a 100-page limit when writing with a book and quill.
+      # Increase this number if your server uses custom books with more pages.
+      max_page_count: 100
+      # Should books with a ClickAction that opens a local file on your PC be erased?
+      disallow_open_file: true
+      # Should books with colors that are not part of the standard minecraft color codes be erased?
+      # These books can cause errors and lag your server if not handled properly.
+      disallow_custom_colors: true
+      # All books with a ClickAction that executes a command listed below will be deleted.
+      disallowed_commands:
+        - "op"
+        - "deop"
+        - "lp"
+        - "luckperms"
+        - "permissions"
+        - "perms"
+        - "perm"
+      # What commands will be executed if an illegal book is detected?
+      # Automatic banning can be considered.
+      commands:
+        - "kick {player} 3.1 (Анти-Чит) -s" # Maliciously modified book."
+
+    # Even if you have command blocks disabled on your server (as you should), it might be good to know (and ban) players
+    # that use exploits to get them nonetheless. Also deletes any command blocks found in the player's inventory.
+    CommandBlock:
+      enabled: true
+      # What commands will be executed if the mod is detected?
+      # Automatic banning can be considered.
+      commands:
+        - "kick {player} 3.1 (Анти-Чит) -s" # Command block."
+
+    # Various cheat clients allow creating “creative kill potions”, exploiting a bug in Minecraft in which high
+    # instant health potion effects kill a player. Moreover, equally high instant damage potions can kill any undead mobs.
+    # This Sentinel detects the use of such potions, neutralizes their effects, and removes them from the inventory.
+    CreativeKillPotion:
+      enabled: true
+      # What commands will be executed if an illegal potion is detected?
+      # Automatic banning can be considered.
+      commands:
+        - "kick {player} 3.1 (Анти-Чит) -s" # Illegal Potion."
+
+    # Various cheat clients allow a player to attack themselves, giving them an advantage in some scenarios, like
+    # abusing a game's death mechanics.
+    SelfDamage:
+      enabled: true
+      # What commands will be executed if a self-attack is detected?
+      # Automatic banning can be considered.
+      commands:
+        - "kick {player} 3.1 (Анти-Чит) -s" # Self damage."
+
+    # This Sentinel detects potions with one of the following features:
+    #
+    # + Blindness for at least min_effect_time seconds
+    # + Darkness (on minecraft 1.19+) for at least min_effect_time seconds
+    # + Nausea for at least min_effect_time seconds
+    #
+    # Brewing these potions is not possible. Unless they are a necessary part of the server, players should not be able
+    # to access them, as they can lead to a poor gaming experience.
+    # This Sentinel detects the use of such potions, neutralizes their effects, and removes them from the inventory.
+    TrollPotion:
+      enabled: true
+      # The minimum time of the effects to trigger a detection.
+      # Must be greater than or equal to 0. (in seconds)
+      min_effect_time: 500
+      # What commands will be executed if an illegal potion is detected?
+      # Automatic banning can be considered.
+      commands:
+        - "kick {player} 3.1 (Анти-Чит) -s" # Troll Potion"
+
+  # A popular pvp mod that can display a HUD, capes and has multiple social features.
+  5Zig:
+    enabled: false
+    # What commands will be executed if the mod is detected?
+    commands:
+      - "<YOUR_STAFFCHAT_COMMAND> {player} in {world} uses 5Zig"
+
+  # A popular PvP modification to enhance the sprinting behaviour (ToggleSprint)
+  BetterSprinting:
+    enabled: true
+    # This mod provides a method to disable parts of it.
+    disable:
+      # Set this to true to completely disable the mod.
+      # Other options will be ignored if this is set to true.
+      general: false
+      # This gives players a configurable speed boost when flying in creative or survival mode.
+      survival_fly_boost: true
+      enable_all_dirs: true
+    # What commands will be executed if the mod is detected?
+    commands:
+      - "<YOUR_STAFFCHAT_COMMAND> {player} in {world} uses BetterSprinting"
+
+  # This Sentinel is for the up-to-date version of LabyMod, a popular PvP mod similar to 5zig, but with more features and TS3 support.
+  # If activated, the Sentinel will override the config options of the LabyModAPI plugin that is needed for this Sentinel to work.
+  LabyMod:
+    enabled: false
+    # This allows you to show LabyMod players a banner image in their tablist.
+    # As specified in their documentation (https://docs.labymod.net/pages/server/displays/tablist/)
+    # the image ratio must be 5:1 and the recommended resolution is 1280x256 pixels.
+    TablistBanner:
+      enabled: false
+      # Please specify the URL to get the image here.
+      url: ""
+    # This setting determines whether the LabyMod-Voicechat is allowed on your server (true means allowed).
+    Voicechat: true
+    # This mod provides a method to disable parts of it.
+    # Set the corresponding value to true if you want to block a part of the mod
+    disable:
+      # Fixes a rendering bug in Minecraft with fast lava placement (ghost blocks).
+      # This may be considered a form of cheating if lava is a prominent part of your server.
+      improved_lava: false
+      # Resolves an issue in Minecraft with quick head movements that causes the crosshair to lag slightly behind.
+      # This can be seen as semi-cheat-like, as it grants a minor aiming advantage in fights.
+      crosshair_sync: false
+      # This fixes some inventory bugs, improving pot and soup refill.
+      # Many consider this a form of cheating, as it gives a large reliability bonus.
+      refill_fix: true
+      # Purely aesthetic modifications to the GUI, including coordinates, orientation and the current time.
+      gui_all: false
+      # This renders the potion effects of the player on the display in form of a HUD.
+      gui_potion_effects: false
+      # This displays the current armour of a player (including durability) in a HUD.
+      gui_armor_hud: false
+      # This displays a player’s weapon and their arrow count in a HUD.
+      gui_item_hud: false
+      # A purely aesthetic feature that changes the building animations.
+      blockbuild: false
+      # Various cosmetic features
+      tags: false
+      # This adds channels and filters to enhance chat experience (client-sided).
+      # This is akin to cheating, since it includes an AutoText module that lets you write predetermined messages quickly,
+      # plus exclusive symbols (bypassing chat filters).
+      chat: false
+      # A purely aesthetic feature that changes the arm animations.
+      animations: false
+      # This renders the player’s saturation, sometimes seen as an unfair advantage.
+      saturation_bar: false
+    # What commands will be executed if the mod is detected?
+    commands:
+      - "<YOUR_STAFFCHAT_COMMAND> {player} in {world} uses LabyMod"
+
+  # A mod that projects (client-side) holograms to simplify building, but also has a module for downloading worlds.
+  # This Sentinel only activates on Minecraft versions 1.8-1.12 because of the mod’s age.
+  Schematica:
+    enabled: true
+    # This mod provides a method to disable parts of it.
+    # Set the corresponding value to true if you want to block a part of the mod
+    disable:
+      # Automatically builds based on a schematic.
+      # This is sometimes called a building-bot.
+      printer: true
+      # This saves a part of the world as a schematic like a limited WorldDownloader mod.
+      save: true
+      # This allows to load a schematic on your server for printing or a hologram.
+      load: false
+    # What commands will be executed if the mod is detected?
+    commands:
+      - "<YOUR_STAFFCHAT_COMMAND> {player} in {world} uses Schematica"
+
+  # Vape is a widely used ghost-client, regularly seen in ranked PvP gameplay and tailored to be especially difficult
+  # to uncover in screen-shares. The Sentinel only identifies some cracked client versions.
+  # This Sentinel won't work with Minecraft 1.13+ since the cracked version is 1.8 and 1.13 has seen massive API alterations.
+  Vape:
+    enabled: true
+    # What commands will be executed if the mod is detected?
+    # Automatic banning can be considered.
+    commands:
+      - "kick {player} 3.1 (Анти-Чит) -s" # Illegal client modification"
+
+  # WorldDownloader is a popular modification to retrieve the maps of a server.
+  WorldDownloader:
+    enabled: true
+    # This mod provides a method to disable parts of it.
+    disable:
+      # Set this to true to completely disable the mod.
+      # Other options will be ignored if this is set to true.
+      general: true
+      # This disables future features of the mod not yet included in the server api.
+      future: true
+      # This sets the chunk range to download from a player’s location.
+      # -1 indicates an infinite range. The range's form is a square, not a circle.
+      # If chunk_caching is set to false, this has no effect.
+      save_radius: 0
+      # This disables chunk caching which allows the player to save all chunks they have moved through.
+      chunk_caching: true
+      # Should the player be able to save (tile) entities?
+      entity_saving: true
+      tile_entity_saving: true
+      # If tile_entity_saving is set to true, this has no effect.
+      container_saving: true
+    # What commands will be executed if the mod is detected?
+    commands:
+      - "kick {player} 3.1 (Анти-Чит) -s" # WorldDownloader"
+
+  # Here, you can define your own simple Sentinel checks.
+  # Please ensure that you use NO SPECIAL CHARACTERS and NO DUPLICATE NAMES for the check name.
+  # Special characters are permissible in channel names and “contains”.
+  #
+  # A basic guide for creating your own check:
+  # (1) Copy the section of PXMod
+  # (2) Rename the section from PXMod to <NAME_OF_YOUR_CUSTOM_CHECK>
+  # (3) Add the channels you want to listen to in incoming channels (e.g. “minecraft:brand”).
+  #     AntiCheatAddition automatically tries to generate the legacy channel names and listens to those as well
+  #     (in this case, “MC|Brand”). If you know the legacy name, add it and AntiCheatAddition will choose the
+  #     correct one for your server version.
+  # (4) If needed, clarify what the message should include to trigger the check. E.g. if you are listening to
+  #     “minecraft:brand” and superspecialmod:version to detect a mod you could define containsAny as: [“SSM”, “ssm”].
+  #     Note: This is a purely fictional example. Mods have different channels and messages.
+  #     Many do not communicate, especially cheat clients.
+  # (5) Define the commands you want to execute when the mod is detected. The commands are executed exactly once right
+  #     after player join. This allows you to e.g. disallow a certain mod on your server by kicking players on join.
+  Custom:
+    # This detects Forge.
+    Forge:
+      enabled: false
+      # The channels AntiCheatAddition will listen to.
+      incoming_channels:
+        - "minecraft:brand"
+        - "MC|Brand"
+      # The message must include all strings in the list to trigger a detection. [ ] is an empty list.
+      # If the list is empty, all messages are accepted.
+      containsAll: [ ]
+      # The message must include at least one of the strings in the list to trigger a detection. [ ] is an empty list.
+      # If the list is empty, all messages are accepted.
+      containsAny: [ "forge", "fml" ]
+      # What commands will be executed if the mod is detected?
+      commands:
+        - "<YOUR_STAFFCHAT_COMMAND> {player} in {world} uses Forge"
+
+    # This detects Liteloader.
+    LiteLoader:
+      enabled: false
+      # The channels AntiCheatAddition will listen to.
+      incoming_channels:
+        - "minecraft:brand"
+        - "MC|Brand"
+      # The message must include all strings in the list to trigger a detection. [ ] is an empty list.
+      # If the list is empty, all messages are accepted.
+      containsAll: [ ]
+      # The message must include at least one of the strings in the list to trigger a detection. [ ] is an empty list.
+      # If the list is empty, all messages are accepted.
+      containsAny: [ "LiteLoader", "Liteloader" ]
+      # What commands will be executed if the mod is detected?
+      commands:
+        - "<YOUR_STAFFCHAT_COMMAND> {player} in {world} uses LiteLoader"
+
+    # This detects the PixelClient.
+    PixelClient:
+      enabled: false
+      # The channels AntiCheatAddition will listen to.
+      incoming_channels:
+        - "mc:pixel"
+        - "MC|PIXEL"
+      # The message must include all strings in the list to trigger a detection. [ ] is an empty list.
+      # If the list is empty, all messages are accepted.
+      containsAll: [ ]
+      # The message must include at least one of the strings in the list to trigger a detection. [ ] is an empty list.
+      # If the list is empty, all messages are accepted.
+      containsAny: [ ]
+      # What commands will be executed if the mod is detected?
+      commands:
+        - "<YOUR_STAFFCHAT_COMMAND> {player} in {world} uses PixelClient"
+
+    # This detects the PXMod.
+    PXMod:
+      enabled: false
+      # The channels AntiCheatAddition will listen to.
+      incoming_channels:
+        - "px:version"
+        - "PX|Version"
+      # The message must include all strings in the list to trigger a detection. [ ] is an empty list.
+      # If the list is empty, all messages are accepted.
+      containsAll: [ ]
+      # The message must include at least one of the strings in the list to trigger a detection. [ ] is an empty list.
+      # If the list is empty, all messages are accepted.
+      containsAny: [ ]
+      # What commands will be executed if the mod is detected?
+      commands:
+        - "<YOUR_STAFFCHAT_COMMAND> {player} in {world} uses PXMod"
+
+    # This detects Rift.
+    Rift:
+      enabled: false
+      # The channels AntiCheatAddition will listen to.
+      incoming_channels:
+        - "minecraft:brand"
+        - "MC|Brand"
+      # The message must include all strings in the list to trigger a detection. [ ] is an empty list.
+      # If the list is empty, all messages are accepted.
+      containsAll: [ ]
+      # The message must include at least one of the strings in the list to trigger a detection. [ ] is an empty list.
+      # If the list is empty, all messages are accepted.
+      containsAny: [ "rift" ]
+      # What commands will be executed if the mod is detected?
+      commands:
+        - "<YOUR_STAFFCHAT_COMMAND> {player} in {world} uses Rift"
+
+    # This detects Winterware.
+    Winterware:
+      enabled: true
+      # The channels AntiCheatAddition will listen to.
+      incoming_channels:
+        - "lc:brand"
+        - "LC|Brand"
+      # The message must include all strings in the list to trigger a detection. [ ] is an empty list.
+      # If the list is empty, all messages are accepted.
+      containsAll: [ ]
+      # The message must include at least one of the strings in the list to trigger a detection. [ ] is an empty list.
+      # If the list is empty, all messages are accepted.
+      containsAny: [ ]
+      # What commands will be executed if the mod is detected?
+      # Automatic banning can be considered.
+      commands:
+        - "kick {player} 3.1 (Анти-Чит) -s" # Illegal Client Modifications"
+
+
+# ------------------------------------------------------------------------------------------------------------------- #
+#                                               ___      _                                                            #
+#                                              |   \ ___| |__ _  _ __ _                                               #
+#                                              | |) / -_) '_ \ || / _` |                                              #
+#                                              |___/\___|_.__/\_,_\__, |                                              #
+#                                                                 |___/                                               #
+#                                                                                                                     #
+# ------------------------------------------------------------------------------------------------------------------- #
+
+# Defines the debug log levels.
+# Possible values are: "OFF", "SEVERE", "WARNING", "INFO", "FINE", "FINER", "FINEST", "ALL" among others.
+# Default is "INFO", setting any value to "FINE" causes debug for violations to be logged.
+# "OFF" disables logging, "FINER" causes various debug messages be logged and "ALL" or "FINEST" enable spammy debug messages.
+Debug:
+  # The logging level for the console.
+  # Please note that due to a spigot bug, this setting is currently not functional.
+  console_level: "INFO"
+  # The logging level for the log file.
+  # For submitting bug reports, it is imperative that the file log level is at least "FINE".
+  file_level: "FINE"
+  # The logging level for the players with debug permission. They can still disable them by using the debug command
+  # even when this is not "OFF".
+  player_level: "OFF"

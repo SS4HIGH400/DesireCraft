@@ -1,0 +1,28 @@
+location: spawn:63,500:113,700:81,500
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 135.0
+down-origin: false
+pages:
+- lines:
+  - content: '&7⊲ <#ANIM:wave:&d&l,&5&l&n>PVP АРЕНА</#ANIM> &7⊳'
+    height: 0.3
+  - content: '&8★ &7Удачного сражения! &8★'
+    height: 0.3
+  - content: ''
+    height: 0.3
+  - content: '&fВозьми самые крутые'
+    height: 0.3
+  - content: '&fресурсы, чтобы выжить!'
+    height: 0.3
+  - content: ''
+    height: 0.3
+  - content: '&fБроню, меч и прочее ты'
+    height: 0.3
+  - content: '&fможешь купить &7» &#F4C4F3&l/&#F6B1F4&lɪ&#F79FF6&lᴛ&#F98CF7&lᴇ&#FA7AF9&lᴍ&#FC67FA&ls'
+    height: 0.5
+  - content: '#HEAD: PLAYER_HEAD (eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjFhOTQwN2Y1N2Y0NWM3YTAxMGY4ZDYyZTE4MzJiZDY0ZmJlNjEwN2FmYzFlZmVhNDU5ZDEwNGY4MDlhOTczMCJ9fX0=)'
+    height: 0.0
+  actions: {}

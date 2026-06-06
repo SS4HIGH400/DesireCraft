@@ -1,0 +1,304 @@
+Settings:
+  Prefix: '&7[&d&lАукцион&7] &8» ' #Prefix of when you get Crazy Auctions Messages.
+  GUIName: '&0Аукцион &8» &0&lГлавная' #Name of the Main GUI.
+  Players-Current-Items: '&0Аукцион &8» &0&lВаши текущие объявления' #The Name of the Player Current Items GUI.
+  Cancelled/Expired-Items: '&0Аукцион &8» &0&lПросрочка из пятерочки' #Name of the Cancelled/Expired GUI.
+  Buying-Item: '&0Аукцион &8» &0&lПодтверждение' #Name of the Buying GUI.
+  Bidding-On-Item: '&8You Are Bidding On This Item.' #Name of the Bidding GUI.
+  Categories: '&0Аукцион &8» &0&lКатегории' #Name of the Category GUI.
+  Sell-Time: 2d #The time that each item will sell for.
+  Bid-Time: 2m 30s #Time for each item that is biddable.
+  Full-Expire-Time: 10d #The full time the item is in the crazy auctions.
+  Bid-Winner-Time: 20d #The time the winner of a bid has to claim their prize.
+  Minimum-Sell-Price: 10 #Minimum amount you can sell an item for.
+  Max-Beginning-Sell-Price: 1000000 #Max amount you can sell an item for.
+  Minimum-Bid-Price: 100 #Minimum starting bid.
+  Max-Beginning-Bid-Price: 1000000 #Maximum starting bid.
+  Allow-Damaged-Items: false #Allow items that have been damaged.
+  Category-Page-Opens-First: false #If set to true the categories' page will open when they do /CA.
+  Feature-Toggle: #Toggle if a feature is on or off.
+    Selling: true #Able to use the selling part of the auction house.
+    Bidding: false #Able to use the bidding part of the auction house.
+  Patches:
+    Macro-Dupe: true #Turn to false if you have an issue, but it should patch the bug.
+  Sounds:
+    Toggle: true #Disable the clicking sound.
+    Sound: 'ENTITY_PLAYER_ATTACK_CRIT' #Make sure if you use 1.8 or lower you use the 1.8 sound and 1.9 and up use 1.9 sounds. The default sound is 1.8.
+    #Sounds are found here: https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Sound.html
+  GUISettings: #Settings for things in the gui.
+    SellingItemLore: #The lore on items that are being sold.
+      - ''
+     # - '§x§D§A§0§8§F§B&l&m                              &m'
+      - '§x§D§A§0§8§F§B$ &fЦена: §x§D§A§0§8§F§B%price%⛂'
+      - '§x§D§A§0§8§F§B☰ &fПродавец: §x§D§A§0§8§F§B%seller%'
+      - '§x§D§A§0§8§F§B⌚ &fИстекает: §x§D§A§0§8§F§B%time%'
+      - ''
+     # - '§x§D§A§0§8§F§B&l&m                              &m'
+     # - ''
+    CurrentLore: #Lore on items that are in your current items GUI.
+      - ''
+     # - '§x§D§A§0§8§F§B&l&m                              &m'
+      - '§x§D§A§0§8§F§B$ &fЦена: §x§D§A§0§8§F§B%price%⛂'
+      #- '§x§D§A§0§8§F§B☰ &fПродавец: §x§D§A§0§8§F§B%seller%'
+      - '§x§D§A§0§8§F§B⌚ &fИстекает: §x§D§A§0§8§F§B%time%'
+      - ''
+    Cancelled/ExpiredLore: #Lore on items that are in your canceled/expired GUI.
+      - ''
+     # - '§x§D§A§0§8§F§B&l&m                              &m'
+      - '§x§D§A§0§8§F§B⌚ &fИстекает: §x§D§A§0§8§F§B%time%'
+      - ''
+    Bidding: #Lore on Bidding Items.
+      - '&7-------------------------'
+      - '§x§D§A§0§8§F§BClick here to bid.'
+      - ''
+      - '&9Seller: §x§D§A§0§8§F§B%seller%'
+      - '&9Current Bid: §x§D§A§0§8§F§B$%topbid%'
+      - '&9Top Bidder: §x§D§A§0§8§F§B%topbidder%'
+      - '&9Time Left: §x§D§A§0§8§F§B%time%'
+      - '&7-------------------------'
+    Category-Settings:
+      Armor:
+        Item: 'GOLDEN_CHESTPLATE'
+        Toggle: true
+        Slot: 11
+        Name: '§x§D§A§0§8§F§BБроня'
+        Lore:
+          - '§x§b§d§b§d§b§dВ этой категории содержится'
+          - '§x§b§d§b§d§b§dтолько броня.'
+      Weapons:
+        Item: 'GOLDEN_SWORD'
+        Toggle: true
+        Slot: 12
+        Name: '§x§D§A§0§8§F§BПредметы'
+        Lore:
+          - '§x§b§d§b§d§b§dВ этой категории содержится'
+          - '§x§b§d§b§d§b§dтолько предметы.'
+      Tools:
+        Item: 'GOLDEN_PICKAXE'
+        Toggle: true
+        Slot: 13
+        Name: '§x§D§A§0§8§F§BИнструменты'
+        Lore:
+          - '§x§b§d§b§d§b§dВ этой категории содержится'
+          - '§x§b§d§b§d§b§dтолько инструменты.'
+      Food:
+        Item: 'GOLDEN_APPLE'
+        Toggle: true
+        Slot: 14
+        Name: '§x§D§A§0§8§F§BЕда'
+        Lore:
+          - '§x§b§d§b§d§b§dВ этой категории содержится'
+          - '§x§b§d§b§d§b§dтолько еда.'
+      Potions:
+        Item: 'POTION'
+        Toggle: true
+        Slot: 15
+        Name: '§x§D§A§0§8§F§BЗелья'
+        Lore:
+          - '§x§b§d§b§d§b§dВ этой категории содержится'
+          - '§x§b§d§b§d§b§dтолько зелья.'
+      Blocks:
+        Item: 'GRASS_BLOCK'
+        Toggle: true
+        Slot: 16
+        Name: '§x§D§A§0§8§F§BБлоки'
+        Lore:
+          - '§x§b§d§b§d§b§dВ этой категории содержится'
+          - '§x§b§d§b§d§b§dтолько блоки.'
+      Other:
+        Item: 'GOLD_NUGGET'
+        Toggle: true
+        Slot: 17
+        Name: '§x§D§A§0§8§F§BОстальное'
+        Lore:
+          - '§x§b§d§b§d§b§dВ этой категории содержится'
+          - '§x§b§d§b§d§b§dтолько остальное.'
+      None:
+        Item: 'BARRIER'
+        Toggle: true
+        Slot: 23
+        Name: '§x§D§A§0§8§F§BВсе'
+        Lore:
+          - '§x§b§d§b§d§b§dВ этой категории содержится - все.'
+    OtherSettings: #Other Settings for the GUIs.
+      SellingItems: #The button for your current items.
+        Item: 'HEAD;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvN2UyZWI0NzUxZTNjNTBkNTBmZjE2MzUyNTc2NjYzZDhmZWRmZTNlMDRiMmYwYjhhMmFhODAzYjQxOTM2M2NhMSJ9fX0=' #The item that this button is.
+        Toggle: true #If the item is in the gui or not.
+        Slot: 54
+        Name: '§x§D§A§0§8§F§B[ ★ ] Выставленные товары' #Name of the item.
+        Lore: #Lore of the item.
+          - '§x§b§d§b§d§b§dНажмите, чтобы открывать меню'
+          - '§x§b§d§b§d§b§dс выставленные вами товары.'
+      Cancelled/ExpiredItems: #The button for Cancelled/Expired Items.
+        Item: 'HEAD;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDdiN2I3OTYzODIwMTUzOTJhNjQ4ZDZiNTg4OTdmYjI0ODAzMWE4MWIyMjU0OGQ0ZDY4ODg2YzE1NmU5ZjU1ZSJ9fX0='
+        Toggle: true
+        Slot: 46
+        Name: '§x§D§A§0§8§F§B[ ☣ ] Товары с истекшим сроком годности'
+        Lore:
+          - '§x§b§d§b§d§b§dНажмите, чтобы открыть товары'
+          - '§x§b§d§b§d§b§dс истекшим сроком годности'
+      PreviousPage: #The button for Previous Page.
+        Item: 'HEAD;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODY1MmUyYjkzNmNhODAyNmJkMjg2NTFkN2M5ZjI4MTlkMmU5MjM2OTc3MzRkMThkZmRiMTM1NTBmOGZkYWQ1ZiJ9fX0='
+        Toggle: true
+        Slot: 49
+        Name: '§x§D§A§0§8§F§B[ ◀ ] Пред. страница'
+        Lore: { }
+      Refesh: #The button for Refresh Page.
+        Item: 'HEAD;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNWIxZWYyYTQ4MjlhMTFmZDkwM2I1ZTMxMDg4NjYyYThjNTZlNDcxYmI0ODY0M2MwZDlmOTUwMDZkMTgyMDIxMCJ9fX0='
+        Toggle: true
+        Slot: 50
+        Name: '§x§D§A§0§8§F§B[ ⟳ ] Перезагрузить страницу'
+        Lore: { }
+      NextPage: #The button for Next Page.
+        Item: 'HEAD;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMmEzYjhmNjgxZGFhZDhiZjQzNmNhZThkYTNmZTgxMzFmNjJhMTYyYWI4MWFmNjM5YzNlMDY0NGFhNmFiYWMyZiJ9fX0='
+        Toggle: true
+        Slot: 51
+        Name: '§x§D§A§0§8§F§B[ ▶ ] След. страница'
+        Lore: { }
+      Category1: #The button for Next Page.
+        Item: 'HEAD;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWQ0NTJiZmNkYzNlYTE0ZjllNjEyYjFjOTZhYmVmOTdjMTBlOTZjNzExNmVhMmE0YjFhNWRmOGQ0YWExNzJmOSJ9fX0='
+        Toggle: false
+        Slot: 53
+        Name: '§x§D§A§0§8§F§B[ 🔥 ] Категории'
+        Lore:
+          - '§x§b§d§b§d§b§dНажмите, чтобы выбрать категорию.'
+          - '§x§b§d§b§d§b§dСейчас у вас выбрана: %category%'
+      Category2: #The button for Next Page.
+        Item: 'HEAD;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGExZmRiNmIxZTk4ZTVmM2E2MzkyMWY5MzgwZjc2MDYxNDgxZmIxMmEzZTM5N2EzNTQ0ZDRhODlmNGU2NGU2NiJ9fX0='
+        Toggle: false
+        Slot: 1
+        Name: '§x§D§A§0§8§F§B[ 🔥 ] Категории'
+        Lore:
+          - '§x§b§d§b§d§b§dНажмите, чтобы выбрать категорию.'
+          - '§x§b§d§b§d§b§dСейчас у вас выбрана: %category%'
+      Bidding/Selling: #Switch between Bidding and Selling.
+        Selling:
+          Item: 'ITEM;SLIME_BALL'
+          Toggle: false
+          Slot: 53
+          Name: '&6Currently looking at items being sold.'
+          Lore:
+            - '&7&l(&6&l!&7&l) &7Click here to see items'
+            - '&7that you can bid on.'
+        Bidding:
+          Item: 'ITEM;MAGMA_CREAM'
+          Toggle: false
+          Slot: 53
+          Name: '&6Currently looking at items that can be bid on.'
+          Lore:
+            - '&7&l(&6&l!&7&l) &7Click here to see items'
+            - '&7that you can buy at a price.'
+      WhatIsThis: #The info on all the Books buttons.
+        SellingShop: #The Book in the main shop.
+          Item: 'HEAD;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDNhZmY1NzcyNGY1ZWQwNGRiNDUwZGI4NzRjNmMwYzZlZjRhMTBlMTQwNmI3N2ZiYWZmZGNiOTgxOTFiZjIwNCJ9fX0='
+          Toggle: false
+          Slot: 46
+          Name: '§x§D§A§0§8§F§BЧто такое аукцион?'
+          Lore:
+            - '§x§b§d§b§d§b§dАукцион - это торговая площадка на которой'
+            - '§x§b§d§b§d§b§dигроки могут продавать/покупать товары выставленные'
+            - '§x§b§d§b§d§b§dдругими.'
+            - ''
+            - '§x§b§d§b§d§b§dИспользуйте команду: /ah sell <цена>, чтобы'
+            - '§x§b§d§b§d§b§dвыставить на аукцион предмет, который держите в руке.'
+        BiddingShop: #The Book in the main shop.
+          Item: 'ITEM;BOOK'
+          Toggle: true
+          Slot: 54
+          Name: '&6What Is This Page?'
+          Lore:
+            - '&aThis is the crazy auctions, here you can'
+            - '&aput items for sale, and bid on items'
+            - '&athat others have put for sale.'
+            - ''
+            - '&aThe bidding auction is also a great place to'
+            - '&amake money by bidding off items that others'
+            - '&amay be interested in bidding on.'
+        CurrentItems: #The Book in the Current items GUI.
+          Item: 'HEAD;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDNhZmY1NzcyNGY1ZWQwNGRiNDUwZGI4NzRjNmMwYzZlZjRhMTBlMTQwNmI3N2ZiYWZmZGNiOTgxOTFiZjIwNCJ9fX0='
+          Toggle: true
+          Slot: 54
+          Name: '§x§D§A§0§8§F§BЧто такое текущие предметы?'
+          Lore:
+            - '§x§b§d§b§d§b§dТекущие предметы - это вещи, которые'
+            - '§x§b§d§b§d§b§dбыли выставленны вами недавно, они еще'
+            - '§x§b§d§b§d§b§dне просрочены. &7&o(читайте про просрочку в меню'
+            - '&7&oистекшие предметы)'
+        Cancelled/ExpiredItems: #The Book in the Canceled/Expired Items GUI.
+          Item: 'HEAD;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDNhZmY1NzcyNGY1ZWQwNGRiNDUwZGI4NzRjNmMwYzZlZjRhMTBlMTQwNmI3N2ZiYWZmZGNiOTgxOTFiZjIwNCJ9fX0='
+          Toggle: true
+          Slot: 54
+          Name: '§x§D§A§0§8§F§BЧто такое просрочка?'
+          Lore:
+            - '§x§b§d§b§d§b§dПросрочка - это предметы, которые'
+            - '§x§b§d§b§d§b§dуже стоят длительное время на аукционе.'
+            - '§x§b§d§b§d§b§dПо истечению небольшого времени, выставленные'
+            - '§x§b§d§b§d§b§dпредметы попадают сюда.'
+        Viewing: #The Book in the Viewing Items GUI.
+          Item: 'ITEM;BOOK'
+          Toggle: true
+          Slot: 50
+          Name: '&6What Is This Page?'
+          Lore:
+            - '&aThis page shows all the items that'
+            - '&aa player has currently on the bidding'
+            - '&aand selling market. You can quickly see'
+            - '&awhat a specific player is selling.'
+        Categories: #The Book in the Viewing Items GUI.
+          Item: 'HEAD;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDNhZmY1NzcyNGY1ZWQwNGRiNDUwZGI4NzRjNmMwYzZlZjRhMTBlMTQwNmI3N2ZiYWZmZGNiOTgxOTFiZjIwNCJ9fX0='
+          Toggle: true
+          Slot: 54
+          Name: '§x§D§A§0§8§F§B[ ～ ] Что такое категория?'
+          Lore:
+            - '§x§b§d§b§d§b§dКатегория - это сортировка товара'
+            - '§x§b§d§b§d§b§dпо его признакам - броня, мечи, блоки и т.д.'
+      Back: #The Back Buttons.
+        Item: 'HEAD;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmQ2OWUwNmU1ZGFkZmQ4NGU1ZjNkMWMyMTA2M2YyNTUzYjJmYTk0NWVlMWQ0ZDcxNTJmZGM1NDI1YmMxMmE5In19fQ=='
+        Slot: 46
+        Name: '§x§D§A§0§8§F§B[ ⬅ ] Назад'
+        Lore: { }
+      Return: #The Return Buttons.
+        Item: 'HEAD;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWEwZWYyMDNhM2MzODM3ZmQ0YTEwZTFjM2YxOWNjNDBlNjQ5N2NiOWI5NzgwNzRkNDcyYzY1ZDQ4MmY2YjY3MyJ9fX0='
+        Slot: 50
+        Name: '§x§D§A§0§8§F§B[ ↻ ] Забрать всю просрочку'
+        Lore:
+          - '§x§b§d§b§d§b§dНажмите, чтобы забрать всю вашу'
+          - '§x§b§d§b§d§b§dпросрочку с аукциона'
+      Confirm: #The Confirm Buttons.
+        Item: 'ITEM;LIME_STAINED_GLASS_PANE'
+        Lore:
+          - '§x§b§d§b§d§b§dНажмите сюда, чтобы'
+          - '§x§b§d§b§d§b§dподтвердить покупку этого предмета'
+        Name: '§x§0§0§f§f§0§a[ ✔ ] Подтвердить покупку'
+      Cancel: #The Cancel Buttons.
+        Item: 'ITEM;RED_STAINED_GLASS_PANE'
+        Name: '§x§f§f§0§0§0§0[ ❌ ] Отменить покупку'
+        Lore:
+          - '§x§b§d§b§d§b§dНажмите сюда, чтобы'
+          - '§x§b§d§b§d§b§dотменить покупку этого предмета'
+      Your-Item: #The item that shows when you try to buy/bid on your item.
+        Item: 'HEAD;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvM2VkMWFiYTczZjYzOWY0YmM0MmJkNDgxOTZjNzE1MTk3YmUyNzEyYzNiOTYyYzk3ZWJmOWU5ZWQ4ZWZhMDI1In19fQ=='
+        Name: '&cВы не можете купить свой предмет'
+        Lore: { }
+      Cant-Afford: #The item that shows when you can't afford this item.
+        Item: 'HEAD;eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvM2VkMWFiYTczZjYzOWY0YmM0MmJkNDgxOTZjNzE1MTk3YmUyNzEyYzNiOTYyYzk3ZWJmOWU5ZWQ4ZWZhMDI1In19fQ=='
+        Name: '&cВы не можете позволить себе этот предмет'
+        Lore: { }
+      Top-Bidder: #The item for when a player is already the top bidder.
+        Item: 'ITEM;BARRIER'
+        Name: '&cYou are already the top bidder.'
+      Bidding: #The item in the middle when bidding on an item.
+        Item: 'ITEM;BLACK_STAINED_GLASS_PANE'
+        Name: '&7Bidding'
+        Lore:
+          - '&7<--&aAdd &cRemove&7-->'
+          - '&9Your Current Bid: &e$%Bid%'
+          - '&9Current Top Bid: &e$%topbid%'
+      Bid: #The button for when you want to confirm your bid.
+        Item: 'ITEM;LIGHT_BLUE_STAINED_GLASS_PANE'
+        Name: '&bBid Now'
+        Lore:
+          - '&7Click here to Bid Now.'
+  BlackList:
+    - 'ITEM;BEDROCK'
+    - 'ITEM;END_PORTAL_FRAME'

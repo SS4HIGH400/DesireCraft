@@ -3,13 +3,127 @@
 # A full wiki on how to use this plugin can be found at:
 # https://wiki.helpch.at/helpchat-plugins/deluxemenus
 
-check_updates: true
-debug: LOW
 use_admin_commands_in_menus_list: false
 menus_list_page_size: 10
 metas_list_page_size: 15
+debug: HIGHEST
+check_updates: true
 gui_menus:
-  main_menu:
-    file: menu/menu.yml
-  admin_panel:
-    file: adminpanel.yml
+  crafts:
+    file: crafts/crafts.yml
+  tnt0:
+    file: crafts/tnt0.yml
+  tnt1:
+    file: crafts/tnt1.yml
+  tnt2:
+    file: crafts/tnt2.yml
+  tnt3:
+    file: crafts/tnt3.yml
+  tnt4:
+    file: crafts/tnt4.yml
+  tnt5:
+    file: crafts/tnt5.yml
+  tnt6:
+    file: crafts/tnt6.yml
+  totem:
+    file: crafts/totem.yml
+  trapka:
+    file: crafts/trapka.yml
+  apple:
+    file: crafts/apple.yml
+  apple1:
+    file: crafts/apple1.yml
+  apple2:
+    file: crafts/apple2.yml
+  crystal:
+    file: crafts/crystal.yml
+  dizor:
+    file: crafts/dizor.yml
+  dust:
+    file: crafts/dust.yml
+  elytra:
+    file: crafts/elytra.yml
+  plast:
+    file: crafts/plast.yml
+  sb:
+    file: crafts/sb.yml
+  shop:
+    file: shop/shop.yml
+  items:
+    file: shop/items.yml
+  arrows:
+    file: shop/arrows.yml
+  books:
+    file: shop/books.yml
+  potions:
+    file: shop/potions.yml
+  sphere:
+    file: shop/sphere.yml
+  blocks:
+    file: shop/blocks.yml
+  subgui:
+    file: main/subgui.yml
+  tituls:
+    file: main/tituls.yml
+  rtp:
+    file: main/rtp.yml
+  lobby:
+    file: main/lobby.yml
+  menu:
+    file: main/menu.yml
+  sub:
+    file: main/sub.yml
+  quests:
+    file: main/quests.yml
+  warps:
+    file: main/warps.yml
+  stacker:
+    file: main/stacker.yml
+  kits:
+    file: main/kits.yml
+  help:
+    file: main/help.yml
+  donate:
+    file: main/donate.yml
+  ruda1:
+    file: seller/ruda1.yml
+  ruda2:
+    file: seller/ruda2.yml
+  ruda3:
+    file: seller/ruda3.yml
+  ruda4:
+    file: seller/ruda4.yml
+  ruda5:
+    file: seller/ruda5.yml
+  myaso1:
+    file: seller/myaso1.yml
+  myaso2:
+    file: seller/myaso2.yml
+  myaso3:
+    file: seller/myaso3.yml
+  myaso4:
+    file: seller/myaso4.yml
+  myaso5:
+    file: seller/myaso5.yml
+  seller:
+    file: seller/seller.yml
+  ohota1:
+    file: seller/ohota1.yml
+  ohota2:
+    file: seller/ohota2.yml
+  ohota3:
+    file: seller/ohota3.yml
+  ohota4:
+    file: seller/ohota4.yml
+  ohota5:
+    file: seller/ohota5.yml
+  fermer1:
+    file: seller/fermer1.yml
+  fermer2:
+    file: seller/fermer2.yml
+  fermer3:
+    file: seller/fermer3.yml
+  fermer4:
+    file: seller/fermer4.yml
+  fermer5:
+    file: seller/fermer5.yml

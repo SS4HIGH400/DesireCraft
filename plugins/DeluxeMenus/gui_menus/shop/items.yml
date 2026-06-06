@@ -1,0 +1,353 @@
+menu_title: '[ᴛs] ▸ Уникальные вещи'
+open_command:
+- items
+size: 53
+register_command: true
+update_interval: 1
+open_commands:
+- '[sound] BLOCK_CHEST_OPEN'
+items:
+##########################################################################
+  'simurga':
+    enchantments:
+    - DURABILITY;1 
+    hide_attributes: true
+    hide_enchantments: true
+    material: ELYTRA
+    slot: 20
+    display_name: '&#EF89FFКрылья Симурга'
+    lore:
+    - ''
+    - '&8 ▸ &7Броня +6'
+    - ''
+    - '&8 ▪ &fСтоимость: &a3490ᚹ'
+    - '&8 ▪ &fВаш баланс: &#971AED%playerpoints_points%ᚹ'
+    - ''
+    - '&a◈ Нажмите, чтобы купить'
+    left_click_requirement:
+      requirements:
+        anything_here:
+          type: '>='
+          input: '%playerpoints_points%'
+          output: '3490'
+          deny_commands:
+          - '[message] &7[&#F4C4F3&lМ&#F5B5F4&lа&#F7A5F5&lг&#F896F7&lа&#F986F8&lз&#FB77F9&lи&#FC67FA&lн&7] &8» &fУ вас &cнедостаточно &fрубинов!'
+    left_click_commands:
+    - '[sound] BLOCK_NOTE_BLOCK_BASS'
+    - '[console] points take %player_name% 3490'
+    - '[console] minecraft:give %player_name% elytra{AttributeModifiers:[{AttributeName:"generic.armor",Amount:6,Slot:chest,Name:"generic.armor",UUID:[I;-12439,221,2111,-442]}]} 1'
+    - '[message] &7[&#F4C4F3&lМ&#F5B5F4&lа&#F7A5F5&lг&#F896F7&lа&#F986F8&lз&#FB77F9&lи&#FC67FA&lн&7] &8» &fСпасибо за покупку в нашем магазине!'
+  'garpia':
+    enchantments:
+    - DURABILITY;1 
+    hide_attributes: true
+    hide_enchantments: true
+    material: ELYTRA
+    slot: 24
+    display_name: '&#EF89FFКрылья Гарпии'
+    lore:
+    - ''
+    - '&8 ▸ &7Нерушимость'
+    - ''
+    - '&8 ▪ &fСтоимость: &a2490ᚹ'
+    - '&8 ▪ &fВаш баланс: &#971AED%playerpoints_points%ᚹ'
+    - ''
+    - '&a◈ Нажмите, чтобы купить'
+    left_click_requirement:
+      requirements:
+        anything_here:
+          type: '>='
+          input: '%playerpoints_points%'
+          output: '2490'
+          deny_commands:
+          - '[message] &7[&#F4C4F3&lМ&#F5B5F4&lа&#F7A5F5&lг&#F896F7&lа&#F986F8&lз&#FB77F9&lи&#FC67FA&lн&7] &8» &fУ вас &cнедостаточно &fрубинов!'
+    left_click_commands:
+    - '[sound] BLOCK_NOTE_BLOCK_BASS'
+    - '[console] points take %player_name% 2490'
+    - '[console] minecraft:give %player_name% elytra{Unbreakable:1} 1'
+    - '[message] &7[&#F4C4F3&lМ&#F5B5F4&lа&#F7A5F5&lг&#F896F7&lа&#F986F8&lз&#FB77F9&lи&#FC67FA&lн&7] &8» &fСпасибо за покупку в нашем магазине!'
+  'NETHERITE_HELMET':
+    enchantments:
+    - DURABILITY;1 
+    hide_attributes: true
+    hide_enchantments: true
+    material: NETHERITE_HELMET
+    slot: 13
+    display_name: '&#EF89FFКошмарный Шлем'
+    lore:
+    - ''
+    - '&8 ▸ &7Подводник'
+    - '&8 ▸ &7Взрывоустойчивость 2'
+    - '&8 ▸ &7Огнеупорность 2'
+    - '&8 ▸ &7Починка'
+    - '&8 ▸ &7Защита от снарядов 2'
+    - '&8 ▸ &7Защита 4'
+    - '&8 ▸ &7Подводное дыхание 4'
+    - '&8 ▸ &cПроклятие утраты'
+    - ''
+    - '&8 ▪ &fСтоимость: &a990ᚹ'
+    - '&8 ▪ &fВаш баланс: &#971AED%playerpoints_points%ᚹ'
+    - ''
+    - '&a◈ Нажмите, чтобы купить'
+    left_click_requirement:
+      requirements:
+        anything_here:
+          type: '>='
+          input: '%playerpoints_points%'
+          output: '990'
+          deny_commands:
+          - '[message] &7[&#F4C4F3&lМ&#F5B5F4&lа&#F7A5F5&lг&#F896F7&lа&#F986F8&lз&#FB77F9&lи&#FC67FA&lн&7] &8» &fУ вас &cнедостаточно &fрубинов!'
+    left_click_commands:
+    - '[sound] BLOCK_NOTE_BLOCK_BASS'
+    - '[console] points take %player_name% 990'
+    - '[console] minecraft:give %player_name% netherite_helmet{Enchantments:[{id:aqua_affinity,lvl:1},{id:blast_protection,lvl:2},{id:vanishing_curse,lvl:1},{id:fire_protection,lvl:2},{id:mending,lvl:1},{id:projectile_protection,lvl:2},{id:protection,lvl:4},{id:respiration,lvl:4}]} 1'
+    - '[message] &7[&#F4C4F3&lМ&#F5B5F4&lа&#F7A5F5&lг&#F896F7&lа&#F986F8&lз&#FB77F9&lи&#FC67FA&lн&7] &8» &fСпасибо за покупку в нашем магазине!'
+  'netherite_chestplate':
+    enchantments:
+    - DURABILITY;1
+    hide_attributes: true 
+    hide_enchantments: true
+    material: netherite_chestplate
+    slot: 22
+    display_name: '&#EF89FFКошмарный Нагрудник'
+    lore:
+    - ''
+    - '&8 ▸ &7Взрывоустойчивость 2'
+    - '&8 ▸ &7Огнеупорность 2'
+    - '&8 ▸ &7Починка'
+    - '&8 ▸ &7Защита от снарядов 2'
+    - '&8 ▸ &7Защита 4'
+    - '&8 ▸ &cПроклятие утраты'
+    - ''
+    - '&8 ▪ &fСтоимость: &a990ᚹ'
+    - '&8 ▪ &fВаш баланс: &#971AED%playerpoints_points%ᚹ'
+    - ''
+    - '&a◈ Нажмите, чтобы купить'
+    left_click_requirement:
+      requirements:
+        anything_here:
+          type: '>='
+          input: '%playerpoints_points%'
+          output: '990'
+          deny_commands:
+          - '[message] &7[&#F4C4F3&lМ&#F5B5F4&lа&#F7A5F5&lг&#F896F7&lа&#F986F8&lз&#FB77F9&lи&#FC67FA&lн&7] &8» &fУ вас &cнедостаточно &fрубинов!'
+    left_click_commands:
+    - '[sound] BLOCK_NOTE_BLOCK_BASS'
+    - '[console] points take %player_name% 990'
+    - '[console] minecraft:give %player_name% netherite_chestplate{Enchantments:[{id:blast_protection,lvl:2},{id:vanishing_curse,lvl:1},{id:fire_protection,lvl:2},{id:mending,lvl:1},{id:projectile_protection,lvl:2},{id:protection,lvl:4}]} 1'
+    - '[message] &7[&#F4C4F3&lМ&#F5B5F4&lа&#F7A5F5&lг&#F896F7&lа&#F986F8&lз&#FB77F9&lи&#FC67FA&lн&7] &8» &fСпасибо за покупку в нашем магазине!'
+  'netherite_leggings':
+    enchantments:
+    - DURABILITY;1 
+    hide_attributes: true
+    hide_enchantments: true
+    material: netherite_leggings
+    slot: 31
+    display_name: '&#EF89FFКошмарные Поножи'
+    lore:
+    - ''
+    - '&8 ▸ &7Взрывоустойчивость 2'
+    - '&8 ▸ &7Огнеупорность 2'
+    - '&8 ▸ &7Починка'
+    - '&8 ▸ &7Защита от снарядов 2'
+    - '&8 ▸ &7Защита 4'
+    - '&8 ▸ &cПроклятие утраты'
+    - ''
+    - '&8 ▪ &fСтоимость: &a990ᚹ'
+    - '&8 ▪ &fВаш баланс: &#971AED%playerpoints_points%ᚹ'
+    - ''
+    - '&a◈ Нажмите, чтобы купить'
+    left_click_requirement:
+      requirements:
+        anything_here:
+          type: '>='
+          input: '%playerpoints_points%'
+          output: '990'
+          deny_commands:
+          - '[message] &7[&#F4C4F3&lМ&#F5B5F4&lа&#F7A5F5&lг&#F896F7&lа&#F986F8&lз&#FB77F9&lи&#FC67FA&lн&7] &8» &fУ вас &cнедостаточно &fрубинов!'
+    left_click_commands:
+    - '[sound] BLOCK_NOTE_BLOCK_BASS'
+    - '[console] points take %player_name% 990'
+    - '[console] minecraft:give %player_name% netherite_leggings{Enchantments:[{id:blast_protection,lvl:2},{id:vanishing_curse,lvl:1},{id:fire_protection,lvl:2},{id:mending,lvl:1},{id:projectile_protection,lvl:2},{id:protection,lvl:4}]} 1'
+    - '[message] &7[&#F4C4F3&lМ&#F5B5F4&lа&#F7A5F5&lг&#F896F7&lа&#F986F8&lз&#FB77F9&lи&#FC67FA&lн&7] &8» &fСпасибо за покупку в нашем магазине!'
+  'netherite_boots':
+    enchantments:
+    - DURABILITY;1 
+    hide_attributes: true
+    hide_enchantments: true
+    material: netherite_boots
+    slot: 40
+    display_name: '&#EF89FFКошмарные Ботинки'
+    lore:
+    - ''
+    - '&8 ▸ &7Взрывоустойчивость 2'
+    - '&8 ▸ &7Огнеупорность 2'
+    - '&8 ▸ &7Починка'
+    - '&8 ▸ &7Защита от снарядов 2'
+    - '&8 ▸ &7Защита 4'
+    - '&8 ▸ &cПроклятие утраты'
+    - ''
+    - '&8 ▪ &fСтоимость: &a990ᚹ'
+    - '&8 ▪ &fВаш баланс: &#971AED%playerpoints_points%ᚹ'
+    - ''
+    - '&a◈ Нажмите, чтобы купить'
+    left_click_requirement:
+      requirements:
+        anything_here:
+          type: '>='
+          input: '%playerpoints_points%'
+          output: '3590'
+          deny_commands:
+          - '[message] &7[&#F4C4F3&lМ&#F5B5F4&lа&#F7A5F5&lг&#F896F7&lа&#F986F8&lз&#FB77F9&lи&#FC67FA&lн&7] &8» &fУ вас &cнедостаточно &fрубинов!'
+    left_click_commands:
+    - '[sound] BLOCK_NOTE_BLOCK_BASS'
+    - '[console] points take %player_name% 990'
+    - '[console] minecraft:give %player_name% netherite_boots{Enchantments:[{id:blast_protection,lvl:2},{id:vanishing_curse,lvl:1},{id:fire_protection,lvl:2},{id:mending,lvl:1},{id:projectile_protection,lvl:2},{id:protection,lvl:4}]} 1'
+    - '[message] &7[&#F4C4F3&lМ&#F5B5F4&lа&#F7A5F5&lг&#F896F7&lа&#F986F8&lз&#FB77F9&lи&#FC67FA&lн&7] &8» &fСпасибо за покупку в нашем магазине!'
+#################################################
+  'netherite_sword':
+    enchantments:
+    - DURABILITY;1 
+    hide_attributes: true
+    hide_enchantments: true
+    material: netherite_sword
+    slot: 21
+    display_name: '&#EF89FFМеч Охотника'
+    lore:
+    - ''
+    - '&8 ▸ &7Добыча 5'
+    - '&8 ▸ &7Прочность 5'
+    - '&8 ▸ &cПроклятие утраты'
+    - ''
+    - '&8 ▪ &fСтоимость: &a3590ᚹ'
+    - '&8 ▪ &fВаш баланс: &#971AED%playerpoints_points%ᚹ'
+    - ''
+    - '&a◈ Нажмите, чтобы купить'
+    left_click_requirement:
+      requirements:
+        anything_here:
+          type: '>='
+          input: '%playerpoints_points%'
+          output: '3590'
+          deny_commands:
+          - '[message] &7[&#F4C4F3&lМ&#F5B5F4&lа&#F7A5F5&lг&#F896F7&lа&#F986F8&lз&#FB77F9&lи&#FC67FA&lн&7] &8» &fУ вас &cнедостаточно &fрубинов!'
+    left_click_commands:
+    - '[sound] BLOCK_NOTE_BLOCK_BASS'
+    - '[console] points take %player_name% 3590'
+    - '[console] minecraft:give %player_name% netherite_sword{Enchantments:[{id:vanishing_curse,lvl:1},{id:looting,lvl:5},{id:unbreaking,lvl:5}]} 1'
+    - '[message] &7[&#F4C4F3&lМ&#F5B5F4&lа&#F7A5F5&lг&#F896F7&lа&#F986F8&lз&#FB77F9&lи&#FC67FA&lн&7] &8» &fСпасибо за покупку в нашем магазине!'
+#################################################
+  'netherite_pickaxe':
+    enchantments:
+    - DURABILITY;1 
+    hide_attributes: true
+    hide_enchantments: true
+    material: netherite_pickaxe
+    slot: 23
+    display_name: '&#EF89FFКирка Гнома'
+    lore:
+    - ''
+    - '&8 ▸ &7Эффективность 10'
+    - '&8 ▸ &7Прочность 5'
+    - '&8 ▸ &cПроклятие утраты'
+    - ''
+    - '&8 ▪ &fСтоимость: &a1990ᚹ'
+    - '&8 ▪ &fВаш баланс: &#971AED%playerpoints_points%ᚹ'
+    - ''
+    left_click_requirement:
+      requirements:
+        anything_here:
+          type: '>='
+          input: '%playerpoints_points%'
+          output: '1990'
+          deny_commands:
+          - '[message] &7[&#F4C4F3&lМ&#F5B5F4&lа&#F7A5F5&lг&#F896F7&lа&#F986F8&lз&#FB77F9&lи&#FC67FA&lн&7] &8» &fУ вас &cнедостаточно &fрубинов!'
+    left_click_commands:
+    - '[sound] BLOCK_NOTE_BLOCK_BASS'
+    - '[console] points take %player_name% 1990'
+    - '[console] minecraft:give %player_name% netherite_pickaxe{Enchantments:[{id:vanishing_curse,lvl:1},{id:efficiency,lvl:10},{id:unbreaking,lvl:5}]} 1'
+    - '[message] &7[&#F4C4F3&lМ&#F5B5F4&lа&#F7A5F5&lг&#F896F7&lа&#F986F8&lз&#FB77F9&lи&#FC67FA&lн&7] &8» &fСпасибо за покупку в нашем магазине!'
+#################################################
+  'netherite_shovel':
+    enchantments:
+    - DURABILITY;1
+    hide_attributes: true 
+    hide_enchantments: true
+    material: netherite_shovel
+    slot: 32
+    display_name: '&#EF89FFЛопата Гнома'
+    lore:
+    - ''
+    - '&8 ▸ &7Эффективность 10'
+    - '&8 ▸ &7Прочность 5'
+    - '&8 ▸ &cПроклятие утраты'
+    - ''
+    - '&8 ▪ &fСтоимость: &a1990ᚹ'
+    - '&8 ▪ &fВаш баланс: &#971AED%playerpoints_points%ᚹ'
+    - ''
+    left_click_requirement:
+      requirements:
+        anything_here:
+          type: '>='
+          input: '%playerpoints_points%'
+          output: '1990'
+          deny_commands:
+          - '[message] &7[&#F4C4F3&lМ&#F5B5F4&lа&#F7A5F5&lг&#F896F7&lа&#F986F8&lз&#FB77F9&lи&#FC67FA&lн&7] &8» &fУ вас &cнедостаточно &fрубинов!'
+    left_click_commands:
+    - '[sound] BLOCK_NOTE_BLOCK_BASS'
+    - '[console] points take %player_name% 1990'
+    - '[console] minecraft:give %player_name% netherite_shovel{Enchantments:[{id:vanishing_curse,lvl:1},{id:efficiency,lvl:10},{id:unbreaking,lvl:5}]} 1'
+    - '[message] &7[&#F4C4F3&lМ&#F5B5F4&lа&#F7A5F5&lг&#F896F7&lа&#F986F8&lз&#FB77F9&lи&#FC67FA&lн&7] &8» &fСпасибо за покупку в нашем магазине!'
+#################################################
+  'netherite_axe':
+    enchantments:
+    - DURABILITY;1 
+    hide_attributes: true
+    hide_enchantments: true
+    material: netherite_axe
+    slot: 30
+    display_name: '&#EF89FFТопор Гнома'
+    lore:
+    - ''
+    - '&8 ▸ &7Эффективность 10'
+    - '&8 ▸ &7Прочность 5'
+    - '&8 ▸ &cПроклятие утраты'
+    - ''
+    - '&8 ▪ &fСтоимость: &a1990ᚹ'
+    - '&8 ▪ &fВаш баланс: &#971AED%playerpoints_points%ᚹ'
+    - ''
+    left_click_requirement:
+      requirements:
+        anything_here:
+          type: '>='
+          input: '%playerpoints_points%'
+          output: '1990'
+          deny_commands:
+          - '[message] &7[&#F4C4F3&lМ&#F5B5F4&lа&#F7A5F5&lг&#F896F7&lа&#F986F8&lз&#FB77F9&lи&#FC67FA&lн&7] &8» &fУ вас &cнедостаточно &fрубинов!'
+    left_click_commands:
+    - '[sound] BLOCK_NOTE_BLOCK_BASS'
+    - '[console] points take %player_name% 1990'
+    - '[console] minecraft:give %player_name% netherite_axe{Enchantments:[{id:vanishing_curse,lvl:1},{id:efficiency,lvl:10},{id:unbreaking,lvl:5}]} 1'
+    - '[message] &7[&#F4C4F3&lМ&#F5B5F4&lа&#F7A5F5&lг&#F896F7&lа&#F986F8&lз&#FB77F9&lи&#FC67FA&lн&7] &8» &fСпасибо за покупку в нашем магазине!'
+
+# Прочее
+  'back':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2VmMTE5ZjA4ODUxYTcyYTVmMTBmYmMzMjQ3ZDk1ZTFjMDA2MzYwZDJiNGY0MTJiMjNjZTA1NDA5Mjc1NmIwYyJ9fX0=
+    slot: 49
+    display_name: '&c&lНазад'
+    lore:
+    - ''
+    - '&8 ▪ &fНажав сюда, вы сможете'
+    - '&8 ▪ &fвернуться в прошлое меню.'
+    - ''
+    click_commands:
+    - '[openguimenu] shop'
+    - '[sound] BLOCK_NOTE_BLOCK_BASS'
+  'filler_glass':
+    material: BLACK_STAINED_GLASS_PANE
+    slots: [0-6,9,18,26-27,35,44,47-48,50-53]
+    display_name: '&l'
+  'filler_glass_2':
+    material: MAGENTA_STAINED_GLASS_PANE
+    slots: [7,8,17,36,45,46]
+    display_name: '&l'

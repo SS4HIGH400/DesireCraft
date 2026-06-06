@@ -1,0 +1,338 @@
+#=========================================================
+menu_title: '[ᴛs] ▸ Охотник'
+open_command: ohota
+size: 54
+items:
+  'exit':
+    material: arrow
+    slot: 0
+    display_name: '&c« Выйти'
+    left_click_commands:
+      - '[player] seller'
+    left_click_commands:
+      - '[player] seller'
+  '1':
+    material: rotten_flesh
+    slot: 19
+    amount: 1
+    display_name: '&#9400FFГ&#9F00FEн&#A900FEи&#B400FDл&#BF00FCа&#CA00FCя &#D400FBп&#DF00FAл&#EA00F9о&#F400F9т&#FF00F8ь&7 (1шт)'
+    lore:
+    - ''
+    - '&8 ▪ &dЛКМ &8» &fПродать &d1шт&f за &d45$'
+    - ''
+    - '&8 ▪ &5ПКМ &8» &fИзменить кол-во'
+    - '&7 ▸ &fПродать по &a1 шт.'
+    - '&7 ▸ &fПродать по &716 шт.'
+    - '&7 ▸ &fПродать по &732 шт.'
+    - '&7 ▸ &fПродать по &764 шт.'
+    - '&7 ▸ &fПродать &7ВСЁ'
+    - ''
+    - '&8 ▪ &fВаши Монеты: &d%vault_eco_balance_fixed%$'
+    - ''
+    right_click_commands:
+    - '[player] ohota2'
+    left_click_requirement:
+      requirements:
+        item_check:
+          type: has item
+          material: rotten_flesh
+          amount: 1
+          deny_commands:
+          - '[message]&7[&#F4C4F3&lС&#F5B5F4&lк&#F7A5F5&lу&#F896F7&lп&#F986F8&lщ&#FB77F9&lи&#FC67FA&lк&7] &8» &fНет необходимого предмета, либо кол-ва предметов для продажи!'
+    left_click_commands:
+      - '[givemoney] 45'
+      - '[refresh]'
+      - '[message]&7[&#F4C4F3&lС&#F5B5F4&lк&#F7A5F5&lу&#F896F7&lп&#F986F8&lщ&#FB77F9&lи&#FC67FA&lк&7] &8» &fВы успешно продали &dГнилую плоть'
+      - '[console] minecraft:clear %player_name% rotten_flesh 1'
+  '2':
+    material: spider_eye
+    slot: 20
+    amount: 1
+    display_name: '&#9400FFП&#A000FEа&#AC00FDу&#B800FDч&#C400FCи&#CF00FBй &#DB00FAг&#E700FAл&#F300F9а&#FF00F8з&7 (1шт)'
+    lore:
+    - ''
+    - '&8 ▪ &dЛКМ &8» &fПродать &d1шт&f за &d65$'
+    - ''
+    - '&8 ▪ &5ПКМ &8» &fИзменить кол-во'
+    - '&7 ▸ &fПродать по &a1 шт.'
+    - '&7 ▸ &fПродать по &716 шт.'
+    - '&7 ▸ &fПродать по &732 шт.'
+    - '&7 ▸ &fПродать по &764 шт.'
+    - '&7 ▸ &fПродать &7ВСЁ'
+    - ''
+    - '&8 ▪ &fВаши Монеты: &d%vault_eco_balance_fixed%$'
+    - ''
+    right_click_commands:
+    - '[player] ohota2'
+    left_click_requirement:
+      requirements:
+        item_check:
+          type: has item
+          material: spider_eye
+          amount: 1
+          deny_commands:
+          - '[message]&7[&#F4C4F3&lС&#F5B5F4&lк&#F7A5F5&lу&#F896F7&lп&#F986F8&lщ&#FB77F9&lи&#FC67FA&lк&7] &8» &fНет необходимого предмета, либо кол-ва предметов для продажи!'
+    left_click_commands:
+      - '[givemoney] 65'
+      - '[refresh]'
+      - '[message]&7[&#F4C4F3&lС&#F5B5F4&lк&#F7A5F5&lу&#F896F7&lп&#F986F8&lщ&#FB77F9&lи&#FC67FA&lк&7] &8» &fВы успешно продали &dПаучий глаз'
+      - '[console] minecraft:clear %player_name% spider_eye 1'
+  '3':
+    material: gunpowder
+    slot: 21
+    amount: 1
+    display_name: '&#9400FFП&#AF00FDо&#CA00FCр&#E400FAо&#FF00F8х (1шт)'
+    lore:
+    - ''
+    - '&8 ▪ &dЛКМ &8» &fПродать &d1шт&f за &d75$'
+    - ''
+    - '&8 ▪ &5ПКМ &8» &fИзменить кол-во'
+    - '&7 ▸ &fПродать по &a1 шт.'
+    - '&7 ▸ &fПродать по &716 шт.'
+    - '&7 ▸ &fПродать по &732 шт.'
+    - '&7 ▸ &fПродать по &764 шт.'
+    - '&7 ▸ &fПродать &7ВСЁ'
+    - ''
+    - '&8 ▪ &fВаши Монеты: &d%vault_eco_balance_fixed%$'
+    - ''
+    right_click_commands:
+    - '[player] ohota2'
+    left_click_requirement:
+      requirements:
+        item_check:
+          type: has item
+          material: gunpowder
+          amount: 1
+          deny_commands:
+          - '[message]&7[&#F4C4F3&lС&#F5B5F4&lк&#F7A5F5&lу&#F896F7&lп&#F986F8&lщ&#FB77F9&lи&#FC67FA&lк&7] &8» &fНет необходимого предмета, либо кол-ва предметов для продажи!'
+    left_click_commands:
+      - '[givemoney] 75'
+      - '[refresh]'
+      - '[message]&7[&#F4C4F3&lС&#F5B5F4&lк&#F7A5F5&lу&#F896F7&lп&#F986F8&lщ&#FB77F9&lи&#FC67FA&lк&7] &8» &fВы успешно продали &dПорох'
+      - '[console] minecraft:clear %player_name% gunpowder 1'
+  '4':
+    material: string
+    slot: 22
+    amount: 1
+    display_name: '&#9400FFН&#B800FDи&#DB00FAт&#FF00F8ь&7 (1шт)'
+    lore:
+    - ''
+    - '&8 ▪ &dЛКМ &8» &fПродать &d1шт&f за &d50$'
+    - ''
+    - '&8 ▪ &5ПКМ &8» &fИзменить кол-во'
+    - '&7 ▸ &fПродать по &a1 шт.'
+    - '&7 ▸ &fПродать по &716 шт.'
+    - '&7 ▸ &fПродать по &732 шт.'
+    - '&7 ▸ &fПродать по &764 шт.'
+    - '&7 ▸ &fПродать &7ВСЁ'
+    - ''
+    - '&8 ▪ &fВаши Монеты: &d%vault_eco_balance_fixed%$'
+    - ''
+    right_click_commands:
+    - '[player] ohota2'
+    left_click_requirement:
+      requirements:
+        item_check:
+          type: has item
+          material: string
+          amount: 1
+          deny_commands:
+          - '[message]&7[&#F4C4F3&lС&#F5B5F4&lк&#F7A5F5&lу&#F896F7&lп&#F986F8&lщ&#FB77F9&lи&#FC67FA&lк&7] &8» &fНет необходимого предмета, либо кол-ва предметов для продажи!'
+    left_click_commands:
+      - '[givemoney] 50'
+      - '[refresh]'
+      - '[message]&7[&#F4C4F3&lС&#F5B5F4&lк&#F7A5F5&lу&#F896F7&lп&#F986F8&lщ&#FB77F9&lи&#FC67FA&lк&7] &8» &fВы успешно продали &dНить'
+      - '[console] minecraft:clear %player_name% string 1'
+  '5':
+    material: blaze_rod
+    slot: 23
+    amount: 1
+    display_name: '&#9400FFО&#9B00FFг&#A200FEн&#A900FEе&#B100FDн&#B800FDн&#BF00FCы&#C600FCй &#CD00FBс&#D400FBт&#DB00FAе&#E200FAр&#EA00F9ж&#F100F9е&#F800F8н&#FF00F8ь&7 (1шт)'
+    lore:
+    - ''
+    - '&8 ▪ &dЛКМ &8» &fПродать &d1шт&f за &d110$'
+    - ''
+    - '&8 ▪ &5ПКМ &8» &fИзменить кол-во'
+    - '&7 ▸ &fПродать по &a1 шт.'
+    - '&7 ▸ &fПродать по &716 шт.'
+    - '&7 ▸ &fПродать по &732 шт.'
+    - '&7 ▸ &fПродать по &764 шт.'
+    - '&7 ▸ &fПродать &7ВСЁ'
+    - ''
+    - '&8 ▪ &fВаши Монеты: &d%vault_eco_balance_fixed%$'
+    - ''
+    right_click_commands:
+    - '[player] ohota2'
+    left_click_requirement:
+      requirements:
+        item_check:
+          type: has item
+          material: blaze_rod
+          amount: 1
+          deny_commands:
+          - '[message]&7[&#F4C4F3&lС&#F5B5F4&lк&#F7A5F5&lу&#F896F7&lп&#F986F8&lщ&#FB77F9&lи&#FC67FA&lк&7] &8» &fНет необходимого предмета, либо кол-ва предметов для продажи!'
+    left_click_commands:
+      - '[givemoney] 110'
+      - '[refresh]'
+      - '[message]&7[&#F4C4F3&lС&#F5B5F4&lк&#F7A5F5&lу&#F896F7&lп&#F986F8&lщ&#FB77F9&lи&#FC67FA&lк&7] &8» &fВы успешно продали &dОгненный стержень'
+      - '[console] minecraft:clear %player_name% blaze_rod 1'
+  '6':
+    material: bone
+    slot: 24
+    amount: 1
+    display_name: '&#9400FFК&#AF00FDо&#CA00FCс&#E400FAт&#FF00F8и&7 (1шт)'
+    lore:
+    - ''
+    - '&8 ▪ &dЛКМ &8» &fПродать &d1шт&f за &d45$'
+    - ''
+    - '&8 ▪ &5ПКМ &8» &fИзменить кол-во'
+    - '&7 ▸ &fПродать по &a1 шт.'
+    - '&7 ▸ &fПродать по &716 шт.'
+    - '&7 ▸ &fПродать по &732 шт.'
+    - '&7 ▸ &fПродать по &764 шт.'
+    - '&7 ▸ &fПродать &7ВСЁ'
+    - ''
+    - '&8 ▪ &fВаши Монеты: &d%vault_eco_balance_fixed%$'
+    - ''
+    right_click_commands:
+    - '[player] ohota2'
+    left_click_requirement:
+      requirements:
+        item_check:
+          type: has item
+          material: bone
+          amount: 1
+          deny_commands:
+          - '[message]&7[&#F4C4F3&lС&#F5B5F4&lк&#F7A5F5&lу&#F896F7&lп&#F986F8&lщ&#FB77F9&lи&#FC67FA&lк&7] &8» &fНет необходимого предмета, либо кол-ва предметов для продажи!'
+    left_click_commands:
+      - '[givemoney] 45'
+      - '[refresh]'
+      - '[message]&7[&#F4C4F3&lС&#F5B5F4&lк&#F7A5F5&lу&#F896F7&lп&#F986F8&lщ&#FB77F9&lи&#FC67FA&lк&7] &8» &fВы успешно продали &dКости'
+      - '[console] minecraft:clear %player_name% bone 1'
+  '7':
+    material: ender_pearl
+    slot: 25
+    amount: 1
+    display_name: '&#9400FFЖ&#A000FEе&#AC00FDм&#B800FDч&#C400FCу&#CF00FBг &#DB00FAК&#E700FAр&#F300F9а&#FF00F8я&7 (1шт)'
+    lore:
+    - ''
+    - '&8 ▪ &dЛКМ &8» &fПродать &d1шт&f за &d100$'
+    - ''
+    - '&8 ▪ &5ПКМ &8» &fИзменить кол-во'
+    - '&7 ▸ &fПродать по &a1 шт.'
+    - '&7 ▸ &fПродать по &716 шт.'
+    - '&7 ▸ &fПродать по &732 шт.'
+    - '&7 ▸ &fПродать по &764 шт.'
+    - '&7 ▸ &fПродать &7ВСЁ'
+    - ''
+    - '&8 ▪ &fВаши Монеты: &d%vault_eco_balance_fixed%$'
+    - ''
+    right_click_commands:
+    - '[player] ohota2'
+    left_click_requirement:
+      requirements:
+        item_check:
+          type: has item
+          material: ender_pearl
+          amount: 1
+          deny_commands:
+          - '[message]&7[&#F4C4F3&lС&#F5B5F4&lк&#F7A5F5&lу&#F896F7&lп&#F986F8&lщ&#FB77F9&lи&#FC67FA&lк&7] &8» &fНет необходимого предмета, либо кол-ва предметов для продажи!'
+    left_click_commands:
+      - '[givemoney] 100'
+      - '[refresh]'
+      - '[message]&7[&#F4C4F3&lС&#F5B5F4&lк&#F7A5F5&lу&#F896F7&lп&#F986F8&lщ&#FB77F9&lи&#FC67FA&lк&7] &8» &fВы успешно продали &dЖемчуг Края'
+      - '[console] minecraft:clear %player_name% ender_pearl 1'
+  '8':
+    material: shulker_shell
+    slot: 30
+    amount: 1
+    display_name: '&#9400FFП&#9C00FEа&#A400FEн&#AD00FDц&#B500FDи&#BD00FCр&#C500FCь &#CE00FBШ&#D600FBа&#DE00FAл&#E600FAк&#EF00F9е&#F700F9р&#FF00F8а&7 (1шт)'
+    lore:
+    - ''
+    - '&8 ▪ &dЛКМ &8» &fПродать &d1шт&f за &d120$'
+    - ''
+    - '&8 ▪ &5ПКМ &8» &fИзменить кол-во'
+    - '&7 ▸ &fПродать по &a1 шт.'
+    - '&7 ▸ &fПродать по &716 шт.'
+    - '&7 ▸ &fПродать по &732 шт.'
+    - '&7 ▸ &fПродать по &764 шт.'
+    - '&7 ▸ &fПродать &7ВСЁ'
+    - ''
+    - '&8 ▪ &fВаши Монеты: &d%vault_eco_balance_fixed%$'
+    - ''
+    right_click_commands:
+    - '[player] ohota2'
+    left_click_requirement:
+      requirements:
+        item_check:
+          type: has item
+          material: shulker_shell
+          amount: 1
+          deny_commands:
+          - '[message]&7[&#F4C4F3&lС&#F5B5F4&lк&#F7A5F5&lу&#F896F7&lп&#F986F8&lщ&#FB77F9&lи&#FC67FA&lк&7] &8» &fНет необходимого предмета, либо кол-ва предметов для продажи!'
+    left_click_commands:
+      - '[givemoney] 120'
+      - '[refresh]'
+      - '[message]&7[&#F4C4F3&lС&#F5B5F4&lк&#F7A5F5&lу&#F896F7&lп&#F986F8&lщ&#FB77F9&lи&#FC67FA&lк&7] &8» &fВы успешно продали &dПанцирь Шалкера'
+      - '[console] minecraft:clear %player_name% shulker_shell 1'
+  '9':
+    material: wither_skeleton_skull
+    slot: 32
+    amount: 1
+    display_name: '&#9400FFГ&#9A00FFо&#A100FEл&#A700FEо&#AD00FDв&#B300FDа &#BA00FDВ&#C000FCи&#C600FCз&#CD00FBе&#D300FBр &#D900FAС&#E000FAк&#E600FAе&#EC00F9л&#F200F9е&#F900F8т&#FF00F8а&7 (1шт)'
+    lore:
+    - ''
+    - '&8 ▪ &dЛКМ &8» &fПродать &d1шт&f за &d240$'
+    - ''
+    - '&8 ▪ &5ПКМ &8» &fИзменить кол-во'
+    - '&7 ▸ &fПродать по &a1 шт.'
+    - '&7 ▸ &fПродать по &716 шт.'
+    - '&7 ▸ &fПродать по &732 шт.'
+    - '&7 ▸ &fПродать по &764 шт.'
+    - '&7 ▸ &fПродать &7ВСЁ'
+    - ''
+    - '&8 ▪ &fВаши Монеты: &d%vault_eco_balance_fixed%$'
+    - ''
+    right_click_commands:
+    - '[player] ohota2'
+    left_click_requirement:
+      requirements:
+        item_check:
+          type: has item
+          material: wither_skeleton_skull
+          amount: 1
+          deny_commands:
+          - '[message]&7[&#F4C4F3&lС&#F5B5F4&lк&#F7A5F5&lу&#F896F7&lп&#F986F8&lщ&#FB77F9&lи&#FC67FA&lк&7] &8» &fНет необходимого предмета, либо кол-ва предметов для продажи!'
+    left_click_commands:
+      - '[givemoney] 240'
+      - '[refresh]'
+      - '[message]&7[&#F4C4F3&lС&#F5B5F4&lк&#F7A5F5&lу&#F896F7&lп&#F986F8&lщ&#FB77F9&lи&#FC67FA&lк&7] &8» &fВы успешно продали &dГолову Визер Скелета'
+      - '[console] minecraft:clear %player_name% wither_skeleton_skull 1'
+  'back':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2VmMTE5ZjA4ODUxYTcyYTVmMTBmYmMzMjQ3ZDk1ZTFjMDA2MzYwZDJiNGY0MTJiMjNjZTA1NDA5Mjc1NmIwYyJ9fX0=
+    slot: 49
+    display_name: '&c&lНазад'
+    lore:
+    - ''
+    - '&8 ▪ &fНажав сюда, вы сможете'
+    - '&8 ▪ &fвернуться в прошлое меню.'
+    - ''
+    click_commands:
+    - '[openguimenu] seller'
+    - '[sound] BLOCK_NOTE_BLOCK_BASS'
+  'filler_glass':
+    material: BLACK_STAINED_GLASS_PANE
+    slots: [0-6,9,18,26-27,35,44,47-48,50-53]
+    display_name: '&l'
+  'filler_glass_2':
+    material: MAGENTA_STAINED_GLASS_PANE
+    slots: [7,8,17,36,45,46]
+    display_name: '&l'
+
+
+
+
+
+
+
+

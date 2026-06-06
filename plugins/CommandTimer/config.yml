@@ -1,0 +1,6 @@
+timeonload: true
+debug: false
+showUpdateMessage: false
+timezoneOverwrite: false
+timezoneOverwriteValue: GMT
+language: en

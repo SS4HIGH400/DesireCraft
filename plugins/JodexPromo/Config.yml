@@ -1,0 +1,19 @@
+Permissions:
+  Command: "jodexpromo.code"
+#  CheckCommand: "jodexpromo.codecheck" for next update 1.0.5 :>
+  Reload: "jodexpromo.reload"
+
+Messages:
+  Help: "&7[&d&lT&5&lS&7] &8»&f Использование: &7/code &a(code)"
+#  HelpCheck: "&7[&d&lT&5&lS&7] &8»&f &cUsage: &7/checkcode &a(code)" for next update 1.0.5 :>
+  ConfigReloaded: "&7[&d&lT&5&lS&7] &8»&f &aConfig successfully reloaded!"
+  PromoAlreadyUsed: "&7[&d&lT&5&lS&7] &8»&f &cВы уже использовали этот промокод!"
+  PromoExpired: "&7[&d&lT&5&lS&7] &8»&f &cПромокод закончился!"
+  PromoNotUsable: "&7[&d&lT&5&lS&7] &8»&f &cПромокод закончился!"
+  PromoNotExists: "&7[&d&lT&5&lS&7] &8»&f &cПромокда не существует!"
+  Permission-node: "&7[&d&lT&5&lS&7] &8»&f &cСпулюлю!"
+  Console: "&7[&d&lT&5&lS&7] &8»&f &cCommand use is only available on behalf of the player!"
+  Placeholders:
+    CheckCodeUsed: "Used" # %jodexpromo_check_<code>%
+    CheckCodeNotUsed: "Not used" # %jodexpromo_check_<code>%
+    CheckCodeNotExists: "Not exists" # %jodexpromo_check_<code>%

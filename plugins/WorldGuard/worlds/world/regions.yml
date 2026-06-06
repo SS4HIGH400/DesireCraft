@@ -28,3 +28,9 @@ regions:
             unique-ids: [67c27007-0e89-32b0-80b2-b0ba0b2e76f0]
         type: cuboid
         priority: 0
+    __global__:
+        members: {}
+        flags: {}
+        owners: {}
+        type: global
+        priority: 0

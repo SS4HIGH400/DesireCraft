@@ -1,0 +1,58 @@
+{
+  "name": "lovish",
+  "commands": [
+    {
+      "command": "bairdrop start lovish",
+      "gender": "CONSOLE",
+      "interval": {
+        "days": 0,
+        "hours": 0,
+        "minutes": 0,
+        "seconds": 0
+      },
+      "delay": {
+        "days": 0,
+        "hours": 0,
+        "minutes": 0,
+        "seconds": 0
+      }
+    }
+  ],
+  "interval": {
+    "days": 0,
+    "hours": 0,
+    "minutes": 0,
+    "seconds": 0
+  },
+  "times": [
+    {
+      "time1": "17:00:00",
+      "isMinecraftTime": false
+    }
+  ],
+  "random": 1.0,
+  "days": [
+    "FRIDAY"
+  ],
+  "executionLimit": -1,
+  "timesExecuted": 19,
+  "lastExecutedCommandIndex": 0,
+  "lastExecuted": "May 3, 2024, 17:00:00 PM",
+  "commandExecutionMode": "ALL",
+  "commandExecutionInterval": {
+    "days": 0,
+    "hours": 0,
+    "minutes": 0,
+    "seconds": 1
+  },
+  "active": true,
+  "resetExecutionsAfterRestart": false,
+  "condition": {
+    "conditionType": "SIMPLE",
+    "conditions": [],
+    "simpleCondition": {
+      "conditionParamFields": []
+    }
+  },
+  "events": []
+}

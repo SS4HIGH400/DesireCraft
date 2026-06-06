@@ -1,0 +1,464 @@
+location: spawn:33,500:111,000:11,500
+enabled: true
+display-range: 64
+update-range: 64
+update-interval: 20
+facing: 145.0
+down-origin: true
+pages:
+- lines:
+  ######## 1 ##########
+  - content: '%ajlb_lb_statistic_player_kills_1_alltime_prefix% &7%ajlb_lb_statistic_player_kills_1_alltime_name%'
+    height: 0.3
+    offsetX: 3.0
+    offsetZ: 3.0
+  - content: ''
+    height: 0.3
+    offsetX: 3.0
+    offsetZ: 3.0
+  - content: '&fМесто в топе: &5&l#1'
+    height: 0.3
+    offsetX: 3.0
+    offsetZ: 3.0
+  - content: '&fУбийств: &d%ajlb_lb_statistic_player_kills_1_alltime_value_formatted% &5🗡'
+    height: 0.5
+    offsetX: 3.0
+    offsetZ: 3.0
+  - content: '#HEAD: PLAYER_HEAD (eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODg5OTE2OTc0Njk2NTNjOWFmODM1MmZkZjE4ZDBjYzljNjc3NjNjZmU2NjE3NWMxNTU2YWVkMzMyNDZjNyJ9fX0=)'
+    height: -0.4
+    offsetX: 3.0
+    offsetZ: 3.0
+  ######## 2 ##########
+  - content: '%ajlb_lb_statistic_player_kills_2_alltime_prefix% &7%ajlb_lb_statistic_player_kills_2_alltime_name%'
+    height: 0.3
+    offsetX: 5.0
+    offsetZ: 1.0
+  - content: ''
+    height: 0.3
+    offsetX: 5.0
+    offsetZ: 1.0
+  - content: '&fМесто в топе: &5&l#2'
+    height: 0.3
+    offsetX: 5.0
+    offsetZ: 1.0
+  - content: '&fУбийств: &d%ajlb_lb_statistic_player_kills_2_alltime_value_formatted% &5🗡'
+    height: 0.5
+    offsetX: 5.0
+    offsetZ: 1.0
+  - content: '#HEAD: PLAYER_HEAD (eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzQxMGRiNjIzNzM1YzE0NmM3YzQ4N2UzNjkyZDFjNWI1ZTIzYmY2OTFlZjA2NjVjMmU5NTQ5NDc5ZDgyOGYifX19)'
+    height: -1.4
+    offsetX: 5.0
+    offsetZ: 1.0
+  ######## 3 ##########
+  - content: '%ajlb_lb_statistic_player_kills_3_alltime_prefix% &7%ajlb_lb_statistic_player_kills_3_alltime_name%'
+    height: 0.3
+    offsetX: 1.0
+    offsetZ: 5.0
+  - content: ''
+    height: 0.3
+    offsetX: 1.0
+    offsetZ: 5.0
+  - content: '&fМесто в топе: &5&l#3'
+    height: 0.3
+    offsetX: 1.0
+    offsetZ: 5.0
+  - content: '&fУбийств: &d%ajlb_lb_statistic_player_kills_3_alltime_value_formatted% &5🗡'
+    height: 0.5
+    offsetX: 1.0
+    offsetZ: 5.0
+  - content: '#HEAD: PLAYER_HEAD (eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTFmZjUyZDE1ZTdhNzc1OGIwM2M2ZmE4NjFhY2JjZTkzYWU1NjYyZjc1NzgyNjE1NDBiMzkyZGU0MTU3YjI5In19fQ==)'
+    height: -2.1
+    offsetX: 1.0
+    offsetZ: 5.0
+  #####################
+  - content: '&7⊲ <#ANIM:wave:&d&l,&5&l&n>ЛУЧШИЕ ИГРОКИ</#ANIM> &7⊳'
+    height: 0.3
+  - content: '&8★ &7Слабо попасть сюда? &8★'
+    height: 0.3
+  - content: ''
+    height: 0.3
+  - content: '&fЗдесь отображены лучшие игроки'
+    height: 0.3
+  - content: '&fсервера по разным категориям!'
+    height: 0.3
+  - content: ''
+    height: 0.3
+  - content: '&fТекущий топ: &dСчёт убийств'
+    height: 0.3
+  - content: ''
+    height: 0.3
+  - content: '&dНажмите ПКМ по этой голограмме,'
+    height: 0.3
+  - content: '&dчтобы перейти на след. страницу'
+    height: 0.3
+  - content: '#HEAD: PLAYER_HEAD (eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTg0MWFkNzdhNzQ4ZWQzZDFkNTA4NTVkMTc0OTk4MWQ1ZjM4ZjhkYmY1NWMxNGY3NGRkNDIzNTc2NjE4MWUzYiJ9fX0=)'
+    height: 0.7
+  actions:
+    RIGHT:
+    - NEXT_PAGE
+- lines:
+  ######## 1 ##########
+  - content: '%ajlb_lb_statistic_deaths_1_alltime_prefix% &7%ajlb_lb_statistic_deaths_1_alltime_name%'
+    height: 0.3
+    offsetX: 3.0
+    offsetZ: 3.0
+  - content: ''
+    height: 0.3
+    offsetX: 3.0
+    offsetZ: 3.0
+  - content: '&fМесто в топе: &5&l#1'
+    height: 0.3
+    offsetX: 3.0
+    offsetZ: 3.0
+  - content: '&fСмертей: &d%ajlb_lb_statistic_deaths_1_alltime_value_formatted% &5✞'
+    height: 0.5
+    offsetX: 3.0
+    offsetZ: 3.0
+  - content: '#HEAD: PLAYER_HEAD (eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODg5OTE2OTc0Njk2NTNjOWFmODM1MmZkZjE4ZDBjYzljNjc3NjNjZmU2NjE3NWMxNTU2YWVkMzMyNDZjNyJ9fX0=)'
+    height: -0.4
+    offsetX: 3.0
+    offsetZ: 3.0
+  ######## 2 ##########
+  - content: '%ajlb_lb_statistic_deaths_2_alltime_prefix% &7%ajlb_lb_statistic_deaths_2_alltime_name%'
+    height: 0.3
+    offsetX: 5.0
+    offsetZ: 1.0
+  - content: ''
+    height: 0.3
+    offsetX: 5.0
+    offsetZ: 1.0
+  - content: '&fМесто в топе: &5&l#2'
+    height: 0.3
+    offsetX: 5.0
+    offsetZ: 1.0
+  - content: '&fСмертей: &d%ajlb_lb_statistic_deaths_2_alltime_value_formatted% &5✞'
+    height: 0.5
+    offsetX: 5.0
+    offsetZ: 1.0
+  - content: '#HEAD: PLAYER_HEAD (eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzQxMGRiNjIzNzM1YzE0NmM3YzQ4N2UzNjkyZDFjNWI1ZTIzYmY2OTFlZjA2NjVjMmU5NTQ5NDc5ZDgyOGYifX19)'
+    height: -1.4
+    offsetX: 5.0
+    offsetZ: 1.0
+  ######## 3 ##########
+  - content: '%ajlb_lb_statistic_deaths_3_alltime_prefix% &7%ajlb_lb_statistic_deaths_3_alltime_name%'
+    height: 0.3
+    offsetX: 1.0
+    offsetZ: 5.0
+  - content: ''
+    height: 0.3
+    offsetX: 1.0
+    offsetZ: 5.0
+  - content: '&fМесто в топе: &5&l#3'
+    height: 0.3
+    offsetX: 1.0
+    offsetZ: 5.0
+  - content: '&fСмертей: &d%ajlb_lb_statistic_deaths_3_alltime_value_formatted% &5✞'
+    height: 0.5
+    offsetX: 1.0
+    offsetZ: 5.0
+  - content: '#HEAD: PLAYER_HEAD (eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTFmZjUyZDE1ZTdhNzc1OGIwM2M2ZmE4NjFhY2JjZTkzYWU1NjYyZjc1NzgyNjE1NDBiMzkyZGU0MTU3YjI5In19fQ==)'
+    height: -2.1
+    offsetX: 1.0
+    offsetZ: 5.0
+  #####################
+  - content: '&7⊲ <#ANIM:wave:&d&l,&5&l&n>ЛУЧШИЕ ИГРОКИ</#ANIM> &7⊳'
+    height: 0.3
+  - content: '&8★ &7Слабо попасть сюда? &8★'
+    height: 0.3
+  - content: ''
+    height: 0.3
+  - content: '&fЗдесь отображены лучшие игроки'
+    height: 0.3
+  - content: '&fсервера по разным категориям!'
+    height: 0.3
+  - content: ''
+    height: 0.3
+  - content: '&fТекущий топ: &dСчёт смертей'
+    height: 0.3
+  - content: ''
+    height: 0.3
+  - content: '&dНажмите ПКМ/ЛКМ по этой голограмме,'
+    height: 0.3
+  - content: '&dчтобы перейти на другую страницу'
+    height: 0.3
+  - content: '#HEAD: PLAYER_HEAD (eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTg0MWFkNzdhNzQ4ZWQzZDFkNTA4NTVkMTc0OTk4MWQ1ZjM4ZjhkYmY1NWMxNGY3NGRkNDIzNTc2NjE4MWUzYiJ9fX0=)'
+    height: 0.7
+  actions:
+    LEFT:
+    - PREV_PAGE
+    RIGHT:
+    - NEXT_PAGE
+- lines:
+  ######## 1 ##########
+  - content: '%ajlb_lb_vault_eco_balance_1_alltime_prefix% &7%ajlb_lb_vault_eco_balance_1_alltime_name%'
+    height: 0.3
+    offsetX: 3.0
+    offsetZ: 3.0
+  - content: ''
+    height: 0.3
+    offsetX: 3.0
+    offsetZ: 3.0
+  - content: '&fМесто в топе: &5&l#1'
+    height: 0.3
+    offsetX: 3.0
+    offsetZ: 3.0
+  - content: '&fМонеток: &d%ajlb_lb_vault_eco_balance_1_alltime_value_formatted% &5$'
+    height: 0.5
+    offsetX: 3.0
+    offsetZ: 3.0
+  - content: '#HEAD: PLAYER_HEAD (eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODg5OTE2OTc0Njk2NTNjOWFmODM1MmZkZjE4ZDBjYzljNjc3NjNjZmU2NjE3NWMxNTU2YWVkMzMyNDZjNyJ9fX0=)'
+    height: -0.4
+    offsetX: 3.0
+    offsetZ: 3.0
+  ######## 2 ##########
+  - content: '%ajlb_lb_vault_eco_balance_2_alltime_prefix% &7%ajlb_lb_vault_eco_balance_2_alltime_name%'
+    height: 0.3
+    offsetX: 5.0
+    offsetZ: 1.0
+  - content: ''
+    height: 0.3
+    offsetX: 5.0
+    offsetZ: 1.0
+  - content: '&fМесто в топе: &5&l#2'
+    height: 0.3
+    offsetX: 5.0
+    offsetZ: 1.0
+  - content: '&fМонеток: &d%ajlb_lb_vault_eco_balance_2_alltime_value_formatted% &5$'
+    height: 0.5
+    offsetX: 5.0
+    offsetZ: 1.0
+  - content: '#HEAD: PLAYER_HEAD (eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzQxMGRiNjIzNzM1YzE0NmM3YzQ4N2UzNjkyZDFjNWI1ZTIzYmY2OTFlZjA2NjVjMmU5NTQ5NDc5ZDgyOGYifX19)'
+    height: -1.4
+    offsetX: 5.0
+    offsetZ: 1.0
+  ######## 3 ##########
+  - content: '%ajlb_lb_vault_eco_balance_3_alltime_prefix% &7%ajlb_lb_vault_eco_balance_3_alltime_name%'
+    height: 0.3
+    offsetX: 1.0
+    offsetZ: 5.0
+  - content: ''
+    height: 0.3
+    offsetX: 1.0
+    offsetZ: 5.0
+  - content: '&fМесто в топе: &5&l#3'
+    height: 0.3
+    offsetX: 1.0
+    offsetZ: 5.0
+  - content: '&fМонеток: &d%ajlb_lb_vault_eco_balance_3_alltime_value_formatted% &5$'
+    height: 0.5
+    offsetX: 1.0
+    offsetZ: 5.0
+  - content: '#HEAD: PLAYER_HEAD (eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTFmZjUyZDE1ZTdhNzc1OGIwM2M2ZmE4NjFhY2JjZTkzYWU1NjYyZjc1NzgyNjE1NDBiMzkyZGU0MTU3YjI5In19fQ==)'
+    height: -2.1
+    offsetX: 1.0
+    offsetZ: 5.0
+  #####################
+  - content: '&7⊲ <#ANIM:wave:&d&l,&5&l&n>ЛУЧШИЕ ИГРОКИ</#ANIM> &7⊳'
+    height: 0.3
+  - content: '&8★ &7Слабо попасть сюда? &8★'
+    height: 0.3
+  - content: ''
+    height: 0.3
+  - content: '&fЗдесь отображены лучшие игроки'
+    height: 0.3
+  - content: '&fсервера по разным категориям!'
+    height: 0.3
+  - content: ''
+    height: 0.3
+  - content: '&fТекущий топ: &dБаланс монеток'
+    height: 0.3
+  - content: ''
+    height: 0.3
+  - content: '&dНажмите ПКМ/ЛКМ по этой голограмме,'
+    height: 0.3
+  - content: '&dчтобы перейти на другую страницу'
+    height: 0.3
+  - content: '#HEAD: PLAYER_HEAD (eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTg0MWFkNzdhNzQ4ZWQzZDFkNTA4NTVkMTc0OTk4MWQ1ZjM4ZjhkYmY1NWMxNGY3NGRkNDIzNTc2NjE4MWUzYiJ9fX0=)'
+    height: 0.7
+  actions:
+    LEFT:
+    - PREV_PAGE
+    RIGHT:
+    - NEXT_PAGE
+- lines:
+  ######## 1 ##########
+  - content: '%ajlb_lb_playerpoints_points_1_alltime_prefix% &7%ajlb_lb_playerpoints_points_1_alltime_name%'
+    height: 0.3
+    offsetX: 3.0
+    offsetZ: 3.0
+  - content: ''
+    height: 0.3
+    offsetX: 3.0
+    offsetZ: 3.0
+  - content: '&fМесто в топе: &5&l#1'
+    height: 0.3
+    offsetX: 3.0
+    offsetZ: 3.0
+  - content: '&fРубинов: &d%ajlb_lb_playerpoints_points_1_alltime_value_formatted% &5ᚹ'
+    height: 0.5
+    offsetX: 3.0
+    offsetZ: 3.0
+  - content: '#HEAD: PLAYER_HEAD (eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODg5OTE2OTc0Njk2NTNjOWFmODM1MmZkZjE4ZDBjYzljNjc3NjNjZmU2NjE3NWMxNTU2YWVkMzMyNDZjNyJ9fX0=)'
+    height: -0.4
+    offsetX: 3.0
+    offsetZ: 3.0
+  ######## 2 ##########
+  - content: '%ajlb_lb_playerpoints_points_2_alltime_prefix% &7%ajlb_lb_playerpoints_points_2_alltime_name%'
+    height: 0.3
+    offsetX: 5.0
+    offsetZ: 1.0
+  - content: ''
+    height: 0.3
+    offsetX: 5.0
+    offsetZ: 1.0
+  - content: '&fМесто в топе: &5&l#2'
+    height: 0.3
+    offsetX: 5.0
+    offsetZ: 1.0
+  - content: '&fРубинов: &d%ajlb_lb_playerpoints_points_2_alltime_value_formatted% &5ᚹ'
+    height: 0.5
+    offsetX: 5.0
+    offsetZ: 1.0
+  - content: '#HEAD: PLAYER_HEAD (eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzQxMGRiNjIzNzM1YzE0NmM3YzQ4N2UzNjkyZDFjNWI1ZTIzYmY2OTFlZjA2NjVjMmU5NTQ5NDc5ZDgyOGYifX19)'
+    height: -1.4
+    offsetX: 5.0
+    offsetZ: 1.0
+  ######## 3 ##########
+  - content: '%ajlb_lb_playerpoints_points_3_alltime_prefix% &7%ajlb_lb_playerpoints_points_3_alltime_name%'
+    height: 0.3
+    offsetX: 1.0
+    offsetZ: 5.0
+  - content: ''
+    height: 0.3
+    offsetX: 1.0
+    offsetZ: 5.0
+  - content: '&fМесто в топе: &5&l#3'
+    height: 0.3
+    offsetX: 1.0
+    offsetZ: 5.0
+  - content: '&fРубинов: &d%ajlb_lb_playerpoints_points_3_alltime_value_formatted% &5ᚹ'
+    height: 0.5
+    offsetX: 1.0
+    offsetZ: 5.0
+  - content: '#HEAD: PLAYER_HEAD (eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTFmZjUyZDE1ZTdhNzc1OGIwM2M2ZmE4NjFhY2JjZTkzYWU1NjYyZjc1NzgyNjE1NDBiMzkyZGU0MTU3YjI5In19fQ==)'
+    height: -2.1
+    offsetX: 1.0
+    offsetZ: 5.0
+  #####################
+  - content: '&7⊲ <#ANIM:wave:&d&l,&5&l&n>ЛУЧШИЕ ИГРОКИ</#ANIM> &7⊳'
+    height: 0.3
+  - content: '&8★ &7Слабо попасть сюда? &8★'
+    height: 0.3
+  - content: ''
+    height: 0.3
+  - content: '&fЗдесь отображены лучшие игроки'
+    height: 0.3
+  - content: '&fсервера по разным категориям!'
+    height: 0.3
+  - content: ''
+    height: 0.3
+  - content: '&fТекущий топ: &dБаланс рубинов'
+    height: 0.3
+  - content: ''
+    height: 0.3
+  - content: '&dНажмите ПКМ/ЛКМ по этой голограмме,'
+    height: 0.3
+  - content: '&dчтобы перейти на другую страницу'
+    height: 0.3
+  - content: '#HEAD: PLAYER_HEAD (eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTg0MWFkNzdhNzQ4ZWQzZDFkNTA4NTVkMTc0OTk4MWQ1ZjM4ZjhkYmY1NWMxNGY3NGRkNDIzNTc2NjE4MWUzYiJ9fX0=)'
+    height: 0.7
+  actions:
+    LEFT:
+    - PREV_PAGE
+    RIGHT:
+    - NEXT_PAGE
+- lines:
+  ######## 1 ##########
+  - content: '%ajlb_lb_statistic_hours_played_1_alltime_prefix% &7%ajlb_lb_statistic_hours_played_1_alltime_name%'
+    height: 0.3
+    offsetX: 3.0
+    offsetZ: 3.0
+  - content: ''
+    height: 0.3
+    offsetX: 3.0
+    offsetZ: 3.0
+  - content: '&fМесто в топе: &5&l#1'
+    height: 0.3
+    offsetX: 3.0
+    offsetZ: 3.0
+  - content: '&fЧасов: &d%ajlb_lb_statistic_hours_played_1_alltime_value% &5ч.'
+    height: 0.5
+    offsetX: 3.0
+    offsetZ: 3.0
+  - content: '#HEAD: PLAYER_HEAD (eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODg5OTE2OTc0Njk2NTNjOWFmODM1MmZkZjE4ZDBjYzljNjc3NjNjZmU2NjE3NWMxNTU2YWVkMzMyNDZjNyJ9fX0=)'
+    height: -0.4
+    offsetX: 3.0
+    offsetZ: 3.0
+  ######## 2 ##########
+  - content: '%ajlb_lb_statistic_hours_played_2_alltime_prefix% &7%ajlb_lb_statistic_hours_played_2_alltime_name%'
+    height: 0.3
+    offsetX: 5.0
+    offsetZ: 1.0
+  - content: ''
+    height: 0.3
+    offsetX: 5.0
+    offsetZ: 1.0
+  - content: '&fМесто в топе: &5&l#2'
+    height: 0.3
+    offsetX: 5.0
+    offsetZ: 1.0
+  - content: '&fЧасов: &d%ajlb_lb_statistic_hours_played_2_alltime_value% &5ч.'
+    height: 0.5
+    offsetX: 5.0
+    offsetZ: 1.0
+  - content: '#HEAD: PLAYER_HEAD (eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzQxMGRiNjIzNzM1YzE0NmM3YzQ4N2UzNjkyZDFjNWI1ZTIzYmY2OTFlZjA2NjVjMmU5NTQ5NDc5ZDgyOGYifX19)'
+    height: -1.4
+    offsetX: 5.0
+    offsetZ: 1.0
+  ######## 3 ##########
+  - content: '%ajlb_lb_statistic_hours_played_3_alltime_prefix% &7%ajlb_lb_statistic_hours_played_3_alltime_name%'
+    height: 0.3
+    offsetX: 1.0
+    offsetZ: 5.0
+  - content: ''
+    height: 0.3
+    offsetX: 1.0
+    offsetZ: 5.0
+  - content: '&fМесто в топе: &5&l#3'
+    height: 0.3
+    offsetX: 1.0
+    offsetZ: 5.0
+  - content: '&fЧасов: &d%ajlb_lb_statistic_hours_played_3_alltime_value% &5ч.'
+    height: 0.5
+    offsetX: 1.0
+    offsetZ: 5.0
+  - content: '#HEAD: PLAYER_HEAD (eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTFmZjUyZDE1ZTdhNzc1OGIwM2M2ZmE4NjFhY2JjZTkzYWU1NjYyZjc1NzgyNjE1NDBiMzkyZGU0MTU3YjI5In19fQ==)'
+    height: -2.1
+    offsetX: 1.0
+    offsetZ: 5.0
+  #####################
+  - content: '&7⊲ <#ANIM:wave:&d&l,&5&l&n>ЛУЧШИЕ ИГРОКИ</#ANIM> &7⊳'
+    height: 0.3
+  - content: '&8★ &7Слабо попасть сюда? &8★'
+    height: 0.3
+  - content: ''
+    height: 0.3
+  - content: '&fЗдесь отображены лучшие игроки'
+    height: 0.3
+  - content: '&fсервера по разным категориям!'
+    height: 0.3
+  - content: ''
+    height: 0.3
+  - content: '&fТекущий топ: &dНаиграно часов'
+    height: 0.3
+  - content: ''
+    height: 0.3
+  - content: '&dНажмите ЛКМ по этой голограмме,'
+    height: 0.3
+  - content: '&dчтобы перейти на прошлую страницу'
+    height: 0.3
+  - content: '#HEAD: PLAYER_HEAD (eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTg0MWFkNzdhNzQ4ZWQzZDFkNTA4NTVkMTc0OTk4MWQ1ZjM4ZjhkYmY1NWMxNGY3NGRkNDIzNTc2NjE4MWUzYiJ9fX0=)'
+    height: 0.7
+  actions:
+    LEFT:
+    - PREV_PAGE

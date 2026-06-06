@@ -1,0 +1,138 @@
+# Developer - https://t.me/IBoTuS
+
+#ibitems-trap - флаг на запрет трапки в регионе
+#ibitems-plast - флаг на запрет пласта в регионе
+#ibitems-dust - флаг на запрет явной пыли в регионе
+#ibitems-disorientation - флаг на запрет дезориентации в регионе
+#ibitems-snowball - флаг на запрет снежок заморозка в регионе
+
+trap:
+  material: NETHERITE_SCRAP #Материал
+  slab-type: POLISHED_BLACKSTONE_BRICK_SLAB #Материал полу-блоков
+  crying-obsidian-chance: 65 #Шанс плачущего обсидиана
+  enchanted: false #Свечение предмета
+  delay: 30 #Действия, трапки в сек.
+  cooldown: 60 #Кулдаун на трапку в сек.
+  animation-speed: 1 #Задержка в тиках для анимации. 1 тик = 0.05 секунды. По умолчанию 2 тика = 0.1 секунды
+  name: '#A30EE2[🔥] #CC79EFТ#D694F2р#E0AFF5а#EBC9F9п#F5E4FCк#FFFFFFа'
+  lore: [] #Описание предмета
+  enable-crafting: true
+  settings-recipe: #Настройки крафта
+    key: #Можно создавать множество ключей с материалами
+      A: OBSIDIAN
+      B: CRYING_OBSIDIAN
+      C: NETHERITE_SCRAP
+    pattern:
+      - ABA
+      - BCB
+      - ABA
+  flags: #Флаги для региона трапка
+    pvp: allow
+    block-break: deny
+    block-place: deny
+    ibitems-trap: deny
+    ibitems-plast: deny
+
+bossbar: #bossbar на трапку
+  enabled: true #Включить/Выключить bossbar
+  message: "&fДействие #F4C4F3&nт#F6B1F4&nр#F79FF6&nа#F98CF7&nп#FA7AF9&nк#FC67FA&nи&r &fзакончится через &d%time% &fсек." #HEX цвета доступны
+  color: PURPLE #Цвет
+  style: SOLID #Стиль
+
+plast:
+  material: DRIED_KELP #Материал
+  crying-obsidian-chance: 65 #Шанс плачущего обсидиана
+  enchanted: false #Свечение предмета
+  delay: 25 #Действия, пласта сек.
+  cooldown: 60 #Кулдаун на пласт в сек.
+  name: '#A30EE2[🔥] #A30EE2П#BA4AE9л#D187F1а#E8C3F8с#FFFFFFт'
+  lore: [] #Описание предмета
+  enable-crafting: true
+  settings-recipe: #Настройки крафта
+    key: #Можно создавать множество ключей с материалами
+      A: BLAZE_ROD
+      B: NETHERITE_INGOT
+    pattern:
+      - AAA
+      - ABA
+      - AAA
+
+disorientation:
+  material: ENDER_EYE #Материал
+  enchanted: false #Свечение предмета
+  cooldown: 60 #Кулдаун в сек.
+  radius: 15 #Радиус действия эффектов
+  particleRadius: 10 #Радиус партиклов в блоках
+  player: false # Добавлять эффекты игроку который использовал предмет?
+  name: '#A30EE2[🔥] #A30EE2Д#AB22E4е#B236E7з#BA4AE9о#C25EECр#C972EEи#D187F1е#D99BF3н#E0AFF5т#E8C3F8а#F0D7FAц#F7EBFDи#FFFFFFя' #Имя предмета
+  lore: [] #Описание предмета
+  enable-crafting: true
+  settings-recipe: #Настройки крафта
+    key: #Можно создавать множество ключей с материалами
+      A: STRING
+      B: GUNPOWDER
+      C: ENDER_EYE
+    pattern:
+      - BAB
+      - ACA
+      - BAB
+  effects:
+    - 'BLINDNESS:5:3'
+    - 'SLOW:5:3'
+    - 'WITHER:5:3'
+
+dust:
+  material: SUGAR #Материал
+  enchanted: false #Свечение предмета
+  cooldown: 60 #Кулдаун в сек.
+  radius: 15 #Радиус действия эффектов
+  particleRadius: 10 #Радиус партиклов в блоках
+  player: false # Добавлять эффекты игроку который использовал предмет?
+  name: '#A30EE2[🔥] #A30EE2Я#AF2CE6в#BA4AE9н#C668EDа#D187F1я #DDA5F4п#E8C3F8ы#F4E1FBл#FFFFFFь' #Имя предмета
+  lore: [] #Описание предмета
+  enable-crafting: true
+  settings-recipe: #Настройки крафта
+    key: #Можно создавать множество ключей с материалами
+      A: GLASS_BOTTLE
+      B: SUGAR
+      C: BLAZE_ROD
+    pattern:
+      - ACA
+      - CBC
+      - ACA
+  effects:
+    - 'GLOWING:30:5'
+
+snowball:
+  material: SNOWBALL #Материал
+  enchanted: false #Свечение предмета
+  cooldown: 30 #Кулдаун в сек.
+  particleRadius: 5 #Радиус партиклов
+  radius: 5 #Радиус действия предмета
+  player: false #Должен ли игрок который бросал снежок получать эффекты в радиусе <radius>?
+  name: '#A30EE2[🔥] #A30EE2З#A81CE4а#AE2AE5м#B339E7о#B947E9р#BE55EBо#C363ECж#C971EEе#CE7FF0н#D48EF1н#D99CF3ы#DFAAF5й #E4B8F6с#E9C6F8н#EFD4FAе#F4E3FCж#FAF1FDо#FFFFFFк' #Имя предмета
+  lore: [] #Описание предмета
+  enable-crafting: true
+  settings-recipe: #Настройки крафта
+    key: #Можно создавать множество ключей с материалами
+      A: SNOWBALL
+      B: NETHERITE_INGOT
+    pattern:
+      - AAA
+      - ABA
+      - AAA
+  effects:
+    - 'SLOW:10:4'
+
+sound:
+  items-receiver: ENTITY_CHICKEN_EGG #Звук когда игрок получает предмет
+  disorientation-event: ENTITY_ILLUSIONER_MIRROR_MOVE #Звук использования дезориентации
+  dust-event: ENTITY_ILLUSIONER_PREPARE_BLINDNESS #Звук использования явной пыли
+  snowball: ENTITY_ARROW_HIT_PLAYER #Звук при попадании по игроку снежком
+  plast-event: BLOCK_PISTON_CONTRACT #Звук использования пласта
+  plast-expire: ENTITY_ZOMBIE_BREAK_WOODEN_DOOR #Звук когда остается 3 секунды
+  plast-end: ENTITY_ZOMBIE_ATTACK_WOODEN_DOOR #Звук окончания пласта
+  trap-event: BLOCK_PISTON_CONTRACT #Звук использования трапки
+  trap-expire: ENTITY_ZOMBIE_BREAK_WOODEN_DOOR #Звук когда остается 3 секунды
+  trap-end: ENTITY_ZOMBIE_ATTACK_WOODEN_DOOR #Звук окончания трапки
+  items-guard: ENTITY_VILLAGER_NO #Звук использования трапки в регионе где запрещено

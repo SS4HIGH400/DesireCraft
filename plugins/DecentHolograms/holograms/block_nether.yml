@@ -1,0 +1,26 @@
+location: spawn:17,500:115,000:12,500
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: '&#D008FB&lн&#CB08FB&lᴇ&#C607FC&lз&#C107FC&lᴇ&#BC06FC&lр&#B706FC&lи&#B205FD&lᴛ&#AD05FD&lо&#A804FD&lʙ&#A304FD&lы&#9E03FE&lй'
+    height: 0.3
+  - content: '&#D008FB&lб&#C807FB&lл&#C006FC&lо&#B806FC&lᴋ &#B005FD&lп&#A804FD&lр&#A003FD&lи&#9802FE&lʙ&#9002FE&lᴀ&#8801FF&lᴛ&#8000FF&lᴀ'
+    height: 0.3
+  - content: ''
+    height: 0.3
+  - content: '&fРазмер: &#D008FB&l2&#BC06FC&l1&#A804FD&lx&#9402FE&l2&#8000FF&l1'
+    height: 0.3
+  - content: ''
+    height: 0.3
+  - content: '&fМожно купить в'
+    height: 0.3
+  - content: '&fмагазине &7» &#D008FB&l/&#BC06FC&ls&#A804FD&lʜ&#9402FE&lᴏ&#8000FF&lᴘ'
+    height: 0.5
+  - content: '#HEAD: PLAYER_HEAD (eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTViMzE3MjM2MDNjYjA3YzE1MGUzNGQ2NWJlODhlNWE2MWFhNDY0NGFhNjI2Y2RlNTI0ZjNiZDg2MTRmY2QyOSJ9fX0=)'
+    height: 0.0
+  actions: {}
