@@ -10,7 +10,7 @@ open_requirement:
       type: has permission
       permission: sub.gui
       deny_commands: 
-      - '[message] &cУ вас нет подписки, её можно купить на сайте TrustSpace.su'
+      - '[message] &cУ вас нет подписки, её можно купить на сайте DesireCraft'
       - '[sound] BLOCK_NOTE_BLOCK_BASS'
 items:
 ##########################################################################

@@ -31,7 +31,7 @@ SetKeysTarget: '&eВам было установлено &c%key &eключей �
 ClearKeys: '&eИгроку &6%player &eудалено все ключи кейса %case'
 ClearAllKeys: '&eВсе ключи игроков были удалены'
 DestoryDonatCase: '&cДонат Кейс ломать запрещено'
-NoKey: '&cУ вас нет ключей. &fМожете купить их тут: &dTrustSpace.su'
+NoKey: '&cУ вас нет ключей. &fМожете купить их тут: &dDesireCraft'
 HaveOpenCase: '&cПодождите этот кейс открывается'
 ReloadConfig: '&aКонфиг перезагружен!'
 CasesList: '&e%num. &6%casename &3- &r%casetitle'

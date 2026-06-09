@@ -133,7 +133,7 @@ kits:
           - "&6* Halloween 2015"
           - ""
           - "&c&lLOCKED"
-          - "&7Unlock at &nbuy.yourserver.com"
+          - "&7Unlock at &nDesireCraft"
           - "&7Right-Click to preview kit"
       cooldown:
         material: STAINED_GLASS_PANE
@@ -152,7 +152,7 @@ kits:
           - "&6* Halloween 2015"
           - ""
           - "&e&lCOOLDOWN over in .. {cooldown}"
-          - "&7Unlock at &nbuy.yourserver.com"
+          - "&7Unlock at &nDesireCraft"
           - "&7Right-Click to preview kit"
       available:
         material: PUMPKIN
@@ -171,7 +171,7 @@ kits:
           - "&6* Halloween 2015"
           - ""
           - "&a&lUNLOCKED"
-          - "&7Unlock at &nbuy.yourserver.com"
+          - "&7Unlock at &nDesireCraft"
           - "&7Right-Click to preview kit"
     permission: gkit.spooky
     content:
@@ -279,7 +279,7 @@ kits:
           - "&6* Thanksgiving 2015"
           - ""
           - "&c&lLOCKED"
-          - "&7Unlock at &nbuy.yourserver.com"
+          - "&7Unlock at &nDesireCraft"
           - "&7Right-Click to preview kit"
       cooldown:
         material: STAINED_GLASS_PANE
@@ -298,7 +298,7 @@ kits:
           - "&6* Thanksgiving 2015"
           - ""
           - "&e&lCOOLDOWN over in .. {cooldown}"
-          - "&7Unlock at &nbuy.yourserver.com"
+          - "&7Unlock at &nDesireCraft"
           - "&7Right-Click to preview kit"
       available:
         material: FEATHER
@@ -317,7 +317,7 @@ kits:
           - "&6* Thanksgiving 2015"
           - ""
           - "&a&lUNLOCKED"
-          - "&7Unlock at &nbuy.yourserver.com"
+          - "&7Unlock at &nDesireCraft"
           - "&7Right-Click to preview kit"
     permission: gkit.hyperdrive
     content:
@@ -429,7 +429,7 @@ kits:
           - "&6* Heart of Darkness"
           - ""
           - "&c&lLOCKED"
-          - "&7Unlock at &nbuy.yourserver.com"
+          - "&7Unlock at &nDesireCraft"
           - "&7Right-Click to preview kit"
       cooldown:
         material: STAINED_GLASS_PANE
@@ -448,7 +448,7 @@ kits:
           - "&6* Heart of Darkness"
           - ""
           - "&e&lCOOLDOWN over in .. {cooldown}"
-          - "&7Unlock at &nbuy.yourserver.com"
+          - "&7Unlock at &nDesireCraft"
           - "&7Right-Click to preview kit"
       available:
         material: BLAZE_POWDER
@@ -467,7 +467,7 @@ kits:
           - "&6* Heart of Darkness"
           - ""
           - "&a&lUNLOCKED"
-          - "&7Unlock at &nbuy.yourserver.com"
+          - "&7Unlock at &nDesireCraft"
           - "&7Right-Click to preview kit"
     permission: gkit.destroyer
     content:
@@ -584,7 +584,7 @@ kits:
           - "&6* Heart of Darkness"
           - ""
           - "&c&lLOCKED"
-          - "&7Unlock at &nbuy.yourserver.com"
+          - "&7Unlock at &nDesireCraft"
           - "&7Right-Click to preview kit"
       cooldown:
         material: STAINED_GLASS_PANE
@@ -603,7 +603,7 @@ kits:
           - "&6* Heart of Darkness"
           - ""
           - "&e&lCOOLDOWN over in .. {cooldown}"
-          - "&7Unlock at &nbuy.yourserver.com"
+          - "&7Unlock at &nDesireCraft"
           - "&7Right-Click to preview kit"
       available:
         material: EYE_OF_ENDER
@@ -622,7 +622,7 @@ kits:
           - "&6* Heart of Darkness"
           - ""
           - "&a&lUNLOCKED"
-          - "&7Unlock at &nbuy.yourserver.com"
+          - "&7Unlock at &nDesireCraft"
           - "&7Right-Click to preview kit"
     permission: gkits.guardian
     content:
@@ -735,7 +735,7 @@ kits:
           - "&6* Void Planet Release"
           - ""
           - "&c&lLOCKED"
-          - "&7Unlock at &nbuy.yourserver.com"
+          - "&7Unlock at &nDesireCraft"
           - "&7Right-Click to preview kit"
       cooldown:
         material: STAINED_GLASS_PANE
@@ -754,7 +754,7 @@ kits:
           - "&6* Void Planet Release"
           - ""
           - "&e&lCOOLDOWN over in .. {cooldown}"
-          - "&7Unlock at &nbuy.yourserver.com"
+          - "&7Unlock at &nDesireCraft"
           - "&7Right-Click to preview kit"
       available:
         material: ENDER_PORTAL_FRAME
@@ -773,7 +773,7 @@ kits:
           - "&6* Void Planet Release"
           - ""
           - "&a&lUNLOCKED"
-          - "&7Unlock at &nbuy.yourserver.com"
+          - "&7Unlock at &nDesireCraft"
           - "&7Right-Click to preview kit"
     permission: gkits.diablo
     content:
@@ -883,7 +883,7 @@ kits:
           - "&6* Valentines 2015"
           - ""
           - "&c&lLOCKED"
-          - "&7Unlock at &nbuy.yourserver.com"
+          - "&7Unlock at &nDesireCraft"
           - "&7Right-Click to preview kit"
       cooldown:
         material: STAINED_GLASS_PANE
@@ -902,7 +902,7 @@ kits:
           - "&6* Valentines 2015"
           - ""
           - "&e&lCOOLDOWN over in .. {cooldown}"
-          - "&7Unlock at &nbuy.yourserver.com"
+          - "&7Unlock at &nDesireCraft"
           - "&7Right-Click to preview kit"
       available:
         material: RED_ROSE
@@ -921,7 +921,7 @@ kits:
           - "&6* Valentines 2015"
           - ""
           - "&a&lUNLOCKED"
-          - "&7Unlock at &nbuy.yourserver.com"
+          - "&7Unlock at &nDesireCraft"
           - "&7Right-Click to preview kit"
     permission: gkit.valentines
     content:
@@ -1057,7 +1057,7 @@ kits:
           - "&6* Magic Planet Release"
           - ""
           - "&c&lLOCKED"
-          - "&7Unlock at &nbuy.yourserver.com"
+          - "&7Unlock at &nDesireCraft"
           - "&7Right-Click to preview kit"
       cooldown:
         material: STAINED_GLASS_PANE
@@ -1076,7 +1076,7 @@ kits:
           - "&6* Magic Planet Release"
           - ""
           - "&e&lCOOLDOWN over in .. {cooldown}"
-          - "&7Unlock at &nbuy.yourserver.com"
+          - "&7Unlock at &nDesireCraft"
           - "&7Right-Click to preview kit"
       available:
         material: ENCHANTMENT_TABLE
@@ -1095,7 +1095,7 @@ kits:
           - "&6* Magic Planet Release"
           - ""
           - "&a&lUNLOCKED"
-          - "&7Unlock at &nbuy.yourserver.com"
+          - "&7Unlock at &nDesireCraft"
           - "&7Right-Click to preview kit"
     permission: gkits.arcane
     content:
@@ -1209,7 +1209,7 @@ kits:
           - "&6* Arena Update"
           - ""
           - "&c&lLOCKED"
-          - "&7Unlock at &nbuy.yourserver.com"
+          - "&7Unlock at &nDesireCraft"
           - "&7Right-Click to preview kit"
       cooldown:
         material: STAINED_GLASS_PANE
@@ -1228,7 +1228,7 @@ kits:
           - "&6* Arena Update"
           - ""
           - "&e&lCOOLDOWN over in .. {cooldown}"
-          - "&7Unlock at &nbuy.yourserver.com"
+          - "&7Unlock at &nDesireCraft"
           - "&7Right-Click to preview kit"
       available:
         material: DIAMOND_SWORD
@@ -1247,7 +1247,7 @@ kits:
           - "&6* Arena Update"
           - ""
           - "&a&lUNLOCKED"
-          - "&7Unlock at &nbuy.yourserver.com"
+          - "&7Unlock at &nDesireCraft"
           - "&7Right-Click to preview kit"
     permission: gkits.gladiator
     content:
@@ -1348,7 +1348,7 @@ kits:
           - "&6* April Fools 2015"
           - ""
           - "&c&lLOCKED"
-          - "&7Unlock at &nbuy.yourserver.com"
+          - "&7Unlock at &nDesireCraft"
           - "&7Right-Click to preview kit"
       cooldown:
         material: STAINED_GLASS_PANE
@@ -1364,7 +1364,7 @@ kits:
           - "&6* April Fools 2015"
           - ""
           - "&e&lCOOLDOWN over in .. {cooldown}"
-          - "&7Unlock at &nbuy.yourserver.com"
+          - "&7Unlock at &nDesireCraft"
           - "&7Right-Click to preview kit"
       available:
         material: APPLE
@@ -1380,7 +1380,7 @@ kits:
           - "&6* April Fools 2015"
           - ""
           - "&a&lUNLOCKED"
-          - "&7Unlock at &nbuy.yourserver.com"
+          - "&7Unlock at &nDesireCraft"
           - "&7Right-Click to preview kit"
     permission: gkits.trickster
     content:
@@ -1448,7 +1448,7 @@ kits:
           - "&6* Easter 2015"
           - ""
           - "&c&lLOCKED"
-          - "&7Unlock at &nbuy.yourserver.com"
+          - "&7Unlock at &nDesireCraft"
           - "&7Right-Click to preview kit"
       cooldown:
         material: STAINED_GLASS_PANE
@@ -1467,7 +1467,7 @@ kits:
           - "&6* Easter 2015"
           - ""
           - "&e&lCOOLDOWN over in .. {cooldown}"
-          - "&7Unlock at &nbuy.yourserver.com"
+          - "&7Unlock at &nDesireCraft"
           - "&7Right-Click to preview kit"
       available:
         material: GOLDEN_APPLE
@@ -1486,7 +1486,7 @@ kits:
           - "&6* Easter 2015"
           - ""
           - "&a&lUNLOCKED"
-          - "&7Unlock at &nbuy.yourserver.com"
+          - "&7Unlock at &nDesireCraft"
           - "&7Right-Click to preview kit"
     permission: gkits.templar
     content:
@@ -1597,7 +1597,7 @@ kits:
           - "&6* Earth Day 2015"
           - ""
           - "&c&lLOCKED"
-          - "&7Unlock at &nbuy.yourserver.com"
+          - "&7Unlock at &nDesireCraft"
           - "&7Right-Click to preview kit."
       cooldown:
         material: STAINED_GLASS_PANE
@@ -1616,7 +1616,7 @@ kits:
           - "&6* Earth Day 2015"
           - ""
           - "&e&lCOOLDOWN over in .. {cooldown}"
-          - "&7Unlock at &nbuy.yourserver.com"
+          - "&7Unlock at &nDesireCraft"
           - "&7Right-Click to preview kit."
       available:
         material: DIAMOND_AXE
@@ -1635,7 +1635,7 @@ kits:
           - "&6* Earth Day 2015"
           - ""
           - "&a&lUNLOCKED"
-          - "&7Unlock at &nbuy.yourserver.com"
+          - "&7Unlock at &nDesireCraft"
           - "&7Right-Click to preview kit."
     permission: gkit.viking
     content:
@@ -1740,7 +1740,7 @@ kits:
           - "&6* Bounty Hunter Update"
           - ""
           - "&c&lLOCKED"
-          - "&7Unlock at &nbuy.yourserver.com"
+          - "&7Unlock at &nDesireCraft"
           - "&7Right-Click to preview kit."
       cooldown:
         material: STAINED_GLASS_PANE
@@ -1759,7 +1759,7 @@ kits:
           - "&6* Bounty Hunter Update"
           - ""
           - "&e&lCOOLDOWN over in .. {cooldown}"
-          - "&7Unlock at &nbuy.yourserver.com"
+          - "&7Unlock at &nDesireCraft"
           - "&7Right-Click to preview kit."
       available:
         material: BREWING_STAND_ITEM
@@ -1778,7 +1778,7 @@ kits:
           - "&6* Bounty Hunter Update"
           - ""
           - "&a&lUNLOCKED"
-          - "&7Unlock at &nbuy.yourserver.com"
+          - "&7Unlock at &nDesireCraft"
           - "&7Right-Click to preview kit."
     permission: gkit.tinkermaster
     content:
@@ -1888,7 +1888,7 @@ kits:
           - "&6* Galaxy Update"
           - ""
           - "&c&lLOCKED"
-          - "&7Unlock at &nbuy.yourserver.com"
+          - "&7Unlock at &nDesireCraft"
           - "&7Right-Click to preview kit."
       cooldown:
         material: STAINED_GLASS_PANE
@@ -1907,7 +1907,7 @@ kits:
           - "&6* Galaxy Update"
           - ""
           - "&e&lCOOLDOWN over in .. {cooldown}"
-          - "&7Unlock at &nbuy.yourserver.com"
+          - "&7Unlock at &nDesireCraft"
           - "&7Right-Click to preview kit."
       available:
         material: NETHER_STAR
@@ -1926,7 +1926,7 @@ kits:
           - "&6* Galaxy Update"
           - ""
           - "&a&lUNLOCKED"
-          - "&7Unlock at &nbuy.yourserver.com"
+          - "&7Unlock at &nDesireCraft"
           - "&7Right-Click to preview kit."
     permission: gkit.admiral
     content:
@@ -2034,7 +2034,7 @@ kits:
           - "&6* #1 Year Anniversary"
           - ""
           - "&c&lLOCKED"
-          - "&7Unlock at &nbuy.yourserver.com"
+          - "&7Unlock at &nDesireCraft"
           - "&7Right-Click to preview kit."
       cooldown:
         material: STAINED_GLASS_PANE
@@ -2050,7 +2050,7 @@ kits:
           - "&6* #1 Year Anniversary"
           - ""
           - "&e&lCOOLDOWN over in .. {cooldown}"
-          - "&7Unlock at &nbuy.yourserver.com"
+          - "&7Unlock at &nDesireCraft"
           - "&7Right-Click to preview kit."
       available:
         material: CAKE
@@ -2066,7 +2066,7 @@ kits:
           - "&6* #1 Year Anniversary"
           - ""
           - "&a&lUNLOCKED"
-          - "&7Unlock at &nbuy.yourserver.com"
+          - "&7Unlock at &nDesireCraft"
           - "&7Right-Click to preview kit."
     permission: gkit.partyanimal
     content:
@@ -2154,7 +2154,7 @@ kits:
           - "&6* Dream Planet Release"
           - ""
           - "&c&lLOCKED"
-          - "&7Unlock at &nbuy.yoursever.com"
+          - "&7Unlock at &nDesireCraft"
           - "&7Right-Click to preview kit."
       cooldown:
         material: STAINED_GLASS_PANE
@@ -2167,7 +2167,7 @@ kits:
           - "&6* Dream Planet Release"
           - ""
           - "&e&lCOOLDOWN over in .. {cooldown}"
-          - "&7Unlock at &nbuy.yoursever.com"
+          - "&7Unlock at &nDesireCraft"
           - "&7Right-Click to preview kit."
       available:
         material: BOOK
@@ -2180,7 +2180,7 @@ kits:
           - "&6* Dream Planet Release"
           - ""
           - "&a&lUNLOCKED"
-          - "&7Unlock at &nbuy.yoursever.com"
+          - "&7Unlock at &nDesireCraft"
           - "&7Right-Click to preview kit."
     permission: gkit.enchantment
     content:
@@ -2227,7 +2227,7 @@ kits:
           - "&6* Castaway Planet Release"
           - ""
           - "&c&lLOCKED"
-          - "&7Unlock at &nbuy.yoursever.com"
+          - "&7Unlock at &nDesireCraft"
           - "&7Right-Click to preview kit."
       cooldown:
         material: STAINED_GLASS_PANE
@@ -2248,7 +2248,7 @@ kits:
           - "&6* Castaway Planet Release"
           - ""
           - "&e&lCOOLDOWN over in .. {cooldown}"
-          - "&7Unlock at &nbuy.yoursever.com"
+          - "&7Unlock at &nDesireCraft"
           - "&7Right-Click to preview kit."
       available:
         material: EXP_BOTTLE
@@ -2269,7 +2269,7 @@ kits:
           - "&6* Castaway Planet Release"
           - ""
           - "&a&lUNLOCKED"
-          - "&7Unlock at &nbuy.yoursever.com"
+          - "&7Unlock at &nDesireCraft"
           - "&7Right-Click to preview kit."
     permission: gkit.grandmaster
     content:
@@ -2378,7 +2378,7 @@ kits:
           - "&6* Demon Planet Release"
           - ""
           - "&c&lLOCKED"
-          - "&7Unlock at &nbuy.yoursever.com"
+          - "&7Unlock at &nDesireCraft"
           - "&7Right-Click to preview kit."
       cooldown:
         material: STAINED_GLASS_PANE
@@ -2394,7 +2394,7 @@ kits:
           - "&6* Demon Planet Release"
           - ""
           - "&e&lCOOLDOWN over in .. {cooldown}"
-          - "&7Unlock at &nbuy.yoursever.com"
+          - "&7Unlock at &nDesireCraft"
           - "&7Right-Click to preview kit."
       available:
         material: ENDER_PEARL
@@ -2410,7 +2410,7 @@ kits:
           - "&6* Demon Planet Release"
           - ""
           - "&a&lUNLOCKED"
-          - "&7Unlock at &nbuy.yoursever.com"
+          - "&7Unlock at &nDesireCraft"
           - "&7Right-Click to preview kit."
     permission: gkit.voidwalker
     content:
@@ -2480,7 +2480,7 @@ kits:
           - "&6* Tool Enchant Update"
           - ""
           - "&c&lLOCKED"
-          - "&7Unlock at &nbuy.yoursever.com"
+          - "&7Unlock at &nDesireCraft"
           - "&7Right-Click to preview kit."
       cooldown:
         material: STAINED_GLASS_PANE
@@ -2496,7 +2496,7 @@ kits:
           - "&6* Tool Enchant Update"
           - ""
           - "&e&lCOOLDOWN over in .. {cooldown}"
-          - "&7Unlock at &nbuy.yoursever.com"
+          - "&7Unlock at &nDesireCraft"
           - "&7Right-Click to preview kit."
       available:
         material: DIAMOND_PICKAXE
@@ -2512,7 +2512,7 @@ kits:
           - "&6* Tool Enchant Update"
           - ""
           - "&a&lUNLOCKED"
-          - "&7Unlock at &nbuy.yoursever.com"
+          - "&7Unlock at &nDesireCraft"
           - "&7Right-Click to preview kit."
     permission: gkit.masterbuilder
     content:
@@ -2567,14 +2567,14 @@ kits:
           - ""
           - "&f&l* &6&lRuneblade of Liber"
           - "&f&l* &6&lGuy Fawkes Mask"
-          - "&f&l* &eAnarchy Boots"
+          - "&f&l* &eDesireCraft Boots"
           - "&f&l* &eChestplate of Chaos"
           - ""
           - "&7Break free from your chains.. heroically!."
           - "&6* July 4th 2015/2017"
           - ""
           - "&c&lLOCKED"
-          - "&7Unlock at &nbuy.yoursever.com"
+          - "&7Unlock at &nDesireCraft"
           - "&7Right-Click to preview kit."
       cooldown:
         material: STAINED_GLASS_PANE
@@ -2585,14 +2585,14 @@ kits:
           - ""
           - "&f&l* &6&lRuneblade of Liber"
           - "&f&l* &6&lGuy Fawkes Mask"
-          - "&f&l* &eAnarchy Boots"
+          - "&f&l* &eDesireCraft Boots"
           - "&f&l* &eChestplate of Chaos"
           - ""
           - "&7Break free from your chains.. heroically!."
           - "&6* July 4th 2015/2017"
           - ""
           - "&e&lCOOLDOWN over in .. {cooldown}"
-          - "&7Unlock at &nbuy.yoursever.com"
+          - "&7Unlock at &nDesireCraft"
           - "&7Right-Click to preview kit."
       available:
         material: FIREWORK
@@ -2603,14 +2603,14 @@ kits:
           - ""
           - "&f&l* &6&lRuneblade of Liber"
           - "&f&l* &6&lGuy Fawkes Mask"
-          - "&f&l* &eAnarchy Boots"
+          - "&f&l* &eDesireCraft Boots"
           - "&f&l* &eChestplate of Chaos"
           - ""
           - "&7Break free from your chains.. heroically!."
           - "&6* July 4th 2015/2017"
           - ""
           - "&a&lUNLOCKED"
-          - "&7Unlock at &nbuy.yoursever.com"
+          - "&7Unlock at &nDesireCraft"
           - "&7Right-Click to preview kit."
     permission: gkit.independence
     content:
@@ -2676,7 +2676,7 @@ kits:
         material: DIAMOND_BOOTS
         data: 0
         amount: 1
-        name: "&6&lAnarchy Boots"
+        name: "&6&lDesireCraft Boots"
         lore:
           - "&6&oYou suddenly have an urge to"
           - "&6&oresist the status quo."
@@ -2711,7 +2711,7 @@ kits:
           - "&6* Dueling"
           - ""
           - "&c&lLOCKED"
-          - "&7Unlock at &nbuy.yoursever.com"
+          - "&7Unlock at &nDesireCraft"
           - "&7Right-Click to preview kit."
       cooldown:
         material: STAINED_GLASS_PANE
@@ -2727,7 +2727,7 @@ kits:
           - "&6* Dueling"
           - ""
           - "&e&lCOOLDOWN over in .. {cooldown}"
-          - "&7Unlock at &nbuy.yoursever.com"
+          - "&7Unlock at &nDesireCraft"
           - "&7Right-Click to preview kit."
       available:
         material: DIAMOND
@@ -2743,7 +2743,7 @@ kits:
           - "&6* Dueling"
           - ""
           - "&a&lUNLOCKED"
-          - "&7Unlock at &nbuy.yoursever.com"
+          - "&7Unlock at &nDesireCraft"
           - "&7Right-Click to preview kit."
     permission: gkit.arenachampion
     content:
@@ -2810,7 +2810,7 @@ kits:
           - "&6* Halloween 2016"
           - ""
           - "&c&lLOCKED"
-          - "&7Unlock at &nbuy.yoursever.com"
+          - "&7Unlock at &nDesireCraft"
           - "&7Right-Click to preview kit."
       cooldown:
         material: STAINED_GLASS_PANE
@@ -2827,7 +2827,7 @@ kits:
           - "&6* Halloween 2016"
           - ""
           - "&e&lCOOLDOWN over in .. {cooldown}"
-          - "&7Unlock at &nbuy.yoursever.com"
+          - "&7Unlock at &nDesireCraft"
           - "&7Right-Click to preview kit."
       available:
         material: RAW_BEEF
@@ -2844,7 +2844,7 @@ kits:
           - "&6* Halloween 2016"
           - ""
           - "&a&lUNLOCKED"
-          - "&7Unlock at &nbuy.yoursever.com"
+          - "&7Unlock at &nDesireCraft"
           - "&7Right-Click to preview kit."
     permission: gkit.butcher
     content:
@@ -2918,7 +2918,7 @@ kits:
           - "&6* Castle Planet Reset"
           - ""
           - "&c&lLOCKED"
-          - "&7Unlock at &nbuy.yoursever.com"
+          - "&7Unlock at &nDesireCraft"
           - "&7Right-Click to preview kit."
       cooldown:
         material: STAINED_GLASS_PANE
@@ -2938,7 +2938,7 @@ kits:
           - "&6* Castle Planet Reset"
           - ""
           - "&c&lLOCKED"
-          - "&7Unlock at &nbuy.yoursever.com"
+          - "&7Unlock at &nDesireCraft"
           - "&7Right-Click to preview kit."
       available:
         material: TNT
@@ -2957,7 +2957,7 @@ kits:
           - "&6* Castle Planet Reset"
           - ""
           - "&c&lLOCKED"
-          - "&7Unlock at &nbuy.yoursever.com"
+          - "&7Unlock at &nDesireCraft"
           - "&7Right-Click to preview kit."
     permission: gkit.cannoner
     content:
@@ -3092,7 +3092,7 @@ kits:
           - "&6* Immortal Enchant Release"
           - ""
           - "&c&lLOCKED"
-          - "&7Unlock at &nbuy.yoursever.com"
+          - "&7Unlock at &nDesireCraft"
           - "&7Right-Click to preview kit."
       cooldown:
         material: STAINED_GLASS_PANE
@@ -3108,7 +3108,7 @@ kits:
           - "&6* Immortal Enchant Release"
           - ""
           - "&e&lCOOLDOWN over in .. {cooldown}"
-          - "&7Unlock at &nbuy.yoursever.com"
+          - "&7Unlock at &nDesireCraft"
           - "&7Right-Click to preview kit."
       available:
         material: DIAMOND_CHESTPLATE
@@ -3124,7 +3124,7 @@ kits:
           - "&6* Immortal Enchant Release"
           - ""
           - "&a&lUNLOCKED"
-          - "&7Unlock at &nbuy.yoursever.com"
+          - "&7Unlock at &nDesireCraft"
           - "&7Right-Click to preview kit."
     permission: gkit.cosmonaut
     content:
@@ -3190,7 +3190,7 @@ kits:
           - "&6* Ice Planet Reset"
           - ""
           - "&c&lLOCKED"
-          - "&7Unlock at &nbuy.yoursever.com"
+          - "&7Unlock at &nDesireCraft"
           - "&7Right-Click to preview kit."
       cooldown:
         material: STAINED_GLASS_PANE
@@ -3210,7 +3210,7 @@ kits:
           - "&6* Ice Planet Reset"
           - ""
           - "&e&lCOOLDOWN over in .. {cooldown}"
-          - "&7Unlock at &nbuy.yoursever.com"
+          - "&7Unlock at &nDesireCraft"
           - "&7Right-Click to preview kit."
       available:
         material: GOLD_HELMET
@@ -3230,7 +3230,7 @@ kits:
           - "&6* Ice Planet Reset"
           - ""
           - "&a&lUNLOCKED"
-          - "&7Unlock at &nbuy.yoursever.com"
+          - "&7Unlock at &nDesireCraft"
           - "&7Right-Click to preview kit."
     permission: gkit.paladin
     content:
@@ -3335,7 +3335,7 @@ kits:
           - "&6* Enchantment Tracking"
           - ""
           - "&c&lLOCKED"
-          - "&7Unlock at &nbuy.yoursever.com"
+          - "&7Unlock at &nDesireCraft"
           - "&7Right-Click to preview kit."
       cooldown:
         material: STAINED_GLASS_PANE
@@ -3356,7 +3356,7 @@ kits:
           - "&6* Enchantment Tracking"
           - ""
           - "&e&lCOOLDOWN over in .. {cooldown}"
-          - "&7Unlock at &nbuy.yoursever.com"
+          - "&7Unlock at &nDesireCraft"
           - "&7Right-Click to preview kit."
       available:
         material: DRAGON_EGG
@@ -3377,7 +3377,7 @@ kits:
           - "&6* Enchantment Tracking"
           - ""
           - "&a&lUNLOCKED"
-          - "&7Unlock at &nbuy.yoursever.com"
+          - "&7Unlock at &nDesireCraft"
           - "&7Right-Click to preview kit."
     permission: gkit.warlock
     content:
@@ -3502,7 +3502,7 @@ kits:
           - "&6* Soul Trap Release"
           - ""
           - "&c&lLOCKED"
-          - "&7Unlock at &nbuy.yoursever.com"
+          - "&7Unlock at &nDesireCraft"
           - "&7Right-Click to preview kit."
       cooldown:
         material: STAINED_GLASS_PANE
@@ -3515,7 +3515,7 @@ kits:
           - "&6* Soul Trap Release"
           - ""
           - "&c&lLOCKED"
-          - "&7Unlock at &nbuy.yoursever.com"
+          - "&7Unlock at &nDesireCraft"
           - "&7Right-Click to preview kit."
       available:
         material: GOLD_AXE
@@ -3528,7 +3528,7 @@ kits:
           - "&6* Soul Trap Release"
           - ""
           - "&c&lLOCKED"
-          - "&7Unlock at &nbuy.yoursever.com"
+          - "&7Unlock at &nDesireCraft"
           - "&7Right-Click to preview kit."
     permission: gkit.loki
     content:
@@ -3601,7 +3601,7 @@ kits:
           - "&6* Lost Kingdoms Release 2018"
           - ""
           - "&c&lLOCKED"
-          - "&7Unlock at &nbuy.yoursever.com"
+          - "&7Unlock at &nDesireCraft"
           - "&7Right-Click to preview kit."
       cooldown:
         material: STAINED_GLASS_PANE
@@ -3621,7 +3621,7 @@ kits:
           - "&6* Lost Kingdoms Release 2018"
           - ""
           - "&e&lCOOLDOWN over in .. {cooldown}"
-          - "&7Unlock at &nbuy.yoursever.com"
+          - "&7Unlock at &nDesireCraft"
           - "&7Right-Click to preview kit."
       available:
         material: SKULL_ITEM
@@ -3641,7 +3641,7 @@ kits:
           - "&6* Lost Kingdoms Release 2018"
           - ""
           - "&c&lLOCKED"
-          - "&7Unlock at &nbuy.yoursever.com"
+          - "&7Unlock at &nDesireCraft"
           - "&7Right-Click to preview kit."
     permission: gkit.grimreaper
     content:

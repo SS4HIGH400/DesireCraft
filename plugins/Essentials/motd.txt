@@ -3,6 +3,6 @@
  &8▪ &c&lанархический&f режим, по этому будь
  &8▪ &fочень &a&nаккуратен&f в ходе своей игры.
   &f &f
- &8▪ &fГруппа &3VK&7: &9&lvk.com/TrustSpace
- &8▪ &fНаш сайт&7: &d&lwww.TrustSpace.su
+ &8▪ &fГруппа &3VK&7: &9&lDesireCraft
+ &8▪ &fНаш сайт&7: &d&lDesireCraft
 &f

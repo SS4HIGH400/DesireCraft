@@ -394,7 +394,7 @@ settings:
   inject-early: true
   max-velocity-ticks: 50
   max-logs-file-size: 7500
-  server-name: Default
+  server-name: DesireCraft
   async-alerts: false
   enable-api: false
   update-checker: false

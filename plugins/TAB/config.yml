@@ -22,9 +22,8 @@ header-footer:
       display-condition: '%world%!=disabledworld'
       header:
       - '&r                                                            &r'
-      - '&8▾ &#D200FF&lT&#CA00FF&lR&#C200FF&lU&#BA00FF&lS&#B200FF&lT&#AA00FF&lS&#A200FF&lP&#9A00FF&lA&#9200FF&lC&#8A00FF&lE
-        &8▾'
-      - '&7Доверься нашему космосу!'
+      - '&8▾ &#D200FF&lDesireCraft &8▾'
+      - '&7Добро пожаловать на DesireCraft!'
       - ''
       - '&fТекущий онлайн режима: &d%online%'
       - '&fВаше соединение &#A2A2A2[&#929292ᴘ&#838383ɪ&#737373ɴ&#646464ɢ&#545454]&f:
@@ -32,8 +31,8 @@ header-footer:
       - ''
       footer:
       - ''
-      - '&fНаш сайт: &#D200FF&lw&#CE00FF&lw&#C900FF&lw&#C500FF&l.&#C000FF&lT&#BC00FF&lr&#B700FF&lu&#B300FF&ls&#AE00FF&lt&#AA00FF&lS&#A500FF&lp&#A100FF&la&#9C00FF&lc&#9800FF&le&#9300FF&l.&#8F00FF&ls&#8A00FF&lu'
-      - '&fНаш VK: &#D200FF&lv&#CE00FF&lk&#C900FF&l.&#C500FF&lc&#C000FF&lo&#BC00FF&lm&#B700FF&l/&#B300FF&lT&#AE00FF&lr&#AA00FF&lu&#A500FF&ls&#A100FF&lt&#9C00FF&lS&#9800FF&lp&#9300FF&la&#8F00FF&lc&#8A00FF&le'
+      - '&fСервер: &#D200FF&lDesireCraft'
+      - '&7Приятной игры!'
       - ''
       - '&fВы на режиме: &#F4C4F3&lᴀ&#F5B7F4&lн&#F6A9F5&lᴀ&#F79CF6&lр&#F98FF7&lх&#FA82F8&lи&#FB74F9&lя
         &#FC67FA&l1'
@@ -77,7 +76,7 @@ bossbar:
       style: PROGRESS
       color: '%animation:barcolors%'
       progress: '100'
-      text: '&fWebsite: &bwww.domain.com'
+      text: '&fWebsite: &bDesireCraft'
 scoreboard:
   enabled: true
   toggle-command: /asdiplahsdouaishd
@@ -85,9 +84,8 @@ scoreboard:
   hidden-by-default: false
   delay-on-join-milliseconds: 0
   scoreboards:
-    TrustSpace:
-      title: '&8▾ &#D200FF&lT&#CA00FF&lR&#C200FF&lU&#BA00FF&lS&#B200FF&lT&#AA00FF&lS&#A200FF&lP&#9A00FF&lA&#9200FF&lC&#8A00FF&lE
-        &8▾'
+    DesireCraft:
+      title: '&8▾ &#D200FF&lDesireCraft &8▾'
       lines:
       - ''
       - '&8 ⋅ &fСтатус &8⇾ %vault_groupprefix%%luckperms_meta_plusik%'
@@ -102,7 +100,7 @@ scoreboard:
       - '&8 ⋅ &fУбийств &8⇾ &a%statistic_player_kills% 🗡'
       - '&8 ⋅ &fСмертей &8⇾ &c%statistic_deaths% ✞'
       - ''
-      - ' &#E95EFF&lᴡ&#E358FF&lᴡ&#DD52FF&lᴡ&#D74CFF&l.&#D147FF&lᴛ&#CB41FF&lʀ&#C53BFF&lᴜ&#BF35FF&ls&#BA2FFF&lᴛ&#B429FF&ls&#AE23FF&lᴘ&#A81DFF&lᴀ&#A218FF&lᴄ&#9C12FF&lᴇ&#960CFF&l.&#9006FF&ls&#8A00FF&lᴜ'
+      - ' &#D200FF&lDesireCraft'
 layout:
   enabled: false
   direction: COLUMNS
@@ -114,7 +112,7 @@ layout:
     default:
       fixed-slots:
       - '1|&3Website&f:'
-      - 2|&bmyserver.net
+      - 2|&bDesireCraft
       - '3|&8&m                       '
       - '4|&3Name&f:'
       - 5|&b%player%
@@ -125,10 +123,10 @@ layout:
       - '13|&3Time&f:'
       - 14|&b%time%
       - '21|&3Teamspeak&f:'
-      - 22|&bts.myserver.net
+      - 22|&bDesireCraft
       - '23|&8&m                       '
       - '41|&3Store&f:'
-      - 42|&bshop.myserver.net
+      - 42|&bDesireCraft
       - '43|&8&m                       '
       groups:
         staff:

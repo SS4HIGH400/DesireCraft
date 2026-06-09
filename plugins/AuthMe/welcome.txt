@@ -1,3 +1,2 @@
-Welcome {PLAYER} on {SERVER} server
-
-This server uses AuthMeReloaded protection!
+&dДобро пожаловать, &f{PLAYER}&d, на &f{SERVER}&d!
+&7Ваш аккаунт защищён системой авторизации.

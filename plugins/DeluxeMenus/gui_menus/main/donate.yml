@@ -37,7 +37,7 @@ items:
     - '&a◈ Нажмите, чтобы получить ссылку'
     left_click_commands:
     - '[sound] BLOCK_NOTE_BLOCK_BASS'
-    - '[message] &7[&#F4C4F3&lС&#F7A5F5&lа&#F986F8&lй&#FC67FA&lт&7] &8» &fПокупка донат-услуг тут: &d&lwww.TrustSpace.su'
+    - '[message] &7[&#F4C4F3&lС&#F7A5F5&lа&#F986F8&lй&#FC67FA&lт&7] &8» &fПокупка донат-услуг тут: &d&lDesireCraft'
   'traper':
     enchantments:
     - DURABILITY;1 
@@ -65,7 +65,7 @@ items:
     - '&a◈ Нажмите, чтобы получить ссылку'
     left_click_commands:
     - '[sound] BLOCK_NOTE_BLOCK_BASS'
-    - '[message] &7[&#F4C4F3&lС&#F7A5F5&lа&#F986F8&lй&#FC67FA&lт&7] &8» &fПокупка донат-услуг тут: &d&lwww.TrustSpace.su'
+    - '[message] &7[&#F4C4F3&lС&#F7A5F5&lа&#F986F8&lй&#FC67FA&lт&7] &8» &fПокупка донат-услуг тут: &d&lDesireCraft'
   'gothic':
     enchantments:
     - DURABILITY;1 
@@ -93,7 +93,7 @@ items:
     - '&a◈ Нажмите, чтобы получить ссылку'
     left_click_commands:
     - '[sound] BLOCK_NOTE_BLOCK_BASS'
-    - '[message] &7[&#F4C4F3&lС&#F7A5F5&lа&#F986F8&lй&#FC67FA&lт&7] &8» &fПокупка донат-услуг тут: &d&lwww.TrustSpace.su'
+    - '[message] &7[&#F4C4F3&lС&#F7A5F5&lа&#F986F8&lй&#FC67FA&lт&7] &8» &fПокупка донат-услуг тут: &d&lDesireCraft'
   'deluxe':
     enchantments:
     - DURABILITY;1 
@@ -122,7 +122,7 @@ items:
     - '&a◈ Нажмите, чтобы получить ссылку'
     left_click_commands:
     - '[sound] BLOCK_NOTE_BLOCK_BASS'
-    - '[message] &7[&#F4C4F3&lС&#F7A5F5&lа&#F986F8&lй&#FC67FA&lт&7] &8» &fПокупка донат-услуг тут: &d&lwww.TrustSpace.su'
+    - '[message] &7[&#F4C4F3&lС&#F7A5F5&lа&#F986F8&lй&#FC67FA&lт&7] &8» &fПокупка донат-услуг тут: &d&lDesireCraft'
   'griefer':
     enchantments:
     - DURABILITY;1 
@@ -152,7 +152,7 @@ items:
     - '&a◈ Нажмите, чтобы получить ссылку'
     left_click_commands:
     - '[sound] BLOCK_NOTE_BLOCK_BASS'
-    - '[message] &7[&#F4C4F3&lС&#F7A5F5&lа&#F986F8&lй&#FC67FA&lт&7] &8» &fПокупка донат-услуг тут: &d&lwww.TrustSpace.su'
+    - '[message] &7[&#F4C4F3&lС&#F7A5F5&lа&#F986F8&lй&#FC67FA&lт&7] &8» &fПокупка донат-услуг тут: &d&lDesireCraft'
 ##############################################################################
   'sapphire':
     enchantments:
@@ -185,7 +185,7 @@ items:
     - '&a◈ Нажмите, чтобы получить ссылку'
     left_click_commands:
     - '[sound] BLOCK_NOTE_BLOCK_BASS'
-    - '[message] &7[&#F4C4F3&lС&#F7A5F5&lа&#F986F8&lй&#FC67FA&lт&7] &8» &fПокупка донат-услуг тут: &d&lwww.TrustSpace.su'
+    - '[message] &7[&#F4C4F3&lС&#F7A5F5&lа&#F986F8&lй&#FC67FA&lт&7] &8» &fПокупка донат-услуг тут: &d&lDesireCraft'
   'space':
     enchantments:
     - DURABILITY;1 
@@ -219,7 +219,7 @@ items:
     - '&a◈ Нажмите, чтобы получить ссылку'
     left_click_commands:
     - '[sound] BLOCK_NOTE_BLOCK_BASS'
-    - '[message] &7[&#F4C4F3&lС&#F7A5F5&lа&#F986F8&lй&#FC67FA&lт&7] &8» &fПокупка донат-услуг тут: &d&lwww.TrustSpace.su'
+    - '[message] &7[&#F4C4F3&lС&#F7A5F5&lа&#F986F8&lй&#FC67FA&lт&7] &8» &fПокупка донат-услуг тут: &d&lDesireCraft'
 # Подписки, кейсы
   'sub':
     enchantments:
@@ -250,7 +250,7 @@ items:
     - '&a◈ Нажмите, чтобы получить ссылку'
     left_click_commands:
     - '[sound] BLOCK_NOTE_BLOCK_BASS'
-    - '[message] &7[&#F4C4F3&lС&#F7A5F5&lа&#F986F8&lй&#FC67FA&lт&7] &8» &fПокупка донат-услуг тут: &d&lwww.TrustSpace.su'
+    - '[message] &7[&#F4C4F3&lС&#F7A5F5&lа&#F986F8&lй&#FC67FA&lт&7] &8» &fПокупка донат-услуг тут: &d&lDesireCraft'
 
 # Прочее
   'back':

@@ -110,18 +110,18 @@ settings:
         timeout: 10
     # Message language, available languages:
     # https://github.com/AuthMe/AuthMeReloaded/blob/master/docs/translations.md
-    messagesLanguage: en
+    messagesLanguage: ru
     # Forces authme to hook into Vault instead of a specific permission handler system.
     forceVaultHook: false
     # Log level: INFO, FINE, DEBUG. Use INFO for general messages,
     # FINE for some additional detailed ones (like password failed),
     # and DEBUG for debugging
-    logLevel: FINE
+    logLevel: INFO
     # By default we schedule async tasks when talking to the database. If you want
     # typical communication with the database to happen synchronously, set this to false
     useAsyncTasks: true
     # The name of the server, used in some placeholders.
-    serverName: Your Minecraft Server
+    serverName: DesireCraft
     restrictions:
         # Can not authenticated players chat?
         # Keep in mind that this feature also blocks all commands not
@@ -182,7 +182,7 @@ settings:
         # Should unregistered players be kicked immediately?
         kickNonRegistered: false
         # Should players be kicked on wrong password?
-        kickOnWrongPassword: true
+        kickOnWrongPassword: false
         # Should not logged in players be teleported to the spawn?
         # After the authentication they will be teleported back to
         # their normal position.
@@ -191,7 +191,7 @@ settings:
         allowMovement: false
         # After how many seconds should players who fail to login or register
         # be kicked? Set to 0 to disable.
-        timeout: 30
+        timeout: 60
         # Regex pattern of allowed characters in the player name.
         allowedNicknameCharacters: '[a-zA-Z0-9_]*'
         # How far can unregistered players walk?
@@ -200,10 +200,10 @@ settings:
         # Should we protect the player inventory before logging in? Requires ProtocolLib.
         ProtectInventoryBeforeLogIn: true
         # Should we deny the tabcomplete feature before logging in? Requires ProtocolLib.
-        DenyTabCompleteBeforeLogin: false
+        DenyTabCompleteBeforeLogin: true
         # Should we display all other accounts from a player when he joins?
         # permission: /authme.admin.accounts
-        displayOtherAccounts: true
+        displayOtherAccounts: false
         # Spawn priority; values: authme, essentials, cmi, multiverse, default
         spawnPriority: authme,essentials,cmi,multiverse,default
         # Maximum Login authorized by IP
@@ -238,7 +238,7 @@ settings:
         UnrestrictedInventories: []
     security:
         # Minimum length of password
-        minPasswordLength: 5
+        minPasswordLength: 8
         # Maximum length of password
         passwordMaxLength: 30
         # Possible values: SHA256, BCRYPT, BCRYPT2Y, PBKDF2, SALTEDSHA512,
@@ -246,13 +246,14 @@ settings:
         # PBKDF2DJANGO, WORDPRESS, ROYALAUTH, ARGON2, CUSTOM (for developers only). See full list at
         # https://github.com/AuthMe/AuthMeReloaded/blob/master/docs/hash_algorithms.md
         # If you use ARGON2, check that you have the argon2 c library on your system
-        passwordHash: SHA256
+        passwordHash: BCRYPT
         # If a password check fails, AuthMe will also try to check with the following hash methods.
         # Use this setting when you change from one hash method to another.
         # AuthMe will update the password to the new hash. Example:
         # legacyHashes:
         # - 'SHA1'
-        legacyHashes: []
+        legacyHashes:
+        - 'SHA256'
         # Salt length for the SALTED2MD5 MD5(MD5(password)+salt)
         doubleMD5SaltLength: 8
         # Number of rounds to use if passwordHash is set to PBKDF2. Default is 10000
@@ -357,11 +358,11 @@ Email:
     # Email address, fill when mailAccount is not the email address of the account
     mailAddress: ''
     # Custom sender name, replacing the mailAccount name in the email
-    mailSenderName: ''
+    mailSenderName: DesireCraft
     # Recovery password length
     RecoveryPasswordLength: 8
     # Mail Subject
-    mailSubject: Your new AuthMe password
+    mailSubject: DesireCraft password recovery
     # Like maxRegPerIP but with email
     maxRegPerEmail: 1
     # Recall players to add an email?
@@ -395,7 +396,7 @@ Protection:
     enableProtectionRegistered: true
     geoIpDatabase:
         # Enable GeoIp database
-        enabled: true
+        enabled: false
         # The MaxMind clientId used to download the GeoIp database,
         # get one at https://www.maxmind.com/en/accounts/current/license-key
         # The EssentialsX project has a very useful tutorial on how to generate
@@ -457,7 +458,7 @@ Security:
         logConsole: true
     captcha:
         # Enable captcha when a player uses wrong password too many times
-        useCaptcha: false
+        useCaptcha: true
         # Max allowed tries before a captcha is required
         maxLoginTry: 5
         # Captcha length
@@ -468,15 +469,15 @@ Security:
         requireForRegistration: false
     tempban:
         # Tempban a user's IP address if they enter the wrong password too many times
-        enableTempban: false
+        enableTempban: true
         # How many times a user can attempt to login before their IP being tempbanned
-        maxLoginTries: 10
+        maxLoginTries: 5
         # The length of time a IP address will be tempbanned in minutes
         # Default: 480 minutes, or 8 hours
-        tempbanLength: 480
+        tempbanLength: 30
         # How many minutes before resetting the count for failed logins by IP and username
         # Default: 480 minutes (8 hours)
-        minutesBeforeCounterReset: 480
+        minutesBeforeCounterReset: 30
         # The command to execute instead of using the internal ban system, empty if disabled.
         # Available placeholders: %player%, %ip%
         customCommand: ''

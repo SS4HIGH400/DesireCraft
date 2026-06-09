@@ -1,1 +1,61 @@
-.runtime/
+# Local server runtime and downloaded dependencies
+/.runtime/
+/cache/
+/libraries/
+/logs/
+/crash-reports/
+/backups/
+
+# Server binaries and generated metadata
+/server.jar
+/plugins/*.jar
+/plugins-disabled/*.jar
+/.console_history
+/usercache.json
+/version_history.json
+
+# Logs, temporary files and crash dumps
+*.log
+*.log.gz
+*.tmp
+*.temp
+*.pid
+hs_err_pid*
+
+# Plugin caches, downloaded libraries and runtime data
+/plugins/**/.archive-unpack/
+/plugins/**/cache/
+/plugins/**/logs/
+/plugins/**/libs/
+/plugins/**/libraries/
+/plugins/**/sessions/
+/plugins/**/userdata/
+/plugins/**/backups/
+/plugins/bStats/
+/plugins/PluginMetrics/
+
+# Runtime databases should be backed up separately, not committed
+*.db
+*.db-journal
+*.sqlite
+*.sqlite3
+*.mv.db
+
+# Per-player and transient world state
+**/session.lock
+**/uid.dat
+**/level.dat_old
+**/playerdata/
+**/stats/
+**/advancements/
+
+# Plugin build output
+/plugins-src/**/build/
+/plugins-src/**/target/
+*.class
+
+# Local editor and OS files
+/.idea/
+/.vscode/
+.DS_Store
+Thumbs.db

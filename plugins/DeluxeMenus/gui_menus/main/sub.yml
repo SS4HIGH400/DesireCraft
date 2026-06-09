@@ -38,7 +38,7 @@ items:
     - '&a◈ Нажмите, чтобы получить ссылку'
     left_click_commands:
     - '[sound] BLOCK_NOTE_BLOCK_BASS'
-    - '[message] &7[&#F4C4F3&lС&#F7A5F5&lа&#F986F8&lй&#FC67FA&lт&7] &8» &fПокупка донат-услуг тут: &d&lwww.TrustSpace.su'
+    - '[message] &7[&#F4C4F3&lС&#F7A5F5&lа&#F986F8&lй&#FC67FA&lт&7] &8» &fПокупка донат-услуг тут: &d&lDesireCraft'
   '2':
     enchantments:
     - DURABILITY;1 
