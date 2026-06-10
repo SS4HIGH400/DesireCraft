@@ -7,7 +7,7 @@ facing: 0.0
 down-origin: false
 pages:
 - lines:
-  - content: '&7⊲ <#ANIM:wave:&d&l,&5&l&n>ᴛʀᴜsᴛsᴘᴀᴄᴇ</#ANIM> &7▪ &#CB2D3E&l&nᴀ&#D1313D&l&nн&#D7363D&l&nᴀ&#DD3A3C&l&nр&#E33E3B&l&nх&#E9433B&l&nи&#EF473A&l&nя&r
+  - content: '&7⊲ <#ANIM:wave:&d&l,&5&l&n>DesireCraft</#ANIM> &7▪ &#CB2D3E&l&nᴀ&#D1313D&l&nн&#D7363D&l&nᴀ&#DD3A3C&l&nр&#E33E3B&l&nх&#E9433B&l&nи&#EF473A&l&nя&r
       &7⊳'
     height: 0.3
   - content: '&8★ &7Удачной игры, %player_name%! &8★'

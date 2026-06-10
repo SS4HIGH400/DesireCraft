@@ -1,4 +1,4 @@
-menu_title: '[ᴛs] ▸ Сферы'
+menu_title: '[ᴅᴄ] ▸ Сферы'
 open_command:
 - sphere
 size: 53
@@ -9,8 +9,7 @@ open_commands:
 items:
 ##########################################################################
   'xeops':
-    hide_attributes: true
-    hide_enchantments: true
+    item_flags: [HIDE_ATTRIBUTES, HIDE_ENCHANTS]
     material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZGM2OTk5YzFmNTk2NDZmZTAxMjFhOTlkOWIwZmVmMzk5NmVkNzhjNmRjNTU1MzFkYWJjY2E3MDhjMWRjZjkxNiJ9fX0=
     slot: 20
     display_name: '&#FFD900С&#FFDD18ф&#FFE02Fе&#FFE447р&#FFE75Fа &#FFEB77Х&#FFEE8Eе&#FFF2A6о&#FFF5BEп&#FFF9D5с&#FFFCEDа'
@@ -38,8 +37,7 @@ items:
     - '[console] btalisman give %player_name% xeops 1'
     - '[message] &7[&#F4C4F3&lМ&#F5B5F4&lа&#F7A5F5&lг&#F896F7&lа&#F986F8&lз&#FB77F9&lи&#FC67FA&lн&7] &8» &fСпасибо за покупку в нашем магазине!'
   'gerakl':
-    hide_attributes: true
-    hide_enchantments: true
+    item_flags: [HIDE_ATTRIBUTES, HIDE_ENCHANTS]
     material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzYxOWJmNjI4NjNlYzExNTc3ZDZlZjY1ZWZkYzNmOWRlNGRmNDE0MjAyZWQxZmYxZGU5ZWM3NmI2MWEzZjY2NyJ9fX0==
     slot: 30
     display_name: '&#F80000С&#F91716ф&#F92E2Bе&#FA4541р&#FB5C56а &#FB736CГ&#FC8981е&#FCA097р&#FDB7ACа&#FECEC2к&#FEE5D7л&#FFFCEDа'
@@ -67,8 +65,7 @@ items:
     - '[console] btalisman give %player_name% gerakl 1'
     - '[message] &7[&#F4C4F3&lМ&#F5B5F4&lа&#F7A5F5&lг&#F896F7&lа&#F986F8&lз&#FB77F9&lи&#FC67FA&lн&7] &8» &fСпасибо за покупку в нашем магазине!'
   'dionis':
-    hide_attributes: true
-    hide_enchantments: true
+    item_flags: [HIDE_ATTRIBUTES, HIDE_ENCHANTS]
     material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvM2FhNGE3YmIyY2I4OGM3ZDExZWUxYWRmYTQwZDlhY2Q3NWQ4ZmIwNmIxMWE0OTY5Y2UwNzE1Y2Y5OGUwYzVjYSJ9fX0=
     slot: 22
     display_name: '&#8600F8С&#9117F7ф&#9C2EF6е&#A745F5р&#B25CF4а &#BD73F3Д&#C889F2и&#D3A0F1о&#DEB7F0н&#E9CEEFи&#F4E5EEс&#FFFCEDа'
@@ -97,8 +94,7 @@ items:
     - '[console] btalisman give %player_name% dionis 1'
     - '[message] &7[&#F4C4F3&lМ&#F5B5F4&lа&#F7A5F5&lг&#F896F7&lа&#F986F8&lз&#FB77F9&lи&#FC67FA&lн&7] &8» &fСпасибо за покупку в нашем магазине!' 
   'epiona':
-    hide_attributes: true
-    hide_enchantments: true
+    item_flags: [HIDE_ATTRIBUTES, HIDE_ENCHANTS]
     material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzQ4N2ZmYWIxNWQ2MjhjYjBlZDQ5MzkxOWUxNTRkYTBiOTdiMDYxM2JiNDBmOGIzODc1N2RlNTA3YmJkNjA5NCJ9fX0=
     slot: 28
     display_name: '&#00F8EEС&#1AF8EEф&#33F9EEе&#4DF9EEр&#66FAEEа &#80FAEEЭ&#99FAEDп&#B3FBEDи&#CCFBEDо&#E6FCEDн&#FFFCEDы'
@@ -125,8 +121,7 @@ items:
     - '[console] btalisman give %player_name% epiona 1'
     - '[message] &7[&#F4C4F3&lМ&#F5B5F4&lа&#F7A5F5&lг&#F896F7&lа&#F986F8&lз&#FB77F9&lи&#FC67FA&lн&7] &8» &fСпасибо за покупку в нашем магазине!' 
   'femida':
-    hide_attributes: true
-    hide_enchantments: true
+    item_flags: [HIDE_ATTRIBUTES, HIDE_ENCHANTS]
     material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmQ3NDk5NWQ2Y2RhMmI4YTI0NzcyYWY5NjllZjA3N2FlM2E4NWUyMzU3YzZmNjExOWI4YTI1MDYwNDFhNDQ4YiJ9fX0=
     slot: 32
     display_name: '&#393939С&#4D4D4Bф&#61605Dе&#74746Fр&#888781а &#9C9B93Ф&#B0AEA5е&#C4C2B7м&#D7D5C9и&#EBE9DBд&#FFFCEDы'
@@ -153,8 +148,7 @@ items:
     - '[console] btalisman give %player_name% femida 1'
     - '[message] &7[&#F4C4F3&lМ&#F5B5F4&lа&#F7A5F5&lг&#F896F7&lа&#F986F8&lз&#FB77F9&lи&#FC67FA&lн&7] &8» &fСпасибо за покупку в нашем магазине!' 
   'prometey':
-    hide_attributes: true
-    hide_enchantments: true
+    item_flags: [HIDE_ATTRIBUTES, HIDE_ENCHANTS]
     material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjhmOTIzNTNmZDUyZDBlZWQ2NTdkOTk3ZWE4MTQ5YzgyNWQzNjZiMDI4YzE1MTRiZDllY2FhZjI0M2ZiN2JjNiJ9fX0=
     slot: 24
     display_name: '&#2D0AD0С&#3F1ED2ф&#5032D5е&#6247D7р&#735BDAа &#856FDCП&#9683DFр&#A897E1о&#B9ABE3м&#CBC0E6е&#DCD4E8т&#EEE8EBе&#FFFCEDя'
@@ -181,8 +175,7 @@ items:
     - '[console] btalisman give %player_name% prometey 1'
     - '[message] &7[&#F4C4F3&lМ&#F5B5F4&lа&#F7A5F5&lг&#F896F7&lа&#F986F8&lз&#FB77F9&lи&#FC67FA&lн&7] &8» &fСпасибо за покупку в нашем магазине!' 
   'apisa':
-    hide_attributes: true
-    hide_enchantments: true
+    item_flags: [HIDE_ATTRIBUTES, HIDE_ENCHANTS]
     material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGM4MjNjOGU1M2QzYWU3NTNjMTkxYzUxZmU2Njc5MTE1MjczMzA2NDFhMDE2YTEzMzI1MDIzYTM5OWYwMTcyYSJ9fX0
     slot: 34
     display_name: '&#D05A0AС&#D56C23ф&#DA7E3Cе&#E09056р&#E5A26Fа &#EAB488А&#EFC6A1п&#F5D8BBи&#FAEAD4с&#FFFCEDа'

@@ -12,13 +12,7 @@
 pickupLimit: -1
 disabledWorlds: []
 whitelistedWorlds: []
-whitelistItemsPerWorld:
-  myWorld:
-  - myEI1
-  - myEI2
-  myWorld2:
-  - myEI3
-  - myEI4
+whitelistItemsPerWorld: {}
 premiumEnableCooldownForOp: true
 checkVersionMsg: false
 disableTestItems: false

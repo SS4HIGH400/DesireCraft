@@ -1,4 +1,4 @@
-menu_title: '[ᴛs] ▸ Выход в лобби'
+menu_title: '[ᴅᴄ] ▸ Выход в лобби'
 open_command:
 - lobby
 - hub
@@ -16,8 +16,7 @@ items:
   '1':
     enchantments:
     - DURABILITY;1 
-    hide_attributes: true
-    hide_enchantments: true
+    item_flags: [HIDE_ATTRIBUTES, HIDE_ENCHANTS]
     material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjVmNTM3NmQ4NjllZWUzZDBjNjJiNjdmNTY3MTRkYjkzZDFiYmY0ODMxNTU2YTdlN2QyZjdjMzRiNDllNGYifX19
     slot: 21
     display_name: '&#EF89FFПодтвердить перемещение?'
@@ -31,8 +30,7 @@ items:
   '2':
     enchantments:
     - DURABILITY;1 
-    hide_attributes: true
-    hide_enchantments: true
+    item_flags: [HIDE_ATTRIBUTES, HIDE_ENCHANTS]
     material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDA1MWI1OTA4NWQyYzQyNDk1Nzc4MjNmNjNlMWUyZWI5ZjdjZjY0YjdjNzg3ODVhMjE4MDVmYWQzZWYxNCJ9fX0=
     slot: 23
     display_name: '&#ff3c3cОтменить перемещение?'

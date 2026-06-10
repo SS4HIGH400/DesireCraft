@@ -1,4 +1,4 @@
-menu_title: '[ᴛs] ▸ Динамиты'
+menu_title: '[ᴅᴄ] ▸ Динамиты'
 open_command:
 - tnt0
 size: 53
@@ -10,14 +10,12 @@ items:
   '1':
     enchantments:
     - DURABILITY;1 
-    hide_attributes: true
-    hide_enchantments: true
+    item_flags: [HIDE_ATTRIBUTES, HIDE_ENCHANTS]
     material: TNT
     amount: 1
     slot: 21
     display_name: '&#00FF00Супер ТНТ'
-    hide_attributes: true
-    hide_enchantments: true
+    item_flags: [HIDE_ATTRIBUTES, HIDE_ENCHANTS]
     lore:
     - ''
     - '&8 ▪ &fИнтервал: &a5 сек.'
@@ -31,14 +29,12 @@ items:
   '2':
     enchantments:
     - DURABILITY;1 
-    hide_attributes: true
-    hide_enchantments: true
+    item_flags: [HIDE_ATTRIBUTES, HIDE_ENCHANTS]
     material: TNT
     amount: 1
     slot: 30
     display_name: '&#FFFF00Мега ТНТ'
-    hide_attributes: true
-    hide_enchantments: true
+    item_flags: [HIDE_ATTRIBUTES, HIDE_ENCHANTS]
     lore:
     - ''
     - '&8 ▪ &fИнтервал: &e10 сек.'
@@ -52,14 +48,12 @@ items:
   '3':
     enchantments:
     - DURABILITY;1 
-    hide_attributes: true
-    hide_enchantments: true
+    item_flags: [HIDE_ATTRIBUTES, HIDE_ENCHANTS]
     material: TNT
     amount: 1
     slot: 31
     display_name: '&#FF0000Ультра ТНТ'
-    hide_attributes: true
-    hide_enchantments: true
+    item_flags: [HIDE_ATTRIBUTES, HIDE_ENCHANTS]
     lore:
     - ''
     - '&8 ▪ &fИнтервал: &c15 сек.'
@@ -73,14 +67,12 @@ items:
   '4':
     enchantments:
     - DURABILITY;1 
-    hide_attributes: true
-    hide_enchantments: true
+    item_flags: [HIDE_ATTRIBUTES, HIDE_ENCHANTS]
     material: TNT
     amount: 1
     slot: 32
     display_name: '&bВоздушное ТНТ'
-    hide_attributes: true
-    hide_enchantments: true
+    item_flags: [HIDE_ATTRIBUTES, HIDE_ENCHANTS]
     lore:
     - ''
     - '&8 ▸ &7Улетает вверх'
@@ -96,14 +88,12 @@ items:
   '5':
     enchantments:
     - DURABILITY;1 
-    hide_attributes: true
-    hide_enchantments: true
+    item_flags: [HIDE_ATTRIBUTES, HIDE_ENCHANTS]
     material: TNT
     amount: 1
     slot: 23
     display_name: '&#FFA500Подожженное ТНТ'
-    hide_attributes: true
-    hide_enchantments: true
+    item_flags: [HIDE_ATTRIBUTES, HIDE_ENCHANTS]
     lore:
     - ''
     - '&8 ▸ &7Сразу поджигается'
@@ -119,14 +109,12 @@ items:
   '6':
     enchantments:
     - DURABILITY;1 
-    hide_attributes: true
-    hide_enchantments: true
+    item_flags: [HIDE_ATTRIBUTES, HIDE_ENCHANTS]
     material: TNT
     amount: 1
     slot: 22
     display_name: '&8Обсидиановое ТНТ'
-    hide_attributes: true
-    hide_enchantments: true
+    item_flags: [HIDE_ATTRIBUTES, HIDE_ENCHANTS]
     lore:
     - ''
     - '&8 ▸ &7Взрывает обсидиан'
@@ -143,8 +131,7 @@ items:
     material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2VmMTE5ZjA4ODUxYTcyYTVmMTBmYmMzMjQ3ZDk1ZTFjMDA2MzYwZDJiNGY0MTJiMjNjZTA1NDA5Mjc1NmIwYyJ9fX0=
     slot: 49
     display_name: '&c&lНазад'
-    hide_attributes: true
-    hide_enchantments: true
+    item_flags: [HIDE_ATTRIBUTES, HIDE_ENCHANTS]
     lore:
     - ''
     - '&8 ▪ &fНажав сюда, вы сможете'

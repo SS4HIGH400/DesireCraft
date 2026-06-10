@@ -1,4 +1,4 @@
-menu_title: '[ᴛs] ▸ Стакер зелий'
+menu_title: '[ᴅᴄ] ▸ Стакер зелий'
 open_command:
 - stacker
 size: 44
@@ -11,8 +11,7 @@ items:
   '1':
     enchantments:
     - DURABILITY;1 
-    hide_attributes: true
-    hide_enchantments: true
+    item_flags: [HIDE_ATTRIBUTES, HIDE_ENCHANTS]
     material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzQ5MmNhOTQwNzkxMzZkMjUyNTcwM2QzNzVjMjU1N2VhYzIwMWVlN2RkMzljZTExYzY0YTljMzgxNDdlY2M0ZCJ9fX0=
     slot: 22
     display_name: '&#EF89FFИнформация'

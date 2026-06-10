@@ -1,4 +1,4 @@
-menu_title: '[ᴛs] ▸ Стрелы'
+menu_title: '[ᴅᴄ] ▸ Стрелы'
 open_command:
 - arrows
 size: 53
@@ -12,8 +12,7 @@ items:
     amount: 8
     slot: 29
     display_name: '&#E7FF00С&#E9FF14т&#EBFF28р&#EDFE3Bе&#EFFE4Fл&#F1FE63ы &#F3FE77А&#F5FD8Aн&#F7FD9Eу&#F9FDB2б&#FBFDC6и&#FDFCD9с&#FFFCEDа'
-    hide_attributes: true
-    hide_enchantments: true
+    item_flags: [HIDE_ATTRIBUTES, HIDE_ENCHANTS]
     lore:
     - '&cМоментальный Урон'
     - '&cИссушение II (0:02)'
@@ -40,8 +39,7 @@ items:
     amount: 8
     slot: 21
     display_name: '&#4C3E30С&#5A4D3Fт&#685B4Dр&#756A5Cе&#83786Aл&#918779ы &#9F9687С&#ACA496т&#BAB3A4а&#C8C2B3р&#D6D0C1о&#E3DFD0с&#F1EDDEт&#FFFCEDы'
-    hide_attributes: true
-    hide_enchantments: true
+    item_flags: [HIDE_ATTRIBUTES, HIDE_ENCHANTS]
     lore:     
     - '&cГолод V (0:02)'
     - '&cЛевитация II (0:02)'
@@ -68,8 +66,7 @@ items:
     amount: 8
     slot: 31
     display_name: '&#FF0000С&#FF1211т&#FF2422р&#FF3633е&#FF4844л&#FF5A55ы &#FF6C66П&#FF7E76р&#FF9087о&#FFA298к&#FFB4A9л&#FFC6BAя&#FFD8CBт&#FFEADCи&#FFFCEDя'
-    hide_attributes: true
-    hide_enchantments: true
+    item_flags: [HIDE_ATTRIBUTES, HIDE_ENCHANTS]
     lore:    
     - '&cСлабость (0:02)'    
     - '&cЗамедление (0:02)'
@@ -97,8 +94,7 @@ items:
     amount: 8
     slot: 23
     display_name: '&#775600С&#816211т&#8A6E22р&#947A33е&#9E8544л&#A89155ы &#B19D66Д&#BBA976р&#C5B587е&#CEC198в&#D8CDA9н&#E2D8BAо&#ECE4CBс&#F5F0DCт&#FFFCEDи'
-    hide_attributes: true
-    hide_enchantments: true
+    item_flags: [HIDE_ATTRIBUTES, HIDE_ENCHANTS]
     lore:    
     - '&cСлепота (0:03)'    
     - '&cГолод II (0:03)'
@@ -126,8 +122,7 @@ items:
     amount: 8
     slot: 33
     display_name: '&#00FF4FС&#1AFF5Fт&#33FE6Fр&#4DFE7Eе&#66FE8Eл&#80FE9Eы &#99FDAEК&#B3FDBEо&#CCFDCDб&#E6FCDDр&#FFFCEDы'
-    hide_attributes: true
-    hide_enchantments: true
+    item_flags: [HIDE_ATTRIBUTES, HIDE_ENCHANTS]
     lore:    
     - '&cЗамедление (0:03)'    
     - '&cТошнота (0:03)'
@@ -153,8 +148,7 @@ items:
     material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2VmMTE5ZjA4ODUxYTcyYTVmMTBmYmMzMjQ3ZDk1ZTFjMDA2MzYwZDJiNGY0MTJiMjNjZTA1NDA5Mjc1NmIwYyJ9fX0=
     slot: 49
     display_name: '&c&lНазад'
-    hide_attributes: true
-    hide_enchantments: true
+    item_flags: [HIDE_ATTRIBUTES, HIDE_ENCHANTS]
     lore:
     - ''
     - '&8 ▪ &fНажав сюда, вы сможете'

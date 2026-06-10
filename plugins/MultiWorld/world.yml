@@ -16,7 +16,7 @@ world:
   receive-achievements: true
   whitelist: []
   whitelist-enabled: false
-  load-auto: false
+  load-auto: true
 world_nether:
   creator-name: CONSOLE
   creation-timestamp: 1712606216237
@@ -35,7 +35,7 @@ world_nether:
   receive-achievements: false
   whitelist: []
   whitelist-enabled: false
-  load-auto: false
+  load-auto: true
 world_the_end:
   creator-name: CONSOLE
   creation-timestamp: 1712606216393
@@ -54,7 +54,7 @@ world_the_end:
   receive-achievements: false
   whitelist: []
   whitelist-enabled: false
-  load-auto: false
+  load-auto: true
 spawn:
   creator-name: SPUTN1KOFF
   creation-timestamp: 1712606222818

@@ -36,9 +36,9 @@ check-for-updates: false
 enable-bstats: true
 bungeecord: false
 cross_server_timeout: 3
-message-format: '&#8756FB&lL &8▪ %clans_colored_clan_tag% &f%prefix &7%displayname%suffix
+message-format: '&#8756FB&lL &8▪ %javascript_clan_chat%&f%prefix &7%displayname%suffix
   &8» &7%message'
-global-message-format: '&#FF00EE&lG &8▪ %clans_colored_clan_tag% &f%prefix &7%displayname%suffix
+global-message-format: '&#FF00EE&lG &8▪ %javascript_clan_chat%&f%prefix &7%displayname%suffix
   &8» &f%message'
 multi-prefixes: false
 multi-suffixes: false

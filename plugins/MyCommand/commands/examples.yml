@@ -6,27 +6,13 @@ sub30:
   - '$text$ &c✕ Вы уже использовали эту возможность!'
   # give sub
   - '$Script$%if%$arg1==give'
-  - 'lp user $arg2 meta settemp plusik " &7[&d&l＋&7]" 30d'
-  # команды
-  - 'lp user $arg2 permission settemp essentials.kits.plus true 30d'
-  - 'lp user $arg2 permission settemp essentials.tpahere true 30d'
-  - 'lp user $arg2 permission settemp essentials.top true 30d'
-  - 'lp user $arg2 permission settemp essentials.gc true 30d'
-  - 'lp user $arg2 permission settemp rtp.channel.end true 30d'
-  - 'lp user $arg2 permission settemp rtp.channel.nether true 30d'
-  - 'lp user $arg2 permission settemp sub.gui true 30d'
+  - 'lp user $arg2 parent addtemp plus 30d'
   #########
   - '$text$ &fВы выдали &7[&d&l＋&7] &fигроку &5$arg2'
   # remove sub
   - $Script$%if%$arg1==remove
   - '%PlayerOptions%playSound: BLOCK_LEVER_CLICK'
-  - 'lp user $arg2 meta unsettemp plusik'
-  - 'lp user $arg2 permission unsettemp essentials.tpahere '
-  - 'lp user $arg2 permission unsettemp essentials.top '
-  - 'lp user $arg2 permission unsettemp essentials.gc '
-  - 'lp user $arg2 permission unsettemp rtp.channel.end '
-  - 'lp user $arg2 permission unsettemp rtp.channel.nether '
-  - 'lp user $arg2 permission unsettemp sub.gui '
+  - 'lp user $arg2 parent removetemp plus'
   - '$text$ &fВы забрали &7[&d&l＋&7] &fу игрока &5$arg2'
   - '$Script$%else%'
   permission-required: true

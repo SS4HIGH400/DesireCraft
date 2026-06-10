@@ -1,4 +1,4 @@
-menu_title: '[ᴛs] ▸ Уникальные вещи'
+menu_title: '[ᴅᴄ] ▸ Уникальные вещи'
 open_command:
 - items
 size: 53
@@ -11,8 +11,7 @@ items:
   'simurga':
     enchantments:
     - DURABILITY;1 
-    hide_attributes: true
-    hide_enchantments: true
+    item_flags: [HIDE_ATTRIBUTES, HIDE_ENCHANTS]
     material: ELYTRA
     slot: 20
     display_name: '&#EF89FFКрылья Симурга'
@@ -40,8 +39,7 @@ items:
   'garpia':
     enchantments:
     - DURABILITY;1 
-    hide_attributes: true
-    hide_enchantments: true
+    item_flags: [HIDE_ATTRIBUTES, HIDE_ENCHANTS]
     material: ELYTRA
     slot: 24
     display_name: '&#EF89FFКрылья Гарпии'
@@ -69,8 +67,7 @@ items:
   'NETHERITE_HELMET':
     enchantments:
     - DURABILITY;1 
-    hide_attributes: true
-    hide_enchantments: true
+    item_flags: [HIDE_ATTRIBUTES, HIDE_ENCHANTS]
     material: NETHERITE_HELMET
     slot: 13
     display_name: '&#EF89FFКошмарный Шлем'
@@ -105,8 +102,7 @@ items:
   'netherite_chestplate':
     enchantments:
     - DURABILITY;1
-    hide_attributes: true 
-    hide_enchantments: true
+    item_flags: [HIDE_ATTRIBUTES, HIDE_ENCHANTS]
     material: netherite_chestplate
     slot: 22
     display_name: '&#EF89FFКошмарный Нагрудник'
@@ -139,8 +135,7 @@ items:
   'netherite_leggings':
     enchantments:
     - DURABILITY;1 
-    hide_attributes: true
-    hide_enchantments: true
+    item_flags: [HIDE_ATTRIBUTES, HIDE_ENCHANTS]
     material: netherite_leggings
     slot: 31
     display_name: '&#EF89FFКошмарные Поножи'
@@ -173,8 +168,7 @@ items:
   'netherite_boots':
     enchantments:
     - DURABILITY;1 
-    hide_attributes: true
-    hide_enchantments: true
+    item_flags: [HIDE_ATTRIBUTES, HIDE_ENCHANTS]
     material: netherite_boots
     slot: 40
     display_name: '&#EF89FFКошмарные Ботинки'
@@ -208,8 +202,7 @@ items:
   'netherite_sword':
     enchantments:
     - DURABILITY;1 
-    hide_attributes: true
-    hide_enchantments: true
+    item_flags: [HIDE_ATTRIBUTES, HIDE_ENCHANTS]
     material: netherite_sword
     slot: 21
     display_name: '&#EF89FFМеч Охотника'
@@ -240,8 +233,7 @@ items:
   'netherite_pickaxe':
     enchantments:
     - DURABILITY;1 
-    hide_attributes: true
-    hide_enchantments: true
+    item_flags: [HIDE_ATTRIBUTES, HIDE_ENCHANTS]
     material: netherite_pickaxe
     slot: 23
     display_name: '&#EF89FFКирка Гнома'
@@ -271,8 +263,7 @@ items:
   'netherite_shovel':
     enchantments:
     - DURABILITY;1
-    hide_attributes: true 
-    hide_enchantments: true
+    item_flags: [HIDE_ATTRIBUTES, HIDE_ENCHANTS]
     material: netherite_shovel
     slot: 32
     display_name: '&#EF89FFЛопата Гнома'
@@ -302,8 +293,7 @@ items:
   'netherite_axe':
     enchantments:
     - DURABILITY;1 
-    hide_attributes: true
-    hide_enchantments: true
+    item_flags: [HIDE_ATTRIBUTES, HIDE_ENCHANTS]
     material: netherite_axe
     slot: 30
     display_name: '&#EF89FFТопор Гнома'

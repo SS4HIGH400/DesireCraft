@@ -1,0 +1,92 @@
+# ============================================
+# ClanSystem - Конфигурация
+# Версия: 1.0.0
+# ============================================
+
+# ===== НАСТРОЙКИ КЛАНОВОГО ЧАТА =====
+
+# Формат сообщения в клановом чате
+# Доступные переменные: %player%, %message%, %clan%
+chat-format: "&7[&6КЛАН&7] &e%player%&7: &f%message%"
+
+# ===== ОЧКИ ЗА ДЕЙСТВИЯ =====
+
+points:
+  # Начисление очков
+  player-kill: 25          # За убийство игрока из другого клана
+  totem-break: 50          # За сломанный тотем врага
+  place-1: 500             # За 1 место в Arena Death
+  place-2: 300             # За 2 место в Arena Death
+  place-3: 200             # За 3 место в Arena Death
+  participant: 50          # За участие в Arena Death
+
+  # Снятие очков (штрафы)
+  totem-loss: 30           # Штраф за потерю тотема от врага
+  death-penalty: 15        # Штраф за смерть от игрока из другого клана
+
+# ===== СООБЩЕНИЯ =====
+
+messages:
+  # Основные сообщения
+  already-in-clan: "&cВы уже состоите в клане!"
+  clan-exists: "&cКлан с таким названием уже существует!"
+  invalid-name-length: "&cНазвание клана должно быть от 2 до 16 символов!"
+  clan-created: "&aКлан %clan% успешно создан!"
+  not-in-clan: "&cВы не состоите в клане!"
+  not-owner: "&cТолько владелец клана может это сделать!"
+  not-leader-officer: "&cТолько лидер или офицер могут это сделать!"
+  only-owner: "&cТолько лидер клана может это сделать!"
+  clan-deleted: "&aКлан %clan% удален!"
+  clan-deleted-notify: "&cВаш клан %clan% был удален лидером!"
+
+  # Очки
+  points-earned: "&a+%points% очков клана! Причина: %reason%"
+  points-lost: "&c-%points% очков клана! Причина: %reason%"
+
+  # Банк
+  bank-deposit: "&aВы внесли %amount% %currency% в казну клана!"
+  bank-withdraw: "&eВы сняли %amount% %currency% из казны клана!"
+  insufficient-funds: "&cНедостаточно %currency% в казне клана!"
+
+  # Описание и тег
+  description-changed: "&aОписание клана изменено: &f%description%"
+  description-changed-broadcast: "&e%player% изменил описание клана: &f%description%"
+  tag-changed: "&aТег клана изменен: &f[%tag%]"
+  tag-changed-broadcast: "&e%player% изменил тег клана: &f[%tag%]"
+
+  # Открытый/закрытый клан
+  clan-open-changed: "&aКлан теперь %status%"
+  clan-open-changed-broadcast: "&e%player% %status% клан"
+  clan-not-found: "&cКлан не найден!"
+  clan-not-open: "&cЭтот клан закрыт для свободного вступления!"
+  joined-clan: "&aВы вступили в клан %clan%!"
+  player-joined-clan: "&e%player% вступил в клан %clan%!"
+
+  # Приглашения
+  invite-received: "&aВы получили приглашение в клан %clan% от %player%!\n&e/clan accept - принять, /clan deny - отклонить"
+  invite-sent: "&aПриглашение отправлено игроку %player%"
+  no-invite: "&cУ вас нет активных приглашений!"
+  invite-denied: "&cВы отклонили приглашение"
+  player-already-in-clan: "&cЭтот игрок уже состоит в клане!"
+
+  # Выход и кик
+  left-clan: "&cВы покинули клан %clan%"
+  player-left-clan: "&e%player% покинул клан %clan%"
+  kicked-from-clan: "&cВас кикнули из клана %clan%"
+  kicked-player: "&aВы кикнули %player% из клана %clan%"
+  player-kicked-from-clan: "&e%player% был кикнут из клана %clan% игроком %kicker%"
+  cannot-leave-owner: "&cВы не можете покинуть клан, так как вы лидер! Передайте лидерство или удалите клан."
+  cannot-kick-owner: "&cВы не можете кикнуть лидера клана!"
+  not-same-clan: "&cИгрок не из вашего клана!"
+
+  # Офицеры
+  promoted-to-officer: "&aВы назначены офицером клана %clan%!"
+  promoted-player: "&aВы назначили %player% офицером клана %clan%"
+  demoted-from-officer: "&cВы сняты с должности офицера клана %clan%"
+  demoted-player: "&cВы сняли %player% с должности офицера клана %clan%"
+  already-officer: "&cЭтот игрок уже является офицером!"
+  not-officer: "&cЭтот игрок не является офицером!"
+
+  # Чат
+  chat-mode-on: "&aВы вошли в режим кланового чата. Все сообщения будут уходить в клан!"
+  chat-mode-off: "&cВы вышли из режима кланового чата"

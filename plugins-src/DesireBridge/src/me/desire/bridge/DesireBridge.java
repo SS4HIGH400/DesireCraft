@@ -39,7 +39,6 @@ public final class DesireBridge extends JavaPlugin implements CommandExecutor, T
     @Override
     public void onEnable() {
         loadRubies();
-        Bukkit.getPluginManager().registerEvents(this, this);
         if (Bukkit.getPluginManager().isPluginEnabled("PlaceholderAPI")) {
             new DesireExpansion(this).register();
             getLogger().info("PlaceholderAPI placeholders registered.");
@@ -168,12 +167,20 @@ public final class DesireBridge extends JavaPlugin implements CommandExecutor, T
     }
 
     public String getClanDisplay(Player player) {
+        String clanTag = getClanTag(player);
+        if (clanTag.isEmpty()) {
+            return "";
+        }
+
+        return " &8[&#95090c" + clanTag + "&8]";
+    }
+
+    public String getClanTag(Player player) {
         String clanName = getClanName(player);
         if (clanName.isEmpty()) {
             return "";
         }
 
-        String display = clanName;
         try {
             Plugin clanSystem = Bukkit.getPluginManager().getPlugin("ClanSystem");
             Object manager = clanSystem.getClass().getMethod("getClanManager").invoke(clanSystem);
@@ -181,14 +188,14 @@ public final class DesireBridge extends JavaPlugin implements CommandExecutor, T
             if (clan != null) {
                 Object tag = clan.getClass().getMethod("getTag").invoke(clan);
                 if (tag != null && !tag.toString().isBlank()) {
-                    display = tag.toString();
+                    return tag.toString();
                 }
             }
         } catch (ReflectiveOperationException ignored) {
-            display = clanName;
+            return clanName;
         }
 
-        return " &8[&#95090c" + display + "&8]";
+        return clanName;
     }
 
     private String getLuckPermsPrefix(Player player) {
@@ -369,6 +376,8 @@ public final class DesireBridge extends JavaPlugin implements CommandExecutor, T
                     return plugin.getClanDisplay(player);
                 case "clan_name":
                     return plugin.getClanName(player);
+                case "clan_tag":
+                    return plugin.getClanTag(player);
                 case "kills":
                     return player == null ? "0" : String.valueOf(player.getStatistic(Statistic.PLAYER_KILLS));
                 case "deaths":

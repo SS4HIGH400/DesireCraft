@@ -21,7 +21,7 @@ case:
       - ''
       - '&aНажмите, чтобы открыть'
 
-  Title: "[ᴛs] ▸ Кейс с титулами" # Title in GUI
+  Title: "[ᴅᴄ] ▸ Кейс с титулами" # Title in GUI
   DisplayName: "Титул-Кейс" # Name for placeholders
   Gui: # see more about items configuring -> https://wiki.jodexindustries.space/docs/DonateCase/items-settings
     Size: 45

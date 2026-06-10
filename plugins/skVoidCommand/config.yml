@@ -11,4 +11,4 @@ execute-as-console: true
 target-y-coordinate: 56
 target-worlds:
 - spawn
-command-to-execute: trustrtp safe %player%
+command-to-execute: desirertp safe %player%

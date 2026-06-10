@@ -24,6 +24,12 @@
 clan:
   file: clan.js
   engine: nashorn
+clan_chat:
+  file: clan_chat.js
+  engine: nashorn
+clan_line:
+  file: clan_line.js
+  engine: nashorn
 chest:
   file: chest.js
   engine: nashorn

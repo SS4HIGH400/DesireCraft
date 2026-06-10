@@ -59,7 +59,6 @@ signed-events:
 - alert-open2
 - alert-open3
 - alert-open4
-- alert-open5
 - alert-open
 - chest-closed
 - end

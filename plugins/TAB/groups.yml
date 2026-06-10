@@ -7,7 +7,6 @@ _DEFAULT_:
   tabsuffix: "%vault_suffix%"
   tagsuffix: ""
   customtabname: "<#C7ABCD>%player%</#DBC9EA>"
-  customtagname: "<#C7ABCD>%player%</#DBC9EA>" # don't forget to enable unlimited nametag mode to make this one work
 
 per-world:
   world1:

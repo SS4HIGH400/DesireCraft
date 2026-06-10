@@ -1,4 +1,4 @@
-menu_title: '[ᴛs] ▸ Управление PLUS'
+menu_title: '[ᴅᴄ] ▸ Управление PLUS'
 open_command: subgui
 size: 44
 update_interval: 1
@@ -17,8 +17,7 @@ items:
   '2':
     enchantments:
     - DURABILITY;1 
-    hide_attributes: true
-    hide_enchantments: true
+    item_flags: [HIDE_ATTRIBUTES, HIDE_ENCHANTS]
     material: STONE
     slot: 22
     display_name: '&#F4FF89&lБля, нужно сделать'

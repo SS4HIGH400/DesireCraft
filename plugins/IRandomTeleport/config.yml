@@ -1,6 +1,6 @@
 
 # Команда, используемая для рандомной телепортации
-rtpCommand: "trustrtp"
+rtpCommand: "desirertp"
 
 # Минимальный онлайн, который должен быть на сервере, чтобы работала телепортация с типом NEARBY_PLAYERS (рядом с игроками)
 nearbyPlayersMinOnline: 3

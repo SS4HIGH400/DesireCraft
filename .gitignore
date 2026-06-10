@@ -10,6 +10,7 @@
 /server.jar
 /plugins/*.jar
 /plugins-disabled/*.jar
+/.plugins-quarantine/
 /.console_history
 /usercache.json
 /version_history.json

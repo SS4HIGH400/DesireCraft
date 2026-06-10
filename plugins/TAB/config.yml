@@ -93,7 +93,7 @@ scoreboard:
       - '&8 ⋅ &fМонеты &8⇾ &#FFEE5E%vault_eco_balance_formatted%$'
       - '&8 ⋅ &fРубины &8⇾ &#971AED%playerpoints_points%ᚹ'
       - ''
-      - '&8 ⋅ &fГильдия &8⇾ &7%javascript_clan%'
+      - '%javascript_clan_line%'
       - '&8 ⋅ &fНаиграно &8⇾ &#5EFFD8%statistic_hours_played%ч.'
       - '&8 ⋅ &fВаш пинг &8⇾ &#728EE9%player_ping% ⇆'
       - ''
@@ -233,4 +233,12 @@ components:
   disable-shadow-for-heads: true
 proxy-support:
   channel-name-suffix: TAB
-  enabled: true
+  enabled: false
+  type: PLUGIN
+  plugin:
+    name: RedisBungee
+  redis:
+    url: redis://:password@localhost:6379/0
+  rabbitmq:
+    exchange: plugin
+    url: amqp://guest:guest@localhost:5672/%2F

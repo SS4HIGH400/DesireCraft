@@ -78,3 +78,114 @@
 
 [06-05 01:05:19]: [FINE] pol1ce registered 127.0.0.1
 [06-05 01:05:19]: [FINE] pol1ce logged in 127.0.0.1
+[06-09 20:04:34]: [INFO] SQLite Setup finished
+[06-09 20:04:34]: [INFO] No supported permissions system found! Permissions are disabled!
+[06-09 20:04:35]: [INFO] AuthMe 5.6.0 build n.CUSTOM successfully enabled!
+[06-09 20:24:01]: [INFO] SQLite Setup finished
+[06-09 20:24:01]: [INFO] Hooked into LuckPerms!
+[06-09 20:24:01]: [INFO] Hooked successfully into Essentials
+[06-09 20:24:01]: [INFO] Hooked successfully into Multiverse-Core
+[06-09 20:24:02]: [INFO] AuthMe 5.6.0 build n.CUSTOM successfully enabled!
+[06-09 20:24:04]: [INFO] AuthMe 5.6.0-bCUSTOM disabled!
+[06-09 20:38:37]: [INFO] SQLite Setup finished
+[06-09 20:38:37]: [INFO] Hooked into LuckPerms!
+[06-09 20:38:37]: [INFO] Hooked successfully into Essentials
+[06-09 20:38:37]: [INFO] AuthMe 5.6.0 build n.CUSTOM successfully enabled!
+[06-09 20:38:46]: [INFO] AuthMe 5.6.0-bCUSTOM disabled!
+[06-09 20:43:45]: [INFO] SQLite Setup finished
+[06-09 20:43:45]: [INFO] Hooked into LuckPerms!
+[06-09 20:43:45]: [INFO] Hooked successfully into Essentials
+[06-09 20:43:46]: [INFO] AuthMe 5.6.0 build n.CUSTOM successfully enabled!
+[06-09 20:43:54]: [INFO] AuthMe 5.6.0-bCUSTOM disabled!
+[06-09 20:46:39]: [INFO] SQLite Setup finished
+[06-09 20:46:39]: [INFO] Hooked into LuckPerms!
+[06-09 20:46:39]: [INFO] Hooked successfully into Essentials
+[06-09 20:46:40]: [INFO] AuthMe 5.6.0 build n.CUSTOM successfully enabled!
+[06-09 20:46:49]: [INFO] AuthMe 5.6.0-bCUSTOM disabled!
+[06-09 20:50:50]: [INFO] SQLite Setup finished
+[06-09 20:50:50]: [INFO] Hooked into LuckPerms!
+[06-09 20:50:50]: [INFO] Hooked successfully into Essentials
+[06-09 20:50:51]: [INFO] AuthMe 5.6.0 build n.CUSTOM successfully enabled!
+[06-09 20:51:00]: [INFO] AuthMe 5.6.0-bCUSTOM disabled!
+[06-09 20:55:24]: [INFO] SQLite Setup finished
+[06-09 20:55:24]: [INFO] Hooked into LuckPerms!
+[06-09 20:55:25]: [INFO] Hooked successfully into Essentials
+[06-09 20:55:25]: [INFO] AuthMe 5.6.0 build n.CUSTOM successfully enabled!
+[06-09 21:04:56]: [INFO] AuthMe 5.6.0-bCUSTOM disabled!
+[06-09 21:15:35]: [INFO] SQLite Setup finished
+[06-09 21:15:35]: [INFO] Hooked into LuckPerms!
+[06-09 21:15:36]: [INFO] Hooked successfully into Essentials
+[06-09 21:15:36]: [INFO] AuthMe 5.6.0 build n.CUSTOM successfully enabled!
+[06-09 21:15:51]: [INFO] AuthMe 5.6.0-bCUSTOM disabled!
+[06-09 21:20:31]: [INFO] SQLite Setup finished
+[06-09 21:20:31]: [INFO] Hooked into LuckPerms!
+[06-09 21:20:31]: [INFO] Hooked successfully into Essentials
+[06-09 21:20:31]: [INFO] AuthMe 5.6.0 build n.CUSTOM successfully enabled!
+[06-09 21:21:33]: [INFO] AuthMe 5.6.0-bCUSTOM disabled!
+[06-09 21:23:25]: [INFO] SQLite Setup finished
+[06-09 21:23:25]: [INFO] Hooked into LuckPerms!
+[06-09 21:23:25]: [INFO] Hooked successfully into Essentials
+[06-09 21:23:25]: [INFO] AuthMe 5.6.0 build n.CUSTOM successfully enabled!
+[06-09 21:38:00]: [INFO] SQLite Setup finished
+[06-09 21:38:00]: [INFO] Hooked into LuckPerms!
+[06-09 21:38:01]: [INFO] Hooked successfully into Essentials
+[06-09 21:38:01]: [INFO] AuthMe 5.6.0 build n.CUSTOM successfully enabled!
+[06-09 21:40:29]: [INFO] SQLite Setup finished
+[06-09 21:40:29]: [INFO] Hooked into LuckPerms!
+[06-09 21:40:29]: [INFO] Hooked successfully into Essentials
+[06-09 21:40:30]: [INFO] AuthMe 5.6.0 build n.CUSTOM successfully enabled!
+[06-10 19:50:58]: [INFO] SQLite Setup finished
+[06-10 19:50:58]: [INFO] Hooked into LuckPerms!
+[06-10 19:50:58]: [INFO] Hooked successfully into Essentials
+[06-10 19:50:59]: [INFO] AuthMe 5.6.0 build n.CUSTOM successfully enabled!
+[06-10 20:08:15]: [INFO] SQLite Setup finished
+[06-10 20:08:16]: [INFO] Hooked into LuckPerms!
+[06-10 20:08:16]: [INFO] Hooked successfully into Essentials
+[06-10 20:08:16]: [INFO] AuthMe 5.6.0 build n.CUSTOM successfully enabled!
+[06-10 20:08:29]: [INFO] AuthMe 5.6.0-bCUSTOM disabled!
+[06-10 20:12:54]: [INFO] SQLite Setup finished
+[06-10 20:12:54]: [INFO] Hooked into LuckPerms!
+[06-10 20:12:54]: [INFO] Hooked successfully into Essentials
+[06-10 20:12:54]: [INFO] AuthMe 5.6.0 build n.CUSTOM successfully enabled!
+[06-10 20:13:08]: [INFO] AuthMe 5.6.0-bCUSTOM disabled!
+[06-10 20:16:19]: [INFO] SQLite Setup finished
+[06-10 20:16:19]: [INFO] Hooked into LuckPerms!
+[06-10 20:16:19]: [INFO] Hooked successfully into Essentials
+[06-10 20:16:19]: [INFO] AuthMe 5.6.0 build n.CUSTOM successfully enabled!
+[06-10 20:23:31]: [INFO] SQLite Setup finished
+[06-10 20:23:31]: [INFO] Hooked into LuckPerms!
+[06-10 20:23:32]: [INFO] Hooked successfully into Essentials
+[06-10 20:23:32]: [INFO] AuthMe 5.6.0 build n.CUSTOM successfully enabled!
+[06-10 20:34:41]: [INFO] SQLite Setup finished
+[06-10 20:34:41]: [INFO] Hooked into LuckPerms!
+[06-10 20:34:41]: [INFO] Hooked successfully into Essentials
+[06-10 20:34:41]: [INFO] AuthMe 5.6.0 build n.CUSTOM successfully enabled!
+[06-10 20:35:09]: [INFO] AuthMe 5.6.0-bCUSTOM disabled!
+[06-10 20:38:05]: [INFO] SQLite Setup finished
+[06-10 20:38:05]: [INFO] Hooked into LuckPerms!
+[06-10 20:38:05]: [INFO] Hooked successfully into Essentials
+[06-10 20:38:05]: [INFO] AuthMe 5.6.0 build n.CUSTOM successfully enabled!
+[06-10 20:38:16]: [INFO] AuthMe 5.6.0-bCUSTOM disabled!
+[06-10 20:41:54]: [INFO] SQLite Setup finished
+[06-10 20:41:54]: [INFO] Hooked into LuckPerms!
+[06-10 20:41:54]: [INFO] Hooked successfully into Essentials
+[06-10 20:41:54]: [INFO] AuthMe 5.6.0 build n.CUSTOM successfully enabled!
+[06-10 20:44:24]: [INFO] SQLite Setup finished
+[06-10 20:44:25]: [INFO] Hooked into LuckPerms!
+[06-10 20:44:25]: [INFO] Hooked successfully into Essentials
+[06-10 20:44:25]: [INFO] AuthMe 5.6.0 build n.CUSTOM successfully enabled!
+[06-10 21:09:27]: [INFO] SQLite Setup finished
+[06-10 21:09:27]: [INFO] Hooked into LuckPerms!
+[06-10 21:09:27]: [INFO] Hooked successfully into Essentials
+[06-10 21:09:27]: [INFO] AuthMe 5.6.0 build n.CUSTOM successfully enabled!
+[06-10 21:10:16]: [INFO] AuthMe 5.6.0-bCUSTOM disabled!
+[06-10 21:13:53]: [INFO] SQLite Setup finished
+[06-10 21:13:53]: [INFO] Hooked into LuckPerms!
+[06-10 21:13:53]: [INFO] Hooked successfully into Essentials
+[06-10 21:13:53]: [INFO] AuthMe 5.6.0 build n.CUSTOM successfully enabled!
+[06-10 21:14:22]: [INFO] AuthMe 5.6.0-bCUSTOM disabled!
+[06-10 21:17:14]: [INFO] SQLite Setup finished
+[06-10 21:17:14]: [INFO] Hooked into LuckPerms!
+[06-10 21:17:14]: [INFO] Hooked successfully into Essentials
+[06-10 21:17:14]: [INFO] AuthMe 5.6.0 build n.CUSTOM successfully enabled!
+[06-10 21:17:21]: [INFO] AuthMe 5.6.0-bCUSTOM disabled!

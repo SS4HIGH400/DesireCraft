@@ -1,4 +1,4 @@
-menu_title: '[ᴛs] ▸ Меню варпов'
+menu_title: '[ᴅᴄ] ▸ Меню варпов'
 open_command:
 - warps
 size: 53
@@ -11,8 +11,7 @@ items:
   '1':
     enchantments:
     - DURABILITY;1 
-    hide_attributes: true
-    hide_enchantments: true
+    item_flags: [HIDE_ATTRIBUTES, HIDE_ENCHANTS]
     material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTc2NTM0MTM1M2MwMjllOWI2NTVmNGY1NzkzMWFlNmFkYzJjN2E3M2M2NTc5NDVkOTQ1YTMwNzY0MWQzNzc4In19fQ==
     slot: 29
     display_name: '&#9400FFП&#CA00FCв&#FF00F8п'
@@ -28,8 +27,7 @@ items:
   '2':
     enchantments:
     - DURABILITY;1 
-    hide_attributes: true
-    hide_enchantments: true
+    item_flags: [HIDE_ATTRIBUTES, HIDE_ENCHANTS]
     material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODIyZDhlNzUxYzhmMmZkNGM4OTQyYzQ0YmRiMmY1Y2E0ZDhhZThlNTc1ZWQzZWIzNGMxOGE4NmU5M2IifX19
     slot: 21
     display_name: '&#9400FFЖ&#9D00FEи&#A600FEт&#AF00FDе&#B800FDл&#C100FCи &#CA00FCс&#D200FBе&#DB00FAр&#E400FAв&#ED00F9е&#F600F9р&#FF00F8а'
@@ -45,8 +43,7 @@ items:
   '3':
     enchantments:
     - DURABILITY;1 
-    hide_attributes: true
-    hide_enchantments: true
+    item_flags: [HIDE_ATTRIBUTES, HIDE_ENCHANTS]
     material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzY3N2U2NWRmMjk5OWQwMzE5ZmRiY2JhM2MwOTJmMTYwYjk5YjRiNDY3OTgzYWY4MWZjZmExZWI0NWQzOWEzIn19fQ==
     slot: 31
     display_name: '&#9400FFК&#AF00FDе&#CA00FCй&#E400FAс&#FF00F8ы'
@@ -62,8 +59,7 @@ items:
   '4':
     enchantments:
     - DURABILITY;1 
-    hide_attributes: true
-    hide_enchantments: true
+    item_flags: [HIDE_ATTRIBUTES, HIDE_ENCHANTS]
     material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTMyMWFiMTY3M2M5NWRhMjA4ZTc1OTkwMjQyZTM5OGYxM2FjN2I2NDY3YmI0MzdmYjNiN2FhOWY3Y2YzY2U2ZCJ9fX0=
     slot: 23
     display_name: '&#9400FFР&#9900FFа&#9F00FEн&#A400FEд&#A900FEо&#AF00FDм&#B400FDн&#B900FDа&#BF00FCя &#C400FCт&#CA00FCе&#CF00FBл&#D400FBе&#DA00FAп&#DF00FAо&#E400FAр&#EA00F9т&#EF00F9а&#F400F9ц&#FA00F8и&#FF00F8я'
@@ -79,8 +75,7 @@ items:
   '5':
     enchantments:
     - DURABILITY;1 
-    hide_attributes: true
-    hide_enchantments: true
+    item_flags: [HIDE_ATTRIBUTES, HIDE_ENCHANTS]
     material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOGI1ZDNlZGFhNWFmZDQ1YmQ3ZWZlYmE3ZDIxMGRhMjVjYjg0ZDU0Y2NjMTU5OWQ0YjA0MzM1Mzc1OGViOWRkZCJ9fX0=
     slot: 33
     display_name: '&#9400FFТ&#9F00FEо&#A900FEп&#B400FDы &#BF00FCс&#CA00FCе&#D400FBр&#DF00FAв&#EA00F9е&#F400F9р&#FF00F8а'
@@ -98,8 +93,7 @@ items:
     material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2VmMTE5ZjA4ODUxYTcyYTVmMTBmYmMzMjQ3ZDk1ZTFjMDA2MzYwZDJiNGY0MTJiMjNjZTA1NDA5Mjc1NmIwYyJ9fX0=
     slot: 49
     display_name: '&c&lНазад'
-    hide_attributes: true
-    hide_enchantments: true
+    item_flags: [HIDE_ATTRIBUTES, HIDE_ENCHANTS]
     lore:
     - ''
     - '&8 ▪ &fНажав сюда, вы сможете'

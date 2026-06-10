@@ -1,4 +1,4 @@
-menu_title: '[ᴛs] ▸ Зелья'
+menu_title: '[ᴅᴄ] ▸ Зелья'
 open_command:
 - potions
 size: 53
@@ -9,8 +9,7 @@ open_commands:
 items:
 ##########################################################################
   '1':
-    hide_attributes: true
-    hide_enchantments: true
+    item_flags: [HIDE_ATTRIBUTES, HIDE_ENCHANTS]
     material: POTION
     slot: 30
     display_name: '&#FF0015З&#FF1729е&#FF2E3Cл&#FF4550ь&#FF5C64е &#FF7377К&#FF898Bр&#FFA09Eа&#FFB7B2т&#FFCEC6о&#FFE5D9с&#FFFCEDа'
@@ -38,8 +37,7 @@ items:
     - '[message] &7[&#F4C4F3&lМ&#F5B5F4&lа&#F7A5F5&lг&#F896F7&lа&#F986F8&lз&#FB77F9&lи&#FC67FA&lн&7] &8» &fСпасибо за покупку в нашем магазине!'
     
   '2':
-    hide_attributes: true
-    hide_enchantments: true
+    item_flags: [HIDE_ATTRIBUTES, HIDE_ENCHANTS]
     material: POTION
     slot: 22
     display_name: '&#B300FFЗ&#B915FEе&#C02AFCл&#C63FFBь&#CC54F9е &#D369F8А&#D97EF6с&#DF93F5с&#E6A8F3а&#ECBDF2с&#F2D2F0и&#F9E7EFн&#FFFCEDа'
@@ -67,8 +65,7 @@ items:
     - '[message] &7[&#F4C4F3&lМ&#F5B5F4&lа&#F7A5F5&lг&#F896F7&lа&#F986F8&lз&#FB77F9&lи&#FC67FA&lн&7] &8» &fСпасибо за покупку в нашем магазине!'
     
   '3':
-    hide_attributes: true
-    hide_enchantments: true
+    item_flags: [HIDE_ATTRIBUTES, HIDE_ENCHANTS]
     material: POTION
     slot: 32    
     display_name: '&#40EABAЗ&#53ECBFе&#66EEC4л&#79EFC9ь&#8CF1CEе &#A0F3D4П&#B3F5D9о&#C6F7DEл&#D9F8E3е&#ECFAE8т&#FFFCEDа'
@@ -95,8 +92,7 @@ items:
     - '[message] &7[&#F4C4F3&lМ&#F5B5F4&lа&#F7A5F5&lг&#F896F7&lа&#F986F8&lз&#FB77F9&lи&#FC67FA&lн&7] &8» &fСпасибо за покупку в нашем магазине!'
     
   '4':
-    hide_attributes: true
-    hide_enchantments: true
+    item_flags: [HIDE_ATTRIBUTES, HIDE_ENCHANTS]
     material: POTION
     slot: 24
     display_name: '&#5F5F5FЗ&#6E6D6Cе&#7C7C79л&#8B8A86ь&#999893е &#A8A6A0Ш&#B6B5ACа&#C5C3B9х&#D3D1C6т&#E2DFD3е&#F0EEE0р&#FFFCEDа'
@@ -124,8 +120,7 @@ items:
     - '[message] &7[&#F4C4F3&lМ&#F5B5F4&lа&#F7A5F5&lг&#F896F7&lа&#F986F8&lз&#FB77F9&lи&#FC67FA&lн&7] &8» &fСпасибо за покупку в нашем магазине!'
     
   '5':
-    hide_attributes: true
-    hide_enchantments: true
+    item_flags: [HIDE_ATTRIBUTES, HIDE_ENCHANTS]
     material: POTION
     slot: 20
     display_name: '&#00FF1CЗ&#1CFF33е&#39FE4Aл&#55FE62ь&#71FE79е &#8EFD90Х&#AAFDA7а&#C6FDBFл&#E3FCD6к&#FFFCEDа'

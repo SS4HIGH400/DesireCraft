@@ -82,7 +82,7 @@ time_format: dd.MM.yyyy
 history_time_format: dd.MM.yyyy
 banned_message_base: |
   §0
-  §0 §c§l⚔ §d§lTrust§5§lSpace §c§l⚔
+  §0 §c§l⚔ §d§lDesire§5§lCraft §c§l⚔
        §c⚠ §lВАШ АККАУНТ БЫЛ ЗАБЛОКИРОВАН§r §c⚠
   §8▪▫▪▫▪▫▪▫▪▫▪▫▪▫▪▫▪▫▪▫▪▫▪▫▪▫▪▫▪▫▪▫▪▫▪▫▪▫▪▫▪▫▪▫▪▫▪▫▪▫▪▫▪▫▪▫▪▫▪▫▪▫▪▫▪▫▪▫▪▫▪▫▪▫▪▫▪▫▪▫▪▫▪
   §r
@@ -99,7 +99,7 @@ banned_message_base: |
 banned_message: $base
 banned_message_permanent: |-
   §0
-  §0 §c§l⚔ §d§lTrust§5§lSpace §c§l⚔
+  §0 §c§l⚔ §d§lDesire§5§lCraft §c§l⚔
        §c⚠ §lВАШ АККАУНТ БЫЛ ЗАБЛОКИРОВАН§r §c⚠
   §8▪▫▪▫▪▫▪▫▪▫▪▫▪▫▪▫▪▫▪▫▪▫▪▫▪▫▪▫▪▫▪▫▪▫▪▫▪▫▪▫▪▫▪▫▪▫▪▫▪▫▪▫▪▫▪▫▪▫▪▫▪▫▪▫▪▫▪▫▪▫▪▫▪▫▪▫▪▫▪▫▪▫▪
   §r

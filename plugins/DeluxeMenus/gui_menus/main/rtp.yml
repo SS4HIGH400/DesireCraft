@@ -1,4 +1,4 @@
-menu_title: '[ᴛs] ▸ Рандомная телепортация'
+menu_title: '[ᴅᴄ] ▸ Рандомная телепортация'
 open_command:
 - rtp
 - rt
@@ -25,7 +25,7 @@ items:
     - '&a◈ Нажмите для телепортации'
     click_commands:
     - '[close]'
-    - '[player] trustrtp safe'
+    - '[player] desirertp safe'
     - '[sound] ENTITY_ITEM_PICKUP'
   'far':
     material: ENDER_EYE
@@ -39,7 +39,7 @@ items:
     - '&a◈ Нажмите для телепортации'
     click_commands:
     - '[close]'
-    - '[player] trustrtp far'
+    - '[player] desirertp far'
     - '[sound] ENTITY_ITEM_PICKUP'
   'near':
     material: SHIELD
@@ -53,7 +53,7 @@ items:
     - '&a◈ Нажмите для телепортации'
     click_commands:
     - '[close]'
-    - '[player] trustrtp near'
+    - '[player] desirertp near'
     - '[sound] ENTITY_ITEM_PICKUP'
 
 # Прочее

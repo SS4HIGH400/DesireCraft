@@ -1,4 +1,4 @@
-menu_title: '[ᴛs] ▸ Донат услуги'
+menu_title: '[ᴅᴄ] ▸ Донат услуги'
 open_command:
 - donate
 - don
@@ -13,8 +13,7 @@ items:
   'wander':
     enchantments:
     - DURABILITY;1 
-    hide_attributes: true
-    hide_enchantments: true
+    item_flags: [HIDE_ATTRIBUTES, HIDE_ENCHANTS]
     material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2YxODNlYzJmZTU4ZmFhNDNlNTY4NDE5YjdhMGRjNDQ2ZWNlNGVhMGJlNTJlYzc4NGM5NGUxZDc0Yjc1OTM5ZCJ9fX0=
     slot: 20
     display_name: '&#08FB5D&lᴡ&#0BFC4A&lᴀ&#0EFD38&lɴ&#12FD25&lᴅ&#15FE13&lᴇ&#18FF00&lʀ &7%player_name% &8» &#08FB5D39 рублей'
@@ -41,8 +40,7 @@ items:
   'traper':
     enchantments:
     - DURABILITY;1 
-    hide_attributes: true
-    hide_enchantments: true
+    item_flags: [HIDE_ATTRIBUTES, HIDE_ENCHANTS]
     material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWM4NDBiNjZjNjQ0MjA1OWJhMzFmYzM0OTk4ZTE1YzQ0NDdhNDI5ZDNmNzg5YTdlOWY2MmU2YTU3ZGRhMGFiMiJ9fX0=
     slot: 21
     display_name: '&#FBEB08&lᴛ&#FCD906&lʀ&#FDC705&lᴀ&#FDB503&lᴘ&#FEA302&lᴇ&#FF9100&lʀ &7%player_name% &8» &#FBEB0879 рублей'
@@ -69,8 +67,7 @@ items:
   'gothic':
     enchantments:
     - DURABILITY;1 
-    hide_attributes: true
-    hide_enchantments: true
+    item_flags: [HIDE_ATTRIBUTES, HIDE_ENCHANTS]
     material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDQ4MjlkMzlhNTRlZDA2YmI1ZDA0YTJhMjFkMjYzNmM1ZGRmMjdiNTNkYzg0NDgyNjJmZGFiYzc3NWVjNjQwYSJ9fX0=
     slot: 22
     display_name: '&#FB08A6&lɢ&#F306B8&lᴏ&#EB05CA&lᴛ&#E203DB&lʜ&#DA02ED&lɪ&#D200FF&lᴄ &7%player_name% &8» &#FB08A6159 рублей'
@@ -97,8 +94,7 @@ items:
   'deluxe':
     enchantments:
     - DURABILITY;1 
-    hide_attributes: true
-    hide_enchantments: true
+    item_flags: [HIDE_ATTRIBUTES, HIDE_ENCHANTS]
     material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzIyMjIwZGUxYTg2M2JjNWQ5YjllN2E2YTNiMDMyMTRjOWYzZDY5OGVkM2ZlMGQyODIyMGYzYjkzYjc2ODVjNSJ9fX0=
     slot: 23
     display_name: '&#088FFB&lᴅ&#06A5FC&lᴇ&#05BCFD&lʟ&#03D2FD&lᴜ&#02E9FE&lx&#00FFFF&lᴇ &7%player_name% &8» &#088FFB289 рублей'
@@ -126,8 +122,7 @@ items:
   'griefer':
     enchantments:
     - DURABILITY;1 
-    hide_attributes: true
-    hide_enchantments: true
+    item_flags: [HIDE_ATTRIBUTES, HIDE_ENCHANTS]
     material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTU4MmVlNWQxYzVjMDhkMzdkZjI2ZDY5MjJiZTA4MDhiZTljMGI2YjM0N2Q4OWMwZGEyNjM1NjJmYWZjZDUwNSJ9fX0=
     slot: 24
     display_name: '&#FF2B33&lɢ&#FF3432&lʀ&#FF3D31&lɪ&#FF4630&lᴇ&#FF4E2F&lꜰ&#FF572E&lᴇ&#FF602D&lʀ &7%player_name% &8» &#FF2B33379 рублей'
@@ -157,8 +152,7 @@ items:
   'sapphire':
     enchantments:
     - DURABILITY;1 
-    hide_attributes: true
-    hide_enchantments: true
+    item_flags: [HIDE_ATTRIBUTES, HIDE_ENCHANTS]
     material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMmMxNGQ2NjkxMTU1NGJkMDg4MjMzOTA3NGJmNmI4MTEwYzJkMzUwOWI2OWU3YTYxNDRlNGQ1YTcxNjRiYWNjOCJ9fX0=
     slot: 30
     display_name: '&#00FF3B&ls&#12FF4C&lᴀ&#25FF5D&lᴘ&#37FF6E&lᴘ&#4AFF7F&lʜ&#5CFF90&lɪ&#6FFFA1&lʀ&#81FFB2&lᴇ &7%player_name% &8» &#00FF3B1799 рублей'
@@ -189,8 +183,7 @@ items:
   'space':
     enchantments:
     - DURABILITY;1 
-    hide_attributes: true
-    hide_enchantments: true
+    item_flags: [HIDE_ATTRIBUTES, HIDE_ENCHANTS]
     material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDkxOGJlMTQyYTIwYjJiMzliYzU4MmY0MjFmNmFlODdiMzE4NGI1Yzk1MjNkMTZmYmU2ZDY5NTMwMTA3ODg2YSJ9fX0=
     slot: 32
     display_name: '&#BE00FF&ls&#BD20FF&lᴘ&#BD41FF&lᴀ&#BC61FF&lᴄ&#BB81FF&lᴇ &7%player_name% &8» &#BE00FF3499 рублей'
@@ -224,8 +217,7 @@ items:
   'sub':
     enchantments:
     - DURABILITY;1 
-    hide_attributes: true
-    hide_enchantments: true
+    item_flags: [HIDE_ATTRIBUTES, HIDE_ENCHANTS]
     material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTBhNTE2ODcxZjQ2NjRkZWE0MWUzOWY3M2ZkZDI1NDVmZmQ2ODM1ZTNlYTE2NTU3NDM1YmZiY2I5NmRjZDUyYiJ9fX0=
     slot: 4
     display_name: '&#F4FF89&lᴘ&#F7FF5B&lʟ&#F9FF2E&lᴜ&#FCFF00&ls &7%player_name% &8» &#F4FF89399 рублей'
@@ -236,7 +228,7 @@ items:
     - '&8 ▪ &fТелепортировать к себе &7⊳ &#F4FF89/tpahere'
     - '&8 ▪ &fСамая высокая точка &7⊳ &#F4FF89/top'
     - '&8 ▪ &fВся информация о сервере &7⊳ &#F4FF89/gc'
-    - '&8 ▪ &fРандом-телепорт в энде &7⊳ &#F4FF89/trustrtp end'
+    - '&8 ▪ &fРандом-телепорт в энде &7⊳ &#F4FF89/desirertp end'
     - '&8 ▪ &fМеню подписчика сервера &7⊳ &#F4FF89&l&n/subgui&r &c&l(NEW!)'
     - ''
     - '&#F4FF89 Информация:'

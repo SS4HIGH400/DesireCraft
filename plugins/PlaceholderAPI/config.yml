@@ -40,7 +40,7 @@ expansions:
       high: '&a'
       low: '&c'
       medium: '&e'
-    server_name: sputn1koff
+    server_name: DesireCraft
   vault:
     formatting:
       thousands: k

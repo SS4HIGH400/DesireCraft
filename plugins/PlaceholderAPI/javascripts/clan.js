@@ -1,12 +1,11 @@
-var placeholder = "%clans_colored_clan_tag%";
+var clanTag = "%desire_clan_tag%";
 
-function check(){
-  if (placeholder == ""){
-      return "&cНет";
+function formatClanTag() {
+  if (!clanTag || clanTag.trim() === "" || clanTag.indexOf("%") !== -1) {
+    return "";
   }
-  else {
-      return placeholder;
-  }
+
+  return clanTag;
 }
 
-check();
+formatClanTag();

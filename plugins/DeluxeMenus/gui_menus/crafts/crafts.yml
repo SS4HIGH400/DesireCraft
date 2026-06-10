@@ -1,4 +1,4 @@
-menu_title: '[ᴛs] ▸ Рецепты'
+menu_title: '[ᴅᴄ] ▸ Рецепты'
 open_command:
 - crafts
 - recipesss
@@ -11,14 +11,12 @@ items:
   '1':
     enchantments:
     - DURABILITY;1 
-    hide_attributes: true
-    hide_enchantments: true
+    item_flags: [HIDE_ATTRIBUTES, HIDE_ENCHANTS]
     material: TNT
     amount: 1
     slot: 20
     display_name: '&#9F00FFД&#AD24FFи&#BA49FFн&#C86DFFа&#D692FFм&#E4B6FFи&#F1DBFFт&#FFFFFFы'
-    hide_attributes: true
-    hide_enchantments: true
+    item_flags: [HIDE_ATTRIBUTES, HIDE_ENCHANTS]
     lore:
     - '&a◈ Нажмите, чтобы посмотреть крафты'  
     left_click_commands:
@@ -28,14 +26,12 @@ items:
   '2':
     enchantments:
     - DURABILITY;1 
-    hide_attributes: true
-    hide_enchantments: true
+    item_flags: [HIDE_ATTRIBUTES, HIDE_ENCHANTS]
     material: APPLE
     amount: 1
     slot: 21
     display_name: '&#9F00FFЯ&#B233FFб&#C566FFл&#D999FFо&#ECCCFFк&#FFFFFFи'
-    hide_attributes: true
-    hide_enchantments: true
+    item_flags: [HIDE_ATTRIBUTES, HIDE_ENCHANTS]
     lore:
     - '&a◈ Нажмите, чтобы посмотреть крафты'  
     left_click_commands:
@@ -45,14 +41,12 @@ items:
   '3':
     enchantments:
     - DURABILITY;1 
-    hide_attributes: true
-    hide_enchantments: true
+    item_flags: [HIDE_ATTRIBUTES, HIDE_ENCHANTS]
     material: ELYTRA
     amount: 1
     slot: 22
     display_name: '&#9F00FFЭ&#B233FFл&#C566FFи&#D999FFт&#ECCCFFр&#FFFFFFы'
-    hide_attributes: true
-    hide_enchantments: true
+    item_flags: [HIDE_ATTRIBUTES, HIDE_ENCHANTS]
     lore:
     - '&a◈ Нажмите, чтобы посмотреть крафты'  
     left_click_commands:
@@ -62,14 +56,12 @@ items:
   '4':
     enchantments:
     - DURABILITY;1 
-    hide_attributes: true
-    hide_enchantments: true
+    item_flags: [HIDE_ATTRIBUTES, HIDE_ENCHANTS]
     material: TOTEM_OF_UNDYING
     amount: 1
     slot: 23
     display_name: '&#9F00FFТ&#B740FFо&#CF80FFт&#E7BFFFе&#FFFFFFм'
-    hide_attributes: true
-    hide_enchantments: true
+    item_flags: [HIDE_ATTRIBUTES, HIDE_ENCHANTS]
     lore:
     - '&a◈ Нажмите, чтобы посмотреть крафты'  
     left_click_commands:
@@ -79,14 +71,12 @@ items:
   '5':
     enchantments:
     - DURABILITY;1 
-    hide_attributes: true
-    hide_enchantments: true
+    item_flags: [HIDE_ATTRIBUTES, HIDE_ENCHANTS]
     material: END_CRYSTAL
     amount: 1
     slot: 24
     display_name: '&#9F00FFК&#A817FFр&#B02EFFи&#B946FFс&#C25DFFт&#CB74FFа&#D38BFFл&#DCA2FFл &#E5B9FFЭ&#EED1FFн&#F6E8FFд&#FFFFFFа'
-    hide_attributes: true
-    hide_enchantments: true
+    item_flags: [HIDE_ATTRIBUTES, HIDE_ENCHANTS]
     lore:
     - '&a◈ Нажмите, чтобы посмотреть крафты'  
     left_click_commands:
@@ -96,14 +86,12 @@ items:
   '6':
     enchantments:
     - DURABILITY;1 
-    hide_attributes: true
-    hide_enchantments: true
+    item_flags: [HIDE_ATTRIBUTES, HIDE_ENCHANTS]
     material: NETHERITE_SCRAP
     amount: 1
     slot: 29
     display_name: '&#9F00FFТ&#B233FFр&#C566FFа&#D999FFп&#ECCCFFк&#FFFFFFа'
-    hide_attributes: true
-    hide_enchantments: true
+    item_flags: [HIDE_ATTRIBUTES, HIDE_ENCHANTS]
     lore:
     - '&a◈ Нажмите, чтобы посмотреть крафты'  
     left_click_commands:
@@ -113,14 +101,12 @@ items:
   '7':
     enchantments:
     - DURABILITY;1 
-    hide_attributes: true
-    hide_enchantments: true
+    item_flags: [HIDE_ATTRIBUTES, HIDE_ENCHANTS]
     material: DRIED_KELP
     amount: 1
     slot: 30
     display_name: '&#9F00FFП&#B740FFл&#CF80FFа&#E7BFFFс&#FFFFFFт'
-    hide_attributes: true
-    hide_enchantments: true
+    item_flags: [HIDE_ATTRIBUTES, HIDE_ENCHANTS]
     lore:
     - '&a◈ Нажмите, чтобы посмотреть крафты'  
     left_click_commands:
@@ -130,14 +116,12 @@ items:
   '8':
     enchantments:
     - DURABILITY;1 
-    hide_attributes: true
-    hide_enchantments: true
+    item_flags: [HIDE_ATTRIBUTES, HIDE_ENCHANTS]
     material: ENDER_EYE
     amount: 1
     slot: 31
     display_name: '&#9F00FF&#A715FFДе&#AF2BFFз&#B740FFо&#BF55FFр&#C76AFFи&#CF80FFе&#D795FFн&#DFAAFFт&#E7BFFFа&#EFD5FFц&#F7EAFFи&#FFFFFFя'
-    hide_attributes: true
-    hide_enchantments: true
+    item_flags: [HIDE_ATTRIBUTES, HIDE_ENCHANTS]
     lore:
     - '&a◈ Нажмите, чтобы посмотреть крафты'  
     left_click_commands:
@@ -147,14 +131,12 @@ items:
   '9':
     enchantments:
     - DURABILITY;1 
-    hide_attributes: true
-    hide_enchantments: true
+    item_flags: [HIDE_ATTRIBUTES, HIDE_ENCHANTS]
     material: SUGAR
     amount: 1
     slot: 32
     display_name: '&#9F00FFЯ&#AB20FFв&#B740FFн&#C360FFа&#CF80FFя &#DB9FFFп&#E7BFFFы&#F3DFFFл&#FFFFFFь'
-    hide_attributes: true
-    hide_enchantments: true
+    item_flags: [HIDE_ATTRIBUTES, HIDE_ENCHANTS]
     lore:
     - '&a◈ Нажмите, чтобы посмотреть крафты'  
     left_click_commands:
@@ -164,14 +146,12 @@ items:
   '10':
     enchantments:
     - DURABILITY;1 
-    hide_attributes: true
-    hide_enchantments: true
+    item_flags: [HIDE_ATTRIBUTES, HIDE_ENCHANTS]
     material: SNOWBALL
     amount: 1
     slot: 33
     display_name: '&#9F00FFЗ&#A50FFFа&#AA1EFFм&#B02DFFо&#B63CFFр&#BB4BFFо&#C15AFFж&#C769FFе&#CC78FFн&#D287FFн&#D796FFы&#DDA5FFй &#E3B4FFс&#E8C3FFн&#EED2FFе&#F4E1FFж&#F9F0FFо&#FFFFFFк'
-    hide_attributes: true
-    hide_enchantments: true
+    item_flags: [HIDE_ATTRIBUTES, HIDE_ENCHANTS]
     lore:
     - '&a◈ Нажмите, чтобы посмотреть крафты'  
     left_click_commands:
@@ -182,8 +162,7 @@ items:
     material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2VmMTE5ZjA4ODUxYTcyYTVmMTBmYmMzMjQ3ZDk1ZTFjMDA2MzYwZDJiNGY0MTJiMjNjZTA1NDA5Mjc1NmIwYyJ9fX0=
     slot: 49
     display_name: '&c&lНазад'
-    hide_attributes: true
-    hide_enchantments: true
+    item_flags: [HIDE_ATTRIBUTES, HIDE_ENCHANTS]
     lore:
     - ''
     - '&8 ▪ &fНажав сюда, вы сможете'

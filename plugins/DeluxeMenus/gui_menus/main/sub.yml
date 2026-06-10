@@ -1,4 +1,4 @@
-menu_title: '[ᴛs] ▸ Подписка PLUS'
+menu_title: '[ᴅᴄ] ▸ Подписка PLUS'
 open_command:
 - sub
 - subscribe
@@ -12,8 +12,7 @@ items:
   '1':
     enchantments:
     - DURABILITY;1 
-    hide_attributes: true
-    hide_enchantments: true
+    item_flags: [HIDE_ATTRIBUTES, HIDE_ENCHANTS]
     material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTBhNTE2ODcxZjQ2NjRkZWE0MWUzOWY3M2ZkZDI1NDVmZmQ2ODM1ZTNlYTE2NTU3NDM1YmZiY2I5NmRjZDUyYiJ9fX0=
     slot: 21
     display_name: '&#F4FF89&lᴘ&#F7FF5B&lʟ&#F9FF2E&lᴜ&#FCFF00&ls &7%player_name% &8» &#F4FF89399 рублей'
@@ -24,7 +23,7 @@ items:
     - '&8 ▪ &fТелепортировать к себе &7⊳ &#F4FF89/tpahere'
     - '&8 ▪ &fСамая высокая точка &7⊳ &#F4FF89/top'
     - '&8 ▪ &fВся информация о сервере &7⊳ &#F4FF89/gc'
-    - '&8 ▪ &fРандом-телепорт в энде &7⊳ &#F4FF89/trustrtp end'
+    - '&8 ▪ &fРандом-телепорт в энде &7⊳ &#F4FF89/desirertp end'
     - '&8 ▪ &fМеню подписчика сервера &7⊳ &#F4FF89&l&n/subgui&r &c&l(NEW!)'
     - ''
     - '&#F4FF89 Информация:'
@@ -42,8 +41,7 @@ items:
   '2':
     enchantments:
     - DURABILITY;1 
-    hide_attributes: true
-    hide_enchantments: true
+    item_flags: [HIDE_ATTRIBUTES, HIDE_ENCHANTS]
     material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTk0OWExOGNiNTJjMjkzZmU3ZGU3YmExMDE0NjcxMzQwZWQ3ZmY4ZTVkNzA1YjJkNjBiZjg0ZDUzMTQ4ZTA0In19fQ==
     slot: 23
     display_name: '&#F4FF89&lУникальные возможности'

@@ -3,7 +3,7 @@ open_command:
   - quest
 register_command: true
 size: 53
-menu_title: '[ᴛs] ▸ Квесты'
+menu_title: '[ᴅᴄ] ▸ Квесты'
 items:
   '1-vipolneno':
     display_name: '&fЗадание &#00FF001'
@@ -14,7 +14,7 @@ items:
       - ' &8▪ &#42ed73Задание выполнено'
       - ''
     priority: 1
-    hide_enchantments: true
+    item_flags: [HIDE_ENCHANTS]
     view_requirement:
       requirements:
         see_perm:
@@ -39,7 +39,7 @@ items:
       - '&8 » &fНаграда с подпиской:'
       - '&8 ▪ &d4000$'
     priority: 3
-    hide_enchantments: true
+    item_flags: [HIDE_ENCHANTS]
     view_requirement:
       requirements:
         see_perm:
@@ -77,7 +77,7 @@ items:
       - '&8 » &fНаграда с подпиской:'
       - '&8 ▪ &d4000$'
     priority: 2
-    hide_enchantments: true
+    item_flags: [HIDE_ENCHANTS]
     view_requirement:
       minimum_requirements: 2
       requirements:
@@ -125,7 +125,7 @@ items:
       - ' &8▪ &#42ed73Задание выполнено'
       - ''
     priority: 1
-    hide_enchantments: true
+    item_flags: [HIDE_ENCHANTS]
     view_requirement:
       requirements:
         see_perm:
@@ -150,7 +150,7 @@ items:
       - '&8 » &fНаграда с подпиской:'
       - '&8 ▪ &d5000$'
     priority: 3
-    hide_enchantments: true
+    item_flags: [HIDE_ENCHANTS]
     view_requirement:
       requirements:
         see_perm:
@@ -188,7 +188,7 @@ items:
       - '&8 » &fНаграда с подпиской:'
       - '&8 ▪ &d5000$'
     priority: 2
-    hide_enchantments: true
+    item_flags: [HIDE_ENCHANTS]
     view_requirement:
       minimum_requirements: 2
       requirements:
@@ -236,7 +236,7 @@ items:
       - ' &8▪ &#42ed73Задание выполнено'
       - ''
     priority: 1
-    hide_enchantments: true
+    item_flags: [HIDE_ENCHANTS]
     view_requirement:
       requirements:
         see_perm:
@@ -261,7 +261,7 @@ items:
       - '&8 » &fНаграда с подпиской:'
       - '&8 ▪ &d6000$'
     priority: 3
-    hide_enchantments: true
+    item_flags: [HIDE_ENCHANTS]
     view_requirement:
       requirements:
         see_perm:
@@ -299,7 +299,7 @@ items:
       - '&8 » &fНаграда с подпиской:'
       - '&8 ▪ &d6000$'
     priority: 2
-    hide_enchantments: true
+    item_flags: [HIDE_ENCHANTS]
     view_requirement:
       minimum_requirements: 2
       requirements:
@@ -347,7 +347,7 @@ items:
       - ' &8▪ &#42ed73Задание выполнено'
       - ''
     priority: 1
-    hide_enchantments: true
+    item_flags: [HIDE_ENCHANTS]
     view_requirement:
       requirements:
         see_perm:
@@ -372,7 +372,7 @@ items:
       - '&8 » &fНаграда с подпиской:'
       - '&8 ▪ &d7000$'
     priority: 3
-    hide_enchantments: true
+    item_flags: [HIDE_ENCHANTS]
     view_requirement:
       requirements:
         see_perm:
@@ -410,7 +410,7 @@ items:
       - '&8 » &fНаграда с подпиской:'
       - '&8 ▪ &d7000$'
     priority: 2
-    hide_enchantments: true
+    item_flags: [HIDE_ENCHANTS]
     view_requirement:
       minimum_requirements: 2
       requirements:
@@ -458,7 +458,7 @@ items:
       - ' &8▪ &#42ed73Задание выполнено'
       - ''
     priority: 1
-    hide_enchantments: true
+    item_flags: [HIDE_ENCHANTS]
     view_requirement:
       requirements:
         see_perm:
@@ -483,7 +483,7 @@ items:
       - '&8 » &fНаграда с подпиской:'
       - '&8 ▪ &d7000$'
     priority: 3
-    hide_enchantments: true
+    item_flags: [HIDE_ENCHANTS]
     view_requirement:
       requirements:
         see_perm:
@@ -522,7 +522,7 @@ items:
       - '&8 » &fНаграда с подпиской:'
       - '&8 ▪ &d7000$'
     priority: 2
-    hide_enchantments: true
+    item_flags: [HIDE_ENCHANTS]
     view_requirement:
       minimum_requirements: 2
       requirements:
@@ -571,7 +571,7 @@ items:
       - ' &8▪ &#42ed73Задание выполнено'
       - ''
     priority: 1
-    hide_enchantments: true
+    item_flags: [HIDE_ENCHANTS]
     view_requirement:
       requirements:
         see_perm:
@@ -596,7 +596,7 @@ items:
       - '&8 » &fНаграда с подпиской:'
       - '&8 ▪ &d7000$'
     priority: 3
-    hide_enchantments: true
+    item_flags: [HIDE_ENCHANTS]
     view_requirement:
       requirements:
         see_perm:
@@ -635,7 +635,7 @@ items:
       - '&8 » &fНаграда с подпиской:'
       - '&8 ▪ &d7000$'
     priority: 2
-    hide_enchantments: true
+    item_flags: [HIDE_ENCHANTS]
     view_requirement:
       minimum_requirements: 2
       requirements:
@@ -684,7 +684,7 @@ items:
       - ' &8▪ &#42ed73Задание выполнено'
       - ''
     priority: 1
-    hide_enchantments: true
+    item_flags: [HIDE_ENCHANTS]
     view_requirement:
       requirements:
         see_perm:
@@ -709,7 +709,7 @@ items:
       - '&8 » &fНаграда с подпиской:'
       - '&8 ▪ &d8000$'
     priority: 3
-    hide_enchantments: true
+    item_flags: [HIDE_ENCHANTS]
     view_requirement:
       requirements:
         see_perm:
@@ -748,7 +748,7 @@ items:
       - '&8 » &fНаграда с подпиской:'
       - '&8 ▪ &d8000$'
     priority: 2
-    hide_enchantments: true
+    item_flags: [HIDE_ENCHANTS]
     view_requirement:
       minimum_requirements: 2
       requirements:
@@ -797,7 +797,7 @@ items:
       - ' &8▪ &#42ed73Задание выполнено'
       - ''
     priority: 1
-    hide_enchantments: true
+    item_flags: [HIDE_ENCHANTS]
     view_requirement:
       requirements:
         see_perm:
@@ -822,7 +822,7 @@ items:
       - '&8 » &fНаграда с подпиской:'
       - '&8 ▪ &d8000$'
     priority: 3
-    hide_enchantments: true
+    item_flags: [HIDE_ENCHANTS]
     view_requirement:
       requirements:
         see_perm:
@@ -861,7 +861,7 @@ items:
       - '&8 » &fНаграда с подпиской:'
       - '&8 ▪ &d8000$'
     priority: 2
-    hide_enchantments: true
+    item_flags: [HIDE_ENCHANTS]
     view_requirement:
       minimum_requirements: 2
       requirements:
@@ -910,7 +910,7 @@ items:
       - ' &8▪ &#42ed73Задание выполнено'
       - ''
     priority: 1
-    hide_enchantments: true
+    item_flags: [HIDE_ENCHANTS]
     view_requirement:
       requirements:
         see_perm:
@@ -935,7 +935,7 @@ items:
       - '&8 » &fНаграда с подпиской:'
       - '&8 ▪ &d8000$'
     priority: 3
-    hide_enchantments: true
+    item_flags: [HIDE_ENCHANTS]
     view_requirement:
       requirements:
         see_perm:
@@ -974,7 +974,7 @@ items:
       - '&8 » &fНаграда с подпиской:'
       - '&8 ▪ &d8000$'
     priority: 2
-    hide_enchantments: true
+    item_flags: [HIDE_ENCHANTS]
     view_requirement:
       minimum_requirements: 2
       requirements:
@@ -1023,7 +1023,7 @@ items:
       - ' &8▪ &#42ed73Задание выполнено'
       - ''
     priority: 1
-    hide_enchantments: true
+    item_flags: [HIDE_ENCHANTS]
     view_requirement:
       requirements:
         see_perm:
@@ -1048,7 +1048,7 @@ items:
       - '&8 » &fНаграда с подпиской:'
       - '&8 ▪ &d9000$'
     priority: 3
-    hide_enchantments: true
+    item_flags: [HIDE_ENCHANTS]
     view_requirement:
       requirements:
         see_perm:
@@ -1087,7 +1087,7 @@ items:
       - '&8 » &fНаграда с подпиской:'
       - '&8 ▪ &d9000$'
     priority: 2
-    hide_enchantments: true
+    item_flags: [HIDE_ENCHANTS]
     view_requirement:
       minimum_requirements: 2
       requirements:
@@ -1136,7 +1136,7 @@ items:
       - ' &8▪ &#42ed73Задание выполнено'
       - ''
     priority: 1
-    hide_enchantments: true
+    item_flags: [HIDE_ENCHANTS]
     view_requirement:
       requirements:
         see_perm:
@@ -1161,7 +1161,7 @@ items:
       - '&8 » &fНаграда с подпиской:'
       - '&8 ▪ &d10000$'
     priority: 3
-    hide_enchantments: true
+    item_flags: [HIDE_ENCHANTS]
     view_requirement:
       requirements:
         see_perm:
@@ -1199,7 +1199,7 @@ items:
       - '&8 » &fНаграда с подпиской:'
       - '&8 ▪ &d10000$'
     priority: 2
-    hide_enchantments: true
+    item_flags: [HIDE_ENCHANTS]
     view_requirement:
       minimum_requirements: 2
       requirements:
@@ -1247,7 +1247,7 @@ items:
       - ' &8▪ &#42ed73Задание выполнено'
       - ''
     priority: 1
-    hide_enchantments: true
+    item_flags: [HIDE_ENCHANTS]
     view_requirement:
       requirements:
         see_perm:
@@ -1272,7 +1272,7 @@ items:
       - '&8 » &fНаграда с подпиской:'
       - '&8 ▪ &d10000$'
     priority: 3
-    hide_enchantments: true
+    item_flags: [HIDE_ENCHANTS]
     view_requirement:
       requirements:
         see_perm:
@@ -1311,7 +1311,7 @@ items:
       - '&8 » &fНаграда с подпиской:'
       - '&8 ▪ &d10000$'
     priority: 2
-    hide_enchantments: true
+    item_flags: [HIDE_ENCHANTS]
     view_requirement:
       minimum_requirements: 2
       requirements:
@@ -1360,7 +1360,7 @@ items:
       - ' &8▪ &#42ed73Задание выполнено'
       - ''
     priority: 1
-    hide_enchantments: true
+    item_flags: [HIDE_ENCHANTS]
     view_requirement:
       requirements:
         see_perm:
@@ -1385,7 +1385,7 @@ items:
       - '&8 » &fНаграда с подпиской:'
       - '&8 ▪ &d5000$'
     priority: 3
-    hide_enchantments: true
+    item_flags: [HIDE_ENCHANTS]
     view_requirement:
       requirements:
         see_perm:
@@ -1424,7 +1424,7 @@ items:
       - '&8 » &fНаграда с подпиской:'
       - '&8 ▪ &d5000$'
     priority: 2
-    hide_enchantments: true
+    item_flags: [HIDE_ENCHANTS]
     view_requirement:
       minimum_requirements: 2
       requirements:
@@ -1473,7 +1473,7 @@ items:
       - ' &8▪ &#42ed73Задание выполнено'
       - ''
     priority: 1
-    hide_enchantments: true
+    item_flags: [HIDE_ENCHANTS]
     view_requirement:
       requirements:
         see_perm:
@@ -1498,7 +1498,7 @@ items:
       - '&8 » &fНаграда с подпиской:'
       - '&8 ▪ &d9000$'
     priority: 3
-    hide_enchantments: true
+    item_flags: [HIDE_ENCHANTS]
     view_requirement:
       requirements:
         see_perm:
@@ -1537,7 +1537,7 @@ items:
       - '&8 » &fНаграда с подпиской:'
       - '&8 ▪ &d9000$'
     priority: 2
-    hide_enchantments: true
+    item_flags: [HIDE_ENCHANTS]
     view_requirement:
       minimum_requirements: 2
       requirements:
@@ -1586,7 +1586,7 @@ items:
       - ' &8▪ &#42ed73Задание выполнено'
       - ''
     priority: 1
-    hide_enchantments: true
+    item_flags: [HIDE_ENCHANTS]
     view_requirement:
       requirements:
         see_perm:
@@ -1611,7 +1611,7 @@ items:
       - '&8 » &fНаграда с подпиской:'
       - '&8 ▪ &d12000$'
     priority: 3
-    hide_enchantments: true
+    item_flags: [HIDE_ENCHANTS]
     view_requirement:
       requirements:
         see_perm:
@@ -1650,7 +1650,7 @@ items:
       - '&8 » &fНаграда с подпиской:'
       - '&8 ▪ &d12000$'
     priority: 2
-    hide_enchantments: true
+    item_flags: [HIDE_ENCHANTS]
     view_requirement:
       minimum_requirements: 2
       requirements:
@@ -1699,7 +1699,7 @@ items:
       - ' &8▪ &#42ed73Задание выполнено'
       - ''
     priority: 1
-    hide_enchantments: true
+    item_flags: [HIDE_ENCHANTS]
     view_requirement:
       requirements:
         see_perm:
@@ -1724,7 +1724,7 @@ items:
       - '&8 » &fНаграда с подпиской:'
       - '&8 ▪ &d10000$'
     priority: 3
-    hide_enchantments: true
+    item_flags: [HIDE_ENCHANTS]
     view_requirement:
       requirements:
         see_perm:
@@ -1762,7 +1762,7 @@ items:
       - '&8 » &fНаграда с подпиской:'
       - '&8 ▪ &d10000$'
     priority: 2
-    hide_enchantments: true
+    item_flags: [HIDE_ENCHANTS]
     view_requirement:
       minimum_requirements: 2
       requirements:
@@ -1810,7 +1810,7 @@ items:
       - ' &8▪ &#42ed73Задание выполнено'
       - ''
     priority: 1
-    hide_enchantments: true
+    item_flags: [HIDE_ENCHANTS]
     view_requirement:
       requirements:
         see_perm:
@@ -1835,7 +1835,7 @@ items:
       - '&8 » &fНаграда с подпиской:'
       - '&8 ▪ &d5000$'
     priority: 3
-    hide_enchantments: true
+    item_flags: [HIDE_ENCHANTS]
     view_requirement:
       requirements:
         see_perm:
@@ -1874,7 +1874,7 @@ items:
       - '&8 » &fНаграда с подпиской:'
       - '&8 ▪ &d5000$'
     priority: 2
-    hide_enchantments: true
+    item_flags: [HIDE_ENCHANTS]
     view_requirement:
       minimum_requirements: 2
       requirements:
@@ -1923,7 +1923,7 @@ items:
       - ' &8▪ &#42ed73Задание выполнено'
       - ''
     priority: 1
-    hide_enchantments: true
+    item_flags: [HIDE_ENCHANTS]
     view_requirement:
       requirements:
         see_perm:
@@ -1948,7 +1948,7 @@ items:
       - '&8 » &fНаграда с подпиской:'
       - '&8 ▪ &d12000$'
     priority: 3
-    hide_enchantments: true
+    item_flags: [HIDE_ENCHANTS]
     view_requirement:
       requirements:
         see_perm:
@@ -1987,7 +1987,7 @@ items:
       - '&8 » &fНаграда с подпиской:'
       - '&8 ▪ &d12000$'
     priority: 2
-    hide_enchantments: true
+    item_flags: [HIDE_ENCHANTS]
     view_requirement:
       minimum_requirements: 2
       requirements:
@@ -2036,7 +2036,7 @@ items:
       - ' &8▪ &#42ed73Задание выполнено'
       - ''
     priority: 1
-    hide_enchantments: true
+    item_flags: [HIDE_ENCHANTS]
     view_requirement:
       requirements:
         see_perm:
@@ -2061,7 +2061,7 @@ items:
       - '&8 » &fНаграда с подпиской:'
       - '&8 ▪ &d8000$'
     priority: 3
-    hide_enchantments: true
+    item_flags: [HIDE_ENCHANTS]
     view_requirement:
       requirements:
         see_perm:
@@ -2100,7 +2100,7 @@ items:
       - '&8 » &fНаграда с подпиской:'
       - '&8 ▪ &d8000$'
     priority: 2
-    hide_enchantments: true
+    item_flags: [HIDE_ENCHANTS]
     view_requirement:
       minimum_requirements: 2
       requirements:
@@ -2149,7 +2149,7 @@ items:
       - ' &8▪ &#42ed73Задание выполнено'
       - ''
     priority: 1
-    hide_enchantments: true
+    item_flags: [HIDE_ENCHANTS]
     view_requirement:
       requirements:
         see_perm:
@@ -2174,7 +2174,7 @@ items:
       - '&8 » &fНаграда с подпиской:'
       - '&8 ▪ &d5000$'
     priority: 3
-    hide_enchantments: true
+    item_flags: [HIDE_ENCHANTS]
     view_requirement:
       requirements:
         see_perm:
@@ -2213,7 +2213,7 @@ items:
       - '&8 » &fНаграда с подпиской:'
       - '&8 ▪ &d5000$'
     priority: 2
-    hide_enchantments: true
+    item_flags: [HIDE_ENCHANTS]
     view_requirement:
       minimum_requirements: 2
       requirements:
@@ -2262,7 +2262,7 @@ items:
       - ' &8▪ &#42ed73Задание выполнено'
       - ''
     priority: 1
-    hide_enchantments: true
+    item_flags: [HIDE_ENCHANTS]
     view_requirement:
       requirements:
         see_perm:
@@ -2287,7 +2287,7 @@ items:
       - '&8 » &fНаграда с подпиской:'
       - '&8 ▪ &d15000$'
     priority: 3
-    hide_enchantments: true
+    item_flags: [HIDE_ENCHANTS]
     view_requirement:
       requirements:
         see_perm:
@@ -2325,7 +2325,7 @@ items:
       - '&8 » &fНаграда с подпиской:'
       - '&8 ▪ &d15000$'
     priority: 2
-    hide_enchantments: true
+    item_flags: [HIDE_ENCHANTS]
     view_requirement:
       minimum_requirements: 2
       requirements:
@@ -2373,7 +2373,7 @@ items:
       - ' &8▪ &#42ed73Задание выполнено'
       - ''
     priority: 1
-    hide_enchantments: true
+    item_flags: [HIDE_ENCHANTS]
     view_requirement:
       requirements:
         see_perm:
@@ -2398,7 +2398,7 @@ items:
       - '&8 » &fНаграда с подпиской:'
       - '&8 ▪ &d12000$'
     priority: 3
-    hide_enchantments: true
+    item_flags: [HIDE_ENCHANTS]
     view_requirement:
       requirements:
         see_perm:
@@ -2437,7 +2437,7 @@ items:
       - '&8 » &fНаграда с подпиской:'
       - '&8 ▪ &d12000$'
     priority: 2
-    hide_enchantments: true
+    item_flags: [HIDE_ENCHANTS]
     view_requirement:
       minimum_requirements: 2
       requirements:
@@ -2486,7 +2486,7 @@ items:
       - ' &8▪ &#42ed73Задание выполнено'
       - ''
     priority: 1
-    hide_enchantments: true
+    item_flags: [HIDE_ENCHANTS]
     view_requirement:
       requirements:
         see_perm:
@@ -2511,7 +2511,7 @@ items:
       - '&8 » &fНаграда с подпиской:'
       - '&8 ▪ &d15000$'
     priority: 3
-    hide_enchantments: true
+    item_flags: [HIDE_ENCHANTS]
     view_requirement:
       requirements:
         see_perm:
@@ -2550,7 +2550,7 @@ items:
       - '&8 » &fНаграда с подпиской:'
       - '&8 ▪ &d15000$'
     priority: 2
-    hide_enchantments: true
+    item_flags: [HIDE_ENCHANTS]
     view_requirement:
       minimum_requirements: 2
       requirements:
@@ -2599,7 +2599,7 @@ items:
       - ' &8▪ &#42ed73Задание выполнено'
       - ''
     priority: 1
-    hide_enchantments: true
+    item_flags: [HIDE_ENCHANTS]
     view_requirement:
       requirements:
         see_perm:
@@ -2624,7 +2624,7 @@ items:
       - '&8 » &fНаграда с подпиской:'
       - '&8 ▪ &d10000$'
     priority: 3
-    hide_enchantments: true
+    item_flags: [HIDE_ENCHANTS]
     view_requirement:
       requirements:
         see_perm:
@@ -2662,7 +2662,7 @@ items:
       - '&8 » &fНаграда с подпиской:'
       - '&8 ▪ &d10000$'
     priority: 2
-    hide_enchantments: true
+    item_flags: [HIDE_ENCHANTS]
     view_requirement:
       minimum_requirements: 2
       requirements:
@@ -2713,7 +2713,7 @@ items:
       - ' &8▪ &#42ed73Задание выполнено'
       - ''
     priority: 1
-    hide_enchantments: true
+    item_flags: [HIDE_ENCHANTS]
     view_requirement:
       requirements:
         see_perm:
@@ -2738,7 +2738,7 @@ items:
       - '&8 » &fНаграда с подпиской:'
       - '&8 ▪ &d10000$'
     priority: 3
-    hide_enchantments: true
+    item_flags: [HIDE_ENCHANTS]
     view_requirement:
       requirements:
         see_perm:
@@ -2777,7 +2777,7 @@ items:
       - '&8 » &fНаграда с подпиской:'
       - '&8 ▪ &d10000$'
     priority: 2
-    hide_enchantments: true
+    item_flags: [HIDE_ENCHANTS]
     view_requirement:
       minimum_requirements: 2
       requirements:
@@ -2826,7 +2826,7 @@ items:
       - ' &8▪ &#42ed73Задание выполнено'
       - ''
     priority: 1
-    hide_enchantments: true
+    item_flags: [HIDE_ENCHANTS]
     view_requirement:
       requirements:
         see_perm:
@@ -2851,7 +2851,7 @@ items:
       - '&8 » &fНаграда с подпиской:'
       - '&8 ▪ &d70000$'
     priority: 3
-    hide_enchantments: true
+    item_flags: [HIDE_ENCHANTS]
     view_requirement:
       requirements:
         see_perm:
@@ -2890,7 +2890,7 @@ items:
       - '&8 » &fНаграда с подпиской:'
       - '&8 ▪ &d70000$'
     priority: 2
-    hide_enchantments: true
+    item_flags: [HIDE_ENCHANTS]
     view_requirement:
       minimum_requirements: 2
       requirements:
@@ -2939,7 +2939,7 @@ items:
       - ' &8▪ &#42ed73Задание выполнено'
       - ''
     priority: 1
-    hide_enchantments: true
+    item_flags: [HIDE_ENCHANTS]
     view_requirement:
       requirements:
         see_perm:
@@ -2964,7 +2964,7 @@ items:
       - '&8 » &fНаграда с подпиской:'
       - '&8 ▪ &d50000$'
     priority: 3
-    hide_enchantments: true
+    item_flags: [HIDE_ENCHANTS]
     view_requirement:
       requirements:
         see_perm:
@@ -3003,7 +3003,7 @@ items:
       - '&8 » &fНаграда с подпиской:'
       - '&8 ▪ &d50000$'
     priority: 2
-    hide_enchantments: true
+    item_flags: [HIDE_ENCHANTS]
     view_requirement:
       minimum_requirements: 2
       requirements:
@@ -3052,7 +3052,7 @@ items:
       - ' &8▪ &#42ed73Задание выполнено'
       - ''
     priority: 1
-    hide_enchantments: true
+    item_flags: [HIDE_ENCHANTS]
     view_requirement:
       requirements:
         see_perm:
@@ -3077,7 +3077,7 @@ items:
       - '&8 » &fНаграда с подпиской:'
       - '&8 ▪ &d50000$'
     priority: 3
-    hide_enchantments: true
+    item_flags: [HIDE_ENCHANTS]
     view_requirement:
       requirements:
         see_perm:
@@ -3116,7 +3116,7 @@ items:
       - '&8 » &fНаграда с подпиской:'
       - '&8 ▪ &d50000$'
     priority: 2
-    hide_enchantments: true
+    item_flags: [HIDE_ENCHANTS]
     view_requirement:
       minimum_requirements: 2
       requirements:

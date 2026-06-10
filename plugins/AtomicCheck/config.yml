@@ -49,7 +49,7 @@ messages:
   chat:
     player: '&4(Проверка) &7[И] &f$user &8- &d$message'
     moder: '&4(Проверка) &c&n[П]&f $moder &8- &d$message'
-  prefix: '&7[&d&lTrustCheck&7]'
+  prefix: '&7[&d&lDesireCraft&7]'
   ingame: '&cДанную команду можно выполнять только в игре!'
   noPermissions: '&cУ вас недостаточно прав.'
   invalidPlayer: '$p &fИгрок &7$user &fне найден.'
